@@ -91,7 +91,7 @@
 	</div>
 
 	<!-- HR审批 -->
-	<div id="hrAudit" style="display: none">
+	<div id="firstaudit" style="display: none">
 
 		<!-- table用来显示信息，方便办理任务 -->
 		<%@include file="view-form.jsp" %>
