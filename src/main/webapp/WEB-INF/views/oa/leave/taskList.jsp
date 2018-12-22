@@ -84,14 +84,14 @@
 	<!-- 使用DIV包裹，每个DIV的ID以节点名称命名，如果不同的流程版本需要使用同一个可以自己扩展（例如：在DIV添加属性，标记支持的版本） -->
 
 	<!-- 部门领导审批 -->
-	<div id="deptLeaderAudit" style="display: none">
+	<div id="firstaudit" style="display: none">
 
 		<!-- table用来显示信息，方便办理任务 -->
 		<%@include file="view-form.jsp" %>
 	</div>
 
 	<!-- HR审批 -->
-	<div id="firstaudit" style="display: none">
+	<div id="hraudit" style="display: none">
 
 		<!-- table用来显示信息，方便办理任务 -->
 		<%@include file="view-form.jsp" %>
