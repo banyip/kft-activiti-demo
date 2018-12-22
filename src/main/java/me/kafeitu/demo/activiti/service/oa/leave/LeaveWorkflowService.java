@@ -63,7 +63,7 @@ public class LeaveWorkflowService {
             // 用来设置启动流程的人员ID，引擎会自动把用户ID保存到activiti:initiator中
             identityService.setAuthenticatedUserId(entity.getUserId());
 
-            processInstance = runtimeService.startProcessInstanceByKey("studentsponse", businessKey, variables);
+            processInstance = runtimeService.startProcessInstanceByKey("studentsponse",  businessKey, variables);
             String processInstanceId = processInstance.getId();
             entity.setProcessInstanceId(processInstanceId);
             logger.debug("start process of {key={}, bkey={}, pid={}, variables={}}", new Object[]{"leave", businessKey, processInstanceId, variables});
