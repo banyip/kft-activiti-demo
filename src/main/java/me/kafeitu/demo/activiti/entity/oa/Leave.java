@@ -97,7 +97,7 @@ public class Leave extends IdEntity implements Serializable {
     private String grade;
     private String headteacher;
     private String teachercontactNum;
-    private Set<Ralative> relatives = new HashSet<Relative>();
+    private Set<Relative> relatives = new HashSet<Relative>();
     private Date applyTime;
     
     
