@@ -80,7 +80,7 @@ public class Leave extends IdEntity implements Serializable {
 		this.teachercontactNum = teachercontactNum;
 	}
 	
-	/*
+	
 	@Column
 	@OneToMany
 	public Set<Relative> getRelatives() {
@@ -90,14 +90,14 @@ public class Leave extends IdEntity implements Serializable {
 	public void setRelatives(Set<Relative> relatives) {
 		this.relatives = relatives;
 	}
-	*/
+	
 	private String contactNum;
     private String studentName;
     private String school;
     private String grade;
     private String headteacher;
     private String teachercontactNum;
-    //private Set<Ralative> relatives = new HashSet<Relative>();
+    private Set<Ralative> relatives = new HashSet<Relative>();
     private Date applyTime;
     
     
