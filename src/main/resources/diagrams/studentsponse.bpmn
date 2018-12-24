@@ -2,24 +2,24 @@
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
   <process id="studentsponse" name="学生助学" isExecutable="true">
     <startEvent id="startevent1" name="Start"></startEvent>
-    <userTask id="firstaudit" name="初审"></userTask>
+    <userTask id="firstaudit" name="初审" activiti:candidateGroups="zhuxueoperator"></userTask>
     <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="firstaudit"></sequenceFlow>
-    <userTask id="postvisit" name="走访后登记"></userTask>
+    <userTask id="postvisit" name="走访后登记" activiti:candidateGroups="zhuxueoperator"></userTask>
     <sequenceFlow id="flow2" sourceRef="firstaudit" targetRef="postvisit"></sequenceFlow>
-    <userTask id="postpublic" name="上线发布后登记"></userTask>
+    <userTask id="postpublic" name="上线发布后登记" activiti:candidateGroups="zhuxueoperator"></userTask>
     <sequenceFlow id="flow3" sourceRef="postvisit" targetRef="postpublic"></sequenceFlow>
-    <userTask id="sponserregistration" name="资助人认捐登记"></userTask>
+    <userTask id="sponserregistration" name="资助人认捐登记" activiti:candidateGroups="zhuxueoperator"></userTask>
     <sequenceFlow id="flow4" sourceRef="postpublic" targetRef="sponserregistration"></sequenceFlow>
-    <userTask id="posttransfer" name="汇款登记"></userTask>
+    <userTask id="posttransfer" name="汇款登记" activiti:candidateGroups="zhuxueoperator"></userTask>
     <sequenceFlow id="flow5" sourceRef="sponserregistration" targetRef="posttransfer"></sequenceFlow>
-    <userTask id="distributemoney" name="发款登记"></userTask>
+    <userTask id="distributemoney" name="发款登记" activiti:candidateGroups="zhuxueoperator"></userTask>
     <sequenceFlow id="flow6" sourceRef="posttransfer" targetRef="distributemoney"></sequenceFlow>
     <exclusiveGateway id="exclusivegateway1" name="Exclusive Gateway" activiti:async="true" default="flow8"></exclusiveGateway>
     <sequenceFlow id="flow7" sourceRef="distributemoney" targetRef="exclusivegateway1"></sequenceFlow>
-    <userTask id="feedback" name="反馈发送"></userTask>
+    <userTask id="feedback" name="反馈发送" activiti:candidateGroups="zhuxueoperator"></userTask>
     <sequenceFlow id="flow8" name="最后一次发款" sourceRef="exclusivegateway1" targetRef="feedback"></sequenceFlow>
     <sequenceFlow id="flow9" name="不是最后一次发款" sourceRef="exclusivegateway1" targetRef="distributemoney"></sequenceFlow>
-    <userTask id="closefile" name="结案登记"></userTask>
+    <userTask id="closefile" name="结案登记" activiti:candidateGroups="zhuxueoperator"></userTask>
     <sequenceFlow id="flow10" sourceRef="feedback" targetRef="closefile"></sequenceFlow>
     <endEvent id="endevent1" name="End"></endEvent>
     <sequenceFlow id="flow11" sourceRef="closefile" targetRef="endevent1"></sequenceFlow>

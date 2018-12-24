@@ -1,6 +1,7 @@
 package me.kafeitu.demo.activiti.entity.oa;
 
 import me.kafeitu.demo.activiti.entity.IdEntity;
+
 import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
@@ -83,13 +84,7 @@ public class Relative extends IdEntity implements Serializable {
 		this.health = health;
 	}
 	
-	@Column
-	public Leave getLeave() {
-		return leave;
-	}
-	public void setLeave(Leave leave) {
-		this.leave = leave;
-	}
+
 
 	private String relativeId;
     private String relationship;
@@ -99,7 +94,7 @@ public class Relative extends IdEntity implements Serializable {
     private String job;
     private int anualIncome;
     private String health;
-    private Leave leave;
+
 
     
     

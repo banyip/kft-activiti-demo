@@ -10,7 +10,7 @@ import java.util.Map;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import me.kafeitu.demo.activiti.entity.oa.Relative;
+import me.kafeitu.demo.activiti.entity.oa.Leave;
 import me.kafeitu.demo.activiti.service.activiti.WorkflowProcessDefinitionService;
 import me.kafeitu.modules.test.spring.SpringTransactionalTestCase;
 
@@ -64,7 +64,7 @@ public class LeaveWorkflowServiceTest extends SpringTransactionalTestCase {
 	 */
 	@Test
 	public void testAllPass() throws Exception {
-		Relative leave = new Relative();
+		Leave leave = new Leave();
 		leave.setApplyTime(new Date());
 		leave.setStartTime(new jodd.datetime.JDateTime("2012-05-22 12:00").convertToDate());
 		leave.setEndTime(new jodd.datetime.JDateTime("2012-05-23 09:00").convertToDate());
