@@ -10,5 +10,5 @@ import org.springframework.stereotype.Component;
  * @author HenryYan
  */
 @Component
-public interface LeaveDao extends CrudRepository<Relative, Long> {
+public interface LeaveDao extends CrudRepository<Leave, Long> {
 }
