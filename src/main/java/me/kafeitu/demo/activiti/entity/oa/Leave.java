@@ -1,6 +1,7 @@
 package me.kafeitu.demo.activiti.entity.oa;
 
 import me.kafeitu.demo.activiti.entity.IdEntity;
+
 import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
@@ -24,7 +25,80 @@ public class Leave extends IdEntity implements Serializable {
     private static final long serialVersionUID = 1L;
     private String processInstanceId;
     private String userId;
+    private String applicantName;
+    
+    @Column
+    public String getContactNum() {
+		return contactNum;
+	}
 
+	public void setContactNum(String contactNum) {
+		this.contactNum = contactNum;
+	}
+	@Column
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+	@Column
+	public String getSchool() {
+		return school;
+	}
+
+	public void setSchool(String school) {
+		this.school = school;
+	}
+
+	@Column
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
+	@Column
+	public String getHeadteacher() {
+		return headteacher;
+	}
+
+	public void setHeadteacher(String headteacher) {
+		this.headteacher = headteacher;
+	}
+
+	@Column
+	public String getTeachercontactNum() {
+		return teachercontactNum;
+	}
+
+	public void setTeachercontactNum(String teachercontactNum) {
+		this.teachercontactNum = teachercontactNum;
+	}
+	
+	@Column
+	@OneToMany
+	public Set<Relative> getRelatives() {
+		return relatives;
+	}
+	
+	public void setRelatives(Set<Relative> relatives) {
+		this.relatives = relatives;
+	}
+	
+	private String contactNum;
+    private String studentName;
+    private String school;
+    private String grade;
+    private String headteacher;
+    private String teachercontactNum;
+    private Set<Ralative> relatives = new HashSet<Relative>();
+    private Date applyTime;
+    
+    
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date startTime;
 
@@ -36,7 +110,7 @@ public class Leave extends IdEntity implements Serializable {
 
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date realityEndTime;
-    private Date applyTime;
+
     private String leaveType;
     private String reason;
 
@@ -186,5 +260,13 @@ public class Leave extends IdEntity implements Serializable {
     public void setProcessDefinition(ProcessDefinition processDefinition) {
         this.processDefinition = processDefinition;
     }
+
+	public String getApplicantName() {
+		return applicantName;
+	}
+
+	public void setApplicantName(String applicantName) {
+		this.applicantName = applicantName;
+	}
 
 }
