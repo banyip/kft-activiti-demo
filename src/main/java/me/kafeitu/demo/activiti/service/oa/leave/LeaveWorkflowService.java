@@ -63,7 +63,7 @@ public class LeaveWorkflowService {
             // 用来设置启动流程的人员ID，引擎会自动把用户ID保存到activiti:initiator中
             identityService.setAuthenticatedUserId(entity.getUserId());
 
-            processInstance = runtimeService.startProcessInstanceByKey("studentsponse",  businessKey, variables);
+            processInstance = runtimeService.startProcessInstanceByKey("leave",  businessKey, variables);
             String processInstanceId = processInstance.getId();
             entity.setProcessInstanceId(processInstanceId);
             logger.debug("start process of {key={}, bkey={}, pid={}, variables={}}", new Object[]{"leave", businessKey, processInstanceId, variables});
@@ -118,7 +118,7 @@ public class LeaveWorkflowService {
     @Transactional(readOnly = true)
     public List<Leave> findRunningProcessInstaces(Page<Leave> page, int[] pageParams) {
         List<Leave> results = new ArrayList<Leave>();
-        ProcessInstanceQuery query = runtimeService.createProcessInstanceQuery().processDefinitionKey("studentsponse").active().orderByProcessInstanceId().desc();
+        ProcessInstanceQuery query = runtimeService.createProcessInstanceQuery().processDefinitionKey("leave").active().orderByProcessInstanceId().desc();
         List<ProcessInstance> list = query.listPage(pageParams[0], pageParams[1]);
 
         // 关联业务实体
@@ -150,7 +150,7 @@ public class LeaveWorkflowService {
     @Transactional(readOnly = true)
     public List<Leave> findFinishedProcessInstaces(Page<Leave> page, int[] pageParams) {
         List<Leave> results = new ArrayList<Leave>();
-        HistoricProcessInstanceQuery query = historyService.createHistoricProcessInstanceQuery().processDefinitionKey("studentsponse").finished().orderByProcessInstanceEndTime().desc();
+        HistoricProcessInstanceQuery query = historyService.createHistoricProcessInstanceQuery().processDefinitionKey("leave").finished().orderByProcessInstanceEndTime().desc();
         List<HistoricProcessInstance> list = query.listPage(pageParams[0], pageParams[1]);
 
         // 关联业务实体
