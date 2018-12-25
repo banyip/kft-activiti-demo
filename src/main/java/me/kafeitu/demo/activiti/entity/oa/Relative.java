@@ -84,7 +84,7 @@ public class Relative extends IdEntity implements Serializable {
 		this.health = health;
 	}
 	
-
+ 
 
 	private String relativeId;
     private String relationship;

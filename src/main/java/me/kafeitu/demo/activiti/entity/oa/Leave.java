@@ -270,5 +270,6 @@ public class Leave extends IdEntity implements Serializable {
 	public void setApplicantName(String applicantName) {
 		this.applicantName = applicantName;
 	}
+	
 
 }
