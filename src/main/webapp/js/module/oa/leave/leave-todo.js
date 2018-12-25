@@ -123,7 +123,7 @@ function complete(taskId, variables) {
  * btns:对话框显示的按钮
  */
 var handleOpts = {
-	deptLeaderAudit: {
+	firstaudit: {
 		width: 300,
 		height: 300,
 		open: function(id) {
