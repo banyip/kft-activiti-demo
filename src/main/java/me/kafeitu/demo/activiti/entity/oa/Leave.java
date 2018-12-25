@@ -27,8 +27,28 @@ public class Leave extends IdEntity implements Serializable {
     private String processInstanceId;
     private String userId;
     private String applicantName;
+    private String company;
+    private String className;
     
     @Column
+    public String getClassName() {
+		return className;
+	}
+
+	public void setClassName(String className) {
+		this.className = className;
+	}
+
+	@Column
+    public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
+	@Column
     public String getContactNum() {
 		return contactNum;
 	}

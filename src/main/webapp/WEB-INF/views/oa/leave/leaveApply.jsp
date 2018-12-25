@@ -48,29 +48,45 @@
 			<legend><small>请假申请</small></legend>
 			<table border="1">
 			<tr>
-				<td>请假类型：</td>
+				<td>申请人姓名：</td>
+				<td><input type="text" id="applicantName" /></td>
+			</tr>
+			<tr>
+				<td>联系电话：</td>
+				<td><input type="text" id="contactNum" name="contactNum" /></td>
+			</tr>
+			<tr>
+				<td>单位名称：</td>
+				<td><input type="text" id="company" name="company" /></td>
+			</tr>
+			<tr>
+				<td>学生姓名：</td>
 				<td>
-					<select id="leaveType" name="leaveType">
-						<option>公休</option>
-						<option>病假</option>
-						<option>调休</option>
-						<option>事假</option>
-						<option>婚假</option>
-					</select>
+					<textarea name="studentName"></textarea>
 				</td>
 			</tr>
 			<tr>
-				<td>开始时间：</td>
-				<td><input type="text" id="startTime" name="startTime" /></td>
-			</tr>
-			<tr>
-				<td>结束时间：</td>
-				<td><input type="text" id="endTime" name="endTime" /></td>
-			</tr>
-			<tr>
-				<td>请假原因：</td>
+				<td>年级：</td>
 				<td>
-					<textarea name="reason"></textarea>
+					<textarea name="grade"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>班号/专业：</td>
+				<td>
+					<textarea name="className"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>班主任名称：</td>
+				<td>
+					<textarea name="headteacher"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>班主任联系电话：</td>
+				<td>
+					<textarea name="teachercontactNum"></textarea>
 				</td>
 			</tr>
 			<tr>
