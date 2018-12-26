@@ -100,8 +100,7 @@ public class Leave extends IdEntity implements Serializable {
     
     private Set<Relative> relatives = new HashSet<Relative>();
     private Date applyTime;
-    private String applicantId;
-    
+   
     @Column
     public String getApplicantId() {
 		return applicantId;
