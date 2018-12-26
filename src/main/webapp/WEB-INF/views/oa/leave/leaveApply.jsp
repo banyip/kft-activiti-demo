@@ -62,31 +62,31 @@
 			<tr>
 				<td>学生姓名：</td>
 				<td>
-					<textarea name="studentName"></textarea>
+					<input name="studentName"></input>
 				</td>
 			</tr>
 			<tr>
 				<td>年级：</td>
 				<td>
-					<textarea name="grade"></textarea>
+					<input name="grade"></input>
 				</td>
 			</tr>
 			<tr>
 				<td>班号/专业：</td>
 				<td>
-					<textarea name="className"></textarea>
+					<input name="className"></input>
 				</td>
 			</tr>
 			<tr>
 				<td>班主任名称：</td>
 				<td>
-					<textarea name="headteacher"></textarea>
+					<input name="headteacher"></input>
 				</td>
 			</tr>
 			<tr>
 				<td>班主任联系电话：</td>
 				<td>
-					<textarea name="teachercontactNum"></textarea>
+					<input name="teachercontactNum"></input>
 				</td>
 			</tr>
 			<tr>
