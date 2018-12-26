@@ -26,8 +26,14 @@ public class Leave extends IdEntity implements Serializable {
     private static final long serialVersionUID = 1L;
     private String processInstanceId;
     private String userId;
-    private Applicant applicant;
+
+    private String applicantName;
+    private String applicantContactNum;
     
+    private String headteacher;
+    private String headteachercontactNum;
+    /*
+    private Applicant applicant;
     @ManyToOne
     @JoinColumn(name = "applicantid")
 
@@ -38,7 +44,7 @@ public class Leave extends IdEntity implements Serializable {
 	public void setApplicant(Applicant applicant) {
 		this.applicant = applicant;
 	}
-
+*/
 	@Column
 	public String getStudentName() {
 		return studentName;
@@ -65,6 +71,8 @@ public class Leave extends IdEntity implements Serializable {
 		this.grade = grade;
 	}
 
+	/*
+	private Headteacher headteacher;
     @ManyToOne
     @JoinColumn(name = "headteacherid")
 	public Headteacher getHeadteacher() {
@@ -74,7 +82,7 @@ public class Leave extends IdEntity implements Serializable {
 	public void setHeadteacher(Headteacher headteacher) {
 		this.headteacher = headteacher;
 	}
-
+*/
 	
 	@Column
 	@OneToMany
@@ -96,7 +104,6 @@ public class Leave extends IdEntity implements Serializable {
     private String grade;
     
 
-    private Headteacher headteacher;
     
     private Set<Relative> relatives = new HashSet<Relative>();
     private Date applyTime;
