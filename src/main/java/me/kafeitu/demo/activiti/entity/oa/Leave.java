@@ -72,6 +72,8 @@ public class Leave extends IdEntity implements Serializable {
 	}
 
 	@Column
+    @ManyToOne
+    @JoinColumn(name = "teacherid")
 	public Headteacher getHeadteacher() {
 		return headteacher;
 	}
@@ -101,8 +103,6 @@ public class Leave extends IdEntity implements Serializable {
     private String school;
     private String grade;
     
-    @ManyToOne
-    @JoinColumn(name = "teacherid")
     private Headteacher headteacher;
     
     private Set<Relative> relatives = new HashSet<Relative>();
