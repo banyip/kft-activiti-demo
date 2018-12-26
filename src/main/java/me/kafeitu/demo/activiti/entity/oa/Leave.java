@@ -28,18 +28,7 @@ public class Leave extends IdEntity implements Serializable {
     private String userId;
     private String applicantName;
     private String company;
-    private String className;
-    
     @Column
-    public String getClassName() {
-		return className;
-	}
-
-	public void setClassName(String className) {
-		this.className = className;
-	}
-
-	@Column
     public String getCompany() {
 		return company;
 	}
@@ -83,23 +72,14 @@ public class Leave extends IdEntity implements Serializable {
 	}
 
 	@Column
-	public String getHeadteacher() {
+	public Headteacher getHeadteacher() {
 		return headteacher;
 	}
 
-	public void setHeadteacher(String headteacher) {
+	public void setHeadteacher(Headteacher headteacher) {
 		this.headteacher = headteacher;
 	}
 
-	@Column
-	public String getTeachercontactNum() {
-		return teachercontactNum;
-	}
-
-	public void setTeachercontactNum(String teachercontactNum) {
-		this.teachercontactNum = teachercontactNum;
-	}
-	
 	
 	@Column
 	@OneToMany
@@ -112,16 +92,33 @@ public class Leave extends IdEntity implements Serializable {
 	}
 	
 	private String contactNum;
+	private int sex;
+	private String nationality;
+	private Date birthday;
+	private String address;
+	
     private String studentName;
     private String school;
     private String grade;
-    private String headteacher;
-    private String teachercontactNum;
+    
+    @ManyToOne
+    @JoinColumn(name = "heacherid")
+    private Headteacher headteacher;
+    
     private Set<Relative> relatives = new HashSet<Relative>();
     private Date applyTime;
+    private String applicantId;
     
-    
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+    @Column
+    public String getApplicantId() {
+		return applicantId;
+	}
+
+	public void setApplicantId(String applicantId) {
+		this.applicantId = applicantId;
+	}
+
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date startTime;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
