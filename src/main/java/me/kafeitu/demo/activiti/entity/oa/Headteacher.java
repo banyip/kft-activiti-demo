@@ -24,16 +24,7 @@ import java.util.HashSet;
 public class Headteacher extends IdEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue
-    private String teacherid;
-    @Column
-    public String getTeacherid() {
-		return teacherid;
-	}
-	public void setTeacherid(String teacherid) {
-		this.teacherid = teacherid;
-	}
+
 	@Column
 	public String getName() {
 		return name;
