@@ -101,14 +101,6 @@ public class Leave extends IdEntity implements Serializable {
     private Set<Relative> relatives = new HashSet<Relative>();
     private Date applyTime;
    
-    @Column
-    public String getApplicantId() {
-		return applicantId;
-	}
-
-	public void setApplicantId(String applicantId) {
-		this.applicantId = applicantId;
-	}
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date startTime;
