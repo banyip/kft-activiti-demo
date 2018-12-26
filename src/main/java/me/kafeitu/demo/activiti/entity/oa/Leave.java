@@ -26,25 +26,19 @@ public class Leave extends IdEntity implements Serializable {
     private static final long serialVersionUID = 1L;
     private String processInstanceId;
     private String userId;
-    private String applicantName;
-    private String company;
-    @Column
-    public String getCompany() {
-		return company;
+    private Applicant applicant;
+    
+    @ManyToOne
+    @JoinColumn(name = "applicantid")
+
+    public Applicant getApplicant() {
+		return applicant;
 	}
 
-	public void setCompany(String company) {
-		this.company = company;
+	public void setApplicant(Applicant applicant) {
+		this.applicant = applicant;
 	}
 
-	@Column
-    public String getContactNum() {
-		return contactNum;
-	}
-
-	public void setContactNum(String contactNum) {
-		this.contactNum = contactNum;
-	}
 	@Column
 	public String getStudentName() {
 		return studentName;
@@ -72,7 +66,7 @@ public class Leave extends IdEntity implements Serializable {
 	}
 
     @ManyToOne
-    @JoinColumn(name = "teacherid")
+    @JoinColumn(name = "headteacherid")
 	public Headteacher getHeadteacher() {
 		return headteacher;
 	}
@@ -92,7 +86,6 @@ public class Leave extends IdEntity implements Serializable {
 		this.relatives = relatives;
 	}
 	
-	private String contactNum;
 	private int sex;
 	private String nationality;
 	private Date birthday;
@@ -279,14 +272,6 @@ public class Leave extends IdEntity implements Serializable {
     public void setProcessDefinition(ProcessDefinition processDefinition) {
         this.processDefinition = processDefinition;
     }
-
-	public String getApplicantName() {
-		return applicantName;
-	}
-
-	public void setApplicantName(String applicantName) {
-		this.applicantName = applicantName;
-	}
 	
 
 }
