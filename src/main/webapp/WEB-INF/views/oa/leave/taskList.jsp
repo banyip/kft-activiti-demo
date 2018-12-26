@@ -39,11 +39,11 @@
 	<table width="100%" class="need-border">
 		<thead>
 			<tr>
-				<th>假种</th>
-				<th>申请人</th>
-				<th>申请时间</th>
-				<th>开始时间</th>
-				<th>结束时间</th>
+				<th>申请人</th>				
+				<th>学生名称</th>
+				<th>学校</th>
+				<th>年级</th>
+				<th>班号</th>
 				<th>当前节点</th>
 				<th>任务创建时间</th>
 				<th>流程状态</th>
@@ -55,11 +55,11 @@
 				<c:set var="task" value="${leave.task }" />
 				<c:set var="pi" value="${leave.processInstance }" />
 				<tr id="${leave.id }" tid="${task.id }">
-					<td>${leave.leaveType }</td>
-					<td>${leave.userId }</td>
-					<td>${leave.applyTime }</td>
-					<td>${leave.startTime }</td>
-					<td>${leave.endTime }</td>
+				    <td>${leave.applicantName }</td>
+				    <td>${leave.studentName }</td>
+					<td>${leave.school }</td>
+					<td>${leave.grade }</td>
+					<td>${leave.className }</td>
 					<td>
 						<a class="trace" href='#' pid="${pi.id }" pdid="${pi.processDefinitionId}" title="点击查看流程图">${task.name }</a>
 					</td>

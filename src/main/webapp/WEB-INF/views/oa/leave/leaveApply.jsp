@@ -66,6 +66,12 @@
 				</td>
 			</tr>
 			<tr>
+				<td>学校：</td>
+				<td>
+					<input type="text" id="school" name="school"></input>
+				</td>
+			</tr>
+			<tr>
 				<td>年级：</td>
 				<td>
 					<input type="text" id="grade" name="grade"></input>
