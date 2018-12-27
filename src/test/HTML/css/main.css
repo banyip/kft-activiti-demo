@@ -1,0 +1,271 @@
+body {
+	background-image: url(../images/qiantai/bg.png);
+	font-family: arial;
+	font-size: 12px;
+	color: #d4d7da;
+	text-align: center;
+	background-repeat: repeat-x;
+}
+ 
+.head {
+	margin: 0px auto 0 auto;
+	line-height: 15px;
+}
+ 
+.left {
+	float: left;
+	line-height: 15px;
+	margin-left: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+ 
+.right {
+	float: right;
+	line-height: 15px;
+	margin-right: 50px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+ 
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+ 
+:focus {
+	outline: none;
+}
+ 
+a img {
+	border: 0px;
+}
+ 
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+ 
+.menu_division {
+	margin: 0px auto 0 auto;
+	width: 960px;
+	height: 38px;
+}
+ 
+.menu_body2 {
+	float: left;
+	width: 960px;
+	text-align: left;
+	background: url(../images/qiantai/menu_bg2.gif) left repeat-x;
+	height: 38px;
+}
+ 
+.menu_left_part2 {
+	float: left;
+	width: 6px;
+	height: 38px;
+	background: url(../images/qiantai/menu_left_img2.gif) no-repeat;
+}
+ 
+.menu_right_part2 {
+	float: right;
+	width: 6px;
+	height: 38px;
+	background: url(../images/qiantai/menu_right_img2.gif) no-repeat;
+}
+ 
+.menu_content2 {
+	padding: 6px 5px 0px 5px;
+	font-weight: bold;
+}
+ 
+.menu_content2 ul {
+	list-style-type: none;
+	float: left;
+}
+ 
+.menu_content2 li {
+	float: left;
+	margin-right: 5px;
+	display: inline;
+}
+ 
+.menu_content2 li:hover {
+	background: #ffffff;
+	margin-right: 5px;
+	float: left;
+	color: #0a4b6d;
+}
+ 
+.menu_content2 a {
+	color: #d4d7da;
+	padding: 5px 20px 5px 20px;
+	display: block;
+}
+ 
+.menu_content2 a:hover {
+	color: #0a4b6d;
+	padding: 5px 20px 5px 20px;
+}
+ 
+li.menu_content2_active {
+	background: #ffffff;
+	margin-right: 5px;
+	float: left;
+}
+ 
+.menu_content2_active a {
+	color: #0a4b6d;
+	padding: 5px 20px 5px 20px;
+}
+ 
+/* search_body2 */
+.search_body2 {
+	margin-top: 2px;
+	color: #0a4b6d;
+	width: 220px;
+	height: 20px;
+	float: right;
+	background: url(../images/qiantai/search_input_bg2.gif) no-repeat;
+}
+ 
+.search_body2 a {
+	padding: 0px;
+	display: inline-block;
+}
+ 
+.search_body2 a:hover {
+	padding: 0px;
+	display: inline-block;
+}
+ 
+.search_body2 .text {
+	margin: 1px 0px 0px 3px;
+	width: 180px;
+	color: #0a4b6d;
+	background: none;
+	border: none;
+	vertical-align: top;
+}
+ 
+.search_body2 .btn {
+	margin: 1px 0px 0px 8px;
+}
+ 
+.center_division {
+	margin: 1px auto 0 auto;
+	width: 960px;
+}
+ 
+.center_body {
+	float: left;
+	width: 960px;
+	text-align: left;
+	background-image: url(../images/qiantai/test.jpg);
+}
+ 
+.center_body_menu {
+	width: 960px;
+	padding-top: 5px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 1px;
+}
+ 
+.center_menu {
+	padding-top: 5px;
+	padding-left: 5px;
+	height: 24px;
+}
+ 
+#yltable {
+	border-collapse: collapse;
+	background-color: #FFF;
+	width: 960px;
+	padding-top: 5px;
+	color: #000;
+	line-height: 28px;
+	font-size: 12px;
+}
+ 
+#tb {
+	border-collapse: collapse;
+	background-color: #FFF;
+	width: 960px;
+	padding-top: 5px;
+	color: #000;
+	line-height: 28px;
+	font-size: 12px;
+}
+ 
+tr {
+	text-align: center;
+}
+ 
+td {
+	border: 1px solid #CCC;
+}
+ 
+.buttom {
+	text-align: center;
+	margin-top: 0px;
+}
+ 
+.button_sm {
+	width: 131px;
+	height: 37px;
+	line-height: 37px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white; 
+	background-image : url("../images/qiantai/but_sm_t.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	border: 0px;
+	cursor: pointer;
+	background-image: url("../images/qiantai/but_sm_t.jpg");
+}
+ 
+.button_fsm {
+	width: 131px;
+	height: 37px;
+	line-height: 37px;
+	font-size: 20px;
+	font-weight: bold; 
+	color: white; 
+	background-image :url("../images/qiantai/but_sm_t.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	border: 0px;
+	cursor: pointer;
+	background-image: url("../images/qiantai/but_sm_t.jpg");
+}
+ 
+.button_sm_grey {
+	width: 131px;
+	height: 37px;
+	line-height: 37px;
+	background-image: url("../images/qiantai/but_sm_grey_t.jpg");
+	background-repeat: no-repeat;
+	font-size: 20px;
+	color: white; 
+	font-weight: bold;
+	background-position: left;
+	border: 0px;
+	cursor: pointer;
+}
+ 
+.button_fsm_grey {
+	width: 131px;
+	height: 37px;
+	line-height: 37px;
+	font-size: 20px;
+	color: white; 
+	font-weight: bold;
+	background-image: url("../images/qiantai/but_sm_grey_t.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+	border: 0px;
+	cursor: pointer;
+}
