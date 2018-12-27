@@ -62,11 +62,11 @@ public class Leave extends IdEntity implements Serializable {
 	}
 
 	@Column
-	public int getSex() {
+	public String getSex() {
 		return sex;
 	}
 
-	public void setSex(int sex) {
+	public void setSex(String sex) {
 		this.sex = sex;
 	}
 
@@ -166,7 +166,7 @@ public class Leave extends IdEntity implements Serializable {
 		this.relatives = relatives;
 	}
 	
-	private int sex;
+	private String sex;
 	private String nationality;
 	private Date birthday;
 	private String address;
