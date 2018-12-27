@@ -29,7 +29,7 @@
   <bpmndi:BPMNDiagram id="BPMNDiagram_studentsponse">
     <bpmndi:BPMNPlane bpmnElement="studentsponse" id="BPMNPlane_studentsponse">
       <bpmndi:BPMNShape bpmnElement="startevent1" id="BPMNShape_startevent1">
-        <omgdc:Bounds height="35.0" width="35.0" x="188.0" y="11.0"></omgdc:Bounds>
+        <omgdc:Bounds height="35.0" width="35.0" x="206.0" y="19.0"></omgdc:Bounds>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="firstaudit" id="BPMNShape_firstaudit">
         <omgdc:Bounds height="55.0" width="105.0" x="180.0" y="151.0"></omgdc:Bounds>
@@ -111,7 +111,7 @@
         <omgdi:waypoint x="330.0" y="398.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow12" id="BPMNEdge_flow12">
-        <omgdi:waypoint x="223.0" y="28.0"></omgdi:waypoint>
+        <omgdi:waypoint x="241.0" y="36.0"></omgdi:waypoint>
         <omgdi:waypoint x="344.0" y="36.0"></omgdi:waypoint>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="flow13" id="BPMNEdge_flow13">

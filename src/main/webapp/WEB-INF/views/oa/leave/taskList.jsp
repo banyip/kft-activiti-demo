@@ -37,7 +37,7 @@
 		<div id="message" class="alert alert-success">${message}</div>
 	</c:if>
 	<table width="100%" class="need-border">
-		<thead>
+		<th>
 			<tr>
 				<th>申请人</th>				
 				<th>学生名称</th>
@@ -49,7 +49,7 @@
 				<th>流程状态</th>
 				<th>操作</th>
 			</tr>
-		</thead>
+		</th>
 		<tbody>
 			<c:forEach items="${page.result }" var="leave">
 				<c:set var="task" value="${leave.task }" />
@@ -82,6 +82,38 @@
 	<tags:pagination page="${page}" paginationSize="${page.pageSize}"/>
 	<!-- 下面是每个节点的模板，用来定义每个节点显示的内容 -->
 	<!-- 使用DIV包裹，每个DIV的ID以节点名称命名，如果不同的流程版本需要使用同一个可以自己扩展（例如：在DIV添加属性，标记支持的版本） -->
+
+
+
+	<!-- 家庭成员信息 -->
+	<div id="familyinput" style="display: none">
+		<!-- table用来显示信息，方便办理任务 -->
+		<%@include file="view-form.jsp" %>
+		<hr/>
+		<table>
+		<thead>
+		   <tr>
+		    <th width="5%">关系</th>
+		    <th width="8%">姓名 </th>
+		    <th>身份证号码 </th>
+		    <th>健康</th>
+		    <th>文化</th>
+		    <th>职业或就读于</th>
+		    <th>收入</th>
+		    <th>其它资助/低保</th>
+		    </tr>
+		    </thead>
+			<tr>
+				<td><input type="text" id="relationship" name="relationship" style="width: 54px; "></td>
+				<td><input type="text" id="name" name="name" style="width: 73px; "></td>
+				<td><input type="text" id="relativeid" name="relativeid" style="width: 209px; "></td>
+				<td><input type="text" id="health" name="health" style="width: 103px; "></td>
+				<td><input type="text" id="culture" name="culture" style="width: 56px; "></td>
+				<td><input type="text" id="occupation" name="occupation" style="width: 209px; "></td>
+				<td><input type="text" id="anualIncome" name="anualIncome" style="width: 209px; "></td>
+			</tr>
+		</table>
+	</div>
 
 	<!-- 部门领导审批 -->
 	<div id="firstaudit" style="display: none">

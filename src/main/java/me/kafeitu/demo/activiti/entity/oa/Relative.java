@@ -94,6 +94,9 @@ public class Relative extends IdEntity implements Serializable {
     private String job;
     private int anualIncome;
     private String health;
+    private String culture;
+    private String occupation;
+
 
 
     
