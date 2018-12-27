@@ -342,6 +342,15 @@ public class Leave extends IdEntity implements Serializable {
     public void setProcessDefinition(ProcessDefinition processDefinition) {
         this.processDefinition = processDefinition;
     }
+
+    @Column
+	public String getClassName() {
+		return className;
+	}
+
+	public void setClassName(String className) {
+		this.className = className;
+	}
 	
 
 }
