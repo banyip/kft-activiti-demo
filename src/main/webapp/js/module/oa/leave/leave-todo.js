@@ -161,6 +161,23 @@ familyinput: {
 			var taskId = $(this).data('taskId');
 			var reApply = $(':radio[name=reApply]:checked').val();
 			
+	        var content2 = "";
+	        for (let i = 0; i<$('#div_bjbr').find(".yltable").length ; i++ ){
+	            var yltable = $('#div_bjbr').find(".yltable")[i];
+	            var content1 = "";
+	            for (let index = 0; index <  $(yltable).find(".abc").length; index++) {
+	                content1 =  content1 + "," + $(yltable).find(".abc")[index].value ;
+	                
+	            }
+	            content1=content1.substr(1);
+	            content2=content2 + ";" +content1;
+	        }
+	        content2=content2.substr(1);
+	        
+	        $('#relative')[0].value = content2;
+			
+			
+			
 			// 提交的时候把变量
 			complete(taskId, [{
 				key: 'reApply',
@@ -168,21 +185,10 @@ familyinput: {
 				type: 'B'
 			}, {
 				key: 'relatives',
-				value: $('#modifyApplyContent #leaveType').val(),
+				value: $('#relative')[0].value,
 				type: 'S'
-			}, {
-				key: 'startTime',
-				value: $('#modifyApplyContent #startTime').val(),
-				type: 'D'
-			}, {
-				key: 'endTime',
-				value: $('#modifyApplyContent #endTime').val(),
-				type: 'D'
-			}, {
-				key: 'reason',
-				value: $('#modifyApplyContent #reason').val(),
-				type: 'S'
-			}]);
+			}
+			]);
 		}
 	},{
 		text: '取消',

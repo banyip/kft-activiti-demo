@@ -175,9 +175,28 @@ public class Leave extends IdEntity implements Serializable {
     private String school;
     private String grade;
     private String className;
-
+    private String familyCondiction;
+    private String sponseReason;
     
-    private Set<Relative> relatives = new HashSet<Relative>();
+    @Column
+    public String getFamilyCondiction() {
+		return familyCondiction;
+	}
+
+	public void setFamilyCondiction(String familyCondiction) {
+		this.familyCondiction = familyCondiction;
+	}
+
+	@Column
+	public String getSponseReason() {
+		return sponseReason;
+	}
+
+	public void setSponseReason(String sponseReason) {
+		this.sponseReason = sponseReason;
+	}
+
+	private Set<Relative> relatives = new HashSet<Relative>();
     private Date applyTime;
    
 

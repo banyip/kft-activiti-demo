@@ -105,7 +105,7 @@
 				贫困原因，资助理由
 				（请详细如实填写）：</td>
 				<td width="77%">
-					<textarea id="headteacher" name="headteacher"></input>
+					<textarea id="sponseReason" name="sponseReason"></input>
 				</td>
 
 			</tr>		
