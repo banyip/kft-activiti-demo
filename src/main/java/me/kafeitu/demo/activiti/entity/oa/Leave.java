@@ -25,7 +25,79 @@ public class Leave extends IdEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
     private String processInstanceId;
-    private String userId;
+    @Column
+    public String getApplicantName() {
+		return applicantName;
+	}
+
+	public void setApplicantName(String applicantName) {
+		this.applicantName = applicantName;
+	}
+
+	@Column
+	public String getApplicantContactNum() {
+		return applicantContactNum;
+	}
+
+	public void setApplicantContactNum(String applicantContactNum) {
+		this.applicantContactNum = applicantContactNum;
+	}
+
+	@Column
+	public String getHeadteacher() {
+		return headteacher;
+	}
+
+	public void setHeadteacher(String headteacher) {
+		this.headteacher = headteacher;
+	}
+
+	@Column
+	public String getHeadteachercontactNum() {
+		return headteachercontactNum;
+	}
+
+	public void setHeadteachercontactNum(String headteachercontactNum) {
+		this.headteachercontactNum = headteachercontactNum;
+	}
+
+	@Column
+	public int getSex() {
+		return sex;
+	}
+
+	public void setSex(int sex) {
+		this.sex = sex;
+	}
+
+	@Column
+	public String getNationality() {
+		return nationality;
+	}
+
+	public void setNationality(String nationality) {
+		this.nationality = nationality;
+	}
+
+	@Column
+	public Date getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Date birthday) {
+		this.birthday = birthday;
+	}
+
+	@Column
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	private String userId;
 
     private String applicantName;
     private String applicantContactNum;
