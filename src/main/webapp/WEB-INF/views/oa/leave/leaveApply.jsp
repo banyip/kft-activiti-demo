@@ -102,7 +102,7 @@
 			<tr>
 				<td width="13%">学生在校表现，性格特点，学习情况等</td>
 				<td width="77%">
-					<textarea id="schoolPerfomance" name="schoolPerfomance"></input>
+					<textarea id="schoolPerfomance" name="schoolPerfomance"></textarea>
 				</td>
 			</tr>
 		</table>
