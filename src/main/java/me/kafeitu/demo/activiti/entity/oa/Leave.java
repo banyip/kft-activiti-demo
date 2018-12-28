@@ -8,12 +8,17 @@ import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.springframework.format.annotation.DateTimeFormat;
 
+
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
+import java.util.List;
 /**
  * Entity: Leave
  *
@@ -204,6 +209,12 @@ public class Leave extends IdEntity implements Serializable {
 		this.relatives = relatives;
 	}
 	
+	public void setRelatives(String relatives) {
+		List<String> relativeList = Arrays.asList(relatives.split(";"));
+		this.relatives =  new HashSet<Relative>();
+		for(int i=0;i<relativeList.size();i++)			
+			this.relatives.add(new Relative(relativeList.get(i)));
+	}
 	private String sex;
 	private String nationality;
 	private Date birthday;
