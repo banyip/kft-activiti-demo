@@ -114,13 +114,13 @@
 		<div id="div_bjbr">
 		<table class="yltable">
 			<tr>
-				<td width="5%"><input class="abc" type="text" id="relationship" name="relationship" ></td>
-				<td width="8%"><input class="abc" type="text" id="name" name="name"></td>
-				<td width="24%"><input class="abc" type="text" id="relativeid" name="relativeid"></td>
-				<td width="8%"><input class="abc" type="text" id="health" name="health"></td>
-				<td width="8%"><input class="abc" type="text" id="culture" name="culture" ></td>
-				<td width="24%"><input class="abc" type="text" id="occupation" name="occupation"></td>
-				<td width="16%"><input class="abc" type="number" id="anualIncome" name="anualIncome"></td>
+				<td width="5%"><input class="abc" type="text" id="relationship" name="relationship" style="width:100%"></td>
+				<td width="8%"><input class="abc" type="text" id="name" name="name" style="width:100%"></td>
+				<td width="24%"><input class="abc" type="text" id="relativeid" name="relativeid" style="width:100%"></td>
+				<td width="8%"><input class="abc" type="text" id="health" name="health" style="width:100%"></td>
+				<td width="8%"><input class="abc" type="text" id="culture" name="culture"  style="width:100%"></td>
+				<td width="24%"><input class="abc" type="text" id="occupation" name="occupation" style="width:100%"></td>
+				<td width="16%"><input class="abc" type="number" id="anualIncome" name="anualIncome" style="width:100%"></td>
 			</tr>
 		</table>
 		</div>
