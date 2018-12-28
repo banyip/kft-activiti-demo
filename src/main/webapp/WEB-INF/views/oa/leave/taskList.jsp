@@ -51,7 +51,7 @@
 			</tr>
 		</th>
 		<tbody>
-			<c:forEach items="${page.result }" var="leave">
+			<c:forEach items="${page.result }" var="leave"> 
 				<c:set var="task" value="${leave.task }" />
 				<c:set var="pi" value="${leave.processInstance }" />
 				<tr id="${leave.id }" tid="${task.id }">
