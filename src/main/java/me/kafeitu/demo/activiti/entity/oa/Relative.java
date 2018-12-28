@@ -36,13 +36,11 @@ public class Relative extends IdEntity implements Serializable {
 		System.out.println(relativeInfos);
 		this.relationship= relativeInfos.get(0);
 		this.name = relativeInfos.get(1);
-		this.relativeId = relativeInfos.get(2);
-		this.health = relativeInfos.get(3);
-		this.contactNum = relativeInfos.get(4);
-		this.profecional = relativeInfos.get(5);
-		this.anualIncome = Integer.parseInt(relativeInfos.get(6));
-
-		
+		this.relativeId = relativeInfos.get(2);		
+		this.contactNum = relativeInfos.get(3);
+		this.profecional = relativeInfos.get(4);
+		this.anualIncome = Integer.parseInt(relativeInfos.get(5));
+		this.health = relativeInfos.get(6);
 	}
     private static final long serialVersionUID = 1L;
     @Column
