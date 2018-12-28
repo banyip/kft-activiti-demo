@@ -200,7 +200,7 @@ public class Leave extends IdEntity implements Serializable {
 */
 	
 	@Column
-	@OneToMany
+	@OneToMany(cascade = {CascadeType.ALL})
 	public Set<Relative> getRelatives() {
 		return relatives;
 	}
