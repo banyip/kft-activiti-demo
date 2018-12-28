@@ -212,6 +212,7 @@ public class Leave extends IdEntity implements Serializable {
 	public void setRelatives(String relatives) {
 		List<String> relativeList = Arrays.asList(relatives.split(";"));
 		this.relatives =  new HashSet<Relative>();
+		System.out.print(relativeList);
 		for(int i=0;i<relativeList.size();i++)			
 			this.relatives.add(new Relative(relativeList.get(i)));
 	}

@@ -113,10 +113,10 @@
 						    <th width="5%">关系</th>
 						    <th width="8%">姓名 </th>
 						    <th width="24%">身份证号码 </th>
-						    <th width="16%">健康</th>
-						    <th width="12%">文化</th>
-						    <th width="24%">职业或就读于</th>
-						    <th width="10%">收入</th>
+						    <th width="16%">联系电话</th>
+						    <th width="12%">职业</th>
+						    <th width="10%">年收入</th>
+						    <th width="16%">健康情况</th>
 					    </tr>
 				    </thead>	
 				</table>
@@ -130,10 +130,10 @@
 								<td width="5%"><input class="abc" type="text" id="relationship" name="relationship" style="width:100%"></td>
 								<td width="8%"><input class="abc" type="text" id="name" name="name" style="width:100%"></td>
 								<td width="24%"><input class="abc" type="text" id="relativeid" name="relativeid" style="width:100%"></td>
-								<td width="16%"><input class="abc" type="text" id="health" name="health" style="width:100%"></td>
-								<td width="12%"><input class="abc" type="text" id="culture" name="culture"  style="width:100%"></td>
-								<td width="24%"><input class="abc" type="text" id="occupation" name="occupation" style="width:100%"></td>
+								<td width="16%"><input class="abc" type="text" id="contactNum" name="contactNum"  style="width:100%"></td>								
+								<td width="12%"><input class="abc" type="text" id="occupation" name="occupation" style="width:100%"></td>
 								<td width="10%"><input class="abc" type="number" id="anualIncome" name="anualIncome" style="width:100%"></td>
+								<td width="16%"><input class="abc" type="text" id="health" name="health" style="width:100%"></td>															
 							</tr>
 						</table>
 					</div>
