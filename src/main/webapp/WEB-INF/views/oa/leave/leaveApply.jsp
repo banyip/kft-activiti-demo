@@ -96,7 +96,7 @@
 				贫困原因，资助理由
 				（请详细如实填写）：</td>
 				<td width="77%">
-					<textarea id="familyCondiction" name="familyCondiction"></input>
+					<textarea id="familyCondiction" name="familyCondiction"></textarea>
 				</td>
 			</tr>
 			<tr>
