@@ -11,6 +11,15 @@
     font-family: Verdana, 微软雅黑, 黑体;
 }
 
+.yltable {
+	border-collapse: collapse;
+	background-color: #FFF;
+	width: 960px;
+	padding-top: 5px;
+	color: #000;
+	line-height: 28px;
+	font-size: 12px;
+}
 #topPane a {
     color: #fff;
 }
