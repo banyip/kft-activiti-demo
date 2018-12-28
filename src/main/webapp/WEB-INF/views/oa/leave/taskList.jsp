@@ -19,6 +19,15 @@
 	.blockMsg {
 		z-index: 1005 !important;
 	}
+	.yltable {
+	border-collapse: collapse;
+	background-color: #FFF;
+	width: 960px;
+	padding-top: 5px;
+	color: #000;
+	line-height: 28px;
+	font-size: 12px;
+	}
     </style>
 
     <script src="${ctx }/js/common/jquery-1.8.3.js" type="text/javascript"></script>
