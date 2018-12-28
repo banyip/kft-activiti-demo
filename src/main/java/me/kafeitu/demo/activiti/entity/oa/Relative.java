@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.HashSet;
 import java.util.List;
+
 /**
  * Entity: Relative
  *
@@ -38,6 +39,7 @@ public class Relative extends IdEntity implements Serializable {
 		this.profecional = relativeInfos.get(4);
 		this.anualIncome = Integer.parseInt(relativeInfos.get(5));
 		this.health = relativeInfos.get(6);
+
 	}
     private static final long serialVersionUID = 1L;
     @Column
@@ -108,7 +110,7 @@ public class Relative extends IdEntity implements Serializable {
     private String contactNum;
     private String profecional;
     private String job;
-    private int anualIncome;
+    private int anualIncome=0;
     private String health;
 
 
