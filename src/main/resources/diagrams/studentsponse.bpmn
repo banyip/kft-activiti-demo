@@ -22,7 +22,7 @@
     <sequenceFlow id="flow10" sourceRef="feedback" targetRef="closefile"></sequenceFlow>
     <endEvent id="endevent1" name="End"></endEvent>
     <sequenceFlow id="flow11" sourceRef="closefile" targetRef="endevent1"></sequenceFlow>
-    <userTask id="familyinput" name="家庭成员班主任信息输入" activiti:candidateGroups="zhuxueoperator"></userTask>
+    <userTask id="familyinput" name="家庭成员信息输入" activiti:candidateGroups="zhuxueoperator"></userTask>
     <sequenceFlow id="flow12" sourceRef="startevent1" targetRef="familyinput"></sequenceFlow>
     <sequenceFlow id="flow13" sourceRef="familyinput" targetRef="firstaudit"></sequenceFlow>
   </process>
