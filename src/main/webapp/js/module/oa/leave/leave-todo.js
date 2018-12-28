@@ -26,6 +26,23 @@ $(function() {
 // 用于保存加载的详细信息
 var detail = {};
 
+//增加
+function inserttable() {
+	var newnode = $('.yltable')[0].cloneNode(true);
+    var content = newnode.innerHTML;
+	content = content.replace(/\[0\]/g, "["+ $('#div_bjbr')[0].chileElementCount + "]");
+	content = "<table class='yltable'>" + content + "</table>";
+	
+	if($('#div_bjbr')[0].childNodes.length <=6){
+    $('#div_bjbr').append(content);
+
+	}else{
+		alert("最多同时添加5个信息!");
+	}
+}
+
+
+
 /**
  * 加载详细信息
  * @param {Object} id
@@ -179,7 +196,8 @@ var handleOpts = {
 			        content2=content2.substr(1);
 			        
 			        $('#relative')[0].value = content2;
-					
+			        $('#relative')[0].value = content2;
+			        alert($('#relative')[0].value);
 					
 					
 					// 提交的时候把变量

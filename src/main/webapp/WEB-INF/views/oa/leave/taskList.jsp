@@ -29,7 +29,7 @@
 	<script src="${ctx }/js/common/plugins/html/jquery.outerhtml.js" type="text/javascript"></script>
 	<script src="${ctx }/js/common/plugins/blockui/jquery.blockUI.js" type="text/javascript"></script>
 	<script src="${ctx }/js/module/activiti/workflow.js" type="text/javascript"></script>
-	<script src="${ctx }/js/module/oa/leave/leave-todo.js" type="text/javascript"></script>
+	<script src="${ctx }/js/module/oa/leave/leave-todo.js" type="text/javascript"></script>	
 </head>
 
 <body>
@@ -90,7 +90,10 @@
 		<!-- table用来显示信息，方便办理任务 -->
 		<%@include file="view-form.jsp" %>
 		<hr/>
-		<table>
+		<input type="hidden"										
+				id="relative" />       		
+		<div id="div_bjbr">
+		<table class="yltable">
 		<thead>
 		   <tr>
 		    <th width="5%">关系</th>
@@ -100,19 +103,19 @@
 		    <th>文化</th>
 		    <th>职业或就读于</th>
 		    <th>收入</th>
-		    <th>其它资助/低保</th>
 		    </tr>
 		    </thead>
 			<tr>
-				<td><input type="text" id="relationship" name="relationship" style="width: 54px; "></td>
-				<td><input type="text" id="name" name="name" style="width: 73px; "></td>
-				<td><input type="text" id="relativeid" name="relativeid" style="width: 209px; "></td>
-				<td><input type="text" id="health" name="health" style="width: 103px; "></td>
-				<td><input type="text" id="culture" name="culture" style="width: 56px; "></td>
-				<td><input type="text" id="occupation" name="occupation" style="width: 209px; "></td>
-				<td><input type="number" id="anualIncome" name="anualIncome" style="width: 209px; "></td>
+				<td><input class="abc" type="text" id="relationship" name="relationship" style="width: 54px; "></td>
+				<td><input class="abc" type="text" id="name" name="name" style="width: 73px; "></td>
+				<td><input class="abc" type="text" id="relativeid" name="relativeid" style="width: 209px; "></td>
+				<td><input class="abc" type="text" id="health" name="health" style="width: 103px; "></td>
+				<td><input class="abc" type="text" id="culture" name="culture" style="width: 56px; "></td>
+				<td><input class="abc" type="text" id="occupation" name="occupation" style="width: 209px; "></td>
+				<td><input class="abc" type="number" id="anualIncome" name="anualIncome" style="width: 209px; "></td>
 			</tr>
 		</table>
+		</div>
 	</div>
 
 	<!-- 部门领导审批 -->
