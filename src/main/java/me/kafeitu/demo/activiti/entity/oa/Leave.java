@@ -25,7 +25,17 @@ public class Leave extends IdEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
     private String processInstanceId;
+    private String picture;
     @Column
+    public String getPicture() {
+		return picture;
+	}
+
+	public void setPicture(String picture) {
+		this.picture = picture;
+	}
+
+	@Column
     public String getApplicantName() {
 		return applicantName;
 	}
@@ -99,9 +109,37 @@ public class Leave extends IdEntity implements Serializable {
 
 	private String userId;
 
-    private String applicantName;
+	@Column
+    public String getSchoolPerfomance() {
+		return schoolPerfomance;
+	}
+
+	public void setSchoolPerfomance(String schoolPerfomance) {
+		this.schoolPerfomance = schoolPerfomance;
+	}
+
+	@Column
+	public boolean isIfAgreeToPublish() {
+		return ifAgreeToPublish;
+	}
+
+	public void setIfAgreeToPublish(boolean ifAgreeToPublish) {
+		this.ifAgreeToPublish = ifAgreeToPublish;
+	}
+	@Column
+	public boolean isIfAgreeToMail() {
+		return ifAgreeToMail;
+	}
+
+	public void setIfAgreeToMail(boolean ifAgreeToMail) {
+		this.ifAgreeToMail = ifAgreeToMail;
+	}
+
+	private String applicantName;
     private String applicantContactNum;
-    
+    private String schoolPerfomance;
+    private boolean ifAgreeToPublish=true;
+    private boolean ifAgreeToMail=true;
     private String headteacher;
     private String headteachercontactNum;
     /*

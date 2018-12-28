@@ -90,7 +90,7 @@
 				</td>
 			</tr>
 		</table>
-		<table style="width: 661px; ">
+		<table border="1">
 			<tr>
 				<td width="13%">家庭基本情况、
 				贫困原因，资助理由
@@ -98,20 +98,31 @@
 				<td width="77%">
 					<textarea id="familyCondiction" name="familyCondiction"></input>
 				</td>
-
 			</tr>
 			<tr>
-				<td width="13%">家庭基本情况、
-				贫困原因，资助理由
-				（请详细如实填写）：</td>
+				<td width="13%">学生在校表现，性格特点，学习情况等</td>
 				<td width="77%">
-					<textarea id="sponseReason" name="sponseReason"></input>
+					<textarea id="schoolPerfomance" name="schoolPerfomance"></input>
 				</td>
-
-			</tr>		
-				
+			</tr>
+		</table>
+		<table border="1">
 			<tr>
-				<td>&nbsp;</td>
+				<td width="100%">受助学生是否同意授权好友营在网站或媒体刊登此求助信息：
+				<input type="radio" name="ifAgreeToPublish" value="true" checked>同意 
+
+				<input type="radio" name="ifAgreeToPublish" value="false">不同意
+					</td>
+			</tr>
+			<tr>
+				<td width="100%">是否愿意写信给资助人：
+				<input type="radio" name="ifAgreeToMail" value="true" checked>同意 
+
+				<input type="radio" name="ifAgreeToMail" value="false">不同意
+					</td>
+			</tr>
+			<tr>
+			
 				<td>
 					<button type="submmit">申请</button>
 				</td>

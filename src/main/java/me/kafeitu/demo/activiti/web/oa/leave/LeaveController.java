@@ -1,5 +1,7 @@
 package me.kafeitu.demo.activiti.web.oa.leave;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 import me.kafeitu.demo.activiti.entity.oa.Leave;
 import me.kafeitu.demo.activiti.service.oa.leave.LeaveManager;
 import me.kafeitu.demo.activiti.service.oa.leave.LeaveWorkflowService;
@@ -195,5 +197,37 @@ public class LeaveController {
             return "error";
         }
     }
+
+    
+    /**
+     * 处理图片显示请求
+     * @param fileName
+     */
+    @RequestMapping("showPic/{fileName}.{suffix}")
+    public void showPicture(@PathVariable("fileName") String fileName,
+                            @PathVariable("suffix") String suffix,
+                            HttpServletResponse response){
+        File imgFile = new File("/studentPictures/" + fileName + "." + suffix);
+        responseFile(response, imgFile);
+    }
+
+    /**
+     * 响应输出图片文件
+     * @param response
+     * @param imgFile
+     */
+    private void responseFile(HttpServletResponse response, File imgFile) {
+        try(InputStream is = new FileInputStream(imgFile);
+            OutputStream os = response.getOutputStream();){
+            byte [] buffer = new byte[1024]; // 图片文件流缓存池
+            while(is.read(buffer) != -1){
+                os.write(buffer);
+            }
+            os.flush();
+        } catch (IOException ioe){
+            ioe.printStackTrace();
+        }
+    }
+
 
 }
