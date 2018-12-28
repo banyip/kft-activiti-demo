@@ -193,7 +193,7 @@ var handleOpts = {
 			            var yltable = $('#div_bjbr').find(".yltable")[i];
 			            var content1 = "";
 			            for (let index = 0; index <  $(yltable).find(".abc").length; index++) {
-			                content1 =  content1 + "|" + $(yltable).find(".abc")[index].value ;
+			                content1 =  content1 + "," + $(yltable).find(".abc")[index].value ;
 			                
 			            }
 			            content1=content1.substr(1);
