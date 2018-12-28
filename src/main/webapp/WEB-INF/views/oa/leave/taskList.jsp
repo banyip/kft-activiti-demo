@@ -94,32 +94,33 @@
 				id="relative" />   
 	<table id="tb">
 		<tr>
-			<td colspan="6" align="left"
-				style="padding-left:10px; background-color:#DDDFE1;">家庭成员信息</td>
+			<td >家庭成员信息</td>
 		</tr>
 		<tr>
-		<td>		    		
-		<div id="div_bjbr">
-		<table class="yltable">
+		<td>	
+		<table>
 		<thead>
 		   <tr>
 		    <th width="5%">关系</th>
 		    <th width="8%">姓名 </th>
-		    <th>身份证号码 </th>
+		    <th width="16%">身份证号码 </th>
 		    <th>健康</th>
 		    <th>文化</th>
 		    <th>职业或就读于</th>
 		    <th>收入</th>
 		    </tr>
-		    </thead>
+		    </thead>	
+		 </table>		    		
+		<div id="div_bjbr">
+		<table class="yltable">
 			<tr>
-				<td><input class="abc" type="text" id="relationship" name="relationship" style="width: 54px; "></td>
-				<td><input class="abc" type="text" id="name" name="name" style="width: 73px; "></td>
-				<td><input class="abc" type="text" id="relativeid" name="relativeid" style="width: 209px; "></td>
-				<td><input class="abc" type="text" id="health" name="health" style="width: 103px; "></td>
-				<td><input class="abc" type="text" id="culture" name="culture" style="width: 56px; "></td>
-				<td><input class="abc" type="text" id="occupation" name="occupation" style="width: 209px; "></td>
-				<td><input class="abc" type="number" id="anualIncome" name="anualIncome" style="width: 209px; "></td>
+				<td width="5%"><input class="abc" type="text" id="relationship" name="relationship" ></td>
+				<td width="8%"><input class="abc" type="text" id="name" name="name"></td>
+				<td width="24%"><input class="abc" type="text" id="relativeid" name="relativeid"></td>
+				<td width="8%"><input class="abc" type="text" id="health" name="health"></td>
+				<td width="8%"><input class="abc" type="text" id="culture" name="culture" ></td>
+				<td width="24%"><input class="abc" type="text" id="occupation" name="occupation"></td>
+				<td width="16%"><input class="abc" type="number" id="anualIncome" name="anualIncome"></td>
 			</tr>
 		</table>
 		</div>
