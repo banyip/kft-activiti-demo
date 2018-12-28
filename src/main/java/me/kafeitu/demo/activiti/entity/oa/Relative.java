@@ -32,7 +32,7 @@ public class Relative extends IdEntity implements Serializable {
 	
 	public Relative(String relative)
 	{
-		List<String> relativeInfos = Arrays.asList(relative.split(","));
+		List<String> relativeInfos = Arrays.asList(relative.split(":"));
 		System.out.println(relativeInfos);
 		this.relationship= relativeInfos.get(0);
 		this.name = relativeInfos.get(1);
@@ -41,6 +41,7 @@ public class Relative extends IdEntity implements Serializable {
 		this.profecional = relativeInfos.get(4);
 		this.anualIncome = Integer.parseInt(relativeInfos.get(5));
 		this.health = relativeInfos.get(6);
+		return;
 	}
     private static final long serialVersionUID = 1L;
     @Column
