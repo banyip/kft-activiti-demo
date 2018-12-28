@@ -92,46 +92,55 @@
 		<hr/>
 		<input type="hidden"										
 				id="relative" />   
-	<table id="tb">
-		<tr>
-			<td >家庭成员信息</td>
-		</tr>
-		<tr>
-		<td>	
-		<table>
-		<thead>
-		   <tr>
-		    <th width="5%">关系</th>
-		    <th width="8%">姓名 </th>
-		    <th width="16%">身份证号码 </th>
-		    <th>健康</th>
-		    <th>文化</th>
-		    <th>职业或就读于</th>
-		    <th>收入</th>
-		    </tr>
-		    </thead>	
-		 </table>		    		
-		<div id="div_bjbr">
-		<table class="yltable">
+		<table id="tb">
 			<tr>
-				<td width="5%"><input class="abc" type="text" id="relationship" name="relationship" style="width:100%"></td>
-				<td width="8%"><input class="abc" type="text" id="name" name="name" style="width:100%"></td>
-				<td width="24%"><input class="abc" type="text" id="relativeid" name="relativeid" style="width:100%"></td>
-				<td width="8%"><input class="abc" type="text" id="health" name="health" style="width:100%"></td>
-				<td width="8%"><input class="abc" type="text" id="culture" name="culture"  style="width:100%"></td>
-				<td width="24%"><input class="abc" type="text" id="occupation" name="occupation" style="width:100%"></td>
-				<td width="16%"><input class="abc" type="number" id="anualIncome" name="anualIncome" style="width:100%"></td>
+				<td >家庭成员信息</td>
+			</tr>
+			<tr>
+				<td>	
+				<table>
+					<thead>
+					   	<tr>
+						    <th width="5%">关系</th>
+						    <th width="8%">姓名 </th>
+						    <th width="16%">身份证号码 </th>
+						    <th>健康</th>
+						    <th>文化</th>
+						    <th>职业或就读于</th>
+						    <th>收入</th>
+					    </tr>
+				    </thead>	
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td>				    		
+					<div id="div_bjbr">
+						<table class="yltable">
+							<tr>
+								<td width="5%"><input class="abc" type="text" id="relationship" name="relationship" style="width:100%"></td>
+								<td width="8%"><input class="abc" type="text" id="name" name="name" style="width:100%"></td>
+								<td width="24%"><input class="abc" type="text" id="relativeid" name="relativeid" style="width:100%"></td>
+								<td width="8%"><input class="abc" type="text" id="health" name="health" style="width:100%"></td>
+								<td width="8%"><input class="abc" type="text" id="culture" name="culture"  style="width:100%"></td>
+								<td width="24%"><input class="abc" type="text" id="occupation" name="occupation" style="width:100%"></td>
+								<td width="16%"><input class="abc" type="number" id="anualIncome" name="anualIncome" style="width:100%"></td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					<input type="button" name="button"
+					value="新 增" style="width:60px; height:24px;"
+					onclick="inserttable()" />      
+					<input
+					type="button" name="button" value="删 除"
+					style="width:60px; height:24px;" onclick="deletetable()" />
+				</td>
 			</tr>
 		</table>
-		</div>
-		</td></tr>
-					<tr>
-						<td colspan="6"><input type="button" name="button"
-							value="新 增" style="width:60px; height:24px;"
-							onclick="inserttable()" />      <input
-							type="button" name="button" value="删 除"
-							style="width:60px; height:24px;" onclick="deletetable()" /></td>
-					</tr>
 	</div>
 
 	<!-- 部门领导审批 -->
