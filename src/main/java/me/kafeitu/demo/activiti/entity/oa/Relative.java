@@ -29,6 +29,7 @@ import java.util.List;
 @Table(name = "OA_RELATIVE")
 public class Relative extends IdEntity implements Serializable {
 
+	
 	public Relative(String relative)
 	{
 		List<String> relativeInfos = Arrays.asList(relative.split("|"));		
@@ -113,7 +114,7 @@ public class Relative extends IdEntity implements Serializable {
     private int anualIncome=0;
     private String health;
 
-
+    public Relative() {}
     
     
     
