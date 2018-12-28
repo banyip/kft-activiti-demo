@@ -63,12 +63,13 @@ public class Relative extends IdEntity implements Serializable {
 	public String getName() {
 		return name;
 	}
-	public void setRelativeame(String name) {
-		this.name = name;
-	}
+
 	@Column
 	public String getContactNum() {
 		return contactNum;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public void setContactNum(String contactNum) {
 		this.contactNum = contactNum;
