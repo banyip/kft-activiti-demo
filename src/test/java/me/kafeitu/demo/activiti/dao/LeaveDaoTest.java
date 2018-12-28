@@ -42,6 +42,7 @@ public class LeaveDaoTest extends SpringTransactionalTestCase {
 		leave.setLeaveType("公休");
 		leave.setUserId("kafeitu");
 		leave.setReason("no reason");
+		leave.setRelatives("父亲|ban|440|yip|hao|scut|1000;母亲|mai|441|bing|hao|ssss|2000");
 		entityDao.save(leave);
 		em.flush();
 
