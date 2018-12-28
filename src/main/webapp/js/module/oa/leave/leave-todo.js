@@ -41,7 +41,13 @@ function inserttable() {
 	}
 }
 
-
+//删除
+function deletetable() {
+	var parent = $('#div_bjbr')[0];
+	if (parent.childNodes.length > 1) {
+		parent.removeChild(parent.lastChild);
+	}
+}
 
 /**
  * 加载详细信息
@@ -145,8 +151,8 @@ function complete(taskId, variables) {
 
 var handleOpts = {
 		familyinput: {
-			width: 500,
-			height: 470,
+			width: 1000,
+			height: 770,
 			open: function(id, taskId) {
 				var dialog = this;
 				

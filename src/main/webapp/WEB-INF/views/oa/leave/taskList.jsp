@@ -91,7 +91,14 @@
 		<%@include file="view-form.jsp" %>
 		<hr/>
 		<input type="hidden"										
-				id="relative" />       		
+				id="relative" />   
+	<table id="tb">
+		<tr>
+			<td colspan="6" align="left"
+				style="padding-left:10px; background-color:#DDDFE1;">家庭成员信息</td>
+		</tr>
+		<tr>
+		<td>		    		
 		<div id="div_bjbr">
 		<table class="yltable">
 		<thead>
@@ -116,6 +123,14 @@
 			</tr>
 		</table>
 		</div>
+		</td></tr>
+					<tr>
+						<td colspan="6"><input type="button" name="button"
+							value="新 增" style="width:60px; height:24px;"
+							onclick="inserttable()" />      <input
+							type="button" name="button" value="删 除"
+							style="width:60px; height:24px;" onclick="deletetable()" /></td>
+					</tr>
 	</div>
 
 	<!-- 部门领导审批 -->
