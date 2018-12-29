@@ -45,7 +45,7 @@ public class Leave extends IdEntity implements Serializable {
 		this.picture = picture;
 	}
 
-	public void savePicture( MultipartFile file)
+	public void savePicture( MultipartFile file) throws IOException
 	{
 		// 原始文件名
         String originalFileName = file.getOriginalFilename(); 
@@ -54,16 +54,13 @@ public class Leave extends IdEntity implements Serializable {
         // 生成图片存储的名称，UUID 避免相同图片名冲突，并加上图片后缀
         String fileName = UUID.randomUUID().toString() + suffix;
         // 图片存储路径
-        String filePath = "pictures/" + fileName;
+        String filePath = fileName;
         File saveFile = new File(filePath);
-        try {
-            // 将上传的文件保存到服务器文件系统
-            file.transferTo(saveFile);
-            // 记录服务器文件系统图片名称
-            this.setPicture(fileName);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        // 将上传的文件保存到服务器文件系统
+        file.transferTo(saveFile);
+        // 记录服务器文件系统图片名称
+        this.setPicture(fileName);
+        
 	}
 	@Column
     public String getApplicantName() {
