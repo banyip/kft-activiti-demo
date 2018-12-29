@@ -54,7 +54,7 @@ public class Leave extends IdEntity implements Serializable {
         // 生成图片存储的名称，UUID 避免相同图片名冲突，并加上图片后缀
         String fileName = this.getStudentName()+UUID.randomUUID().toString() + suffix;
         // 图片存储路径
-        String filePath = "/pictures/"+fileName;
+        String filePath = "pictures/"+fileName;
         File saveFile = new File(filePath);
         // 将上传的文件保存到服务器文件系统
         file.transferTo(saveFile);
