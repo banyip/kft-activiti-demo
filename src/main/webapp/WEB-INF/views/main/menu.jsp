@@ -2,7 +2,7 @@
 <ul id="css3menu">
 	<li class="topfirst"><a rel="main/welcome">首页</a></li>
 	<li>
-		<a rel="#">请假（普通表单）</a>
+		<a rel="#">学生申请流程</a>
 		<ul>
 			<li><a rel="oa/leave/apply">学生申请登记</a></li>
 			<li><a rel="oa/leave/list/task">学生申请办理</a></li>
