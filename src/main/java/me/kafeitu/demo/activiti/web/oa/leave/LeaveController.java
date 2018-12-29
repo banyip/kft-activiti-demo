@@ -23,7 +23,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -67,7 +69,7 @@ public class LeaveController {
      * @param leave
      */
     @RequestMapping(value = "start", method = RequestMethod.POST)
-    public String startWorkflow(Leave leave, RedirectAttributes redirectAttributes, HttpSession session) {
+    public String startWorkflow(Leave leave, RedirectAttributes redirectAttributes, HttpSession session,@RequestParam("imgFile") MultipartFile file) {
         try {
             User user = UserUtil.getUserFromSession(session);
             // 用户未登录不能操作，实际应用使用权限框架实现，例如Spring Security、Shiro等
@@ -75,6 +77,7 @@ public class LeaveController {
                 return "redirect:/login?timeout=true";
             }
             leave.setUserId(user.getId());
+            leave.savePicture(file);
             Map<String, Object> variables = new HashMap<String, Object>();
             ProcessInstance processInstance = workflowService.startWorkflow(leave, variables);
             redirectAttributes.addFlashAttribute("message", "流程已启动，流程ID：" + processInstance.getId());

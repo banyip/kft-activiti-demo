@@ -4,12 +4,13 @@
 	<li>
 		<a rel="#">请假（普通表单）</a>
 		<ul>
-			<li><a rel="oa/leave/apply">请假申请(普通)</a></li>
-			<li><a rel="oa/leave/list/task">请假办理(普通)</a></li>
+			<li><a rel="oa/leave/apply">学生申请登记</a></li>
+			<li><a rel="oa/leave/list/task">学生申请办理</a></li>
 			<li><a rel="oa/leave/list/running">运行中流程(普通)</a></li>
 			<li><a rel="oa/leave/list/finished">已结束流程(普通)</a></li>
 		</ul>
 	</li>
+<!--
 	<li>
 		<a rel="#">动态表单</a>
 		<ul>
@@ -37,6 +38,7 @@
             <li><a rel="form/dynamic/process-instance/finished/list?processType=all">已结束流程(综合)</a></li>
         </ul>
     </li>
+-->
 	<li>
 		<a rel="#">管理模块</a>
 		<ul>

@@ -43,7 +43,7 @@
 		}, 5000);
 		</script>
 	</c:if>
-	<form:form id="inputForm" action="${ctx}/oa/leave/start" method="post" class="form-horizontal">
+	<form:form id="inputForm" action="${ctx}/oa/leave/start" method="post" class="form-horizontal" enctype="multipart/form-data">
 		<fieldset>
 			<legend><small>请假申请</small></legend>
 			<table border="1">
@@ -119,6 +119,11 @@
 				<input type="radio" name="ifAgreeToMail" value="true" checked>同意 
 
 				<input type="radio" name="ifAgreeToMail" value="false">不同意
+					</td>
+			</tr>
+			<tr>
+				<td width="100%">学生照片：
+				<input type="file" name="imgFile" />
 					</td>
 			</tr>
 			<tr>
