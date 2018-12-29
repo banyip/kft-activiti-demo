@@ -15,7 +15,7 @@ PropertyFileUtil.init();
 		}
 	</script>
 	<%@ include file="/common/meta.jsp" %>
-    <title>Activiti-演示系统-咖啡兔(闫洪磊)</title>
+    <title>好友营支教管理系统</title>
     <%@ include file="/common/include-base-styles.jsp" %>
 	<%@ include file="/common/include-jquery-ui-theme.jsp" %>
     <link rel="stylesheet" type="text/css" href="${ctx }/css/menu.css" />
@@ -46,7 +46,7 @@ PropertyFileUtil.init();
        				<img src="${ctx }/images/logo.png" height="48" align="top"  style="margin-top:5px" />
        			</td>
        			<td>
-       				<span style="font-size: 17px;color:#FFFF33">Activiti<br/>演示系统</span><br/>
+       				<span style="font-size: 17px;color:#FFFF33">好友营支教<br/>管理系统</span><br/>
        			</td>
        			<td>
        				<div style="float:right; color: #fff;font-size: 12px;margin-top: 2px">
@@ -75,14 +75,7 @@ PropertyFileUtil.init();
 	</div>
 </div>
 
-<!-- #BottomPane -->
-<div id="bottomPane" class="ui-layout-south ui-widget ui-widget-content">
-	<div class="footer ui-state-default">
-		<a href="http://www.kafeitu.me" target="_blank">咖啡兔(闫洪磊)</a>
-		<span class="copyright">©2011-2016</span>
-		<span class="version">Version：${prop['system.version']}</span>
-	</div>
-</div>
+
 <%@ include file="menu.jsp" %>
 <div id="themeswitcherDialog"><div id="themeSwitcher"></div></div>
 </body>
