@@ -269,7 +269,8 @@ public class Leave extends IdEntity implements Serializable {
 	}
 
 	private Set<Relative> relatives = new HashSet<Relative>();
-    private Date applyTime;
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+	private Date applyTime;
    
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
