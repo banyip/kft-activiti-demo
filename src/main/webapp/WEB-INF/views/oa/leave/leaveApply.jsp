@@ -45,20 +45,26 @@
 	</c:if>
 	<form:form id="inputForm" action="${ctx}/oa/leave/start" method="post" class="form-horizontal" enctype="multipart/form-data">
 		<fieldset>
-			<legend><small>请假申请</small></legend>
+			<legend><small>申请人信息</small></legend>
 			<table border="1" width="100%"  frame="hsides" rules="rows" align="center">
 			<tr>
 				<td>申请人姓名：</td>
 				<td><input type="text" id="applicantName" name="applicantName" /></td>
-				<td>联系电话：</td>
-				<td><input type="text" id="applicantContactNum" name="applicantContactNum" /></td>
+				<td>身份证号：</td>
+				<td><input type="text" id="company" name="company" /></td>
+				
 			</tr>
 			<tr>
 				<td>单位名称：</td>
 				<td><input type="text" id="company" name="company" /></td>
-				<td>身份证号：</td>
-				<td><input type="text" id="company" name="company" /></td>
+				<td>联系电话：</td>
+				<td><input type="text" id="applicantContactNum" name="applicantContactNum" /></td>
 			</tr>
+		</table>
+		</fieldset>
+		<fieldset>
+			<legend><small>学生信息</small></legend>
+			<table border="1" width="100%"  frame="hsides" rules="rows" align="center">		
 			<tr>
 				<td>学生姓名：</td>
 				<td>

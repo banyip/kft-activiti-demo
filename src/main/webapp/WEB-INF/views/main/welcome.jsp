@@ -113,30 +113,6 @@
             <b>Activiti<span style="color: red">中文论坛</span>：</b><a target="_blank" href="http://www.activiti-cn.org">http://www.activiti-cn.org</a>
         </p>
     </div>
-
-    <div class="aboutme template">
-        <ul>
-            <li>
-                <b>作者：</b><a target="_blnak" href="http://www.kafeitu.me/?f=kad">咖啡兔(闫洪磊)</a>
-            </li>
-            <li>
-                <b>QQ：</b>576525789
-            </li>
-            <li>
-                <b>Weibo：</b><a target="_blank" href="http://weibo.com/kafeituzi">@kafeituzi</a>
-            </li>
-            <li>
-                <b>QQ群：</b>
-                <ul>
-                    <li>Activiti中文群1(<span style="color:green;font-weight: bold">欢迎</span>)：236540304</li>
-                    <li>Activiti中文群2(<span style="color:red">已满</span>)：23539326</li>
-                    <li>Activiti中文群3(<span style="color:red">已满</span>)：139983080</li>
-                    <li>Activiti中文群4(<span style="color:red">已满</span>)：327913744</li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
     <div class="rest template">
         <p>在web.xml中映射了两个两个Servlet</p>
         <dl>
