@@ -127,6 +127,11 @@
 					</td>
 			</tr>
 			<tr>
+				<td width="100%">申请时间：
+				<input type="datetime-local" name="applyTime" />
+					</td>
+			</tr>
+			<tr>
 			
 				<td>
 					<button type="submmit">申请</button>
