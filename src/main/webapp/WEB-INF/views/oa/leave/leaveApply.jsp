@@ -16,7 +16,7 @@
 	<script src="${ctx }/js/common/plugins/jui/extends/i18n/jquery-ui-date_time-picker-zh-CN.js" type="text/javascript"></script>
     <script type="text/javascript">
     $(function() {
-    	$('#startTime,#endTime').datetimepicker({
+    	$('#startTime,#endTime,#applyTime').datetimepicker({
             stepMinute: 5
         });
     });
@@ -128,7 +128,7 @@
 			</tr>
 			<tr>
 				<td width="100%">申请时间：
-				<input type="datetime-local" name="applyTime" />
+				<input type="text" name="applyTime" />
 					</td>
 			</tr>
 			<tr>
