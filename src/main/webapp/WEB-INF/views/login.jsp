@@ -53,10 +53,9 @@
         </c:if>
 
 		<div style="text-align: center;">
-            <h2>工作流引擎Activiti演示项目</h2>
+            <h2>好友营支教管理系统</h2>
             <h3>
-                <a href="https://github.com/henryyan/kft-activiti-demo" target="_blank" style="text-decoration: none;">kft-activiti-demo（v${prop['system.version']}）</a>
-                <a href="http://www.kafeitu.me/about.html" target="_blank" style="text-decoration: none;">（By 咖啡兔）</a></h3>
+（By BanYip）</h3>
 		</div>
 		<hr />
 		<form action="${ctx }/user/logon" method="get">
