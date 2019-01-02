@@ -126,7 +126,7 @@
 				<input type="file" name="imgFile" />
 					</td>
 			</tr>
-		<!--  -->	
+		<!-- 
 			<tr>
 				<td width="100%">申请时间：
 				<input type="text" id="applyTime"  name="applyTime" />
