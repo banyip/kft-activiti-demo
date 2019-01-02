@@ -65,10 +65,25 @@
 					<input type="text" id="studentName" name="studentName"></input>
 				</td>
 				<td>学校：</td>
+								<td width="100%">学生照片：
+				<input type="file" name="imgFile" />
+					</td>
+			</tr>
+			<tr>
+				<td>性别：</td>
+				<td>
+					<select id=sex name=sex>
+					  <option value ="男">男</option>
+					  <option value ="女">女</option>
+
+					</select>
+				</td>
+				<td>学校：</td>
 				<td>
 					<input type="text" id="school" name="school"></input>
 				</td>
 			</tr>
+
 			<tr>
 				<td>年级：</td>
 				<td>
@@ -121,11 +136,7 @@
 				<input type="radio" name="ifAgreeToMail" value="false">不同意
 					</td>
 			</tr>
-			<tr>
-				<td width="100%">学生照片：
-				<input type="file" name="imgFile" />
-					</td>
-			</tr>
+
 
 			<tr>
 				<td width="100%">申请时间：

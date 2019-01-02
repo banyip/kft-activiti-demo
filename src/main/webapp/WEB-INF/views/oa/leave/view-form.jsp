@@ -7,7 +7,7 @@
 			</tr>
 			<tr>
 				<td class="label">学生姓名：</td>
-				<td name="leaveType"></td>
+				<td name="studentName"></td>
 			</tr>
 			<tr>
 				<td class="label">申请时间：</td>
