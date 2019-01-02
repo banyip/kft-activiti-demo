@@ -46,7 +46,7 @@
 	<form:form id="inputForm" action="${ctx}/oa/leave/start" method="post" class="form-horizontal" enctype="multipart/form-data">
 		<fieldset>
 			<legend><small>请假申请</small></legend>
-			<table border="1">
+			<table border="1" width="100%"  frame="hsides" rules="rows" align="center">
 			<tr>
 				<td>申请人姓名：</td>
 				<td><input type="text" id="applicantName" name="applicantName" /></td>
@@ -63,7 +63,7 @@
 				<td>学生姓名：</td>
 				<td>
 					<input type="text" id="studentName" name="studentName"></input>
-				</td>
+				</td> 
 				<td>学生照片：</td>
 								<td>
 				<input type="file" name="imgFile" />
