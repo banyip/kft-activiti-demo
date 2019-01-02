@@ -34,7 +34,7 @@
 <body style="margin-top: 1em;">
 	<div class="center">
         <div style="text-align: center;">
-            <h3>欢迎访问Activiti Demo，专为优秀的BPMN2.0规范的轻量级工作流引擎Activiti服务</h3>
+            <h3>欢迎访问好友营支教管理系统，</h3>
         </div>
         <div id='portlet-container'></div>
     </div>

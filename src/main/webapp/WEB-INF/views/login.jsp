@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<%@ include file="/common/global.jsp"%>
-	<title>KAD登录页 - 咖啡兔(闫洪磊)</title>
+	<title>好友营支教管理系统登录页</title>
 	<script>
 		var logon = ${not empty user};
 		if (logon) {
@@ -72,7 +72,7 @@
 				<tr>
 					<td>&nbsp;</td>
 					<td>
-						<button type="submit">登录Demo</button>
+						<button type="submit">登录</button>
 					</td>
 				</tr>
 			</table>
