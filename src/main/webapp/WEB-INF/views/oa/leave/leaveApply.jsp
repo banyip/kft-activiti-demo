@@ -64,8 +64,8 @@
 				<td>
 					<input type="text" id="studentName" name="studentName"></input>
 				</td>
-				<td>学校：</td>
-								<td width="100%">学生照片：
+				<td>学生照片：</td>
+								<td>
 				<input type="file" name="imgFile" />
 					</td>
 			</tr>
