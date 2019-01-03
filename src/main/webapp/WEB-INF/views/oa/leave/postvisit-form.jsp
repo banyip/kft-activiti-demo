@@ -46,7 +46,7 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		家长姓名</td>
-		<td width="101" style="width: 76pt" class="style5" name>李大华</td>
+		<td width="101" style="width: 76pt" class="style5" id="relatives[0].name">李大华</td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">家长电话</td>
 		<td colspan="2" width="106" style="width: 80pt" class="style5">
 		12345678910</td>
@@ -93,7 +93,7 @@
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="partly" id="relatives[0].relationship"></td>
-		<td width="101" style="width: 76pt" class="partly" id="relatives[0].name"></td>
+		<td width="101" style="width: 76pt" class="partly" ></td>
 		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
 		<td width="53" style="width: 40pt" class="partly" id="relatives[0].health"></td>
 		<td width="53" style="width: 40pt" class="style14">小学</td>
