@@ -43,8 +43,8 @@ function inserttable() {
 
 function insertrow(classname) {
 	var newnode = $('.'+classname)[0].cloneNode(true);
-    var content = newnode.innerHTML;
-	content = content.replace(/\[0\]/g, "["+ $('.'+classname)[0].chileElementCount + "]");
+    var content = newnode.outerHTML;
+	content = content.replace(/\[0\]/g, "["+ $('.'+classname).length + "]");
 
     $('.'+classname).append(content);
 }
