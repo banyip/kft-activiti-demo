@@ -110,13 +110,11 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
 				$('.partly#' + k ).html(new Date(v).format('yyyy-MM-dd hh:mm'));
             } 
             else if (k == 'relatives') 
-            {
-                var relatives = v.split(";");
+            {                
                 for(var i=0;i<relatives.length;i++)
                 {
-                    var relativeinfo = relatives.split(":");
-                    for(var j=0;j<relativeinfo.length;j++)
-				        $('.partly#relatives['+i+'].relativeinfo['+j+']').html(v);            
+                    for(let key in v[i])
+                        $('.partly#relatives['+i+'].' + key).html(eval('v['+i+'].'+key));            
                 }
             }  else {
 				$('.partly#' + k ).html(v);
