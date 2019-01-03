@@ -129,7 +129,7 @@
 	padding-top: 1px;
 	background: white;
 }
-.style3 {
+.partly {
 	color: black;
 	font-size: 10.0pt;
 	font-weight: 700;

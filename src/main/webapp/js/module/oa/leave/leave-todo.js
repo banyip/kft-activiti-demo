@@ -41,6 +41,20 @@ function inserttable() {
 	}
 }
 
+function insertrow(classname) {
+	var newnode = $('.'+classname)[0].childNodes[0].cloneNode(true);
+    var content = newnode.innerHTML;
+	content = content.replace(/\[0\]/g, "["+ $('.'+classname)[0].chileElementCount + "]");
+
+	if($('.'+classname)[0].childNodes.length <=6){
+    $('.'+classname).append(content);
+
+	}else{
+		alert("最多同时添加5个信息!");
+	}
+}
+
+
 //删除
 function deletetable() {
 	var parent = $('#div_bjbr')[0];
@@ -115,6 +129,7 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
                 {
                     for(let key in v[i])
                         $('td#relatives\\['+i+'\\]\\.' + key+'.partly').html(eval('v['+i+'].'+key));            
+                        insertrow("relative"); 
                 }
             }  else {
 				$('.partly#' + k ).html(v);
