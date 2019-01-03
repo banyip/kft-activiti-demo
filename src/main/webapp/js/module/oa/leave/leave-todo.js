@@ -128,10 +128,8 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
                 for(var i=0;i<v.length;i++)
                 {
                     for(let key in v[i])
-                    {
                         $('td#relatives\\['+i+'\\]\\.' + key+'.partly').html(eval('v['+i+'].'+key));            
-                        insertrow("relative");
-                    } 
+                    insertrow("relative");
                 }
             }  else {
 				$('.partly#' + k ).html(v);
