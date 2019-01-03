@@ -23,15 +23,15 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		姓<span style="mso-spacerun:yes">&nbsp; </span>名</td>
-		<td width="101" style="width: 76pt" class="partly" name="studentName"></td>
+		<td width="101" style="width: 76pt" class="partly" id="studentName"></td>
 		<td width="53" style="width: 40pt" class="style2">性别</td>
-		<td width="53" style="width: 40pt" class="partly" name="sex"></td>
+		<td width="53" style="width: 40pt" class="partly" id="sex"></td>
 		<td width="53" style="width: 40pt" class="style2">民族</td>
 		<td width="53" style="width: 40pt" class="style5" name="nationality">汉</td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">身份证号码</td>
 		<td colspan="2" width="146" style="width: 110pt" class="style5" name="studentId">****</td>
 		<td colspan="2" width="77" style="width: 58pt" class="style4">年级/班别</td>
-		<td width="86" style="width: 65pt" class="style4"><table><tr><td class="partly" name="grade"></td><td class="partly" name="className"></td></tr></table></td>
+		<td width="86" style="width: 65pt" class="style4"><table><tr><td class="partly" id="grade"></td><td class="partly" id="className"></td></tr></table></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
@@ -58,7 +58,7 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		学校名称</td>
-		<td colspan="5" width="313" style="width: 236pt" class="partly" name=""school"></td>
+		<td colspan="5" width="313" style="width: 236pt" class="partly" id=""school"></td>
 		<td colspan="2" width="106" style="width: 80pt" class="style5">学校联系人</td>
 		<td width="101" style="width: 76pt" class="style5">李老师</td>
 		<td colspan="2" width="90" style="width: 68pt" class="style5">联系电话</td>
