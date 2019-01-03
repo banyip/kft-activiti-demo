@@ -102,7 +102,7 @@
 		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
     </tr>
-	<tr height="24" style="mso-height-source:userset;height:18.0pt">
+	<tr height="24" style="mso-height-source:userset;height:18.0pt"  class="relative">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style7">
 		　</td>
 		<td width="101" style="width: 76pt" class="style15">　</td>
