@@ -386,7 +386,7 @@ var handleOpts = {
 			}]
 		},
 
-	hrAudit: {
+	firstaudit: {
 		width: 300,
 		height: 300,
 		open: function(id) {
