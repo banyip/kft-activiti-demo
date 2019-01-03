@@ -108,7 +108,17 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
             // 格式化日期
 			if (k == 'applyTime' || k == 'startTime' || k == 'endTime') {
 				$('.partly#' + k ).html(new Date(v).format('yyyy-MM-dd hh:mm'));
-			} else {
+            } 
+            else if (k == 'relatives') 
+            {
+                var relatives = v.split(";");
+                for(var i=0;i<relatives.length;i++)
+                {
+                    var relativeinfo = relatives.split(":");
+                    for(var j=0;j<relativeinfo.length;j++)
+				        $('.partly#relatives['+i+'].relativeinfo['+j+']').html(v);            
+                }
+            }  else {
 				$('.partly#' + k ).html(v);
 			}
         });
