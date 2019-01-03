@@ -102,18 +102,57 @@
 		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
     </tr>
-	<tr height="24" style="mso-height-source:userset;height:18.0pt"  class="relative">
-		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style7">
-		　</td>
-		<td width="101" style="width: 76pt" class="style15">　</td>
-		<td colspan="4" width="212" style="width: 160pt" class="style7">　</td>
-		<td width="53" style="width: 40pt" class="style15">　</td>
-		<td width="53" style="width: 40pt" class="style16">　</td>
-		<td width="101" style="width: 76pt" class="style17">　</td>
-		<td width="45" style="width: 34pt" class="style18">　</td>
-		<td colspan="3" width="163" style="width: 123pt" class="style7">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
+		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="partly" id="relatives[1].relationship"></td>
+		<td width="101" style="width: 76pt" class="partly" id="relatives[1].name"></td>
+		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
+		<td width="53" style="width: 40pt" class="partly" id="relatives[1].health"></td>
+		<td width="53" style="width: 40pt" class="style14">小学</td>
+		<td width="101" style="width: 76pt" class="style14">务农/外出打工</td>
+		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
+		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
+    </tr>
+ 	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
+		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="partly" id="relatives[2].relationship"></td>
+		<td width="101" style="width: 76pt" class="partly" id="relatives[2].name"></td>
+		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
+		<td width="53" style="width: 40pt" class="partly" id="relatives[2].health"></td>
+		<td width="53" style="width: 40pt" class="style14">小学</td>
+		<td width="101" style="width: 76pt" class="style14">务农/外出打工</td>
+		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
+		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
+    </tr>   
+  	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
+		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="partly" id="relatives[3].relationship"></td>
+		<td width="101" style="width: 76pt" class="partly" id="relatives[3].name"></td>
+		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
+		<td width="53" style="width: 40pt" class="partly" id="relatives[3].health"></td>
+		<td width="53" style="width: 40pt" class="style14">小学</td>
+		<td width="101" style="width: 76pt" class="style14">务农/外出打工</td>
+		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
+		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
+    </tr>
+    	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
+		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="partly" id="relatives[4].relationship"></td>
+		<td width="101" style="width: 76pt" class="partly" id="relatives[4].name"></td>
+		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
+		<td width="53" style="width: 40pt" class="partly" id="relatives[4].health"></td>
+		<td width="53" style="width: 40pt" class="style14">小学</td>
+		<td width="101" style="width: 76pt" class="style14">务农/外出打工</td>
+		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
+		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
+    </tr>
+   	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
+		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="partly" id="relatives[5].relationship"></td>
+		<td width="101" style="width: 76pt" class="partly" id="relatives[5].name"></td>
+		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
+		<td width="53" style="width: 40pt" class="partly" id="relatives[5].health"></td>
+		<td width="53" style="width: 40pt" class="style14">小学</td>
+		<td width="101" style="width: 76pt" class="style14">务农/外出打工</td>
+		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
+		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
+    </tr> 
+    	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td rowspan="11" height="286" width="41" style="height: 221.1pt; width: 31pt; layout-flow: vertical-ideographic;" class="style12">
 		家庭经济情况</td>
 		<td rowspan="6" width="35" style="width: 26pt; layout-flow: vertical-ideographic;" class="style12">
