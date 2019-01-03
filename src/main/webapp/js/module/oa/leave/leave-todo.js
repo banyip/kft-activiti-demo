@@ -46,7 +46,7 @@ function insertrow(classname) {
     var content = newnode.outerHTML;
 	content = content.replace(/\[0\]/g, "["+ $('.'+classname).length + "]");
 
-    $('.'+classname).append(content);
+    $('.'+classname).after(content);
 }
 
 
