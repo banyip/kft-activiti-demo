@@ -23,15 +23,15 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		姓<span style="mso-spacerun:yes">&nbsp; </span>名</td>
-		<td width="101" style="width: 76pt" class="style3" name="studentName"></td>
+		<td width="101" style="width: 76pt" class="partly" name="studentName"></td>
 		<td width="53" style="width: 40pt" class="style2">性别</td>
-		<td width="53" style="width: 40pt" class="style3" name="sex"></td>
+		<td width="53" style="width: 40pt" class="partly" name="sex"></td>
 		<td width="53" style="width: 40pt" class="style2">民族</td>
 		<td width="53" style="width: 40pt" class="style5" name="nationality">汉</td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">身份证号码</td>
 		<td colspan="2" width="146" style="width: 110pt" class="style5" name="studentId">****</td>
 		<td colspan="2" width="77" style="width: 58pt" class="style4">年级/班别</td>
-		<td width="86" style="width: 65pt" class="style4"><table><tr><td class="style3" name="grade"></td><td class="style3" name="className"></td></tr></table></td>
+		<td width="86" style="width: 65pt" class="style4"><table><tr><td class="partly" name="grade"></td><td class="partly" name="className"></td></tr></table></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
@@ -58,7 +58,7 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		学校名称</td>
-		<td colspan="5" width="313" style="width: 236pt" class="style3" name=""school"></td>
+		<td colspan="5" width="313" style="width: 236pt" class="partly" name=""school"></td>
 		<td colspan="2" width="106" style="width: 80pt" class="style5">学校联系人</td>
 		<td width="101" style="width: 76pt" class="style5">李老师</td>
 		<td colspan="2" width="90" style="width: 68pt" class="style5">联系电话</td>
@@ -94,34 +94,34 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style5">
 		父</td>
-		<td width="101" style="width: 76pt" class="style3">李大华</td>
+		<td width="101" style="width: 76pt" class="partly">李大华</td>
 		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
-		<td width="53" style="width: 40pt" class="style3">较好</td>
+		<td width="53" style="width: 40pt" class="partly">较好</td>
 		<td width="53" style="width: 40pt" class="style14">小学</td>
 		<td width="101" style="width: 76pt" class="style14">务农/外出打工</td>
-		<td width="45" style="width: 34pt" class="style3">1.5万</td>
+		<td width="45" style="width: 34pt" class="partly">1.5万</td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style5">
 		母</td>
-		<td width="101" style="width: 76pt" class="style3">***</td>
+		<td width="101" style="width: 76pt" class="partly">***</td>
 		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
-		<td width="53" style="width: 40pt" class="style3">***</td>
-		<td width="53" style="width: 40pt" class="style3">***</td>
-		<td width="101" style="width: 76pt" class="style3">***</td>
-		<td width="45" style="width: 34pt" class="style3">***</td>
+		<td width="53" style="width: 40pt" class="partly">***</td>
+		<td width="53" style="width: 40pt" class="partly">***</td>
+		<td width="101" style="width: 76pt" class="partly">***</td>
+		<td width="45" style="width: 34pt" class="partly">***</td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5">残疾补助</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style5">
 		弟</td>
-		<td width="101" style="width: 76pt" class="style3">***</td>
+		<td width="101" style="width: 76pt" class="partly">***</td>
 		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
-		<td width="53" style="width: 40pt" class="style3">***</td>
-		<td width="53" style="width: 40pt" class="style3">***</td>
-		<td width="101" style="width: 76pt" class="style3">***</td>
-		<td width="45" style="width: 34pt" class="style3">***</td>
+		<td width="53" style="width: 40pt" class="partly">***</td>
+		<td width="53" style="width: 40pt" class="partly">***</td>
+		<td width="101" style="width: 76pt" class="partly">***</td>
+		<td width="45" style="width: 34pt" class="partly">***</td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
