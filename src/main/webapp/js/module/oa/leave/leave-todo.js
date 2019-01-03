@@ -345,7 +345,7 @@ var handleOpts = {
 		},
 
 		postvisit: {
-			width: 1000,
+			width: 1300,
 			height: 770,
 			open: function(id, taskId) {
 				var dialog = this;
