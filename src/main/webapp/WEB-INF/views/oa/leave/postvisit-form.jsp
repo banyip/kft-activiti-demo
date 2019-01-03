@@ -92,8 +92,7 @@
 		<td width="45" style="width: 34pt" class="style2">年收入</td>
 		<td colspan="3" width="163" style="width: 123pt" class="style4">其他资助/低保</td>
     </tr>
-    <div class="relative">
-	<tr height="24" style="mso-height-source:userset;height:18.0pt">
+	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="partly" id="relatives[0].relationship"></td>
 		<td width="101" style="width: 76pt" class="partly" id="relatives[0].name"></td>
 		<td colspan="4" width="212" style="width: 160pt" class="style5">***</td>
@@ -103,7 +102,6 @@
 		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5">低保120元/月</td>
     </tr>
-</div>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style7">
 		　</td>

@@ -42,16 +42,11 @@ function inserttable() {
 }
 
 function insertrow(classname) {
-	var newnode = $('.'+classname)[0].childNodes[0].cloneNode(true);
+	var newnode = $('.'+classname)[0].cloneNode(true);
     var content = newnode.innerHTML;
 	content = content.replace(/\[0\]/g, "["+ $('.'+classname)[0].chileElementCount + "]");
 
-	if($('.'+classname)[0].childNodes.length <=6){
     $('.'+classname).append(content);
-
-	}else{
-		alert("最多同时添加5个信息!");
-	}
 }
 
 
