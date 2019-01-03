@@ -111,7 +111,7 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
             } 
             else if (k == 'relatives') 
             {                
-                for(var i=0;i<relatives.length;i++)
+                for(var i=0;i<v.length;i++)
                 {
                     for(let key in v[i])
                         $('.partly#relatives['+i+'].' + key).html(eval('v['+i+'].'+key));            
