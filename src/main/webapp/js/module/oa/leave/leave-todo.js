@@ -95,6 +95,31 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
     });
 }
 
+
+/**
+ * 加载详细信息，同时读取流程任务变量
+ * @param {Object} id
+ */
+function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
+    var dialog = this;
+    $.getJSON(ctx + '/oa/leave/detail-with-vars/' + leaveId + "/" + taskId, function(data) {
+        detail = data;
+        $.each(data, function(k, v) {
+            // 格式化日期
+			if (k == 'applyTime' || k == 'startTime' || k == 'endTime') {
+				$('.partly#' + k ).html(new Date(v).format('yyyy-MM-dd hh:mm'));
+			} else {
+				$('.partly#' + k ).html(v);
+			}
+        });
+		if ($.isFunction(callback)) {
+			callback(data);
+		}
+    });
+}
+
+
+
 /**
  * 完成任务
  * @param {Object} taskId
@@ -224,76 +249,143 @@ var handleOpts = {
 					$(this).dialog('close');
 				}
 			}]
-		},
-	firstaudit: {
-		width: 300,
-		height: 300,
-		open: function(id) {
-			
-			// 打开对话框的时候读取请假内容
-			loadDetail.call(this, id);
-		},
-		btns: [{
-			text: '同意',
-			click: function() {
-				var taskId = $(this).data('taskId');
+        },
+        
+		familyinput: {
+			width: 1000,
+			height: 770,
+			open: function(id, taskId) {
+				var dialog = this;
 				
-				// 设置流程变量
-				complete(taskId, [{
-					key: 'deptLeaderPass',
-					value: true,
-					type: 'B'
-				}]);
-			}
-		}, {
-			text: '驳回',
-			click: function() {
-				var taskId = $(this).data('taskId');
+				$('#startTime,#endTime', this).datetimepicker({
+		            stepMinute: 5
+		        });
 				
-				$('<div/>', {
-					title: '填写驳回理由',
-					html: "<textarea id='leaderBackReason' style='width: 250px; height: 60px;'></textarea>"
-				}).dialog({
-					modal: true,
-					open: function() {
-						
-					},
-					buttons: [{
-						text: '驳回',
-						click: function() {
-							var leaderBackReason = $('#leaderBackReason').val();
-							if (leaderBackReason == '') {
-								alert('请输入驳回理由！');
-								return;
-							}
-							
-							// 设置流程变量
-							complete(taskId, [{
-								key: 'deptLeaderPass',
-								value: false,
-								type: 'B'
-							}, {
-								key: 'leaderBackReason',
-								value: leaderBackReason,
-								type: 'S'
-							}]);
-						}
-					}, {
-						text: '取消',
-						click: function() {
-							$(this).dialog('close');
-							$('#deptLeaderAudit').dialog('close');
-						}
-					}]
+				// 打开对话框的时候读取请假内容
+				loadDetailWithTaskVars.call(this, id, taskId, function(data) {
+					// 显示驳回理由
+					$('.info').show().html("<b>领导：</b>" + (data.variables.leaderBackReason || "") + "<br/><b>HR：</b>" + (data.variables.hrBackReason || ""));
+					
+					// 读取原请假信息
+					$('#modifyApplyContent #leaveType option[value=' + data.leaveType + ']').attr('selected', true);
+					$('#modifyApplyContent #startTime').val(new Date(data.startTime).format('yyyy-MM-dd hh:mm'));
+					$('#modifyApplyContent #endTime').val(new Date(data.endTime).format('yyyy-MM-dd hh:mm'));
+					$('#modifyApplyContent #reason').val(data.reason);
 				});
-			}
-		}, {
-			text: '取消',
-			click: function() {
-				$(this).dialog('close');
-			}
-		}]
-	},
+				
+				// 切换状态
+				$("#radio").buttonset().change(function(){
+					var type = $(':radio[name=reApply]:checked').val();
+					if (type == 'true') {
+						$('#modifyApplyContent').show();
+					} else {
+						$('#modifyApplyContent').hide();
+					}
+				});
+			},
+			btns: [{
+				text: '提交',
+				click: function() {
+					var taskId = $(this).data('taskId');
+					var reApply = $(':radio[name=reApply]:checked').val();
+					
+			        var content2 = "";
+			        for (let i = 0; i<$('#div_bjbr').find(".yltable").length ; i++ ){
+			            var yltable = $('#div_bjbr').find(".yltable")[i];
+			            var content1 = "";
+			            for (let index = 0; index <  $(yltable).find(".abc").length; index++) {
+			                content1 =  content1 + ":" + $(yltable).find(".abc")[index].value ;
+			                
+			            }
+			            content1=content1.substr(1);
+			            content2=content2 + ";" +content1;
+			        }
+			        content2=content2.substr(1);
+			        
+			        $('#relative')[0].value = content2;
+			        $('#relative')[0].value = content2;
+			        alert($('#relative')[0].value);
+					
+					
+					// 提交的时候把变量
+					complete(taskId, [{
+						key: 'reApply',
+						value: reApply,
+						type: 'B'
+					}, {
+						key: 'relatives',
+						value: $('#relative')[0].value,
+						type: 'S'
+					}
+					]);
+				}
+			},{
+				text: '取消',
+				click: function() {
+					$(this).dialog('close');
+				}
+			}]
+		},
+
+		postvisit: {
+			width: 1000,
+			height: 770,
+			open: function(id, taskId) {
+				var dialog = this;
+				
+				$('#startTime,#endTime', this).datetimepicker({
+		            stepMinute: 5
+		        });
+				
+				// 打开对话框的时候读取请假内容
+				loadPartlyDetailWithTaskVars.call(this, id, taskId, null);
+				
+
+			},
+			btns: [{
+				text: '提交',
+				click: function() {
+					var taskId = $(this).data('taskId');
+					var reApply = $(':radio[name=reApply]:checked').val();
+					
+			        var content2 = "";
+			        for (let i = 0; i<$('#div_bjbr').find(".yltable").length ; i++ ){
+			            var yltable = $('#div_bjbr').find(".yltable")[i];
+			            var content1 = "";
+			            for (let index = 0; index <  $(yltable).find(".abc").length; index++) {
+			                content1 =  content1 + ":" + $(yltable).find(".abc")[index].value ;
+			                
+			            }
+			            content1=content1.substr(1);
+			            content2=content2 + ";" +content1;
+			        }
+			        content2=content2.substr(1);
+			        
+			        $('#relative')[0].value = content2;
+			        $('#relative')[0].value = content2;
+			        alert($('#relative')[0].value);
+					
+					
+					// 提交的时候把变量
+					complete(taskId, [{
+						key: 'reApply',
+						value: reApply,
+						type: 'B'
+					}, {
+						key: 'relatives',
+						value: $('#relative')[0].value,
+						type: 'S'
+					}
+					]);
+				}
+			},{
+				text: '取消',
+				click: function() {
+					$(this).dialog('close');
+				}
+			}]
+		},
+
 	hrAudit: {
 		width: 300,
 		height: 300,

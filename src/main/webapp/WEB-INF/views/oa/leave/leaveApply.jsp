@@ -51,7 +51,7 @@
 				<td>申请人姓名：</td>
 				<td><input type="text" id="applicantName" name="applicantName" /></td>
 				<td>身份证号：</td>
-				<td><input type="text" id="company" name="company" /></td>
+				<td><input type="text" id="applicantId" name="applicantId" /></td>
 				
 			</tr>
 			<tr>

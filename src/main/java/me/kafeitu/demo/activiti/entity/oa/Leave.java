@@ -34,9 +34,28 @@ public class Leave extends IdEntity implements Serializable {
     private static final long serialVersionUID = 1L;
     private String processInstanceId;
     private String picture;
-    
+    private String applicantId;
+    private String studentId;
     
     @Column
+    public String getApplicantId() {
+		return applicantId;
+	}
+
+	public void setApplicantId(String applicantId) {
+		this.applicantId = applicantId;
+	}
+
+	@Column
+	public String getStudentId() {
+		return studentId;
+	}
+
+	public void setStudentId(String studentId) {
+		this.studentId = studentId;
+	}
+
+	@Column
     public String getPicture() {
 		return picture;
 	}

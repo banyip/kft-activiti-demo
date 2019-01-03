@@ -44,7 +44,20 @@
 			parent.removeChild(parent.lastChild);
 		}
     }
-    
+
+    	//删除
+	function test() {
+        var parent = $('#div_bjbr')[0];
+        var yltable = $('#div_bjbr').find(".yltable");
+        var ytd = $($(yltable).find(".cde"));
+//		for (let index = 0; index <  ytd.length; index++) {
+                
+               $('.cde#test1').html("get it zero")
+                
+  //          }
+    }
+
+
     function show(){
         var content=$('')
     }
@@ -224,8 +237,8 @@
 											</td>
 											<td width="130"><div id="beiJuBaoLegalPersonTip"></div></td>
 											<td width="130" bgcolor="#eef0f7"></td>
-											<td></td>
-											<td width="130"><div></div></td>
+											<td class="cde" id=test2></td>
+											<td width="130" class="cde" id=test1>test1</td>
 										</tr>
 									</TBODY>
 								</table>
@@ -237,7 +250,9 @@
 							value="新 增" style="width:60px; height:24px;"
 							onclick="inserttable()" />      <input
 							type="button" name="button" value="删 除"
-							style="width:60px; height:24px;" onclick="deletetable()" /></td>
+							style="width:60px; height:24px;" onclick="deletetable()" /><input type="button" name="button"
+							value="新 增" style="width:60px; height:24px;"
+							onclick="test()" /> </td>
 					</tr>
 				</table>
 			</form>
