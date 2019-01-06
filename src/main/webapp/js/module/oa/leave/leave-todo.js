@@ -371,7 +371,7 @@ var handleOpts = {
                     ];
                     $.each($('.student'),function()
                         {
-                            variables.append({
+                            variables.push({
                                 key: this.id,
                                 value: this.value,
                                 type: 'S'
