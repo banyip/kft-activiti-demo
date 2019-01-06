@@ -364,20 +364,21 @@ var handleOpts = {
 				click: function() {
 					var taskId = $(this).data('taskId');
 					var reApply = $(':radio[name=reApply]:checked').val();
-					
-					
-					
-					// 提交的时候把变量
-					complete(taskId, [{
+                    var variables = [{
 						key: 'reApply',
 						value: reApply,
 						type: 'B'
-					}, {
+					}
+					];
+                    variables.append({
 						key: 'leave_StudentId',
 						value: $('#StudentId')[0].value,
 						type: 'S'
-					}
-					]);
+					});
+					
+					
+					// 提交的时候把变量
+					complete(taskId, variables);
 				}
 			},{
 				text: '取消',
