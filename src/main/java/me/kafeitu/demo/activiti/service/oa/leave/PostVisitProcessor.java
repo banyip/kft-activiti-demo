@@ -59,7 +59,9 @@ public class PostVisitProcessor implements TaskListener {
 		        params[0] = String.class;
 		        Method m = clazz.getDeclaredMethod("set"+key, params);
 		        // 设置参数
-		        m.invoke(leave, delegateTask.getVariable(key));
+		        Object[] p = new Object[1];
+		        p[0] = delegateTask.getVariable(key);
+		        m.invoke(leave, p);
 				}
 				catch(Exception e)
 				{
@@ -67,7 +69,6 @@ public class PostVisitProcessor implements TaskListener {
 				}
 				logger.debug("走访信息保存成功："+key);
 			}
-			logger.debug("走访信息保存中："+variableNames);
 		}
 
 /*        		
