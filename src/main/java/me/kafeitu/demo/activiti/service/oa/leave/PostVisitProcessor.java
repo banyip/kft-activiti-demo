@@ -45,6 +45,7 @@ public class PostVisitProcessor implements TaskListener {
         Leave leave = leaveManager.getLeave(new Long(processInstance.getBusinessKey()));
         Set<String> variableNames = delegateTask.getVariableNames();
 
+        logger.debug("走访信息保存中："+variableNames);
 		for (String key : variableNames) {
 			if(key.indexOf("leave_")==0)
 			{
@@ -64,7 +65,9 @@ public class PostVisitProcessor implements TaskListener {
 				{
 					logger.error("走访信息保存失败：", e);
 				}
+				logger.debug("走访信息保存成功："+key);
 			}
+			logger.debug("走访信息保存中："+variableNames);
 		}
 
 /*        		
