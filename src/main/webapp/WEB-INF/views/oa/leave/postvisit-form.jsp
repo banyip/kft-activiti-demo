@@ -29,7 +29,7 @@
 		<td width="53" style="width: 40pt" class="style2">民族</td>
 		<td width="53" style="width: 40pt" class="style5" name="nationality">汉</td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">身份证号码</td>
-		<td colspan="2" width="146" style="width: 110pt" class="style5" name="studentId"><input class=toinput id=leave_StudentId name="leave_studentId"></input></td>
+		<td colspan="2" width="146" style="width: 110pt" class="style5" ><input class=toinput id=leave_StudentId name="studentId"></input></td>
 		<td colspan="2" width="77" style="width: 58pt" class="style4">年级/班别</td>
 		<td width="86" style="width: 65pt" class="style4"><table><tr><td class=style4><input class="toinput" id="grade"></input></td>
 						<td class="style4" id="className"></td></tr></table></td>
