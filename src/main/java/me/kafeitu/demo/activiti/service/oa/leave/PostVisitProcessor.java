@@ -5,6 +5,8 @@ import org.activiti.engine.RuntimeService;
 import org.activiti.engine.delegate.DelegateTask;
 import org.activiti.engine.delegate.TaskListener;
 import org.activiti.engine.runtime.ProcessInstance;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,6 +28,8 @@ public class PostVisitProcessor implements TaskListener {
 
     private static final long serialVersionUID = 1L;
 
+    private Logger logger = LoggerFactory.getLogger(getClass());
+    
     @Autowired
     LeaveManager leaveManager;
 
@@ -58,7 +62,7 @@ public class PostVisitProcessor implements TaskListener {
 				}
 				catch(Exception e)
 				{
-					e.printStackTrace();
+					logger.error("走访信息保存失败：", e);
 				}
 			}
 		}
