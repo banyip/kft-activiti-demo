@@ -820,6 +820,11 @@
         //var ytd = $($(yltable).find(".cde"));
 //		for (let index = 0; index <  ytd.length; index++) {
                 
+                    $.each($('.student'),function()
+                    {
+                        alert(this.val());
+                    })
+               
                $('.partly#relatives\\[0\\]\\.name').html("get it zero")
                $('.cde#test1').html("get it one") 
   //          }
@@ -1056,7 +1061,7 @@
 		<td width="53" style="width: 40pt" class="style2">民族</td>
 		<td width="53" style="width: 40pt" class="style5" name="nationality">汉</td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">身份证号码</td>
-		<td colspan="2" width="146" style="width: 110pt" class="style5" name="studentId">****</td>
+		<td colspan="2" width="146" style="width: 110pt" class="style5" name="studentId"><input type=text class=student name=leave_StudentId id=leave_StudentId value=440></input></td>
 		<td colspan="2" width="77" style="width: 58pt" class="style4">年级/班别</td>
 		<td width="86" style="width: 65pt" class="style4"><table><tr><td class="partly" id="grade"></td><td class="partly" id="className"></td></tr></table></td>
 	</tr>
