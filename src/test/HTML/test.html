@@ -774,6 +774,11 @@
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <!--表单验证样式表-->
 <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+<script src="js/jquery-ui-1.9.2.min.js" type="text/javascript"></script>
+ 
+<script src="js/timepicker/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
+<script src="js/i18n/jquery-ui-date_time-picker-zh-CN.js" type="text/javascript"></script>
+
 <script type="text/javascript">
 
 Date.prototype.format = function(format) {
@@ -796,7 +801,11 @@ Date.prototype.format = function(format) {
 
     $(function() {
 
-        $('#leave_StudentId').val(new Date().format("yyyy-MM-dd hh:mm:ss"));
+        $('#leave_StudentId').datetimepicker({
+            stepMinute: 5
+   
+        });
+        $('#leave_StudentId').datetimepicker('setDate', new Date());
 
     	
     });
