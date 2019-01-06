@@ -369,7 +369,7 @@ var handleOpts = {
 						type: 'B'
 					}
                     ];
-                    $.each($('.student'),function()
+                    $.each($('.leave'),function()
                         {
                             variables.push({
                                 key: this.classname +"_" + this.id,

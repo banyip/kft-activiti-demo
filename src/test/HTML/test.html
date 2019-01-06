@@ -820,9 +820,20 @@
         //var ytd = $($(yltable).find(".cde"));
 //		for (let index = 0; index <  ytd.length; index++) {
                 
+                    var variables = [{
+						key: 'reApply',
+						value: 'abc',
+						type: 'B'
+					}
+                    ];
                     $.each($('.student'),function()
                     {
-                        alert(this.val());
+                                variables.push({
+                                key: this.id,
+                                value: this.value,
+                                type: 'S'
+                            });
+                    alert(variables);
                     })
                
                $('.partly#relatives\\[0\\]\\.name').html("get it zero")

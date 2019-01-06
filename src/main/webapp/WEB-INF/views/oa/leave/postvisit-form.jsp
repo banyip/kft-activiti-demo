@@ -29,7 +29,7 @@
 		<td width="53" style="width: 40pt" class="style2">民族</td>
 		<td width="53" style="width: 40pt" class="style5" name="nationality">汉</td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">身份证号码</td>
-		<td colspan="2" width="146" style="width: 110pt" class="style5" name="studentId"><input class=student id=StudentId name="studentId"></input></td>
+		<td colspan="2" width="146" style="width: 110pt" class="style5" name="studentId"><input class=leave id=StudentId name="studentId"></input></td>
 		<td colspan="2" width="77" style="width: 58pt" class="style4">年级/班别</td>
 		<td width="86" style="width: 65pt" class="style4"><table><tr><td class="partly" id="grade"></td><td class="partly" id="className"></td></tr></table></td>
 	</tr>
@@ -37,9 +37,9 @@
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		家庭住址</td>
 		<td colspan="5" width="313" style="width: 236pt" class="style5">
-		<input class=student id=Address name="Address"></input></td>
+		<input class=leave id=Address name="Address"></input></td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">学生电话/QQ</td>
-		<td colspan="2" width="146" style="width: 110pt" class="style7"><input class=student id=StudentContactNo name="StudentContactNo"></input>　</td>
+		<td colspan="2" width="146" style="width: 110pt" class="style7"><input class=leave id=StudentContactNo name="StudentContactNo"></input>　</td>
 		<td colspan="3" width="163" style="width: 123pt" class="style4">是否住校： □是 
 		□否</td>
 	</tr>
