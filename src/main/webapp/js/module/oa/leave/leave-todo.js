@@ -320,8 +320,7 @@ var handleOpts = {
 			        
 			        $('#relative')[0].value = content2;
 			        $('#relative')[0].value = content2;
-			        alert($('#relative')[0].value);
-					
+
 					
 					// 提交的时候把变量
 					complete(taskId, [{
@@ -372,7 +371,7 @@ var handleOpts = {
                     $.each($('.leave'),function()
                         {
                             variables.push({
-                                key: this.classname +"_" + this.id,
+                                key: this.className +"_" + this.id,
                                 value: this.value,
                                 type: 'S'
                             });
