@@ -15,10 +15,30 @@
     <script src="${ctx }/js/common/plugins/jui/extends/timepicker/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
 	<script src="${ctx }/js/common/plugins/jui/extends/i18n/jquery-ui-date_time-picker-zh-CN.js" type="text/javascript"></script>
     <script type="text/javascript">
+    Date.prototype.format = function(format) {
+        var o = {
+            "M+": this.getMonth() + 1, //month 
+            "d+": this.getDate(), //day 
+            "h+": this.getHours(), //hour 
+            "m+": this.getMinutes(), //minute 
+            "s+": this.getSeconds(), //second 
+            "q+": Math.floor((this.getMonth() + 3) / 3), //quarter 
+            "S": this.getMilliseconds() //millisecond 
+        }
+        if (/(y+)/.test(format)) 
+            format = format.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+        for (var k in o) 
+            if (new RegExp("(" + k + ")").test(format)) 
+                format = format.replace(RegExp.$1, RegExp.$1.length == 1 ? o[k] : ("00" + o[k]).substr(("" + o[k]).length));
+        return format;
+    }
     $(function() {
     	$('#startTime,#endTime,#applyTime').datetimepicker({
             stepMinute: 5
         });
+        $('#applyTime').val(new Date().format("yyyy-MM-dd hh:mm:ss"));
+
+    	
     });
     </script>
 </head>
@@ -146,7 +166,7 @@
 
 			<tr>
 				<td width="100%">申请时间：
-				<input type="text" id="applyTime"  name="applyTime" />
+				<input type="text" id="applyTime"  name="applyTime" / value=>
 					</td>
 			</tr>
 
