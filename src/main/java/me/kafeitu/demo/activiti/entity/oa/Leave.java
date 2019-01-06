@@ -37,7 +37,18 @@ public class Leave extends IdEntity implements Serializable {
     private String applicantId;
     private String studentId;
     
+    private String studentContactNo;
+    
     @Column
+    public String getStudentContactNo() {
+		return studentContactNo;
+	}
+
+	public void setStudentContactNo(String studentContactNo) {
+		this.studentContactNo = studentContactNo;
+	}
+
+	@Column
     public String getApplicantId() {
 		return applicantId;
 	}
