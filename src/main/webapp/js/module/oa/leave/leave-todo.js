@@ -368,10 +368,10 @@ var handleOpts = {
 						type: 'B'
 					}
                     ];
-                    $.each($('.leave'),function()
+                    $.each($('.toinput'),function()
                         {
                             variables.push({
-                                key: this.className +"_" + this.id,
+                                key: this.id,
                                 value: this.value,
                                 type: 'S'
                             });

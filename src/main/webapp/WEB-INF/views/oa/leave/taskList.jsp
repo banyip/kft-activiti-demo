@@ -187,6 +187,28 @@
 	padding-top: 1px;
 	background: white;
 }
+
+.toinput {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
 .style6 {
 	color: red;
 	font-size: 10.0pt;

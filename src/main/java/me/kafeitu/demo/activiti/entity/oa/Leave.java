@@ -38,8 +38,58 @@ public class Leave extends IdEntity implements Serializable {
     private String studentId;
     
     private String studentContactNo;
+    private String parentName;
+    private String parentContactNo;
+    private int otherSponse;
+    private String schoolContactPerson;
+    private String schoolContactNo;
     
     @Column
+    public String getParentName() {
+		return parentName;
+	}
+
+	public void setParentName(String parentName) {
+		this.parentName = parentName;
+	}
+
+	@Column
+	public String getParentContactNo() {
+		return parentContactNo;
+	}
+
+	public void setParentContactNo(String parentContactNo) {
+		this.parentContactNo = parentContactNo;
+	}
+
+	@Column
+	public int getOtherSponse() {
+		return otherSponse;
+	}
+
+	public void setOtherSponse(int otherSponse) {
+		this.otherSponse = otherSponse;
+	}
+
+	@Column
+	public String getSchoolContactPerson() {
+		return schoolContactPerson;
+	}
+
+	public void setSchoolContactPerson(String schoolContactPerson) {
+		this.schoolContactPerson = schoolContactPerson;
+	}
+
+	@Column
+	public String getSchoolContactNo() {
+		return schoolContactNo;
+	}
+
+	public void setSchoolContactNo(String schoolContactNo) {
+		this.schoolContactNo = schoolContactNo;
+	}
+
+	@Column
     public String getStudentContactNo() {
 		return studentContactNo;
 	}
