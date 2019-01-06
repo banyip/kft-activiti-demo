@@ -94,53 +94,53 @@
 		<td colspan="3" width="163" style="width: 123pt" class="style4">其他资助/低保</td>
     </tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
-		<td colspan="2" height="24" style="height: 18.0pt; " class="style4"><input class="input" id="relatives[0].relationship"></input></td>
-		<td width="101" style="width: 76pt" class="partly" id="relatives[0].name"></td>
-		<td colspan="4" width="212" style="width: 160pt" class=style4><input class="toinput" id=relatives[0].relativeId></input></td>
-		<td width="53" style="width: 40pt" class=style4><input class="toinput" id="relatives[0].health"></input></td>
+		<td colspan="2" height="24" style="height: 18.0pt; " class="style4"><input class="input" name="relatives[0].relationship"></input></td>
+		<td width="101" style="width: 76pt" class="toinput" name="relatives[0].name"></td>
+		<td colspan="4" width="212" style="width: 160pt" class=style4><input class="toinput" name=relatives[0].relativeId></input></td>
+		<td width="53" style="width: 40pt" class=style4><input class="toinput" name="relatives[0].health"></input></td>
 		<td style="width: 30pt" class="style14">&nbsp;</td>
 		<td width="101" style="width: 76pt" class="style14">&nbsp;</td>
-		<td width="45" style="width: 34pt"><input type=number class="toinput" id="relatives.annualIncom"></input></td>
+		<td width="45" style="width: 34pt"><input type=number class="toinput" name="relatives.annualIncom"></input></td>
 		<td colpan="3" width="163" style="width: 123pt" class="style5">&nbsp;</td>
     </tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
-		<td colspan="2" height="24" style="height: 18.0pt; " class="partly" id="relatives[1].relationship"></td>
-		<td width="101" style="width: 76pt" class="partly" id="relatives[1].name"></td>
-		<td colspan="4" width="212" style="width: 160pt"  class="partly" id=relatives[0].relativeId></td>
-		<td width="53" style="width: 40pt" class="partly" id="relatives[1].health"></td>
+		<td colspan="2" height="24" style="height: 18.0pt; " class="toinput" name="relatives[1].relationship"></td>
+		<td width="101" style="width: 76pt" class="toinput" name="relatives[1].name"></td>
+		<td colspan="4" width="212" style="width: 160pt"  class="toinput" id=relatives[0].relativeId></td>
+		<td width="53" style="width: 40pt" class="toinput" name="relatives[1].health"></td>
 		<td style="width: 30pt" class="style14">&nbsp;</td>
 		<td width="101" style="width: 76pt" class="style14">&nbsp;</td>
-		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
+		<td width="45" style="width: 34pt" class="toinput" name="relatives.annualIncom"></td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5">&nbsp;</td>
     </tr>
  	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
-		<td colspan="2" height="24" style="height: 18.0pt; " class="partly" id="relatives[2].relationship"></td>
-		<td width="101" style="width: 76pt" class="partly" id="relatives[2].name"></td>
+		<td colspan="2" height="24" style="height: 18.0pt; " class="toinput" name="relatives[2].relationship"></td>
+		<td width="101" style="width: 76pt" class="toinput" name="relatives[2].name"></td>
 		<td colspan="4" width="212" style="width: 160pt" class="style5">&nbsp;</td>
-		<td width="53" style="width: 40pt" class="partly" id="relatives[2].health"></td>
+		<td width="53" style="width: 40pt" class="toinput" name="relatives[2].health"></td>
 		<td style="width: 30pt" class="style14">&nbsp;</td>
 		<td width="101" style="width: 76pt" class="style14">&nbsp;</td>
-		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
+		<td width="45" style="width: 34pt" class="toinput" name="relatives.annualIncom"></td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5">&nbsp;</td>
     </tr>   
   	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
-		<td colspan="2" height="24" style="height: 18.0pt; " class="partly" id="relatives[3].relationship"></td>
-		<td width="101" style="width: 76pt" class="partly" id="relatives[3].name"></td>
+		<td colspan="2" height="24" style="height: 18.0pt; " class="toinput" name="relatives[3].relationship"></td>
+		<td width="101" style="width: 76pt" class="toinput" name="relatives[3].name"></td>
 		<td colspan="4" width="212" style="width: 160pt" class="style5">&nbsp;</td>
-		<td width="53" style="width: 40pt" class="partly" id="relatives[3].health"></td>
+		<td width="53" style="width: 40pt" class="toinput" name="relatives[3].health"></td>
 		<td style="width: 30pt" class="style14">&nbsp;</td>
 		<td width="101" style="width: 76pt" class="style14">&nbsp;</td>
-		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
+		<td width="45" style="width: 34pt" class="toinput" name="relatives.annualIncom"></td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5"></td>
     </tr>
     	<tr height="24" style="mso-height-source:userset;height:18.0pt" class="relative">
-		<td colspan="2" height="24" style="height: 18.0pt; " class="partly" id="relatives[4].relationship"></td>
-		<td width="101" style="width: 76pt" class="partly" id="relatives[4].name"></td>
+		<td colspan="2" height="24" style="height: 18.0pt; " class="toinput" name="relatives[4].relationship"></td>
+		<td width="101" style="width: 76pt" class="toinput" name="relatives[4].name"></td>
 		<td colspan="4" width="212" style="width: 160pt" class="style5">&nbsp;</td>
-		<td width="53" style="width: 40pt" class="partly" id="relatives[4].health"></td>
+		<td width="53" style="width: 40pt" class="toinput" name="relatives[4].health"></td>
 		<td style="width: 30pt" class="style14">&nbsp;</td>
 		<td width="101" style="width: 76pt" class="style14">&nbsp;</td>
-		<td width="45" style="width: 34pt" class="partly" id="relatives.annualIncom"></td>
+		<td width="45" style="width: 34pt" class="toinput" name="relatives.annualIncom"></td>
 		<td colspan="3" width="163" style="width: 123pt" class="style5">&nbsp;</td>
     </tr>
    	<tr height="26" style="mso-height-source:userset;height:20.1pt">
