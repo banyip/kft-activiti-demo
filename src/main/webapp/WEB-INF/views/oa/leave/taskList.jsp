@@ -189,7 +189,7 @@
 }
 
 .toinput {
-	width:100%;
+	width:90%;
 	color: black;
 	font-style: normal;
 
