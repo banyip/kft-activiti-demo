@@ -123,10 +123,10 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
                 for(var i=0;i<v.length;i++)
                 {
                     for(let key in v[i])
-                        $('input[name=relatives\\['+i+'\\]\\.' + key).html(eval('v['+i+'].'+key));               
+                        $('input[name=relatives\\['+i+'\\]\\.' + key).val(eval('v['+i+'].'+key));               
                 }
             }  else {
-				$('input[name=' + k + '].toinput' ).html(v);
+				$('input[name=' + k + '].toinput' ).val(v);
 			}
         });
 		if ($.isFunction(callback)) {
