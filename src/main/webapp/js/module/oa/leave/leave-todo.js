@@ -372,7 +372,7 @@ var handleOpts = {
                     $.each($('.student'),function()
                         {
                             variables.push({
-                                key: this.id,
+                                key: this.classname +"_" + this.id,
                                 value: this.value,
                                 type: 'S'
                             });
