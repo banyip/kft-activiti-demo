@@ -173,7 +173,7 @@
 	font-style: normal;
 	text-decoration: none;
 	font-family: 宋体;
-	text-align: center;
+	text-align: left;
 	vertical-align: middle;
 	white-space: normal;
 	border-left: .5pt solid windowtext;
@@ -189,6 +189,7 @@
 }
 
 .toinput {
+	width:100%;
 	color: black;
 	font-style: normal;
 
