@@ -365,22 +365,6 @@ var handleOpts = {
 					var taskId = $(this).data('taskId');
 					var reApply = $(':radio[name=reApply]:checked').val();
 					
-			        var content2 = "";
-			        for (let i = 0; i<$('#div_bjbr').find(".yltable").length ; i++ ){
-			            var yltable = $('#div_bjbr').find(".yltable")[i];
-			            var content1 = "";
-			            for (let index = 0; index <  $(yltable).find(".abc").length; index++) {
-			                content1 =  content1 + ":" + $(yltable).find(".abc")[index].value ;
-			                
-			            }
-			            content1=content1.substr(1);
-			            content2=content2 + ";" +content1;
-			        }
-			        content2=content2.substr(1);
-			        
-			        $('#relative')[0].value = content2;
-			        $('#relative')[0].value = content2;
-			        alert($('#relative')[0].value);
 					
 					
 					// 提交的时候把变量
