@@ -62,6 +62,8 @@ public class PostVisitProcessor implements TaskListener {
 		        Object[] p = new Object[1];
 		        p[0] = delegateTask.getVariable(key);
 		        m.invoke(leave, p);
+		        logger.debug("走访信息保存内容："+p[0]);
+		        logger.debug("走访信息保存："+leave.getStudentId());
 				}
 				catch(Exception e)
 				{
