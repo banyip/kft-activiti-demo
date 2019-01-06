@@ -40,7 +40,7 @@ public class Leave extends IdEntity implements Serializable {
     private String studentContactNo;
     private String parentName;
     private String parentContactNo;
-    private int otherSponse;
+    private int otherSponse=0;
     private String schoolContactPerson;
     private String schoolContactNo;
     
