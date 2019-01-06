@@ -145,27 +145,7 @@
 	padding-top: 1px;
 	background: white;
 }
-.style4 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: center;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
+
 .style5 {
 	color: red;
 	font-size: 10.0pt;
@@ -194,43 +174,6 @@
 	font-style: normal;
 
 }
-.style6 {
-	color: red;
-	font-size: 10.0pt;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: general;
-	vertical-align: middle;
-	white-space: normal;
-	border: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style7 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: center;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
 .style8 {
 	color: red;
 	font-size: 9.0pt;
@@ -242,106 +185,6 @@
 	vertical-align: middle;
 	white-space: normal;
 	border: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style9 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-	white-space: normal;
-	border: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style10 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style11 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-	white-space: normal;
-	border-left-style: none;
-	border-left-color: inherit;
-	border-left-width: medium;
-	border-right: .5pt solid windowtext;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style12 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: center;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right: .5pt solid windowtext;
-	border-top: .5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style13 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: center;
-	vertical-align: middle;
-	white-space: normal;
-	border-left-style: none;
-	border-left-color: inherit;
-	border-left-width: medium;
-	border-right: .5pt solid windowtext;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
@@ -368,85 +211,6 @@
 	padding-top: 1px;
 	background: white;
 }
-.style15 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: center;
-	vertical-align: middle;
-	white-space: normal;
-	border: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style16 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: center;
-	vertical-align: middle;
-	white-space: normal;
-	border-left-style: none;
-	border-left-color: inherit;
-	border-left-width: medium;
-	border-right: .5pt solid windowtext;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style17 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: general;
-	vertical-align: middle;
-	white-space: normal;
-	border-left-style: none;
-	border-left-color: inherit;
-	border-left-width: medium;
-	border-right: .5pt solid windowtext;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style18 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: general;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
 .style19 {
 	color: black;
 	font-size: 10.0pt;
@@ -462,247 +226,6 @@
 	border-right-color: inherit;
 	border-right-width: medium;
 	border-top: .5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style20 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: bottom;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style21 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: bottom;
-	white-space: nowrap;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style22 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: general;
-	vertical-align: bottom;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style23 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: general;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: .5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style24 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: .5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style25 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style26 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-	white-space: nowrap;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-}
-.style27 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: center;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: .5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style28 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom: .5pt solid windowtext;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style29 {
-	color: red;
-	font-size: 10.0pt;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: top;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
 	border-bottom-style: none;
 	border-bottom-color: inherit;
 	border-bottom-width: medium;
@@ -755,53 +278,29 @@
 	padding-top: 1px;
 	background: white;
 }
-.style32 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 700;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right: .5pt solid windowtext;
-	border-top: .5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
-}
-.style33 {
-	color: black;
-	font-size: 10.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-	white-space: normal;
-	border-left-style: none;
-	border-left-color: inherit;
-	border-left-width: medium;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: .5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding-left: 1px;
-	padding-right: 1px;
-	padding-top: 1px;
-	background: white;
+.style4 {
+				border-style: solid;
+				border-width: .5pt .5pt .5px .5pt;
+				border-color: windowtext;
+				color: black;
+				font-size: 10.0pt;
+				font-weight: 700;
+				font-style: normal;
+				text-decoration: none;
+				font-family: 宋体;
+				text-align: left;
+				vertical-align: middle;
+				white-space: normal;
+				border-left: .5pt solid windowtext;
+				border-right: .5pt solid windowtext;
+				border-top: .5pt solid windowtext;
+				padding-left: 1px;
+				padding-right: 1px;
+				padding-top: 1px;
+				background: white;
 }
 	
+
     </style>
 
     <script src="${ctx }/js/common/jquery-1.8.3.js" type="text/javascript"></script>
