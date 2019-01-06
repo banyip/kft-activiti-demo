@@ -389,8 +389,8 @@ var handleOpts = {
 						value: reApply,
 						type: 'B'
 					}, {
-						key: 'relatives',
-						value: $('#relative')[0].value,
+						key: 'leave_StudentId',
+						value: $('#StudentId')[0].value,
 						type: 'S'
 					}
 					]);
