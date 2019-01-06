@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<table border="0" cellpadding="0" cellspacing="0" width="809" style="border-collapse:
+<table border="0" cellpadding="0" cellspacing="0" width="1300" style="border-collapse:
  collapse;width:610pt">
 	<colgroup>
 		<col width="41" style="mso-width-source:userset;mso-width-alt:1312;width:31pt" />
