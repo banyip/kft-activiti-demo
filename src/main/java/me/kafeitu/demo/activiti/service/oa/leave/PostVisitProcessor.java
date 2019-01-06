@@ -49,27 +49,26 @@ public class PostVisitProcessor implements TaskListener {
 		for (String key : variableNames) {
 			if(key.indexOf("leave_")==0)
 			{
-				key = key.substring(6);
+				String methodname= key.substring(6);
 				Object value = delegateTask.getVariable(key);
-				System.out.println(key + " = " + value);
 				try {
-		        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.oa.Leave");
-		        // 定义参数类型
-		        Class[] params = new Class[1];
-		        params[0] = String.class;
-		        Method m = clazz.getDeclaredMethod("set"+key, params);
-		        // 设置参数
-		        Object[] p = new Object[1];
-		        p[0] = delegateTask.getVariable(key);
-		        m.invoke(leave, p);
-		        logger.debug("走访信息保存内容："+p[0]);
-		        logger.debug("走访信息保存："+leave.getStudentId());
-				}
-				catch(Exception e)
-				{
-					logger.error("走访信息保存失败：", e);
-				}
-				logger.debug("走访信息保存成功："+key);
+				        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.oa.Leave");
+				        // 定义参数类型
+				        Class[] params = new Class[1];
+				        params[0] = String.class;
+				        Method m = clazz.getDeclaredMethod("set"+methodname, params);
+				        // 设置参数
+				        Object[] p = new Object[1];
+				        p[0] = delegateTask.getVariable(key);
+				        m.invoke(leave, p);
+				        logger.debug("走访信息保存内容："+p[0]);
+				        logger.debug("走访信息保存："+leave.getStudentId());
+					}
+					catch(Exception e)
+					{
+						logger.error("走访信息保存失败：", e);
+					}
+					logger.debug("走访信息保存成功："+key);
 			}
 		}
 
