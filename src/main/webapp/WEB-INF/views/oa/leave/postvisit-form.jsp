@@ -50,9 +50,9 @@
 		<td colspan="2" width="106" style="width: 80pt" class="style4">家长电话</td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4"><input class=toinput id=leave_ParentContactNo name="leave_ParentContactNo"></input></td>
 		<td colspan="7" width="415" style="width: 313pt" class="style9">
-		<font class="font6">本人是否有其他资助：□否<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;
-		</span>□是</font><font class="font5">√</font><font class="font6">（金额：</font><font class="font5"> 
-		<input type=number class=toinput id=leave_OtherSponse name="leave_OtherSponse"></input></font><font class="font6"><span style="mso-spacerun:yes">&nbsp;&nbsp;</span>）</font></td>
+		<table><tr><td width=70%><font class="font6">本人是否有其他资助：□否<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;
+		</span>□是</font><font class="font5">√</font><font class="font6">（金额：</font></td> <td width=30%>
+		<input type=number class=toinput id=leave_OtherSponse name="leave_OtherSponse"></input></td></tr></table>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
