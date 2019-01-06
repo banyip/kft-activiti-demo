@@ -32,8 +32,8 @@
 		<td colspan="2" width="146" style="width: 110pt" class="style5" ><input class=toinput id=leave_StudentId name="studentId"></input></td>
 		<td colspan="1" style="width: 51pt" class="style4">年级/班别</td>
 		<td colspan="4" width="163"  class="style4"><table width="100%"><tr>
-						<td colspan="4" class=style4 width="50%"><input class="toinput" id="leave_Grade"></input></td>
-						<td colspan="4" class="style4"><input class="toinput" id="leave_ClassName"></input></td></tr></table></td>
+						<td colspan="4" class=style4 width="50%"><input class="toinput" id="leave_Grade" name=grade></input></td>
+						<td colspan="4" class="style4"><input class="toinput" id="leave_ClassName" name=className></input></td></tr></table></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" style="height: 18.0pt; " class="style2">
@@ -41,30 +41,30 @@
 		<td colspan="5" width="313" style="width: 236pt" class="style5">
 		<input class=toinput id=leave_Address name="leave_Address"></input></td>
 		<td colspan="2" class="style4">学生电话/QQ</td>
-		<td colspan="2" width="146" style="width: 110pt" class="style4"><input class=toinput id=leave_StudentContactNo name="leave_StudentContactNo"></input>　</td>
+		<td colspan="2" width="146" style="width: 110pt" class="style4"><input class=toinput id=leave_StudentContactNo name="studentContactNo"></input>　</td>
 		<td colspan="3" width="163" style="width: 123pt" class="style4">是否住校： □是 
 		□否</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" style="height: 18.0pt; " class="style2">
 		家长姓名</td>
-		<td width="101" style="width: 76pt" class="style4" ><input class=toinput id=leave_ParentName name="leave_ParentName"></input></td>
+		<td width="101" style="width: 76pt" class="style4" ><input class=toinput id=leave_ParentName name="parentName"></input></td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">家长电话</td>
-		<td colspan="2" width="106" style="width: 80pt" class="style4"><input class=toinput id=leave_ParentContactNo name="leave_ParentContactNo"></input></td>
+		<td colspan="2" width="106" style="width: 80pt" class="style4"><input class=toinput id=leave_ParentContactNo name="parentContactNo"></input></td>
 		<td colspan="7" width="415" style="width: 313pt" class="style4">
 		<table><tr><td width=75%><font class="font6">本人是否有其他资助：□否<span style="mso-spacerun:yes">&nbsp;&nbsp;
 		</span>□是</font><font class="font5">√</font><font class="font6">（金额：</font></td> <td colspan="6" width=30%>
-		<input type=number class=toinput id=leave_OtherSponse name="leave_OtherSponse"></input><font class="font6">）</font></td></tr></table></td>
+		<input type=number class=toinput id=leave_OtherSponse name="otherSponse"></input><font class="font6">）</font></td></tr></table></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" style="height: 18.0pt; " class="style2">
 		学校名称</td>
-		<td colspan="5" width="313" style="width: 236pt" class=style4><input class="toinput" id="leave_school"></input></td>
+		<td colspan="5" width="313" style="width: 236pt" class=style4><input class="toinput" id="leave_School" name=school></input></td>
 		<td colspan="2" class="style5">学校联系人</td>
-		<td width="101" style="width: 76pt" class="style5"><input class=toinput id=leave_SchoolContactPerson name="leave_SchoolContactPerson"></input></td>
+		<td width="101" style="width: 76pt" class="style5"><input class=toinput id=leave_SchoolContactPerson name="schoolContactPerson"></input></td>
 		<td colspan="2" width="90" style="width: 68pt" class="style4">联系电话</td>
 		<td colspan="2" width="118" style="width: 89pt" class="style8">
-		<input class=toinput id=leave_SchoolContactNo name="leave_SchoolContactNo"></input></td>
+		<input class=toinput id=leave_SchoolContactNo name="schoolContactNo"></input></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" style="height: 18.0pt; " class="style4">
