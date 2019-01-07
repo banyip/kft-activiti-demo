@@ -29,7 +29,7 @@
 	font-size: 12px;
 	}
 	
-	.font6
+.font5
 	{color:black;
 	font-size:10.0pt;
 	font-weight:400;
@@ -37,8 +37,8 @@
 	text-decoration:none;
 	font-family:宋体;
 	}
-.font5
-	{color:red;
+.font6
+	{color:black;
 	font-size:10.0pt;
 	font-weight:700;
 	font-style:normal;
@@ -48,49 +48,25 @@
 .font7
 	{color:black;
 	font-size:10.0pt;
-	font-weight:700;
+	font-weight:400;
 	font-style:normal;
-	text-decoration:none;
+	text-decoration:underline;
+	text-underline-style:single;
 	font-family:宋体;
 	}
 .font8
-	{color:red;
+	{color:black;
 	font-size:10.0pt;
-	font-weight:400;
+	font-weight:700;
 	font-style:normal;
-	text-decoration:none;
+	text-decoration:underline;
+	text-underline-style:single;
 	font-family:宋体;
 	}
 .font9
 	{color:black;
 	font-size:10.0pt;
 	font-weight:400;
-	font-style:normal;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:宋体;
-	}
-.font10
-	{color:black;
-	font-size:10.0pt;
-	font-weight:700;
-	font-style:normal;
-	text-decoration:underline;
-	text-underline-style:single;
-	font-family:宋体;
-	}
-.font11
-	{color:black;
-	font-size:10.0pt;
-	font-weight:400;
-	font-style:normal;
-	text-decoration:none;
-	font-family:"Times New Roman", serif;
-	}
-.font12
-	{color:red;
-	font-size:10.0pt;
-	font-weight:700;
 	font-style:normal;
 	text-decoration:none;
 	font-family:"Times New Roman", serif;
@@ -129,7 +105,7 @@
 	padding-top: 1px;
 	background: white;
 }
-.partly {
+.style3 {
 	color: black;
 	font-size: 10.0pt;
 	font-weight: 700;
@@ -145,11 +121,68 @@
 	padding-top: 1px;
 	background: white;
 }
-
-.style5 {
-	color: red;
+.style4 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style6 {
+	color: black;
 	font-size: 10.0pt;
 	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style8 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+	white-space: normal;
+	border: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style9 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
 	font-style: normal;
 	text-decoration: none;
 	font-family: 宋体;
@@ -167,31 +200,71 @@
 	padding-top: 1px;
 	background: white;
 }
-
-.toinput {
-	width:90%;
+.style10 {
 	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
 	font-style: normal;
-
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+	white-space: normal;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: medium;
+	border-right: .5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
 }
-.style8 {
-	color: red;
-	font-size: 9.0pt;
-	font-weight: 700;
+.style11 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
 	font-style: normal;
 	text-decoration: none;
 	font-family: 宋体;
 	text-align: center;
 	vertical-align: middle;
 	white-space: normal;
-	border: .5pt solid windowtext;
+	border-left: .5pt solid windowtext;
+	border-right: .5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
 	background: white;
 }
-.style14 {
-	color: red;
+.style12 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: medium;
+	border-right: .5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style13 {
+	color: black;
 	font-size: 10.0pt;
 	font-weight: 700;
 	font-style: normal;
@@ -211,7 +284,70 @@
 	padding-top: 1px;
 	background: white;
 }
-.style19 {
+.style14 {
+	color: black;
+	font-size: 9.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+	white-space: normal;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: medium;
+	border-right: .5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style15 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: general;
+	vertical-align: middle;
+	white-space: normal;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: medium;
+	border-right: .5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style16 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: general;
+	vertical-align: middle;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style17 {
 	color: black;
 	font-size: 10.0pt;
 	font-weight: 400;
@@ -234,31 +370,108 @@
 	padding-top: 1px;
 	background: white;
 }
-.style30 {
-	color: red;
+.style18 {
+	color: black;
 	font-size: 10.0pt;
-	font-weight: 700;
+	font-weight: 400;
 	font-style: normal;
 	text-decoration: none;
 	font-family: 宋体;
 	text-align: left;
-	vertical-align: top;
+	vertical-align: bottom;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top-style: none;
+	border-top-color: inherit;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style19 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: bottom;
+	white-space: nowrap;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top-style: none;
+	border-top-color: inherit;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style20 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: general;
+	vertical-align: bottom;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top-style: none;
+	border-top-color: inherit;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style21 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: general;
+	vertical-align: middle;
 	white-space: normal;
 	border-left: .5pt solid windowtext;
 	border-right-style: none;
 	border-right-color: inherit;
 	border-right-width: medium;
 	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
 	background: white;
 }
-.style31 {
-	color: red;
+.style22 {
+	color: black;
 	font-size: 10.0pt;
-	font-weight: 700;
+	font-weight: 400;
 	font-style: normal;
 	text-decoration: none;
 	font-family: 宋体;
@@ -278,27 +491,214 @@
 	padding-top: 1px;
 	background: white;
 }
-.style4 {
-				border-style: solid;
-				border-width: .5pt .5pt .5px .5pt;
-				border-color: windowtext;
-				color: black;
-				font-size: 10.0pt;
-				font-weight: 700;
-				font-style: normal;
-				text-decoration: none;
-				font-family: 宋体;
-				text-align: left;
-				vertical-align: middle;
-				white-space: normal;
-				border-left: .5pt solid windowtext;
-				border-right: .5pt solid windowtext;
-				border-top: .5pt solid windowtext;
-				padding-left: 1px;
-				padding-right: 1px;
-				padding-top: 1px;
-				background: white;
+.style23 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top-style: none;
+	border-top-color: inherit;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
 }
+.style24 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+	white-space: nowrap;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top-style: none;
+	border-top-color: inherit;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+.style25 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: center;
+	vertical-align: middle;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top: .5pt solid windowtext;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style26 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top-style: none;
+	border-top-color: inherit;
+	border-top-width: medium;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style27 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: top;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top-style: none;
+	border-top-color: inherit;
+	border-top-width: medium;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style28 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: top;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style29 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: general;
+	vertical-align: middle;
+	white-space: nowrap;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: medium;
+	border-right: .5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+}
+.style30 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 700;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+	white-space: normal;
+	border-left: .5pt solid windowtext;
+	border-right: .5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+.style31 {
+	color: black;
+	font-size: 10.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+	white-space: normal;
+	border-left-style: none;
+	border-left-color: inherit;
+	border-left-width: medium;
+	border-right-style: none;
+	border-right-color: inherit;
+	border-right-width: medium;
+	border-top: .5pt solid windowtext;
+	border-bottom-style: none;
+	border-bottom-color: inherit;
+	border-bottom-width: medium;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-top: 1px;
+	background: white;
+}
+
 	
 
     </style>

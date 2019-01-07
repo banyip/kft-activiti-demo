@@ -43,7 +43,9 @@ public class Leave extends IdEntity implements Serializable {
     private int otherSponse=0;
     private String schoolContactPerson;
     private String schoolContactNo;
-    
+    private boolean ifLiveInSchool = false;
+    private int chineseScore = 0;
+    private int mathScore = 0;
     @Column
     public String getParentName() {
 		return parentName;
