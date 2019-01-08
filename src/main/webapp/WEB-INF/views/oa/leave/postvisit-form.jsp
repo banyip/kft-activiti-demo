@@ -49,9 +49,10 @@
 		<input class=toinput id=leave_Address name="leave_Address" style="width: 95%"/></td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">学生电话/QQ</td>
 		<td colspan="2" class="style4"><input  class=toinput id=leave_StudentContactNo name="studentContactNo" style="width:95%"/>　</td>
-		<td colspan="3" class="style4">是否住校：<input  class=toinput id=leave_IfLiveInSchool name="ifLiveInSchool" type="radio" checked="checked" value=true />是 
-		 
-		<input  class=toinput id=leave_StudentContactNo name="studentContactNo" type="radio" value=false/>否</td>
+        <td colspan="3" class="style4">是否住校：<select class=toinput id=leave_IfLiveInSchool name="ifLiveInSchool"></select>			<option selected="selected">是</option>
+		<option>否</option>
+
+        </td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
@@ -105,61 +106,83 @@
 		<input class=toinput id=relatives[0]_name name=relatives[0]_name disabled="disabled" style="width: 95%" />　</td>
 		<td colspan="4" class="style4"><input class=toinput id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td width="53" style="width: 40pt" class="style3">
-		<input name="Text21" type="text" style="width: 48px" /></td>
+		<input class=toinput id=relatives[0]_health name=relatives[0]_health disabled="disabled" style="width: 95%" /></td>
 		<td width="53" style="width: 40pt" class="style13">
-		<input name="Text22" type="text" style="width: 48px" /></td>
+		<input class=toinput id=relatives[0]_education name=relatives[0]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 59pt" class="style13">
-		<input name="Text23" type="text" style="width: 111px" />　</td>
+		<input class=toinput id=relatives[0]_profectional name=relatives[0]_profectional disabled="disabled" style="width: 95%" />　</td>
 		<td style="width: 21pt" class="style3">
-		<input name="Text24" type="text" style="width: 34px" /></td>
+		<input class=toinput id=relatives[0]_anualIncome name=relatives[0]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="3" class="style6">
-		<input name="Text25" type="text" style="width: 72px" />　</td>
+		<input class=toinput id=relatives[0]_otherResponse name=relatives[0]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input class=toinput id=relatives[1]_relationship name=relatives[1]_relationship  disabled="disabled" />　</td>
-		<td style="width: 68pt" class="style3">　</td>
-		<td colspan="4" class="style4">　</td>
-		<td width="53" style="width: 40pt" class="style3">　</td>
-		<td width="53" style="width: 40pt" class="style13">　</td>
-		<td style="width: 59pt" class="style13">　</td>
-		<td style="width: 21pt" class="style3">　</td>
-		<td colspan="3" class="style6">　</td>
+		<input class=toinput id=relatives[1]_relationship name=relatives[1]_relationship disabled="disabled" />　</td>
+		<td style="width: 68pt" class="style3">
+		<input class=toinput id=relatives[1]_name name=relatives[1]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="4" class="style4"><input class=toinput id=relatives[1]_relativeId name=relatives[1]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td width="53" style="width: 40pt" class="style3">
+		<input class=toinput id=relatives[1]_health name=relatives[1]_health disabled="disabled" style="width: 95%" /></td>
+		<td width="53" style="width: 40pt" class="style13">
+		<input class=toinput id=relatives[1]_education name=relatives[1]_education disabled="disabled" style="width: 95%" /></td>
+		<td style="width: 59pt" class="style13">
+		<input class=toinput id=relatives[1]_profectional name=relatives[1]_profectional disabled="disabled" style="width: 95%" />　</td>
+		<td style="width: 21pt" class="style3">
+		<input class=toinput id=relatives[1]_anualIncome name=relatives[1]_anualIncome disabled="disabled" style="width: 95%" /></td>
+		<td colspan="3" class="style6">
+		<input class=toinput id=relatives[1]_otherResponse name=relatives[1]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input class=toinput id=relatives[2]_relationship name=relatives[2]_relationship  disabled="disabled" /></td>
-		<td style="width: 68pt" class="style3">　</td>
-		<td colspan="4" class="style4">　</td>
-		<td width="53" style="width: 40pt" class="style3">　</td>
-		<td width="53" style="width: 40pt" class="style13">　</td>
-		<td style="width: 59pt" class="style14">　</td>
-		<td style="width: 21pt" class="style3">　</td>
-		<td colspan="3" class="style6">　</td>
-	</tr>
-	<tr style="mso-height-source: userset;">
-		<td colspan="2" width="40" style="height: 18pt; width: 30pt" class="style6">
-		　<input class=toinput id=relatives[3]_relationship name=relatives[3]_relationship  disabled="disabled" /></td>
-		<td style="width: 68pt; height: 18pt;" class="style3">　</td>
-		<td colspan="4" style="height: 18pt;" class="style4">
-		　</td>
-		<td width="53" style="width: 40pt; height: 18pt;" class="style2">　</td>
-		<td width="53" style="width: 40pt; height: 18pt;" class="style12">　</td>
-		<td style="width: 59pt; height: 18pt;" class="style13">　</td>
-		<td style="width: 21pt; height: 18pt;" class="style2">　</td>
-		<td colspan="3" style="height: 18pt;" class="style4">
-		　</td>
+		<input class=toinput id=relatives[2]_relationship name=relatives[2]_relationship disabled="disabled" />　</td>
+		<td style="width: 68pt" class="style3">
+		<input class=toinput id=relatives[2]_name name=relatives[2]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="4" class="style4"><input class=toinput id=relatives[2]_relativeId name=relatives[2]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td width="53" style="width: 40pt" class="style3">
+		<input class=toinput id=relatives[2]_health name=relatives[2]_health disabled="disabled" style="width: 95%" /></td>
+		<td width="53" style="width: 40pt" class="style13">
+		<input class=toinput id=relatives[2]_education name=relatives[2]_education disabled="disabled" style="width: 95%" /></td>
+		<td style="width: 59pt" class="style13">
+		<input class=toinput id=relatives[2]_profectional name=relatives[2]_profectional disabled="disabled" style="width: 95%" />　</td>
+		<td style="width: 21pt" class="style3">
+		<input class=toinput id=relatives[2]_anualIncome name=relatives[2]_anualIncome disabled="disabled" style="width: 95%" /></td>
+		<td colspan="3" class="style6">
+		<input class=toinput id=relatives[2]_otherResponse name=relatives[2]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		　</td>
-		<td style="width: 68pt" class="style3">　</td>
-		<td colspan="4" class="style6">　</td>
-		<td width="53" style="width: 40pt" class="style3">　</td>
-		<td width="53" style="width: 40pt" class="style13">　</td>
-		<td style="width: 59pt" class="style15">　</td>
-		<td style="width: 21pt" class="style16">　</td>
-		<td colspan="3" class="style6">　</td>
+		<input class=toinput id=relatives[3]_relationship name=relatives[3]_relationship disabled="disabled" />　</td>
+		<td style="width: 68pt" class="style3">
+		<input class=toinput id=relatives[3]_name name=relatives[3]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="4" class="style4"><input class=toinput id=relatives[3]_relativeId name=relatives[3]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td width="53" style="width: 40pt" class="style3">
+		<input class=toinput id=relatives[3]_health name=relatives[3]_health disabled="disabled" style="width: 95%" /></td>
+		<td width="53" style="width: 40pt" class="style13">
+		<input class=toinput id=relatives[3]_education name=relatives[3]_education disabled="disabled" style="width: 95%" /></td>
+		<td style="width: 59pt" class="style13">
+		<input class=toinput id=relatives[3]_profectional name=relatives[3]_profectional disabled="disabled" style="width: 95%" />　</td>
+		<td style="width: 21pt" class="style3">
+		<input class=toinput id=relatives[3]_anualIncome name=relatives[3]_anualIncome disabled="disabled" style="width: 95%" /></td>
+		<td colspan="3" class="style6">
+		<input class=toinput id=relatives[3]_otherResponse name=relatives[3]_otherResponse disabled="disabled" style="width: 95%" />　</td>
+	</tr>
+	<tr height="24" style="mso-height-source:userset;height:18.0pt">
+		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
+		<input class=toinput id=relatives[4]_relationship name=relatives[4]_relationship disabled="disabled" />　</td>
+		<td style="width: 68pt" class="style3">
+		<input class=toinput id=relatives[4]_name name=relatives[4]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="4" class="style4"><input class=toinput id=relatives[4]_relativeId name=relatives[4]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td width="53" style="width: 40pt" class="style3">
+		<input class=toinput id=relatives[4]_health name=relatives[4]_health disabled="disabled" style="width: 95%" /></td>
+		<td width="53" style="width: 40pt" class="style13">
+		<input class=toinput id=relatives[4]_education name=relatives[4]_education disabled="disabled" style="width: 95%" /></td>
+		<td style="width: 59pt" class="style13">
+		<input class=toinput id=relatives[4]_profectional name=relatives[4]_profectional disabled="disabled" style="width: 95%" />　</td>
+		<td style="width: 21pt" class="style3">
+		<input class=toinput id=relatives[4]_anualIncome name=relatives[4]_anualIncome disabled="disabled" style="width: 95%" /></td>
+		<td colspan="3" class="style6">
+		<input class=toinput id=relatives[4]_otherResponse name=relatives[4]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td rowspan="11" height="286" width="41" style="height: 221.1pt; width: 31pt; layout-flow: vertical-ideographic;" class="style11">

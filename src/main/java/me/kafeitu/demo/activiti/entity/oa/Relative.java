@@ -104,7 +104,14 @@ public class Relative extends IdEntity implements Serializable {
 	public void setHealth(String health) {
 		this.health = health;
 	}
+
 	
+	public String getEducation() {
+		return education;
+	}
+	public void setEducation(String education) {
+		this.education = education;
+	}
  
 
 	private String relativeId;
@@ -115,8 +122,9 @@ public class Relative extends IdEntity implements Serializable {
     private String job;
     private int anualIncome=0;
     private String health;
-
+    private String education;
     public Relative() {}
+    
     
     
     
