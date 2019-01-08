@@ -145,6 +145,13 @@
 
 	</div>
 
+	<!-- 贫困评分 -->
+	<div id="poorevaluate" style="display: none">
+		<!-- table用来显示信息，方便办理任务 -->
+		<%@include file="poorevaluate-form.jsp" %>
+
+	</div>
+
 	<!-- 部门领导审批 -->
 	<div id="firstaudit" style="display: none">
 

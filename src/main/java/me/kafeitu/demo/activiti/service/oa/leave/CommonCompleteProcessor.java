@@ -27,7 +27,7 @@ import java.util.Set;
  */
 @Component
 @Transactional
-public class PostVisitProcessor implements TaskListener {
+public class CommonCompleteProcessor implements TaskListener {
 
     private static final long serialVersionUID = 1L;
 

@@ -26,6 +26,20 @@ $(function() {
 // 用于保存加载的详细信息
 var detail = {};
 
+//count the poor score
+
+function countPoorScore()
+{
+    var totalScore=0;
+    $.each($(':input[id^=leave_poorEvaluateScore'),function()
+                        {
+                            totalScore = totalScore + parseInt(this.value);
+                        }
+                    );
+    $('#leave_poorEvaluateTotalScore').val();
+}
+
+
 //增加
 function inserttable() {
 	var newnode = $('.yltable')[0].cloneNode(true);
@@ -348,7 +362,7 @@ var handleOpts = {
 
 		postvisit: {
 			width: 1300,
-			height: 770,
+			height: 570,
 			open: function(id, taskId) {
 				var dialog = this;
 				
@@ -396,7 +410,60 @@ var handleOpts = {
 			}]
 		},
 
-	firstaudit: {
+		poorevaluate: {
+			width: 800,
+			height: 570,
+			open: function(id, taskId) {
+				var dialog = this;
+				
+				$('#startTime,#endTime', this).datetimepicker({
+		            stepMinute: 5
+		        });
+				
+				// 打开对话框的时候读取请假内容
+				loadPartlyDetailWithTaskVars.call(this, id, taskId, null);
+				
+
+			},
+			btns: [{
+				text: '提交',
+				click: function() {
+					var taskId = $(this).data('taskId');
+					var reApply = $(':radio[name=reApply]:checked').val();
+                    var variables = [{
+						key: 'reApply',
+						value: reApply,
+						type: 'B'
+					}
+                    ];
+                    $.each($('.toinput'),function()
+                        {
+                            if(this.disabled==false)
+                            variables.push({
+                                key: this.id,
+                                value: this.value,
+                                type: 'S'
+                            });
+                        }
+                    );
+                    alert(variables);
+					
+					
+					// 提交的时候把变量
+					complete(taskId, variables);
+				}
+			},{
+				text: '取消',
+				click: function() {
+					$(this).dialog('close');
+				}
+			}]
+		},
+
+
+
+
+ firstaudit: {
 		width: 300,
 		height: 300,
 		open: function(id) {

@@ -71,6 +71,24 @@ public class Leave extends IdEntity implements Serializable {
     private String ifAgreeToMail;
     private String firstAuditNote;
     
+    //贫困评估相关
+    private String poorEvaluateScore0;
+    private String poorEvaluateScore1;
+    private String poorEvaluateScore2;
+    private String poorEvaluateScore3;
+    private String poorEvaluateScore4;
+    private String poorEvaluateScore5;
+    private String poorEvaluateScore6;
+    private String poorEvaluateScore7;
+    private String poorEvaluateScore8;
+    private String poorEvaluateTotalScore;
+    private String poorEvaluateNote;
+    private String poorEvaluatePerson;
+    private String poorEvaluatePersonContact;
+    
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+    private Date poorEvaluateDate;
+    
     @Column
     public String getFirstAuditNote() {
 		return firstAuditNote;
@@ -596,6 +614,134 @@ public class Leave extends IdEntity implements Serializable {
 	public void setClassName(String className) {
 		this.className = className;
 	}
+
+	//贫困评分相关
+	@Column
+	public String getPoorEvaluateScore0() {
+		return poorEvaluateScore0;
+	}
+
+	@Column
+	public String getPoorEvaluateScore1() {
+		return poorEvaluateScore1;
+	}
+
+	@Column
+	public String getPoorEvaluateScore2() {
+		return poorEvaluateScore2;
+	}
+
+	@Column
+	public String getPoorEvaluateScore3() {
+		return poorEvaluateScore3;
+	}
+
+	@Column
+	public String getPoorEvaluateScore4() {
+		return poorEvaluateScore4;
+	}
+
+	@Column
+	public String getPoorEvaluateScore5() {
+		return poorEvaluateScore5;
+	}
+
+	@Column
+	public String getPoorEvaluateScore6() {
+		return poorEvaluateScore6;
+	}
+
+	@Column
+	public String getPoorEvaluateScore7() {
+		return poorEvaluateScore7;
+	}
+
+	@Column
+	public String getPoorEvaluateScore8() {
+		return poorEvaluateScore8;
+	}
+
+	@Column
+	public String getPoorEvaluateTotalScore() {
+		return poorEvaluateTotalScore;
+	}
+
+	@Column
+	public String getPoorEvaluateNote() {
+		return poorEvaluateNote;
+	}
+
+	@Column
+	public String getPoorEvaluatePerson() {
+		return poorEvaluatePerson;
+	}
+
+	@Column
+	public String getPoorEvaluatePersonContact() {
+		return poorEvaluatePersonContact;
+	}
+
+	@Column
+	public Date getPoorEvaluateDate() {
+		return poorEvaluateDate;
+	}
+
+	public void setPoorEvaluateScore0(String poorEvaluateScore0) {
+		this.poorEvaluateScore0 = poorEvaluateScore0;
+	}
+
+	public void setPoorEvaluateScore1(String poorEvaluateScore1) {
+		this.poorEvaluateScore1 = poorEvaluateScore1;
+	}
+
+	public void setPoorEvaluateScore2(String poorEvaluateScore2) {
+		this.poorEvaluateScore2 = poorEvaluateScore2;
+	}
+
+	public void setPoorEvaluateScore3(String poorEvaluateScore3) {
+		this.poorEvaluateScore3 = poorEvaluateScore3;
+	}
+
+	public void setPoorEvaluateScore4(String poorEvaluateScore4) {
+		this.poorEvaluateScore4 = poorEvaluateScore4;
+	}
+
+	public void setPoorEvaluateScore5(String poorEvaluateScore5) {
+		this.poorEvaluateScore5 = poorEvaluateScore5;
+	}
+
+	public void setPoorEvaluateScore6(String poorEvaluateScore6) {
+		this.poorEvaluateScore6 = poorEvaluateScore6;
+	}
+
+	public void setPoorEvaluateScore7(String poorEvaluateScore7) {
+		this.poorEvaluateScore7 = poorEvaluateScore7;
+	}
+
+	public void setPoorEvaluateScore8(String poorEvaluateScore8) {
+		this.poorEvaluateScore8 = poorEvaluateScore8;
+	}
+
+	public void setPoorEvaluateTotalScore(String poorEvaluateTotalScore) {
+		this.poorEvaluateTotalScore = poorEvaluateTotalScore;
+	}
+
+	public void setPoorEvaluateNote(String poorEvaluateNote) {
+		this.poorEvaluateNote = poorEvaluateNote;
+	}
+
+	public void setPoorEvaluatePerson(String poorEvaluatePerson) {
+		this.poorEvaluatePerson = poorEvaluatePerson;
+	}
+
+	public void setPoorEvaluatePersonContact(String poorEvaluatePersonContact) {
+		this.poorEvaluatePersonContact = poorEvaluatePersonContact;
+	}
+
+	public void setPoorEvaluateDate(Date poorEvaluateDate) {
+		this.poorEvaluateDate = poorEvaluateDate;
+	}
+
 	
 
 }

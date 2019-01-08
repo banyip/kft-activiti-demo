@@ -4,12 +4,12 @@
     <startEvent id="startevent1" name="Start"></startEvent>
     <userTask id="firstaudit" name="初审" activiti:candidateGroups="zhuxueoperator">
       <extensionElements>
-        <activiti:taskListener event="complete" delegateExpression="${postVisitProcessor}"></activiti:taskListener>
+        <activiti:taskListener event="complete" delegateExpression="${commonCompleteProcessor}"></activiti:taskListener>
       </extensionElements>
     </userTask>
     <userTask id="postvisit" name="走访后登记" activiti:candidateGroups="zhuxueoperator">
       <extensionElements>
-        <activiti:taskListener event="complete" delegateExpression="${postVisitProcessor}"></activiti:taskListener>
+        <activiti:taskListener event="complete" delegateExpression="${commonCompleteProcessor}"></activiti:taskListener>
       </extensionElements>
     </userTask>
     <userTask id="postpublic" name="上线发布后登记" activiti:candidateGroups="zhuxueoperator"></userTask>
@@ -42,7 +42,11 @@
     <sequenceFlow id="flow20" sourceRef="firstaudit" targetRef="exclusivegateway2"></sequenceFlow>
     <userTask id="usertask1" name="修改申请人及学生信息"></userTask>
     <sequenceFlow id="flow21" sourceRef="usertask1" targetRef="familyinput"></sequenceFlow>
-    <userTask id="poorevaluate" name="贫困评分" activiti:candidateGroups="zhuxueoperator"></userTask>
+    <userTask id="poorevaluate" name="贫困评分" activiti:candidateGroups="zhuxueoperator">
+      <extensionElements>
+        <activiti:taskListener event="complete" delegateExpression="${commonCompleteProcessor}"></activiti:taskListener>
+      </extensionElements>
+    </userTask>
     <sequenceFlow id="flow22" sourceRef="poorevaluate" targetRef="postpublic"></sequenceFlow>
   </process>
   <bpmndi:BPMNDiagram id="BPMNDiagram_studentsponse">
