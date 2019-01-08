@@ -196,6 +196,7 @@ public class LeaveController {
             taskService.complete(taskId, variables);
             return "success";
         } catch (Exception e) {
+        	logger.error("error on complete task", e);
             logger.error("error on complete task {}, variables={}", new Object[]{taskId, var.getVariableMap(), e});
             return "error";
         }
