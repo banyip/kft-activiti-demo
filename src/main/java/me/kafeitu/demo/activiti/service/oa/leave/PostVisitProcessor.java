@@ -58,7 +58,7 @@ public class PostVisitProcessor implements TaskListener {
 			if(key.indexOf("leave_")==0)
 			{
 				logger.debug("走访信息保存内容key："+key);
-				String methodname= key.substring(6,1).toUpperCase()+key.substring(7);
+				String methodname= key.substring(6,7).toUpperCase()+key.substring(7);
 				Object value = delegateTask.getVariable(key);
 				try {
 					    logger.debug("走访信息保存内容method："+methodname);
@@ -82,9 +82,9 @@ public class PostVisitProcessor implements TaskListener {
 			} else if(key.indexOf("relatives")==0)
 			{ 
 				/*
-				int index = Integer.parseInt(key.substring(9,1));
+				int index = Integer.parseInt(key.substring(9,10));
 				Relative relative = relatives.get(index);
-				String methodname= key.substring(13,1).toUpperCase()+key.substring(14);
+				String methodname= key.substring(13,14).toUpperCase()+key.substring(14);
 				Object value = delegateTask.getVariable(key);
 				try {
 				        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.oa.Relative");
