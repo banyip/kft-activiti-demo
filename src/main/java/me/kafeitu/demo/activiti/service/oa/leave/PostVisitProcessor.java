@@ -79,7 +79,7 @@ public class PostVisitProcessor implements TaskListener {
 						logger.error("走访信息保存失败：", e);
 					}
 					logger.debug("走访信息保存成功："+key);
-			} else if(key.indexOf("relatives")==0)
+			} else if(key.indexOf("relatives[")==0)
 			{ 
 				
 				int index = Integer.parseInt(key.substring(10,11));
