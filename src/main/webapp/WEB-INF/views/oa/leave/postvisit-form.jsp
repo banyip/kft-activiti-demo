@@ -35,7 +35,7 @@
 		<td style="width: 32px" class="style2">民族</td>
 		<td style="width: 51px" class="style3">
 		<input  class="toinput" id="leave_Nationality" name="nationality" style="width: 51px" />　</td>
-		<td colspan="2" class="style3">身份证号码</td>
+		<td colspan="3" class="style3">身份证号码</td>
 		<td colspan="2" class="style3">
 		<input  class=toinput id=leave_StudentId name="studentId" style="width: 95%" /></td>
 		<td colspan="2" width="77" style="width: 58pt" class="style3">年级/班别</td>
@@ -47,7 +47,7 @@
 		家庭住址</td>
 		<td colspan="5" class="style3">
 		<input class=toinput id=leave_Address name="leave_Address" style="width: 95%"/></td>
-		<td colspan="2" class="style3">学生电话/QQ</td>
+		<td colspan="3" class="style3">学生电话/QQ</td>
 		<td colspan="2" class="style3"><input  class=toinput id=leave_StudentContactNo name="studentContactNo" style="width:95%"/>　</td>
         <td colspan="3" class="style3">是否住校：<select class=toinput id=leave_IfLiveInSchool name="ifLiveInSchool"><option selected="selected">是</option>
 		<option>否</option></select>
@@ -69,7 +69,7 @@
 		学校名称</td>
 		<td colspan="5" class="style3">
 		<input class="toinput" id="leave_School" name=school style="width:95%" /></td>
-		<td colspan="2" class="style3">学校联系人</td>
+		<td colspan="3" class="style3">学校联系人</td>
 		<td style="width: 128px" class="style3">
 		<input  class=toinput id=leave_SchoolContactPerson name="schoolContactPerson" /></td>
 		<td colspan="2" width="90" style="width: 68pt" class="style2">联系电话</td>
@@ -103,7 +103,7 @@
 		<input class=toinput id=relatives[0]_relationship name=relatives[0]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[0]_name name=relatives[0]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="4" class="style3"><input class=toinput id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[0]_health name=relatives[0]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
@@ -120,7 +120,7 @@
 		<input class=toinput id=relatives[1]_relationship name=relatives[1]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[1]_name name=relatives[1]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[1]_relativeId name=relatives[1]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="4" class="style3"><input class=toinput id=relatives[1]_relativeId name=relatives[1]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[1]_health name=relatives[1]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
@@ -137,7 +137,7 @@
 		<input class=toinput id=relatives[2]_relationship name=relatives[2]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[2]_name name=relatives[2]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[2]_relativeId name=relatives[2]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="4" class="style3"><input class=toinput id=relatives[2]_relativeId name=relatives[2]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[2]_health name=relatives[2]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
@@ -154,7 +154,7 @@
 		<input class=toinput id=relatives[3]_relationship name=relatives[3]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[3]_name name=relatives[3]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[3]_relativeId name=relatives[3]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="4" class="style3"><input class=toinput id=relatives[3]_relativeId name=relatives[3]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[3]_health name=relatives[3]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
@@ -171,7 +171,7 @@
 		<input class=toinput id=relatives[4]_relationship name=relatives[4]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[4]_name name=relatives[4]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[4]_relativeId name=relatives[4]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="4" class="style3"><input class=toinput id=relatives[4]_relativeId name=relatives[4]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[4]_health name=relatives[4]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
