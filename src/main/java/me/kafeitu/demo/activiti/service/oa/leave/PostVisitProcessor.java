@@ -1,6 +1,7 @@
 package me.kafeitu.demo.activiti.service.oa.leave;
 
 import me.kafeitu.demo.activiti.entity.oa.Leave;
+import me.kafeitu.demo.activiti.entity.oa.Relative;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.delegate.DelegateTask;
 import org.activiti.engine.delegate.TaskListener;
@@ -12,7 +13,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.lang.reflect.Method;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -45,11 +48,16 @@ public class PostVisitProcessor implements TaskListener {
         Leave leave = leaveManager.getLeave(new Long(processInstance.getBusinessKey()));
         Set<String> variableNames = delegateTask.getVariableNames();
 
+        //把leave.relatives存放到list
+        List<Relative> relatives = new ArrayList<Relative>();
+        for (Relative relative: leave.getRelatives()) {  
+            relatives.add(relative);  
+      }  
         logger.debug("走访信息保存中："+variableNames);
 		for (String key : variableNames) {
 			if(key.indexOf("leave_")==0)
 			{
-				String methodname= key.substring(6);
+				String methodname= key.substring(6,1).toUpperCase()+key.substring(7);
 				Object value = delegateTask.getVariable(key);
 				try {
 				        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.oa.Leave");
@@ -63,6 +71,30 @@ public class PostVisitProcessor implements TaskListener {
 				        m.invoke(leave, p);
 				        logger.debug("走访信息保存内容："+p[0]);
 				        logger.debug("走访信息保存："+leave.getStudentId());
+					}
+					catch(Exception e)
+					{
+						logger.error("走访信息保存失败：", e);
+					}
+					logger.debug("走访信息保存成功："+key);
+			} else if(key.indexOf("relatives")==0)
+			{
+				int index = Integer.parseInt(key.substring(9,1));
+				Relative relative = relatives.get(index);
+				String methodname= key.substring(13,1).toUpperCase()+key.substring(14);
+				Object value = delegateTask.getVariable(key);
+				try {
+				        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.oa.Relative");
+				        // 定义参数类型
+				        Class[] params = new Class[1];
+				        params[0] = String.class;
+				        Method m = clazz.getDeclaredMethod("set"+methodname, params);
+				        // 设置参数
+				        Object[] p = new Object[1];
+				        p[0] = delegateTask.getVariable(key);
+				        m.invoke(relative, p);
+				        logger.debug("亲戚信息保存内容：set"+methodname);
+				        logger.debug("亲戚信息保存内容："+p[0]);
 					}
 					catch(Exception e)
 					{
