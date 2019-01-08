@@ -57,6 +57,7 @@ public class PostVisitProcessor implements TaskListener {
 		for (String key : variableNames) {
 			if(key.indexOf("leave_")==0)
 			{
+				logger.debug("走访信息保存内容key："+key);
 				String methodname= key.substring(6,1).toUpperCase()+key.substring(7);
 				Object value = delegateTask.getVariable(key);
 				try {
