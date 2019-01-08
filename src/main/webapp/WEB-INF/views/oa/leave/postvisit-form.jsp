@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <form method="post">
-<table border="0" cellpadding="0" cellspacing="0" width="809" style="border-collapse:
+<table border="0" cellpadding="0" cellspacing="0" width="1200" style="border-collapse:
  collapse;width:610pt" class="toinput">
 	<colgroup>
 		<col width="41" style="mso-width-source:userset;mso-width-alt:1312;width:31pt" />
