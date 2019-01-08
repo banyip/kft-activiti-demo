@@ -31,7 +31,7 @@ var detail = {};
 function countPoorScore()
 {
     var totalScore=0;
-    $.each($(':input[id^=leave_poorEvaluateScore'),function()
+    $.each($(':input[id^=leave_poorEvaluateScore]'),function()
                         {
                             totalScore = totalScore + parseInt(this.value);
                         }
@@ -411,8 +411,8 @@ var handleOpts = {
 		},
 
 		poorevaluate: {
-			width: 800,
-			height: 570,
+			width: 900,
+			height: 770,
 			open: function(id, taskId) {
 				var dialog = this;
 				
