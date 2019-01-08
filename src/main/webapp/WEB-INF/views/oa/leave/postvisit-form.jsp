@@ -95,8 +95,8 @@
 		<td style="width: 68px" class="style2">健康</td>
 		<td style="width: 51px" class="style12">文化</td>
 		<td style="width: 128px" class="style12">职业或就读</td>
-		<td style="width: 20px" class="style2">收入</td>
-		<td colspan="3" class="style3">其他资助/低保</td>
+		<td colspan="2" style="width: 20px" class="style2">收入</td>
+		<td colspan="2" class="style3">其他资助/低保</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="width: 30pt" class="style6">
@@ -110,9 +110,9 @@
 		<input class=toinput id=relatives[0]_education name=relatives[0]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[0]_profectional name=relatives[0]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 20px" class="style3">
+		<td colspan=2 style="width: 20px" class="style3">
 		<input class=toinput id=relatives[0]_anualIncome name=relatives[0]_anualIncome disabled="disabled" style="width: 95%" /></td>
-		<td colspan="3" class="style6">
+		<td colspan="2" class="style6">
 		<input class=toinput id=relatives[0]_otherSponse name=relatives[0]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
@@ -127,9 +127,9 @@
 		<input class=toinput id=relatives[1]_education name=relatives[1]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[1]_profectional name=relatives[1]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 20px" class="style3">
+		<td colspan=2 style="width: 20px" class="style3">
 		<input class=toinput id=relatives[1]_anualIncome name=relatives[1]_anualIncome disabled="disabled" style="width: 95%" /></td>
-		<td colspan="3" class="style6">
+		<td colspan="2" class="style6">
 		<input class=toinput id=relatives[1]_otherSponse name=relatives[1]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
@@ -144,9 +144,9 @@
 		<input class=toinput id=relatives[2]_education name=relatives[2]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[2]_profectional name=relatives[2]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 20px" class="style3">
+		<td colspan=2 style="width: 20px" class="style3">
 		<input class=toinput id=relatives[2]_anualIncome name=relatives[2]_anualIncome disabled="disabled" style="width: 95%" /></td>
-		<td colspan="3" class="style6">
+		<td colspan="2" class="style6">
 		<input class=toinput id=relatives[2]_otherSponse name=relatives[2]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
@@ -161,9 +161,9 @@
 		<input class=toinput id=relatives[3]_education name=relatives[3]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[3]_profectional name=relatives[3]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 20px" class="style3">
+		<td colspan=2 style="width: 20px" class="style3">
 		<input class=toinput id=relatives[3]_anualIncome name=relatives[3]_anualIncome disabled="disabled" style="width: 95%" /></td>
-		<td colspan="3" class="style6">
+		<td colspan="2" class="style6">
 		<input class=toinput id=relatives[3]_otherSponse name=relatives[3]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
@@ -178,9 +178,9 @@
 		<input class=toinput id=relatives[4]_education name=relatives[4]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[4]_profectional name=relatives[4]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 20px" class="style3">
+		<td colspan=2 style="width: 20px" class="style3">
 		<input class=toinput id=relatives[4]_anualIncome name=relatives[4]_anualIncome disabled="disabled" style="width: 95%" /></td>
-		<td colspan="3" class="style6">
+		<td colspan="2" class="style6">
 		<input class=toinput id=relatives[4]_otherSponse name=relatives[4]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	</div>
