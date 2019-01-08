@@ -98,6 +98,7 @@
 		<td style="width: 20px" class="style2">收入</td>
 		<td colspan="3" class="style3">其他资助/低保</td>
 	</tr>
+	<div id="relatives[0]">
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[0]_relationship name=relatives[0]_relationship disabled="disabled" />　</td>
@@ -115,6 +116,8 @@
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[0]_otherResponse name=relatives[0]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
+	</div>
+	<div id="relatives[1]">
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[1]_relationship name=relatives[1]_relationship disabled="disabled" />　</td>
@@ -132,6 +135,8 @@
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[1]_otherResponse name=relatives[1]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
+	</div>
+	<div id="relatives[2]">
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[2]_relationship name=relatives[2]_relationship disabled="disabled" />　</td>
@@ -149,6 +154,8 @@
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[2]_otherResponse name=relatives[2]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
+	</div>
+	<div id="relatives[3]">
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[3]_relationship name=relatives[3]_relationship disabled="disabled" />　</td>
@@ -166,6 +173,8 @@
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[3]_otherResponse name=relatives[3]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
+	</div>
+	<div id="relatives[4]">
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[4]_relationship name=relatives[4]_relationship disabled="disabled" />　</td>
@@ -183,6 +192,7 @@
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[4]_otherResponse name=relatives[4]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
+	</div>
 	<tr style="mso-height-source:userset;">
 		<td rowspan="11" height="286" style="height: 221.1pt; width: 14px; layout-flow: vertical-ideographic;" class="style11">
 		家庭经济情况</td>

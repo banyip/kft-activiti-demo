@@ -122,11 +122,9 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
             {                
                 for(var i=0;i<v.length;i++)
                 {
+                    $('#relatives\\['+i+'\\]').removeAttr("disabled");   
                     for(let key in v[i])
-                    {
-                        $('input[name=relatives\\['+i+'\\]_' + key).removeAttr("disabled");   
                         $('input[name=relatives\\['+i+'\\]_' + key).val(eval('v['+i+'].'+key));   
-                    }          
                 }
             } else if (k.substr(0,2) == 'if') 
             {
@@ -410,13 +408,25 @@ var handleOpts = {
 			click: function() {
 				var taskId = $(this).data('taskId');
 				
-				// 设置流程变量
-				complete(taskId, [{
+                // 设置流程变量
+                 var variables = [{
 					key: 'hrPass',
 					value: true,
 					type: 'B'
-				}]);
-			}
+                }];
+               $.each($('.toinput'),function()
+                {
+                    if(this.disabled==false)
+                    variables.push({
+                        key: this.id,
+                        value: this.value,
+                        type: 'S'
+                    });
+                }            
+                );
+
+				complete(taskId,variables); 
+ 			}
 		}, {
 			text: '驳回',
 			click: function() {
