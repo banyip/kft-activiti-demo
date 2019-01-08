@@ -69,9 +69,18 @@ public class Leave extends IdEntity implements Serializable {
     private String schoolContactNo;
     private String ifLiveInSchool;
     private String ifAgreeToMail;
-    
+    private String firstAuditNote;
     
     @Column
+    public String getFirstAuditNote() {
+		return firstAuditNote;
+	}
+
+	public void setFirstAuditNote(String firstAuditNote) {
+		this.firstAuditNote = firstAuditNote;
+	}
+
+	@Column
     public String getIfAgreeToMail() {
 		return ifAgreeToMail;
 	}

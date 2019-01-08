@@ -2,7 +2,11 @@
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/test">
   <process id="studentsponse" name="学生助学" isExecutable="true">
     <startEvent id="startevent1" name="Start"></startEvent>
-    <userTask id="firstaudit" name="初审" activiti:candidateGroups="zhuxueoperator"></userTask>
+    <userTask id="firstaudit" name="初审" activiti:candidateGroups="zhuxueoperator">
+      <extensionElements>
+        <activiti:taskListener event="complete" delegateExpression="${postVisitProcessor}"></activiti:taskListener>
+      </extensionElements>
+    </userTask>
     <userTask id="postvisit" name="走访后登记" activiti:candidateGroups="zhuxueoperator">
       <extensionElements>
         <activiti:taskListener event="complete" delegateExpression="${postVisitProcessor}"></activiti:taskListener>
