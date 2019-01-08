@@ -33,7 +33,8 @@ function countPoorScore()
     var totalScore=0;
     $.each($(':input[id^=leave_poorEvaluateScore]'),function()
                         {
-                            totalScore = totalScore + parseInt(this.value);
+                            if(this.value.length>0)
+                              totalScore = totalScore + parseInt(this.value);
                         }
                     );
     $('#leave_poorEvaluateTotalScore]').val();
