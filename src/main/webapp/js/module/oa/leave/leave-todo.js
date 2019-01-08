@@ -36,7 +36,7 @@ function countPoorScore()
                             totalScore = totalScore + parseInt(this.value);
                         }
                     );
-    $('#leave_poorEvaluateTotalScore').val();
+    $('#leave_poorEvaluateTotalScore]').val();
 }
 
 
