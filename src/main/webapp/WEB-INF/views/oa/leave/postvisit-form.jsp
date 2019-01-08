@@ -100,7 +100,7 @@
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input name="Text18" type="text" style="width: 42px" />　</td>
+		<input class=toinput id=relatives_RelationShip name=relationship />　</td>
 		<td style="width: 68pt" class="style3">
 		<input name="Text19" type="text" style="width: 95%" />　</td>
 		<td colspan="4" class="style4"><input name="Text20" type="text" style="width: 95%" /></td>
