@@ -115,7 +115,7 @@
 								<td colspan="5" height="47" width="450" style="height: 35.0pt; width: 339pt" class="style6">
 								评分高于90分确认资助，70-90分待定，70以下不资助</td>
 								<td colspan="2" width="186" style="width: 139pt" class="style6">
-								综合得分合计</td>
+								<input type=button onclick="countPoorScore()" value="综合得分合计" /></td>
 								<td width="95" style="width: 72pt" class="style3">
 								<input class="toinput" id="leave_poorEvaluateTotalScore" name="leave_poorEvaluateTotalScore" type="number"  disabled="disabled" onclick="countPoorScore()"/>　</td>
 				</tr>
