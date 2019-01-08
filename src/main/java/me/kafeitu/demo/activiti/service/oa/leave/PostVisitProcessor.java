@@ -87,6 +87,8 @@ public class PostVisitProcessor implements TaskListener {
 				String methodname= key.substring(13,14).toUpperCase()+key.substring(14);
 				Object value = delegateTask.getVariable(key);
 				try {
+					    logger.debug("走访信息保存内容method：set"+methodname);
+						logger.debug("走访信息保存内容value："+value);
 				        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.oa.Relative");
 				        // 定义参数类型
 				        Class[] params = new Class[1];
