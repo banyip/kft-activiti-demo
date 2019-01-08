@@ -2,13 +2,13 @@
     pageEncoding="UTF-8"%>
 
 <form method="post">
-<table border="0" cellpadding="0" cellspacing="0" width="1200" style="border-collapse:
- collapse;width:610pt" class="toinput">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
+ collapse;width:813px" class="toinput">
 	<colgroup>
-		<col width="41" style="mso-width-source:userset;mso-width-alt:1312;width:31pt" />
+		<col style="mso-width-source:userset;mso-width-alt:1312;" />
 		<col width="35" style="mso-width-source:userset;mso-width-alt:1120;width:26pt" />
 		<col style="mso-width-source:userset;mso-width-alt:160;" />
-		<col width="101" style="mso-width-source:userset;mso-width-alt:3232;width:76pt" />
+		<col style="mso-width-source:userset;mso-width-alt:3232;" />
 		<col width="53" span="6" style="mso-width-source:userset;mso-width-alt:1696;
  width:40pt" />
 		<col style="mso-width-source:userset;mso-width-alt:3232;" />
@@ -22,41 +22,41 @@
 		<a name="RANGE!A1:O37">好友营支教资助学生走访表</a></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
-		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
+		<td colspan="2" height="24" style="height: 18.0pt; " class="style2">
 		姓<span style="mso-spacerun:yes">&nbsp; </span>名</td>
-		<td style="width: 68pt" class="style3">
+		<td style="width: 128px" class="style3">
 			<input class="toinput" id="leave_StudentName" name="studentName" />
 		</td>
-		<td width="53" style="width: 40pt" class="style2">性别</td>
-		<td width="53" style="width: 40pt" class="style3"><select class="toinput" id="leave_Sex" name="sex">
+		<td style="width: 85px" class="style2">性别</td>
+		<td style="width: 42px" class="style3"><select class="toinput" id="leave_Sex" name="sex">
 		<option selected="selected">男</option>
 		<option>女</option>
 		</select>　</td>
-		<td width="53" style="width: 40pt" class="style2">民族</td>
-		<td style="width: 8pt" class="style3">
+		<td style="width: 32px" class="style2">民族</td>
+		<td style="width: 51px" class="style3">
 		<input  class="toinput" id="leave_Nationality" name="nationality" style="width: 51px" />　</td>
-		<td colspan="2" width="106" style="width: 80pt" class="style4">身份证号码</td>
-		<td colspan="2" class="style4">
+		<td colspan="2" class="style3">身份证号码</td>
+		<td colspan="2" class="style3">
 		<input  class=toinput id=leave_StudentId name="studentId" style="width: 95%" /></td>
-		<td colspan="2" width="77" style="width: 58pt" class="style4">年级/班别</td>
-		<td style="width: 74pt" class="style4">
+		<td colspan="2" width="77" style="width: 58pt" class="style3">年级/班别</td>
+		<td style="width: 101px" class="style3">
 		<input class="toinput" id="leave_Grade" name=grade style="width: 42px" /><input class="toinput" id="leave_ClassName" name=className style="width: 42px"/></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
-		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
+		<td colspan="2" height="24" style="height: 18.0pt; " class="style2">
 		家庭住址</td>
-		<td colspan="5" class="style4">
+		<td colspan="5" class="style3">
 		<input class=toinput id=leave_Address name="leave_Address" style="width: 95%"/></td>
-		<td colspan="2" width="106" style="width: 80pt" class="style4">学生电话/QQ</td>
-		<td colspan="2" class="style4"><input  class=toinput id=leave_StudentContactNo name="studentContactNo" style="width:95%"/>　</td>
-        <td colspan="3" class="style4">是否住校：<select class=toinput id=leave_IfLiveInSchool name="ifLiveInSchool"><option selected="selected">是</option>
+		<td colspan="2" class="style3">学生电话/QQ</td>
+		<td colspan="2" class="style3"><input  class=toinput id=leave_StudentContactNo name="studentContactNo" style="width:95%"/>　</td>
+        <td colspan="3" class="style3">是否住校：<select class=toinput id=leave_IfLiveInSchool name="ifLiveInSchool"><option selected="selected">是</option>
 		<option>否</option></select>
         </td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
-		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
+		<td colspan="2" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		家长姓名</td>
-		<td style="width: 68pt" class="style4">
+		<td style="width: 128px" class="style3">
 		<input class=toinput id=leave_ParentName name="parentName" /></td>
 		<td colspan="2" width="106" style="width: 80pt" class="style2">家长电话</td>
 		<td colspan="2" class="style3"><input class=toinput id=leave_ParentContactNo name="parentContactNo" style="width:95%"/>　</td>
@@ -65,52 +65,52 @@
 		</span><input name="Radio1" type="radio" />是（金额：<input  type=number class=toinput id=leave_OtherSponse name="otherSponse" />）</font></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
-		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
+		<td colspan="2" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		学校名称</td>
 		<td colspan="5" class="style3">
 		<input class="toinput" id="leave_School" name=school style="width:95%" /></td>
-		<td colspan="2" width="106" style="width: 80pt" class="style4">学校联系人</td>
-		<td style="width: 59pt" class="style4">
+		<td colspan="2" class="style3">学校联系人</td>
+		<td style="width: 128px" class="style3">
 		<input  class=toinput id=leave_SchoolContactPerson name="schoolContactPerson" /></td>
 		<td colspan="2" width="90" style="width: 68pt" class="style2">联系电话</td>
 		<td colspan="2" class="style3">
 		<input  class=toinput id=leave_SchoolContactNo name="schoolContactNo" /></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
-		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style4">
+		<td colspan="2" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style3">
 		学生成绩</td>
-		<td style="width: 68pt" class="style8">语文：<input class="toinput" id="leave_ChineseScore" name=chineseScore style="width: 33px" />分</td>
+		<td style="width: 128px" class="style8">语文：<input class="toinput" id="leave_ChineseScore" name=chineseScore style="width: 33px" />分</td>
 		<td colspan="2" width="106" style="width: 80pt" class="style8">数学：<input class="toinput" id="leave_MathScore" name=mathScore  style="width: 33px" />分</td>
 		<td colspan="2" class="style9">英语：<input class="toinput" id="leave_EnglishScore" name=englishScore  style="width: 33px" />分</td>
 		<td colspan="3" class="style9">其他学科：<input class="toinput" id="leave_OtherScore" name=otherScore  style="width: 120px" />分</td>
 		<td colspan="3" width="122" style="width: 92pt" class="style9">综合成绩排名：</td>
-		<td style="width: 74pt" class="style10">&nbsp;<input class="toinput" id="leave_ScorePosition" name=scorePosition style="width: 42px" /> 名</td>
+		<td style="width: 100px" class="style10">&nbsp;<input class="toinput" id="leave_ScorePosition" name=scorePosition style="width: 42px" /> 名</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
-		<td rowspan="6" height="144" width="41" style="height: 108.0pt; width: 31pt; layout-flow: vertical-ideographic;" class="style11">
+		<td rowspan="6" height="144" style="height: 108.0pt; width: 14px; layout-flow: vertical-ideographic;" class="style11">
 		家庭其他成员</td>
-		<td colspan="2" width="40" style="width: 30pt" class="style4">关系</td>
-		<td style="width: 68pt" class="style2">姓名</td>
-		<td colspan="4" class="style4">身份证号码</td>
-		<td width="53" style="width: 40pt" class="style2">健康</td>
-		<td width="53" style="width: 40pt" class="style12">文化</td>
-		<td style="width: 59pt" class="style12">职业或就读</td>
-		<td style="width: 21pt" class="style2">收入</td>
-		<td colspan="3" class="style4">其他资助/低保</td>
+		<td colspan="2" width="40" style="width: 30pt" class="style3">关系</td>
+		<td style="width: 85px" class="style2">姓名</td>
+		<td colspan="4" class="style3">身份证号码</td>
+		<td style="width: 68px" class="style2">健康</td>
+		<td style="width: 51px" class="style12">文化</td>
+		<td style="width: 128px" class="style12">职业或就读</td>
+		<td style="width: 20px" class="style2">收入</td>
+		<td colspan="3" class="style3">其他资助/低保</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[0]_relationship name=relatives[0]_relationship disabled="disabled" />　</td>
-		<td style="width: 68pt" class="style3">
+		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[0]_name name=relatives[0]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style4"><input class=toinput id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style3">
+		<td colspan="4" class="style3"><input class=toinput id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[0]_health name=relatives[0]_health disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style13">
+		<td style="width: 51px" class="style13">
 		<input class=toinput id=relatives[0]_education name=relatives[0]_education disabled="disabled" style="width: 95%" /></td>
-		<td style="width: 59pt" class="style13">
+		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[0]_profectional name=relatives[0]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 21pt" class="style3">
+		<td style="width: 20px" class="style3">
 		<input class=toinput id=relatives[0]_anualIncome name=relatives[0]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[0]_otherResponse name=relatives[0]_otherResponse disabled="disabled" style="width: 95%" />　</td>
@@ -118,16 +118,16 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[1]_relationship name=relatives[1]_relationship disabled="disabled" />　</td>
-		<td style="width: 68pt" class="style3">
+		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[1]_name name=relatives[1]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style4"><input class=toinput id=relatives[1]_relativeId name=relatives[1]_relativeId disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style3">
+		<td colspan="4" class="style3"><input class=toinput id=relatives[1]_relativeId name=relatives[1]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[1]_health name=relatives[1]_health disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style13">
+		<td style="width: 51px" class="style13">
 		<input class=toinput id=relatives[1]_education name=relatives[1]_education disabled="disabled" style="width: 95%" /></td>
-		<td style="width: 59pt" class="style13">
+		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[1]_profectional name=relatives[1]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 21pt" class="style3">
+		<td style="width: 20px" class="style3">
 		<input class=toinput id=relatives[1]_anualIncome name=relatives[1]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[1]_otherResponse name=relatives[1]_otherResponse disabled="disabled" style="width: 95%" />　</td>
@@ -135,16 +135,16 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[2]_relationship name=relatives[2]_relationship disabled="disabled" />　</td>
-		<td style="width: 68pt" class="style3">
+		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[2]_name name=relatives[2]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style4"><input class=toinput id=relatives[2]_relativeId name=relatives[2]_relativeId disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style3">
+		<td colspan="4" class="style3"><input class=toinput id=relatives[2]_relativeId name=relatives[2]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[2]_health name=relatives[2]_health disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style13">
+		<td style="width: 51px" class="style13">
 		<input class=toinput id=relatives[2]_education name=relatives[2]_education disabled="disabled" style="width: 95%" /></td>
-		<td style="width: 59pt" class="style13">
+		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[2]_profectional name=relatives[2]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 21pt" class="style3">
+		<td style="width: 20px" class="style3">
 		<input class=toinput id=relatives[2]_anualIncome name=relatives[2]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[2]_otherResponse name=relatives[2]_otherResponse disabled="disabled" style="width: 95%" />　</td>
@@ -152,16 +152,16 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[3]_relationship name=relatives[3]_relationship disabled="disabled" />　</td>
-		<td style="width: 68pt" class="style3">
+		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[3]_name name=relatives[3]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style4"><input class=toinput id=relatives[3]_relativeId name=relatives[3]_relativeId disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style3">
+		<td colspan="4" class="style3"><input class=toinput id=relatives[3]_relativeId name=relatives[3]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[3]_health name=relatives[3]_health disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style13">
+		<td style="width: 51px" class="style13">
 		<input class=toinput id=relatives[3]_education name=relatives[3]_education disabled="disabled" style="width: 95%" /></td>
-		<td style="width: 59pt" class="style13">
+		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[3]_profectional name=relatives[3]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 21pt" class="style3">
+		<td style="width: 20px" class="style3">
 		<input class=toinput id=relatives[3]_anualIncome name=relatives[3]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[3]_otherResponse name=relatives[3]_otherResponse disabled="disabled" style="width: 95%" />　</td>
@@ -169,24 +169,24 @@
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
 		<input class=toinput id=relatives[4]_relationship name=relatives[4]_relationship disabled="disabled" />　</td>
-		<td style="width: 68pt" class="style3">
+		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[4]_name name=relatives[4]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style4"><input class=toinput id=relatives[4]_relativeId name=relatives[4]_relativeId disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style3">
+		<td colspan="4" class="style3"><input class=toinput id=relatives[4]_relativeId name=relatives[4]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[4]_health name=relatives[4]_health disabled="disabled" style="width: 95%" /></td>
-		<td width="53" style="width: 40pt" class="style13">
+		<td style="width: 51px" class="style13">
 		<input class=toinput id=relatives[4]_education name=relatives[4]_education disabled="disabled" style="width: 95%" /></td>
-		<td style="width: 59pt" class="style13">
+		<td style="width: 128px" class="style13">
 		<input class=toinput id=relatives[4]_profectional name=relatives[4]_profectional disabled="disabled" style="width: 95%" />　</td>
-		<td style="width: 21pt" class="style3">
+		<td style="width: 20px" class="style3">
 		<input class=toinput id=relatives[4]_anualIncome name=relatives[4]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="3" class="style6">
 		<input class=toinput id=relatives[4]_otherResponse name=relatives[4]_otherResponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-		<td rowspan="11" height="286" width="41" style="height: 221.1pt; width: 31pt; layout-flow: vertical-ideographic;" class="style11">
+		<td rowspan="11" height="286" style="height: 221.1pt; width: 14px; layout-flow: vertical-ideographic;" class="style11">
 		家庭经济情况</td>
-		<td rowspan="6" width="35" style="width: 26pt; layout-flow: vertical-ideographic;" class="style11">
+		<td rowspan="6" style="width: 200px; layout-flow: vertical-ideographic;" class="style11">
 		主要收入</td>
 		<td colspan="13" style="height: 20pt;" class="style17">
 		1、农业生产：农田<input name="Text26" type="text" style="width: 41px" /> 亩，种植情况<span style="mso-spacerun:yes">
@@ -215,7 +215,7 @@
 		</span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td rowspan="5" height="130" width="35" style="height: 100.5pt; width: 26pt; layout-flow: vertical-ideographic;" class="style11">
+		<td rowspan="5" height="130" style="height: 100.5pt; width: 200px; layout-flow: vertical-ideographic;" class="style11">
 		主要支出</td>
 		<td colspan="13" class="style17">
 		1、主要支出：<span style="mso-spacerun:yes"><input name="Text38" type="text" style="width: 626px" /></span></td>
@@ -239,7 +239,7 @@
 		</span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td rowspan="4" height="100" align="center" width="41" style="height: 76.2pt; width: 31pt; layout-flow: vertical-ideographic;" class="style21">
+		<td rowspan="4" height="100" align="center" style="height: 76.2pt; width: 14px; layout-flow: vertical-ideographic;" class="style21">
 		<span style="mso-spacerun:yes">&nbsp;</span>住房情况<span style="mso-spacerun:yes">&nbsp;</span></td>
 		<td colspan="14" class="style22">1.
 		<input name="Checkbox9" type="checkbox" />自有房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>外观整体状况：  
@@ -261,7 +261,7 @@
 		<input name="Checkbox12" type="checkbox" /></span>简陋<span style="mso-spacerun:yes">&nbsp;</span><input name="Checkbox13" type="checkbox" />水泥地<span style="mso-spacerun:yes">&nbsp;</span><input name="Checkbox14" type="checkbox" />贴瓷砖<span style="mso-spacerun:yes">&nbsp;<input name="Checkbox15" type="checkbox" /></span>舒适<span style="mso-spacerun:yes">&nbsp;</span><span style="mso-spacerun:yes"><input name="Checkbox16" type="checkbox" /></span>高档</font></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
-		<td rowspan="2" height="48" width="41" style="height: 36.0pt; width: 31pt" class="style25">
+		<td rowspan="2" height="48" style="height: 36.0pt; width: 14px" class="style25">
 		照片收集</td>
 		<td colspan="14" class="style22">
 		1.走访小组核实以下内容是否拍摄：<input name="Checkbox17" type="checkbox" />孩子正面独照<span style="mso-spacerun:yes">&nbsp; </span>
@@ -278,17 +278,17 @@
 		<input name="Checkbox26" type="checkbox" />其他证明材料<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
 	</tr>
 	<tr height="40" style="mso-height-source:userset;height:30.0pt">
-		<td height="80" width="41" style="height: 60.0pt; width: 31pt" class="style11">
+		<td height="80" style="height: 60.0pt; width: 14px" class="style11">
 		贫困原因概括</td>
 		<td colspan="14" class="style27">　<textarea name="TextArea1" style="width: 95%; height: 95%"></textarea></td>
 	</tr>
 	<tr height="53" style="mso-height-source:userset;height:39.95pt">
-		<td height="53" width="41" style="height: 39.95pt; width: 31pt" class="style11">
+		<td height="53" style="height: 39.95pt; width: 14px" class="style11">
 		学生评价</td>
 		<td colspan="14" class="style28">　<textarea name="TextArea2" style="width: 95%; height: 95%" rows="1" cols="20"></textarea></td>
 	</tr>
 	<tr height="40" style="mso-height-source:userset;height:30.0pt">
-		<td rowspan="2" height="80" width="41" style="height: 60.0pt; width: 31pt; layout-flow: vertical-ideographic;" class="style11">
+		<td rowspan="2" height="80" style="height: 60.0pt; width: 14px; layout-flow: vertical-ideographic;" class="style11">
 		走访结论</td>
 		<td colspan="14" class="style22">　<textarea name="TextArea3" style="width: 95%; height: 95%" rows="1" cols="20"></textarea></td>
 	</tr>
@@ -299,16 +299,16 @@
 		<input name="Radio1" type="radio" value="11" />不建议捐助<span style="mso-spacerun:yes">&nbsp;&nbsp;</span></td>
 	</tr>
 	<tr height="33" style="mso-height-source:userset;height:24.95pt">
-		<td colspan="3" height="33" width="81" style="height: 24.95pt; width: 61pt" class="style4">
+		<td colspan="2" height="33" width="81" style="height: 24.95pt; width: 61pt" class="style3">
 		走访人</td>
-		<td colspan="3" width="207" style="width: 156pt" class="style4">
+		<td colspan="3" width="207" style="width: 156pt" class="style3">
 		<input name="Text46" type="text" style="width: 95%" />　</td>
-		<td width="53" style="width: 40pt" class="style2">电话：</td>
-		<td colspan="2" width="106" style="width: 80pt" class="style4">
+		<td style="width: 32px" class="style2">电话：</td>
+		<td colspan="2" width="106" style="width: 80pt" class="style3">
 		<input name="Text47" type="text" style="width: 95%" />　</td>
-		<td class="style29"></td>
-		<td style="width: 59pt" class="style2">走访时间：</td>
-		<td colspan="4" class="style4">
+		<td class="style29" style="width: 68px"></td>
+		<td style="width: 128px" class="style2">走访时间：</td>
+		<td colspan="4" class="style3">
 		<input name="Text48" type="text" style="width: 95%" />　</td>
 	</tr>
 	<tr height="46" style="mso-height-source:userset;height:35.1pt">
@@ -323,3 +323,4 @@
 	</tr>
 </table>
 </form>
+
