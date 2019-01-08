@@ -82,7 +82,7 @@ public class PostVisitProcessor implements TaskListener {
 			} else if(key.indexOf("relatives")==0)
 			{ 
 				
-				int index = Integer.parseInt(key.substring(9,10));
+				int index = Integer.parseInt(key.substring(10,11));
 				Relative relative = relatives.get(index);
 				String methodname= key.substring(13,14).toUpperCase()+key.substring(14);
 				Object value = delegateTask.getVariable(key);
