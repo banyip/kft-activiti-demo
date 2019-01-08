@@ -33,50 +33,71 @@ public class Leave extends IdEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
     private String processInstanceId;
-    private String picture;
+    public String getOtherSponse() {
+		return otherSponse;
+	}
+
+	public void setOtherSponse(String otherSponse) {
+		this.otherSponse = otherSponse;
+	}
+
+	public String getChineseScore() {
+		return chineseScore;
+	}
+
+	public void setChineseScore(String chineseScore) {
+		this.chineseScore = chineseScore;
+	}
+
+	public String getMathScore() {
+		return mathScore;
+	}
+
+	public void setMathScore(String mathScore) {
+		this.mathScore = mathScore;
+	}
+
+	private String picture;
     private String applicantId;
     private String studentId;
     
     private String studentContactNo;
     private String parentName;
     private String parentContactNo;
-    private int otherSponse=0;
+    private String otherSponse;
     private String schoolContactPerson;
     private String schoolContactNo;
-    private boolean ifLiveInSchool = false;
-    private int chineseScore = 0;
-    private int mathScore = 0;
+    private String ifLiveInSchool;
+    
     @Column
+    public String getIfLiveInSchool() {
+		return ifLiveInSchool;
+	}
+
+	public void setIfLiveInSchool(String ifLiveInSchool) {
+		this.ifLiveInSchool = ifLiveInSchool;
+	}
+
+	private String chineseScore ;
+    private String mathScore;
+    private String scorePosition;
+    @Column
+    public String getScorePosition() {
+		return scorePosition;
+	}
+
+	public void setScorePosition(String scorePosition) {
+		this.scorePosition = scorePosition;
+	}
+
+	@Column
     public String getParentName() {
 		return parentName;
 	}
 
-	public boolean isIfLiveInSchool() {
-		return ifLiveInSchool;
-	}
 
-	@Column
-	public void setIfLiveInSchool(boolean ifLiveInSchool) {
-		this.ifLiveInSchool = ifLiveInSchool;
-	}
 
-	@Column
-	public int getChineseScore() {
-		return chineseScore;
-	}
 
-	public void setChineseScore(int chineseScore) {
-		this.chineseScore = chineseScore;
-	}
-
-	@Column
-	public int getMathScore() {
-		return mathScore;
-	}
-
-	public void setMathScore(int mathScore) {
-		this.mathScore = mathScore;
-	}
 
 	public void setParentName(String parentName) {
 		this.parentName = parentName;
@@ -91,14 +112,7 @@ public class Leave extends IdEntity implements Serializable {
 		this.parentContactNo = parentContactNo;
 	}
 
-	@Column
-	public int getOtherSponse() {
-		return otherSponse;
-	}
 
-	public void setOtherSponse(int otherSponse) {
-		this.otherSponse = otherSponse;
-	}
 
 	@Column
 	public String getSchoolContactPerson() {
