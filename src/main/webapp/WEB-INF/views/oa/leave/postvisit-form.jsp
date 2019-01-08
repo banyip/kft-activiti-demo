@@ -100,10 +100,10 @@
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input class=toinput id=relatives[0]_relationShip name=relatives[0]_relationShip disabled="disabled" />　</td>
+		<input class=toinput id=relatives[0]_relationship name=relatives[0]_relationship disabled="disabled" />　</td>
 		<td style="width: 68pt" class="style3">
-		<input name="Text19" type="text" style="width: 95%" />　</td>
-		<td colspan="4" class="style4"><input name="Text20" type="text" style="width: 95%" /></td>
+		<input class=toinput id=relatives[0]_name name=relatives[0]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="4" class="style4"><input class=toinput id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td width="53" style="width: 40pt" class="style3">
 		<input name="Text21" type="text" style="width: 48px" /></td>
 		<td width="53" style="width: 40pt" class="style13">
@@ -117,7 +117,7 @@
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input class=toinput id=relatives[1]_relationShip name=relatives[1]_relationShip  disabled="disabled" />　</td>
+		<input class=toinput id=relatives[1]_relationship name=relatives[1]_relationship  disabled="disabled" />　</td>
 		<td style="width: 68pt" class="style3">　</td>
 		<td colspan="4" class="style4">　</td>
 		<td width="53" style="width: 40pt" class="style3">　</td>
@@ -128,7 +128,7 @@
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input class=toinput id=relatives[2]_relationShip name=relatives[2]_relationShip  disabled="disabled" /></td>
+		<input class=toinput id=relatives[2]_relationship name=relatives[2]_relationship  disabled="disabled" /></td>
 		<td style="width: 68pt" class="style3">　</td>
 		<td colspan="4" class="style4">　</td>
 		<td width="53" style="width: 40pt" class="style3">　</td>
@@ -139,7 +139,7 @@
 	</tr>
 	<tr style="mso-height-source: userset;">
 		<td colspan="2" width="40" style="height: 18pt; width: 30pt" class="style6">
-		　<input class=toinput id=relatives[3]_relationShip name=relatives[3]_relationShip  disabled="disabled" /></td>
+		　<input class=toinput id=relatives[3]_relationship name=relatives[3]_relationship  disabled="disabled" /></td>
 		<td style="width: 68pt; height: 18pt;" class="style3">　</td>
 		<td colspan="4" style="height: 18pt;" class="style4">
 		　</td>
