@@ -87,7 +87,7 @@
 		<td style="width: 100px" class="style10">&nbsp;<input class="toinput" id="leave_ScorePosition" name=scorePosition style="width: 42px" /> 名</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
-		<td rowspan="6" height="144" style="height: 108.0pt; width: 14px; layout-flow: vertical-ideographic;" class="style11">
+		<td rowspan="6" style="width: 14px; layout-flow: vertical-ideographic;" class="style11">
 		家庭其他成员</td>
 		<td colspan="2" width="40" style="width: 30pt" class="style3">关系</td>
 		<td style="width: 85px" class="style2">姓名</td>
@@ -99,7 +99,7 @@
 		<td colspan="3" class="style3">其他资助/低保</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
-		<td colspan="2"  width="40" style="height: 18.0pt; width: 30pt" class="style6">
+		<td colspan="2"  width="40" style="width: 30pt" class="style6">
 		<input class=toinput id=relatives[0]_relationship name=relatives[0]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[0]_name name=relatives[0]_name disabled="disabled" style="width: 95%" />　</td>
@@ -185,11 +185,11 @@
 	</tr>
 	</div>
 	<tr style="mso-height-source:userset;">
-		<td rowspan="11" height="286" style="height: 221.1pt; width: 14px; layout-flow: vertical-ideographic;" class="style11">
+		<td rowspan="11" style="width: 14px; layout-flow: vertical-ideographic;" class="style11">
 		家庭经济情况</td>
 		<td rowspan="6" style="width: 200px; layout-flow: vertical-ideographic;" class="style11">
 		主要收入</td>
-		<td colspan="13" style="height: 20pt;" class="style17">
+		<td colspan="13"  class="style17">
 		1、农业生产：农田<input name="Text26" type="text" style="width: 41px" /> 亩，种植情况<span style="mso-spacerun:yes">
 		</span><input name="Text27" type="text" style="width: 203px" />，出售收入<span style="mso-spacerun:yes"><input name="Text28" type="text" style="width: 68px" /></span>元/年。</td>
 	</tr>
