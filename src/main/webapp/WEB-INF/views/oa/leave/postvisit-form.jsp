@@ -103,7 +103,7 @@
 		<input class=toinput id=relatives[0]_relationship name=relatives[0]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[0]_name name=relatives[0]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style3"><input class=toinput id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="5" class="style3"><input class=toinput id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[0]_health name=relatives[0]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
@@ -120,7 +120,7 @@
 		<input class=toinput id=relatives[1]_relationship name=relatives[1]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[1]_name name=relatives[1]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style3"><input class=toinput id=relatives[1]_relativeId name=relatives[1]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="5" class="style3"><input class=toinput id=relatives[1]_relativeId name=relatives[1]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[1]_health name=relatives[1]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
@@ -137,7 +137,7 @@
 		<input class=toinput id=relatives[2]_relationship name=relatives[2]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[2]_name name=relatives[2]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style3"><input class=toinput id=relatives[2]_relativeId name=relatives[2]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="5" class="style3"><input class=toinput id=relatives[2]_relativeId name=relatives[2]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[2]_health name=relatives[2]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
@@ -154,7 +154,7 @@
 		<input class=toinput id=relatives[3]_relationship name=relatives[3]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[3]_name name=relatives[3]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style3"><input class=toinput id=relatives[3]_relativeId name=relatives[3]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="5" class="style3"><input class=toinput id=relatives[3]_relativeId name=relatives[3]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[3]_health name=relatives[3]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
@@ -171,7 +171,7 @@
 		<input class=toinput id=relatives[4]_relationship name=relatives[4]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
 		<input class=toinput id=relatives[4]_name name=relatives[4]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="4" class="style3"><input class=toinput id=relatives[4]_relativeId name=relatives[4]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<td colspan="5" class="style3"><input class=toinput id=relatives[4]_relativeId name=relatives[4]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
 		<input class=toinput id=relatives[4]_health name=relatives[4]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
