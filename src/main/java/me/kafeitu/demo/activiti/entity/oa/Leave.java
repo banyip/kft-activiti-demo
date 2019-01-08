@@ -51,6 +51,33 @@ public class Leave extends IdEntity implements Serializable {
 		return parentName;
 	}
 
+	public boolean isIfLiveInSchool() {
+		return ifLiveInSchool;
+	}
+
+	@Column
+	public void setIfLiveInSchool(boolean ifLiveInSchool) {
+		this.ifLiveInSchool = ifLiveInSchool;
+	}
+
+	@Column
+	public int getChineseScore() {
+		return chineseScore;
+	}
+
+	public void setChineseScore(int chineseScore) {
+		this.chineseScore = chineseScore;
+	}
+
+	@Column
+	public int getMathScore() {
+		return mathScore;
+	}
+
+	public void setMathScore(int mathScore) {
+		this.mathScore = mathScore;
+	}
+
 	public void setParentName(String parentName) {
 		this.parentName = parentName;
 	}

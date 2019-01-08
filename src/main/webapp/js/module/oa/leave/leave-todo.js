@@ -125,7 +125,10 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
                     for(let key in v[i])
                         $('input[name=relatives\\['+i+'\\]\\.' + key).val(eval('v['+i+'].'+key));               
                 }
-            }  else {
+            } else if (k.substr(0,2) == 'if') 
+            {
+                 $("input[type=radio][name="+k+"][value="+v+"]").attr("checked",true);                
+            } else {
 				$('input[name=' + k + '].toinput' ).val(v);
 			}
         });

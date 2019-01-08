@@ -49,9 +49,9 @@
 		<input class=toinput id=leave_Address name="leave_Address" style="width: 95%"/></td>
 		<td colspan="2" width="106" style="width: 80pt" class="style4">学生电话/QQ</td>
 		<td colspan="2" class="style4"><input  class=toinput id=leave_StudentContactNo name="studentContactNo" style="width:95%"/>　</td>
-		<td colspan="3" class="style4">是否住校：<input  class=toinput id=leave_IfLiveInSchool name="ifLiveInSchool" type="radio" checked="checked" />是 
+		<td colspan="3" class="style4">是否住校：<input  class=toinput id=leave_IfLiveInSchool name="ifLiveInSchool" type="radio" checked="checked" value=true />是 
 		 
-		<input  class=toinput id=leave_StudentContactNo name="studentContactNo" type="radio" />否</td>
+		<input  class=toinput id=leave_StudentContactNo name="studentContactNo" type="radio" value=false/>否</td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="3" height="24" width="81" style="height: 18.0pt; width: 61pt" class="style2">
