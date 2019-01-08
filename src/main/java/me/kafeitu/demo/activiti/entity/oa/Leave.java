@@ -78,8 +78,26 @@ public class Leave extends IdEntity implements Serializable {
 		this.ifLiveInSchool = ifLiveInSchool;
 	}
 
+	private String englishScore;
+	public String getEnglishScore() {
+		return englishScore;
+	}
+
+	public void setEnglishScore(String englishScore) {
+		this.englishScore = englishScore;
+	}
+
+	public String getOtherScore() {
+		return otherScore;
+	}
+
+	public void setOtherScore(String otherScore) {
+		this.otherScore = otherScore;
+	}
+
 	private String chineseScore ;
     private String mathScore;
+    private String otherScore;
     private String scorePosition;
     @Column
     public String getScorePosition() {
