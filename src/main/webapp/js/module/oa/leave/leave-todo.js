@@ -376,7 +376,7 @@ var handleOpts = {
                     ];
                     $.each($('.toinput'),function()
                         {
-                            if(this.is(":disabled")==false)
+                            if(this.disabled==false)
                             variables.push({
                                 key: this.id,
                                 value: this.value,

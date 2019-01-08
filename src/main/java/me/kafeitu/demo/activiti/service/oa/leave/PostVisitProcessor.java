@@ -78,7 +78,8 @@ public class PostVisitProcessor implements TaskListener {
 					}
 					logger.debug("走访信息保存成功："+key);
 			} else if(key.indexOf("relatives")==0)
-			{
+			{ 
+				/*
 				int index = Integer.parseInt(key.substring(9,1));
 				Relative relative = relatives.get(index);
 				String methodname= key.substring(13,1).toUpperCase()+key.substring(14);
@@ -101,6 +102,7 @@ public class PostVisitProcessor implements TaskListener {
 						logger.error("走访信息保存失败：", e);
 					}
 					logger.debug("走访信息保存成功："+key);
+					*/
 			}
 		}
 
