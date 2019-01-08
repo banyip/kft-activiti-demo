@@ -38,7 +38,7 @@ public class Relative extends IdEntity implements Serializable {
 		this.name = relativeInfos.get(1);
 		this.relativeId = relativeInfos.get(2);		
 		this.contactNum = relativeInfos.get(3);
-		this.profecional = relativeInfos.get(4);
+		this.profectional = relativeInfos.get(4);
 		this.anualIncome = Integer.parseInt(relativeInfos.get(5));
 		this.health = relativeInfos.get(6);
 		return;
@@ -74,11 +74,11 @@ public class Relative extends IdEntity implements Serializable {
 		this.contactNum = contactNum;
 	}
 	@Column
-	public String getProfecional() {
-		return profecional;
+	public String getprofectional() {
+		return profectional;
 	}
-	public void setProfecional(String profecional) {
-		this.profecional = profecional;
+	public void setprofectional(String profectional) {
+		this.profectional = profectional;
 	}
 	
 	@Column
@@ -118,7 +118,7 @@ public class Relative extends IdEntity implements Serializable {
     private String relationship;
     private String name;
     private String contactNum;
-    private String profecional;
+    private String profectional;
     private String job;
     private int anualIncome=0;
     private String health;
