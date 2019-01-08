@@ -417,10 +417,10 @@ var handleOpts = {
 			open: function(id, taskId) {
 				var dialog = this;
 				
-				$('#startTime,#endTime', this).datetimepicker({
+				$('#leave_poorEvaluateDate', this).datetimepicker({
 		            stepMinute: 5
 		        });
-				
+	            $('#leave_poorEvaluateDate').datetimepicker('setDate', new Date());	
 				// 打开对话框的时候读取请假内容
 				loadPartlyDetailWithTaskVars.call(this, id, taskId, null);
 				
