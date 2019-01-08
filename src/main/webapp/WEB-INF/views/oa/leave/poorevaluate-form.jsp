@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
 <form method="post">
 <table border="0" cellpadding="0" cellspacing="0" width="731" style="border-collapse:
  collapse;width:550pt">
