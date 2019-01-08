@@ -68,8 +68,19 @@ public class Leave extends IdEntity implements Serializable {
     private String schoolContactPerson;
     private String schoolContactNo;
     private String ifLiveInSchool;
+    private String ifAgreeToMail;
+    
     
     @Column
+    public String getIfAgreeToMail() {
+		return ifAgreeToMail;
+	}
+
+	public void setIfAgreeToMail(String ifAgreeToMail) {
+		this.ifAgreeToMail = ifAgreeToMail;
+	}
+
+	@Column
     public String getIfLiveInSchool() {
 		return ifLiveInSchool;
 	}
@@ -286,28 +297,20 @@ public class Leave extends IdEntity implements Serializable {
 		this.schoolPerfomance = schoolPerfomance;
 	}
 
+
 	@Column
-	public boolean isIfAgreeToPublish() {
+	public String getIfAgreeToPublish() {
 		return ifAgreeToPublish;
 	}
 
-	public void setIfAgreeToPublish(boolean ifAgreeToPublish) {
+	public void setIfAgreeToPublish(String ifAgreeToPublish) {
 		this.ifAgreeToPublish = ifAgreeToPublish;
-	}
-	@Column
-	public boolean isIfAgreeToMail() {
-		return ifAgreeToMail;
-	}
-
-	public void setIfAgreeToMail(boolean ifAgreeToMail) {
-		this.ifAgreeToMail = ifAgreeToMail;
 	}
 
 	private String applicantName;
     private String applicantContactNum;
     private String schoolPerfomance;
-    private boolean ifAgreeToPublish=true;
-    private boolean ifAgreeToMail=true;
+    private String ifAgreeToPublish;
     private String headteacher;
     private String headteachercontactNum;
     /*
