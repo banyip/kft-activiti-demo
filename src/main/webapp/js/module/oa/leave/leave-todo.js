@@ -122,7 +122,7 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
             {                
                 for(var i=0;i<v.length;i++)
                 {
-                    $('#relatives\\['+i+'\\]').removeAttr("disabled");   
+                    $(':input[id^=relatives\\['+i+'\\]]').removeAttr("disabled");   
                     for(let key in v[i])
                         $('input[name=relatives\\['+i+'\\]_' + key).val(eval('v['+i+'].'+key));   
                 }
