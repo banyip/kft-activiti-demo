@@ -157,7 +157,7 @@
 
 		<!-- table用来显示信息，方便办理任务 -->
 		<%@include file="view-form.jsp" %>
-			初审意见：<input type=text class=toinput id=leave_firstAuditNote name=leave_firstAuditNote/>
+			初审意见：<input type=text class=firstaudit id=leave_firstAuditNote name=leave_firstAuditNote/>
 	</div>
 
 	<!-- HR审批 -->

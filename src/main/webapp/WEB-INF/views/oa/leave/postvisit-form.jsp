@@ -3,7 +3,7 @@
 
 <form method="post">
 <table border="0" cellpadding="0" cellspacing="0" style="border-collapse:
- collapse;width:1200px" class="toinput">
+ collapse;width:1200px" class="postvisit">
 	<colgroup>
 		<col style="mso-width-source:userset;mso-width-alt:1312;" />
 		<col width="35" style="mso-width-source:userset;mso-width-alt:1120;width:26pt" />
@@ -25,31 +25,31 @@
 		<td colspan="2"  class="style2">
 		姓<span style="mso-spacerun:yes">&nbsp; </span>名</td>
 		<td style="width: 128px" class="style3">
-			<input class="toinput" id="leave_StudentName" name="studentName" />
+			<input class="postvisit" id="leave_StudentName" name="studentName" />
 		</td>
 		<td style="width: 85px" class="style2">性别</td>
-		<td style="width: 42px" class="style3"><select class="toinput" id="leave_Sex" name="sex">
+		<td style="width: 42px" class="style3"><select class="postvisit" id="leave_Sex" name="sex">
 		<option selected="selected">男</option>
 		<option>女</option>
 		</select>　</td>
 		<td style="width: 32px" class="style2">民族</td>
 		<td style="width: 51px" class="style3">
-		<input  class="toinput" id="leave_Nationality" name="nationality" style="width: 51px" />　</td>
+		<input  class="postvisit" id="leave_Nationality" name="nationality" style="width: 51px" />　</td>
 		<td colspan="3" class="style3">身份证号码</td>
 		<td colspan="2" class="style3">
-		<input  class=toinput id=leave_StudentId name="studentId" style="width: 95%" /></td>
+		<input  class=postvisit id=leave_StudentId name="studentId" style="width: 95%" /></td>
 		<td colspan="2" width="77" style="width: 58pt" class="style3">年级/班别</td>
 		<td style="width: 101px" class="style3">
-		<input class="toinput" id="leave_Grade" name=grade style="width: 42px" /><input class="toinput" id="leave_ClassName" name=className style="width: 42px"/></td>
+		<input class="postvisit" id="leave_Grade" name=grade style="width: 42px" /><input class="postvisit" id="leave_ClassName" name=className style="width: 42px"/></td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  class="style2">
 		家庭住址</td>
 		<td colspan="5" class="style3">
-		<input class=toinput id=leave_Address name="leave_Address" style="width: 95%"/></td>
+		<input class=postvisit id=leave_Address name="leave_Address" style="width: 95%"/></td>
 		<td colspan="3" class="style3">学生电话/QQ</td>
-		<td colspan="2" class="style3"><input  class=toinput id=leave_StudentContactNo name="studentContactNo" style="width:95%"/>　</td>
-        <td colspan="3" class="style3">是否住校：<select class=toinput id=leave_IfLiveInSchool name="ifLiveInSchool"><option selected="selected">是</option>
+		<td colspan="2" class="style3"><input  class=postvisit id=leave_StudentContactNo name="studentContactNo" style="width:95%"/>　</td>
+        <td colspan="3" class="style3">是否住校：<select class=postvisit id=leave_IfLiveInSchool name="ifLiveInSchool"><option selected="selected">是</option>
 		<option>否</option></select>
         </td>
 	</tr>
@@ -57,34 +57,34 @@
 		<td colspan="2"  width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		家长姓名</td>
 		<td style="width: 128px" class="style3">
-		<input class=toinput id=leave_ParentName name="parentName" /></td>
+		<input class=postvisit id=leave_ParentName name="parentName" /></td>
 		<td colspan="2" width="106" style="width: 80pt" class="style2">家长电话</td>
-		<td colspan="2" class="style3"><input class=toinput id=leave_ParentContactNo name="parentContactNo" style="width:95%"/>　</td>
+		<td colspan="2" class="style3"><input class=postvisit id=leave_ParentContactNo name="parentContactNo" style="width:95%"/>　</td>
 		<td colspan="8" class="style8">
 		<font class="font5">本人是否有其他资助：<input name="Radio1" type="radio" />否<span style="mso-spacerun:yes">
-		</span><input name="Radio1" type="radio" />是（金额：<input  type=number class=toinput id=leave_OtherSponse name="otherSponse" />）</font></td>
+		</span><input name="Radio1" type="radio" />是（金额：<input  type=number class=postvisit id=leave_OtherSponse name="otherSponse" />）</font></td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="81" style="height: 18.0pt; width: 61pt" class="style2">
 		学校名称</td>
 		<td colspan="5" class="style3">
-		<input class="toinput" id="leave_School" name=school style="width:95%" /></td>
+		<input class="postvisit" id="leave_School" name=school style="width:95%" /></td>
 		<td colspan="3" class="style3">学校联系人</td>
 		<td style="width: 128px" class="style3">
-		<input  class=toinput id=leave_SchoolContactPerson name="schoolContactPerson" /></td>
+		<input  class=postvisit id=leave_SchoolContactPerson name="schoolContactPerson" /></td>
 		<td colspan="2" width="90" style="width: 68pt" class="style2">联系电话</td>
 		<td colspan="2" class="style3">
-		<input  class=toinput id=leave_SchoolContactNo name="schoolContactNo" /></td>
+		<input  class=postvisit id=leave_SchoolContactNo name="schoolContactNo" /></td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="81" style="height: 18.0pt; width: 61pt" class="style3">
 		学生成绩</td>
-		<td style="width: 128px" class="style8">语文：<input class="toinput" id="leave_ChineseScore" name=chineseScore style="width: 33px" />分</td>
-		<td colspan="2" width="106" style="width: 80pt" class="style8">数学：<input class="toinput" id="leave_MathScore" name=mathScore  style="width: 33px" />分</td>
-		<td colspan="2" class="style9">英语：<input class="toinput" id="leave_EnglishScore" name=englishScore  style="width: 33px" />分</td>
-		<td colspan="4" class="style9">其他学科：<input class="toinput" id="leave_OtherScore" name=otherScore  style="width: 120px" />分</td>
+		<td style="width: 128px" class="style8">语文：<input class="postvisit" id="leave_ChineseScore" name=chineseScore style="width: 33px" />分</td>
+		<td colspan="2" width="106" style="width: 80pt" class="style8">数学：<input class="postvisit" id="leave_MathScore" name=mathScore  style="width: 33px" />分</td>
+		<td colspan="2" class="style9">英语：<input class="postvisit" id="leave_EnglishScore" name=englishScore  style="width: 33px" />分</td>
+		<td colspan="4" class="style9">其他学科：<input class="postvisit" id="leave_OtherScore" name=otherScore  style="width: 120px" />分</td>
 		<td colspan="3" width="122" style="width: 92pt" class="style9">综合成绩排名：</td>
-		<td style="width: 100px" class="style10">&nbsp;<input class="toinput" id="leave_ScorePosition" name=scorePosition style="width: 42px" /> 名</td>
+		<td style="width: 100px" class="style10">&nbsp;<input class="postvisit" id="leave_ScorePosition" name=scorePosition style="width: 42px" /> 名</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td rowspan="6" style="width: 14px; layout-flow: vertical-ideographic;" class="style11">
@@ -100,88 +100,88 @@
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="width: 30pt" class="style6">
-		<input class=toinput id=relatives[0]_relationship name=relatives[0]_relationship disabled="disabled" />　</td>
+		<input class=postvisit id=relatives[0]_relationship name=relatives[0]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
-		<input class=toinput id=relatives[0]_name name=relatives[0]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[0]_name name=relatives[0]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="5" class="style3"><input class=postvisit id=relatives[0]_relativeId name=relatives[0]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
-		<input class=toinput id=relatives[0]_health name=relatives[0]_health disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[0]_health name=relatives[0]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
-		<input class=toinput id=relatives[0]_education name=relatives[0]_education disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[0]_education name=relatives[0]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
-		<input class=toinput id=relatives[0]_profectional name=relatives[0]_profectional disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[0]_profectional name=relatives[0]_profectional disabled="disabled" style="width: 95%" />　</td>
 		<td colspan=2 style="width: 20px" class="style3">
-		<input class=toinput id=relatives[0]_anualIncome name=relatives[0]_anualIncome disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[0]_anualIncome name=relatives[0]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=toinput id=relatives[0]_otherSponse name=relatives[0]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[0]_otherSponse name=relatives[0]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input class=toinput id=relatives[1]_relationship name=relatives[1]_relationship disabled="disabled" />　</td>
+		<input class=postvisit id=relatives[1]_relationship name=relatives[1]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
-		<input class=toinput id=relatives[1]_name name=relatives[1]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[1]_relativeId name=relatives[1]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[1]_name name=relatives[1]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="5" class="style3"><input class=postvisit id=relatives[1]_relativeId name=relatives[1]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
-		<input class=toinput id=relatives[1]_health name=relatives[1]_health disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[1]_health name=relatives[1]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
-		<input class=toinput id=relatives[1]_education name=relatives[1]_education disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[1]_education name=relatives[1]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
-		<input class=toinput id=relatives[1]_profectional name=relatives[1]_profectional disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[1]_profectional name=relatives[1]_profectional disabled="disabled" style="width: 95%" />　</td>
 		<td colspan=2 style="width: 20px" class="style3">
-		<input class=toinput id=relatives[1]_anualIncome name=relatives[1]_anualIncome disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[1]_anualIncome name=relatives[1]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=toinput id=relatives[1]_otherSponse name=relatives[1]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[1]_otherSponse name=relatives[1]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input class=toinput id=relatives[2]_relationship name=relatives[2]_relationship disabled="disabled" />　</td>
+		<input class=postvisit id=relatives[2]_relationship name=relatives[2]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
-		<input class=toinput id=relatives[2]_name name=relatives[2]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[2]_relativeId name=relatives[2]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[2]_name name=relatives[2]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="5" class="style3"><input class=postvisit id=relatives[2]_relativeId name=relatives[2]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
-		<input class=toinput id=relatives[2]_health name=relatives[2]_health disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[2]_health name=relatives[2]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
-		<input class=toinput id=relatives[2]_education name=relatives[2]_education disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[2]_education name=relatives[2]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
-		<input class=toinput id=relatives[2]_profectional name=relatives[2]_profectional disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[2]_profectional name=relatives[2]_profectional disabled="disabled" style="width: 95%" />　</td>
 		<td colspan=2 style="width: 20px" class="style3">
-		<input class=toinput id=relatives[2]_anualIncome name=relatives[2]_anualIncome disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[2]_anualIncome name=relatives[2]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=toinput id=relatives[2]_otherSponse name=relatives[2]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[2]_otherSponse name=relatives[2]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input class=toinput id=relatives[3]_relationship name=relatives[3]_relationship disabled="disabled" />　</td>
+		<input class=postvisit id=relatives[3]_relationship name=relatives[3]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
-		<input class=toinput id=relatives[3]_name name=relatives[3]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[3]_relativeId name=relatives[3]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[3]_name name=relatives[3]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="5" class="style3"><input class=postvisit id=relatives[3]_relativeId name=relatives[3]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
-		<input class=toinput id=relatives[3]_health name=relatives[3]_health disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[3]_health name=relatives[3]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
-		<input class=toinput id=relatives[3]_education name=relatives[3]_education disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[3]_education name=relatives[3]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
-		<input class=toinput id=relatives[3]_profectional name=relatives[3]_profectional disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[3]_profectional name=relatives[3]_profectional disabled="disabled" style="width: 95%" />　</td>
 		<td colspan=2 style="width: 20px" class="style3">
-		<input class=toinput id=relatives[3]_anualIncome name=relatives[3]_anualIncome disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[3]_anualIncome name=relatives[3]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=toinput id=relatives[3]_otherSponse name=relatives[3]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[3]_otherSponse name=relatives[3]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="height: 18.0pt; width: 30pt" class="style6">
-		<input class=toinput id=relatives[4]_relationship name=relatives[4]_relationship disabled="disabled" />　</td>
+		<input class=postvisit id=relatives[4]_relationship name=relatives[4]_relationship disabled="disabled" />　</td>
 		<td style="width: 85px" class="style3">
-		<input class=toinput id=relatives[4]_name name=relatives[4]_name disabled="disabled" style="width: 95%" />　</td>
-		<td colspan="5" class="style3"><input class=toinput id=relatives[4]_relativeId name=relatives[4]_relativeId disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[4]_name name=relatives[4]_name disabled="disabled" style="width: 95%" />　</td>
+		<td colspan="5" class="style3"><input class=postvisit id=relatives[4]_relativeId name=relatives[4]_relativeId disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 68px" class="style3">
-		<input class=toinput id=relatives[4]_health name=relatives[4]_health disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[4]_health name=relatives[4]_health disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 51px" class="style13">
-		<input class=toinput id=relatives[4]_education name=relatives[4]_education disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[4]_education name=relatives[4]_education disabled="disabled" style="width: 95%" /></td>
 		<td style="width: 128px" class="style13">
-		<input class=toinput id=relatives[4]_profectional name=relatives[4]_profectional disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[4]_profectional name=relatives[4]_profectional disabled="disabled" style="width: 95%" />　</td>
 		<td colspan=2 style="width: 20px" class="style3">
-		<input class=toinput id=relatives[4]_anualIncome name=relatives[4]_anualIncome disabled="disabled" style="width: 95%" /></td>
+		<input class=postvisit id=relatives[4]_anualIncome name=relatives[4]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=toinput id=relatives[4]_otherSponse name=relatives[4]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[4]_otherSponse name=relatives[4]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	</div>
 	<tr style="mso-height-source:userset;">

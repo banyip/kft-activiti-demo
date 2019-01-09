@@ -387,7 +387,7 @@ var handleOpts = {
 						type: 'B'
 					}
                     ];
-                    $.each($('.toinput'),function()
+                    $.each($('.postvisit'),function()
                         {
                             if(this.disabled==false)
                             variables.push({
@@ -437,7 +437,7 @@ var handleOpts = {
 						type: 'B'
 					}
                     ];
-                    $.each($('.toinput'),function()
+                    $.each($('.poorevaluate'),function()
                         {
                             if(this.disabled==false)
                             variables.push({
@@ -482,7 +482,7 @@ var handleOpts = {
 					value: true,
 					type: 'B'
                 }];
-               $.each($('.toinput'),function()
+               $.each($('.firstaudit'),function()
                 {
                     if(this.disabled==false)
                     variables.push({
