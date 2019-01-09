@@ -123,7 +123,7 @@
 								<td height="224" width="76" style="height: 168.0pt; width: 57pt" class="style7">
 								补充</td>
 								<td colspan="7" width="655" style="width: 493pt;height: 95%" class="style8">
-								<textarea class="toinput" id="leave_poorEvaluateNote" name="leave_poorEvaluateNote" style="height:95%;width:95%" name="TextArea1" cols="20" rows="5"></textarea>　</td>
+								<textarea class="toinput" id="leave_poorEvaluateNote" name="leave_poorEvaluateNote" style="height:95%;width:95%" name="TextArea1" cols="20" ></textarea>　</td>
 				</tr>
 				<tr height="44" style="mso-height-source:userset;height:33.0pt">
 								<td height="44" width="76" style="height: 33.0pt; width: 57pt" class="style2">
