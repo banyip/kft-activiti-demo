@@ -62,7 +62,7 @@
 		<td colspan="2" class="style3"><input class=postvisit id=leave_ParentContactNo name="parentContactNo" style="width:95%"/>　</td>
 		<td colspan="8" class="style8">
 		<font class="font5">本人是否有其他资助：<input name="Radio1" type="radio" />否<span style="mso-spacerun:yes">
-		</span><input name="Radio1" type="radio" />是（金额：<input  type=number class=postvisit id=leave_OtherSponse name="otherSponse" />）</font></td>
+		</span><input name="Radio1" type="radio" />是（金额：<input  type=number value=0 value=0 class=postvisit id=leave_OtherSponse name="otherSponse" />）</font></td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="81" style="height: 18.0pt; width: 61pt" class="style2">
