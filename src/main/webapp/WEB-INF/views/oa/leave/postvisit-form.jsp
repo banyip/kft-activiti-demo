@@ -62,7 +62,7 @@
 		<td colspan="2" class="style3"><input class=postvisit id=leave_ParentContactNo name="parentContactNo" style="width:95%"/>　</td>
 		<td colspan="8" class="style8">
 		<font class="font5">本人是否有其他资助：<input name="Radio1" type="radio" />否<span style="mso-spacerun:yes">
-		</span><input name="Radio1" type="radio" />是（金额：<input  type=number value=0 value=0 class=postvisit id=leave_OtherSponse name="otherSponse" />）</font></td>
+		</span><input name="Radio1" type="radio" />是（金额：<input  type=number value=0 value=0 class=postvisit id=leave_otherSponse type=number value=0  name="otherSponse" />）</font></td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="81" style="height: 18.0pt; width: 61pt" class="style2">
@@ -84,7 +84,7 @@
 		<td colspan="2" class="style9">英语：<input class="postvisit" id="leave_EnglishScore" name=englishScore  style="width: 33px" />分</td>
 		<td colspan="4" class="style9">其他学科：<input class="postvisit" id="leave_OtherScore" name=otherScore  style="width: 120px" />分</td>
 		<td colspan="3" width="122" style="width: 92pt" class="style9">综合成绩排名：</td>
-		<td style="width: 100px" class="style10">&nbsp;<input class="postvisit" id="leave_ScorePosition" name=scorePosition style="width: 42px" /> 名</td>
+		<td style="width: 100px" class="style10">&nbsp;<input class="postvisit" type=number value=0 id="leave_ScorePosition" name=scorePosition style="width: 42px" /> 名</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td rowspan="6" style="width: 14px; layout-flow: vertical-ideographic;" class="style11">
@@ -113,7 +113,7 @@
 		<td colspan=2 style="width: 20px" class="style3">
 		<input class=postvisit id=relatives[0]_anualIncome name=relatives[0]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=postvisit id=relatives[0]_otherSponse name=relatives[0]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[0]_otherSponse type=number value=0  name=relatives[0]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="height: 18.0pt; width: 30pt" class="style6">
@@ -130,7 +130,7 @@
 		<td colspan=2 style="width: 20px" class="style3">
 		<input class=postvisit id=relatives[1]_anualIncome name=relatives[1]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=postvisit id=relatives[1]_otherSponse name=relatives[1]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[1]_otherSponse type=number value=0  name=relatives[1]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="height: 18.0pt; width: 30pt" class="style6">
@@ -147,7 +147,7 @@
 		<td colspan=2 style="width: 20px" class="style3">
 		<input class=postvisit id=relatives[2]_anualIncome name=relatives[2]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=postvisit id=relatives[2]_otherSponse name=relatives[2]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[2]_otherSponse type=number value=0  name=relatives[2]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="height: 18.0pt; width: 30pt" class="style6">
@@ -164,7 +164,7 @@
 		<td colspan=2 style="width: 20px" class="style3">
 		<input class=postvisit id=relatives[3]_anualIncome name=relatives[3]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=postvisit id=relatives[3]_otherSponse name=relatives[3]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[3]_otherSponse type=number value=0  name=relatives[3]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	<tr  style="mso-height-source:userset">
 		<td colspan="2"  width="40" style="height: 18.0pt; width: 30pt" class="style6">
@@ -181,7 +181,7 @@
 		<td colspan=2 style="width: 20px" class="style3">
 		<input class=postvisit id=relatives[4]_anualIncome name=relatives[4]_anualIncome disabled="disabled" style="width: 95%" /></td>
 		<td colspan="2" class="style6">
-		<input class=postvisit id=relatives[4]_otherSponse name=relatives[4]_otherSponse disabled="disabled" style="width: 95%" />　</td>
+		<input class=postvisit id=relatives[4]_otherSponse type=number value=0  name=relatives[4]_otherSponse disabled="disabled" style="width: 95%" />　</td>
 	</tr>
 	</div>
 	<tr style="mso-height-source:userset;">
