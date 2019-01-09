@@ -145,7 +145,7 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
             {
                  $("input[type=radio][name="+k+"][value="+v+"]").attr("checked",true);                
             } else {
-				$('input[name=' + k + '].toinput' ).val(v);
+				$('input[name=' + k + ']' ).val(v);
 			}
         });
 		if ($.isFunction(callback)) {
