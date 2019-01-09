@@ -118,18 +118,14 @@
 	font-family: ËÎÌו;
 	text-align: center;
 	vertical-align: middle;
-	white-space: normal;
-	border-left: .5pt solid windowtext;
-	border-right-style: solid;
-	border-right-color: inherit;
-	border-right-width: medium;
+	white-space: normal;	
+	border: .5pt solid windowtext;
 	border-top: .5pt solid windowtext;
 	border-bottom: .5pt solid windowtext;
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
     background: white;
-    border-style: solid;
 }
 .style6 {
 	color: black;
