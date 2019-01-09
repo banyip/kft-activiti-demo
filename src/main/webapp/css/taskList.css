@@ -68,7 +68,7 @@
 	text-align: center;
 	vertical-align: middle;
 	white-space: normal;
-	border-style: none;
+	border-style: solid;
 	border-color: inherit;
 	border-width: medium;
 	padding-left: 1px;
@@ -106,7 +106,8 @@
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
-	background: white;
+    background: white;
+    border-style: solid;
 }
 .style4 {
 	color: black;
@@ -119,7 +120,7 @@
 	vertical-align: middle;
 	white-space: normal;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
+	border-right-style: solid;
 	border-right-color: inherit;
 	border-right-width: medium;
 	border-top: .5pt solid windowtext;
@@ -127,7 +128,8 @@
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
-	background: white;
+    background: white;
+    border-style: solid;
 }
 .style6 {
 	color: black;
@@ -140,7 +142,7 @@
 	vertical-align: middle;
 	white-space: normal;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
+	border-right-style: solid;
 	border-right-color: inherit;
 	border-right-width: medium;
 	border-top: .5pt solid windowtext;
@@ -148,7 +150,8 @@
 	padding-left: 1px;
 	padding-right: 1px;
 	padding-top: 1px;
-	background: white;
+    background: white;
+    border-style: solid;
 }
 .style8 {
 	color: black;
