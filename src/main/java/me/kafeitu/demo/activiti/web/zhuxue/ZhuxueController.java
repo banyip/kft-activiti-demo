@@ -58,7 +58,7 @@ public class ZhuxueController {
      */
     @RequestMapping(value = "list/student")
     public ModelAndView taskList(HttpSession session, HttpServletRequest request) {
-        ModelAndView mav = new ModelAndView("zhuxue/student/studentList");
+        ModelAndView mav = new ModelAndView("/zhuxue/student/studentList");
         Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
         int[] pageParams = PageUtil.init(page, request);
         List<Student> results=studentManager.getAllStudent();
