@@ -1,7 +1,7 @@
 package me.kafeitu.demo.activiti.service.oa.leave;
 
 import me.kafeitu.demo.activiti.entity.oa.Leave;
-import me.kafeitu.demo.activiti.entity.oa.Relative;
+import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import org.activiti.engine.RuntimeService;
 import org.activiti.engine.delegate.DelegateTask;
 import org.activiti.engine.delegate.TaskListener;
