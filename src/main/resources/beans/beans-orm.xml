@@ -30,7 +30,7 @@
         <property name="packagesToScan">
 			<list>
 				<value>me.kafeitu.demo.activiti.entity.oa</value>
-				<value>me.kafeitu.demo.activiti.entity.student</value>
+				<value>me.kafeitu.demo.activiti.entity.zhuxue</value>
 			</list>
         </property>
         <property name="jpaProperties">
