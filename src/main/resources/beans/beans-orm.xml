@@ -28,6 +28,12 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter"/>
         <property name="packagesToScan" value="me.kafeitu.demo.activiti.entity.oa"/>
+
+			<list>
+				<value>me.kafeitu.demo.activiti.entity.oa</value>
+				<value>me.kafeitu.demo.activiti.entity.student</value>
+			</list>
+        <property>
         <property name="jpaProperties">
             <props>
                 <prop key="hibernate.dialect">${hibernate.dialect}</prop>
