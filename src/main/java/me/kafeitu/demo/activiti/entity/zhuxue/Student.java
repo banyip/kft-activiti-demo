@@ -28,7 +28,8 @@ import java.util.List;
 public class Student extends IdEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    private String processInstanceId;
+
+    private Map<String, Object> variables;
     public String getOtherSponse() {
 		return otherSponse;
 	}
@@ -460,28 +461,7 @@ public class Student extends IdEntity implements Serializable {
 
     //-- 临时属性 --//
 
-    // 流程任务
-    private Task task;
 
-    private Map<String, Object> variables;
-
-    // 运行中的流程实例
-    private ProcessInstance processInstance;
-
-    // 历史的流程实例
-    private HistoricProcessInstance historicProcessInstance;
-
-    // 流程定义
-    private ProcessDefinition processDefinition;
-
-    @Column
-    public String getProcessInstanceId() {
-        return processInstanceId;
-    }
-
-    public void setProcessInstanceId(String processInstanceId) {
-        this.processInstanceId = processInstanceId;
-    }
 
     @Column
     public String getUserId() {
@@ -573,9 +553,6 @@ public class Student extends IdEntity implements Serializable {
    
   
 
-    public void setProcessDefinition(ProcessDefinition processDefinition) {
-        this.processDefinition = processDefinition;
-    }
 
     @Column
 	public String getClassName() {
