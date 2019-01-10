@@ -1,7 +1,7 @@
 package me.kafeitu.demo.activiti.entity.oa;
 
 import me.kafeitu.demo.activiti.entity.IdEntity;
-import me.kafeitu.demo.activiti.entity.oa.Relative;
+import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
