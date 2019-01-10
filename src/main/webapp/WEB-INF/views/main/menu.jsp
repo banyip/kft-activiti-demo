@@ -9,7 +9,7 @@
     </li>
     
 
-<!--
+
  	<li>
 		<a rel="#">学生申请流程</a>
 		<ul>
@@ -19,6 +19,7 @@
 			<li><a rel="oa/leave/list/finished">已结束流程(普通)</a></li>
 		</ul>
 	</li>   
+<!--
 	<li>
 		<a rel="#">动态表单</a>
 		<ul>
