@@ -1,4 +1,4 @@
-package me.kafeitu.demo.activiti.entity.oa;
+package me.kafeitu.demo.activiti.entity.zhuxue;
 
 
 import me.kafeitu.demo.activiti.entity.IdEntity;
@@ -26,7 +26,7 @@ import java.util.List;
  * @author HenryYan
  */
 @Entity
-@Table(name = "OA_RELATIVE")
+@Table(name = "ZHUXUE_RELATIVE")
 public class Relative extends IdEntity implements Serializable {
 
 	
@@ -92,7 +92,7 @@ public class Relative extends IdEntity implements Serializable {
 		this.health = health;
 	}
 
-	
+	@Column
 	public String getEducation() {
 		return education;
 	}

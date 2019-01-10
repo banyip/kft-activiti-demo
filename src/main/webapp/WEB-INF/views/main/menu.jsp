@@ -4,13 +4,21 @@
 	<li>
 		<a rel="#">学生申请流程</a>
 		<ul>
+			<li><a rel="/zhuxue/student/list/student">学生申请办理</a></li>
+		</ul>
+    </li>
+    
+
+<!--
+ 	<li>
+		<a rel="#">学生申请流程</a>
+		<ul>
 			<li><a rel="oa/leave/apply">学生申请登记</a></li>
 			<li><a rel="oa/leave/list/task">学生申请办理</a></li>
 			<li><a rel="oa/leave/list/running">运行中流程(普通)</a></li>
 			<li><a rel="oa/leave/list/finished">已结束流程(普通)</a></li>
 		</ul>
-	</li>
-<!--
+	</li>   
 	<li>
 		<a rel="#">动态表单</a>
 		<ul>
