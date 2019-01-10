@@ -1,7 +1,7 @@
 package me.kafeitu.demo.activiti.entity.zhuxue;
 
 import me.kafeitu.demo.activiti.entity.IdEntity;
-import me.kafeitu.demo.activiti.entity.oa.Relative;
+import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -19,7 +19,7 @@ import java.util.UUID;
 import java.util.HashSet;
 import java.util.List;
 /**
- * Entity: Leave
+ * Entity: Student
  *
  * @author HenryYan
  */
