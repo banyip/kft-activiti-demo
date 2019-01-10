@@ -47,7 +47,7 @@ public class ZhuxueController {
     @Autowired
     protected StudentManager studentManager;
 
-
+    private Map<String, Object> variables;
 
 
 
