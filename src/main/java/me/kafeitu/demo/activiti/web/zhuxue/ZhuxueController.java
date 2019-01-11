@@ -97,7 +97,7 @@ public class ZhuxueController {
    			if(key.indexOf("student_")==0)
    			{
    				logger.debug("学生信息保存内容key："+key);
-   				String methodname= key.substring(6,7).toUpperCase()+key.substring(7);
+   				String methodname= key.substring(7,8).toUpperCase()+key.substring(8);
    				Object value = variables.get(key);
    				try {
    					    logger.debug("学生信息保存内容method："+methodname);
