@@ -313,6 +313,33 @@ editstudent: {
 /**
  * 办理流程
  */
+function deletestudent() {
+	// 当前节点的英文名称
+	var tkey = $(this).attr('tkey');
+	
+	// 当前节点的中文名称
+	var tname = $(this).attr('tname');
+	
+	// 请假记录ID
+	var rowId = $(this).parents('tr').attr('id');
+	
+   $.post(ctx + '/zhuxue/student/deletetudent/'+rowId ,{}, function(resp) {
+		$.unblockUI();
+        if (resp == 'success') {
+            alert('任务完成');
+            location.reload();
+        } else {
+            alert('操作失败!');
+        }
+    });
+}
+
+
+
+
+/**
+ * 办理流程
+ */
 function handle() {
 	// 当前节点的英文名称
 	var tkey = $(this).attr('tkey');
