@@ -82,7 +82,7 @@ public class ZhuxueController {
     * @param id
     * @return
     */
-   @RequestMapping(value = "newstudent/", method = {RequestMethod.POST, RequestMethod.GET})
+   @RequestMapping(value = "newstudent", method = {RequestMethod.POST})
    @ResponseBody
    public String complete(Variable var) {
        try {
