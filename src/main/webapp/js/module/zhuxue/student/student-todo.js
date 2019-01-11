@@ -329,7 +329,7 @@ function deletestudent() {
 	// 请假记录ID
 	var rowId = $(this).parents('tr').attr('id');
 	
-   $.post(ctx + '/zhuxue/student/deletetudent/'+rowId ,{}, function(resp) {
+   $.post(ctx + '/zhuxue/student/deletestudent/'+rowId ,{}, function(resp) {
 		$.unblockUI();
         if (resp == 'success') {
             alert('任务完成');
