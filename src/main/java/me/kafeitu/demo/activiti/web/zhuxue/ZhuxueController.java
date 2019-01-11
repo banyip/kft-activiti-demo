@@ -183,7 +183,7 @@ public class ZhuxueController {
         studentManager.delStudent(id);
         logger.debug("学生删除成功：id="+id);
        // Map<String, Object> variables = taskService.getVariables(taskId);
-        return "redirect:/zhuxue/list/student/";
+        return "success";
     }
 
     /**
