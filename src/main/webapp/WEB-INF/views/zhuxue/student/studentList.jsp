@@ -53,7 +53,7 @@
 					<td>${student.className }</td>
 					<td>${student.applyTime }</td>
                     <td><a class="handle" tkey='editstudent' tname='修改' href="#">办理</a>
-                        <a class="deleterow" tname=删除 href="#">办理</a>
+                        <a class="deletestudent tname=删除 href="#">办理</a>
 					</td>
 				</tr>
 			</c:forEach>

@@ -178,9 +178,10 @@ public class ZhuxueController {
      */
     @RequestMapping(value = "deletestudent/{id}")
     @ResponseBody
-    public String delStudent(@PathVariable("id") Long id) {
+    public String delStudent(HttpSession session,@PathVariable("id") Long id) {
+        String userId = UserUtil.getUserFromSession(session).getId();
         studentManager.delStudent(id);
-        logger.debug("学生删除成功");
+        logger.debug("学生删除成功：id="+id);
        // Map<String, Object> variables = taskService.getVariables(taskId);
         return "redirect:/zhuxue/list/student/";
     }
