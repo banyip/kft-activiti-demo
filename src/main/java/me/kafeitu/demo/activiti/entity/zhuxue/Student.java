@@ -58,7 +58,34 @@ public class Student extends IdEntity implements Serializable {
     private String applicantId;
     private String applicantCompany;
     
-    private String auditNo;
+    @Column
+    public String getApplicantCompany() {
+		return applicantCompany;
+	}
+
+	public void setApplicantCompany(String applicantCompany) {
+		this.applicantCompany = applicantCompany;
+	}
+
+	@Column
+	public String getAuditNo() {
+		return auditNo;
+	}
+
+	public void setAuditNo(String auditNo) {
+		this.auditNo = auditNo;
+	}
+
+	@Column
+	public String getSponseState() {
+		return sponseState;
+	}
+
+	public void setSponseState(String sponseState) {
+		this.sponseState = sponseState;
+	}
+
+	private String auditNo;
     
     private String studentId;    
     private String studentContactNo;
@@ -70,6 +97,7 @@ public class Student extends IdEntity implements Serializable {
     private String ifLiveInSchool;
     private String ifAgreeToMail;
     private String firstAuditNote;
+    private String sponseState;
     
     //贫困评估相关
     private String poorEvaluateScore0;
