@@ -2,6 +2,10 @@ package me.kafeitu.demo.activiti.web.zhuxue;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.lang.reflect.Method;
+
+import me.kafeitu.demo.activiti.entity.oa.Student;
+import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
@@ -29,9 +33,12 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * 请假控制器，包含保存、启动流程
@@ -69,7 +76,86 @@ public class ZhuxueController {
         return mav;
     }
 
+    /*
+    * newstudent
+    *
+    * @param id
+    * @return
+    */
+   @RequestMapping(value = "newstudent/", method = {RequestMethod.POST, RequestMethod.GET})
+   @ResponseBody
+   public String complete(Variable var) {
+       try {
+           Map<String, Object> variables = var.getVariableMap();
+           Student student = new Student();
+           Set<String> variableNames = variables.keySet();
 
+           //把student.relatives存放到list
+           List<Relative> relatives = new ArrayList<Relative>();
+           logger.debug("学生信息保存中："+variableNames);
+   		for (String key : variableNames) {
+   			if(key.indexOf("student_")==0)
+   			{
+   				logger.debug("学生信息保存内容key："+key);
+   				String methodname= key.substring(6,7).toUpperCase()+key.substring(7);
+   				Object value = variables.get(key);
+   				try {
+   					    logger.debug("学生信息保存内容method："+methodname);
+   						logger.debug("学生信息保存内容value："+value);
+   						Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue.Student");
+   				        // 定义参数类型
+   				        Class[] params = new Class[1];
+   				        params[0] = String.class;
+   				        Method m = clazz.getDeclaredMethod("set"+methodname, params);
+   				        // 设置参数
+   				        Object[] p = new Object[1];
+   				        p[0] = value;
+   				        m.invoke(student, p);				        
+   				        logger.debug("学生信息保存："+student.getStudentId());
+   					}
+   					catch(Exception e)
+   					{
+   						logger.error("学生信息保存失败：", e);
+   					}
+   					logger.debug("学生信息保存成功："+key);
+   			} else if(key.indexOf("relatives[")==0)
+   			{ 
+   				
+   				int index = Integer.parseInt(key.substring(10,11));
+   				Relative relative = relatives.get(index);
+   				String methodname= key.substring(13,14).toUpperCase()+key.substring(14);
+   				Object value = variables.get(key);
+   				try {
+   					    logger.debug("学生信息保存内容method：set"+methodname);
+   						logger.debug("学生信息保存内容value："+value);
+   				        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.oa.Relative");
+   				        // 定义参数类型
+   				        Class[] params = new Class[1];
+   				        params[0] = String.class;
+   				        Method m = clazz.getDeclaredMethod("set"+methodname, params);
+   				        // 设置参数
+   				        Object[] p = new Object[1];
+   				        p[0] = value;
+   				        m.invoke(relative, p);
+   				        logger.debug("亲戚信息保存内容：set"+methodname);
+   				        logger.debug("亲戚信息保存内容："+p[0]);
+   					}
+   					catch(Exception e)
+   					{
+   						logger.error("学生信息保存失败：", e);
+   					}
+   					logger.debug("学生信息保存成功："+key);
+   					
+   			}
+   		}
+           
+           return "success";
+       } catch (Exception e) {
+       	logger.error("error on complete task", e);
+           logger.error("error on complete , variables={}", new Object[]{var.getVariableMap(), e});
+           return "error";
+       }
+   }
 
     /**
      * 读取详细数据
