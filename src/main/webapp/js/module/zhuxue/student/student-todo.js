@@ -183,7 +183,7 @@ function complete(variables) {
     });
 	
 	// 发送任务完成请求
-    $.post(ctx + '/zhuxue/student/newstudent/' + taskId, {
+    $.post(ctx + '/zhuxue/student/newstudent/' , {
         keys: keys,
         values: values,
         types: types
