@@ -214,7 +214,7 @@ var handleOpts = {
 			newstudent: {
 			width: 1300,
 			height: 570,
-			open: function(id, taskId) {
+			open: function(id) {
 				var dialog = this;
 				
 				$('#startTime,#endTime', this).datetimepicker({
@@ -227,8 +227,7 @@ var handleOpts = {
 			},
 			btns: [{
 				text: '提交',
-				click: function() {
-					var taskId = $(this).data('taskId');
+				click: function() {					
 					var reApply = $(':radio[name=reApply]:checked').val();
                     var variables = [{
 						key: 'reApply',
@@ -263,7 +262,7 @@ var handleOpts = {
 editstudent: {
 			width: 1300,
 			height: 570,
-			open: function(id, taskId) {
+			open: function(id) {
 				var dialog = this;
 				
 				$('#startTime,#endTime', this).datetimepicker({
@@ -278,7 +277,6 @@ editstudent: {
 			btns: [{
 				text: '提交',
 				click: function() {
-					var taskId = $(this).data('taskId');
 					var reApply = $(':radio[name=reApply]:checked').val();
                     var variables = [{
 						key: 'reApply',
@@ -308,375 +306,8 @@ editstudent: {
 					$(this).dialog('close');
 				}
 			}]
-		},
+		}
 
-		familyinput: {
-			width: 1000,
-			height: 770,
-			open: function(id, taskId) {
-				var dialog = this;
-				
-				$('#startTime,#endTime', this).datetimepicker({
-		            stepMinute: 5
-		        });
-				
-				// 打开对话框的时候读取请假内容
-				loadDetailWithTaskVars.call(this, id, taskId, function(data) {
-					// 显示驳回理由
-					$('.info').show().html("<b>领导：</b>" + (data.variables.leaderBackReason || "") + "<br/><b>HR：</b>" + (data.variables.hrBackReason || ""));
-					
-					// 读取原请假信息
-					$('#modifyApplyContent #leaveType option[value=' + data.leaveType + ']').attr('selected', true);
-					$('#modifyApplyContent #startTime').val(new Date(data.startTime).format('yyyy-MM-dd hh:mm'));
-					$('#modifyApplyContent #endTime').val(new Date(data.endTime).format('yyyy-MM-dd hh:mm'));
-					$('#modifyApplyContent #reason').val(data.reason);
-				});
-				
-				// 切换状态
-				$("#radio").buttonset().change(function(){
-					var type = $(':radio[name=reApply]:checked').val();
-					if (type == 'true') {
-						$('#modifyApplyContent').show();
-					} else {
-						$('#modifyApplyContent').hide();
-					}
-				});
-			},
-			btns: [{
-				text: '提交',
-				click: function() {
-					var taskId = $(this).data('taskId');
-					var reApply = $(':radio[name=reApply]:checked').val();
-					
-			        var content2 = "";
-			        for (let i = 0; i<$('#div_bjbr').find(".yltable").length ; i++ ){
-			            var yltable = $('#div_bjbr').find(".yltable")[i];
-			            var content1 = "";
-			            for (let index = 0; index <  $(yltable).find(".abc").length; index++) {
-			                content1 =  content1 + ":" + $(yltable).find(".abc")[index].value ;
-			                
-			            }
-			            content1=content1.substr(1);
-			            content2=content2 + ";" +content1;
-			        }
-			        content2=content2.substr(1);
-			        
-			        $('#relative')[0].value = content2;
-			        $('#relative')[0].value = content2;
-
-					
-					// 提交的时候把变量
-					complete(taskId, [{
-						key: 'reApply',
-						value: reApply,
-						type: 'B'
-					}, {
-						key: 'relatives',
-						value: $('#relative')[0].value,
-						type: 'S'
-					}
-					]);
-				}
-			},{
-				text: '取消',
-				click: function() {
-					$(this).dialog('close');
-				}
-			}]
-		},
-
-		postvisit: {
-			width: 1300,
-			height: 570,
-			open: function(id, taskId) {
-				var dialog = this;
-				
-				$('#startTime,#endTime', this).datetimepicker({
-		            stepMinute: 5
-		        });
-				
-				// 打开对话框的时候读取请假内容
-				loadPartlyDetailWithTaskVars.call(this, id, taskId, null);
-				
-
-			},
-			btns: [{
-				text: '提交',
-				click: function() {
-					var taskId = $(this).data('taskId');
-					var reApply = $(':radio[name=reApply]:checked').val();
-                    var variables = [{
-						key: 'reApply',
-						value: reApply,
-						type: 'B'
-					}
-                    ];
-                    $.each($('.postvisit'),function()
-                        {
-                            if(this.disabled==false)
-                            variables.push({
-                                key: this.id,
-                                value: this.value,
-                                type: 'S'
-                            });
-                        }
-                    );
-                    alert(variables);
-					
-					
-					// 提交的时候把变量
-					complete(taskId, variables);
-				}
-			},{
-				text: '取消',
-				click: function() {
-					$(this).dialog('close');
-				}
-			}]
-		},
-
-		poorevaluate: {
-			width: 900,
-			height: 770,
-			open: function(id, taskId) {
-				var dialog = this;
-				
-				$('#leave_poorEvaluateDate', this).datetimepicker({
-		            stepMinute: 5
-		        });
-	            $('#leave_poorEvaluateDate').datetimepicker('setDate', new Date());	
-				// 打开对话框的时候读取请假内容
-				loadPartlyDetailWithTaskVars.call(this, id, taskId, null);
-				
-
-			},
-			btns: [{
-				text: '提交',
-				click: function() {
-					var taskId = $(this).data('taskId');
-					var reApply = $(':radio[name=reApply]:checked').val();
-                    var variables = [{
-						key: 'reApply',
-						value: reApply,
-						type: 'B'
-					}
-                    ];
-                    $.each($('.poorevaluate'),function()
-                        {
-                            if(this.disabled==false)
-                            variables.push({
-                                key: this.id,
-                                value: this.value,
-                                type: 'S'
-                            });
-                        }
-                    );
-                    alert(variables);
-					
-					
-					// 提交的时候把变量
-					complete(taskId, variables);
-				}
-			},{
-				text: '取消',
-				click: function() {
-					$(this).dialog('close');
-				}
-			}]
-		},
-
-
-
-
- firstaudit: {
-		width: 300,
-		height: 300,
-		open: function(id) {
-			// 打开对话框的时候读取请假内容
-			loadDetail.call(this, id);
-		},
-		btns: [{
-			text: '同意',
-			click: function() {
-				var taskId = $(this).data('taskId');
-				
-                // 设置流程变量
-                 var variables = [{
-					key: 'hrPass',
-					value: true,
-					type: 'B'
-                }];
-               $.each($('.firstaudit'),function()
-                {
-                    if(this.disabled==false)
-                    variables.push({
-                        key: this.id,
-                        value: this.value,
-                        type: 'S'
-                    });
-                }            
-                );
-
-				complete(taskId,variables); 
- 			}
-		}, {
-			text: '驳回',
-			click: function() {
-				var taskId = $(this).data('taskId');
-				
-				$('<div/>', {
-					title: '填写驳回理由',
-					html: "<textarea id='hrBackReason' style='width: 250px; height: 60px;'></textarea>"
-				}).dialog({
-					modal: true,
-					buttons: [{
-						text: '驳回',
-						click: function() {
-							var hrBackReason = $('#hrBackReason').val();
-							if (hrBackReason == '') {
-								alert('请输入驳回理由！');
-								return;
-							}
-							
-							// 设置流程变量
-							complete(taskId, [{
-								key: 'hrPass',
-								value: false,
-								type: 'B'
-							}, {
-								key: 'hrBackReason',
-								value: hrBackReason,
-								type: 'S'
-							}]);
-						}
-					}, {
-						text: '取消',
-						click: function() {
-							$(this).dialog('close');
-							$('#deptLeaderAudit').dialog('close');
-						}
-					}]
-				});
-			}
-		}, {
-			text: '取消',
-			click: function() {
-				$(this).dialog('close');
-			}
-		}]
-	},
-	modifyApply: {
-		width: 500,
-		height: 470,
-		open: function(id, taskId) {
-			var dialog = this;
-			
-			$('#startTime,#endTime', this).datetimepicker({
-	            stepMinute: 5
-	        });
-			
-			// 打开对话框的时候读取请假内容
-			loadDetailWithTaskVars.call(this, id, taskId, function(data) {
-				// 显示驳回理由
-				$('.info').show().html("<b>领导：</b>" + (data.variables.leaderBackReason || "") + "<br/><b>HR：</b>" + (data.variables.hrBackReason || ""));
-				
-				// 读取原请假信息
-				$('#modifyApplyContent #leaveType option[value=' + data.leaveType + ']').attr('selected', true);
-				$('#modifyApplyContent #startTime').val(new Date(data.startTime).format('yyyy-MM-dd hh:mm'));
-				$('#modifyApplyContent #endTime').val(new Date(data.endTime).format('yyyy-MM-dd hh:mm'));
-				$('#modifyApplyContent #reason').val(data.reason);
-			});
-			
-			// 切换状态
-			$("#radio").buttonset().change(function(){
-				var type = $(':radio[name=reApply]:checked').val();
-				if (type == 'true') {
-					$('#modifyApplyContent').show();
-				} else {
-					$('#modifyApplyContent').hide();
-				}
-			});
-		},
-		btns: [{
-			text: '提交',
-			click: function() {
-				var taskId = $(this).data('taskId');
-				var reApply = $(':radio[name=reApply]:checked').val();
-				
-				// 提交的时候把变量
-				complete(taskId, [{
-					key: 'reApply',
-					value: reApply,
-					type: 'B'
-				}, {
-					key: 'leaveType',
-					value: $('#modifyApplyContent #leaveType').val(),
-					type: 'S'
-				}, {
-					key: 'startTime',
-					value: $('#modifyApplyContent #startTime').val(),
-					type: 'D'
-				}, {
-					key: 'endTime',
-					value: $('#modifyApplyContent #endTime').val(),
-					type: 'D'
-				}, {
-					key: 'reason',
-					value: $('#modifyApplyContent #reason').val(),
-					type: 'S'
-				}]);
-			}
-		},{
-			text: '取消',
-			click: function() {
-				$(this).dialog('close');
-			}
-		}]
-	},
-	reportBack: {
-		width: 400,
-		height: 400,
-		open: function(id, taskId) {
-			// 打开对话框的时候读取请假内容
-			loadDetail.call(this, id, taskId);
-			$('#realityStartTime,#realityEndTime').datetimepicker({
-	            stepMinute: 5
-	        });
-		},
-		btns: [{
-			text: '提交',
-			click: function() {
-				var realityStartTime = $('#realityStartTime').val();
-				var realityEndTime = $('#realityEndTime').val();
-				
-				if (realityStartTime == '') {
-					alert('请选择实际开始时间！');
-					return;
-				}
-				
-				if (realityEndTime == '') {
-					alert('请选择实际结束时间！');
-					return;
-				}
-				
-				var taskId = $(this).data('taskId');
-				complete(taskId, [{
-					key: 'realityStartTime',
-					value: realityStartTime,
-					type: 'D'
-				}, {
-					key: 'realityEndTime',
-					value: realityEndTime,
-					type: 'D'
-				}]);
-			}
-		},{
-			text: '取消',
-			click: function() {
-				$(this).dialog('close');
-			}
-		}]
-	}
 };
 
 /**
@@ -695,9 +326,7 @@ function handle() {
 
 	
 	// 使用对应的模板
-	$('#' + tkey).data({
-		taskId: taskId
-	}).dialog({
+	$('#' + tkey).dialog({
 		title: '学生信息修改',
 		modal: true,
 		width: handleOpts[tkey].width,
