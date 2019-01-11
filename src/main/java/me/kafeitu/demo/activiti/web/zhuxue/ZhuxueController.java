@@ -180,6 +180,7 @@ public class ZhuxueController {
     @ResponseBody
     public Student getStudentWithVars(@PathVariable("id") Long id) {
         Student student = studentManager.getStudent(id) ;
+        logger.debug("学生信息读取成功：id="+ student.getId());
        // Map<String, Object> variables = taskService.getVariables(taskId);
         student.setVariables(variables);
         return student;
