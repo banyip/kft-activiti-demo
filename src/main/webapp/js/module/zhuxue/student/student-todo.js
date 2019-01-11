@@ -124,9 +124,9 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
  * 加载详细信息，同时读取流程任务变量
  * @param {Object} id
  */
-function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
+function loadPartlyDetailWithTaskVars(leaveId,  callback) {
     var dialog = this;
-    $.getJSON(ctx + '/oa/leave/detail-with-vars/' + leaveId + "/" + taskId, function(data) {
+    $.getJSON(ctx + '/oa/leave/detail-with-vars/' + leaveId , function(data) {
         detail = data;
         $.each(data, function(k, v) {
             // 格式化日期
@@ -223,6 +223,56 @@ var handleOpts = {
 				
 				// 打开对话框的时候读取请假内容
 				
+
+			},
+			btns: [{
+				text: '提交',
+				click: function() {
+					var taskId = $(this).data('taskId');
+					var reApply = $(':radio[name=reApply]:checked').val();
+                    var variables = [{
+						key: 'reApply',
+						value: reApply,
+						type: 'B'
+					}
+                    ];
+                    $.each($('.studentApply'),function()
+                        {
+                            if(this.disabled==false&&!this.value==null)
+                            variables.push({
+                                key: this.id,
+                                value: this.value,
+                                type: 'S'
+                            });
+                        }
+                    );
+                    ;
+					
+					
+					// 提交的时候把变量
+					complete(variables);
+				}
+			},{
+				text: '取消',
+				click: function() {
+					$(this).dialog('close');
+				}
+			}]
+		},
+
+editstudent: {
+			width: 1300,
+			height: 570,
+			open: function(id, taskId) {
+				var dialog = this;
+				
+				$('#startTime,#endTime', this).datetimepicker({
+		            stepMinute: 5
+		        });
+                
+                
+				// 打开对话框的时候读取请假内容
+				loadPartlyDetailWithTaskVars.call(this, id, null);
 
 			},
 			btns: [{
@@ -642,14 +692,13 @@ function handle() {
 	// 请假记录ID
 	var rowId = $(this).parents('tr').attr('id');
 	
-	// 任务ID
-	var taskId = $(this).parents('tr').attr('tid');
+
 	
 	// 使用对应的模板
 	$('#' + tkey).data({
 		taskId: taskId
 	}).dialog({
-		title: '流程办理[' + tname + ']',
+		title: '学生信息修改',
 		modal: true,
 		width: handleOpts[tkey].width,
 		height: handleOpts[tkey].height,

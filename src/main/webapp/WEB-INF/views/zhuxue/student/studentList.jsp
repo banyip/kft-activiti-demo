@@ -45,14 +45,14 @@
 		</th>
 		<tbody>
 			<c:forEach items="${page.result }" var="student"> 
-				<tr id="${student.id }"">
+				<tr id="${student.id }">
 				    <td>${student.applicantName }</td>
 				    <td>${student.studentName }</td>
 					<td>${student.school }</td>
 					<td>${student.grade }</td>
 					<td>${student.className }</td>
 					<td>${student.applyTime }</td>
-					<td>
+					<td><a class="handle" tkey='editstudent' tname='修改' href="#">办理</a>
 					</td>
 				</tr>
 			</c:forEach>
@@ -73,7 +73,14 @@
 
     </div>
 
+    <!-- 学生信息登记学生信息 -->
+	<div id="editstudent" style="display: none">
+		<!-- table用来显示信息，方便办理任务 -->
+        <form>
+            <%@include file="newstudent.jsp" %>
+        </form>
 
+    </div>
 
 
 </body>
