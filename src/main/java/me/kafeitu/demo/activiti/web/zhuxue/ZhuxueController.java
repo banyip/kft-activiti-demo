@@ -148,7 +148,7 @@ public class ZhuxueController {
    					
    			}
    		}
-           
+           studentManager.saveStudent(student);
            return "success";
        } catch (Exception e) {
        	logger.error("error on complete task", e);
