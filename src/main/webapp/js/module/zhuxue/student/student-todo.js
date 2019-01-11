@@ -332,7 +332,7 @@ function handle() {
 		width: handleOpts[tkey].width,
 		height: handleOpts[tkey].height,
 		open: function() {
-			handleOpts[tkey].open.call(this, rowId, taskId);
+			handleOpts[tkey].open.call(this, rowId);
 		},
 		buttons: handleOpts[tkey].btns
 	});
