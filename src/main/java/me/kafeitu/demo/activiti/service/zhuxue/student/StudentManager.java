@@ -28,6 +28,11 @@ public class StudentManager {
         return studentDao.findOne(id);
     }
 
+    public void delStudent(Long id)
+    {
+    	studentDao.delete(id);
+    }
+    
     public List<Student> getAllStudent() {
     	Iterable<Student> geted = studentDao.findAll();
 

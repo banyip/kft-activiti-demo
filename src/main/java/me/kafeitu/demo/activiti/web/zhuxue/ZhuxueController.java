@@ -176,6 +176,21 @@ public class ZhuxueController {
      * @param id
      * @return
      */
+    @RequestMapping(value = "deletestudent/{id}")
+    @ResponseBody
+    public String delStudent(@PathVariable("id") Long id) {
+        studentManager.delStudent(id);
+        logger.debug("学生删除成功");
+       // Map<String, Object> variables = taskService.getVariables(taskId);
+        return "redirect:/zhuxue/list/student/";
+    }
+
+    /**
+     * 读取详细数据
+     *
+     * @param id
+     * @return
+     */
     @RequestMapping(value = "detail-with-vars/{id}")
     @ResponseBody
     public Student getStudentWithVars(@PathVariable("id") Long id) {
@@ -185,8 +200,6 @@ public class ZhuxueController {
         student.setVariables(variables);
         return student;
     }
-
- 
     
     /**
      * 处理图片显示请求
