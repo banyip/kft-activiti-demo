@@ -236,7 +236,7 @@ var handleOpts = {
 						type: 'B'
 					}
                     ];
-                    $.each($('.newstudent'),function()
+                    $.each($('.studentApply'),function()
                         {
                             if(this.disabled==false)
                             variables.push({
