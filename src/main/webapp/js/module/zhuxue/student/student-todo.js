@@ -250,7 +250,7 @@ var handleOpts = {
 					
 					
 					// 提交的时候把变量
-					complete(taskId, variables);
+					complete(variables);
 				}
 			},{
 				text: '取消',
