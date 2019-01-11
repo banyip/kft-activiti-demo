@@ -126,7 +126,7 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
  */
 function loadPartlyDetailWithTaskVars(leaveId,  callback) {
     var dialog = this;
-    $.getJSON(ctx + '/oa/leave/detail-with-vars/' + leaveId , function(data) {
+    $.getJSON(ctx + '/zhuxue/student/detail-with-vars/' + leaveId , function(data) {
         detail = data;
         $.each(data, function(k, v) {
             // 格式化日期
