@@ -45,9 +45,7 @@
 		</th>
 		<tbody>
 			<c:forEach items="${page.result }" var="student"> 
-				<c:set var="task" value="${student.task }" />
-				<c:set var="pi" value="${student.processInstance }" />
-				<tr id="${student.id }" tid="${task.id }">
+				<tr id="${student.id }"">
 				    <td>${student.applicantName }</td>
 				    <td>${student.studentName }</td>
 					<td>${student.school }</td>
