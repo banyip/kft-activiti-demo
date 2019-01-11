@@ -160,7 +160,7 @@ function loadPartlyDetailWithTaskVars(leaveId, taskId, callback) {
  * 完成任务
  * @param {Object} taskId
  */
-function complete(taskId, variables) {
+function complete(variables) {
     var dialog = this;
     
 	// 转换JSON为字符串
@@ -183,7 +183,7 @@ function complete(taskId, variables) {
     });
 	
 	// 发送任务完成请求
-    $.post(ctx + '/oa/leave/complete/' + taskId, {
+    $.post(ctx + '/zhuxue/student/newstudent/' + taskId, {
         keys: keys,
         values: values,
         types: types
