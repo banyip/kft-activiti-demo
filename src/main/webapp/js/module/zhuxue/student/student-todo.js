@@ -17,6 +17,12 @@ $(function() {
         }
     }).click(handle);
     
+        // 办理
+    $('.deleterow').button({
+        icons: {
+            primary: 'ui-icon-comment'
+        }
+    }).click(deletestudent);
     // 跟踪
     $('.trace').click(graphTrace);
     
