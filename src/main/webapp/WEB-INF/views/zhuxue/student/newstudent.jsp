@@ -160,8 +160,9 @@
 		<input class="studentApply abc" type="text" id="relative[0]_health" name="health">　</td>
     </tr>
 </table>   
-</td></tr> 
-</div>    
+</div>   
+</td></tr>
+ 
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 	
 		<td class="style11" colspan="8"><input type="button" name="button"
