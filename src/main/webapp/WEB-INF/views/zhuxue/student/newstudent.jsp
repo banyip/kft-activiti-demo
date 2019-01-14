@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<form method="POST">
+<form method=post>
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse:
  collapse;width:674pt">
 	<colgroup>
