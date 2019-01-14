@@ -160,7 +160,7 @@
 	
 		<td class="style11" colspan="8"><input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable()" />      
+					onclick="insertrow(abc)" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable()" /></td>
