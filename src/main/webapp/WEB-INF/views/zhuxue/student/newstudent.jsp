@@ -139,7 +139,8 @@
 		<td class="style11">年收入</td>
 		<td class="style18">其他收入/补助</td>
 		<td class="style19">健康情况</td>
-	</tr>
+    </tr>
+    <div id=div_bjbr>
 	<tr class="yltable" height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relative[0]_relationship" name="relationship">　</td>
 		<td class="style11"><input class="studentApply" type="text" id="relative[0]_name" name="name"></td>
@@ -155,12 +156,13 @@
 		<input class="studentApply abc" type="text" id="relative[0]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
 		<input class="studentApply abc" type="text" id="relative[0]_health" name="health">　</td>
-	</tr>
+    </tr>
+</div>    
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 	
 		<td class="style11" colspan="8"><input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="insertrow('yltable')" />      
+					onclick="inserttable()" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable()" /></td>
