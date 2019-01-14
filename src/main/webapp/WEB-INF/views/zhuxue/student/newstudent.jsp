@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-bbbbbbbbb
+
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse:
  collapse;width:674pt">
 	<colgroup>
@@ -140,8 +140,9 @@ bbbbbbbbb
 		<td class="style18">其他收入/补助</td>
 		<td class="style19">健康情况</td>
     </tr>
-    <tr><td colspan=8>
-    <div id=div_bjbr>
+    <tr>
+    <td colspan=8>
+    <div id=div_bjbr style="display: inline">
     <table class=yltable>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relative[0]_relationship" name="relationship">　</td>
@@ -159,9 +160,10 @@ bbbbbbbbb
 		<td class="style19">
 		<input class="studentApply abc" type="text" id="relative[0]_health" name="health">　</td>
     </tr>
-</table>   
-</div>   
-</td></tr>
+    </table>   
+    </div>   
+</td>
+</tr>
  
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 	
