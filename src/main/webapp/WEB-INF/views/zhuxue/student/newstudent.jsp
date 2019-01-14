@@ -64,9 +64,11 @@
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style12">
 		学生个人银行卡号</td>
-		<td colspan="2" class="style13">　</td>
+		<td colspan="2" class="style13">
+		<input class="studentApply" id="student_bankCard" name="bankCard" />　</td>
 		<td class="style11">开户银行</td>
-		<td colspan="3" class="style10">　</td>
+		<td colspan="3" class="style10">
+		<input class="studentApply" id="student_bank" name="bank" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" width="221" style="height: 20.1pt; width: 166pt" class="style14">
@@ -78,11 +80,15 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" width="221" style="height: 20.1pt; width: 166pt" class="style14">
-		　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style10">　</td>
+		<input class="studentApply" id="student_school" name="school" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_grade" name="grade" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_className" name="className" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_headTeacher" name="headTeacher" />　</td>
+		<td colspan="3" class="style10">
+		<input class="studentApply" id="student_schoolContactNo" name="schoolContactNo" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" width="221" style="height: 20.1pt; width: 166pt" class="style15">
@@ -92,25 +98,33 @@
 		<td class="style11">　</td>
 		<td colspan="3" class="style11">　</td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style11">年龄</td>
-		<td class="style11">性别</td>
-		<td class="style11">QQ</td>
-		<td class="style16">邮箱</td>
-		<td class="style16">联系电话</td>
-		<td class="style11">开始资助时间</td>
-		<td class="style16">结束资助时间</td>
-		<td class="style17">结案原因</td>
+	<tr style="mso-height-source:userset;">
+		<td style="height: 22pt;" class="style11">年龄</td>
+		<td class="style11" style="height: 22pt">性别</td>
+		<td class="style11" style="height: 22pt">QQ</td>
+		<td class="style16" style="height: 22pt">邮箱</td>
+		<td class="style16" style="height: 22pt">联系电话</td>
+		<td class="style11" style="height: 22pt">开始资助时间</td>
+		<td class="style16" style="height: 22pt">结束资助时间</td>
+		<td class="style17" style="height: 22pt">结案原因</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style16">　</td>
-		<td class="style16">　</td>
-		<td class="style11">　</td>
-		<td class="style16">　</td>
-		<td class="style17">　</td>
+		<td height="26" style="height: 20.1pt;" class="style11">
+		<input class="studentApply" id="student_age" name="age" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_sex" name="sex" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_qq" name="qq" />　</td>
+		<td class="style16">
+		<input class="studentApply" id="student_email" name="email" />　</td>
+		<td class="style16">
+		<input class="studentApply" id="student_studentContactNo" name="studentContactNo" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_sponseStartTime" name="sponseStartTime" />　</td>
+		<td class="style16">
+		<input class="studentApply" id="student_sponseEndTime" name="sponseEndTime" />　</td>
+		<td class="style17">
+		<input class="studentApply" id="student_endReason" name="endReason" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style9">
@@ -126,66 +140,31 @@
 		<td class="style18">其他收入/补助</td>
 		<td class="style19">健康情况</td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style19">　</td>
+	<tr class="yltable" height="26" style="mso-height-source:userset;height:20.1pt">
+		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relative[0]_relationship" name="relationship">　</td>
+		<td class="style11"><input class="studentApply" type="text" id="relative[0]_name" name="name"></td>
+		<td class="style11">
+		<input class="studentApply" type="text" id="relative[0]_birthDate" name="birthDate">　</td>
+		<td class="style11">
+		<input class="studentApply" type="text" id="relative[0]_contactNo" name="contactNo"></td>
+		<td class="style11">
+		<input class="studentApply" type="text" id="relative[0]_profectional" name="profectional">　</td>
+		<td class="style11">
+		<input class="studentApply" type="number" id="relative[0]_anualIncome" name="anualIncome">　</td>
+		<td class="style11">
+		<input class="studentApply" type="text" id="relative[0]_otherSponse" name="otherSponse">　</td>
+		<td class="style19">
+		<input class="studentApply" type="text" id="relative[0]_health" name="health">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style19">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style19">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style19">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style11">　</td>
-		<td class="style19">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style20">　</td>
-		<td class="style21">　</td>
-		<td class="style21">　</td>
-		<td class="style21">　</td>
-		<td class="style21">　</td>
-		<td class="style21">　</td>
-		<td class="style21">　</td>
-		<td class="style22">　</td>
-	</tr>
+	
+		<td class="style11" colspan="8"><input type="button" name="button"
+					value="新 增" style="width:60px; height:24px;"
+					onclick="inserttable()" />      
+					<input
+					type="button" name="button" value="删 除"
+					style="width:60px; height:24px;" onclick="deletetable()" /></td>
+	</tr>	
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td rowspan="11" height="286" width="118" style="height: 221.1pt; width: 89pt; layout-flow: vertical-ideographic;" class="style23">
 		家庭经济情况</td>
@@ -689,4 +668,5 @@
 		<td colspan="2" class="style47">　</td>
 	</tr>
 </table>
+
 </form>
