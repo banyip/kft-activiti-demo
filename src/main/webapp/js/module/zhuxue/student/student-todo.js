@@ -62,12 +62,13 @@ function inserttable() {
 	}
 }
 
-function insertrow(classname) {
+function insertrow(classname,divname) {
 	var newnode = $('.'+classname)[0].cloneNode(true);
     var content = newnode.outerHTML;
 	content = content.replace(/\[0\]/g, "["+ $('.'+classname).length + "]");
 
-    $('.'+classname)[0].after(content);
+    $('#'+divname)[0].append(content);
+
 }
 
 
