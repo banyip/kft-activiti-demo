@@ -51,7 +51,7 @@ function countPoorScore()
 function inserttable() {
 	var newnode = $('.yltable')[0].cloneNode(true);
     var content = newnode.innerHTML;
-	content = content.replace(/\[0\]/g, "["+ $('#div_bjbr')[0].chileElementCount + "]");
+	content = content.replace(/\[0\]/g, "["+ $('#div_bjbr')[0].childElementCount + "]");
 	content = "<table class='yltable'>" + content + "</table>";
 	
 	if($('#div_bjbr')[0].childNodes.length <=6){
