@@ -98,6 +98,16 @@ public class Student extends IdEntity implements Serializable {
     private String ifAgreeToMail;
     private String firstAuditNote;
     private String sponseState;
+    private String bankCard;
+    private String bank;
+    private String age;
+    private String qq;
+    private String email;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+    private Date sponseStartTime;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+    private Date sponseEndTime;
+    private String endReason;
     
     //贫困评估相关
     private String poorEvaluateScore0;

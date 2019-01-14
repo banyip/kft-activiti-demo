@@ -111,6 +111,8 @@ public class Relative extends IdEntity implements Serializable {
     private String health;
     private String education;
     private String otherSponse;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+    private Date birthDate;
     
     @Column
     public String getProfectional() {
