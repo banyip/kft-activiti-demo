@@ -51,9 +51,9 @@ public class Variable {
         String[] arrayKey = keys.split(",");
         String[] arrayValue = values.split(",");
         String[] arrayType = types.split(",");
-        logger.debug("学生信息保存中Variable keys:："+keys.length()+keys);
-        logger.debug("学生信息保存中Variable values:："+values.length()+values);
-        logger.debug("学生信息保存中Variable types:："+types.length()+types);
+        logger.debug("学生信息保存中Variable keys:："+arrayKey.length+keys);
+        logger.debug("学生信息保存中Variable values:："+arrayValue.length+values);
+        logger.debug("学生信息保存中Variable types:："+arrayType.length+types);
         for (int i = 0; i < arrayKey.length; i++) {
             if ("".equals(arrayKey[i]) || "".equals(arrayValue[i]) || "".equals(arrayType[i])) {
                 continue;
