@@ -302,50 +302,6 @@ public class Student extends IdEntity implements Serializable {
 		this.debt = debt;
 	}
 
-	@Column
-	public boolean isIfRaw() {
-		return ifRaw;
-	}
-
-	public void setIfRaw(boolean ifRaw) {
-		this.ifRaw = ifRaw;
-	}
-
-	@Column
-	public boolean isIfBrick() {
-		return ifBrick;
-	}
-
-	public void setIfBrick(boolean ifBrick) {
-		this.ifBrick = ifBrick;
-	}
-
-	@Column
-	public boolean isIfConcrete() {
-		return ifConcrete;
-	}
-
-	public void setIfConcrete(boolean ifConcrete) {
-		this.ifConcrete = ifConcrete;
-	}
-
-	@Column
-	public boolean isIfWood() {
-		return ifWood;
-	}
-
-	public void setIfWood(boolean ifWood) {
-		this.ifWood = ifWood;
-	}
-
-	@Column
-	public boolean isIfTwoFloor() {
-		return ifTwoFloor;
-	}
-
-	public void setIfTwoFloor(boolean ifTwoFloor) {
-		this.ifTwoFloor = ifTwoFloor;
-	}
 
 	@Column
 	public Date getSponseStartTime() {
@@ -380,12 +336,59 @@ public class Student extends IdEntity implements Serializable {
     private String familyIllnessDescribe;
     private String otherExpenditure;
     private String debt;
-    private boolean ifRaw = false;
-    private boolean ifBrick=false;
-    private boolean ifConcrete=false;
-    private boolean ifWood =false;
-    private boolean ifTwoFloor = false;
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+    private String ifRaw ;
+    private String ifBrick;
+    private String ifConcrete;
+    private String ifWood ;
+    private String ifTwoFloor;
+    
+    @Column
+    public String getIfRaw() {
+		return ifRaw;
+	}
+
+
+	public void setIfRaw(String ifRaw) {
+		this.ifRaw = ifRaw;
+	}
+
+    @Column
+	public String getIfBrick() {
+		return ifBrick;
+	}
+
+	public void setIfBrick(String ifBrick) {
+		this.ifBrick = ifBrick;
+	}
+
+	@Column
+	public String getIfConcrete() {
+		return ifConcrete;
+	}
+
+	public void setIfConcrete(String ifConcrete) {
+		this.ifConcrete = ifConcrete;
+	}
+
+	@Column
+	public String getIfWood() {
+		return ifWood;
+	}
+
+	public void setIfWood(String ifWood) {
+		this.ifWood = ifWood;
+	}
+
+	@Column
+	public String getIfTwoFloor() {
+		return ifTwoFloor;
+	}
+
+	public void setIfTwoFloor(String ifTwoFloor) {
+		this.ifTwoFloor = ifTwoFloor;
+	}
+
+	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date sponseStartTime;
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date sponseEndTime;
