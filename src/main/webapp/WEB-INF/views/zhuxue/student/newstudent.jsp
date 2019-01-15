@@ -2,17 +2,16 @@
     pageEncoding="UTF-8"%>
 
 <form method="POST">
-<table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse:
- collapse;width:898px">
+<table border="0" cellpadding="0" width="898" style="width:100%" >
 	<colgroup>
 		<col style="mso-width-source:userset;mso-width-alt:3776;" />
-		<col width="103" span="2" style="mso-width-source:userset;mso-width-alt:3296;
- width:77pt" />
-		<col width="141" style="mso-width-source:userset;mso-width-alt:4512;width:106pt" />
-		<col width="133" style="mso-width-source:userset;mso-width-alt:4256;width:100pt" />
-		<col width="100" style="mso-width-source:userset;mso-width-alt:3200;width:75pt" />
+		<col span="2" style="mso-width-source:userset;mso-width-alt:3296;
+ width:60pt" />
+		<col style="mso-width-source:userset;mso-width-alt:4512;width:86pt" />
+		<col style="mso-width-source:userset;mso-width-alt:4256;width:82pt" />
+		<col style="mso-width-source:userset;mso-width-alt:3200;width:60pt" />
 		<col style="mso-width-source:userset;mso-width-alt:3360;" />
-		<col width="95" style="mso-width-source:userset;mso-width-alt:3040;width:71pt" />
+		<col style="mso-width-source:userset;mso-width-alt:3040;width:56pt" />
 	</colgroup>
 	<tr height="48" style="mso-height-source:userset;height:36.0pt">
 		<td colspan="8" height="48" style="height: 36.0pt; " class="style1">
@@ -203,7 +202,7 @@
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
 		　</td>
 		<td colspan="6" class="style28">4、亲戚资助情况：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_relativeSponse" name="relativeSponse" style="width: 422px" />
-		</span>，收入<span style="mso-spacerun:yes"><span style="mso-spacerun:yes"><input  class="studentApply" id="student_relativeSponseIncome" name="relativeSponseIncome" style="width: 41px" /></span></span>元/年</td>
+		</span>，收入<span style="mso-spacerun:yes"><input  class="studentApply" id="student_relativeSponseIncome" name="relativeSponseIncome" style="width: 41px" /></span>元/年</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
@@ -256,20 +255,17 @@
 		</span> 
 		<input  class="studentApply" id="student_ifBrick" name="ifBrick" type="checkbox" />砖瓦结构<span style="mso-spacerun:yes">&nbsp;&nbsp;  
 		<input  class="studentApply" id="student_ifConcrete" name="ifConcrete" type="checkbox" /></span>混凝土结构<span style="mso-spacerun:yes">&nbsp;&nbsp;
-		<span style="mso-spacerun:yes">  
-		<input  class="studentApply" id="student_ifWood" name="ifWood" type="checkbox" /></span></span>木屋<span style="mso-spacerun:yes">&nbsp; <span style="mso-spacerun:yes">  
-		<input  class="studentApply" id="student_ifTwoFloor" name="ifTwoFloor" type="checkbox" /></span></span>≥两层<span style="mso-spacerun:yes">&nbsp;</span></td>
+		<input  class="studentApply" id="student_ifWood" name="ifWood" type="checkbox" /></span>木屋<span style="mso-spacerun:yes">&nbsp;   
+		<input  class="studentApply" id="student_ifTwoFloor" name="ifTwoFloor" type="checkbox" /></span>≥两层<span style="mso-spacerun:yes">&nbsp;</span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="7" height="26" style="height: 20.1pt; " class="style33">
 		<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>房屋内部装修：<span style="mso-spacerun:yes">&nbsp;
 		</span>√<input  class="studentApply" id="student_ifSimple" name="ifSimple" type="checkbox" />简陋<span style="mso-spacerun:yes">&nbsp;&nbsp; 
 		<input  class="studentApply" id="student_ifConcreteFloor" name="ifConcreteFloor" type="checkbox" /></span>水泥地<span style="mso-spacerun:yes">&nbsp;&nbsp;
-		<span style="mso-spacerun:yes"> 
-		<input  class="studentApply" id="student_ifConcreteTile" name="ifConcreteTile" type="checkbox" /></span></span>贴瓷砖<span style="mso-spacerun:yes">&nbsp;&nbsp; <span style="mso-spacerun:yes"> 
-		<input  class="studentApply" id="student_ifNeat" name="ifNeat" type="checkbox" /></span></span>舒适整洁<span style="mso-spacerun:yes">&nbsp;&nbsp;
-		<span style="mso-spacerun:yes"> 
-		<input  class="studentApply" id="student_ifHighClass" name="ifHighClass" type="checkbox" /></span></span>高档</td>
+		<input  class="studentApply" id="student_ifConcreteTile" name="ifConcreteTile" type="checkbox" /></span>贴瓷砖<span style="mso-spacerun:yes">&nbsp;&nbsp;  
+		<input  class="studentApply" id="student_ifNeat" name="ifNeat" type="checkbox" /></span>舒适整洁<span style="mso-spacerun:yes">&nbsp;&nbsp;
+		<input  class="studentApply" id="student_ifHighClass" name="ifHighClass" type="checkbox" /></span>高档</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="7" height="26" style="height: 20.1pt" class="style34">2. 
@@ -279,13 +275,11 @@
 		<td colspan="6" style="height: 20pt; mso-ignore: colspan" class="style35">
 		3.  
 		<input  class="studentApply" id="student_ifrentHouse" name="ifrentHouse" type="checkbox" />租用房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>租金：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_rentFee" name="rentFee" style="width: 41px" /></span>元/月<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>房屋内部装修：<span style="mso-spacerun:yes">&nbsp;
-		<input  class="studentApply" id="student_ifRentSimple" name="ifRentSimple" type="checkbox" /></span>简陋<span style="mso-spacerun:yes">&nbsp;&nbsp; <span style="mso-spacerun:yes">
-		<input  class="studentApply" id="student_ifRentConcreteFloor" name="ifRentConcreteFloor" type="checkbox" /></span></span>水泥地<span style="mso-spacerun:yes">&nbsp;&nbsp;
-		<span style="mso-spacerun:yes">
-		<input  class="studentApply" id="student_ifRentConcreteTile" name="ifRentConcreteTile" type="checkbox" /></span></span>贴瓷砖<span style="mso-spacerun:yes">&nbsp;&nbsp; <span style="mso-spacerun:yes">
-		<input  class="studentApply" id="student_ifRentComfort" name="ifRentComfort" type="checkbox" /></span></span>舒适<span style="mso-spacerun:yes">&nbsp;&nbsp;
-		<span style="mso-spacerun:yes">
-		<input  class="studentApply" id="student_ifRentHighClass" name="ifRentHighClass" type="checkbox" /></span></span>高档</td>
+		<input  class="studentApply" id="student_ifRentSimple" name="ifRentSimple" type="checkbox" /></span>简陋<span style="mso-spacerun:yes">&nbsp;&nbsp; 
+		<input  class="studentApply" id="student_ifRentConcreteFloor" name="ifRentConcreteFloor" type="checkbox" /></span>水泥地<span style="mso-spacerun:yes">&nbsp;&nbsp;
+		<input  class="studentApply" id="student_ifRentConcreteTile" name="ifRentConcreteTile" type="checkbox" /></span>贴瓷砖<span style="mso-spacerun:yes">&nbsp;&nbsp; 
+		<input  class="studentApply" id="student_ifRentComfort" name="ifRentComfort" type="checkbox" /></span>舒适<span style="mso-spacerun:yes">&nbsp;&nbsp;
+		<input  class="studentApply" id="student_ifRentHighClass" name="ifRentHighClass" type="checkbox" /></span>高档</td>
 		<td class="style36" style="height: 20pt">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
