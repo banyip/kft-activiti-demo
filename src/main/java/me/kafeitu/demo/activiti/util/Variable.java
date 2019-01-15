@@ -2,6 +2,8 @@ package me.kafeitu.demo.activiti.util;
 
 import jodd.util.StringUtil;
 import org.apache.commons.beanutils.ConvertUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +13,8 @@ public class Variable {
     private String keys;
     private String values;
     private String types;
-
+    private Logger logger = LoggerFactory.getLogger(getClass());
+    
     public String getKeys() {
         return keys;
     }
@@ -48,6 +51,9 @@ public class Variable {
         String[] arrayKey = keys.split(",");
         String[] arrayValue = values.split(",");
         String[] arrayType = types.split(",");
+        logger.debug("学生信息保存中Variable keys:："+keys);
+        logger.debug("学生信息保存中Variable values:："+values);
+        logger.debug("学生信息保存中Variable types:："+types);
         for (int i = 0; i < arrayKey.length; i++) {
             if ("".equals(arrayKey[i]) || "".equals(arrayValue[i]) || "".equals(arrayType[i])) {
                 continue;
