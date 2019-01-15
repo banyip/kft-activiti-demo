@@ -268,7 +268,7 @@ var handleOpts = {
                             if(this.type=="checkbox")
                             variables.push({
                                 key: this.id,
-                                value: this.attr("checked"),
+                                value: this.checked,
                                 type: 'S'
                             });
                             else if(this.disabled==false&&this.value!=null)
