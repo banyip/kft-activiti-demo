@@ -36,11 +36,12 @@ public class Relative extends IdEntity implements Serializable {
 		System.out.println(relativeInfos);
 		this.relationship= relativeInfos.get(0);
 		this.name = relativeInfos.get(1);
-		this.relativeId = relativeInfos.get(2);		
+		this.birthDate = relativeInfos.get(2);
 		this.contactNum = relativeInfos.get(3);
 		this.profectional = relativeInfos.get(4);
 		this.anualIncome = relativeInfos.get(5);
-		this.health = relativeInfos.get(6);
+		this.otherSponse = relativeInfos.get(6);		
+		this.health = relativeInfos.get(7);
 		return;
 	}
     private static final long serialVersionUID = 1L;
@@ -112,7 +113,7 @@ public class Relative extends IdEntity implements Serializable {
     private String education="";
     private String otherSponse="";
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date birthDate;
+    private String birthDate;
     
     @Column
     public String getProfectional() {
