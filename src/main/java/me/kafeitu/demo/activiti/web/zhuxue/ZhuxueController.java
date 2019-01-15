@@ -89,8 +89,9 @@ public class ZhuxueController {
            Student student = new Student();
            Set<String> variableNames = variables.keySet();
 
-           //把student.relatives存放到list
+ /*          //把student.relatives存放到list
            List<Relative> relatives = new ArrayList<Relative>();
+*/
            logger.debug("学生信息保存中："+variableNames);
    		for (String key : variableNames) {
    			if(key.indexOf("student_")==0)
@@ -117,7 +118,12 @@ public class ZhuxueController {
    						logger.error("学生信息保存失败：", e);
    					}
    					logger.debug("学生信息保存成功："+key);
-   			} else if(key.indexOf("relatives[")==0)
+   			}else if(key.equals("relative"))
+   			{
+   		        String relatives = (String)variables.get(key);
+   		        student.setRelatives(relatives);
+   			}
+/*   			else if(key.indexOf("relatives[")==0)
    			{ 
    				
    				int index = Integer.parseInt(key.substring(10,11));
@@ -145,6 +151,7 @@ public class ZhuxueController {
    					logger.debug("亲戚信息保存成功："+key);
    					
    			}
+  */
    		}
            studentManager.saveStudent(student);
            return "success";
