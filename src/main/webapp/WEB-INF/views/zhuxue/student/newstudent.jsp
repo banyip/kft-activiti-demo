@@ -3,7 +3,7 @@
 
 <form method="POST">
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse:
- collapse;width:1200px">
+ collapse;width:898px">
 	<colgroup>
 		<col style="mso-width-source:userset;mso-width-alt:3776;" />
 		<col width="103" span="2" style="mso-width-source:userset;mso-width-alt:3296;
