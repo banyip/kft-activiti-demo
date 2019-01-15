@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-
+<form method="POST">
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse:
  collapse;width:674pt">
 	<colgroup>
@@ -144,97 +144,97 @@
 		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relative[0]_relationship" name="relationship">　</td>
 		<td class="style11"><input class="studentApply" type="text" id="relative[0]_name" name="name"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[0]_birthDate" name="birthDate">　</td>
+		<input class="studentApply" type="text" id="relative[0]_birthDate" name="birthDate">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[0]_contactNo" name="contactNo"></td>
+		<input class="studentApply" type="text" id="relative[0]_contactNo" name="contactNo"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[0]_profectional" name="profectional">　</td>
+		<input class="studentApply" type="text" id="relative[0]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="number" id="relative[0]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" id="relative[0]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[0]_otherSponse" name="otherSponse">　</td>
+		<input class="studentApply" type="text" id="relative[0]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
-		<input class="studentApply abc" type="text" id="relative[0]_health" name="health">　</td>
+		<input class="studentApply" type="text" id="relative[0]_health" name="health">　</td>
     </tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relative[1]_relationship" name="relationship">　</td>
 		<td class="style11"><input class="studentApply" type="text" id="relative[1]_name" name="name"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[1]_birthDate" name="birthDate">　</td>
+		<input class="studentApply" type="text" id="relative[1]_birthDate" name="birthDate">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[1]_contactNo" name="contactNo"></td>
+		<input class="studentApply" type="text" id="relative[1]_contactNo" name="contactNo"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[1]_profectional" name="profectional">　</td>
+		<input class="studentApply" type="text" id="relative[1]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="number" id="relative[1]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" id="relative[1]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[1]_otherSponse" name="otherSponse">　</td>
+		<input class="studentApply" type="text" id="relative[1]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
-		<input class="studentApply abc" type="text" id="relative[1]_health" name="health">　</td>
+		<input class="studentApply" type="text" id="relative[1]_health" name="health">　</td>
     </tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relative[2]_relationship" name="relationship">　</td>
 		<td class="style11"><input class="studentApply" type="text" id="relative[2]_name" name="name"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[2]_birthDate" name="birthDate">　</td>
+		<input class="studentApply" type="text" id="relative[2]_birthDate" name="birthDate">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[2]_contactNo" name="contactNo"></td>
+		<input class="studentApply" type="text" id="relative[2]_contactNo" name="contactNo"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[2]_profectional" name="profectional">　</td>
+		<input class="studentApply" type="text" id="relative[2]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="number" id="relative[2]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" id="relative[2]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[2]_otherSponse" name="otherSponse">　</td>
+		<input class="studentApply" type="text" id="relative[2]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
-		<input class="studentApply abc" type="text" id="relative[2]_health" name="health">　</td>
+		<input class="studentApply" type="text" id="relative[2]_health" name="health">　</td>
     </tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relative[3]_relationship" name="relationship">　</td>
 		<td class="style11"><input class="studentApply" type="text" id="relative[3]_name" name="name"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[3]_birthDate" name="birthDate">　</td>
+		<input class="studentApply" type="text" id="relative[3]_birthDate" name="birthDate">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[3]_contactNo" name="contactNo"></td>
+		<input class="studentApply" type="text" id="relative[3]_contactNo" name="contactNo"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[3]_profectional" name="profectional">　</td>
+		<input class="studentApply" type="text" id="relative[3]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="number" id="relative[3]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" id="relative[3]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[3]_otherSponse" name="otherSponse">　</td>
+		<input class="studentApply" type="text" id="relative[3]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
-		<input class="studentApply abc" type="text" id="relative[3]_health" name="health">　</td>
+		<input class="studentApply" type="text" id="relative[3]_health" name="health">　</td>
     </tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relative[4]_relationship" name="relationship">　</td>
 		<td class="style11"><input class="studentApply" type="text" id="relative[4]_name" name="name"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[4]_birthDate" name="birthDate">　</td>
+		<input class="studentApply" type="text" id="relative[4]_birthDate" name="birthDate">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[4]_contactNo" name="contactNo"></td>
+		<input class="studentApply" type="text" id="relative[4]_contactNo" name="contactNo"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[4]_profectional" name="profectional">　</td>
+		<input class="studentApply" type="text" id="relative[4]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="number" id="relative[4]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" id="relative[4]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[4]_otherSponse" name="otherSponse">　</td>
+		<input class="studentApply" type="text" id="relative[4]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
-		<input class="studentApply abc" type="text" id="relative[4]_health" name="health">　</td>
+		<input class="studentApply" type="text" id="relative[4]_health" name="health">　</td>
     </tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relative[5]_relationship" name="relationship">　</td>
 		<td class="style11"><input class="studentApply" type="text" id="relative[5]_name" name="name"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[5]_birthDate" name="birthDate">　</td>
+		<input class="studentApply" type="text" id="relative[5]_birthDate" name="birthDate">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[5]_contactNo" name="contactNo"></td>
+		<input class="studentApply" type="text" id="relative[5]_contactNo" name="contactNo"></td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[5]_profectional" name="profectional">　</td>
+		<input class="studentApply" type="text" id="relative[5]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="number" id="relative[5]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" id="relative[5]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
-		<input class="studentApply abc" type="text" id="relative[5]_otherSponse" name="otherSponse">　</td>
+		<input class="studentApply" type="text" id="relative[5]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
-		<input class="studentApply abc" type="text" id="relative[5]_health" name="health">　</td>
+		<input class="studentApply" type="text" id="relative[5]_health" name="health">　</td>
     </tr>
 
     
@@ -741,3 +741,4 @@
 		<td colspan="2" class="style47">　</td>
 	</tr>
 </table>
+</form>

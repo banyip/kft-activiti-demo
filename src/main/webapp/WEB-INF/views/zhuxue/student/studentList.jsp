@@ -68,9 +68,8 @@
     <!-- 学生信息登记学生信息 -->
 	<div id="newstudent" style="display: none">
 		<!-- table用来显示信息，方便办理任务 -->
-        <form>
             <%@include file="newstudent.jsp" %>
-        </form>
+
 
     </div>
 
