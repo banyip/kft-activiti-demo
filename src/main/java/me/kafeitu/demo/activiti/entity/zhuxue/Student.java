@@ -58,7 +58,7 @@ public class Student extends IdEntity implements Serializable {
     private String applicantId;
     private String applicantCompany;
     
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     public String getApplicantCompany() {
 		return applicantCompany;
 	}
@@ -67,7 +67,7 @@ public class Student extends IdEntity implements Serializable {
 		this.applicantCompany = applicantCompany;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getAuditNo() {
 		return auditNo;
 	}
@@ -76,7 +76,7 @@ public class Student extends IdEntity implements Serializable {
 		this.auditNo = auditNo;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getSponseState() {
 		return sponseState;
 	}
@@ -113,7 +113,7 @@ public class Student extends IdEntity implements Serializable {
     private String otherIncomeSource;
     private String otherIncome;
     private String otherAsset;
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     public String getBankCard() {
 		return bankCard;
 	}
@@ -122,7 +122,7 @@ public class Student extends IdEntity implements Serializable {
 		this.bankCard = bankCard;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getBank() {
 		return bank;
 	}
@@ -131,7 +131,7 @@ public class Student extends IdEntity implements Serializable {
 		this.bank = bank;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getAge() {
 		return age;
 	}
@@ -140,7 +140,7 @@ public class Student extends IdEntity implements Serializable {
 		this.age = age;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getQq() {
 		return qq;
 	}
@@ -149,7 +149,7 @@ public class Student extends IdEntity implements Serializable {
 		this.qq = qq;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getEmail() {
 		return email;
 	}
@@ -158,7 +158,7 @@ public class Student extends IdEntity implements Serializable {
 		this.email = email;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getFarmArea() {
 		return farmArea;
 	}
@@ -167,7 +167,7 @@ public class Student extends IdEntity implements Serializable {
 		this.farmArea = farmArea;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getFarmPlanting() {
 		return farmPlanting;
 	}
@@ -176,7 +176,7 @@ public class Student extends IdEntity implements Serializable {
 		this.farmPlanting = farmPlanting;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getFarmPlantingIncome() {
 		return farmPlantingIncome;
 	}
@@ -185,7 +185,7 @@ public class Student extends IdEntity implements Serializable {
 		this.farmPlantingIncome = farmPlantingIncome;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getFarmAnimalUsage() {
 		return farmAnimalUsage;
 	}
@@ -194,7 +194,7 @@ public class Student extends IdEntity implements Serializable {
 		this.farmAnimalUsage = farmAnimalUsage;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getFarmAnimalIncome() {
 		return farmAnimalIncome;
 	}
@@ -203,7 +203,7 @@ public class Student extends IdEntity implements Serializable {
 		this.farmAnimalIncome = farmAnimalIncome;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getWorkSituation() {
 		return workSituation;
 	}
@@ -212,7 +212,7 @@ public class Student extends IdEntity implements Serializable {
 		this.workSituation = workSituation;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getWorkIncome() {
 		return workIncome;
 	}
@@ -221,7 +221,7 @@ public class Student extends IdEntity implements Serializable {
 		this.workIncome = workIncome;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getOtherIncomeSource() {
 		return otherIncomeSource;
 	}
@@ -230,7 +230,7 @@ public class Student extends IdEntity implements Serializable {
 		this.otherIncomeSource = otherIncomeSource;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getOtherIncome() {
 		return otherIncome;
 	}
@@ -239,7 +239,7 @@ public class Student extends IdEntity implements Serializable {
 		this.otherIncome = otherIncome;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getOtherAsset() {
 		return otherAsset;
 	}
@@ -248,7 +248,7 @@ public class Student extends IdEntity implements Serializable {
 		this.otherAsset = otherAsset;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getMainExpenditure() {
 		return mainExpenditure;
 	}
@@ -257,7 +257,7 @@ public class Student extends IdEntity implements Serializable {
 		this.mainExpenditure = mainExpenditure;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getFamilyIllness() {
 		return familyIllness;
 	}
@@ -266,7 +266,7 @@ public class Student extends IdEntity implements Serializable {
 		this.familyIllness = familyIllness;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIllnessExpenditure() {
 		return illnessExpenditure;
 	}
@@ -275,7 +275,7 @@ public class Student extends IdEntity implements Serializable {
 		this.illnessExpenditure = illnessExpenditure;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getFamilyIllnessDescribe() {
 		return familyIllnessDescribe;
 	}
@@ -284,7 +284,7 @@ public class Student extends IdEntity implements Serializable {
 		this.familyIllnessDescribe = familyIllnessDescribe;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getOtherExpenditure() {
 		return otherExpenditure;
 	}
@@ -293,7 +293,7 @@ public class Student extends IdEntity implements Serializable {
 		this.otherExpenditure = otherExpenditure;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getDebt() {
 		return debt;
 	}
@@ -303,7 +303,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public Date getSponseStartTime() {
 		return sponseStartTime;
 	}
@@ -312,7 +312,7 @@ public class Student extends IdEntity implements Serializable {
 		this.sponseStartTime = sponseStartTime;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public Date getSponseEndTime() {
 		return sponseEndTime;
 	}
@@ -321,7 +321,7 @@ public class Student extends IdEntity implements Serializable {
 		this.sponseEndTime = sponseEndTime;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getEndReason() {
 		return endReason;
 	}
@@ -350,7 +350,7 @@ public class Student extends IdEntity implements Serializable {
     private String ifNeat;
     private String ifHighClass;
     
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     public String getIfSelfHouse() {
 		return ifSelfHouse;
 	}
@@ -359,7 +359,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifSelfHouse = ifSelfHouse;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfBorrowHouse() {
 		return ifBorrowHouse;
 	}
@@ -368,7 +368,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifBorrowHouse = ifBorrowHouse;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfRentHouse() {
 		return ifRentHouse;
 	}
@@ -377,7 +377,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifRentHouse = ifRentHouse;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfSimple() {
 		return ifSimple;
 	}
@@ -386,7 +386,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifSimple = ifSimple;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfConcreteFloor() {
 		return ifConcreteFloor;
 	}
@@ -395,7 +395,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifConcreteFloor = ifConcreteFloor;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfConcreteTile() {
 		return ifConcreteTile;
 	}
@@ -404,7 +404,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifConcreteTile = ifConcreteTile;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfNeat() {
 		return ifNeat;
 	}
@@ -413,7 +413,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifNeat = ifNeat;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfHighClass() {
 		return ifHighClass;
 	}
@@ -422,7 +422,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifHighClass = ifHighClass;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
     public String getIfRaw() {
 		return ifRaw;
 	}
@@ -432,7 +432,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifRaw = ifRaw;
 	}
 
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
 	public String getIfBrick() {
 		return ifBrick;
 	}
@@ -441,7 +441,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifBrick = ifBrick;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfConcrete() {
 		return ifConcrete;
 	}
@@ -450,7 +450,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifConcrete = ifConcrete;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfWood() {
 		return ifWood;
 	}
@@ -459,7 +459,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifWood = ifWood;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfTwoFloor() {
 		return ifTwoFloor;
 	}
@@ -492,7 +492,7 @@ public class Student extends IdEntity implements Serializable {
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date poorEvaluateDate;
     
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     public String getFirstAuditNote() {
 		return firstAuditNote;
 	}
@@ -501,7 +501,7 @@ public class Student extends IdEntity implements Serializable {
 		this.firstAuditNote = firstAuditNote;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
     public String getIfAgreeToMail() {
 		return ifAgreeToMail;
 	}
@@ -510,7 +510,7 @@ public class Student extends IdEntity implements Serializable {
 		this.ifAgreeToMail = ifAgreeToMail;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
     public String getIfLiveInSchool() {
 		return ifLiveInSchool;
 	}
@@ -540,7 +540,7 @@ public class Student extends IdEntity implements Serializable {
     private String mathScore;
     private String otherScore;
     private String scorePosition;
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     public String getScorePosition() {
 		return scorePosition;
 	}
@@ -549,7 +549,7 @@ public class Student extends IdEntity implements Serializable {
 		this.scorePosition = scorePosition;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
     public String getParentName() {
 		return parentName;
 	}
@@ -562,7 +562,7 @@ public class Student extends IdEntity implements Serializable {
 		this.parentName = parentName;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getParentContactNo() {
 		return parentContactNo;
 	}
@@ -573,7 +573,7 @@ public class Student extends IdEntity implements Serializable {
 
 
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getSchoolContactPerson() {
 		return schoolContactPerson;
 	}
@@ -582,7 +582,7 @@ public class Student extends IdEntity implements Serializable {
 		this.schoolContactPerson = schoolContactPerson;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getSchoolContactNo() {
 		return schoolContactNo;
 	}
@@ -591,7 +591,7 @@ public class Student extends IdEntity implements Serializable {
 		this.schoolContactNo = schoolContactNo;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
     public String getStudentContactNo() {
 		return studentContactNo;
 	}
@@ -600,7 +600,7 @@ public class Student extends IdEntity implements Serializable {
 		this.studentContactNo = studentContactNo;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
     public String getApplicantId() {
 		return applicantId;
 	}
@@ -609,7 +609,7 @@ public class Student extends IdEntity implements Serializable {
 		this.applicantId = applicantId;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getStudentId() {
 		return studentId;
 	}
@@ -618,7 +618,7 @@ public class Student extends IdEntity implements Serializable {
 		this.studentId = studentId;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
     public String getPicture() {
 		return picture;
 	}
@@ -644,7 +644,7 @@ public class Student extends IdEntity implements Serializable {
         this.setPicture(fileName);
         
 	}
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
     public String getApplicantName() {
 		return applicantName;
 	}
@@ -653,7 +653,7 @@ public class Student extends IdEntity implements Serializable {
 		this.applicantName = applicantName;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getApplicantContactNum() {
 		return applicantContactNum;
 	}
@@ -662,7 +662,7 @@ public class Student extends IdEntity implements Serializable {
 		this.applicantContactNum = applicantContactNum;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getHeadteacher() {
 		return headteacher;
 	}
@@ -671,7 +671,7 @@ public class Student extends IdEntity implements Serializable {
 		this.headteacher = headteacher;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getHeadteachercontactNum() {
 		return headteachercontactNum;
 	}
@@ -680,7 +680,7 @@ public class Student extends IdEntity implements Serializable {
 		this.headteachercontactNum = headteachercontactNum;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getSex() {
 		return sex;
 	}
@@ -689,7 +689,7 @@ public class Student extends IdEntity implements Serializable {
 		this.sex = sex;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getNationality() {
 		return nationality;
 	}
@@ -698,7 +698,7 @@ public class Student extends IdEntity implements Serializable {
 		this.nationality = nationality;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public Date getBirthday() {
 		return birthday;
 	}
@@ -707,7 +707,7 @@ public class Student extends IdEntity implements Serializable {
 		this.birthday = birthday;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getAddress() {
 		return address;
 	}
@@ -718,7 +718,7 @@ public class Student extends IdEntity implements Serializable {
 
 	private String userId;
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
     public String getSchoolPerfomance() {
 		return schoolPerfomance;
 	}
@@ -728,7 +728,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getIfAgreeToPublish() {
 		return ifAgreeToPublish;
 	}
@@ -756,7 +756,7 @@ public class Student extends IdEntity implements Serializable {
 		this.applicant = applicant;
 	}
 */
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getStudentName() {
 		return studentName;
 	}
@@ -764,7 +764,7 @@ public class Student extends IdEntity implements Serializable {
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getSchool() {
 		return school;
 	}
@@ -773,7 +773,7 @@ public class Student extends IdEntity implements Serializable {
 		this.school = school;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getGrade() {
 		return grade;
 	}
@@ -795,7 +795,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 */
 	
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	@OneToMany(cascade = {CascadeType.ALL})
 	public Set<Relative> getRelatives() {
 		return relatives;
@@ -824,7 +824,7 @@ public class Student extends IdEntity implements Serializable {
     private String familyCondiction;
     private String sponseReason;
     
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     public String getFamilyCondiction() {
 		return familyCondiction;
 	}
@@ -833,7 +833,7 @@ public class Student extends IdEntity implements Serializable {
 		this.familyCondiction = familyCondiction;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getSponseReason() {
 		return sponseReason;
 	}
@@ -866,7 +866,7 @@ public class Student extends IdEntity implements Serializable {
 
 
 
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     public String getUserId() {
         return userId;
     }
@@ -876,7 +876,7 @@ public class Student extends IdEntity implements Serializable {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(columnDefinition="varchar(30)")(name = "START_TIME")
+    @Column(length=30)(name = "START_TIME")
     public Date getStartTime() {
         return startTime;
     }
@@ -886,7 +886,7 @@ public class Student extends IdEntity implements Serializable {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(columnDefinition="varchar(30)")(name = "END_TIME")
+    @Column(length=30)(name = "END_TIME")
     public Date getEndTime() {
         return endTime;
     }
@@ -895,7 +895,7 @@ public class Student extends IdEntity implements Serializable {
         this.endTime = endTime;
     }
 
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     @Temporal(TemporalType.TIMESTAMP)
     public Date getApplyTime() {
         return applyTime;
@@ -905,7 +905,7 @@ public class Student extends IdEntity implements Serializable {
         this.applyTime = applyTime;
     }
 
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     public String getLeaveType() {
         return leaveType;
     }
@@ -914,7 +914,7 @@ public class Student extends IdEntity implements Serializable {
         this.leaveType = leaveType;
     }
 
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
     public String getReason() {
         return reason;
     }
@@ -924,7 +924,7 @@ public class Student extends IdEntity implements Serializable {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(columnDefinition="varchar(30)")(name = "REALITY_START_TIME")
+    @Column(length=30)(name = "REALITY_START_TIME")
     public Date getRealityStartTime() {
         return realityStartTime;
     }
@@ -934,7 +934,7 @@ public class Student extends IdEntity implements Serializable {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(columnDefinition="varchar(30)")(name = "REALITY_END_TIME")
+    @Column(length=30)(name = "REALITY_END_TIME")
     public Date getRealityEndTime() {
         return realityEndTime;
     }
@@ -957,7 +957,7 @@ public class Student extends IdEntity implements Serializable {
   
 
 
-    @Column(columnDefinition="varchar(30)")
+    @Column(length=30)
 	public String getClassName() {
 		return className;
 	}
@@ -967,72 +967,72 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	//贫困评分相关
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateScore0() {
 		return poorEvaluateScore0;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateScore1() {
 		return poorEvaluateScore1;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateScore2() {
 		return poorEvaluateScore2;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateScore3() {
 		return poorEvaluateScore3;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateScore4() {
 		return poorEvaluateScore4;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateScore5() {
 		return poorEvaluateScore5;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateScore6() {
 		return poorEvaluateScore6;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateScore7() {
 		return poorEvaluateScore7;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateScore8() {
 		return poorEvaluateScore8;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateTotalScore() {
 		return poorEvaluateTotalScore;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluateNote() {
 		return poorEvaluateNote;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluatePerson() {
 		return poorEvaluatePerson;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public String getPoorEvaluatePersonContact() {
 		return poorEvaluatePersonContact;
 	}
 
-	@Column(columnDefinition="varchar(30)")
+	@Column(length=30)
 	public Date getPoorEvaluateDate() {
 		return poorEvaluateDate;
 	}
