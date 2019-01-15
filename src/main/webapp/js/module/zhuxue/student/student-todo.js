@@ -226,7 +226,7 @@ function complete(variables) {
 var handleOpts = {
 			newstudent: {
 			width: 1300,
-			height: 570,
+			height: 870,
 			open: function(id) {
 				var dialog = this;
 				
