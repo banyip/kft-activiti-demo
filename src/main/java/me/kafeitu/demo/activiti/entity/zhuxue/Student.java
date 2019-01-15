@@ -876,7 +876,7 @@ public class Student extends IdEntity implements Serializable {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(length = 50)(name = "START_TIME")
+    @Column(name = "START_TIME")
     public Date getStartTime() {
         return startTime;
     }
@@ -886,7 +886,7 @@ public class Student extends IdEntity implements Serializable {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(length = 50)(name = "END_TIME")
+    @Column(name = "END_TIME")
     public Date getEndTime() {
         return endTime;
     }
@@ -924,7 +924,7 @@ public class Student extends IdEntity implements Serializable {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(length = 50)(name = "REALITY_START_TIME")
+    @Column(name = "REALITY_START_TIME")
     public Date getRealityStartTime() {
         return realityStartTime;
     }
@@ -934,7 +934,7 @@ public class Student extends IdEntity implements Serializable {
     }
 
     @Temporal(TemporalType.TIMESTAMP)
-    @Column(length = 50)(name = "REALITY_END_TIME")
+    @Column(name = "REALITY_END_TIME")
     public Date getRealityEndTime() {
         return realityEndTime;
     }
