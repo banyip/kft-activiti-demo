@@ -6,8 +6,7 @@ import java.lang.reflect.Method;
 
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
-import me.kafeitu.demo.activiti.entity.zhuxue.Student;
-import me.kafeitu.demo.activiti.entity.zhuxue.Student;
+
 import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
 
 import me.kafeitu.demo.activiti.util.Page;
@@ -126,9 +125,9 @@ public class ZhuxueController {
    				String methodname= key.substring(13,14).toUpperCase()+key.substring(14);
    				Object value = variables.get(key);
    				try {
-   					    logger.debug("学生信息保存内容method：set"+methodname);
-   						logger.debug("学生信息保存内容value："+value);
-   				        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.oa.Relative");
+   					    logger.debug("亲戚信息保存内容method：set"+methodname);
+   						logger.debug("亲戚信息保存内容value："+value);
+   				        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue.Relative");
    				        // 定义参数类型
    				        Class[] params = new Class[1];
    				        params[0] = String.class;
@@ -136,15 +135,14 @@ public class ZhuxueController {
    				        // 设置参数
    				        Object[] p = new Object[1];
    				        p[0] = value;
-   				        m.invoke(relative, p);
-   				        logger.debug("亲戚信息保存内容：set"+methodname);
-   				        logger.debug("亲戚信息保存内容："+p[0]);
+   				        m.invoke(relative, p);   				     
+   				        logger.debug("亲戚信息保存成功p0：set"+methodname+p[0]);
    					}
    					catch(Exception e)
    					{
-   						logger.error("学生信息保存失败：", e);
+   						logger.error("亲戚信息保存失败：", e);
    					}
-   					logger.debug("学生信息保存成功："+key);
+   					logger.debug("亲戚信息保存成功："+key);
    					
    			}
    		}
