@@ -350,8 +350,79 @@ public class Student extends IdEntity implements Serializable {
     private String ifNeat;
     private String ifHighClass;
     
-    
     @Column
+    public String getIfSelfHouse() {
+		return ifSelfHouse;
+	}
+
+	public void setIfSelfHouse(String ifSelfHouse) {
+		this.ifSelfHouse = ifSelfHouse;
+	}
+
+	@Column
+	public String getIfBorrowHouse() {
+		return ifBorrowHouse;
+	}
+
+	public void setIfBorrowHouse(String ifBorrowHouse) {
+		this.ifBorrowHouse = ifBorrowHouse;
+	}
+
+	@Column
+	public String getIfRentHouse() {
+		return ifRentHouse;
+	}
+
+	public void setIfRentHouse(String ifRentHouse) {
+		this.ifRentHouse = ifRentHouse;
+	}
+
+	@Column
+	public String getIfSimple() {
+		return ifSimple;
+	}
+
+	public void setIfSimple(String ifSimple) {
+		this.ifSimple = ifSimple;
+	}
+
+	@Column
+	public String getIfConcreteFloor() {
+		return ifConcreteFloor;
+	}
+
+	public void setIfConcreteFloor(String ifConcreteFloor) {
+		this.ifConcreteFloor = ifConcreteFloor;
+	}
+
+	@Column
+	public String getIfConcreteTile() {
+		return ifConcreteTile;
+	}
+
+	public void setIfConcreteTile(String ifConcreteTile) {
+		this.ifConcreteTile = ifConcreteTile;
+	}
+
+	@Column
+	public String getIfNeat() {
+		return ifNeat;
+	}
+
+	public void setIfNeat(String ifNeat) {
+		this.ifNeat = ifNeat;
+	}
+
+	@Column
+	public String getIfHighClass() {
+		return ifHighClass;
+	}
+
+	public void setIfHighClass(String ifHighClass) {
+		this.ifHighClass = ifHighClass;
+	}
+
+	@Column
     public String getIfRaw() {
 		return ifRaw;
 	}
