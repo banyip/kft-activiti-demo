@@ -31,7 +31,8 @@
 		<input  class=studentApply id=student_applicantContactNum name="applicantContactNum" />　</td>
 		<td colspan="4" width="433" style="width: 325pt" class="style6">
 		<input  class=studentApply id=student_applicantCompany name="applicantCompany" />　</td>
-	</tr>
+    </tr>
+ <!--   
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style7">　</td>
 	</tr>
@@ -739,6 +740,7 @@
 		<td class="style63">　</td>
 		<td class="style63">电话</td>
 		<td colspan="2" class="style47">　</td>
-	</tr>
+    </tr>
+-->
 </table>
 </form>
