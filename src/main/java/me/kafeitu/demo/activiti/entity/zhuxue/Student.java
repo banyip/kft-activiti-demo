@@ -341,6 +341,15 @@ public class Student extends IdEntity implements Serializable {
     private String ifConcrete;
     private String ifWood ;
     private String ifTwoFloor;
+    private String ifSelfHouse;
+    private String ifBorrowHouse;
+    private String ifRentHouse;
+    private String ifSimple;
+    private String ifConcreteFloor;
+    private String ifConcreteTile;
+    private String ifNeat;
+    private String ifHighClass;
+    
     
     @Column
     public String getIfRaw() {

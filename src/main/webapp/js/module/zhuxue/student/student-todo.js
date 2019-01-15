@@ -148,16 +148,16 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
             else if (k == 'relatives') 
             {                
                 for(var i=0;i<v.length;i++)
-                {
-                    $(':input[id^=relatives\\['+i+'\\]]').removeAttr("disabled");   
+                {   
                     for(let key in v[i])
-                        $('input[name=relatives\\['+i+'\\]_' + key).val(eval('v['+i+'].'+key));   
+                        $('input[name=relatives\\['+i+'\\]_' + key+'.studentEdit').val(eval('v['+i+'].'+key));   
                 }
-            } else if (k.substr(0,2) == 'if') 
+            }/* else if (k.substr(0,2) == 'if') 
             {
                  $("input[type=radio][name="+k+"][value="+v+"]").attr("checked",true);                
-            } else {
-				$('input[name=' + k + ']' ).val(v);
+            } */
+            else {
+				$('input[name=' + k + '].studentEdit' ).val(v);
 			}
         });
 		if ($.isFunction(callback)) {

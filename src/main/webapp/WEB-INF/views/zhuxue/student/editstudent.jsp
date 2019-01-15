@@ -26,11 +26,11 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style4">
-			<input class="studentApply" id="student_applicantName" name="applicantName" />　</td>
+			<input class="studentEdit" id="student_applicantName" name="applicantName" />　</td>
 		<td colspan="2" class="style5">
-		<input  class=studentApply id=student_applicantContactNum name="applicantContactNum" />　</td>
+		<input  class=studentEdit id=student_applicantContactNum name="applicantContactNum" />　</td>
 		<td colspan="4" class="style6">
-		<input  class=studentApply id=student_applicantCompany name="applicantCompany" />　</td>
+		<input  class=studentEdit id=student_applicantCompany name="applicantCompany" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style7">　</td>
@@ -42,22 +42,22 @@
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style9">通过审核编号</td>
 		<td colspan="2" class="style10">
-			<input class="studentApply" id="student_auditNo" name="auditNo" />　</td>
+			<input class="studentEdit" id="student_auditNo" name="auditNo" />　</td>
 		<td class="style11">资助状态</td>
 		<td colspan="3" class="style10">
-			<input class="studentApply" id="student_sponseState" name="sponseState" />　</td>
+			<input class="studentEdit" id="student_sponseState" name="sponseState" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style12">学生姓名</td>
-		<td colspan="2" class="style10">　<input class="studentApply" id="student_studentName" name="studentName" /></td>
+		<td colspan="2" class="style10">　<input class="studentEdit" id="student_studentName" name="studentName" /></td>
 		<td class="style11">民族</td>
 		<td colspan="3" class="style10">
-		<input class="studentApply" id="student_nationality" name="nationality" />　</td>
+		<input class="studentEdit" id="student_nationality" name="nationality" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style9">身份证号</td>
 		<td colspan="2" class="style11">
-		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
+		<input class="studentEdit" id="student_studentId" name="studentId" />　</td>
 		<td class="style11">学生照片</td>
 		<td colspan="3" class="style11">上传照片</td>
 	</tr>
@@ -65,10 +65,10 @@
 		<td colspan="2" height="26" style="height: 20.1pt" class="style12">
 		学生个人银行卡号</td>
 		<td colspan="2" class="style13">
-		<input class="studentApply" id="student_bankCard" name="bankCard" />　</td>
+		<input class="studentEdit" id="student_bankCard" name="bankCard" />　</td>
 		<td class="style11">开户银行</td>
 		<td colspan="3" class="style10">
-		<input class="studentApply" id="student_bank" name="bank" />　</td>
+		<input class="studentEdit" id="student_bank" name="bank" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
@@ -80,15 +80,15 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
-		<input class="studentApply" id="student_school" name="school" />　</td>
+		<input class="studentEdit" id="student_school" name="school" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="student_grade" name="grade" />　</td>
+		<input class="studentEdit" id="student_grade" name="grade" />　</td>
 		<td class="style11" style="width: 48pt">
-		<input class="studentApply" id="student_className" name="className" />　</td>
+		<input class="studentEdit" id="student_className" name="className" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="student_headTeacher" name="headTeacher" />　</td>
+		<input class="studentEdit" id="student_headTeacher" name="headTeacher" />　</td>
 		<td colspan="3" class="style10">
-		<input class="studentApply" id="student_schoolContactNo" name="schoolContactNo" />　</td>
+		<input class="studentEdit" id="student_schoolContactNo" name="schoolContactNo" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style15">
@@ -110,21 +110,21 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style11">
-		<input class="studentApply" id="student_age" name="age" />　</td>
+		<input class="studentEdit" id="student_age" name="age" />　</td>
 		<td class="style11" style="width: 60pt">
-		<input class="studentApply" id="student_sex" name="sex" />　</td>
+		<input class="studentEdit" id="student_sex" name="sex" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="student_qq" name="qq" />　</td>
+		<input class="studentEdit" id="student_qq" name="qq" />　</td>
 		<td class="style16" style="width: 48pt">
-		<input class="studentApply" id="student_email" name="email" />　</td>
+		<input class="studentEdit" id="student_email" name="email" />　</td>
 		<td class="style16">
-		<input class="studentApply" id="student_studentContactNo" name="studentContactNo" />　</td>
+		<input class="studentEdit" id="student_studentContactNo" name="studentContactNo" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="student_sponseStartTime" name="sponseStartTime" />　</td>
+		<input class="studentEdit" id="student_sponseStartTime" name="sponseStartTime" />　</td>
 		<td class="style16">
-		<input class="studentApply" id="student_sponseEndTime" name="sponseEndTime" />　</td>
+		<input class="studentEdit" id="student_sponseEndTime" name="sponseEndTime" />　</td>
 		<td class="style17">
-		<input class="studentApply" id="student_endReason" name="endReason" />　</td>
+		<input class="studentEdit" id="student_endReason" name="endReason" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style9">
@@ -140,10 +140,6 @@
 		<td class="style18">其他收入/补助</td>
 		<td class="style19">健康情况</td>
     </tr>
-    <tr>
-	    <td colspan=8>				    		
-		    <div id="div_bjbr">
-				<table class="yltable">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9"><input class="relative" type="text" id="relatives[0]_relationship" name="relationship">　</td>
 		<td class="style11"><input class="relative" type="text" id="relatives[0]_name" name="name"></td>
@@ -160,13 +156,9 @@
 		<td class="style19">
 		<input class="relative" type="text" id="relatives[0]_health" name="health">　</td>
     </tr>
-    </table>
-    </div>
-    </td>
-    </tr>
 			<tr>
 				<td colspan="8">
-                <input class="studentApply" type="hidden"										
+                <input class="studentEdit" type="hidden"										
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
@@ -184,108 +176,108 @@
 		<td align="center" style="width: 60pt; layout-flow: vertical-ideographic;" class="style24">
 		主要收入</td>
 		<td colspan="6" class="style25">
-		1、农业生产：农田<span style="mso-spacerun:yes"><input  class="studentApply" id="student_farmArea" name="farmArea" style="width: 41px" /></span>亩，种植情况<span style="mso-spacerun:yes"><input  class="studentApply" id="student_farmPlanting" name="farmPlanting" style="width: 422px" />
-		</span>，出售收入<span style="mso-spacerun:yes"><input  class="studentApply" id="student_farmPlantingIncome" name="farmPlantingIncome" style="width: 41px" /></span>元/年</td>
+		1、农业生产：农田<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_farmArea" name="farmArea" style="width: 41px" /></span>亩，种植情况<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_farmPlanting" name="farmPlanting" style="width: 422px" />
+		</span>，出售收入<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_farmPlantingIncome" name="farmPlantingIncome" style="width: 41px" /></span>元/年</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
 		　</td>
 		<td colspan="6" class="style27">
-		2、禽畜养殖及用途：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_farmAnimalUsage" name="farmAnimalUsage" style="width: 422px" />，</span>出售收入<span style="mso-spacerun:yes"><input  class="studentApply" id="student_farmAnimalIncome" name="farmAnimalIncome0" style="width: 41px" /></span>元/年</td>
+		2、禽畜养殖及用途：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_farmAnimalUsage" name="farmAnimalUsage" style="width: 422px" />，</span>出售收入<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_farmAnimalIncome" name="farmAnimalIncome0" style="width: 41px" /></span>元/年</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
 		　</td>
 		<td colspan="6" class="style27">
-		3、打工或经商情况：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_workSituation" name="workSituation" style="width: 422px" /></span>，收入<span style="mso-spacerun:yes">&nbsp;<input  class="studentApply" id="student_workIncome" name="workIncome" style="width: 41px" /></span>元/年</td>
+		3、打工或经商情况：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_workSituation" name="workSituation" style="width: 422px" /></span>，收入<span style="mso-spacerun:yes">&nbsp;<input  class="studentEdit" id="student_workIncome" name="workIncome" style="width: 41px" /></span>元/年</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
 		　</td>
-		<td colspan="6" class="style28">4、亲戚资助情况：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_relativeSponse" name="relativeSponse" style="width: 422px" />
-		</span>，收入<span style="mso-spacerun:yes"><span style="mso-spacerun:yes"><input  class="studentApply" id="student_relativeSponseIncome" name="relativeSponseIncome" style="width: 41px" /></span></span>元/年</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
-		　</td>
-		<td colspan="6" class="style27">
-		5、其他收入来源：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherIncomeSource" name="otherIncomeSource" style="width: 422px" />，
-		</span>收入<span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherIncome" name="otherIncome" style="width: 41px" /></span>元/年</td>
+		<td colspan="6" class="style28">4、亲戚资助情况：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_relativeSponse" name="relativeSponse" style="width: 422px" />
+		</span>，收入<span style="mso-spacerun:yes"><span style="mso-spacerun:yes"><input  class="studentEdit" id="student_relativeSponseIncome" name="relativeSponseIncome" style="width: 41px" /></span></span>元/年</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
 		　</td>
 		<td colspan="6" class="style27">
-		6、是否拥有汽车等大件商品(有的请列出）：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherAsset" name="otherAsset" style="width: 422px" /></span></td>
+		5、其他收入来源：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_otherIncomeSource" name="otherIncomeSource" style="width: 422px" />，
+		</span>收入<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_otherIncome" name="otherIncome" style="width: 41px" /></span>元/年</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
+		　</td>
+		<td colspan="6" class="style27">
+		6、是否拥有汽车等大件商品(有的请列出）：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_otherAsset" name="otherAsset" style="width: 422px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" align="center" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style29">
 		主要支出</td>
-		<td colspan="6" class="style30">1、主要支出：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_mainExpenditure" name="othermainExpenditure" style="width: 422px" /></span></td>
+		<td colspan="6" class="style30">1、主要支出：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_mainExpenditure" name="othermainExpenditure" style="width: 422px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
 		　</td>
 		<td colspan="6" class="style27">
-		2、家人患病情况：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_familyIllness" name="familyIllness" style="width: 422px" />，</span>治疗费用每年支出<span style="mso-spacerun:yes"><input  class="studentApply" id="student_illnessExpenditure" name="illnessExpenditure" style="width: 41px" /></span>元</td>
+		2、家人患病情况：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_familyIllness" name="familyIllness" style="width: 422px" />，</span>治疗费用每年支出<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_illnessExpenditure" name="illnessExpenditure" style="width: 41px" /></span>元</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
 		　</td>
 		<td colspan="6" class="style27">
-		病情描述(有的请列出）：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_familyIllnessDescribe" name="familyIllnessDescribe" style="width: 422px" /></span></td>
+		病情描述(有的请列出）：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_familyIllnessDescribe" name="familyIllnessDescribe" style="width: 422px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
 		　</td>
 		<td colspan="6" class="style27">
-		3、其它支出情况(有的请列出）：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherExpenditure" name="otherExpenditure" style="width: 422px" /></span></td>
+		3、其它支出情况(有的请列出）：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_otherExpenditure" name="otherExpenditure" style="width: 422px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 60pt; layout-flow: vertical-ideographic;" class="style26">
 		　</td>
 		<td colspan="6" class="style27">
-		4、欠债情况(有的请列出借贷原因）：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_debt" name="debt" style="width: 422px" /></span></td>
+		4、欠债情况(有的请列出借贷原因）：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_debt" name="debt" style="width: 422px" /></span></td>
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td rowspan="4" align="center" width="118" style="width: 89pt; layout-flow: vertical-ideographic;" class="style31">
 		<span style="mso-spacerun:yes">&nbsp;</span>住房情况<span style="mso-spacerun:yes">&nbsp;</span></td>
 		<td colspan="7" class="style32">1.√ 
-		<input  class="studentApply" id="student_ifselfHouse" name="ifselfHouse" type="checkbox" />自有房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>外观整体状况：√ 
-		<input  class="studentApply" id="student_ifRaw" name="ifRaw" type="checkbox" />土坯房<span style="mso-spacerun:yes">&nbsp;&nbsp;
+		<input  class="studentEdit" id="student_ifselfHouse" name="ifselfHouse" type="checkbox" />自有房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>外观整体状况：√ 
+		<input  class="studentEdit" id="student_ifRaw" name="ifRaw" type="checkbox" />土坯房<span style="mso-spacerun:yes">&nbsp;&nbsp;
 		</span> 
-		<input  class="studentApply" id="student_ifBrick" name="ifBrick" type="checkbox" />砖瓦结构<span style="mso-spacerun:yes">&nbsp;&nbsp;  
-		<input  class="studentApply" id="student_ifConcrete" name="ifConcrete" type="checkbox" /></span>混凝土结构<span style="mso-spacerun:yes">&nbsp;&nbsp;
+		<input  class="studentEdit" id="student_ifBrick" name="ifBrick" type="checkbox" />砖瓦结构<span style="mso-spacerun:yes">&nbsp;&nbsp;  
+		<input  class="studentEdit" id="student_ifConcrete" name="ifConcrete" type="checkbox" /></span>混凝土结构<span style="mso-spacerun:yes">&nbsp;&nbsp;
 		<span style="mso-spacerun:yes">  
-		<input  class="studentApply" id="student_ifWood" name="ifWood" type="checkbox" /></span></span>木屋<span style="mso-spacerun:yes">&nbsp; <span style="mso-spacerun:yes">  
-		<input  class="studentApply" id="student_ifTwoFloor" name="ifTwoFloor" type="checkbox" /></span></span>≥两层<span style="mso-spacerun:yes">&nbsp;</span></td>
+		<input  class="studentEdit" id="student_ifWood" name="ifWood" type="checkbox" /></span></span>木屋<span style="mso-spacerun:yes">&nbsp; <span style="mso-spacerun:yes">  
+		<input  class="studentEdit" id="student_ifTwoFloor" name="ifTwoFloor" type="checkbox" /></span></span>≥两层<span style="mso-spacerun:yes">&nbsp;</span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="7" height="26" style="height: 20.1pt; " class="style33">
 		<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>房屋内部装修：<span style="mso-spacerun:yes">&nbsp;
-		</span>√<input  class="studentApply" id="student_ifSimple" name="ifSimple" type="checkbox" />简陋<span style="mso-spacerun:yes">&nbsp;&nbsp; 
-		<input  class="studentApply" id="student_ifConcreteFloor" name="ifConcreteFloor" type="checkbox" /></span>水泥地<span style="mso-spacerun:yes">&nbsp;&nbsp;
+		</span>√<input  class="studentEdit" id="student_ifSimple" name="ifSimple" type="checkbox" />简陋<span style="mso-spacerun:yes">&nbsp;&nbsp; 
+		<input  class="studentEdit" id="student_ifConcreteFloor" name="ifConcreteFloor" type="checkbox" /></span>水泥地<span style="mso-spacerun:yes">&nbsp;&nbsp;
 		<span style="mso-spacerun:yes"> 
-		<input  class="studentApply" id="student_ifConcreteTile" name="ifConcreteTile" type="checkbox" /></span></span>贴瓷砖<span style="mso-spacerun:yes">&nbsp;&nbsp; <span style="mso-spacerun:yes"> 
-		<input  class="studentApply" id="student_ifNeat" name="ifNeat" type="checkbox" /></span></span>舒适整洁<span style="mso-spacerun:yes">&nbsp;&nbsp;
+		<input  class="studentEdit" id="student_ifConcreteTile" name="ifConcreteTile" type="checkbox" /></span></span>贴瓷砖<span style="mso-spacerun:yes">&nbsp;&nbsp; <span style="mso-spacerun:yes"> 
+		<input  class="studentEdit" id="student_ifNeat" name="ifNeat" type="checkbox" /></span></span>舒适整洁<span style="mso-spacerun:yes">&nbsp;&nbsp;
 		<span style="mso-spacerun:yes"> 
-		<input  class="studentApply" id="student_ifHighClass" name="ifHighClass" type="checkbox" /></span></span>高档</td>
+		<input  class="studentEdit" id="student_ifHighClass" name="ifHighClass" type="checkbox" /></span></span>高档</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="7" height="26" style="height: 20.1pt" class="style34">2. 
-		<input  class="studentApply" id="student_ifBorrowHouse" name="ifBorrowHouse" type="checkbox" />借用房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>来源：。</td>
+		<input  class="studentEdit" id="student_ifBorrowHouse" name="ifBorrowHouse" type="checkbox" />借用房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>来源：。</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="6" style="height: 20pt; mso-ignore: colspan" class="style35">
 		3.  
-		<input  class="studentApply" id="student_ifrentHouse" name="ifrentHouse" type="checkbox" />租用房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>租金：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_rentFee" name="rentFee" style="width: 41px" /></span>元/月<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>房屋内部装修：<span style="mso-spacerun:yes">&nbsp;
-		<input  class="studentApply" id="student_ifRentSimple" name="ifRentSimple" type="checkbox" /></span>简陋<span style="mso-spacerun:yes">&nbsp;&nbsp; <span style="mso-spacerun:yes">
-		<input  class="studentApply" id="student_ifRentConcreteFloor" name="ifRentConcreteFloor" type="checkbox" /></span></span>水泥地<span style="mso-spacerun:yes">&nbsp;&nbsp;
+		<input  class="studentEdit" id="student_ifrentHouse" name="ifrentHouse" type="checkbox" />租用房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>租金：<span style="mso-spacerun:yes"><input  class="studentEdit" id="student_rentFee" name="rentFee" style="width: 41px" /></span>元/月<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>房屋内部装修：<span style="mso-spacerun:yes">&nbsp;
+		<input  class="studentEdit" id="student_ifRentSimple" name="ifRentSimple" type="checkbox" /></span>简陋<span style="mso-spacerun:yes">&nbsp;&nbsp; <span style="mso-spacerun:yes">
+		<input  class="studentEdit" id="student_ifRentConcreteFloor" name="ifRentConcreteFloor" type="checkbox" /></span></span>水泥地<span style="mso-spacerun:yes">&nbsp;&nbsp;
 		<span style="mso-spacerun:yes">
-		<input  class="studentApply" id="student_ifRentConcreteTile" name="ifRentConcreteTile" type="checkbox" /></span></span>贴瓷砖<span style="mso-spacerun:yes">&nbsp;&nbsp; <span style="mso-spacerun:yes">
-		<input  class="studentApply" id="student_ifRentComfort" name="ifRentComfort" type="checkbox" /></span></span>舒适<span style="mso-spacerun:yes">&nbsp;&nbsp;
+		<input  class="studentEdit" id="student_ifRentConcreteTile" name="ifRentConcreteTile" type="checkbox" /></span></span>贴瓷砖<span style="mso-spacerun:yes">&nbsp;&nbsp; <span style="mso-spacerun:yes">
+		<input  class="studentEdit" id="student_ifRentComfort" name="ifRentComfort" type="checkbox" /></span></span>舒适<span style="mso-spacerun:yes">&nbsp;&nbsp;
 		<span style="mso-spacerun:yes">
-		<input  class="studentApply" id="student_ifRentHighClass" name="ifRentHighClass" type="checkbox" /></span></span>高档</td>
+		<input  class="studentEdit" id="student_ifRentHighClass" name="ifRentHighClass" type="checkbox" /></span></span>高档</td>
 		<td class="style36" style="height: 20pt">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">

@@ -111,7 +111,6 @@ public class ZhuxueController {
    				        Object[] p = new Object[1];
    				        p[0] = value;
    				        m.invoke(student, p);				        
-   				        logger.debug("学生信息保存："+student.getStudentId());
    					}
    					catch(Exception e)
    					{
