@@ -103,6 +103,288 @@ public class Student extends IdEntity implements Serializable {
     private String age;
     private String qq;
     private String email;
+    private String farmArea;
+    private String farmPlanting;
+    private String farmPlantingIncome;
+    private String farmAnimalUsage;
+    private String farmAnimalIncome;
+    private String workSituation;
+    private String workIncome;
+    private String otherIncomeSource;
+    private String otherIncome;
+    private String otherAsset;
+    @Column
+    public String getBankCard() {
+		return bankCard;
+	}
+
+	public void setBankCard(String bankCard) {
+		this.bankCard = bankCard;
+	}
+
+	@Column
+	public String getBank() {
+		return bank;
+	}
+
+	public void setBank(String bank) {
+		this.bank = bank;
+	}
+
+	@Column
+	public String getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
+	}
+
+	@Column
+	public String getQq() {
+		return qq;
+	}
+
+	public void setQq(String qq) {
+		this.qq = qq;
+	}
+
+	@Column
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	@Column
+	public String getFarmArea() {
+		return farmArea;
+	}
+
+	public void setFarmArea(String farmArea) {
+		this.farmArea = farmArea;
+	}
+
+	@Column
+	public String getFarmPlanting() {
+		return farmPlanting;
+	}
+
+	public void setFarmPlanting(String farmPlanting) {
+		this.farmPlanting = farmPlanting;
+	}
+
+	@Column
+	public String getFarmPlantingIncome() {
+		return farmPlantingIncome;
+	}
+
+	public void setFarmPlantingIncome(String farmPlantingIncome) {
+		this.farmPlantingIncome = farmPlantingIncome;
+	}
+
+	@Column
+	public String getFarmAnimalUsage() {
+		return farmAnimalUsage;
+	}
+
+	public void setFarmAnimalUsage(String farmAnimalUsage) {
+		this.farmAnimalUsage = farmAnimalUsage;
+	}
+
+	@Column
+	public String getFarmAnimalIncome() {
+		return farmAnimalIncome;
+	}
+
+	public void setFarmAnimalIncome(String farmAnimalIncome) {
+		this.farmAnimalIncome = farmAnimalIncome;
+	}
+
+	@Column
+	public String getWorkSituation() {
+		return workSituation;
+	}
+
+	public void setWorkSituation(String workSituation) {
+		this.workSituation = workSituation;
+	}
+
+	@Column
+	public String getWorkIncome() {
+		return workIncome;
+	}
+
+	public void setWorkIncome(String workIncome) {
+		this.workIncome = workIncome;
+	}
+
+	@Column
+	public String getOtherIncomeSource() {
+		return otherIncomeSource;
+	}
+
+	public void setOtherIncomeSource(String otherIncomeSource) {
+		this.otherIncomeSource = otherIncomeSource;
+	}
+
+	@Column
+	public String getOtherIncome() {
+		return otherIncome;
+	}
+
+	public void setOtherIncome(String otherIncome) {
+		this.otherIncome = otherIncome;
+	}
+
+	@Column
+	public String getOtherAsset() {
+		return otherAsset;
+	}
+
+	public void setOtherAsset(String otherAsset) {
+		this.otherAsset = otherAsset;
+	}
+
+	@Column
+	public String getMainExpenditure() {
+		return mainExpenditure;
+	}
+
+	public void setMainExpenditure(String mainExpenditure) {
+		this.mainExpenditure = mainExpenditure;
+	}
+
+	@Column
+	public String getFamilyIllness() {
+		return familyIllness;
+	}
+
+	public void setFamilyIllness(String familyIllness) {
+		this.familyIllness = familyIllness;
+	}
+
+	@Column
+	public String getIllnessExpenditure() {
+		return illnessExpenditure;
+	}
+
+	public void setIllnessExpenditure(String illnessExpenditure) {
+		this.illnessExpenditure = illnessExpenditure;
+	}
+
+	@Column
+	public String getFamilyIllnessDescribe() {
+		return familyIllnessDescribe;
+	}
+
+	public void setFamilyIllnessDescribe(String familyIllnessDescribe) {
+		this.familyIllnessDescribe = familyIllnessDescribe;
+	}
+
+	@Column
+	public String getOtherExpenditure() {
+		return otherExpenditure;
+	}
+
+	public void setOtherExpenditure(String otherExpenditure) {
+		this.otherExpenditure = otherExpenditure;
+	}
+
+	@Column
+	public String getDebt() {
+		return debt;
+	}
+
+	public void setDebt(String debt) {
+		this.debt = debt;
+	}
+
+	@Column
+	public boolean isIfRaw() {
+		return ifRaw;
+	}
+
+	public void setIfRaw(boolean ifRaw) {
+		this.ifRaw = ifRaw;
+	}
+
+	@Column
+	public boolean isIfBrick() {
+		return ifBrick;
+	}
+
+	public void setIfBrick(boolean ifBrick) {
+		this.ifBrick = ifBrick;
+	}
+
+	@Column
+	public boolean isIfConcrete() {
+		return ifConcrete;
+	}
+
+	public void setIfConcrete(boolean ifConcrete) {
+		this.ifConcrete = ifConcrete;
+	}
+
+	@Column
+	public boolean isIfWood() {
+		return ifWood;
+	}
+
+	public void setIfWood(boolean ifWood) {
+		this.ifWood = ifWood;
+	}
+
+	@Column
+	public boolean isIfTwoFloor() {
+		return ifTwoFloor;
+	}
+
+	public void setIfTwoFloor(boolean ifTwoFloor) {
+		this.ifTwoFloor = ifTwoFloor;
+	}
+
+	@Column
+	public Date getSponseStartTime() {
+		return sponseStartTime;
+	}
+
+	public void setSponseStartTime(Date sponseStartTime) {
+		this.sponseStartTime = sponseStartTime;
+	}
+
+	@Column
+	public Date getSponseEndTime() {
+		return sponseEndTime;
+	}
+
+	public void setSponseEndTime(Date sponseEndTime) {
+		this.sponseEndTime = sponseEndTime;
+	}
+
+	@Column
+	public String getEndReason() {
+		return endReason;
+	}
+
+	public void setEndReason(String endReason) {
+		this.endReason = endReason;
+	}
+
+	private String mainExpenditure;
+    private String familyIllness;
+    private String illnessExpenditure;
+    private String familyIllnessDescribe;
+    private String otherExpenditure;
+    private String debt;
+    private boolean ifRaw = false;
+    private boolean ifBrick=false;
+    private boolean ifConcrete=false;
+    private boolean ifWood =false;
+    private boolean ifTwoFloor = false;
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date sponseStartTime;
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
