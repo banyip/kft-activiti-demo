@@ -137,7 +137,7 @@ public class Relative extends IdEntity implements Serializable {
 		this.anualIncome = anualIncome;
 	}
     
-	public boolean isEmpty()
+	public boolean EmptyorNot()
 	{
 		if(relativeId.length()+relationship.length()+name.length()+contactNum.length()+profectional.length()+job.length()+anualIncome.length()+health.length()+education.length()+otherSponse.length()==0)
 			return true;

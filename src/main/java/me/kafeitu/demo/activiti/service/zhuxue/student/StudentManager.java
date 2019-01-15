@@ -51,7 +51,7 @@ public class StudentManager {
         }
         Set<Relative> relatives = entity.getRelatives();
         for (Relative relative: relatives) {  
-            if(relative.isEmpty())
+            if(relative.EmptyorNot())
         	relatives.remove(relative);  
       }  
         
