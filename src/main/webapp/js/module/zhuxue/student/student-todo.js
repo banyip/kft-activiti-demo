@@ -244,7 +244,7 @@ var handleOpts = {
                     ];
                     $.each($('.studentApply'),function()
                         {
-                           // if(this.disabled==false&&!this.value==null)
+                            if(this.disabled==false&&!this.value==null)
                             variables.push({
                                 key: this.id,
                                 value: this.value,
