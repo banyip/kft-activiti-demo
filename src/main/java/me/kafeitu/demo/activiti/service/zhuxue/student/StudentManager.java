@@ -1,6 +1,7 @@
 package me.kafeitu.demo.activiti.service.zhuxue.student;
 
 import me.kafeitu.demo.activiti.dao.StudentDao;
+import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.util.Page;
 
@@ -9,9 +10,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 /**
  * 请假实体管理
@@ -46,6 +49,12 @@ public class StudentManager {
         if (entity.getId() == null) {
             entity.setApplyTime(new Date());
         }
+        Set<Relative> relatives = entity.getRelatives();
+        for (Relative relative: relatives) {  
+            if(relative.isEmpty())
+        	relatives.remove(relative);  
+      }  
+        
         studentDao.save(entity);
     }
 

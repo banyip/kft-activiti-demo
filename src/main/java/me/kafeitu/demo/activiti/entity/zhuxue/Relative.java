@@ -101,16 +101,16 @@ public class Relative extends IdEntity implements Serializable {
 	}
  
 
-	private String relativeId;
-    private String relationship;
-    private String name;
-    private String contactNum;
-    private String profectional;
-    private String job;
-    private String anualIncome;
-    private String health;
-    private String education;
-    private String otherSponse;
+	private String relativeId ="";
+    private String relationship="";
+    private String name="";
+    private String contactNum="";
+    private String profectional="";
+    private String job="";
+    private String anualIncome="";
+    private String health="";
+    private String education="";
+    private String otherSponse="";
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date birthDate;
     
@@ -137,6 +137,13 @@ public class Relative extends IdEntity implements Serializable {
 		this.anualIncome = anualIncome;
 	}
     
+	public boolean isEmpty()
+	{
+		if(relativeId.length()+relationship.length()+name.length()+contactNum.length()+profectional.length()+job.length()+anualIncome.length()+health.length()+education.length()+otherSponse.length()==0)
+			return true;
+		else 
+			return false;
+	}
 	
     
     
