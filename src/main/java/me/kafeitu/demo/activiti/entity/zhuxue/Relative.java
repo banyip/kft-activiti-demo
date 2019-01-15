@@ -32,7 +32,7 @@ public class Relative extends IdEntity implements Serializable {
 	
 	public Relative(String relative)
 	{
-		List<String> relativeInfos = Arrays.asList(relative.split(":"));
+		List<String> relativeInfos = Arrays.asList(relative.split(":",-1));
 		System.out.println(relativeInfos);
 		this.relationship= relativeInfos.get(0);
 		this.name = relativeInfos.get(1);
