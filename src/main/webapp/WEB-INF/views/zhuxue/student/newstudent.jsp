@@ -145,8 +145,8 @@
 		    <div id="div_bjbr">
 				<table class="yltable">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9"><input class="studentApply" type="text" id="relatives[0]_relationship" name="relationship">　</td>
-		<td class="style11"><input class="studentApply" type="text" id="relatives[0]_name" name="name"></td>
+		<td height="26" style="height: 20.1pt;" class="style9"><input class="relative" type="text" id="relatives[0]_relationship" name="relationship">　</td>
+		<td class="style11"><input class="relative" type="text" id="relatives[0]_name" name="name"></td>
 		<td class="style11">
 		<input class="relative" type="text" id="relatives[0]_birthDate" name="birthDate">　</td>
 		<td class="style11">
