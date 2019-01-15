@@ -150,7 +150,7 @@
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[0]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply" type="number" id="relative[0]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" value=0 id="relative[0]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[0]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
@@ -166,7 +166,7 @@
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[1]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply" type="number" id="relative[1]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" value=0 id="relative[1]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[1]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
@@ -182,7 +182,7 @@
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[2]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply" type="number" id="relative[2]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" value=0 id="relative[2]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[2]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
@@ -198,7 +198,7 @@
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[3]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply" type="number" id="relative[3]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" value=0 id="relative[3]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[3]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
@@ -214,7 +214,7 @@
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[4]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply" type="number" id="relative[4]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" value=0 id="relative[4]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[4]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
@@ -230,7 +230,7 @@
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[5]_profectional" name="profectional">　</td>
 		<td class="style11">
-		<input class="studentApply" type="number" id="relative[5]_anualIncome" name="anualIncome">　</td>
+		<input class="studentApply" type="number" value=0 id="relative[5]_anualIncome" name="anualIncome">　</td>
 		<td class="style11">
 		<input class="studentApply" type="text" id="relative[5]_otherSponse" name="otherSponse">　</td>
 		<td class="style19">
