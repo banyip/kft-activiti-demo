@@ -59,7 +59,7 @@ function inserttable() {
 	
 	if($('#div_bjbr')[0].childNodes.length <=6){
     $('#div_bjbr').append(content);
-   	$('#relatives\\['+$('#div_bjbr')[0].childElementCount+'\\]_birthDate').datetimepicker({
+   	$('#relatives\\['+$('#div_bjbr')[0].childElementCount-1+'\\]_birthDate').datetimepicker({
             stepMinute: 5
         });
 	}else{
