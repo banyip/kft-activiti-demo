@@ -3,6 +3,9 @@
  */
 $(function() {
 
+   	$('#relatives[0]_birthDate').datetimepicker({
+            stepMinute: 5
+        });
     // 签收
     $('.claim').button({
         icons: {
