@@ -265,7 +265,13 @@ var handleOpts = {
 
                     $.each($('.studentApply'),function()
                         {
-                            if(this.disabled==false&&this.value!=null)
+                            if(this.type=="checkbox")
+                            variables.push({
+                                key: this.id,
+                                value: this.attr("checked"),
+                                type: 'S'
+                            });
+                            else if(this.disabled==false&&this.value!=null)
                             variables.push({
                                 key: this.id,
                                 value: this.value,
