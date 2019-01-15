@@ -154,7 +154,8 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
                 }
             } else if (k.substr(0,2) == 'if') 
             {
-                 $("input[type=checkbox][name="+k+"].studentEdit").attr("checked",v);                
+                if(v=="true")
+                 $("input[type=checkbox][name="+k+"].studentEdit").attr("checked",true);                
             } 
             else {
 				$('input[name=' + k + '].studentEdit' ).val(v);
