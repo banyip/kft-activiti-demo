@@ -202,7 +202,7 @@ function complete(variables) {
     form.append("types",types);
     form.append("student_picture",document.getElementById("student_picture"));
     $.ajax({
-        url:ctx+'/zhuxue/student/newstudent/' ,
+        url:ctx+'/zhuxue/student/newstudent1/' ,
         type:"post",
         data:form,
         processData:false,
