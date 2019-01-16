@@ -200,7 +200,7 @@ function complete(variables) {
     form.append("keys",keys);
     form.append("values",values);
     form.append("types",types);
-    var filedata = $('#student_picture')[0];
+    var filedata = $('#student_picture')[0].files[0];
     form.append("studentpicture",filedata);
     $.ajax({
         url:ctx+'/zhuxue/student/newstudent/' ,
@@ -208,6 +208,7 @@ function complete(variables) {
         data:form,
         processData:false,
         contentType:false,
+        cache: false,
         success:function(data){
                     
                     alert("保存成功！");
