@@ -59,7 +59,7 @@
 		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
 		<td class="style11">学生照片</td>
 		<td colspan="3" class="style11">
-		<input type="file" class="studentPhoto" id="student_picture" name="picture" /><input type="file" class="studentPhoto" id="student_picture" name="picture" /></td>
+		<input type="file" class="studentPhoto" id="student_picture" name="picture" /></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style12">
