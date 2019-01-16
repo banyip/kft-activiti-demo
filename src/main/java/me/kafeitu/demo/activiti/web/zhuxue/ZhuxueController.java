@@ -106,7 +106,7 @@ public class ZhuxueController {
     */
    @RequestMapping(value = "newstudent", method = {RequestMethod.POST})
    @ResponseBody
-   public String complete(Variable var,@RequestParam("studentpicture") MultipartFile studentPictureFile) {
+   public String complete(Variable var,@RequestParam("filenames") String filenames,@RequestParam("studentpictures") MultipartFile[] studentPictureFiles) {
        try {
            Map<String, Object> variables = var.getVariableMap();
            Student student = new Student();
@@ -177,22 +177,43 @@ public class ZhuxueController {
    			}
   */
    		}
-        if(!studentPictureFile.isEmpty())
+   		//for(MultipartFile studentPictureFile:studentPictureFiles)
+   		String[]  fileNameList = filenames.split(":",-1);
+        for(int i=0;i<fileNameList.length;i++)
         {
-     	   try {  
-     		   student.savePicture(studentPictureFile);
-            } catch (Exception e) {  
-               logger.error("学生照片保存出错");  
-            }  
+        	String filename = fileNameList[i];
+        	MultipartFile studentPictureFile = studentPictureFiles[i];
+	   		if(!studentPictureFile.isEmpty())
+	        {
+	        	if(filename.indexOf("student_")==0)
+	        	{
+	   				String methodname= "save"+filename.substring(8,9).toUpperCase()+filename.substring(9);	  
+	   				try {  
+						    logger.debug("学生文件保存内容method："+methodname);
+							Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue.Student");
+					        // 定义参数类型
+					        Class[] params = new Class[1];
+					        params[0] = String.class;
+					        Method m = clazz.getDeclaredMethod(methodname, params);
+					        // 设置参数
+					        Object[] p = new Object[1];
+					        p[0] = studentPictureFile;
+					        m.invoke(student, p);			        
+		            } catch (Exception e) {  
+		               logger.error("学生照片保存出错");  
+		            }  
+	        	}
+	        }
         }
-           studentManager.saveStudent(student);
-           return "success";
-       } catch (Exception e) {
-       	logger.error("error on complete task", e);
-           logger.error("error on complete , variables={}", new Object[]{var.getVariableMap(), e});
-           return "error";
-       }
-   }
+        studentManager.saveStudent(student);
+        return "success";	 
+      }catch (Exception e) {
+    	  	logger.error("error on complete task", e);
+    	  	logger.error("error on complete , variables={}", new Object[]{var.getVariableMap(), e});
+    	  	return "error";
+      }
+      
+  }
 
     /**
      * 读取详细数据

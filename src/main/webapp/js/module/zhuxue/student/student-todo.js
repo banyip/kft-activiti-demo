@@ -173,7 +173,7 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
  * 完成任务
  * @param {Object} taskId
  */
-function complete(variables) {
+function complete(variables,filenames,files) {
     var dialog = this;
     
 	// 转换JSON为字符串
@@ -200,8 +200,8 @@ function complete(variables) {
     form.append("keys",keys);
     form.append("values",values);
     form.append("types",types);
-    var filedata = $('#student_picture')[0].files[0];
-    form.append("studentpicture",filedata);
+    form.append("filenames",filenames);
+    form.append("studentpictures",files);
     $.ajax({
         url:ctx+'/zhuxue/student/newstudent/' ,
         type:"post",
@@ -305,11 +305,17 @@ var handleOpts = {
                             });
                         }
                     );
-                    ;
-					
+                    var filenames;
+                    var files = new Array();
+					 $.each($(':file.studentPhoto'),function()
+                        {
+                            filenames = filenames + ":" +this.id;
+                            files.append(this.files[0]);
+                        }
+                    );
 					
 					// 提交的时候把变量
-					complete(variables);
+					complete(variables,filenames,files);
 				}
 			},{
 				text: '取消',
