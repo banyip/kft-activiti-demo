@@ -200,7 +200,8 @@ function complete(variables) {
     form.append("keys",keys);
     form.append("values",values);
     form.append("types",types);
-    form.append("student_picture",document.getElementById("student_picture"));
+    var filedata = $('#student_picture')[0];
+    form.append("student_picture",filedata);
     $.ajax({
         url:ctx+'/zhuxue/student/newstudent1/' ,
         type:"post",

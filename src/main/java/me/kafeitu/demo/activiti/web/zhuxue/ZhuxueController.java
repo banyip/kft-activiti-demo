@@ -78,7 +78,7 @@ public class ZhuxueController {
     
     @RequestMapping(value = "newstudent1", method = {RequestMethod.POST})
     @ResponseBody
-    public String complete1(@RequestParam("student_picture") MultipartFile studentPictureFile) {
+    public String complete1(@RequestParam(value = "student_picture",required=false) MultipartFile studentPictureFile) {
         try {
             Student student = new Student();
             if(!studentPictureFile.isEmpty())
