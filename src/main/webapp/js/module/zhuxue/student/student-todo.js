@@ -201,7 +201,7 @@ function complete(variables) {
     form.append("values",values);
     form.append("types",types);
     var filedata = $('#student_picture')[0];
-    form.append("student_picture",filedata);
+    form.append("studentpicture",filedata);
     $.ajax({
         url:ctx+'/zhuxue/student/newstudent1/' ,
         type:"post",
