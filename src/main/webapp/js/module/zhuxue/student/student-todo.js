@@ -203,7 +203,7 @@ function complete(variables) {
     form.append("student_picture",document.getElementById("student_picture"));
     $.ajax({
         url:ctx+'/zhuxue/student/newstudent/' ,
-        type:post,
+        type:"post",
         data:form,
         processData:false,
         contentType:false,
