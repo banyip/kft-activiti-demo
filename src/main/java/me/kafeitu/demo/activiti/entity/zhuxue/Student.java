@@ -30,6 +30,9 @@ public class Student extends IdEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Map<String, Object> variables;
+    
+    
+
     public String getOtherSponse() {
 		return otherSponse;
 	}
@@ -113,6 +116,11 @@ public class Student extends IdEntity implements Serializable {
     private String otherIncomeSource;
     private String otherIncome;
     private String otherAsset;
+    private String evaluateScorePicture;
+    private String evaluateScore;
+    private String supplemetaryEvaluation;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+    private Date publishTime;
     @Column(length = 50)
     public String getBankCard() {
 		return bankCard;
@@ -1091,6 +1099,42 @@ public class Student extends IdEntity implements Serializable {
 
 	public void setPoorEvaluateDate(Date poorEvaluateDate) {
 		this.poorEvaluateDate = poorEvaluateDate;
+	}
+
+	public void setEvaluateScorePicture(String evaluateScorePicture) {
+		this.evaluateScorePicture = evaluateScorePicture;
+	}
+
+	public void setEvaluateScore(String evaluateScore) {
+		this.evaluateScore = evaluateScore;
+	}
+
+	public void setSupplemetaryEvaluation(String supplemetaryEvaluation) {
+		this.supplemetaryEvaluation = supplemetaryEvaluation;
+	}
+
+	public void setPublishTime(Date publishTime) {
+		this.publishTime = publishTime;
+	}
+
+	@Column(length=50)
+	public String getEvaluateScorePicture() {
+		return evaluateScorePicture;
+	}
+
+	@Column(length=50)
+	public String getEvaluateScore() {
+		return evaluateScore;
+	}
+
+	@Column(length=50)
+	public String getSupplemetaryEvaluation() {
+		return supplemetaryEvaluation;
+	}
+
+	@Column
+	public Date getPublishTime() {
+		return publishTime;
 	}
 
 	

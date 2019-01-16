@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<form method="POST">
+<form method="POST" enctype="multipart/form-data">
 <table border="0" cellpadding="0" width="898" style="width:100%" >
 	<colgroup>
 		<col style="mso-width-source:userset;mso-width-alt:3776;" />
@@ -58,7 +58,8 @@
 		<td colspan="2" class="style11">
 		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
 		<td class="style11">学生照片</td>
-		<td colspan="3" class="style11">上传照片</td>
+		<td colspan="3" class="style11">
+		<input type="file" class="studentPhoto" id="student_picture" name="picture" /></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style12">

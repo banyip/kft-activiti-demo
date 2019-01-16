@@ -83,7 +83,7 @@ public class ZhuxueController {
     */
    @RequestMapping(value = "newstudent", method = {RequestMethod.POST})
    @ResponseBody
-   public String complete(Variable var) {
+   public String complete(Variable var,@RequestParam("student_picture") MultipartFile studentPictureFile) {
        try {
            Map<String, Object> variables = var.getVariableMap();
            Student student = new Student();
@@ -92,8 +92,17 @@ public class ZhuxueController {
  /*          //把student.relatives存放到list
            List<Relative> relatives = new ArrayList<Relative>();
 */
+           if(!studentPictureFile.isEmpty())
+           {
+        	   try {  
+        		   student.savePicture(studentPictureFile);
+               } catch (Exception e) {  
+                  logger.error("学生照片保存出错");  
+               }  
+           }
            logger.debug("学生信息保存中："+variableNames);
    		for (String key : variableNames) {
+   			
    			if(key.indexOf("student_")==0)
    			{
    				logger.debug("学生信息保存内容key："+key);
