@@ -194,7 +194,7 @@ public class ZhuxueController {
 							Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue.Student");
 					        // 定义参数类型
 					        Class[] params = new Class[1];
-					        params[0] = String.class;
+					        params[0] = MultipartFile.class;
 					        Method m = clazz.getDeclaredMethod(methodname, params);
 					        // 设置参数
 					        Object[] p = new Object[1];
