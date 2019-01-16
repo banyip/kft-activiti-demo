@@ -106,7 +106,7 @@ public class ZhuxueController {
     */
    @RequestMapping(value = "newstudent", method = {RequestMethod.POST})
    @ResponseBody
-   public String complete(Variable var,@RequestParam("student_picture") MultipartFile studentPictureFile) {
+   public String complete(Variable var,@RequestParam("studentpicture") MultipartFile studentPictureFile) {
        try {
            Map<String, Object> variables = var.getVariableMap();
            Student student = new Student();
