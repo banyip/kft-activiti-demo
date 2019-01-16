@@ -116,7 +116,8 @@ public class ZhuxueController {
            List<Relative> relatives = new ArrayList<Relative>();
 */
 
-           logger.debug("学生信息保存中："+variableNames);
+           logger.debug("学生信息保存中filenames："+filenames);
+           //logger.debug("学生信息保存中filenames："+studentPictureFiles);
    		for (String key : variableNames) {
    			
    			if(key.indexOf("student_")==0)
