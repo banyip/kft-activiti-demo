@@ -146,7 +146,7 @@ public class ZhuxueController {
    				logger.debug("学生信息保存内容key："+key);
    				String methodname= key.substring(8,9).toUpperCase()+key.substring(9);
    				Object value = variables.get(key);
-   				invoke(methodname,value,(Object)student,"Student","String");
+   				invoke(methodname,value,(Object)student,"Student","java.lang.String");
  				logger.debug("学生信息保存成功："+key);
    			}else if(key.equals("relative"))
    			{
@@ -194,7 +194,7 @@ public class ZhuxueController {
 	        	if(filename.indexOf("student_")==0)
 	        	{
 	   				String methodname= "save"+filename.substring(8,9).toUpperCase()+filename.substring(9);	  
-	   				invoke(methodname,(Object)studentPictureFile,student,"Student","MultipartFile");
+	   				invoke(methodname,(Object)studentPictureFile,student,"Student","org.springframework.web.multipart.MultipartFile");
 /*	   				try {  
 						    logger.debug("学生文件保存内容method："+methodname);
 							Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue.Student");
