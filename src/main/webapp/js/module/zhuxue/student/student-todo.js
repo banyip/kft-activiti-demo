@@ -305,15 +305,15 @@ var handleOpts = {
                             });
                         }
                     );
-                    var filenames;
+                    var filenames="";
                     var files = new Array();
 					 $.each($(':file.studentPhoto'),function()
                         {
                             filenames = filenames + ":" +this.id;
                             files.push(this.files[0]);
-                        }
+                        }                        
                     );
-					
+					filenames = filenames.substr(1);
 					// 提交的时候把变量
 					complete(variables,filenames,files);
 				}
