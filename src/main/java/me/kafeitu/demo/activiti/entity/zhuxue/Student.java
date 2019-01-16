@@ -357,7 +357,13 @@ public class Student extends IdEntity implements Serializable {
     private String ifConcreteTile;
     private String ifNeat;
     private String ifHighClass;
-    
+    private String rentFrom;
+    private String rentFee;
+    private String ifRentSimple;
+    private String ifRentConcreteFloor;
+    private String ifRentConcreteTile;
+    private String ifRentComfort;
+    private String ifRentHighClass;
     @Column(length = 50)
     public String getIfSelfHouse() {
 		return ifSelfHouse;
@@ -1117,6 +1123,34 @@ public class Student extends IdEntity implements Serializable {
 		this.publishTime = publishTime;
 	}
 
+	public void setRentFrom(String rentFrom) {
+		this.rentFrom = rentFrom;
+	}
+
+	public void setRentFee(String rentFee) {
+		this.rentFee = rentFee;
+	}
+
+	public void setIfRentSimple(String ifRentSimple) {
+		this.ifRentSimple = ifRentSimple;
+	}
+
+	public void setIfRentConcreteFloor(String ifRentConcreteFloor) {
+		this.ifRentConcreteFloor = ifRentConcreteFloor;
+	}
+
+	public void setIfRentConcreteTile(String ifRentConcreteTile) {
+		this.ifRentConcreteTile = ifRentConcreteTile;
+	}
+
+	public void setIfRentComfort(String ifRentComfort) {
+		this.ifRentComfort = ifRentComfort;
+	}
+
+	public void setIfRentHighClass(String ifRentHighClass) {
+		this.ifRentHighClass = ifRentHighClass;
+	}
+
 	@Column(length=50)
 	public String getEvaluateScorePicture() {
 		return evaluateScorePicture;
@@ -1135,6 +1169,41 @@ public class Student extends IdEntity implements Serializable {
 	@Column
 	public Date getPublishTime() {
 		return publishTime;
+	}
+
+	@Column
+	public String getRentFrom() {
+		return rentFrom;
+	}
+
+	@Column
+	public String getRentFee() {
+		return rentFee;
+	}
+
+	@Column
+	public String getIfRentSimple() {
+		return ifRentSimple;
+	}
+
+	@Column
+	public String getIfRentConcreteFloor() {
+		return ifRentConcreteFloor;
+	}
+
+	@Column
+	public String getIfRentConcreteTile() {
+		return ifRentConcreteTile;
+	}
+
+	@Column
+	public String getIfRentComfort() {
+		return ifRentComfort;
+	}
+
+	@Column
+	public String getIfRentHighClass() {
+		return ifRentHighClass;
 	}
 
 	
