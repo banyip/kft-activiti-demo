@@ -78,7 +78,7 @@ public class ZhuxueController {
     
     @RequestMapping(value = "newstudent1", method = {RequestMethod.POST})
     @ResponseBody
-    public String complete1(@RequestParam(value = "studentpicture") MultipartFile studentPictureFile) {
+    public String complete1(@RequestParam("studentpicture") MultipartFile studentPictureFile) {
         try {
             Student student = new Student();
             if(!studentPictureFile.isEmpty())
@@ -90,6 +90,7 @@ public class ZhuxueController {
                 } 
          	   
             }
+            studentManager.saveStudent(student);
             return "success";
         	} catch (Exception e) {
            	logger.error("error on complete task", e);
