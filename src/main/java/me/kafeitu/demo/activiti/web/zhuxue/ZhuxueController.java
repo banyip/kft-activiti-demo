@@ -48,6 +48,27 @@ import java.util.Set;
 @RequestMapping(value = "/zhuxue/student")
 public class ZhuxueController {
 
+	private void invoke(String methodname,Object value,Object invoker,String invokerClass, String param)
+	{
+			try {
+				    logger.debug("学生信息保存内容method："+methodname);
+					logger.debug("学生信息保存内容value："+value);
+					Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue."+invokerClass);
+			        // 定义参数类型
+			        Class[] params = new Class[1];
+			        params[0] = Class.forName(param);
+			        Method m = clazz.getDeclaredMethod("set"+methodname, params);
+			        // 设置参数
+			        Object[] p = new Object[1];
+			        p[0] = value;
+			        m.invoke(invoker, p);				        
+				}
+				catch(Exception e)
+				{
+					logger.error("信息保存失败：", e);
+				}
+	}
+	
     private Logger logger = LoggerFactory.getLogger(getClass());
 
     @Autowired
@@ -125,24 +146,8 @@ public class ZhuxueController {
    				logger.debug("学生信息保存内容key："+key);
    				String methodname= key.substring(8,9).toUpperCase()+key.substring(9);
    				Object value = variables.get(key);
-   				try {
-   					    logger.debug("学生信息保存内容method："+methodname);
-   						logger.debug("学生信息保存内容value："+value);
-   						Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue.Student");
-   				        // 定义参数类型
-   				        Class[] params = new Class[1];
-   				        params[0] = String.class;
-   				        Method m = clazz.getDeclaredMethod("set"+methodname, params);
-   				        // 设置参数
-   				        Object[] p = new Object[1];
-   				        p[0] = value;
-   				        m.invoke(student, p);				        
-   					}
-   					catch(Exception e)
-   					{
-   						logger.error("学生信息保存失败：", e);
-   					}
-   					logger.debug("学生信息保存成功："+key);
+   				invoke(methodname,value,(Object)student,"Student","String");
+ 				logger.debug("学生信息保存成功："+key);
    			}else if(key.equals("relative"))
    			{
    		        String relatives = (String)variables.get(key);
@@ -189,7 +194,8 @@ public class ZhuxueController {
 	        	if(filename.indexOf("student_")==0)
 	        	{
 	   				String methodname= "save"+filename.substring(8,9).toUpperCase()+filename.substring(9);	  
-	   				try {  
+	   				invoke(methodname,(Object)studentPictureFile,student,"Student","MultipartFile");
+/*	   				try {  
 						    logger.debug("学生文件保存内容method："+methodname);
 							Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue.Student");
 					        // 定义参数类型
@@ -202,7 +208,8 @@ public class ZhuxueController {
 					        m.invoke(student, p);			        
 		            } catch (Exception e) {  
 		               logger.error("学生照片保存出错:",e);  
-		            }  
+		            } 
+*/ 
 	        	}
 	        }
         }
