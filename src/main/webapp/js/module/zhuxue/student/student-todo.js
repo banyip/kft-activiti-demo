@@ -203,7 +203,7 @@ function complete(variables) {
     var filedata = $('#student_picture')[0];
     form.append("studentpicture",filedata);
     $.ajax({
-        url:ctx+'/zhuxue/student/newstudent1/' ,
+        url:ctx+'/zhuxue/student/newstudent/' ,
         type:"post",
         data:form,
         processData:false,
