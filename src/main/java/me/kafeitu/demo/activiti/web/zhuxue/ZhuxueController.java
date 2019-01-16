@@ -57,7 +57,7 @@ public class ZhuxueController {
 			        // 定义参数类型
 			        Class[] params = new Class[1];
 			        params[0] = Class.forName(param);
-			        Method m = clazz.getDeclaredMethod("set"+methodname, params);
+			        Method m = clazz.getDeclaredMethod(methodname, params);
 			        // 设置参数
 			        Object[] p = new Object[1];
 			        p[0] = value;
@@ -144,7 +144,7 @@ public class ZhuxueController {
    			if(key.indexOf("student_")==0)
    			{
    				logger.debug("学生信息保存内容key："+key);
-   				String methodname= key.substring(8,9).toUpperCase()+key.substring(9);
+   				String methodname= "set"+key.substring(8,9).toUpperCase()+key.substring(9);
    				Object value = variables.get(key);
    				invoke(methodname,value,(Object)student,"Student","java.lang.String");
  				logger.debug("学生信息保存成功："+key);
