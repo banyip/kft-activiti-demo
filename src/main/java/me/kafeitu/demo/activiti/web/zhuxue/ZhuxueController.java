@@ -75,6 +75,28 @@ public class ZhuxueController {
         return mav;
     }
 
+    
+    @RequestMapping(value = "newstudent1", method = {RequestMethod.POST})
+    @ResponseBody
+    public String complete1(@RequestParam("student_picture") MultipartFile studentPictureFile) {
+        try {
+            Student student = new Student();
+            if(!studentPictureFile.isEmpty())
+            {
+         	   try {  
+         		   student.savePicture(studentPictureFile);
+                } catch (Exception e) {  
+                   logger.error("学生照片保存出错");  
+                } 
+         	   
+            }
+            return "success";
+        	} catch (Exception e) {
+           	logger.error("error on complete task", e);
+               logger.error("error on complete , variables={}", e);
+               return "error";
+           }
+    }
     /*
     * newstudent
     *
