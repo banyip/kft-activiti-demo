@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-<form method="post" enctype="multipart/form-data">
+<form enctype="multipart/form-data" method="post" >
 <table border="0" cellpadding="0" width="898" style="width:100%" >
 	<colgroup>
 		<col style="mso-width-source:userset;mso-width-alt:3776;" />
