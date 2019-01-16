@@ -195,7 +195,30 @@ function complete(variables) {
         message: '<h2><img src="' + ctx + '/images/ajax/loading.gif" align="absmiddle"/>正在提交请求……</h2>'
     });
 	
-	// 发送任务完成请求
+    // 发送任务完成请求
+    var form=new FormData();
+    form.append("keys",keys);
+    form.append("values",values);
+    form.append("types",types);
+    form.append(document.getElementById("student_picture"));
+    $.ajax({
+        url:ctx+'/zhuxue/student/newstudent/' ,
+        type:post,
+        data:form,
+        processData:false,
+        contentType:false,
+        success:function(data){
+                    window.clearInterval(timer);
+                    alert("保存成功！");
+                },
+                error:function(e){
+                    alert("错误！！");
+                    window.clearInterval(timer);
+                }
+    });
+    get();
+    
+    /*
     $.post(ctx + '/zhuxue/student/newstudent/' , {
         keys: keys,
         values: values,
@@ -209,6 +232,7 @@ function complete(variables) {
             alert('操作失败!');
         }
     });
+    */
 }
 
 
