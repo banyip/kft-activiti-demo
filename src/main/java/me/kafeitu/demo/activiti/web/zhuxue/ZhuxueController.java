@@ -201,7 +201,7 @@ public class ZhuxueController {
 					        p[0] = studentPictureFile;
 					        m.invoke(student, p);			        
 		            } catch (Exception e) {  
-		               logger.error("学生照片保存出错");  
+		               logger.error("学生照片保存出错:",e);  
 		            }  
 	        	}
 	        }
