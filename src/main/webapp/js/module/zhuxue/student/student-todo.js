@@ -208,15 +208,14 @@ function complete(variables) {
         processData:false,
         contentType:false,
         success:function(data){
-                    window.clearInterval(timer);
+                    
                     alert("保存成功！");
                 },
                 error:function(e){
                     alert("错误！！");
-                    window.clearInterval(timer);
+                   
                 }
     });
-    get();
     
     /*
     $.post(ctx + '/zhuxue/student/newstudent/' , {
