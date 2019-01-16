@@ -310,7 +310,7 @@ var handleOpts = {
 					 $.each($(':file.studentPhoto'),function()
                         {
                             filenames = filenames + ":" +this.id;
-                            files.append(this.files[0]);
+                            files.push(this.files[0]);
                         }
                     );
 					
