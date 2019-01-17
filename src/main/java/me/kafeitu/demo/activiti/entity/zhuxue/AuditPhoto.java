@@ -28,8 +28,8 @@ public class AuditPhoto  extends IdEntity implements Serializable{
 	public AuditPhoto() {
 		
 	}
-	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-	private Date photoDate;
+	
+	private String photoDate;
 	private String familyPhoto;
 	private String studentPhoto;
 	private String feedbackPhoto;
@@ -37,7 +37,7 @@ public class AuditPhoto  extends IdEntity implements Serializable{
 	private String otherPhoto;
 	
 	@Column
-	public Date getPhotoDate() {
+	public String getPhotoDate() {
 		return photoDate;
 	}
 	@Column
@@ -60,7 +60,7 @@ public class AuditPhoto  extends IdEntity implements Serializable{
 	public String getOtherPhoto() {
 		return otherPhoto;
 	}
-	public void setPhotoDate(Date photoDate) {
+	public void setPhotoDate(String photoDate) {
 		this.photoDate = photoDate;
 	}
 	public void setFamilyPhoto(String familyPhoto) {
