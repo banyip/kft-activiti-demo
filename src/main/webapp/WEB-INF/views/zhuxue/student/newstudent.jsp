@@ -125,19 +125,6 @@
 		<td class="style17">
 		<input class="studentApply" id="student_endReason" name="endReason" />　</td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style9">
-		&quot;共同生活&quot;家庭成员情况（如父母、亲兄弟姐妹，爷爷奶奶或外公外婆同住也需要登记在内）</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">关系</td>
-		<td class="style11" style="width: 60pt">姓名</td>
-		<td class="style11">出生年月日</td>
-		<td class="style11" >联系电话</td>
-		<td class="style11">职业/学校</td>
-		<td class="style11">年收入</td>
-		<td class="style18">其他收入/补助</td>
-		<td class="style19">健康情况</td>
-    </tr>
+
 </table>
 
