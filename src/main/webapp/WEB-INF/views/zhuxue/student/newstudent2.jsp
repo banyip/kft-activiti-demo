@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+<form enctype="multipart/form-data" method="post" >
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -28,8 +29,8 @@
 		<input  class=studentApply id=student_applicantContactNum name="applicantContactNum" />　</td>
 		<td colspan="4" class="style6">
 		<input  class=studentApply id=student_applicantCompany name="applicantCompany" />　</td>
-    </tr>
- 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style7">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
@@ -43,9 +44,8 @@
 		<td class="style11">资助状态</td>
 		<td colspan="3" class="style10">
 			<input class="studentApply" id="student_sponseState" name="sponseState" />　</td>
-    </tr>
-    
- 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style12">学生姓名</td>
 		<td colspan="2" class="style10">　<input class="studentApply" id="student_studentName" name="studentName" /></td>
 		<td class="style11">民族</td>
@@ -68,28 +68,28 @@
 		<td class="style11">开户银行</td>
 		<td colspan="3" class="style10">
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
-    </tr>   
- 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
 		学校名称</td>
 		<td class="style11">年级</td>
-		<td class="style11" style="width: 48pt">班号/专业</td>
+		<td class="style11" >班号/专业</td>
 		<td class="style11">班主任姓名</td>
 		<td colspan="3" class="style11">联系电话</td>
-    </tr>
- 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
 		<input class="studentApply" id="student_school" name="school" />　</td>
 		<td class="style11">
 		<input class="studentApply" id="student_grade" name="grade" />　</td>
-		<td class="style11" style="width: 48pt">
+		<td class="style11" >
 		<input class="studentApply" id="student_className" name="className" />　</td>
 		<td class="style11">
 		<input class="studentApply" id="student_headTeacher" name="headTeacher" />　</td>
 		<td colspan="3" class="style10">
 		<input class="studentApply" id="student_schoolContactNo" name="schoolContactNo" />　</td>
-    </tr>
-  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style15">
 		　</td>
 		<td class="style11">　</td>
@@ -106,24 +106,24 @@
 		<td class="style11" style="height: 22pt">开始资助时间</td>
 		<td class="style16" style="height: 22pt">结束资助时间</td>
 		<td class="style17" style="height: 22pt">结案原因</td>
-    </tr>     
+	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style11">
-		<input class="studentApply" id="student_age" name="age"  style="width: 50px"/>　</td>
+		<input class="studentApply" id="student_age" name="age" />　</td>
 		<td class="style11" style="width: 60pt">
-		<input class="studentApply" id="student_sex" name="sex"  style="width: 50px"/>　</td>
+		<input class="studentApply" id="student_sex" name="sex" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="student_qq" name="qq"  style="width: 90px" />　</td>
+		<input class="studentApply" id="student_qq" name="qq" />　</td>
 		<td class="style16" >
-		<input class="studentApply" id="student_email" name="email"  style="width: 90px"/>　</td>
+		<input class="studentApply" id="student_email" name="email" />　</td>
 		<td class="style16">
-		<input class="studentApply" id="student_studentContactNo" name="studentContactNo"  style="width: 90px" />　</td>
+		<input class="studentApply" id="student_studentContactNo" name="studentContactNo" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="student_sponseStartTime" name="sponseStartTime"  style="width: 90px" />　</td>
+		<input class="studentApply" id="student_sponseStartTime" name="sponseStartTime" />　</td>
 		<td class="style16">
-		<input class="studentApply" id="student_sponseEndTime" name="sponseEndTime"  style="width: 90px"/>　</td>
+		<input class="studentApply" id="student_sponseEndTime" name="sponseEndTime" />　</td>
 		<td class="style17">
-		<input class="studentApply" id="student_endReason" name="endReason"  style="width: 90px"/>　</td>
+		<input class="studentApply" id="student_endReason" name="endReason" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style9">
@@ -686,3 +686,6 @@
 	</tr>
 </table>
 
+
+
+</form>
