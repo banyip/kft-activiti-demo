@@ -88,6 +88,24 @@
 		<input class="studentApply" id="student_headTeacher" name="headTeacher" />　</td>
 		<td colspan="3" class="style10">
 		<input class="studentApply" id="student_schoolContactNo" name="schoolContactNo" />　</td>
-	</tr>   
+    </tr>
+  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt; " class="style15">
+		　</td>
+		<td class="style11">　</td>
+		<td class="style11" style="width: 48pt">　</td>
+		<td class="style11">　</td>
+		<td colspan="3" class="style11">　</td>
+	</tr>
+	<tr style="mso-height-source:userset;">
+		<td style="height: 22pt;" class="style11">年龄</td>
+		<td class="style11" style="height: 22pt; width: 60pt;">性别</td>
+		<td class="style11" style="height: 22pt">QQ</td>
+		<td class="style16" style="height: 22pt; width: 48pt;">邮箱</td>
+		<td class="style16" style="height: 22pt">联系电话</td>
+		<td class="style11" style="height: 22pt">开始资助时间</td>
+		<td class="style16" style="height: 22pt">结束资助时间</td>
+		<td class="style17" style="height: 22pt">结案原因</td>
+	</tr>     
 </table>
 
