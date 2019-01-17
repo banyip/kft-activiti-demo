@@ -2,15 +2,15 @@
     pageEncoding="UTF-8"%>
 
 <form enctype="multipart/form-data" method="post" >
-<table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 674pt">
+<table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
-		<col width="118" style="mso-width-source: userset; mso-width-alt: 3776; width: 62pt">
-		<col width="103" span="2" style="mso-width-source: userset; mso-width-alt: 3296; width: 54pt">
-		<col width="141" style="mso-width-source: userset; mso-width-alt: 4512; width: 74pt">
-		<col width="133" style="mso-width-source: userset; mso-width-alt: 4256; width: 70pt">
-		<col width="100" style="mso-width-source: userset; mso-width-alt: 3200; width: 52.2pt">
-		<col width="105" style="mso-width-source: userset; mso-width-alt: 3360; width: 55pt">
-		<col width="95" style="mso-width-source: userset; mso-width-alt: 3040; width: 50pt">
+		<col width="83" style="mso-width-source: userset; mso-width-alt: 3776; width: 62pt">
+		<col width="72" span="2" style="mso-width-source: userset; mso-width-alt: 3296; width: 54pt">
+		<col width="99" style="mso-width-source: userset; mso-width-alt: 4512; width: 74pt">
+		<col width="93" style="mso-width-source: userset; mso-width-alt: 4256; width: 70pt">
+		<col width="70" style="mso-width-source: userset; mso-width-alt: 3200; width: 52.2pt">
+		<col width="74" style="mso-width-source: userset; mso-width-alt: 3360; width: 55pt">
+		<col width="66" style="mso-width-source: userset; mso-width-alt: 3040; width: 50pt">
 	</colgroup>
 	<tr height="48" style="mso-height-source:userset;height:36.0pt">
 		<td colspan="8" height="48" style="height: 36.0pt; " class="style1">
