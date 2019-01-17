@@ -107,24 +107,7 @@
 		<td class="style16" style="height: 22pt">结束资助时间</td>
 		<td class="style17" style="height: 22pt">结案原因</td>
     </tr>     
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style11">
-		<input class="studentApply" id="student_age" name="age" />　</td>
-		<td class="style11" style="width: 60pt">
-		<input class="studentApply" id="student_sex" name="sex" />　</td>
-		<td class="style11">
-		<input class="studentApply" id="student_qq" name="qq" />　</td>
-		<td class="style16" >
-		<input class="studentApply" id="student_email" name="email" />　</td>
-		<td class="style16">
-		<input class="studentApply" id="student_studentContactNo" name="studentContactNo" />　</td>
-		<td class="style11">
-		<input class="studentApply" id="student_sponseStartTime" name="sponseStartTime" />　</td>
-		<td class="style16">
-		<input class="studentApply" id="student_sponseEndTime" name="sponseEndTime" />　</td>
-		<td class="style17">
-		<input class="studentApply" id="student_endReason" name="endReason" />　</td>
-	</tr>
+
 
 </table>
 
