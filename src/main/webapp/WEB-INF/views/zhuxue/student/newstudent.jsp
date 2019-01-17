@@ -21,6 +21,13 @@
 		<td colspan="2" class="style3">联系电话</td>
 		<td colspan="4" class="style3">单位名称</td>
 	</tr>
-
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style4">
+			<input class="studentApply" id="student_applicantName" name="applicantName" />　</td>
+		<td colspan="2" class="style5">
+		<input  class=studentApply id=student_applicantContactNum name="applicantContactNum" />　</td>
+		<td colspan="4" class="style6">
+		<input  class=studentApply id=student_applicantCompany name="applicantCompany" />　</td>
+	</tr>
 </table>
 
