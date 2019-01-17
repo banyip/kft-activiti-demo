@@ -109,21 +109,21 @@
     </tr>     
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style11">
-		<input class="studentApply" id="student_age" name="age" />　</td>
+		<input class="studentApply" id="student_age" name="age"  style="width: 50px"/>　</td>
 		<td class="style11" style="width: 60pt">
-		<input class="studentApply" id="student_sex" name="sex" />　</td>
+		<input class="studentApply" id="student_sex" name="sex"  style="width: 50px"/>　</td>
 		<td class="style11">
-		<input class="studentApply" id="student_qq" name="qq" />　</td>
+		<input class="studentApply" id="student_qq" name="qq"  style="width: 90px" />　</td>
 		<td class="style16" >
-		<input class="studentApply" id="student_email" name="email" />　</td>
+		<input class="studentApply" id="student_email" name="email"  style="width: 90px"/>　</td>
 		<td class="style16">
-		<input class="studentApply" id="student_studentContactNo" name="studentContactNo" />　</td>
+		<input class="studentApply" id="student_studentContactNo" name="studentContactNo"  style="width: 90px" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="student_sponseStartTime" name="sponseStartTime" />　</td>
+		<input class="studentApply" id="student_sponseStartTime" name="sponseStartTime"  style="width: 90px" />　</td>
 		<td class="style16">
-		<input class="studentApply" id="student_sponseEndTime" name="sponseEndTime" />　</td>
+		<input class="studentApply" id="student_sponseEndTime" name="sponseEndTime"  style="width: 90px"/>　</td>
 		<td class="style17">
-		<input class="studentApply" id="student_endReason" name="endReason" />　</td>
+		<input class="studentApply" id="student_endReason" name="endReason"  style="width: 90px"/>　</td>
 	</tr>
 
 </table>
