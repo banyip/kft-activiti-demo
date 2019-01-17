@@ -69,6 +69,13 @@
 		<td colspan="3" class="style10">
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
     </tr>   
- 
+ 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
+		学校名称</td>
+		<td class="style11">年级</td>
+		<td class="style11" style="width: 48pt">班号/专业</td>
+		<td class="style11">班主任姓名</td>
+		<td colspan="3" class="style11">联系电话</td>
+	</tr>
 </table>
 
