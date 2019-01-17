@@ -255,7 +255,7 @@ function complete(variables,filenames,files) {
 var handleOpts = {
 			newstudent: {
 			width: 1100,
-			height: 670,
+			height: 500,
 			open: function(id) {
 				var dialog = this;
 				

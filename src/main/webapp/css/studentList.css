@@ -25,7 +25,7 @@ input[type="number"]
 .font6
 	{color:black;
 	font-size:10.0pt;
-	font-weight:700;
+	font-weight:400;
 	font-style:normal;
 	text-decoration:none;
 	font-family:ËÎÌו;
@@ -42,7 +42,7 @@ input[type="number"]
 .font8
 	{color:black;
 	font-size:10.0pt;
-	font-weight:700;
+	font-weight:400;
 	font-style:normal;
 	text-decoration:underline;
 	text-underline-style:single;
@@ -58,8 +58,8 @@ input[type="number"]
 	}
 .style1 {
 	color: #2F2B20;
-	font-size: 20.0pt;
-	font-weight: 700;
+	font-size: 10.0pt;
+	font-weight: 400;
 	font-style: normal;
 	text-decoration: none;
 	font-family: ËÎÌו;

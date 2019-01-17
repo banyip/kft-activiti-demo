@@ -68,6 +68,62 @@
 		<td class="style11">开户银行</td>
 		<td colspan="3" class="style10">
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
+    </tr>   
+ 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
+		学校名称</td>
+		<td class="style11">年级</td>
+		<td class="style11" style="width: 48pt">班号/专业</td>
+		<td class="style11">班主任姓名</td>
+		<td colspan="3" class="style11">联系电话</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
+		<input class="studentApply" id="student_school" name="school" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_grade" name="grade" />　</td>
+		<td class="style11" style="width: 48pt">
+		<input class="studentApply" id="student_className" name="className" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_headTeacher" name="headTeacher" />　</td>
+		<td colspan="3" class="style10">
+		<input class="studentApply" id="student_schoolContactNo" name="schoolContactNo" />　</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt; " class="style15">
+		　</td>
+		<td class="style11">　</td>
+		<td class="style11" style="width: 48pt">　</td>
+		<td class="style11">　</td>
+		<td colspan="3" class="style11">　</td>
+	</tr>
+	<tr style="mso-height-source:userset;">
+		<td style="height: 22pt;" class="style11">年龄</td>
+		<td class="style11" style="height: 22pt; width: 60pt;">性别</td>
+		<td class="style11" style="height: 22pt">QQ</td>
+		<td class="style16" style="height: 22pt; width: 48pt;">邮箱</td>
+		<td class="style16" style="height: 22pt">联系电话</td>
+		<td class="style11" style="height: 22pt">开始资助时间</td>
+		<td class="style16" style="height: 22pt">结束资助时间</td>
+		<td class="style17" style="height: 22pt">结案原因</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td height="26" style="height: 20.1pt;" class="style11">
+		<input class="studentApply" id="student_age" name="age" />　</td>
+		<td class="style11" style="width: 60pt">
+		<input class="studentApply" id="student_sex" name="sex" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_qq" name="qq" />　</td>
+		<td class="style16" style="width: 48pt">
+		<input class="studentApply" id="student_email" name="email" />　</td>
+		<td class="style16">
+		<input class="studentApply" id="student_studentContactNo" name="studentContactNo" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_sponseStartTime" name="sponseStartTime" />　</td>
+		<td class="style16">
+		<input class="studentApply" id="student_sponseEndTime" name="sponseEndTime" />　</td>
+		<td class="style17">
+		<input class="studentApply" id="student_endReason" name="endReason" />　</td>
 	</tr>   
 </table>
 
