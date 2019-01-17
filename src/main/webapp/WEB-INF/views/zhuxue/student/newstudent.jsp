@@ -300,15 +300,15 @@
 		<td height="26" style="height: 20.1pt;" class="style9">
 				　<input class="studentApply" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate"></td>
 		<td class="style11" style="width: 60pt">
-		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto"></td>
+		<input class="studentApply" type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto"></td>
 		<td class="style11">
-		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto">　</td>
+		<input class="studentApply" type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto">　</td>
 		<td class="style11" style="width: 48pt">
-		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto">　</td>
+		<input class="studentApply" type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto">　</td>
 		<td class="style11">
-		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto">　</td>
+		<input class="studentApply" type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto">　</td>
 		<td colspan="3" class="style11">
-		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto">　</td>
+		<input class="studentApply" type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9">　</td>
