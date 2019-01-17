@@ -312,8 +312,11 @@ var handleOpts = {
                     var files = new Array();
 					 $.each($(':file.studentPhoto'),function()
                         {
-                            filenames = filenames + ":" +this.id;
-                            files.push(this.files[0]);
+                            if(this.files.length>0)
+                            {
+                                filenames = filenames + ":" +this.id;
+                                files.push(this.files[0]);
+                            }
                         }                        
                     );
 					filenames = filenames.substr(1);
