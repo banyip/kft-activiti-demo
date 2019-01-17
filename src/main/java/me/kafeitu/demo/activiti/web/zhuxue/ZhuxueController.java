@@ -5,6 +5,8 @@ import java.io.*;
 import java.lang.reflect.Method;
 
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
+import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
+import me.kafeitu.demo.activiti.entity.zhuxue.AuditPhoto;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 
 import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
@@ -34,6 +36,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -97,28 +100,7 @@ public class ZhuxueController {
     }
 
     
-    @RequestMapping(value = "newstudent1", method = {RequestMethod.POST})
-    @ResponseBody
-    public String complete1(@RequestParam("studentpicture") MultipartFile studentPictureFile) {
-        try {
-            Student student = new Student();
-            if(!studentPictureFile.isEmpty())
-            {
-         	   try {  
-         		   student.savePicture(studentPictureFile);
-                } catch (Exception e) {  
-                   logger.error("学生照片保存出错");  
-                } 
-         	   
-            }
-            studentManager.saveStudent(student);
-            return "success";
-        	} catch (Exception e) {
-           	logger.error("error on complete task", e);
-               logger.error("error on complete , variables={}", e);
-               return "error";
-           }
-    }
+    
     /*
     * newstudent
     *
@@ -152,38 +134,36 @@ public class ZhuxueController {
    			{
    		        String relatives = (String)variables.get(key);
    		        student.setRelatives(relatives);
-   			}
-/*   			else if(key.indexOf("relatives[")==0)
-   			{ 
-   				
-   				int index = Integer.parseInt(key.substring(10,11));
-   				Relative relative = relatives.get(index);
-   				String methodname= key.substring(13,14).toUpperCase()+key.substring(14);
+   			}else if(key.indexOf("audit")==0)
+   			{
    				Object value = variables.get(key);
-   				try {
-   					    logger.debug("亲戚信息保存内容method：set"+methodname);
-   						logger.debug("亲戚信息保存内容value："+value);
-   				        Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue.Relative");
-   				        // 定义参数类型
-   				        Class[] params = new Class[1];
-   				        params[0] = String.class;
-   				        Method m = clazz.getDeclaredMethod("set"+methodname, params);
-   				        // 设置参数
-   				        Object[] p = new Object[1];
-   				        p[0] = value;
-   				        m.invoke(relative, p);   				     
-   				        logger.debug("亲戚信息保存成功p0：set"+methodname+p[0]);
-   					}
-   					catch(Exception e)
+   				String invokeClassName = "Audit";   				
+   				int pos = (invokeClassName).length();
+   				int index = Integer.parseInt(key.substring(pos+2,pos+3));
+   				List<Audit> audits = student.getAudits();
+   				while(index>=audits.size())
+   				{
+   					audits.add(new Audit());
+   				}
+   				Audit audit = audits.get(index);
+   				if(key.indexOf("auditPhoto")>0)
+   				{
+   					int photopos = "audit[0]_auditPhoto[0]".length();
+   					int photoindex = Integer.parseInt(key.substring(pos+2,pos+3));
+   					List<AuditPhoto> auditphotos = audit.getAuditphotos();
+   					while(photoindex>=auditphotos.size())
    					{
-   						logger.error("亲戚信息保存失败：", e);
+   						auditphotos.add(new AuditPhoto());
    					}
-   					logger.debug("亲戚信息保存成功："+key);
-   					
+   					AuditPhoto auditphoto = auditphotos.get(photoindex);
+   					auditphoto.setPhotoDate(new Date((String)value));
+   				}
+   				String methodname="set" + key.substring(pos+5,pos+6).toUpperCase()+key.substring(pos+6);
+   				
+   				invoke(methodname,value,(Object)audits.get(index),invokeClassName,"java.lang.String");   					
    			}
-  */
    		}
-   		//for(MultipartFile studentPictureFile:studentPictureFiles)
+   		//保存所有图片
    		String[]  fileNameList = filenames.split(":",-1);
         for(int i=0;i<fileNameList.length;i++)
         {
@@ -193,23 +173,25 @@ public class ZhuxueController {
 	        {
 	        	if(filename.indexOf("student_")==0)
 	        	{
-	   				String methodname= "save"+filename.substring(8,9).toUpperCase()+filename.substring(9);	  
-	   				invoke(methodname,(Object)studentPictureFile,student,"Student","org.springframework.web.multipart.MultipartFile");
-/*	   				try {  
-						    logger.debug("学生文件保存内容method："+methodname);
-							Class clazz = Class.forName("me.kafeitu.demo.activiti.entity.zhuxue.Student");
-					        // 定义参数类型
-					        Class[] params = new Class[1];
-					        params[0] = MultipartFile.class;
-					        Method m = clazz.getDeclaredMethod(methodname, params);
-					        // 设置参数
-					        Object[] p = new Object[1];
-					        p[0] = studentPictureFile;
-					        m.invoke(student, p);			        
-		            } catch (Exception e) {  
-		               logger.error("学生照片保存出错:",e);  
-		            } 
-*/ 
+	        		student.savePicture(studentPictureFile);
+	        	}
+	        	if(filename.indexOf("audit")==0)
+	        	{
+	 				String invokeClassName = "audit";   				
+	   				int pos = (invokeClassName).length();
+	   				int index = Integer.parseInt(filename.substring(pos+2,pos+3));
+	   				List<Audit> audits =  student.getAudits();
+	   				Audit audit = audits.get(index);
+	   				pos = "audit[0]_auditPhoto".length();
+	   				index = Integer.parseInt(filename.substring(pos+2,pos+3));
+	   				String whattosave=filename.substring(pos+5,pos+6).toUpperCase()+filename.substring(pos+6);
+	   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
+	   				while(index>=auditPhotos.size())
+	   				{
+	   					auditPhotos.add(new AuditPhoto());
+	   				}	   				
+	   				AuditPhoto auditPhoto = auditPhotos.get(index);
+	   				auditPhoto.savePicture(studentPictureFile, whattosave);
 	        	}
 	        }
         }

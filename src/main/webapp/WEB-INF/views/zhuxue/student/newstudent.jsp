@@ -287,22 +287,28 @@
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
 		相关走访资料上传</td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">拍摄时间</td>
-		<td class="style11" style="width: 60pt">家庭环境照片</td>
-		<td class="style11">学生个人独照</td>
-		<td class="style11" style="width: 48pt">反馈表照片</td>
-		<td class="style11">发款签收照片</td>
-		<td colspan="3" class="style38">
+	<tr style="mso-height-source:userset;">
+		<td style="height: 20pt;" class="style9">拍摄时间</td>
+		<td class="style11" style="width: 60pt; height: 20pt;">家庭环境照片</td>
+		<td class="style11" style="height: 20pt">学生个人独照</td>
+		<td class="style11" style="width: 48pt; height: 20pt;">反馈表照片</td>
+		<td class="style11" style="height: 20pt">发款签收照片</td>
+		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
-		<td class="style11" style="width: 60pt">　</td>
-		<td class="style11">　</td>
-		<td class="style11" style="width: 48pt">　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style11">　</td>
+		<td height="26" style="height: 20.1pt;" class="style9">
+				　<input class="studentApply" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate"></td>
+		<td class="style11" style="width: 60pt">
+		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto"></td>
+		<td class="style11">
+		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto">　</td>
+		<td class="style11" style="width: 48pt">
+		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto">　</td>
+		<td class="style11">
+		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto">　</td>
+		<td colspan="3" class="style11">
+		<input class="studentApply" type="file" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9">　</td>
@@ -325,12 +331,7 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访时间</td>
-		<td class="style41">　</td>
-		<td class="style42" style="width: 48pt">　</td>
-		<td class="style42">　</td>
-		<td class="style42">　</td>
-		<td class="style42">　</td>
-		<td class="style43">　</td>
+		<td class="style41" colspan="6">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
@@ -685,6 +686,7 @@
 		<td colspan="2" class="style47">　</td>
 	</tr>
 </table>
+
 
 
 </form>

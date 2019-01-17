@@ -125,7 +125,17 @@ public class Student extends IdEntity implements Serializable {
     
     private List<Audit> audits = new ArrayList<Audit>(); 
     
-    @Column(length = 50)
+	@Column
+	@OneToMany(cascade = {CascadeType.ALL})
+    public List<Audit> getAudits() {
+		return audits;
+	}
+
+	public void setAudits(List<Audit> audits) {
+		this.audits = audits;
+	}
+
+	@Column(length = 50)
     public String getBankCard() {
 		return bankCard;
 	}
