@@ -79,15 +79,15 @@
     </tr>
  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
-		<input class="studentApply" id="student_school" name="school" />　</td>
+		<input class="studentApply" id="student_school" name="school" style="width: 126px" />　</td>
 		<td class="style11">
 		<input class="studentApply" id="student_grade" name="grade" />　</td>
 		<td class="style11" style="width: 48pt">
 		<input class="studentApply" id="student_className" name="className" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="student_headTeacher" name="headTeacher" />　</td>
+		<input class="studentApply" id="student_headTeacher" name="headTeacher" style="width: 81px" />　</td>
 		<td colspan="3" class="style10">
-		<input class="studentApply" id="student_schoolContactNo" name="schoolContactNo" />　</td>
+		<input class="studentApply" id="student_schoolContactNo" name="schoolContactNo" style="width: 109px" />　</td>
     </tr>
   	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style15">
@@ -142,22 +142,34 @@
     <tr>
 	    <td colspan=8>				    		
 		    <div id="div_bjbr">
-				<table class="yltable">
+				<table class="yltable" width="100%">
+					<colgroup>
+		<col width="83" >
+		<col width="72" span="2" >
+		<col width="99" >
+		<col width="93" >
+		<col width="70" >
+		<col width="74" >
+		<col width="66" >
+	</colgroup>
+
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9"><input class="relative" type="text" id="relatives[0]_relationship" name="relationship">　</td>
-		<td class="style11"><input class="relative" type="text" id="relatives[0]_name" name="name"></td>
+		<td height="26" style="height: 20.1pt; width: 101px;" class="style9">
+		<input class="relative" type="text" id="relatives[0]_relationship" name="relationship" style="width: 40px">　</td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_birthDate" name="birthDate">　</td>
+		<input class="relative" type="text" id="relatives[0]_name" name="name" style="width: 73px"></td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_contactNo" name="contactNo"></td>
+		<input class="relative" type="text" id="relatives[0]_birthDate" name="birthDate" style="width: 96px">　</td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_profectional" name="profectional">　</td>
+		<input class="relative" type="text" id="relatives[0]_contactNo" name="contactNo" style="width: 112px"></td>
 		<td class="style11">
-		<input class="relative" type="number" id="relatives[0]_anualIncome" name="anualIncome">　</td>
+		<input class="relative" type="text" id="relatives[0]_profectional" name="profectional" style="width: 100px">　</td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_otherSponse" name="otherSponse">　</td>
+		<input class="relative" type="number" id="relatives[0]_anualIncome" name="anualIncome" style="width: 81px">　</td>
+		<td class="style11">
+		<input class="relative" type="text" id="relatives[0]_otherSponse" name="otherSponse" style="width: 78px">　</td>
 		<td class="style19">
-		<input class="relative" type="text" id="relatives[0]_health" name="health">　</td>
+		<input class="relative" type="text" id="relatives[0]_health" name="health" style="width: 86px">　</td>
     </tr>
     </table>
     </div>
@@ -297,17 +309,17 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9">
-				　<input class="studentPhoto" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate"></td>
+				<input class="studentPhoto" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
 		<td class="style11" style="width: 60pt">
-		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto"></td>
+		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"></td>
 		<td class="style11">
-		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto">　</td>
+		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto" style="width: 80px">　</td>
 		<td class="style11" >
-		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto">　</td>
+		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">　</td>
 		<td class="style11">
-		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto">　</td>
+		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">　</td>
 		<td colspan="3" class="style11">
-		<input  type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto">　</td>
+		<input  type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9">　</td>
@@ -685,4 +697,5 @@
 		<td colspan="2" class="style47">　</td>
 	</tr>
 </table>
+
 
