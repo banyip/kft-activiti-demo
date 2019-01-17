@@ -215,10 +215,11 @@ function complete(variables,filenames,files) {
         success:function(data){
                     
                     alert("保存成功！");
+                    location.reload();
                 },
                 error:function(e){
                     alert("错误！！");
-                   
+                    location.reload();                   
                 }
     });
     
