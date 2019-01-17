@@ -181,6 +181,10 @@ public class ZhuxueController {
 	   				int pos = (invokeClassName).length();
 	   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
 	   				List<Audit> audits =  student.getAudits();
+	   				while(index>=audits.size())
+	   				{
+	   					audits.add(new Audit());
+	   				}
 	   				Audit audit = audits.get(index);
 	   				pos = "audit[0]_auditPhoto".length();
 	   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
