@@ -331,7 +331,7 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('audiPhoto','div_adph')" />      
+					onclick="inserttable('auditPhoto','div_adph')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable()" />
