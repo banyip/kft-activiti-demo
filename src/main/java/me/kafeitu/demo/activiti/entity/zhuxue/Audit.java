@@ -13,6 +13,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.Map;
@@ -42,7 +43,7 @@ public class Audit extends IdEntity implements Serializable {
     private String auditResult;
     private String ifAuditPass;
     private String auditPerson;
-    private Set<AuditPhoto> auditphotos = new HashSet<AuditPhoto>();
+    private List<AuditPhoto> auditphotos = new ArrayList <AuditPhoto>();
     
     @Column
 	public String getAuditTime() {
@@ -74,7 +75,7 @@ public class Audit extends IdEntity implements Serializable {
 	}
     @Column
     @OneToMany(cascade = {CascadeType.ALL})
-	public Set<AuditPhoto> getAuditphotos() {
+	public List<AuditPhoto> getAuditphotos() {
 		return auditphotos;
 	}
 	public void setAuditTime(String auditTime) {

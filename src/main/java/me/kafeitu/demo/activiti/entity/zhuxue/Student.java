@@ -2,6 +2,7 @@ package me.kafeitu.demo.activiti.entity.zhuxue;
 
 import me.kafeitu.demo.activiti.entity.IdEntity;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
+import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -121,6 +122,9 @@ public class Student extends IdEntity implements Serializable {
     private String supplemetaryEvaluation;
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private Date publishTime;
+    
+    private List<Audit> audits = new ArrayList<Audit>(); 
+    
     @Column(length = 50)
     public String getBankCard() {
 		return bankCard;
