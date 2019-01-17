@@ -28,6 +28,21 @@
 		<input  class=studentApply id=student_applicantContactNum name="applicantContactNum" />　</td>
 		<td colspan="4" class="style6">
 		<input  class=studentApply id=student_applicantCompany name="applicantCompany" />　</td>
+    </tr>
+ 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="8" height="26" style="height: 20.1pt" class="style7">　</td>
 	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="8" height="26" style="height: 20.1pt" class="style8">
+		学生信息登记表</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style9">通过审核编号</td>
+		<td colspan="2" class="style10">
+			<input class="studentApply" id="student_auditNo" name="auditNo" />　</td>
+		<td class="style11">资助状态</td>
+		<td colspan="3" class="style10">
+			<input class="studentApply" id="student_sponseState" name="sponseState" />　</td>
+	</tr>   
 </table>
 
