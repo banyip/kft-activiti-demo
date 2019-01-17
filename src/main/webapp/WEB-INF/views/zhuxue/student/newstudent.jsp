@@ -184,7 +184,7 @@
 					onclick="inserttable('yltable',	'div_bjbr')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable()" />
+					style="width:60px; height:24px;" onclick="deletetable('div_bjbr')" />
 				</td>
 			</tr>
 
@@ -334,7 +334,7 @@
 					onclick="inserttable('auditPhoto','div_adph')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable()" />
+					style="width:60px; height:24px;" onclick="deletetable('div_adph')" />
 				</td>
 			</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">

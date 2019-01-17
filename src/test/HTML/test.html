@@ -852,6 +852,15 @@ Date.prototype.format = function(format) {
 		}
     }
 
+function insertrow(classname,divname) {
+	var newnode = $('.'+classname)[0].cloneNode(true);
+    var content = newnode.outerHTML;
+	content = content.replace(/\[0\]/g, "["+ $('.'+classname).length + "]");
+
+    $('.'+classname)[0].after(content);
+
+}
+
     	//删除
 	function test() {
         //var parent = $('#div_bjbr')[0];
@@ -1054,8 +1063,8 @@ Date.prototype.format = function(format) {
 												id="beiJuBaoOfficeAddress" />
 											</td>
 											<td width="130"><div id="beiJuBaoOfficeAddressTip"></div></td>
-										</tr>
-										<tr>
+                                        </tr>                                        
+										<tr class='classname'>
 											<td width="130" bgcolor="#eef0f7">法人代表</td>
 											<td><input type="text"
 												name="reportedPersons[0].beiJuBaoLegalPerson"
@@ -1065,7 +1074,7 @@ Date.prototype.format = function(format) {
 											<td width="130" bgcolor="#eef0f7"></td>
 											<td class="cde" id=test1></td>
 											<td width="130" class="cde" id=test1>test1</td>
-										</tr>
+                                        </tr>                                       
 									</TBODY>
 								</table>
 							</div>
@@ -1074,7 +1083,7 @@ Date.prototype.format = function(format) {
 					<tr>
 						<td colspan="6"><input type="button" name="button"
 							value="新 增" style="width:60px; height:24px;"
-							onclick="inserttable()" />      <input
+							onclick="insertrow('classname','div_id')" />      <input
 							type="button" name="button" value="删 除"
 							style="width:60px; height:24px;" onclick="deletetable()" /><input type="button" name="button"
 							value="新 增" style="width:60px; height:24px;"
