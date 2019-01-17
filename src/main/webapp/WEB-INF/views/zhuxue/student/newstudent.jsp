@@ -43,6 +43,31 @@
 		<td class="style11">资助状态</td>
 		<td colspan="3" class="style10">
 			<input class="studentApply" id="student_sponseState" name="sponseState" />　</td>
+    </tr>
+    
+ 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style12">学生姓名</td>
+		<td colspan="2" class="style10">　<input class="studentApply" id="student_studentName" name="studentName" /></td>
+		<td class="style11">民族</td>
+		<td colspan="3" class="style10">
+		<input class="studentApply" id="student_nationality" name="nationality" />　</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style9">身份证号</td>
+		<td colspan="2" class="style11">
+		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
+		<td class="style11">学生照片</td>
+		<td colspan="3" class="style11">
+		<input type="file" class="studentPhoto" id="student_picture" name="picture" /></td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style12">
+		学生个人银行卡号</td>
+		<td colspan="2" class="style13">
+		<input class="studentApply" id="student_bankCard" name="bankCard" />　</td>
+		<td class="style11">开户银行</td>
+		<td colspan="3" class="style10">
+		<input class="studentApply" id="student_bank" name="bank" />　</td>
 	</tr>   
 </table>
 
