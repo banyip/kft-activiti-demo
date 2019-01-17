@@ -139,7 +139,7 @@ public class ZhuxueController {
    				Object value = variables.get(key);
    				String invokeClassName = "Audit";   				
    				int pos = (invokeClassName).length();
-   				int index = Integer.parseInt(key.substring(pos+2,pos+3));
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
    				List<Audit> audits = student.getAudits();
    				while(index>=audits.size())
    				{
@@ -149,7 +149,7 @@ public class ZhuxueController {
    				if(key.indexOf("auditPhoto")>0)
    				{
    					int photopos = "audit[0]_auditPhoto[0]".length();
-   					int photoindex = Integer.parseInt(key.substring(pos+2,pos+3));
+   					int photoindex = Integer.parseInt(key.substring(pos+1,pos+2));
    					List<AuditPhoto> auditphotos = audit.getAuditphotos();
    					while(photoindex>=auditphotos.size())
    					{
@@ -179,11 +179,11 @@ public class ZhuxueController {
 	        	{
 	 				String invokeClassName = "audit";   				
 	   				int pos = (invokeClassName).length();
-	   				int index = Integer.parseInt(filename.substring(pos+2,pos+3));
+	   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
 	   				List<Audit> audits =  student.getAudits();
 	   				Audit audit = audits.get(index);
 	   				pos = "audit[0]_auditPhoto".length();
-	   				index = Integer.parseInt(filename.substring(pos+2,pos+3));
+	   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
 	   				String whattosave=filename.substring(pos+5,pos+6).toUpperCase()+filename.substring(pos+6);
 	   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
 	   				while(index>=auditPhotos.size())
