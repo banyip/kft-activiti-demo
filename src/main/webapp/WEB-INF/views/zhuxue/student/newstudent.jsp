@@ -76,6 +76,18 @@
 		<td class="style11" style="width: 48pt">班号/专业</td>
 		<td class="style11">班主任姓名</td>
 		<td colspan="3" class="style11">联系电话</td>
-	</tr>
+    </tr>
+ 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
+		<input class="studentApply" id="student_school" name="school" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_grade" name="grade" />　</td>
+		<td class="style11" style="width: 48pt">
+		<input class="studentApply" id="student_className" name="className" />　</td>
+		<td class="style11">
+		<input class="studentApply" id="student_headTeacher" name="headTeacher" />　</td>
+		<td colspan="3" class="style10">
+		<input class="studentApply" id="student_schoolContactNo" name="schoolContactNo" />　</td>
+	</tr>   
 </table>
 
