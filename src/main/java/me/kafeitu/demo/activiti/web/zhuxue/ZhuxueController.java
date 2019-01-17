@@ -188,7 +188,7 @@ public class ZhuxueController {
 	   				Audit audit = audits.get(index);
 	   				pos = "audit[0]_auditPhoto".length();
 	   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
-	   				String whattosave=filename.substring(pos+5,pos+6).toUpperCase()+filename.substring(pos+6);
+	   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
 	   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
 	   				while(index>=auditPhotos.size())
 	   				{
