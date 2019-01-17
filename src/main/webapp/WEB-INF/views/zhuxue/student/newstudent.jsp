@@ -181,7 +181,7 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable()" />      
+					onclick="inserttable('yltable',	'div_bjbr')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable()" />
@@ -307,6 +307,8 @@
 		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
+	<tr><td colspan=8>		    <div id="div_adph">
+				<table class="auditPhoto" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt;" class="style9">
 				<input class="studentPhoto" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
@@ -321,22 +323,20 @@
 		<td colspan="3" class="style11">
 		<input  type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">　</td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
-		<td class="style11" style="width: 60pt">　</td>
-		<td class="style11">　</td>
-		<td class="style11" >　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style11">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
-		<td class="style11" style="width: 60pt">　</td>
-		<td class="style11">　</td>
-		<td class="style11" >　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style11">　</td>
-	</tr>
+	</table></div>
+	</td></tr>
+			<tr>
+				<td colspan="8">
+                <input class="studentApply" type="hidden"										
+				id="relative" />   
+					<input type="button" name="button"
+					value="新 增" style="width:60px; height:24px;"
+					onclick="inserttable('audiPhoto','div_adph')" />      
+					<input
+					type="button" name="button" value="删 除"
+					style="width:60px; height:24px;" onclick="deletetable()" />
+				</td>
+			</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style39">初审评价</td>
 	</tr>

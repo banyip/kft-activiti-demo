@@ -51,17 +51,15 @@ function countPoorScore()
 
 
 //增加
-function inserttable() {
-	var newnode = $('.yltable')[0].cloneNode(true);
+
+function inserttable(tableclass,divid) {
+	var newnode = $('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
-	content = content.replace(/\[0\]/g, "["+ $('#div_bjbr')[0].childElementCount + "]");
-	content = "<table class='yltable'>" + content + "</table>";
+	content = content.replace(/\[0\]/g, "["+ $('#'+divid)[0].childElementCount + "]");
+	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
-	if($('#div_bjbr')[0].childNodes.length <=6){
-    $('#div_bjbr').append(content);
-   	$('#relatives\\['+($('#div_bjbr')[0].childElementCount-1)+'\\]_birthDate').datetimepicker({
-            stepMinute: 5
-        });
+	if($('#'+divid)[0].childNodes.length <=6){
+    $('#'+divid).append(content);
 	}else{
 		alert("最多同时添加5个信息!");
 	}
@@ -78,8 +76,8 @@ function insertrow(classname,divname) {
 
 
 //删除
-function deletetable() {
-	var parent = $('#div_bjbr')[0];
+function deletetable(divid) {
+	var parent = $('#'+divid)[0];
 	if (parent.childNodes.length > 1) {
 		parent.removeChild(parent.lastChild);
 	}
