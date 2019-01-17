@@ -99,7 +99,7 @@ public class Audit extends IdEntity implements Serializable {
 	public void setAuditPerson(String auditPerson) {
 		this.auditPerson = auditPerson;
 	}
-	public void setAuditphotos(Set<AuditPhoto> auditphotos) {
+	public void setAuditphotos(List<AuditPhoto> auditphotos) {
 		this.auditphotos = auditphotos;
 	} 
     
