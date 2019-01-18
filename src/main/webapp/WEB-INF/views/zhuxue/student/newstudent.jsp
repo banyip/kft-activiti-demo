@@ -352,13 +352,11 @@
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
 		对学生个人评价</td>
-		<td colspan="6" class="style85"><span style="mso-spacerun:yes">
-		<input  class="studentApply" id="audit[0]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[0]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访结论</td>
-		<td colspan="6" class="style41"><span style="mso-spacerun:yes">
-		<input  class="studentApply" id="audit[0]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[0]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 158pt;" class="style39">是否通过审核</td>
@@ -368,16 +366,14 @@
 		</select>&nbsp;</td>
 		<td class="style44">&nbsp;</td>
 		<td class="style45" >审核人</td>
-		<td class="style45"><span style="mso-spacerun:yes">
-		<input  class="studentApply" id="audit[0]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
+		<td class="style45"><span style="mso-spacerun:yes"><input  class="studentApply" id="audit[0]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
 		<td class="style45">电话</td>
-		<td colspan="2" class="style41"><span style="mso-spacerun:yes">
+		<td colspan="2" class="style85"><span style="mso-spacerun:yes">
 		<input  class="studentApply" id="audit[0]_auditPersonContactNo" name="auditPersonContactNo" style="width: 124px" /></span>&nbsp;</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">申请评定表</td>
-		<td colspan="6" class="style85">
-		<input type="file" class="applyEvaluationPicture" id="audit[0]_applyEvaluationPicture" name="auditPhoto[0]_feedbackPhoto0" style="width: 80px">&nbsp;</td>
+		<td colspan="6" class="style85">　<input type="file" class="applyEvaluationPicture" id="audit[0]_applyEvaluationPicture" name="auditPhoto[0]_feedbackPhoto0" style="width: 303px">&nbsp;</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">评定表得分</td>
