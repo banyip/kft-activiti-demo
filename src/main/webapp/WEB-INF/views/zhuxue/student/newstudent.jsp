@@ -98,7 +98,7 @@
 		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-		<td style="height: 22pt;" class="style11">年龄</td>
+		<td style="height: 22pt; width: 158pt;" class="style11">年龄</td>
 		<td class="style11" style="height: 22pt">性别</td>
 		<td class="style11" style="height: 22pt">QQ</td>
 		<td class="style16" style="height: 22pt">邮箱</td>
@@ -108,7 +108,7 @@
 		<td class="style17" style="height: 22pt">结案原因</td>
     </tr>     
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style11">
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style11">
 		<input class="studentApply" id="student_age" name="age"  style="width: 50px"/>　</td>
 		<td class="style11" style="width: 60pt">
 		<input class="studentApply" id="student_sex" name="sex"  style="width: 50px"/>　</td>
@@ -130,18 +130,7 @@
 		&quot;共同生活&quot;家庭成员情况（如父母、亲兄弟姐妹，爷爷奶奶或外公外婆同住也需要登记在内）</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-	<td colspan="8"><table width="100%">
-					<colgroup>
-		<col width="83" >
-		<col width="72" span="2" >
-		<col width="99" >
-		<col width="93" >
-		<col width="70" >
-		<col width="74" >
-		<col width="66" >
-	</colgroup>
-	<tr>
-		<td height="26" style="height: 20.1pt;" class="style9">关系</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">关系</td>
 		<td class="style11">姓名</td>
 		<td class="style11">出生年月日</td>
 		<td class="style11" >联系电话</td>
@@ -149,9 +138,6 @@
 		<td class="style11">年收入</td>
 		<td class="style18">其他收入/补助</td>
 		<td class="style19">健康情况</td>
-    </tr>	
-    </table>
-   </td>
     </tr> 
     <tr>
 	    <td colspan=8>				    		
@@ -190,7 +176,7 @@
     </td>
     </tr>
 			<tr>
-				<td colspan="8">
+				<td colspan="8" class="style84">
                 <input class="studentApply" type="hidden"										
 				id="relative" />   
 					<input type="button" name="button"
@@ -204,7 +190,7 @@
 
     
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td rowspan="11" height="286" width="118" style="height: 221.1pt; width: 89pt; layout-flow: vertical-ideographic;" class="style23">
+		<td rowspan="11" height="286" style="height: 221.1pt; width: 158pt; layout-flow: vertical-ideographic;" class="style23">
 		家庭经济情况</td>
 		<td align="center" style="width: 60pt; layout-flow: vertical-ideographic;" class="style24">
 		主要收入</td>
@@ -273,7 +259,7 @@
 		4、欠债情况(有的请列出借贷原因）：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_debt" name="debt" style="width: 422px" /></span></td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-		<td rowspan="4" align="center" width="118" style="width: 89pt; layout-flow: vertical-ideographic;" class="style31">
+		<td rowspan="4" align="center" style="width: 158pt; layout-flow: vertical-ideographic;" class="style31">
 		<span style="mso-spacerun:yes">&nbsp;</span>住房情况<span style="mso-spacerun:yes">&nbsp;</span></td>
 		<td colspan="7" class="style32">1.√ 
 		<input  class="studentApply" id="student_ifSelfHouse" name="ifSelfHouse" type="checkbox" />自有房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>外观整体状况：√ 
@@ -313,7 +299,7 @@
 		相关走访资料上传</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-		<td style="height: 20pt;" class="style9">拍摄时间</td>
+		<td style="height: 20pt; width: 158pt;" class="style9">拍摄时间</td>
 		<td class="style11" style="width: 60pt; height: 20pt;">家庭环境照片</td>
 		<td class="style11" style="height: 20pt">学生个人独照</td>
 		<td class="style11" style="width: 48pt; height: 20pt;">反馈表照片</td>
@@ -324,15 +310,15 @@
 	<tr><td colspan=8>		    <div id="div_adph">
 				<table class="auditPhoto" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">
+		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
 				<input class="studentPhoto" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
-		<td class="style11" style="width: 60pt">
+		<td class="style11" style="width: 66pt">
 		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"></td>
-		<td class="style11">
+		<td class="style11" style="width: 123px">
 		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto" style="width: 80px">　</td>
-		<td class="style11" >
+		<td class="style11" style="width: 119px" >
 		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">　</td>
-		<td class="style11">
+		<td class="style11" style="width: 98px">
 		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">　</td>
 		<td colspan="3" class="style11">
 		<input  type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">　</td>
@@ -340,7 +326,7 @@
 	</table></div>
 	</td></tr>
 			<tr>
-				<td colspan="8">
+				<td colspan="8" class="style84">
                 <input class="studentApply" type="hidden"										
 				id="relative" />   
 					<input type="button" name="button"
@@ -351,39 +337,47 @@
 					style="width:60px; height:24px;" onclick="deletetable('div_adph')" />
 				</td>
 			</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style39">初审评价</td>
+	<tr style="mso-height-source:userset;">
+		<td colspan="8" style="height: 20pt" class="style39">初审评价</td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访时间</td>
-		<td class="style41" colspan="6">　</td>
+	<tr style="mso-height-source:userset;">
+		<td colspan="2" style="height: 20pt" class="style40">走访时间</td>
+		<td class="style85" colspan="6" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[0]_auditDate" name="auditDate" style="width: 95px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
 		家庭贫困原因</td>
-		<td colspan="6" class="style41">　</td>
+		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[0]_poorReason" name="poorReason" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
 		对学生个人评价</td>
-		<td colspan="6" class="style41">　</td>
+		<td colspan="6" class="style85"><span style="mso-spacerun:yes">
+		<input  class="studentApply" id="audit[0]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访结论</td>
-		<td colspan="6" class="style41">　</td>
+		<td colspan="6" class="style41"><span style="mso-spacerun:yes">
+		<input  class="studentApply" id="audit[0]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt">是（　）</td>
-		<td class="style44">否（　）</td>
-		<td class="style45" >审核人签名</td>
-		<td class="style45">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style39">是否通过审核</td>
+		<td class="style44" style="width: 60pt"><select class="studentApply" id="audit[0]_ifAuditPass" name="ifAuditPass">
+		<option selected="" value="true">是</option>
+		<option value="false">否</option>
+		</select>&nbsp;</td>
+		<td class="style44">&nbsp;</td>
+		<td class="style45" >审核人</td>
+		<td class="style45"><span style="mso-spacerun:yes">
+		<input  class="studentApply" id="audit[0]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
 		<td class="style45">电话</td>
-		<td colspan="2" class="style41">　</td>
+		<td colspan="2" class="style41"><span style="mso-spacerun:yes">
+		<input  class="studentApply" id="audit[0]_auditPersonContactNo" name="auditPersonContactNo" style="width: 124px" /></span>&nbsp;</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">申请评定表</td>
-		<td colspan="6" class="style41">照片上传</td>
+		<td colspan="6" class="style85">
+		<input type="file" class="applyEvaluationPicture" id="audit[0]_applyEvaluationPicture" name="auditPhoto[0]_feedbackPhoto0" style="width: 80px">&nbsp;</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">评定表得分</td>
@@ -394,7 +388,7 @@
 		<td colspan="6" class="style41">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style39">是否通过审核</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style39">是否通过审核</td>
 		<td class="style44" style="width: 60pt">是（　）</td>
 		<td class="style44">否（　）</td>
 		<td class="style45" >审核人签名</td>
@@ -411,7 +405,7 @@
 		<td colspan="8" height="26" style="height: 20.1pt" class="style48">考试成绩</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">考试时间</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">考试时间</td>
 		<td class="style11" style="width: 60pt">语文</td>
 		<td class="style11">英语</td>
 		<td class="style11" >数学</td>
@@ -421,7 +415,7 @@
 		<td class="style19">年级排名</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -431,7 +425,7 @@
 		<td class="style19">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -441,7 +435,7 @@
 		<td class="style19">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -451,7 +445,7 @@
 		<td class="style19">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -461,7 +455,7 @@
 		<td class="style19">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style20">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style20">　</td>
 		<td class="style21" style="width: 60pt">　</td>
 		<td class="style21">　</td>
 		<td class="style21" >　</td>
@@ -474,7 +468,7 @@
 		<td colspan="8" height="26" style="height: 20.1pt" class="style9">发款信息登记</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt" class="style49">日期</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style49">日期</td>
 		<td class="style50" style="width: 60pt">金额</td>
 		<td class="style50">发款学期</td>
 		<td class="style50" >发款方式</td>
@@ -482,7 +476,7 @@
 		<td colspan="3" class="style50">联系电话</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -490,7 +484,7 @@
 		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style51">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style51">　</td>
 		<td class="style52" style="width: 60pt">　</td>
 		<td class="style52">　</td>
 		<td class="style52" >　</td>
@@ -502,7 +496,7 @@
 		通信记录登记</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt" class="style49">日期</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style49">日期</td>
 		<td class="style50" style="width: 60pt">信件内容</td>
 		<td class="style50">照片上传</td>
 		<td class="style50" >日期</td>
@@ -510,7 +504,7 @@
 		<td colspan="3" class="style53">照片上传</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -518,7 +512,7 @@
 		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt" class="style54">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style54">　</td>
 		<td class="style55" style="width: 60pt">　</td>
 		<td class="style55">　</td>
 		<td class="style55" >　</td>
@@ -530,38 +524,38 @@
 		学生情况评估</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">时间</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">时间</td>
 		<td class="style11" style="width: 60pt">信息提供人</td>
 		<td class="style11">家庭情况变化</td>
 		<td colspan="5" class="style57">
 		学生性格、学习情况(交流沟通、性格、学习态度、学习成绩、爱心情况等）</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style16" style="width: 60pt">　</td>
 		<td class="style16">　</td>
 		<td colspan="5" class="style10">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style16" style="width: 60pt">　</td>
 		<td class="style16">　</td>
 		<td colspan="5" class="style10">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style39">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style39">　</td>
 		<td class="style45" style="width: 60pt">　</td>
 		<td class="style45">　</td>
 		<td colspan="5" class="style10">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style39">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style39">　</td>
 		<td class="style45" style="width: 60pt">　</td>
 		<td class="style45">　</td>
 		<td colspan="5" class="style10">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style58">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style58">　</td>
 		<td class="style59" style="width: 60pt">　</td>
 		<td class="style59">　</td>
 		<td colspan="5" class="style10">　</td>
@@ -571,7 +565,7 @@
 		相关走访资料上传</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">拍摄时间</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">拍摄时间</td>
 		<td class="style11" style="width: 60pt">家庭环境照片</td>
 		<td class="style11">学生个人独照</td>
 		<td class="style11" >反馈表照片</td>
@@ -580,7 +574,7 @@
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -588,7 +582,7 @@
 		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -596,7 +590,7 @@
 		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -630,7 +624,7 @@
 		<td colspan="6" class="style41">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style61">是否通过审核</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style61">是否通过审核</td>
 		<td class="style62" style="width: 60pt">是（　）</td>
 		<td class="style62">否（　）</td>
 		<td class="style63" >审核人签名</td>
@@ -643,7 +637,7 @@
 		相关走访资料上传</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">拍摄时间</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">拍摄时间</td>
 		<td class="style11" style="width: 60pt">家庭环境照片</td>
 		<td class="style11">学生个人独照</td>
 		<td class="style11" >反馈表照片</td>
@@ -652,7 +646,7 @@
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -660,7 +654,7 @@
 		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -668,7 +662,7 @@
 		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style9">　</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style9">　</td>
 		<td class="style11" style="width: 60pt">　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -702,7 +696,7 @@
 		<td colspan="6" class="style41">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style61">是否通过审核</td>
+		<td height="26" style="height: 20.1pt; width: 158pt;" class="style61">是否通过审核</td>
 		<td class="style62" style="width: 60pt">是（　）</td>
 		<td class="style62">否（　）</td>
 		<td class="style63" >审核人签名</td>

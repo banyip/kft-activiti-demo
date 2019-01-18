@@ -43,6 +43,8 @@ public class Audit extends IdEntity implements Serializable {
     private String auditResult;
     private String ifAuditPass;
     private String auditPerson;
+    private String auditPersonContactNo;
+    private String applyEvaluationPicture;
     private List<AuditPhoto> auditphotos = new ArrayList <AuditPhoto>();
     
     @Column
