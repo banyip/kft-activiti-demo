@@ -342,25 +342,25 @@
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style40">走访时间</td>
-		<td class="style85" colspan="6" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentEdit" id="audit[0]_auditDate" name="auditDate" style="width: 95px" /></span></td>
+		<td class="style85" colspan="6" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentEdit" id="audit[0]_auditDate" name="audit[0]_auditDate" style="width: 95px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
 		家庭贫困原因</td>
-		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentEdit" id="audit[0]_poorReason" name="poorReason" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentEdit" id="audit[0]_poorReason" name="audit[0]_poorReason" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
 		对学生个人评价</td>
-		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentEdit" id="audit[0]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentEdit" id="audit[0]_studentEvaluation" name="audit[0]_studentEvaluation" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访结论</td>
-		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentEdit" id="audit[0]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentEdit" id="audit[0]_auditResult" name="audit[0]_auditResult" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 158pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt"><select class="studentEdit" id="audit[0]_ifAuditPass" name="ifAuditPass">
+		<td class="style44" style="width: 60pt"><select class="studentEdit" id="audit[0]_ifAuditPass" name="audit[0]_ifAuditPass">
 		<option selected="" value="true">是</option>
 		<option value="false">否</option>
 		</select>&nbsp;</td>
