@@ -130,6 +130,17 @@
 		&quot;共同生活&quot;家庭成员情况（如父母、亲兄弟姐妹，爷爷奶奶或外公外婆同住也需要登记在内）</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	<td colspan="8"><table width="100%">
+					<colgroup>
+		<col width="83" >
+		<col width="72" span="2" >
+		<col width="99" >
+		<col width="93" >
+		<col width="70" >
+		<col width="74" >
+		<col width="66" >
+	</colgroup>
+	<tr>
 		<td height="26" style="height: 20.1pt;" class="style9">关系</td>
 		<td class="style11">姓名</td>
 		<td class="style11">出生年月日</td>
@@ -138,7 +149,10 @@
 		<td class="style11">年收入</td>
 		<td class="style18">其他收入/补助</td>
 		<td class="style19">健康情况</td>
-    </tr>
+    </tr>	
+    </table>
+   </td>
+    </tr> 
     <tr>
 	    <td colspan=8>				    		
 		    <div id="div_bjbr">
