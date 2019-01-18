@@ -161,7 +161,7 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
                             for(var j=0;j<eval('v['+i+'].'+key).length;j++)
                                 {
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
-                                        $('a#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentPhoto').attr('href',ctx+'showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
+                                        $('a#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentEditPhoto').attr('href',ctx+'showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                     //add line
                                 }   
                         
