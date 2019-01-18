@@ -150,6 +150,26 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
                     for(let key in v[i])
                         $('input[name=relatives\\['+i+'\\]_' + key+'.studentEdit').val(eval('v['+i+'].'+key));   
                 }
+            }
+            else if (k == 'audits') 
+            {                
+                for(var i=0;i<v.length;i++)
+                {   
+                    for(let key in v[i])
+                    {
+                        if(key=="auditphotos")                  
+                            for(var j=0;j<eval('v['+i+'].'+key).length;j++)
+                                {
+                                    for(let photokey in eval('v['+i+'].'+key))
+                                        $('a[name=audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentEdit').attr('href',ctx+'showPic/'+eval('v['+i+'].'+key+'['+j+']'+photokey));
+                                    //add line
+                                }   
+                        
+                        else
+                        $('input[name=audits\\['+i+'\\]_' + key+'.studentEdit').val(eval('v['+i+'].'+key));   
+                
+                    }
+                }
             } else if (k.substr(0,2) == 'if') 
             {
                 if(v=="true")
