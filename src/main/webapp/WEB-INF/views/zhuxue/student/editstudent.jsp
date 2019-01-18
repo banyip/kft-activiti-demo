@@ -311,17 +311,17 @@
 				<table class="auditPhoto" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
-				<input class="studentEditPhoto" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
+				<input class="studentEditPhoto" type="text" id="audits[0]_auditPhotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
 		<td class="style11" style="width: 66pt">
-		<a class="studentEditPhoto" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">显示图片</a></td>
+		<a class="studentEditPhoto" id="audits[0]_auditPhotos[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">显示图片</a></td>
 		<td class="style11" style="width: 123px">
-		<a class="studentEditPhoto" id="audit[0]_auditPhoto[0]_studentEditPhoto" name="auditPhoto[0]_studentEditPhoto" style="width: 80px">显示图片</a>　</td>
+		<a class="studentEditPhoto" id="audits[0]_auditPhotos[0]_studentEditPhoto" name="auditPhoto[0]_studentEditPhoto" style="width: 80px">显示图片</a>　</td>
 		<td class="style11" style="width: 119px" >
-		<a class="studentEditPhoto" id="audit[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">显示图片</a>　</td>
+		<a class="studentEditPhoto" id="audits[0]_auditPhotos[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">显示图片</a>　</td>
 		<td class="style11" style="width: 98px">
-		<a class="studentEditPhoto" id="audit[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">显示图片</a>　</td>
+		<a class="studentEditPhoto" id="audits[0]_auditPhotos[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">显示图片</a>　</td>
 		<td colspan="3" class="style11">
-		<a class="studentEditPhoto" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">显示图片</a>　</td>
+		<a class="studentEditPhoto" id="audits[0]_auditPhotos[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">显示图片</a>　</td>
 	</tr>
 	</table></div>
 	</td></tr>
