@@ -52,7 +52,9 @@ function countPoorScore()
 
 //增加
 
-function inserttable(tableclass,divid) {
+function inserttable(whichpart) {
+    tableclass='class_'+whichpart
+    divid="div_"+whichpart
 	var newnode = $('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
 	content = content.replace(/\[0\]/g, "["+ $('#'+divid)[0].childElementCount + "]");
@@ -77,7 +79,7 @@ function insertrow(classname,divname) {
 
 //删除
 function deletetable(divid) {
-	var parent = $('#'+divid)[0];
+	var parent = $('#div_'+divid)[0];
 	if (parent.childNodes.length > 1) {
 		parent.removeChild(parent.lastChild);
 	}
