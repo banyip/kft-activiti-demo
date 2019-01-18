@@ -161,7 +161,7 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
                             for(var j=0;j<eval('v['+i+'].'+key).length;j++)
                                 {
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
-                                        if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey)>0)
+                                        if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey).length>0)
                                             $('a#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentEditPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                     //add line
                                 }   
