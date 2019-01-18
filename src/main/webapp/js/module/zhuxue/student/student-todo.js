@@ -161,12 +161,12 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
                             for(var j=0;j<eval('v['+i+'].'+key).length;j++)
                                 {
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
-                                        $('a[name=audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'].studentEdit').attr('href',ctx+'showPic/'+eval('v['+i+'].'+key+'['+j+']'+photokey));
+                                        $('a[name="audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'"].studentEdit').attr('href',ctx+'showPic/'+eval('v['+i+'].'+key+'['+j+']'+photokey));
                                     //add line
                                 }   
                         
                         else
-                        $('input[name=audits\\['+i+'\\]_' + key+'].studentEdit').val(eval('v['+i+'].'+key));   
+                        $('input[name="audits\\['+i+'\\]_' + key+'"].studentEdit').val(eval('v['+i+'].'+key));   
                 
                     }
                 }
