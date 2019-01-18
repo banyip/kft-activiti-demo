@@ -148,7 +148,7 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
                 for(var i=0;i<v.length;i++)
                 {   
                     for(let key in v[i])
-                        $('input[name=relatives\\['+i+'\\]_' + key+'].studentEdit').val(eval('v['+i+'].'+key));   
+                        $('input[name="relatives\\['+i+'\\]_' + key+'"].studentEdit').val(eval('v['+i+'].'+key));   
                 }
             }
             else if (k == 'audits') 
