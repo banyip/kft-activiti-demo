@@ -311,7 +311,7 @@
 				<table class="auditPhoto" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
-				<input class="studentPhoto" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
+				<input class="studentApply" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
 		<td class="style11" style="width: 66pt">
 		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"></td>
 		<td class="style11" style="width: 123px">
