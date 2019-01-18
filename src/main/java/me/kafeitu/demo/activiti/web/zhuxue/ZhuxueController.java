@@ -262,7 +262,7 @@ public class ZhuxueController {
     public void showPicture(@PathVariable("fileName") String fileName,
                             @PathVariable("suffix") String suffix,
                             HttpServletResponse response){
-        File imgFile = new File("/pictures/" + fileName + "." + suffix);
+        File imgFile = new File("pictures/" + fileName + "." + suffix);
         responseFile(response, imgFile);
     }
 
