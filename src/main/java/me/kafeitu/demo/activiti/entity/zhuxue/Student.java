@@ -691,21 +691,21 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	@Column(length = 50)
-	public String getHeadteacher() {
-		return headteacher;
+	public String getHeadTeacher() {
+		return headTeacher;
 	}
 
-	public void setHeadteacher(String headteacher) {
-		this.headteacher = headteacher;
+	public void setHeadTeacher(String headTeacher) {
+		this.headTeacher = headTeacher;
 	}
 
 	@Column(length = 50)
-	public String getHeadteachercontactNum() {
-		return headteachercontactNum;
+	public String getHeadTeachercontactNum() {
+		return headTeachercontactNum;
 	}
 
-	public void setHeadteachercontactNum(String headteachercontactNum) {
-		this.headteachercontactNum = headteachercontactNum;
+	public void setHeadTeachercontactNum(String headTeachercontactNum) {
+		this.headTeachercontactNum = headTeachercontactNum;
 	}
 
 	@Column(length = 50)
@@ -769,8 +769,8 @@ public class Student extends IdEntity implements Serializable {
     private String applicantContactNum;
     private String schoolPerfomance;
     private String ifAgreeToPublish;
-    private String headteacher;
-    private String headteachercontactNum;
+    private String headTeacher;
+    private String headTeachercontactNum;
     /*
     private Applicant applicant;
     @ManyToOne
@@ -811,15 +811,15 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	/*
-	private Headteacher headteacher;
+	private HeadTeacher headTeacher;
     @ManyToOne
-    @JoinColumn(name = "headteacherid")
-	public Headteacher getHeadteacher() {
-		return headteacher;
+    @JoinColumn(name = "headTeacherid")
+	public HeadTeacher getHeadTeacher() {
+		return headTeacher;
 	}
 
-	public void setHeadteacher(Headteacher headteacher) {
-		this.headteacher = headteacher;
+	public void setHeadTeacher(HeadTeacher headTeacher) {
+		this.headTeacher = headTeacher;
 	}
 */
 	

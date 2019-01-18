@@ -158,7 +158,7 @@ public class ZhuxueController {
    					AuditPhoto auditphoto = auditphotos.get(photoindex);
    					auditphoto.setPhotoDate((String) value);
    				}
-   				String methodname="set" + key.substring(pos+5,pos+6).toUpperCase()+key.substring(pos+6);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
    				
    				invoke(methodname,value,(Object)audits.get(index),invokeClassName,"java.lang.String");   					
    			}
