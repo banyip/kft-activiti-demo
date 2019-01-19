@@ -9,6 +9,7 @@ $(function() {
     $('[id$="Time"],[id$="Date"]').datetimepicker({
             stepMinute: 5
     });
+    $('[id$="Time"],[id$="Date"]').datetimepicker('setDate', new Date());
     // 签收
     $('.claim').button({
         icons: {
