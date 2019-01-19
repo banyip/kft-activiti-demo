@@ -186,6 +186,10 @@ public class Student extends IdEntity implements Serializable {
 
 	private Set<Relative> relatives = new HashSet<Relative>();
 
+	private String relativeSponse;
+	
+	private String relativeSponseIncome;
+	
 	private String rentFee;
 
 	private String rentFrom;
@@ -231,7 +235,20 @@ public class Student extends IdEntity implements Serializable {
     private List<Evaluate> evaluates= new ArrayList<Evaluate>();
     
  
-
+    @Column(length = 50)
+    public String getRelativeSponseIncome() {
+		return relativeSponseIncome;
+	}
+	public void setRelativeSponseIncome(String relativeSponseIncome) {
+		this.relativeSponseIncome = relativeSponseIncome;
+	}
+	@Column(length = 50)
+	public String getRelativeSponse() {
+		return relativeSponse;
+	}
+	public void setRelativeSponse(String relativeSponse) {
+		this.relativeSponse = relativeSponse;
+	}
 	@Column
 	@OneToMany(cascade = {CascadeType.ALL})
 	public List<Evaluate> getEvaluates() {

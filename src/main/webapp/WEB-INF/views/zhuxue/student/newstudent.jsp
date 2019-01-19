@@ -465,7 +465,7 @@
 				<table class="class_transfers" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
-				<input class="studentApply" type="text" id="transfers[0]_examTime" name="examTime" style="width: 86px"></td>
+				<input class="studentApply" type="text" id="transfers[0]_transferTime" name="transferTime" style="width: 86px"></td>
 		<td class="style11" style="width: 60pt">
 				<input class="studentApply" type="text" id="transfers[0]_amount" name="amount" style="width: 86px"></td>
 		<td class="style11">

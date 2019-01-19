@@ -251,6 +251,8 @@ public class ZhuxueController {
         for(int i=0;i<fileNameList.length;i++)
         {
         	String filename = fileNameList[i];
+        	if(studentPictureFiles.length>0)
+        	{
         	MultipartFile studentPictureFile = studentPictureFiles[i];
 	   		if(!studentPictureFile.isEmpty())
 	        {

@@ -41,12 +41,46 @@ public class Audit extends IdEntity implements Serializable {
     private String auditResult;
     private String ifAuditPass;
     private String auditPerson;
+    private String evaluateScore;
     private String auditPersonContactNo;
+    private String supplemetaryEvaluation;
     private String applyEvaluationPicture;
     private List<AuditPhoto> auditphotos = new ArrayList <AuditPhoto>();
     
 
-    @Column
+    @Column( length = 50)
+    public String getEvaluateScore() {
+		return evaluateScore;
+	}
+    @Column( length = 50)
+	public String getAuditPersonContactNo() {
+		return auditPersonContactNo;
+	}
+    @Column( length = 50)
+	public String getSupplemetaryEvaluation() {
+		return supplemetaryEvaluation;
+	}
+    @Column( length = 50)
+	public String getApplyEvaluationPicture() {
+		return applyEvaluationPicture;
+	}
+    @Column( length = 50)
+	public void setEvaluateScore(String evaluateScore) {
+		this.evaluateScore = evaluateScore;
+	}
+    @Column( length = 50)
+	public void setAuditPersonContactNo(String auditPersonContactNo) {
+		this.auditPersonContactNo = auditPersonContactNo;
+	}
+    @Column( length = 50)
+	public void setSupplemetaryEvaluation(String supplemetaryEvaluation) {
+		this.supplemetaryEvaluation = supplemetaryEvaluation;
+	}
+    @Column( length = 50)
+	public void setApplyEvaluationPicture(String applyEvaluationPicture) {
+		this.applyEvaluationPicture = applyEvaluationPicture;
+	}
+	@Column
 	public String getAuditDate() {
 		return auditDate;
 	}
