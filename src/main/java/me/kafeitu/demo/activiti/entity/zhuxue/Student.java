@@ -231,6 +231,7 @@ public class Student extends IdEntity implements Serializable {
     private List<Evaluate> evaluates= new ArrayList<Evaluate>();
     
  
+
 	@Column
 	@OneToMany(cascade = {CascadeType.ALL})
 	public List<Evaluate> getEvaluates() {
@@ -1284,7 +1285,12 @@ public class Student extends IdEntity implements Serializable {
 	public void setEvaluates(List<Evaluate> evaluates) {
 		this.evaluates = evaluates;
 	}
-
+	public void setTransfers(List<Transfer> transfers) {
+		this.transfers = transfers;
+	}
+	public void setCommunicates(List<Communicate> communicates) {
+		this.communicates = communicates;
+	}
 	
 
 }

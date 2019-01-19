@@ -86,6 +86,9 @@ public class Transfer extends IdEntity implements Serializable {
 	public void setContactNo(String contactNo) {
 		this.contactNo = contactNo;
 	}
+	public Transfer() {
+		super();
+	}
     
     
     

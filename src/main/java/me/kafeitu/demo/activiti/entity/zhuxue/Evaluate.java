@@ -70,6 +70,11 @@ public class Evaluate extends IdEntity implements Serializable {
 		public void setStudentSituation(String studentSituation) {
 			this.studentSituation = studentSituation;
 		}
+
+		public Evaluate() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
    
     
 

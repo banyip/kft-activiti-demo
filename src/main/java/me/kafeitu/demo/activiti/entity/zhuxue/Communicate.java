@@ -86,6 +86,11 @@ public class Communicate extends IdEntity implements Serializable {
         m.invoke(this,p);
         
 	}
+
+	public Communicate() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
     
     
     
