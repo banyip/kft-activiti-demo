@@ -74,6 +74,9 @@ public class Transfer extends IdEntity implements Serializable {
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
+	public void setAmount(String amount) {
+		this.amount = Integer.parseInt(amount);
+	}
 	public void setSemester(String semester) {
 		this.semester = semester;
 	}

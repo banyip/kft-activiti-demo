@@ -294,6 +294,8 @@
 		<input  class="studentApply" id="student_ifRentHighClass" name="ifRentHighClass" type="checkbox" /></span>高档</td>
 		<td class="style36" style="height: 20pt">　</td>
 	</tr>
+		<tr><td colspan=8>		    <div id="div_auditphotos">
+				<table class="class_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
 		相关走访资料上传</td>
@@ -307,7 +309,7 @@
 		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
-	<tr><td colspan=8>		    <div id="div_auditphotos">
+	<tr><td colspan=8><div id="div_auditphotos">
 				<table class="class_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
@@ -354,9 +356,9 @@
 		对学生个人评价</td>
 		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[0]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访结论</td>
-		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[0]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
+	<tr style="mso-height-source:userset;">
+		<td colspan="2" style="height: 20pt" class="style40">走访结论</td>
+		<td colspan="6" class="style85" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[0]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
@@ -392,6 +394,9 @@
 		<td class="style45">电话</td>
 		<td colspan="2" class="style41">　</td>
 	</tr>
+	</table></div>
+	</td></tr>
+
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="3" height="26" style="height: 20.1pt" class="style46">
 		官网上线发布时间</td>
@@ -581,152 +586,102 @@
 				</td>
 			</tr>
 
+	<tr><td colspan=8>		    <div id="div_audits">
+				<table class="class_audits" width="100%">	
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
+		相关走访资料上传</td>
+	</tr>
+	<tr style="mso-height-source:userset;">
+		<td style="height: 20pt; width: 149pt;" class="style9">拍摄时间</td>
+		<td class="style11" style="width: 60pt; height: 20pt;">家庭环境照片</td>
+		<td class="style11" style="height: 20pt">学生个人独照</td>
+		<td class="style11" style="width: 48pt; height: 20pt;">反馈表照片</td>
+		<td class="style11" style="height: 20pt">发款签收照片</td>
+		<td colspan="3" class="style38" style="height: 20pt">
+		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
+	</tr>
+	<tr><td colspan=8>		    <div id="div_auditphotos">
+				<table class="class_auditphotos" width="100%">
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
+				&nbsp;</td>
+		<td class="style11" style="width: 66pt">
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"></td>
+		<td class="style11" style="width: 123px">
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto" style="width: 80px">　</td>
+		<td class="style11" style="width: 119px" >
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">　</td>
+		<td class="style11" style="width: 98px">
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">　</td>
+		<td colspan="3" class="style11">
+		<input  type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">　</td>
+	</tr>
+	</table></div>
+	</td></tr>
+			<tr>
+				<td colspan="8" class="style1">
+                <input class="studentApply" type="hidden"										
+				id="relative" />   
+					<input type="button" name="button"
+					value="新 增" style="width:60px; height:24px;"
+					onclick="inserttable('auditphotos')" />      
+					<input
+					type="button" name="button" value="删 除"
+					style="width:60px; height:24px;" onclick="deletetable('auditphotos')" />
+				</td>
+			</tr>
+	<tr style="mso-height-source:userset;">
+		<td colspan="8" style="height: 20pt" class="style39">初审评价</td>
+	</tr>
+	<tr style="mso-height-source:userset;">
+		<td colspan="2" style="height: 20pt" class="style40">走访时间</td>
+		<td class="style85" colspan="6" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[1]_auditDate" name="auditDate" style="width: 95px" /></span></td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
+		家庭贫困原因</td>
+		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[1]_poorReason" name="poorReason" style="width: 422px" /></span>　</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
+		对学生个人评价</td>
+		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[1]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
+	</tr>
+	<tr style="mso-height-source:userset;">
+		<td colspan="2" style="height: 20pt" class="style40">走访结论</td>
+		<td colspan="6" class="style85" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audit[1]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
+		<td class="style44" style="width: 60pt"><select class="studentApply" id="audit[1]_ifAuditPass" name="ifAuditPass">
+		<option selected="" value="true">是</option>
+		<option value="false">否</option>
+		</select>&nbsp;</td>
+		<td class="style44">&nbsp;</td>
+		<td class="style45" >审核人</td>
+		<td class="style45"><span style="mso-spacerun:yes"><input  class="studentApply" id="audit[1]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
+		<td class="style45">电话</td>
+		<td colspan="2" class="style85"><span style="mso-spacerun:yes">
+		<input  class="studentApply" id="audit[1]_auditPersonContactNo" name="auditPersonContactNo" style="width: 124px" /></span>&nbsp;</td>
+	</tr>
+	</table></div>
+	</td>
+	</tr>
+				<tr>
+				<td colspan="8" class="style1">
+                <input class="studentApply" type="hidden"										
+				id="relative" />   
+					<input type="button" name="button"
+					value="新 增" style="width:60px; height:24px;"
+					onclick="inserttable('audits')" />      
+					<input
+					type="button" name="button" value="删 除"
+					style="width:60px; height:24px;" onclick="deletetable('audits')" />
+				</td>
+			</tr>
 	
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style60">
-		相关走访资料上传</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">拍摄时间</td>
-		<td class="style11" style="width: 60pt">家庭环境照片</td>
-		<td class="style11">学生个人独照</td>
-		<td class="style11" >反馈表照片</td>
-		<td class="style11">发款签收照片</td>
-		<td colspan="3" class="style38">
-		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">　</td>
-		<td class="style11" style="width: 60pt">　</td>
-		<td class="style11">　</td>
-		<td class="style11" >　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style11">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">　</td>
-		<td class="style11" style="width: 60pt">　</td>
-		<td class="style11">　</td>
-		<td class="style11" >　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style11">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">　</td>
-		<td class="style11" style="width: 60pt">　</td>
-		<td class="style11">　</td>
-		<td class="style11" >　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style11">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style39">复查评价1</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访时间</td>
-		<td class="style41">　</td>
-		<td class="style42" >　</td>
-		<td class="style42">　</td>
-		<td class="style42">　</td>
-		<td class="style42">　</td>
-		<td class="style43">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
-		家庭贫困原因</td>
-		<td colspan="6" class="style41">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
-		对学生个人评价</td>
-		<td colspan="6" class="style41">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访结论</td>
-		<td colspan="6" class="style41">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style61">是否通过审核</td>
-		<td class="style62" style="width: 60pt">是（　）</td>
-		<td class="style62">否（　）</td>
-		<td class="style63" >审核人签名</td>
-		<td class="style63">　</td>
-		<td class="style63">电话</td>
-		<td colspan="2" class="style47">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style60">
-		相关走访资料上传</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">拍摄时间</td>
-		<td class="style11" style="width: 60pt">家庭环境照片</td>
-		<td class="style11">学生个人独照</td>
-		<td class="style11" >反馈表照片</td>
-		<td class="style11">发款签收照片</td>
-		<td colspan="3" class="style38">
-		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">　</td>
-		<td class="style11" style="width: 60pt">　</td>
-		<td class="style11">　</td>
-		<td class="style11" >　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style11">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">　</td>
-		<td class="style11" style="width: 60pt">　</td>
-		<td class="style11">　</td>
-		<td class="style11" >　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style11">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">　</td>
-		<td class="style11" style="width: 60pt">　</td>
-		<td class="style11">　</td>
-		<td class="style11" >　</td>
-		<td class="style11">　</td>
-		<td colspan="3" class="style11">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style64">复查评价2</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访时间</td>
-		<td class="style41">　</td>
-		<td class="style42" >　</td>
-		<td class="style42">　</td>
-		<td class="style42">　</td>
-		<td class="style42">　</td>
-		<td class="style43">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
-		家庭贫困原因</td>
-		<td colspan="6" class="style41">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
-		对学生个人评价</td>
-		<td colspan="6" class="style41">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style40">走访结论</td>
-		<td colspan="6" class="style41">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style61">是否通过审核</td>
-		<td class="style62" style="width: 60pt">是（　）</td>
-		<td class="style62">否（　）</td>
-		<td class="style63" >审核人签名</td>
-		<td class="style63">　</td>
-		<td class="style63">电话</td>
-		<td colspan="2" class="style47">　</td>
-	</tr>
-</table>
+	</table>
 
 
 

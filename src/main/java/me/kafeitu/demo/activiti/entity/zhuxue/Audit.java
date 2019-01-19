@@ -35,9 +35,7 @@ public class Audit extends IdEntity implements Serializable {
 		
 	}
 
-    private String auditTime;
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")    
-    private Date auditDate;
+    private String auditDate;
     private String poorReason;
     private String studentEvaluation;
     private String auditResult;
@@ -47,12 +45,9 @@ public class Audit extends IdEntity implements Serializable {
     private String applyEvaluationPicture;
     private List<AuditPhoto> auditphotos = new ArrayList <AuditPhoto>();
     
+
     @Column
-	public String getAuditTime() {
-		return auditTime;
-	}
-    @Column
-	public Date getAuditDate() {
+	public String getAuditDate() {
 		return auditDate;
 	}
     @Column
@@ -80,10 +75,7 @@ public class Audit extends IdEntity implements Serializable {
 	public List<AuditPhoto> getAuditphotos() {
 		return auditphotos;
 	}
-	public void setAuditTime(String auditTime) {
-		this.auditTime = auditTime;
-	}
-	public void setAuditDate(Date auditDate) {
+	public void setAuditDate(String auditDate) {
 		this.auditDate = auditDate;
 	}
 	public void setPoorReason(String poorReason) {
