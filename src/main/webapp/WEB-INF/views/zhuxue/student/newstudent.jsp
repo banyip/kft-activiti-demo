@@ -679,7 +679,7 @@
 					onclick="insertaudit()" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('audits')" />
+					style="width:60px; height:24px;" onclick="deletetable('audit')" />
 				</td>
 			</tr>
 	
