@@ -85,7 +85,8 @@ function insertaudit() {
     divid="div_audit";
 	var newnode = $('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
-	content = content.replace(/audit\[0\]/g, "audit["+ $('.'+tableclass).length + "]");
+    content = content.replace(/audit\[0\]/g, "audit["+ $('.'+tableclass).length + "]");
+    content = content.replace(/audit\\\\\[0\\\\\]/g, "audit\\\\\["+ $('.'+tableclass).length + "\\\\\]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
 	if($('.'+tableclass).length <=6){
