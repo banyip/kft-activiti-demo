@@ -65,6 +65,9 @@ function inserttable(whichpart) {
 	
 	if($('#'+divid)[0].childNodes.length <=6){
     $('#'+divid).append(content);
+    $('[id$="Time"],[id$="Date"]').datetimepicker({
+            stepMinute: 5
+    });
 	}else{
 		alert("最多同时添加5个信息!");
 	}
