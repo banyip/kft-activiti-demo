@@ -36,7 +36,7 @@ $(function() {
 });
 
 $('[id$="Time"],[id$="Date"]').ready(function(){
-    this.datetimepicker({
+    $('[id$="Time"],[id$="Date"]').datetimepicker({
             stepMinute: 5
     });
 })
@@ -78,6 +78,42 @@ function inserttable(whichpart) {
 		alert("最多同时添加5个信息!");
 	}
 }
+
+//add audit part
+function insertaudit() {
+    tableclass='class_audit'
+    divid="div_audit";
+	var newnode = $('.'+tableclass)[0].cloneNode(true);
+    var content = newnode.innerHTML;
+	content = content.replace(/audit\[0\]/g, "audit["+ $('.'+tableclass).length + "]");
+	content = "<table class='"+tableclass+"'>" + content + "</table>";
+	
+	if($('.'+tableclass).length <=6){
+    $('#'+divid).append(content);
+
+	}else{
+		alert("最多同时添加5个信息!");
+	}
+}
+
+function insertauditphotos() {
+    tableclass='class_'+whichpart
+    divid="div_"+whichpart
+	var newnode = $('.'+tableclass)[0].cloneNode(true);
+    var content = newnode.innerHTML;
+	content = content.replace(/\[0\]/g, "["+ $('#'+divid)[0].childElementCount + "]");
+	content = "<table class='"+tableclass+"'>" + content + "</table>";
+	
+	if($('#'+divid)[0].childNodes.length <=6){
+    $('#'+divid).append(content);
+    $('[id$="Time"],[id$="Date"]').datetimepicker({
+            stepMinute: 5
+    });
+	}else{
+		alert("最多同时添加5个信息!");
+	}
+}
+
 
 function insertrow(classname,divname) {
 	var newnode = $('.'+classname)[0].cloneNode(true);

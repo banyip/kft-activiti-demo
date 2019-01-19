@@ -294,8 +294,8 @@
 		<input  class="studentApply" id="student_ifRentHighClass" name="ifRentHighClass" type="checkbox" /></span>高档</td>
 		<td class="style36" style="height: 20pt">　</td>
 	</tr>
-		<tr><td colspan=8>		    <div id="div_auditphotos">
-				<table class="class_auditphotos" width="100%">
+		<tr><td colspan=8>		    
+				<table class="class_audit" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
 		相关走访资料上传</td>
@@ -313,7 +313,7 @@
 				<table class="class_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
-				&nbsp;</td>
+		<input type="file" class="studentApply" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 80px"></td>
 		<td class="style11" style="width: 66pt">
 		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"></td>
 		<td class="style11" style="width: 123px">
@@ -325,7 +325,7 @@
 		<td colspan="3" class="style11">
 		<input  type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">　</td>
 	</tr>
-	</table></div>
+	</table>
 	</td></tr>
 			<tr>
 				<td colspan="8" class="style1">
@@ -601,8 +601,8 @@
 		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
-	<tr><td colspan=8>		    <div id="div_auditphotos">
-				<table class="class_auditphotos" width="100%">
+	<tr><td colspan=8>		    <div id="div_audit">
+				<table class="class_audit" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
 				&nbsp;</td>
