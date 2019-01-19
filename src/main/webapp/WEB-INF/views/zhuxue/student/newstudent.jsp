@@ -334,7 +334,7 @@
 					onclick="inserttable('auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('auditPhoto')" />
+					style="width:60px; height:24px;" onclick="deletetable('auditphotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
@@ -457,7 +457,7 @@
 		<td colspan="3" class="style50">联系电话</td>
 	</tr>
 		<tr><td colspan=8>		    <div id="div_transfers">
-				<table class="class_auditphotos" width="100%">
+				<table class="class_transfers" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
 				<input class="studentApply" type="text" id="transfers[0]_examTime" name="examTime" style="width: 86px"></td>
@@ -506,8 +506,8 @@
 		<td colspan="3" class="style53">照片上传</td>
 	</tr>
 	
-			<tr><td colspan=8>		    <div id="div_transfers">
-				<table class="class_auditphotos" width="100%">
+			<tr><td colspan=8>		    <div id="div_communicates">
+				<table class="class_communicates" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2 "height="26" class="style9" style="width: 198px">
 				<input class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
@@ -524,10 +524,10 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('transfers')" />      
+					onclick="inserttable('communicates')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('transfers')" />
+					style="width:60px; height:24px;" onclick="deletetable('communicates')" />
 				</td>
 			</tr>
 	
@@ -727,6 +727,7 @@
 		<td colspan="2" class="style47">　</td>
 	</tr>
 </table>
+
 
 
 

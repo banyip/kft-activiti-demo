@@ -5,9 +5,11 @@ import java.io.*;
 import java.lang.reflect.Method;
 
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
+import me.kafeitu.demo.activiti.entity.zhuxue.Transfer;
 import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 import me.kafeitu.demo.activiti.entity.zhuxue.AuditPhoto;
 import me.kafeitu.demo.activiti.entity.zhuxue.Communicate;
+import me.kafeitu.demo.activiti.entity.zhuxue.Evaluate;
 import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 
@@ -52,6 +54,24 @@ import java.util.Set;
 @Controller
 @RequestMapping(value = "/zhuxue/student")
 public class ZhuxueController {
+
+	/*
+	private <T> void inputHandle(String invokeClassName,Object value,String key,Student student)
+		{
+			//Object value = variables.get(key);
+			//String invokeClassName = invokeClass.getName()+"s";   				
+			int pos = (invokeClassName).length();
+			int index = Integer.parseInt(key.substring(pos+1,pos+2));
+			List<T> items = student.getCommunicates();
+			while(index>=items.size())
+			{
+				items.add(new Communicate());
+			}
+			Communicate item = items.get(index);
+			String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
+			
+			invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+		}*/
 
 	private void invoke(String methodname,Object value,Object invoker,String invokerClass, String param)
 	{
@@ -166,8 +186,8 @@ public class ZhuxueController {
    			}else if(key.indexOf("communicates")==0)
    			{
    				Object value = variables.get(key);
-   				String invokeClassName = "communicates";   				
-   				int pos = (invokeClassName).length();
+   				String invokeClassName = "Communicate";   				
+   				int pos = (invokeClassName).length()+1;
    				int index = Integer.parseInt(key.substring(pos+1,pos+2));
    				List<Communicate> items = student.getCommunicates();
    				while(index>=items.size())
@@ -178,7 +198,52 @@ public class ZhuxueController {
    				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
    				
    				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+   			}else if(key.indexOf("exams")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Exam";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Exam> items = student.getExams();
+   				while(index>=items.size())
+   				{
+   					items.add(new Exam());
+   				}
+   				Exam item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
+   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+   			}else if(key.indexOf("transfers")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Transfer";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Transfer> items = student.getTransfers();
+   				while(index>=items.size())
+   				{
+   					items.add(new Transfer());
+   				}
+   				Transfer item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+   			}else if(key.indexOf("evaluates")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Evaluate";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Evaluate> items = student.getEvaluates();
+   				while(index>=items.size())
+   				{
+   					items.add(new Evaluate());
+   				}
+   				Evaluate item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");
+   			
    			}
+   			
    			
    		}
    		//保存所有图片
@@ -214,6 +279,19 @@ public class ZhuxueController {
 	   				}	   				
 	   				AuditPhoto auditPhoto = auditPhotos.get(index);
 	   				auditPhoto.savePicture(studentPictureFile, whattosave);
+	        	}else if(filename.indexOf("communicates")==0)
+	        	{
+	 				String invokeClassName = "communicates";   				
+	   				int pos = (invokeClassName).length();
+	   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
+	   				List<Communicate> items =  student.getCommunicates();
+	   				while(index>=items.size())
+	   				{
+	   					items.add(new Communicate());
+	   				}
+	   				Communicate item = items.get(index);
+	   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+	   				item.savePicture(studentPictureFile, whattosave);
 	        	}
 	        }
         }
