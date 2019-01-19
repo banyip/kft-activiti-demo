@@ -11,6 +11,8 @@ import javax.persistence.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -325,13 +327,18 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 
-	@Column(length = 50)
+	@Column
 	public Date getSponseStartTime() {
 		return sponseStartTime;
 	}
 
 	public void setSponseStartTime(Date sponseStartTime) {
 		this.sponseStartTime = sponseStartTime;
+	}
+	
+	public void setSponseStartTime(String sponseStartTime) throws ParseException {
+		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		this.sponseStartTime = sDateFormat.parse(sponseStartTime);
 	}
 
 	@Column(length = 50)
@@ -341,6 +348,11 @@ public class Student extends IdEntity implements Serializable {
 
 	public void setSponseEndTime(Date sponseEndTime) {
 		this.sponseEndTime = sponseEndTime;
+	}
+	
+	public void setSponseEndTime(String sponseEndTime) throws ParseException {
+		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		this.sponseEndTime = sDateFormat.parse(sponseEndTime);
 	}
 
 	@Column(length = 50)
@@ -735,6 +747,11 @@ public class Student extends IdEntity implements Serializable {
 		this.birthday = birthday;
 	}
 
+	public void setBirthday(String birthday) throws ParseException {
+		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		this.birthday = sDateFormat.parse(birthday);
+	}
+	
 	@Column(length = 50)
 	public String getAddress() {
 		return address;
@@ -1135,6 +1152,11 @@ public class Student extends IdEntity implements Serializable {
 
 	public void setPublishTime(Date publishTime) {
 		this.publishTime = publishTime;
+	}
+	
+	public void setPublishTime(String publishTime) throws ParseException {
+		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		this.publishTime = sDateFormat.parse(publishTime);
 	}
 
 	public void setRentFrom(String rentFrom) {

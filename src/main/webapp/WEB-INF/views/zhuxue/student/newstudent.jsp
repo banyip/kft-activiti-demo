@@ -307,8 +307,8 @@
 		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
-	<tr><td colspan=8>		    <div id="div_auditPhoto">
-				<table class="class_auditPhoto" width="100%">
+	<tr><td colspan=8>		    <div id="div_auditphotos">
+				<table class="class_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
 				<input class="studentApply" type="text" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
@@ -331,7 +331,7 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('auditPhoto')" />      
+					onclick="inserttable('auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('auditPhoto')" />

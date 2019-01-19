@@ -3,9 +3,12 @@
  */
 $(function() {
 
-   	$('#relatives\\[0\\]_birthDate').datetimepicker({
+   	$('#student_publishTime').datetimepicker({
             stepMinute: 5
         });
+    $('[id$="Time"').datetimepicker({
+            stepMinute: 5
+    });
     // 签收
     $('.claim').button({
         icons: {
@@ -151,6 +154,7 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
                 {   
                     for(let key in v[i])
                         $('input[name="relatives\\['+i+'\\]_' + key+'"].studentEdit').val(eval('v['+i+'].'+key));   
+                        inserttable("studentedit"+key)
                 }
             }
             else if (k == 'audits') 
@@ -166,6 +170,7 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
                                         if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey).length>0)
                                             $('a#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentEditPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                     //add line
+                                    inserttable("studentedit_"+key);
                                 }   
                         
                         else
@@ -276,7 +281,7 @@ function complete(variables,filenames,files) {
 var handleOpts = {
 			newstudent: {
 			width: 1100,
-			height: 500,
+			height: 700,
 			open: function(id) {
 				var dialog = this;
 				
