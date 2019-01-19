@@ -7,6 +7,8 @@ import java.lang.reflect.Method;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 import me.kafeitu.demo.activiti.entity.zhuxue.AuditPhoto;
+import me.kafeitu.demo.activiti.entity.zhuxue.Communicate;
+import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 
 import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
@@ -161,7 +163,23 @@ public class ZhuxueController {
    				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
    				
    				invoke(methodname,value,(Object)audits.get(index),invokeClassName,"java.lang.String");   					
+   			}else if(key.indexOf("communicates")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "communicates";   				
+   				int pos = (invokeClassName).length();
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Communicate> items = student.getCommunicates();
+   				while(index>=items.size())
+   				{
+   					items.add(new Communicate());
+   				}
+   				Communicate item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
+   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
    			}
+   			
    		}
    		//保存所有图片
    		String[]  fileNameList = filenames.split(":",-1);
