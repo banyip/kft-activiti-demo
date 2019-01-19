@@ -326,7 +326,7 @@
 	</table></div>
 	</td></tr>
 			<tr>
-				<td colspan="8" class="style84">
+				<td colspan="8" class="style1">
                 <input class="studentApply" type="hidden"										
 				id="relative" />   
 					<input type="button" name="button"
@@ -433,7 +433,7 @@
 	</table>
 	</div></td></tr>
 				<tr>
-				<td colspan="8" class="style84">
+				<td colspan="8" class="style1">
                 <input class="studentApply" type="hidden"										
 				id="relative" />   
 					<input type="button" name="button"
@@ -476,7 +476,7 @@
 	</div></td></tr>
 	
 				<tr>
-				<td colspan="8" class="style84">
+				<td colspan="8" class="style1">
                 <input class="studentApply" type="hidden"										
 				id="relative" />   
 					<input type="button" name="button"
@@ -514,12 +514,12 @@
 		<td colspan="3" class="style11" style="width: 268435376px" >
 				<input class="studentApply" type="text" id="communicates[0]_content" name="content" style="width: 187px"></td>
 		<td class="style11" colspan="3">
-				<input class="studentPhoto" type="text" id="communicates[0]_picture" name="picture" style="width: 119px"></td>
+				<input class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px"></td>
 	</tr>
 	</table>
 	</div></td></tr>
 				<tr>
-				<td colspan="8" class="style84">
+				<td colspan="8" class="style1">
                 <input class="studentApply" type="hidden"										
 				id="relative" />   
 					<input type="button" name="button"
@@ -550,36 +550,38 @@
 		<td colspan="5" class="style57">
 		学生性格、学习情况(交流沟通、性格、学习态度、学习成绩、爱心情况等）</td>
 	</tr>
+	    <tr>
+	    <td colspan=8>				    		
+		    <div id="div_evaluates">
+				<table class="class_evaluates" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">　</td>
-		<td class="style16" style="width: 60pt">　</td>
-		<td class="style16">　</td>
-		<td colspan="5" class="style10">　</td>
+		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
+				<input class="studentApply" type="text" id="evaluates[0]_evaluateDate" name="evaluateDate" style="width: 86px"></td>
+		<td class="style16" style="width: 60pt">
+				<input class="studentApply" type="text" id="evaluates[0]_provider" name="provider" style="width: 86px"></td>
+		<td class="style16">
+				<input class="studentApply" type="text" id="evaluates[0]_familyChange" name="familyChange" style="width: 121px"></td>
+		<td colspan="5" class="style10">
+				<input class="studentApply" type="text" id="evaluates[0]_studentSituation" name="studentSituation" style="width: 468px"></td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">　</td>
-		<td class="style16" style="width: 60pt">　</td>
-		<td class="style16">　</td>
-		<td colspan="5" class="style10">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">　</td>
-		<td class="style45" style="width: 60pt">　</td>
-		<td class="style45">　</td>
-		<td colspan="5" class="style10">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">　</td>
-		<td class="style45" style="width: 60pt">　</td>
-		<td class="style45">　</td>
-		<td colspan="5" class="style10">　</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style58">　</td>
-		<td class="style59" style="width: 60pt">　</td>
-		<td class="style59">　</td>
-		<td colspan="5" class="style10">　</td>
-	</tr>
+	    </table>
+    </div>
+    </td>
+    </tr>
+			<tr>
+				<td colspan="8" class="style1">
+                <input class="studentApply" type="hidden"										
+				id="relative" />   
+					<input type="button" name="button"
+					value="新 增" style="width:60px; height:24px;"
+					onclick="inserttable('evaluates')" />      
+					<input
+					type="button" name="button" value="删 除"
+					style="width:60px; height:24px;" onclick="deletetable('evaluates')" />
+				</td>
+			</tr>
+
+	
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style60">
 		相关走访资料上传</td>

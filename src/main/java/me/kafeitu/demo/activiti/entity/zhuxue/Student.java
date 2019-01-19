@@ -226,24 +226,33 @@ public class Student extends IdEntity implements Serializable {
     
     
     private List<Exam> exams = new ArrayList<Exam>();
-    private List<Transfer> transfer= new ArrayList<Transfer>();
-    private List<Communicate> communicate= new ArrayList<Communicate>();
+    private List<Transfer> transfers= new ArrayList<Transfer>();
+    private List<Communicate> communicates= new ArrayList<Communicate>();
+    private List<Evaluate> evaluates= new ArrayList<Evaluate>();
     
+ 
 	@Column
 	@OneToMany(cascade = {CascadeType.ALL})
-	public List<Communicate> getCommunicate() {
-		return communicate;
+	public List<Evaluate> getEvaluates() {
+		return evaluates;
 	}
-	public void setCommunicate(List<Communicate> communicate) {
-		this.communicate = communicate;
+	@Column
+	@OneToMany(cascade = {CascadeType.ALL})
+	public List<Communicate> getCommunicates() {
+		return communicates;
+	}
+	public void setCommunicate(List<Communicate> communicates) {
+		this.communicates = communicates;
 	}
 	@Column
 	@OneToMany(cascade = {CascadeType.ALL})    
-    public List<Transfer> getTransfer() {
-		return transfer;
+    public List<Transfer> getTransfers() {
+		return transfers;
 	}
-	public void setTransfer(List<Transfer> transfer) {
-		this.transfer = transfer;
+	
+	
+	public void setTransfer(List<Transfer> transfers) {
+		this.transfers = transfers;
 	}
 
 	@Column
@@ -1271,6 +1280,9 @@ public class Student extends IdEntity implements Serializable {
 
 	public void setWorkSituation(String workSituation) {
 		this.workSituation = workSituation;
+	}
+	public void setEvaluates(List<Evaluate> evaluates) {
+		this.evaluates = evaluates;
 	}
 
 	
