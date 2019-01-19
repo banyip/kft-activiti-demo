@@ -35,7 +35,7 @@ $(function() {
     
 });
 
-$('[id$="Time"],[id$="Date"]').load(function(){
+$('[id$="Time"],[id$="Date"]').ready(function(){
     this.datetimepicker({
             stepMinute: 5
     });
