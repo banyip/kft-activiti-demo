@@ -6,7 +6,7 @@ $(function() {
    	$('#student_publishTime').datetimepicker({
             stepMinute: 5
         });
-    $('[id$="Time"] [id$="Date"]').datetimepicker({
+    $('[id$="Time"],[id$="Date"]').datetimepicker({
             stepMinute: 5
     });
     // 签收
