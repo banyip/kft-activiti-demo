@@ -247,55 +247,59 @@ public class ZhuxueController {
    			
    		}
    		//保存所有图片
-   		String[]  fileNameList = filenames.split(":",-1);
-        for(int i=0;i<fileNameList.length;i++)
-        {
-        	String filename = fileNameList[i];
-
-        	MultipartFile studentPictureFile = studentPictureFiles[i];
-	   		if(!studentPictureFile.isEmpty())
+   		
+   		if(filenames.length()>0)
+   		{
+	   		String[] fileNameList = filenames.split(":",-1);
+	        for(int i=0;i<fileNameList.length;i++)
 	        {
-	        	if(filename.indexOf("student_")==0)
-	        	{
-	        		student.savePicture(studentPictureFile);
-	        	}
-	        	if(filename.indexOf("audit")==0)
-	        	{
-	 				String invokeClassName = "audit";   				
-	   				int pos = (invokeClassName).length();
-	   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
-	   				List<Audit> audits =  student.getAudits();
-	   				while(index>=audits.size())
-	   				{
-	   					audits.add(new Audit());
-	   				}
-	   				Audit audit = audits.get(index);
-	   				pos = "audit[0]_auditPhoto".length();
-	   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
-	   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
-	   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
-	   				while(index>=auditPhotos.size())
-	   				{
-	   					auditPhotos.add(new AuditPhoto());
-	   				}	   				
-	   				AuditPhoto auditPhoto = auditPhotos.get(index);
-	   				auditPhoto.savePicture(studentPictureFile, whattosave);
-	        	}else if(filename.indexOf("communicates")==0)
-	        	{
-	 				String invokeClassName = "communicates";   				
-	   				int pos = (invokeClassName).length();
-	   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
-	   				List<Communicate> items =  student.getCommunicates();
-	   				while(index>=items.size())
-	   				{
-	   					items.add(new Communicate());
-	   				}
-	   				Communicate item = items.get(index);
-	   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
-	   				item.savePicture(studentPictureFile, whattosave);
-	        	}
+	        	String filename = fileNameList[i];
+	
+	        	MultipartFile studentPictureFile = studentPictureFiles[i];
+		   		if(!studentPictureFile.isEmpty())
+		        {
+		        	if(filename.indexOf("student_")==0)
+		        	{
+		        		student.savePicture(studentPictureFile);
+		        	}
+		        	if(filename.indexOf("audit")==0)
+		        	{
+		 				String invokeClassName = "audit";   				
+		   				int pos = (invokeClassName).length();
+		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
+		   				List<Audit> audits =  student.getAudits();
+		   				while(index>=audits.size())
+		   				{
+		   					audits.add(new Audit());
+		   				}
+		   				Audit audit = audits.get(index);
+		   				pos = "audit[0]_auditPhoto".length();
+		   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
+		   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+		   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
+		   				while(index>=auditPhotos.size())
+		   				{
+		   					auditPhotos.add(new AuditPhoto());
+		   				}	   				
+		   				AuditPhoto auditPhoto = auditPhotos.get(index);
+		   				auditPhoto.savePicture(studentPictureFile, whattosave);
+		        	}else if(filename.indexOf("communicates")==0)
+		        	{
+		 				String invokeClassName = "communicates";   				
+		   				int pos = (invokeClassName).length();
+		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
+		   				List<Communicate> items =  student.getCommunicates();
+		   				while(index>=items.size())
+		   				{
+		   					items.add(new Communicate());
+		   				}
+		   				Communicate item = items.get(index);
+		   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+		   				item.savePicture(studentPictureFile, whattosave);
+		        	}
+		        }
 	        }
-        }
+   		}
         studentManager.saveStudent(student);
         return "success";	 
       }catch (Exception e) {
