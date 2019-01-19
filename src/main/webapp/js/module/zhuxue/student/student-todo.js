@@ -34,6 +34,11 @@ $(function() {
     
 });
 
+$('[id$="Time"],[id$="Date"]').load(function(){
+    this.datetimepicker({
+            stepMinute: 5
+    });
+})
 
 // 用于保存加载的详细信息
 var detail = {};
