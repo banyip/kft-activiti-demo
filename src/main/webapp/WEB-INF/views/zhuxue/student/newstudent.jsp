@@ -335,7 +335,7 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('audit[0]_auditphotos')" />      
+					onclick="insertauditphotos('audit\\[0\\]_auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('audit[0]_auditphotos')" />
@@ -604,8 +604,8 @@
 		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
-	<tr><td colspan=8>		    <div id="div_auditphoto">
-				<table class="class_auditphoto" width="100%">
+	<tr><td colspan=8>		    <div id="div_audit[1]_auditphotos">
+				<table class="class_audit[1]_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 80px"></td>
 		<td class="style11" style="width: 66pt">
@@ -627,7 +627,7 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('auditphotos')" />      
+					onclick="insertauditphotos('audit\\[0\\]_auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('auditphotos')" />
