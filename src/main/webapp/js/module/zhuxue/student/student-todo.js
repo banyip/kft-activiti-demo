@@ -198,13 +198,13 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
 			if (k == 'applyTime' || k == 'startTime' || k == 'endTime') {
 				myparent.find('.partly#' + k ).html(new Date(v).format('yyyy-MM-dd hh:mm'));
             } 
-            else if (k == 'relatives' || k == "transfers" || k == "exams" || k == "transfers" || k == "communicates" || k == "evaluates") 
+            else if (k == 'relatives' || k == 'transfers' || k == 'exams' || k == 'transfers' || k == 'communicates' || k == 'evaluates') 
             {                
                 for(var i=0;i<v.length;i++)
                 {   
                     for(let key in v[i])
                         myparent.find('input[name="relatives\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
-                        inserttable(whichpage,key)
+                        inserttable(whichpage,k)
                 }
             }
             else if (k == 'audits') 
