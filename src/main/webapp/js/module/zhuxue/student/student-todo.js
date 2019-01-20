@@ -190,7 +190,7 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
  */
 function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
     var dialog = this;
-    var myparent=$(whichpage);
+    var myparent=$('#'+whichpage);
     $.getJSON(ctx + '/zhuxue/student/detail-with-vars/' + leaveId , function(data) {
         detail = data;
         $.each(data, function(k, v) {
@@ -420,7 +420,7 @@ editstudent: {
                 
                 
 				// 打开对话框的时候读取请假内容
-				loadPartlyDetailWithTaskVars.call('editstudent',this, id, null);
+				loadPartlyDetailWithTaskVars.call("editstudent",this, id, null);
 
 			},
 			btns: [{
