@@ -188,9 +188,9 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
  * 加载详细信息，同时读取流程任务变量
  * @param {Object} id
  */
-function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
+function loadPartlyDetailWithTaskVars(whichpagestring,leaveId,  callback) {
     var dialog = this;
-    var myparent=$('#'+whichpage);
+    var myparent=$('#'+whichpagestring);
     $.getJSON(ctx + '/zhuxue/student/detail-with-vars/' + leaveId , function(data) {
         detail = data;
         $.each(data, function(k, v) {
