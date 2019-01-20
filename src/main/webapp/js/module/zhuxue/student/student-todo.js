@@ -202,18 +202,21 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
             {                
                 for(var i=0;i<v.length;i++)
                 {   
+                    if(i>0)
+                        inserttable(whichpage,k)
                     for(let key in v[i])
                     {
 
                         myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
-                    }
-                        inserttable(whichpage,k)
+                    }                        
                 }
             }
             else if (k == 'audits') 
             {                
                 for(var i=0;i<v.length;i++)
                 {   
+                    if(i>1)
+                        inserttable(whichpage,k)
                     for(let key in v[i])
                     {
                         if(key=="auditphotos")                  
