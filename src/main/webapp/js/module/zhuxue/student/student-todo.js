@@ -203,7 +203,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                 for(var i=0;i<v.length;i++)
                 {   
                     for(let key in v[i])
-                        myparent.find('input[name="relatives\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
+                        myparent.find('input[name="'+k+'\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
                         inserttable(whichpage,k)
                 }
             }
