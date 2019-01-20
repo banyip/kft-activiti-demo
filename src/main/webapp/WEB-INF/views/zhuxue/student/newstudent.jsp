@@ -339,7 +339,7 @@
 					onclick="insertauditphotos('newstudent','audit\\[0\\]_auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('newstudent','audit[0]_auditphotos')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','audit\\[0\\]_auditphotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
@@ -631,7 +631,7 @@
 					onclick="insertauditphotos('newstudent','audit\\[1\\]_auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('newstudent','auditphotos')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','audit\\[1\\]_auditphotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
