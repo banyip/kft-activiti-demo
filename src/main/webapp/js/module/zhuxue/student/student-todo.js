@@ -420,7 +420,7 @@ editstudent: {
                 
                 
 				// 打开对话框的时候读取请假内容
-				loadPartlyDetailWithTaskVars.call("editstudent",this, id, null);
+				loadPartlyDetailWithTaskVars.call(this, "editstudent",id, null);
 
 			},
 			btns: [{
