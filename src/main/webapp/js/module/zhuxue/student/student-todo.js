@@ -218,9 +218,9 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                 {
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
                                         if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey).length>0)
-                                            myparent.find('a#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
+                                            myparent.find('a#audit\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                     //add line
-                                    inserttable(whichpage,'audits['+i+']_'+'auditphotos['+j+']');
+                                    inserttable(whichpage,'audit['+i+']_'+'auditphotos['+j+']');
                                 }   
                         
                         else
