@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
+<input type=hidden class="studentApply" id="student_id" name="id" />
 	<colgroup>
 		<col width="83" >
 		<col width="72" span="2" >
@@ -154,22 +155,23 @@
 	</colgroup>
 
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	<input type=hidden class="studentApply" type="text" id="relatives[0]_id" name="relatives[0]_id" />
 		<td height="26" style="height: 20.1pt; width: 101px;" class="style9">
-		<input class="relative" type="text" id="relatives[0]_relationship" name="relationship" style="width: 40px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_relationship" name="relationship" style="width: 40px">　</td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_name" name="name" style="width: 73px"></td>
+		<input class="studentApply" type="text" id="relatives[0]_name" name="name" style="width: 73px"></td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_birthDate" name="birthDate" style="width: 96px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_birthDate" name="birthDate" style="width: 96px">　</td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_contactNo" name="contactNo" style="width: 112px"></td>
+		<input class="studentApply" type="text" id="relatives[0]_contactNo" name="contactNo" style="width: 112px"></td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_profectional" name="profectional" style="width: 100px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_profectional" name="profectional" style="width: 100px">　</td>
 		<td class="style11">
-		<input class="relative" type="number" id="relatives[0]_anualIncome" name="anualIncome" style="width: 81px">　</td>
+		<input class="studentApply" type="number" id="relatives[0]_anualIncome" name="anualIncome" style="width: 81px">　</td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_otherSponse" name="otherSponse" style="width: 78px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_otherSponse" name="otherSponse" style="width: 78px">　</td>
 		<td class="style19">
-		<input class="relative" type="text" id="relatives[0]_health" name="health" style="width: 86px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_health" name="health" style="width: 86px">　</td>
     </tr>
     </table>
     </div>
@@ -296,7 +298,8 @@
 	</tr>
 	
 	
-		<tr><td colspan=8>		    
+		<tr><td colspan=8>
+		<input type=hidden class="studentApply" id="audit[0]_id" name="audit[0]_id" " />		    
 		<table class="class_audit" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
@@ -316,6 +319,7 @@
 				<table class="class_audit[0]_auditphotosa" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
+				<input type=hidden class="studentApply" type="text" id="audit[0]_auditphotos[0]_id" name="auditPhoto[0]_id"  />
 				<input class="studentApply" type="text" id="audit[0]_auditphotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
 		<td class="style11" style="width: 66pt">
 		<a target=showpic class="studentEditPhoto" id="audit[0]_auditphotos[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">显示图片</a></td>
@@ -437,6 +441,7 @@
 		<td class="style19">年级排名</td>
 	</tr>
 		<tr><td colspan=8>		    <div id="div_exams">
+		<input type=hidden class="studentApply" type="text" id="exams[0]_examTime" name="examTime" />
 				<table class="class_exams" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
@@ -483,6 +488,7 @@
 		<td colspan="3" class="style50">联系电话</td>
 	</tr>
 		<tr><td colspan=8>		    <div id="div_transfers">
+		<input class="studentApply" type="hidden" id="transfers[0]_id" name="transfers[0]_id" />
 				<table class="class_transfers" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
@@ -533,6 +539,7 @@
 	</tr>
 	
 			<tr><td colspan=8>		    <div id="div_communicates">
+			<input class="studentApply" type="text" id="communicates[0]_id" name="communicates[0]_id" />
 				<table class="class_communicates" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2 "height="26" class="style9" style="width: 198px">
@@ -596,8 +603,6 @@
     </tr>
 			<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','evaluates')" />      
@@ -609,6 +614,7 @@
 
 	<tr><td colspan=8>		    
 	<div id="div_audit">
+			<input type=hidden class="studentApply" id="audit[1]_id" name="audit[1]_id" />	
 				<table class="class_audit" width="100%">	
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
@@ -624,6 +630,7 @@
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
 	<tr><td colspan=8><div id="div_audit[1]_auditphotosa">
+				<input type=hidden class="studentApply" type="text" id="audit[1]_auditphotos[0]_id" name="auditPhoto[0]_id" />
 				<table class="class_audit[1]_auditphotosa" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
