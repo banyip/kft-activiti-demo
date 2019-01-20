@@ -78,40 +78,40 @@ function inserttable(whichpage,whichpart) {
 }
 
 //add audit part
-function insertaudit() {
+function insertaudit(whichpage) {
     tableclass='class_audit'
     divid="div_audit";
-
-	var newnode = $('.'+tableclass)[0].cloneNode(true);
+    myparent=$('#'+whichpage);
+	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
     content = content.replace(/audit\[0\]/g, "audit["+ $('.'+tableclass).length + "]");
     content = content.replace(/audit\\\\\[0\\\\\]/g, "audit\\\\\["+ $('.'+tableclass).length + "\\\\\]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
-	if($('.'+tableclass).length <=6){
-    $('#'+divid).append(content);
+	if(myparent.find('.'+tableclass).length <=6){
+    myparent.find('#'+divid).append(content);
 
 	}else{
 		alert("最多同时添加5个信息!");
 	}
 }
 
-function insertauditphotos(whichpart) 
+function insertauditphotos(whichpage,whichpart) 
 {    
     tableclass='class_'+whichpart
     divid="div_"+whichpart
-    pageid='[id$="student"]';    
-    var myparent= this.parentsUntil("div",pageid);
+    pageid='[id$="student"]';  
+    myparent=$('#'+whichpage);
 	var newnode =myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
 	content = content.replace(/auditPhoto\[0\]/g, "auditPhoto["+ $('#'+divid)[0].childElementCount + "]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
 	if(myparent.find('#'+divid)[0].childNodes.length <=6){
-    $('#'+divid).append(content);
-    $('[id$="Time"],[id$="Date"]').datetimepicker({
+    myprent.find('#'+divid).append(content);
+/*    myparent.find('[id$="Time"],[id$="Date"]').datetimepicker({
             stepMinute: 5
-    });
+    });*/
 	}else{
 		alert("最多同时添加5个信息!");
 	}
@@ -129,8 +129,9 @@ function insertrow(classname,divname) {
 
 
 //删除
-function deletetable(divid) {
-	var parent = $('#div_'+divid)[0];
+function deletetable(whichpage,divid) {
+    var myparent=$('#'+whichpage);
+	var parent = myparent.find('#div_'+divid)[0];
 	if (parent.childNodes.length > 1) {
 		parent.removeChild(parent.lastChild);
 	}
