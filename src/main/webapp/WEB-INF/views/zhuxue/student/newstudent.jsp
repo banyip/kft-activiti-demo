@@ -315,19 +315,20 @@
 				<table class="class_audit[0]_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
-		<input type="text" class="studentApply" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 80px"></td>
+		<input type="text" class="studentApply" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 80px" /></td>
 		<td class="style11" style="width: 66pt">
-		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"></td>
+		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"/></td>
 		<td class="style11" style="width: 123px">
-		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto" style="width: 80px">　</td>
+		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto" style="width: 80px"/>　</td>
 		<td class="style11" style="width: 119px" >
-		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">　</td>
+		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px"/>　</td>
 		<td class="style11" style="width: 98px">
-		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">　</td>
+		<input type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px"/>　</td>
 		<td colspan="3" class="style11">
-		<input  type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">　</td>
+		<input  type="file" class="studentPhoto" id="audit[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px"/>　</td>
 	</tr>
 	</table>
+	</div>
 	</td></tr>
 			<tr>
 				<td colspan="8" class="style1">
