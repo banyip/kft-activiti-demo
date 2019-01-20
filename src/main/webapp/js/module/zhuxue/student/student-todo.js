@@ -61,19 +61,17 @@ function countPoorScore()
 
 //增加
 
-function inserttable(whichpart) {
+function inserttable(whichpage,whichpart) {
     tableclass='class_'+whichpart
     divid="div_"+whichpart
-	var newnode = $('.'+tableclass)[0].cloneNode(true);
+    myparent=$('#'+whichpage);
+	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
 	content = content.replace(/\[0\]/g, "["+ $('#'+divid)[0].childElementCount + "]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
-	if($('#'+divid)[0].childNodes.length <=6){
-    $('#'+divid).append(content);
-    $('[id$="Time"],[id$="Date"]').datetimepicker({
-            stepMinute: 5
-    });
+	if(myparent.find('#'+divid)[0].childNodes.length <=6){
+    myparent.find('#'+divid).append(content);
 	}else{
 		alert("最多同时添加5个信息!");
 	}
@@ -98,17 +96,18 @@ function insertaudit() {
 	}
 }
 
-function insertauditphotos(whichpart ,whichpage) 
+function insertauditphotos(whichpart) 
 {    
     tableclass='class_'+whichpart
     divid="div_"+whichpart
-    pageid="#"+whichpage;    
-	var newnode = this.parentsUntil("div",pageid).find('.'+tableclass)[0].cloneNode(true);
+    pageid='[id$="student"]';    
+    var myparent= this.parentsUntil("div",pageid);
+	var newnode =myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
 	content = content.replace(/auditPhoto\[0\]/g, "auditPhoto["+ $('#'+divid)[0].childElementCount + "]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
-	if($('#'+divid)[0].childNodes.length <=6){
+	if(myparent.find('#'+divid)[0].childNodes.length <=6){
     $('#'+divid).append(content);
     $('[id$="Time"],[id$="Date"]').datetimepicker({
             stepMinute: 5
