@@ -108,7 +108,7 @@ function insertauditphotos(whichpage,whichpart)
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
 	if(myparent.find('#'+divid)[0].childNodes.length <=6){
-    myprent.find('#'+divid).append(content);
+    myparent.find('#'+divid).append(content);
 /*    myparent.find('[id$="Time"],[id$="Date"]').datetimepicker({
             stepMinute: 5
     });*/
