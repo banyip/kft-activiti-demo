@@ -188,22 +188,23 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
  * 加载详细信息，同时读取流程任务变量
  * @param {Object} id
  */
-function loadPartlyDetailWithTaskVars(leaveId,  callback) {
+function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
     var dialog = this;
+    var myparent=$('#'+whichpage);
     $.getJSON(ctx + '/zhuxue/student/detail-with-vars/' + leaveId , function(data) {
         detail = data;
         $.each(data, function(k, v) {
             // 格式化日期
 			if (k == 'applyTime' || k == 'startTime' || k == 'endTime') {
-				$('.partly#' + k ).html(new Date(v).format('yyyy-MM-dd hh:mm'));
+				myparent.find('.partly#' + k ).html(new Date(v).format('yyyy-MM-dd hh:mm'));
             } 
-            else if (k == 'relatives') 
+            else if (k == 'relatives' || k == "transfers" || k == "exams" || k == "transfers" || k == "communicates" || k == "evaluates") 
             {                
                 for(var i=0;i<v.length;i++)
                 {   
                     for(let key in v[i])
-                        $('input[name="relatives\\['+i+'\\]_' + key+'"].studentEdit').val(eval('v['+i+'].'+key));   
-                        inserttable("studentedit"+key)
+                        myparent.find('input[name="relatives\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
+                        inserttable(whichpage,key)
                 }
             }
             else if (k == 'audits') 
@@ -217,23 +218,23 @@ function loadPartlyDetailWithTaskVars(leaveId,  callback) {
                                 {
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
                                         if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey).length>0)
-                                            $('a#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentEditPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
+                                            myparent.find('a#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                     //add line
-                                    inserttable("studentedit_"+key);
+                                    inserttable(whichpage,'audits['+i+']_'+'auditphotos['+j+']');
                                 }   
                         
                         else
-                        $('input[name="audits\\['+i+'\\]_' + key+'"].studentEdit').val(eval('v['+i+'].'+key));   
+                        myparent.find('input[name="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
                 
                     }
                 }
             } else if (k.substr(0,2) == 'if') 
             {
                 if(v=="true")
-                 $("input[type=checkbox][name="+k+"].studentEdit").attr("checked",true);                
+                 myparent.find("input[type=checkbox][name="+k+"].studentEdit").attr("checked",true);                
             } 
             else {
-				$('input[name=' + k + '].studentEdit' ).val(v);
+				myparent.find('input[name=' + k + '].studentEdit' ).val(v);
 			}
         });
 		if ($.isFunction(callback)) {
