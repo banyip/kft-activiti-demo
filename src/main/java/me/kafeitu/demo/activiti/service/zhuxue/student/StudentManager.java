@@ -31,6 +31,7 @@ public class StudentManager {
         return studentDao.findOne(id);
     }
 
+    @Transactional(readOnly = false)
     public void delStudent(Long id)
     {
     	studentDao.delete(id);
