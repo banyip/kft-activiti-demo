@@ -311,8 +311,9 @@
 		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
-	<tr><td colspan=8><div id="div_audit[0]_auditphotos">
-				<table class="class_audit[0]_auditphotos" width="100%">
+	
+	<tr><td colspan=8><div id="div_audit[0]_auditphotosa">
+				<table class="class_audit[0]_auditphotosa" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
 				<input class="studentApply" type="text" id="audits[0]_auditphotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
@@ -328,7 +329,25 @@
 		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">显示图片</a>　</td>
 	</tr>
 	</table>
+	</div>
 	</td></tr>
+<tr><td colspan=8>		    <div id="div_audit[1]_auditphotos">
+				<table class="class_audit[1]_auditphotos" width="100%">
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audit[0]_auditPhoto[1]_photoDate" name="auditPhoto[1]_photoDate" style="width: 80px"></td>
+		<td class="style11" style="width: 66pt">
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_familyPhoto" name="auditPhoto[1]_familyPhoto" style="width: 80px"></td>
+		<td class="style11" style="width: 123px">
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_studentPhoto" name="auditPhoto[1]_studentPhoto" style="width: 80px">　</td>
+		<td class="style11" style="width: 119px" >
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_feedbackPhoto" name="auditPhoto[1]_feedbackPhoto" style="width: 80px">　</td>
+		<td class="style11" style="width: 98px">
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_recieptphoto" name="auditPhoto[1]_recieptphoto" style="width: 80px">　</td>
+		<td colspan="3" class="style11">
+		<input  type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_otherPhoto" name="auditPhoto[1]_otherPhoto" style="width: 80px">　</td>
+	</tr>
+	</table></div>
+	</td></tr>	
 			<tr>
 				<td colspan="8" class="style1">
                 <input class="studentApply" type="hidden"										
@@ -604,20 +623,39 @@
 		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
+	<tr><td colspan=8><div id="div_audit[1]_auditphotosa">
+				<table class="class_audit[1]_auditphotosa" width="100%">
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
+				<input class="studentApply" type="text" id="audit[1]_auditphotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
+		<td class="style11" style="width: 66pt">
+		<a target=showpic class="studentEditPhoto" id="audit[1]_auditphotos[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">显示图片</a></td>
+		<td class="style11" style="width: 123px">
+		<a target=showpic class="studentEditPhoto" id="audit[1]_auditphotos[0]_studentEditPhoto" name="auditPhoto[0]_studentEditPhoto" style="width: 80px">显示图片</a>　</td>
+		<td class="style11" style="width: 119px" >
+		<a target=showpic class="studentEditPhoto" id="audit[1]_auditphotos[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">显示图片</a>　</td>
+		<td class="style11" style="width: 98px">
+		<a target=showpic class="studentEditPhoto" id="audit[1]_auditphotos[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">显示图片</a>　</td>
+		<td colspan="3" class="style11">
+		<a target=showpic class="studentEditPhoto" id="audit[1]_auditphotos[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">显示图片</a>　</td>
+	</tr>
+	</table>
+	</div>
+	</td></tr>
 	<tr><td colspan=8>		    <div id="div_audit[1]_auditphotos">
 				<table class="class_audit[1]_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audit[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 80px"></td>
+		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audit[1]_auditPhoto[1]_photoDate" name="auditPhoto[1]_photoDate" style="width: 80px"></td>
 		<td class="style11" style="width: 66pt">
-		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"></td>
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_familyPhoto" name="auditPhoto[1]_familyPhoto" style="width: 80px"></td>
 		<td class="style11" style="width: 123px">
-		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto" style="width: 80px">　</td>
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_studentPhoto" name="auditPhoto[1]_studentPhoto" style="width: 80px">　</td>
 		<td class="style11" style="width: 119px" >
-		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">　</td>
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_feedbackPhoto" name="auditPhoto[1]_feedbackPhoto" style="width: 80px">　</td>
 		<td class="style11" style="width: 98px">
-		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">　</td>
+		<input type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_recieptphoto" name="auditPhoto[1]_recieptphoto" style="width: 80px">　</td>
 		<td colspan="3" class="style11">
-		<input  type="file" class="studentPhoto" id="audit[1]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">　</td>
+		<input  type="file" class="studentPhoto" id="audit[1]_auditPhoto[1]_otherPhoto" name="auditPhoto[1]_otherPhoto" style="width: 80px">　</td>
 	</tr>
 	</table></div>
 	</td></tr>

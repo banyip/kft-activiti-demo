@@ -203,7 +203,10 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                 for(var i=0;i<v.length;i++)
                 {   
                     for(let key in v[i])
+                    {
+
                         myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
+                    }
                         inserttable(whichpage,k)
                 }
             }
@@ -220,11 +223,11 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                         if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey).length>0)
                                             myparent.find('a#audit\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                     //add line
-                                   // insertauditphotos(whichpage,'audit\\['+i+'\\]_'+'auditphotos\\['+j+'\\]');
+                                   // insertauditphotos(whichpage,'audit\\['+i+'\\]_'+'auditphotosa');
                                 }   
                         
                         else
-                        myparent.find('input[id="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
+                        myparent.find('input[id="audit\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
                 
                     }
                     //add line
