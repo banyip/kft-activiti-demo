@@ -220,13 +220,14 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                         if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey).length>0)
                                             myparent.find('a#audit\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'.studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                     //add line
-                                    insertauditphotos(whichpage,'audit\\['+i+'\\]_'+'auditphotos\\['+j+'\\]');
+                                   // insertauditphotos(whichpage,'audit\\['+i+'\\]_'+'auditphotos\\['+j+'\\]');
                                 }   
                         
                         else
                         myparent.find('input[name="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
                 
                     }
+                    //add line
                 }
             } else if (k.substr(0,2) == 'if') 
             {
