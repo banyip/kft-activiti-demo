@@ -203,7 +203,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                 for(var i=0;i<v.length;i++)
                 {   
                     for(let key in v[i])
-                        myparent.find('input[name="'+k+'\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
+                        myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
                         inserttable(whichpage,k)
                 }
             }
@@ -224,7 +224,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                 }   
                         
                         else
-                        myparent.find('input[name="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
+                        myparent.find('input[id="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
                 
                     }
                     //add line
@@ -232,10 +232,10 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
             } else if (k.substr(0,2) == 'if') 
             {
                 if(v=="true")
-                 myparent.find("input[type=checkbox][name="+k+"].studentApply").attr("checked",true);                
+                 myparent.find("input[type=checkbox][id="+k+"].studentApply").attr("checked",true);                
             } 
             else {
-				myparent.find('input[name=' + k + '].studentApply' ).val(v);
+				myparent.find('input[id=' + k + '].studentApply' ).val(v);
 			}
         });
 		if ($.isFunction(callback)) {
