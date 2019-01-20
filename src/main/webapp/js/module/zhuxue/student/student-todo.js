@@ -232,10 +232,10 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
             } else if (k.substr(0,2) == 'if') 
             {
                 if(v=="true")
-                 myparent.find("input[type=checkbox][id="+k+"].studentApply").attr("checked",true);                
+                 myparent.find("input[type=checkbox][name="+k+"].studentApply").attr("checked",true);                
             } 
             else {
-				myparent.find('input[id=' + k + '].studentApply' ).val(v);
+				myparent.find('input[name=' + k + '].studentApply' ).val(v);
 			}
         });
 		if ($.isFunction(callback)) {
