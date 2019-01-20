@@ -83,6 +83,7 @@ function inserttable(whichpart) {
 function insertaudit() {
     tableclass='class_audit'
     divid="div_audit";
+
 	var newnode = $('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
     content = content.replace(/audit\[0\]/g, "audit["+ $('.'+tableclass).length + "]");
@@ -97,11 +98,12 @@ function insertaudit() {
 	}
 }
 
-function insertauditphotos(whichpart ) 
+function insertauditphotos(whichpart ,whichpage) 
 {    
     tableclass='class_'+whichpart
     divid="div_"+whichpart
-	var newnode = $('.'+tableclass)[0].cloneNode(true);
+    pageid="#"+whichpage;    
+	var newnode = this.parentsUntil("div",pageid).find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
 	content = content.replace(/auditPhoto\[0\]/g, "auditPhoto["+ $('#'+divid)[0].childElementCount + "]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";

@@ -181,7 +181,7 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('relatives')" />      
+					onclick="inserttable('newstudent,'relatives')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('relatives')" />
@@ -445,7 +445,7 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('exams')" />      
+					onclick="inserttable('newstudent,'exams')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('exams')" />
@@ -531,7 +531,7 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('communicates')" />      
+					onclick="inserttable('newstudent,'communicates')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('communicates')" />
@@ -581,7 +581,7 @@
 				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('evaluates')" />      
+					onclick="inserttable('newstudent,'evaluates')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('evaluates')" />

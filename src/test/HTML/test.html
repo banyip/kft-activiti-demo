@@ -816,7 +816,8 @@ Date.prototype.format = function(format) {
     }
 	//增加
 	function inserttable() {
-		var newnode = $('.yltable')[0].cloneNode(true);
+        var myparent=$("[id$=student]");
+		var newnode = myparent.find('.yltable')[0].cloneNode(true);
         var content = newnode.innerHTML;
         var content2 = "";
         for (let i = 0; i<$('#div_bjbr').find(".yltable").length ; i++ ){
@@ -899,6 +900,7 @@ function insertrow(classname,divname) {
 </head>
  
 <body>
+    <div id="newstudent">
 	<div class="center_division">
 		<div class="center_body_menu">
 			<form action="ReportAction_saveReport" id="form1" name="form1"
@@ -1083,7 +1085,7 @@ function insertrow(classname,divname) {
 					<tr>
 						<td colspan="6"><input type="button" name="button"
 							value="新 增" style="width:60px; height:24px;"
-							onclick="insertrow('classname','div_id')" />      <input
+							onclick="inserttable()" />      <input
 							type="button" name="button" value="删 除"
 							style="width:60px; height:24px;" onclick="deletetable()" /><input type="button" name="button"
 							value="新 增" style="width:60px; height:24px;"
@@ -1422,5 +1424,6 @@ function insertrow(classname,divname) {
 </table>
 
     </div>
+</div>
 </body>
 </html>
