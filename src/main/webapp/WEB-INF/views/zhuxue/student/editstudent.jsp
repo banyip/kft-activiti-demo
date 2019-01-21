@@ -300,7 +300,7 @@
 	
 		<tr><td colspan=8>
 		<input type=hidden class="studentApply" id="audits[0]_id" name="audits[0]_id" " />		    
-		<table class="class_audit" width="100%">
+		<table class="class_audits" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
 		相关走访资料上传</td>
@@ -315,8 +315,8 @@
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
 	
-	<tr><td colspan=8><div id="div_audit[0]_auditphotosa">
-				<table class="class_audit[0]_auditphotosa" width="100%">
+	<tr><td colspan=8><div id="div_audits[0]_auditphotosa">
+				<table class="class_audits[0]_auditphotosa" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
 				<input type=hidden class="studentApply" type="text" id="audits[0]_auditphotos[0]_id" name="auditPhoto[0]_id"  />
@@ -335,8 +335,8 @@
 	</table>
 	</div>
 	</td></tr>
-<tr><td colspan=8>		    <div id="div_audit[1]_auditphotos">
-				<table class="class_audit[1]_auditphotos" width="100%">
+<tr><td colspan=8>		    <div id="div_audits[1]_auditphotos">
+				<table class="class_audits[1]_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audits[0]_auditPhoto[1]_photoDate" name="auditPhoto[1]_photoDate" style="width: 80px"></td>
 		<td class="style11" style="width: 66pt">
@@ -613,9 +613,9 @@
 			</tr>
 
 	<tr><td colspan=8>		    
-	<div id="div_audit">
+	<div id="div_audits">
 			<input type=hidden class="studentApply" id="audits[1]_id" name="audits[1]_id" />	
-				<table class="class_audit" width="100%">	
+				<table class="class_audits" width="100%">	
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
 		相关走访资料上传</td>
@@ -629,9 +629,9 @@
 		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
-	<tr><td colspan=8><div id="div_audit[1]_auditphotosa">
+	<tr><td colspan=8><div id="div_audits[1]_auditphotosa">
 				<input type=hidden class="studentApply" type="text" id="audits[1]_auditphotos[0]_id" name="auditPhoto[0]_id" />
-				<table class="class_audit[1]_auditphotosa" width="100%">
+				<table class="class_audits[1]_auditphotosa" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
 				<input class="studentApply" type="text" id="audits[1]_auditphotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
@@ -649,8 +649,8 @@
 	</table>
 	</div>
 	</td></tr>
-	<tr><td colspan=8>		    <div id="div_audit[1]_auditphotos">
-				<table class="class_audit[1]_auditphotos" width="100%">
+	<tr><td colspan=8>		    <div id="div_audits[1]_auditphotos">
+				<table class="class_audits[1]_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audits[1]_auditPhoto[1]_photoDate" name="auditPhoto[1]_photoDate" style="width: 80px"></td>
 		<td class="style11" style="width: 66pt">
