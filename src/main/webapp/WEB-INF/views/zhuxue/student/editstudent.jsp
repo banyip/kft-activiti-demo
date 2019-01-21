@@ -711,7 +711,7 @@
 		<td class="style45">电话</td>
 		<td colspan="2" class="style85"><span style="mso-spacerun:yes">
 		<input  class="studentApply" id="audits[1]_auditPersonContactNo" name="auditPersonContactNo" style="width: 124px" /></span>&nbsp;</td>
-	</tr>
+	</tr> 
 	</table></div>
 	</td>
 	</tr>
