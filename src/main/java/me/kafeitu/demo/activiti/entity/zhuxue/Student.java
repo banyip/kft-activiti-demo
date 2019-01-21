@@ -1194,7 +1194,7 @@ public class Student extends IdEntity implements Serializable {
         this.reason = reason;
     }
 
-	public void setRelatives(Set<Relative> relatives) {
+	public void setRelatives(List<Relative> relatives) {
 		this.relatives = relatives;
 	}
 /*
