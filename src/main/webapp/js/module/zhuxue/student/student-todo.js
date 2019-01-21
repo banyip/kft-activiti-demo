@@ -378,8 +378,8 @@ var handleOpts = {
 			        
 			        $('#relative')[0].value = content2;
 */
-
-                    $.each($('.studentApply'),function()
+                    myparent=$('#newstudent');
+                    $.each(myparent.find('.studentApply'),function()
                         {
                             if(this.type=="checkbox")
                             variables.push({
