@@ -29,15 +29,22 @@ import java.util.List;
 @Table(name = "ZHUXUE_RELATIVE")
 public class Relative extends IdEntity implements Serializable {
 
-	
+
+	@Column(length=50)
+	public String getBirthDate() {
+		return birthDate;
+	}
+	public void setBirthDate(String birthDate) {
+		this.birthDate = birthDate;
+	}
 	public Relative(String relative)
 	{
 		List<String> relativeInfos = Arrays.asList(relative.split(":",-1));
 		System.out.println(relativeInfos);
 		this.relationship= relativeInfos.get(0);
 		this.name = relativeInfos.get(1);
-		this.birthDate = relativeInfos.get(2);
-		this.contactNum = relativeInfos.get(3);
+		this.setBirthDate(relativeInfos.get(2));
+		this.contactNo = relativeInfos.get(3);
 		this.profectional = relativeInfos.get(4);
 		this.anualIncome = relativeInfos.get(5);
 		this.otherSponse = relativeInfos.get(6);		
@@ -65,14 +72,14 @@ public class Relative extends IdEntity implements Serializable {
 	}
 
 	@Column
-	public String getContactNum() {
-		return contactNum;
+	public String getContactNo() {
+		return contactNo;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public void setContactNum(String contactNum) {
-		this.contactNum = contactNum;
+	public void setContactNo(String contactNo) {
+		this.contactNo = contactNo;
 	}
 	
 	@Column
@@ -105,14 +112,13 @@ public class Relative extends IdEntity implements Serializable {
 	private String relativeId ="";
     private String relationship="";
     private String name="";
-    private String contactNum="";
+    private String contactNo="";
     private String profectional="";
     private String job="";
     private String anualIncome="";
     private String health="";
     private String education="";
     private String otherSponse="";
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
     private String birthDate;
     
     @Column
@@ -140,7 +146,7 @@ public class Relative extends IdEntity implements Serializable {
     
 	public boolean EmptyorNot()
 	{
-		if(relativeId.length()+relationship.length()+name.length()+contactNum.length()+profectional.length()+job.length()+anualIncome.length()+health.length()+education.length()+otherSponse.length()==0)
+		if(relativeId.length()+relationship.length()+name.length()+contactNo.length()+profectional.length()+job.length()+anualIncome.length()+health.length()+education.length()+otherSponse.length()==0)
 			return true;
 		else 
 			return false;

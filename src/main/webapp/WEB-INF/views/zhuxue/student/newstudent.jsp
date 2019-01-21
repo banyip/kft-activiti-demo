@@ -295,7 +295,7 @@
 	
 	
 		<tr><td colspan=8>		    
-		<table class="class_audit" width="100%">
+		<table class="class_audits" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
 		相关走访资料上传</td>
@@ -579,8 +579,8 @@
 			</tr>
 
 	<tr><td colspan=8>		    
-	<div id="div_audit">
-				<table class="class_audit" width="100%">	
+	<div id="div_audits">
+				<table class="class_audits" width="100%">	
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
 		相关走访资料上传</td>
