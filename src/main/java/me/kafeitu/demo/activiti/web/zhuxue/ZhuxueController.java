@@ -171,7 +171,7 @@ public class ZhuxueController {
    				String methodname;
    				if(key.indexOf("auditPhoto")>0)
    				{
-   					int photopos = "audit[0]_auditPhoto[0]".length();
+   					int photopos = "audit[0]_auditPhoto".length();
    					int photoindex = Integer.parseInt(key.substring(pos+1,pos+2));
    					List<AuditPhoto> auditphotos = audit.getAuditphotos();
    					while(photoindex>=auditphotos.size())
