@@ -67,10 +67,10 @@ function inserttable(whichpage,whichpart) {
     myparent=$('#'+whichpage);
 	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
-	content = content.replace(/\[0\]/g, "["+ $('#'+divid)[0].childElementCount + "]");
+	content = content.replace(/\[0\]/g, "["+ myparent.find("."+tableclass) + "]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
-	if(myparent.find('#'+divid)[0].children.length <=7){
+	if(myparent.find('.'+tableclass).length <=7){
     myparent.find('#'+divid).append(content);
 	}else{
 		alert("最多同时添加5个信息!");
@@ -84,8 +84,8 @@ function insertaudit(whichpage) {
     myparent=$('#'+whichpage);
 	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
-    content = content.replace(/audits\[0\]/g, "audits["+ $('.'+tableclass).length + "]");
-    content = content.replace(/audits\\\\\[0\\\\\]/g, "audits\\\\\["+ $('.'+tableclass).length + "\\\\\]");
+    content = content.replace(/audits\[0\]/g, "audits["+ myparent.find('.'+tableclass).length + "]");
+    content = content.replace(/audits\\\\\[0\\\\\]/g, "audits\\\\\["+ myparent.find('.'+tableclass).length + "\\\\\]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
 	if(myparent.find('.'+tableclass).length <=6){
@@ -104,10 +104,10 @@ function insertauditphotos(whichpage,whichpart)
     myparent=$('#'+whichpage);
 	var newnode =myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
-	content = content.replace(/auditPhoto\[0\]/g, "auditPhoto["+ $('#'+divid)[0].childElementCount + "]");
+	content = content.replace(/auditPhoto\[0\]/g, "auditPhoto["+ myparent.find(tableclass).length + "]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
-	if(myparent.find('#'+divid)[0].childNodes.length <=6){
+	if(myparent.find('.'+tableclass).length <=6){
     myparent.find('#'+divid).append(content);
 /*    myparent.find('[id$="Time"],[id$="Date"]').datetimepicker({
             stepMinute: 5
@@ -118,14 +118,6 @@ function insertauditphotos(whichpage,whichpart)
 }
 
 
-function insertrow(classname,divname) {
-	var newnode = $('.'+classname)[0].cloneNode(true);
-    var content = newnode.outerHTML;
-	content = content.replace(/\[0\]/g, "["+ $('.'+classname).length + "]");
-
-    $('#'+divname)[0].append(content);
-
-}
 
 
 //删除
