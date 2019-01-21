@@ -50,7 +50,7 @@ public class StudentManager {
         if (entity.getId() == null) {
             entity.setApplyTime(new Date());
         }
-        Set<Relative> relatives = entity.getRelatives();
+        List<Relative> relatives = entity.getRelatives();
         for (Relative relative: relatives) {  
             if(relative.EmptyorNot())
         	relatives.remove(relative);  
