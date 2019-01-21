@@ -256,6 +256,7 @@ public class ZhuxueController {
    				Object value = variables.get(key);
    				String invokeClassName = "Relative";   				
    				int pos = (invokeClassName).length()+1;
+   				logger.debug("亲戚信息保存key："+key);
    				int index = Integer.parseInt(key.substring(pos+1,pos+2));
    				List<Relative> items = student.getRelatives();
    				while(index>=items.size())
