@@ -162,7 +162,7 @@ public class ZhuxueController {
    			{
    				Object value = variables.get(key);
    				String invokeClassName = "Audit";   				
-   				int pos = (invokeClassName).length();
+   				int pos = (invokeClassName).length()+1;
    				int index = Integer.parseInt(key.substring(pos+1,pos+2));
    				List<Audit> audits = student.getAudits();
    				while(index>=audits.size())
