@@ -77,15 +77,15 @@ function inserttable(whichpage,whichpart) {
 	}
 }
 
-//add audit part
+//add audits part
 function insertaudit(whichpage) {
     tableclass='class_audit'
     divid="div_audit";
     myparent=$('#'+whichpage);
 	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
-    content = content.replace(/audit\[0\]/g, "audit["+ $('.'+tableclass).length + "]");
-    content = content.replace(/audit\\\\\[0\\\\\]/g, "audit\\\\\["+ $('.'+tableclass).length + "\\\\\]");
+    content = content.replace(/audits\[0\]/g, "audits["+ $('.'+tableclass).length + "]");
+    content = content.replace(/audits\\\\\[0\\\\\]/g, "audits\\\\\["+ $('.'+tableclass).length + "\\\\\]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
 	if(myparent.find('.'+tableclass).length <=6){
@@ -224,16 +224,16 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                 {
                                     if(j>0)
                                         //add line
-                                        insertauditphotos(whichpage,'audit\\['+i+'\\]_'+'auditphotosa');
+                                        insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
                                         if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey).length>0)
-                                            myparent.find('#audit\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
+                                            myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                     //add line
-                                   // insertauditphotos(whichpage,'audit\\['+i+'\\]_'+'auditphotosa');
+                                   // insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                 }   
                         
                         else
-                        myparent.find('input[id="audit\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
+                        myparent.find('input[id="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
                 
                     }
                     //add line

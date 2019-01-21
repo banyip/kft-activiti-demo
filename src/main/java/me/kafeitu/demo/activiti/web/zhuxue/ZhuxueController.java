@@ -158,7 +158,7 @@ public class ZhuxueController {
    		        String relatives = (String)variables.get(key);
    		        student.setRelatives(relatives);
    			}*/
-   			else if(key.indexOf("audit")==0)
+   			else if(key.indexOf("audits")==0)
    			{
    				Object value = variables.get(key);
    				String invokeClassName = "Audit";   				
@@ -173,7 +173,7 @@ public class ZhuxueController {
    				String methodname;
    				if(key.indexOf("auditPhoto")>0)
    				{
-   					int photopos = "audit[0]_auditPhoto".length();
+   					int photopos = "audits[0]_auditPhoto".length();
    					int photoindex = Integer.parseInt(key.substring(pos+1,pos+2));
    					List<AuditPhoto> auditphotos = audit.getAuditphotos();
    					while(photoindex>=auditphotos.size())
@@ -297,7 +297,7 @@ public class ZhuxueController {
 		   					audits.add(new Audit());
 		   				}
 		   				Audit audit = audits.get(index);
-		   				pos = "audit[0]_auditPhoto".length();
+		   				pos = "audits[0]_auditPhoto".length();
 		   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
 		   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
 		   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
