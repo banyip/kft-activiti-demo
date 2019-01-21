@@ -79,8 +79,8 @@ function inserttable(whichpage,whichpart) {
 
 //add audits part
 function insertaudit(whichpage) {
-    tableclass='class_audit'
-    divid="div_audit";
+    tableclass='class_audits'
+    divid="div_audits";
     myparent=$('#'+whichpage);
 	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
