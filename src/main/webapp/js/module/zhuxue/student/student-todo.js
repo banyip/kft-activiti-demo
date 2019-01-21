@@ -70,7 +70,7 @@ function inserttable(whichpage,whichpart) {
 	content = content.replace(/\[0\]/g, "["+ $('#'+divid)[0].childElementCount + "]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
-	if(myparent.find('#'+divid)[0].childNodes.length <=6){
+	if(myparent.find('#'+divid)[0].children.length <=7){
     myparent.find('#'+divid).append(content);
 	}else{
 		alert("最多同时添加5个信息!");
@@ -222,6 +222,9 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                         if(key=="auditphotos")                  
                             for(var j=0;j<eval('v['+i+'].'+key).length;j++)
                                 {
+                                    if(j>0)
+                                        //add line
+                                        insertauditphotos(whichpage,'audit\\['+i+'\\]_'+'auditphotosa');
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
                                         if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey).length>0)
                                             myparent.find('#audit\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
@@ -360,7 +363,7 @@ var handleOpts = {
 						type: 'B'
 					}
                     ];
-			        var content2 = "";
+			 /*       var content2 = "";
 			        for (let i = 0; i<$('#div_bjbr').find(".yltable").length ; i++ ){
 			            var yltable = $('#div_bjbr').find(".yltable")[i];
 			            var content1 = "";
@@ -374,7 +377,7 @@ var handleOpts = {
 			        content2=content2.substr(1);
 			        
 			        $('#relative')[0].value = content2;
-
+*/
 
                     $.each($('.studentApply'),function()
                         {

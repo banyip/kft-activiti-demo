@@ -179,8 +179,8 @@
     </tr>
 			<tr>
 				<td colspan="8" class="style84">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','relatives')" />      
@@ -354,8 +354,8 @@
 	</td></tr>	
 			<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertauditphotos('newstudent','audit\\[0\\]_auditphotos')" />      
@@ -465,8 +465,8 @@
 	</div></td></tr>
 				<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','exams')" />      
@@ -509,8 +509,8 @@
 	
 				<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','transfers')" />      
@@ -553,8 +553,8 @@
 	</div></td></tr>
 				<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','communicates')" />      
@@ -668,8 +668,8 @@
 	</td></tr>
 			<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertauditphotos('newstudent','audit\\[1\\]_auditphotos')" />      
@@ -717,8 +717,8 @@
 	</tr>
 				<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertaudit('newstudent')" />      

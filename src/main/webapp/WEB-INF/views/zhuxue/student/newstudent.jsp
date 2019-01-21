@@ -155,21 +155,21 @@
 
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 101px;" class="style9">
-		<input class="relative" type="text" id="relatives[0]_relationship" name="relationship" style="width: 40px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_relationship" name="relationship" style="width: 40px">　</td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_name" name="name" style="width: 73px"></td>
+		<input class="studentApply" type="text" id="relatives[0]_name" name="name" style="width: 73px"></td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_birthDate" name="birthDate" style="width: 96px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_birthDate" name="birthDate" style="width: 96px">　</td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_contactNo" name="contactNo" style="width: 112px"></td>
+		<input class="studentApply" type="text" id="relatives[0]_contactNo" name="contactNo" style="width: 112px"></td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_profectional" name="profectional" style="width: 100px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_profectional" name="profectional" style="width: 100px">　</td>
 		<td class="style11">
-		<input class="relative" type="number" id="relatives[0]_anualIncome" name="anualIncome" style="width: 81px">　</td>
+		<input class="studentApply" type="number" id="relatives[0]_anualIncome" name="anualIncome" style="width: 81px">　</td>
 		<td class="style11">
-		<input class="relative" type="text" id="relatives[0]_otherSponse" name="otherSponse" style="width: 78px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_otherSponse" name="otherSponse" style="width: 78px">　</td>
 		<td class="style19">
-		<input class="relative" type="text" id="relatives[0]_health" name="health" style="width: 86px">　</td>
+		<input class="studentApply" type="text" id="relatives[0]_health" name="health" style="width: 86px">　</td>
     </tr>
     </table>
     </div>
@@ -177,8 +177,6 @@
     </tr>
 			<tr>
 				<td colspan="8" class="style84">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','relatives')" />      
@@ -332,8 +330,7 @@
 	</td></tr>
 			<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
+							
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertauditphotos('newstudent','audit\\[0\\]_auditphotos')" />      
@@ -442,8 +439,6 @@
 	</div></td></tr>
 				<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','exams')" />      
@@ -485,8 +480,6 @@
 	
 				<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','transfers')" />      
@@ -528,8 +521,6 @@
 	</div></td></tr>
 				<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','communicates')" />      
@@ -578,8 +569,6 @@
     </tr>
 			<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','evaluates')" />      
@@ -624,8 +613,6 @@
 	</td></tr>
 			<tr>
 				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertauditphotos('newstudent','audit\\[1\\]_auditphotos')" />      
@@ -672,9 +659,7 @@
 	</td>
 	</tr>
 				<tr>
-				<td colspan="8" class="style1">
-                <input class="studentApply" type="hidden"										
-				id="relative" />   
+				<td colspan="8" class="style1">                  
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertaudit('newstudent')" />      

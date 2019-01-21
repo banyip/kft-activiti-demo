@@ -152,11 +152,13 @@ public class ZhuxueController {
    				Object value = variables.get(key);
    				invoke(methodname,value,(Object)student,"Student","java.lang.String");
  				logger.debug("学生信息保存成功："+key);
-   			}else if(key.equals("relative"))
+   			}
+   			/*else if(key.equals("relative"))
    			{
    		        String relatives = (String)variables.get(key);
    		        student.setRelatives(relatives);
-   			}else if(key.indexOf("audit")==0)
+   			}*/
+   			else if(key.indexOf("audit")==0)
    			{
    				Object value = variables.get(key);
    				String invokeClassName = "Audit";   				
@@ -246,6 +248,21 @@ public class ZhuxueController {
    					items.add(new Evaluate());
    				}
    				Evaluate item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");
+   			
+   			}else if(key.indexOf("relatives")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Relative";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Relative> items = student.getRelatives();
+   				while(index>=items.size())
+   				{
+   					items.add(new Relative());
+   				}
+   				Relative item = items.get(index);
    				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
    				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");
    			

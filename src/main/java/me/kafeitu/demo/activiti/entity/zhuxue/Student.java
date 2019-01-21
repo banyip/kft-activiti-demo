@@ -184,7 +184,7 @@ public class Student extends IdEntity implements Serializable {
 
 	private String reason;
 
-	private Set<Relative> relatives = new HashSet<Relative>();
+	private List<Relative> relatives = new ArrayList<Relative>();
 
 	private String relativeSponse;
 	
@@ -690,7 +690,7 @@ public class Student extends IdEntity implements Serializable {
 
 	@Column(length = 50)
 	@OneToMany(cascade = {CascadeType.ALL})
-	public Set<Relative> getRelatives() {
+	public List<Relative> getRelatives() {
 		return relatives;
 	}
 
@@ -1197,7 +1197,7 @@ public class Student extends IdEntity implements Serializable {
 	public void setRelatives(Set<Relative> relatives) {
 		this.relatives = relatives;
 	}
-
+/*
 	public void setRelatives(String relatives) {
 		List<String> relativeList = Arrays.asList(relatives.split(";"));
 		this.relatives =  new HashSet<Relative>();
@@ -1205,7 +1205,7 @@ public class Student extends IdEntity implements Serializable {
 		for(int i=0;i<relativeList.size();i++)			
 			this.relatives.add(new Relative(relativeList.get(i)));
 	}
-
+*/
 	public void setRentFee(String rentFee) {
 		this.rentFee = rentFee;
 	}

@@ -32,7 +32,7 @@ import java.util.List;
 public class Transfer extends IdEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-	private Date transferTime;
+	private String transferTime;
 	private int amount;
 	private String semester;
 	private String method;
@@ -40,7 +40,7 @@ public class Transfer extends IdEntity implements Serializable {
 	private String contactNo;
 	
 	@Column
-	public Date getTransferTime() {
+	public String getTransferTime() {
 		return transferTime;
 	}
 	@Column
@@ -64,13 +64,15 @@ public class Transfer extends IdEntity implements Serializable {
 		return contactNo;
 	}
 
-	public void setTransferTime(Date transferTime) {
+	public void setTransferTime(String transferTime) {
 		this.transferTime = transferTime;
 	}
+/*
 	public void setTransferTime(String transferTime) throws ParseException {
 		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
 		this.transferTime = sDateFormat.parse(transferTime);
 	}
+	*/
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
