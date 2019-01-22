@@ -172,7 +172,7 @@ public class Student extends IdEntity implements Serializable {
 	private String poorEvaluateTotalScore;
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date publishTime;
+    private String publishTime;
 
 	private String qq;
 
@@ -662,7 +662,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	@Column
-	public Date getPublishTime() {
+	public String getPublishTime() {
 		return publishTime;
 	}
 
@@ -1169,15 +1169,15 @@ public class Student extends IdEntity implements Serializable {
 		this.poorEvaluateTotalScore = poorEvaluateTotalScore;
 	}
 
-	public void setPublishTime(Date publishTime) {
+	public void setPublishTime(String  publishTime) {
 		this.publishTime = publishTime;
 	}
 
-	public void setPublishTime(String publishTime) throws ParseException {
+/*	public void setPublishTime(String publishTime) throws ParseException {
 		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd");
 		this.publishTime = sDateFormat.parse(publishTime);
 	}
-
+*/
 	public void setQq(String qq) {
 		this.qq = qq;
 	}
