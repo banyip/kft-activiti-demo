@@ -314,8 +314,7 @@
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
 		<input type="text" class="studentApply" id="audits[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 80px" /></td>
         <td class="style11" style="width: 66pt">
-            <div  id="drop-area">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"/></div></td>
+		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px" multiple="multiple" /></td>
 		<td class="style11" style="width: 123px">
 		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto" style="width: 80px"/>　</td>
 		<td class="style11" style="width: 119px" >

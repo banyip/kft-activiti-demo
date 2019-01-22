@@ -2,7 +2,7 @@
  * 请假流程任务办理
  */
 $(function() {
-
+/*
 $("#drop-area").dmUploader({
   url: '/path/to/backend/upload.asp',
   //... More settings here...
@@ -11,7 +11,7 @@ $("#drop-area").dmUploader({
     console.log('Callback: Plugin initialized');
   }
 });
-
+*/
 
 
     // 签收
