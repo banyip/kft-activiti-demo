@@ -52,10 +52,11 @@ public class Student extends IdEntity implements Serializable {
 	private String auditNo;
     private List<Audit> audits = new ArrayList<Audit>();
     private String bank;
+
     
     private String bankCard;
 
-	private Date birthday;
+	private String birthday;
 
 	private String chineseScore ;
 
@@ -68,7 +69,6 @@ public class Student extends IdEntity implements Serializable {
 	private String endReason;
     
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date endTime;    
     private String englishScore;
     private String evaluateScore;
     private String evaluateScorePicture;
@@ -141,8 +141,8 @@ public class Student extends IdEntity implements Serializable {
 
 	private String picture;
 
-	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date poorEvaluateDate;
+
+    private String poorEvaluateDate;
 
 	private String poorEvaluateNote;
 
@@ -171,18 +171,10 @@ public class Student extends IdEntity implements Serializable {
 
 	private String poorEvaluateTotalScore;
 
-	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
+
     private String publishTime;
 
 	private String qq;
-
-	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date realityEndTime;
-
-	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date realityStartTime;
-
-	private String reason;
 
 	private List<Relative> relatives = new ArrayList<Relative>();
 
@@ -207,18 +199,15 @@ public class Student extends IdEntity implements Serializable {
 
 	private String sex;
 
-	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date sponseEndTime;
+	private String sponseEndTime;
 	
 	private String sponseReason;
 
-	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date sponseStartTime;
+    private String sponseStartTime;
 
 	private String sponseState;
 
-	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
-    private Date startTime;
+
     private String studentContactNo;
     private String studentId;
     private String studentName;
@@ -235,7 +224,8 @@ public class Student extends IdEntity implements Serializable {
     private List<Evaluate> evaluates= new ArrayList<Evaluate>();
     
  
-    @Column(length = 50)
+	
+	@Column(length = 50)
     public String getRelativeSponseIncome() {
 		return relativeSponseIncome;
 	}
@@ -350,11 +340,6 @@ public class Student extends IdEntity implements Serializable {
 	public String getEndReason() {
 		return endReason;
 	}
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "END_TIME")
-    public Date getEndTime() {
-        return endTime;
-    }
 
 	public String getEnglishScore() {
 		return englishScore;
@@ -589,7 +574,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	@Column(length = 50)
-	public Date getPoorEvaluateDate() {
+	public String getPoorEvaluateDate() {
 		return poorEvaluateDate;
 	}
 
@@ -671,22 +656,10 @@ public class Student extends IdEntity implements Serializable {
 		return qq;
 	}
 
-	@Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "REALITY_END_TIME")
-    public Date getRealityEndTime() {
-        return realityEndTime;
-    }
 
-	@Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "REALITY_START_TIME")
-    public Date getRealityStartTime() {
-        return realityStartTime;
-    }
 
-	@Column(length = 50)
-    public String getReason() {
-        return reason;
-    }
+
+
 
 	@Column(length = 50)
 	@OneToMany(cascade = {CascadeType.ALL})
@@ -734,7 +707,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	@Column(length = 50)
-	public Date getSponseEndTime() {
+	public String getSponseEndTime() {
 		return sponseEndTime;
 	}
 
@@ -744,7 +717,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	@Column
-	public Date getSponseStartTime() {
+	public String getSponseStartTime() {
 		return sponseStartTime;
 	}
 
@@ -753,11 +726,7 @@ public class Student extends IdEntity implements Serializable {
 		return sponseState;
 	}
 
-	@Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "START_TIME")
-	public Date getStartTime() {
-        return startTime;
-    }
+
 
 	@Column(length = 50)
     public String getStudentContactNo() {
@@ -870,12 +839,8 @@ public class Student extends IdEntity implements Serializable {
     public void setBankCard(String bankCard) {
 		this.bankCard = bankCard;
 	}
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
 		this.birthday = birthday;
-	}
-    public void setBirthday(String birthday) throws ParseException {
-		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
-		this.birthday = sDateFormat.parse(birthday);
 	}
 
 	public void setChineseScore(String chineseScore) {
@@ -909,10 +874,7 @@ public class Student extends IdEntity implements Serializable {
 		this.headTeacher = headTeacher;
 	}
 */
-	
-	public void setEndTime(Date endTime) {
-        this.endTime = endTime;
-    }
+
 	
 	public void setEnglishScore(String englishScore) {
 		this.englishScore = englishScore;
@@ -1113,7 +1075,7 @@ public class Student extends IdEntity implements Serializable {
 		this.picture = picture;
 	}
 
-	public void setPoorEvaluateDate(Date poorEvaluateDate) {
+	public void setPoorEvaluateDate(String poorEvaluateDate) {
 		this.poorEvaluateDate = poorEvaluateDate;
 	}
 
@@ -1182,17 +1144,6 @@ public class Student extends IdEntity implements Serializable {
 		this.qq = qq;
 	}
 
-	public void setRealityEndTime(Date realityEndTime) {
-        this.realityEndTime = realityEndTime;
-    }
-
-	public void setRealityStartTime(Date realityStartTime) {
-        this.realityStartTime = realityStartTime;
-    }
-
-	public void setReason(String reason) {
-        this.reason = reason;
-    }
 
 	public void setRelatives(List<Relative> relatives) {
 		this.relatives = relatives;
@@ -1238,35 +1189,27 @@ public class Student extends IdEntity implements Serializable {
 		this.sex = sex;
 	}
 
-	public void setSponseEndTime(Date sponseEndTime) {
+	public void setSponseEndTime(String sponseEndTime) {
 		this.sponseEndTime = sponseEndTime;
 	}
 
-	public void setSponseEndTime(String sponseEndTime) throws ParseException {
-		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
-		this.sponseEndTime = sDateFormat.parse(sponseEndTime);
-	}
+
 
 	public void setSponseReason(String sponseReason) {
 		this.sponseReason = sponseReason;
 	}
 
-	public void setSponseStartTime(Date sponseStartTime) {
+	public void setSponseStartTime(String sponseStartTime) {
 		this.sponseStartTime = sponseStartTime;
 	}
 
-	public void setSponseStartTime(String sponseStartTime) throws ParseException {
-		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
-		this.sponseStartTime = sDateFormat.parse(sponseStartTime);
-	}
+
 
 	public void setSponseState(String sponseState) {
 		this.sponseState = sponseState;
 	}
 
-	public void setStartTime(Date startTime) {
-        this.startTime = startTime;
-    }
+
 
 	public void setStudentContactNo(String studentContactNo) {
 		this.studentContactNo = studentContactNo;

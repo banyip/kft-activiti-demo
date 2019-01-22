@@ -387,12 +387,18 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt">是（　）</td>
-		<td class="style44">否（　）</td>
-		<td class="style45" >审核人签名</td>
-		<td class="style45">　</td>
+		<td class="style44" style="width: 60pt">
+		<select class="studentApply" id="audits[0]_ifAuditPass" name="ifAuditPass">
+		<option selected="" value="true">是</option>
+		<option value="false">否</option>
+		</select></td>
+		<td class="style44">&nbsp;</td>
+		<td class="style45" >审核人</td>
+		<td class="style45"><span style="mso-spacerun:yes">
+		<input  class="studentApply" id="audits[0]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
 		<td class="style45">电话</td>
-		<td colspan="2" class="style41">　</td>
+		<td colspan="2" class="style41"><span style="mso-spacerun:yes">
+		<input  class="studentApply" id="audits[0]_auditPersonContactNo" name="auditPersonContactNo" style="width: 124px" /></span>　</td>
 	</tr>
 	</table></div>
 	</td></tr>
@@ -622,7 +628,7 @@
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
-		<td colspan="8" style="height: 20pt" class="style39">初审评价</td>
+		<td colspan="8" style="height: 20pt" class="style39">复审评价</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style40">走访时间</td>

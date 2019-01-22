@@ -287,9 +287,9 @@ public class ZhuxueController {
 		        	{
 		        		student.savePicture(studentPictureFile);
 		        	}
-		        	if(filename.indexOf("audit")==0)
+		        	if(filename.indexOf("audits")==0)
 		        	{
-		 				String invokeClassName = "audit";   				
+		 				String invokeClassName = "Audit";   				
 		   				int pos = (invokeClassName).length();
 		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
 		   				List<Audit> audits =  student.getAudits();

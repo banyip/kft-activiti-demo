@@ -671,7 +671,7 @@
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
-		<td colspan="8" style="height: 20pt" class="style39">初审评价</td>
+		<td colspan="8" style="height: 20pt" class="style39">复审评价</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style40">走访时间</td>
