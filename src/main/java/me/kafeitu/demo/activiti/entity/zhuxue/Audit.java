@@ -47,38 +47,7 @@ public class Audit extends IdEntity implements Serializable {
     private String applyEvaluationPicture;
     private List<AuditPhoto> auditphotos = new ArrayList <AuditPhoto>();
     
-    private String ifAuditPass;
-    
-    private String auditPerson;
-    
-    private String auditPersonContactNo;
-    
-    @Column(length = 10 )
-    public String getIfAuditPass() {
-		return ifAuditPass;
-	}
-    
-    @Column(length = 50 )
-	public String getAuditPerson() {
-		return auditPerson;
-	}
-    
-    @Column(length = 30 )
-	public String getAuditPersonContactNo() {
-		return auditPersonContactNo;
-	}
-    
-	
-	public void setIfAuditPass(String ifAuditPass) {
-		this.ifAuditPass = ifAuditPass;
-	}
-	public void setAuditPerson(String auditPerson) {
-		this.auditPerson = auditPerson;
-	}
-	public void setAuditPersonContactNo(String auditPersonContactNo) {
-		this.auditPersonContactNo = auditPersonContactNo;
-	}
-
+  
 
     @Column( length = 50)
     public String getEvaluateScore() {
