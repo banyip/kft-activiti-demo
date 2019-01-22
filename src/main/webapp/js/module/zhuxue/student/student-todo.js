@@ -3,9 +3,6 @@
  */
 $(function() {
 
-   	$('#student_publishTime').datetimepicker({
-            stepMinute: 5
-        });
     $('[id$="Time"],[id$="Date"]').datetimepicker({
             stepMinute: 5
     });
@@ -35,11 +32,6 @@ $(function() {
     
 });
 
-$('[id$="Time"],[id$="Date"]').ready(function(){
-    $('[id$="Time"],[id$="Date"]').datetimepicker({
-            stepMinute: 5
-    });
-})
 
 // 用于保存加载的详细信息
 var detail = {};
