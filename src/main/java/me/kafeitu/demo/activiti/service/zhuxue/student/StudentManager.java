@@ -37,9 +37,17 @@ public class StudentManager {
 			for (Field field: fields)			
 				if(field.isAccessible()&&field.getType().getCanonicalName()=="java.lang.String")
 					valueSize = valueSize + ((String)field.get(obj)).length();
-
-		if(valueSize==0)
-			list.remove(obj);
+	
+			if(valueSize==0)
+			{
+		          Iterator<T> iterator = list.iterator();
+		          while (iterator.hasNext()) {
+		              T objinlist = iterator.next();
+		             if (objinlist == obj) {
+		                 iterator.remove();
+		             }
+		         }
+			}
 
 		}
 	}
