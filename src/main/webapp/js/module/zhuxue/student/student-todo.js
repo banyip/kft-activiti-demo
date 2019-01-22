@@ -3,10 +3,7 @@
  */
 $(function() {
 
-    $('[id$="Time"],[id$="Date"]').datetimepicker({
-            stepMinute: 5
-    });
-    $('[id$="Time"],[id$="Date"]').datetimepicker('setDate', new Date());
+
     // 签收
     $('.claim').button({
         icons: {
@@ -329,10 +326,10 @@ var handleOpts = {
 			open: function(id) {
 				var dialog = this;
 				
-				$('#startTime,#endTime', this).datetimepicker({
-		            stepMinute: 5
-		        });
-				
+            $('[id$="Time"],[id$="Date"]').datetimepicker({
+                    stepMinute: 5
+            });
+            $('[id$="Time"],[id$="Date"]').datetimepicker('setDate', new Date());
 				// 打开对话框的时候读取请假内容
 				
 
@@ -408,9 +405,7 @@ editstudent: {
 			open: function(id) {
 				var dialog = this;
 				
-				$('#startTime,#endTime', this).datetimepicker({
-		            stepMinute: 5
-		        });
+
                 
                 
 				// 打开对话框的时候读取请假内容
