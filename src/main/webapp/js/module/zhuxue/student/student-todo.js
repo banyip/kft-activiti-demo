@@ -3,6 +3,16 @@
  */
 $(function() {
 
+$("#drop-area").dmUploader({
+  url: '/path/to/backend/upload.asp',
+  //... More settings here...
+  
+  onInit: function(){
+    console.log('Callback: Plugin initialized');
+  }
+});
+
+
 
     // 签收
     $('.claim').button({
