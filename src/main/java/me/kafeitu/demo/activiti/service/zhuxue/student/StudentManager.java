@@ -30,6 +30,7 @@ public class StudentManager {
 	private <T> void cleanEmpty(List<T> list) throws IllegalArgumentException, IllegalAccessException
 	{
 		int valueSize=0;
+		List<T> objtodel = new ArrayList<T>();
 		for (T obj: list) { 
 
 			Class c=obj.getClass();
@@ -39,7 +40,9 @@ public class StudentManager {
 					valueSize = valueSize + ((String)field.get(obj)).length();
 	
 			if(valueSize==0)
-			{
+				objtodel.add(obj);
+			
+			/*{
 		          Iterator<T> iterator = list.iterator();
 		          while (iterator.hasNext()) {
 		              T objinlist = iterator.next();
@@ -47,9 +50,11 @@ public class StudentManager {
 		                 iterator.remove();
 		             }
 		         }
-			}
-
+			}*/
+			
 		}
+		for(T obj: objtodel)
+			list.remove(obj);
 	}
 
     private StudentDao studentDao;
