@@ -83,10 +83,10 @@ public class StudentManager {
     	if (entity.getId() == null) {
             entity.setApplyTime(new Date());
         }
-        List<Relative> items = entity.getRelatives();
-        this.<Relative>cleanEmpty(items);
-        List<Exam> exams=entity.getExams();
-        this.<Exam>cleanEmpty(exams);
+//        List<Relative> items = entity.getRelatives();
+//        this.<Relative>cleanEmpty(items);
+//        List<Exam> exams=entity.getExams();
+//        this.<Exam>cleanEmpty(exams);
         /*
         for (Relative item: items) {  
             if(emptyOrNot(item))
