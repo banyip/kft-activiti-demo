@@ -1174,7 +1174,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	public void setPublishTime(String publishTime) throws ParseException {
-		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		SimpleDateFormat sDateFormat=new SimpleDateFormat("yyyy-MM-dd");
 		this.publishTime = sDateFormat.parse(publishTime);
 	}
 

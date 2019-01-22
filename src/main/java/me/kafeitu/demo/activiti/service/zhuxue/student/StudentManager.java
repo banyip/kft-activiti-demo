@@ -33,7 +33,7 @@ public class StudentManager {
 		List<T> objtodel = new ArrayList<T>();
 		for (T obj: list) { 
 
-			Class c=obj.getClass();
+			Class c=obj.getClass(); 
 			Field[] fields=c.getDeclaredFields();
 			for (Field field: fields)			
 				if(field.isAccessible()&&field.getType().getCanonicalName()=="java.lang.String")
