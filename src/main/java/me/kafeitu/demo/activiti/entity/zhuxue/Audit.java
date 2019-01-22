@@ -39,7 +39,7 @@ public class Audit extends IdEntity implements Serializable {
     private String poorReason;
     private String studentEvaluation;
     private String auditResult;
-    private String ifAuditPass;
+    private String auditPass;
     private String auditPerson;
     private String evaluateScore;
     private String auditPersonContactNo;
@@ -98,8 +98,8 @@ public class Audit extends IdEntity implements Serializable {
 		return auditResult;
 	}
     @Column
-	public String getIfAuditPass() {
-		return ifAuditPass;
+	public String getAuditPass() {
+		return auditPass;
 	}
     @Column
 	public String getAuditPerson() {
@@ -122,8 +122,8 @@ public class Audit extends IdEntity implements Serializable {
 	public void setAuditResult(String auditResult) {
 		this.auditResult = auditResult;
 	}
-	public void setIfAuditPass(String ifAuditPass) {
-		this.ifAuditPass = ifAuditPass;
+	public void setAuditPass(String auditPass) {
+		this.auditPass = auditPass;
 	}
 	public void setAuditPerson(String auditPerson) {
 		this.auditPerson = auditPerson;

@@ -47,7 +47,7 @@
     
  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style12">学生姓名</td>
-		<td colspan="2" class="style10">　<input class="studentApply" id="student_studentName" name="studentName" /></td>
+		<td colspan="2" class="style10"><input class="studentApply" id="student_studentName" name="studentName" /></td>
 		<td class="style11">民族</td>
 		<td colspan="3" class="style10">
 		<input class="studentApply" id="student_nationality" name="nationality" />　</td>
@@ -98,7 +98,7 @@
 		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-		<td style="height: 22pt; width: 149pt;" class="style11">年龄</td>
+		<td style="height: 22pt; width: 149pt;" class="style11">出生日期</td>
 		<td class="style11" style="height: 22pt">性别</td>
 		<td class="style11" style="height: 22pt">QQ</td>
 		<td class="style16" style="height: 22pt">邮箱</td>
@@ -109,7 +109,7 @@
     </tr>     
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style11">
-		<input class="studentApply" id="student_age" name="age"  style="width: 50px"/>　</td>
+		<input class="studentApply" id="student_age" name="age"  style="width: 68px"/>　</td>
 		<td class="style11" style="width: 60pt">
 		<input class="studentApply" id="student_sex" name="sex"  style="width: 50px"/>　</td>
 		<td class="style11">
@@ -176,7 +176,7 @@
     </td>
     </tr>
 			<tr>
-				<td colspan="8" class="style84">
+				<td colspan="8" class="style1">
 
 
 					<input type="button" name="button"
@@ -404,16 +404,7 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">补充评价</td>
-		<td colspan="6" class="style41">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_supplemetaryEvaluation" name="supplemetaryEvaluation" style="width: 124px" /></span></td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt">是（　）</td>
-		<td class="style44">否（　）</td>
-		<td class="style45" >审核人签名</td>
-		<td class="style45">　</td>
-		<td class="style45">电话</td>
-		<td colspan="2" class="style41">　</td>
+		<td colspan="6" class="style41">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_supplemetaryEvaluation" name="supplemetaryEvaluation" style="width: 418px" /></span></td>
 	</tr>
 	</table></div>
 	</td></tr>
@@ -721,6 +712,7 @@
 			</tr>
 	
 	</table>
+
 
 
 

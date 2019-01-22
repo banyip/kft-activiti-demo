@@ -240,7 +240,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
  * 完成任务
  * @param {Object} taskId
  */
-function complete(variables,filenames,files) {
+function complete(variables,url,filenames,files) {
     var dialog = this;
     
 	// 转换JSON为字符串
@@ -273,7 +273,7 @@ function complete(variables,filenames,files) {
 			});
 
     $.ajax({
-        url:ctx+'/zhuxue/student/newstudent/' ,
+        url:ctx+url ,
         type:"post",
         data:form,
         processData:false,
@@ -390,7 +390,7 @@ var handleOpts = {
                     );
 					filenames = filenames.substr(1);
 					// 提交的时候把变量
-					complete(variables,filenames,files);
+					complete(variables,'/zhuxue/student/newstudent/',filenames,files);
 				}
 			},{
 				text: '取消',
@@ -423,9 +423,16 @@ editstudent: {
 						type: 'B'
 					}
                     ];
-                    $.each($('.studentApply'),function()
+                    myparent=$('#editstudent');
+                    $.each(myparent.find('.studentApply'),function()
                         {
-                            if(this.disabled==false&&!this.value==null)
+                            if(this.type=="checkbox")
+                            variables.push({
+                                key: this.id,
+                                value: this.checked,
+                                type: 'S'
+                            });
+                            else if(this.disabled==false&&this.value!=null)
                             variables.push({
                                 key: this.id,
                                 value: this.value,
@@ -433,11 +440,22 @@ editstudent: {
                             });
                         }
                     );
-                    ;
+                    var filenames="";
+                    var files = new Array();
+					 $.each($(':file.studentPhoto'),function()
+                        {
+                            if(this.files.length>0)
+                            {
+                                filenames = filenames + ":" +this.id;
+                                files.push(this.files[0]);
+                            }
+                        }                        
+                    );
+					filenames = filenames.substr(1);
 					
 					
 					// 提交的时候把变量
-					complete(variables);
+					complete(variables,'/zhuxue/student/editstudent/',filenames,files);
 				}
 			},{
 				text: '取消',

@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -98,7 +97,7 @@
 		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-		<td style="height: 22pt; width: 149pt;" class="style11">年龄</td>
+		<td style="height: 22pt; width: 149pt;" class="style11">出生日期</td>
 		<td class="style11" style="height: 22pt">性别</td>
 		<td class="style11" style="height: 22pt">QQ</td>
 		<td class="style16" style="height: 22pt">邮箱</td>
@@ -109,7 +108,7 @@
     </tr>     
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style11">
-		<input class="studentApply" id="student_age" name="age"  style="width: 50px"/>　</td>
+		<input class="studentApply" id="student_age" name="age"  style="width: 87px"/>　</td>
 		<td class="style11" style="width: 60pt">
 		<input class="studentApply" id="student_sex" name="sex"  style="width: 50px"/>　</td>
 		<td class="style11">
@@ -176,7 +175,7 @@
     </td>
     </tr>
 			<tr>
-				<td colspan="8" class="style84">
+				<td colspan="8" class="style1">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','relatives')" />      
@@ -362,7 +361,7 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[0]_ifAuditPass" name="ifAuditPass">
+		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[0]_auditPass" name="auditPass">
 		<option selected="" value="true">是</option>
 		<option value="false">否</option>
 		</select>&nbsp;</td>
@@ -383,22 +382,7 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">补充评价</td>
-		<td colspan="6" class="style41">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_supplemetaryEvaluation" name="supplemetaryEvaluation" style="width: 124px" /></span></td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt">
-		<select class="studentApply" id="audits[0]_ifAuditPass" name="ifAuditPass">
-		<option selected="" value="true">是</option>
-		<option value="false">否</option>
-		</select></td>
-		<td class="style44">&nbsp;</td>
-		<td class="style45" >审核人</td>
-		<td class="style45"><span style="mso-spacerun:yes">
-		<input  class="studentApply" id="audits[0]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
-		<td class="style45">电话</td>
-		<td colspan="2" class="style41"><span style="mso-spacerun:yes">
-		<input  class="studentApply" id="audits[0]_auditPersonContactNo" name="auditPersonContactNo" style="width: 124px" /></span>　</td>
+		<td colspan="6" class="style41">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_supplemetaryEvaluation" name="supplemetaryEvaluation" style="width: 420px" /></span></td>
 	</tr>
 	</table></div>
 	</td></tr>
@@ -650,7 +634,7 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[1]_ifAuditPass" name="ifAuditPass">
+		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[1]_auditPass" name="auditPass">
 		<option selected="" value="true">是</option>
 		<option value="false">否</option>
 		</select>&nbsp;</td>
@@ -676,7 +660,3 @@
 			</tr>
 	
 	</table>
-
-
-
-
