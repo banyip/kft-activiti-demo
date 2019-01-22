@@ -290,7 +290,7 @@ public class ZhuxueController {
 		        	if(filename.indexOf("audits")==0)
 		        	{
 		 				String invokeClassName = "Audit";   				
-		   				int pos = (invokeClassName).length();
+		   				int pos = (invokeClassName).length()+1;
 		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
 		   				List<Audit> audits =  student.getAudits();
 		   				while(index>=audits.size())
@@ -502,8 +502,8 @@ public class ZhuxueController {
 		        	}
 		        	if(filename.indexOf("audit")==0)
 		        	{
-		 				String invokeClassName = "audit";   				
-		   				int pos = (invokeClassName).length();
+		 				String invokeClassName = "Audit";   				
+		   				int pos = (invokeClassName).length()+1;
 		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
 		   				List<Audit> audits =  student.getAudits();
 		   				while(index>=audits.size())
