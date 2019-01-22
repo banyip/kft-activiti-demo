@@ -318,7 +318,7 @@ public class Student extends IdEntity implements Serializable {
 		return bankCard;
 	}
     @Column(length = 50)
-	public Date getBirthday() {
+	public String getBirthday() {
 		return birthday;
 	}
     public String getChineseScore() {
