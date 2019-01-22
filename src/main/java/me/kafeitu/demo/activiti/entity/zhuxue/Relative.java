@@ -2,13 +2,12 @@ package me.kafeitu.demo.activiti.entity.zhuxue;
 
 
 import me.kafeitu.demo.activiti.entity.IdEntity;
-
+import java.lang.reflect.Field;
 import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
 import org.springframework.format.annotation.DateTimeFormat;
-
 
 
 import javax.persistence.*;
@@ -144,9 +143,15 @@ public class Relative extends IdEntity implements Serializable {
 		this.anualIncome = anualIncome;
 	}
     
-	public boolean EmptyorNot()
+	public boolean EmptyorNot() throws IllegalArgumentException, IllegalAccessException
 	{
-		if(relativeId.length()+relationship.length()+name.length()+contactNo.length()+profectional.length()+job.length()+anualIncome.length()+health.length()+education.length()+otherSponse.length()==0)
+		int valueSize=0;
+		Class c=this.getClass();
+		Field[] fields=c.getDeclaredFields();
+		for (Field field: fields)			
+			if(field.isAccessible()&&field.getType().getCanonicalName()=="java.lang.String")
+				valueSize = valueSize + ((String)field.get(this)).length();
+		if(valueSize==0)
 			return true;
 		else 
 			return false;

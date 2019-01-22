@@ -335,6 +335,219 @@ public class ZhuxueController {
       
   }
 
+   
+   
+   /*
+    * newstudent
+    *
+    * @param id
+    * @return
+    */
+   @RequestMapping(value = "editstudent", method = {RequestMethod.POST})
+   @ResponseBody
+   public String editstudent(Variable var,@RequestParam("filenames") String filenames,@RequestParam("studentpictures") MultipartFile[] studentPictureFiles) {
+       try {
+           Map<String, Object> variables = var.getVariableMap();
+           
+           Set<String> variableNames = variables.keySet();
+           String studentId = (String)variables.get("id");
+           Student student =studentManager.getStudent(Long.parseLong(studentId));
+
+
+           logger.debug("学生信息保存中filenames："+filenames);
+           //logger.debug("学生信息保存中filenames："+studentPictureFiles);
+   		for (String key : variableNames) {
+   			
+   			if(key.indexOf("student_")==0)
+   			{
+   				logger.debug("学生信息保存内容key："+key);
+   				String methodname= "set"+key.substring(8,9).toUpperCase()+key.substring(9);
+   				Object value = variables.get(key);
+   				invoke(methodname,value,(Object)student,"Student","java.lang.String");
+ 				logger.debug("学生信息保存成功："+key);
+   			}
+   			/*else if(key.equals("relative"))
+   			{
+   		        String relatives = (String)variables.get(key);
+   		        student.setRelatives(relatives);
+   			}*/
+   			else if(key.indexOf("audits")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Audit";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Audit> audits = student.getAudits();
+   				while(index>=audits.size())
+   				{
+   					audits.add(new Audit());
+   				}
+   				Audit audit = audits.get(index);
+   				String methodname;
+   				if(key.indexOf("auditPhoto")>0)
+   				{
+   					int photopos = "audits[0]_auditPhoto".length();
+   					int photoindex = Integer.parseInt(key.substring(pos+1,pos+2));
+   					List<AuditPhoto> auditphotos = audit.getAuditphotos();
+   					while(photoindex>=auditphotos.size())
+   					{
+   						auditphotos.add(new AuditPhoto());
+   					}
+   					AuditPhoto auditphoto = auditphotos.get(photoindex);
+   					auditphoto.setPhotoDate((String) value);
+   					methodname="set" + key.substring(photopos+4,photopos+5).toUpperCase()+key.substring(photopos+5);
+   	   				invokeClassName="AuditPhoto";
+   	   				invoke(methodname,value,(Object)auditphoto,invokeClassName,"java.lang.String");   					
+   	   				
+   				}
+   				else
+   				{
+   					methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
+   					invoke(methodname,value,(Object)audits.get(index),invokeClassName,"java.lang.String"); 
+   				}
+   			}else if(key.indexOf("communicates")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Communicate";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Communicate> items = student.getCommunicates();
+   				while(index>=items.size())
+   				{
+   					items.add(new Communicate());
+   				}
+   				Communicate item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
+   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+   			}else if(key.indexOf("exams")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Exam";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Exam> items = student.getExams();
+   				while(index>=items.size())
+   				{
+   					items.add(new Exam());
+   				}
+   				Exam item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
+   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+   			}else if(key.indexOf("transfers")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Transfer";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Transfer> items = student.getTransfers();
+   				while(index>=items.size())
+   				{
+   					items.add(new Transfer());
+   				}
+   				Transfer item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+   			}else if(key.indexOf("evaluates")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Evaluate";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Evaluate> items = student.getEvaluates();
+   				while(index>=items.size())
+   				{
+   					items.add(new Evaluate());
+   				}
+   				Evaluate item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");
+   			
+   			}else if(key.indexOf("relatives")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Relative";   				
+   				int pos = (invokeClassName).length()+1;
+   				logger.debug("亲戚信息保存key："+key);
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Relative> items = student.getRelatives();
+   				while(index>=items.size())
+   				{
+   					items.add(new Relative());
+   				}
+   				Relative item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");
+   			
+   			}
+   			
+   			
+   		}
+   		//保存所有图片
+   		
+   		if(filenames.length()>0)
+   		{
+	   		String[] fileNameList = filenames.split(":",-1);
+	        for(int i=0;i<fileNameList.length;i++)
+	        {
+	        	String filename = fileNameList[i];
+	
+	        	MultipartFile studentPictureFile = studentPictureFiles[i];
+		   		if(!studentPictureFile.isEmpty())
+		        {
+		        	if(filename.indexOf("student_")==0)
+		        	{
+		        		student.savePicture(studentPictureFile);
+		        	}
+		        	if(filename.indexOf("audit")==0)
+		        	{
+		 				String invokeClassName = "audit";   				
+		   				int pos = (invokeClassName).length();
+		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
+		   				List<Audit> audits =  student.getAudits();
+		   				while(index>=audits.size())
+		   				{
+		   					audits.add(new Audit());
+		   				}
+		   				Audit audit = audits.get(index);
+		   				pos = "audits[0]_auditPhoto".length();
+		   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
+		   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+		   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
+		   				while(index>=auditPhotos.size())
+		   				{
+		   					auditPhotos.add(new AuditPhoto());
+		   				}	   				
+		   				AuditPhoto auditPhoto = auditPhotos.get(index);
+		   				auditPhoto.savePicture(studentPictureFile, whattosave);
+		        	}else if(filename.indexOf("communicates")==0)
+		        	{
+		 				String invokeClassName = "communicates";   				
+		   				int pos = (invokeClassName).length();
+		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
+		   				List<Communicate> items =  student.getCommunicates();
+		   				while(index>=items.size())
+		   				{
+		   					items.add(new Communicate());
+		   				}
+		   				Communicate item = items.get(index);
+		   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+		   				item.savePicture(studentPictureFile, whattosave);
+		        	}
+		        }
+	        }
+   		}
+        studentManager.saveStudent(student);
+        return "success";	 
+      }catch (Exception e) {
+    	  	logger.error("error on complete task", e);
+    	  	logger.error("error on complete , variables={}", new Object[]{var.getVariableMap(), e});
+    	  	return "error";
+      }
+      
+  }
+
     /**
      * 读取详细数据
      *

@@ -1,6 +1,7 @@
 package me.kafeitu.demo.activiti.service.zhuxue.student;
 
 import me.kafeitu.demo.activiti.dao.StudentDao;
+import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.util.Page;
@@ -10,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
@@ -24,6 +26,23 @@ import java.util.Set;
 @Component
 @Transactional(readOnly = true)
 public class StudentManager {
+
+	private <T> void cleanEmpty(List<T> list) throws IllegalArgumentException, IllegalAccessException
+	{
+		int valueSize=0;
+		for (T obj: list) { 
+
+			Class c=obj.getClass();
+			Field[] fields=c.getDeclaredFields();
+			for (Field field: fields)			
+				if(field.isAccessible()&&field.getType().getCanonicalName()=="java.lang.String")
+					valueSize = valueSize + ((String)field.get(obj)).length();
+
+		if(valueSize==0)
+			list.remove(obj);
+
+		}
+	}
 
     private StudentDao studentDao;
 
@@ -46,16 +65,23 @@ public class StudentManager {
 
     
     @Transactional(readOnly = false)
-    public void saveStudent(Student entity) {
-        if (entity.getId() == null) {
+    public void saveStudent(Student entity) throws IllegalArgumentException, IllegalAccessException {
+    	
+    	if (entity.getId() == null) {
             entity.setApplyTime(new Date());
         }
-        List<Relative> relatives = entity.getRelatives();
-        for (Relative relative: relatives) {  
-            if(relative.EmptyorNot())
-        	relatives.remove(relative);  
+        List<Relative> items = entity.getRelatives();
+        this.<Relative>cleanEmpty(items);
+        List<Exam> exams=entity.getExams();
+        this.<Exam>cleanEmpty(exams);
+        /*
+        for (Relative item: items) {  
+            if(emptyOrNot(item))
+            	items.remove(item);  
+
+           
       }  
-        
+   */     
         studentDao.save(entity);
     }
 

@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
-<input type=hidden class="studentApply" id="student_id" name="id" />
 	<colgroup>
 		<col width="83" >
 		<col width="72" span="2" >
@@ -155,7 +154,6 @@
 	</colgroup>
 
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-	<input type=hidden class="studentApply" type="text" id="relatives[0]_id" name="relatives[0]_id" />
 		<td height="26" style="height: 20.1pt; width: 101px;" class="style9">
 		<input class="studentApply" type="text" id="relatives[0]_relationship" name="relationship" style="width: 40px">　</td>
 		<td class="style11">
@@ -299,7 +297,6 @@
 	
 	
 		<tr><td colspan=8>
-		<input type=hidden class="studentApply" id="audits[0]_id" name="audits[0]_id" " />		    
 		<table class="class_audits" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
@@ -319,7 +316,6 @@
 				<table class="class_audits[0]_auditphotosa" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
-				<input type=hidden class="studentApply" type="text" id="audits[0]_auditphotos[0]_id" name="auditPhoto[0]_id"  />
 				<input class="studentApply" type="text" id="audits[0]_auditphotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
 		<td class="style11" style="width: 66pt">
 		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">显示图片</a></td>
@@ -441,7 +437,6 @@
 		<td class="style19">年级排名</td>
 	</tr>
 		<tr><td colspan=8>		    <div id="div_exams">
-		<input type=hidden class="studentApply" type="text" id="exams[0]_examTime" name="examTime" />
 				<table class="class_exams" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
@@ -488,7 +483,6 @@
 		<td colspan="3" class="style50">联系电话</td>
 	</tr>
 		<tr><td colspan=8>		    <div id="div_transfers">
-		<input class="studentApply" type="hidden" id="transfers[0]_id" name="transfers[0]_id" />
 				<table class="class_transfers" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
@@ -614,7 +608,6 @@
 
 	<tr><td colspan=8>		    
 	<div id="div_audits">
-			<input type=hidden class="studentApply" id="audits[1]_id" name="audits[1]_id" />	
 				<table class="class_audits" width="100%">	
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
@@ -630,7 +623,6 @@
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
 	<tr><td colspan=8><div id="div_audits[1]_auditphotosa">
-				<input type=hidden class="studentApply" type="text" id="audits[1]_auditphotos[0]_id" name="auditPhoto[0]_id" />
 				<table class="class_audits[1]_auditphotosa" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
