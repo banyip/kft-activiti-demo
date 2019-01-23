@@ -231,7 +231,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                     if(filenames[ii].length>0)
                                                     {
                                                         
-                                                        if(k>0)
+                                                        if(ii>0)
                                                             {                                                    		
                                                                 content = content.replace(photokey, photokey+ii);
                                                                 aobj.after("<br/>"+content);
