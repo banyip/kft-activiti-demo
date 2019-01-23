@@ -229,7 +229,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                         insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
                                     {
-                                        if(photokey.indexOf("photoDate")>0)
+                                        if(photokey.indexOf("photoDate")>=0)
                                             myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).val(eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                         else{
                                             var filenamesstr = eval('v['+i+'].'+key+'['+j+'].'+photokey);
