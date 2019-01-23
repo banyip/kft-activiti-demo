@@ -227,7 +227,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                             if(filenamesstr!=null&&filenamesstr.length>0)
                                             {
                                                 var filenames=filenamesstr.split(":",-1);
-                                                for(var i =0; i<filenames.length;i++)
+                                                for(var K =0; K<filenames.length;K++)
                                                     if(filenames[k].length>0)
                                                     {
                                                         
