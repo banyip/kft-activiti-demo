@@ -1,7 +1,5 @@
 var innerhtmls=new Map();
-$.each($('.div_maindialog'),function(){
-innerhtmls.set('editstudent',$(this).innerHTML);
-});
+
 
 /**
  * 请假流程任务办理
@@ -41,7 +39,9 @@ $("#drop-area").dmUploader({
     }).click(deletestudent);
     // 跟踪
     $('.trace').click(graphTrace);
-    editstudentinnerhtml
+     $.each($('.div_maindialog'),function(){
+        innerhtmls.set('editstudent',$(this).innerHTML);
+        });
 });
 
 
