@@ -511,9 +511,12 @@ public class ZhuxueController {
 		   					audits.add(new Audit());
 		   				}
 		   				Audit audit = audits.get(index);
-		   				pos = "audits[0]_auditPhoto".length();
+		   				pos = "audits[0]_auditPhoto".length();		   				
 		   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
+		   				//int secondpos = filename.indexOf('[',index+2);
+		   				//int sencondposend = filename.indexOf(']',index+2);
 		   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+		   				//int secondindex=Integer.parseInt(filename.substring(secondpos,sencondposend));
 		   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
 		   				while(index>=auditPhotos.size())
 		   				{

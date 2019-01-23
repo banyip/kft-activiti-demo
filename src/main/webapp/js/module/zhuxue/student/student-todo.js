@@ -391,10 +391,10 @@ var handleOpts = {
                     var files = new Array();
 					 $.each($(':file.studentPhoto'),function()
                         {
-                            if(this.files.length>0)
+                            for(var i=0;i<this.files.length;i++)
                             {
-                                filenames = filenames + ":" +this.id;
-                                files.push(this.files[0]);
+                                filenames = filenames ;
+                                files.push(this.files[i]);
                             }
                         }                        
                     );
