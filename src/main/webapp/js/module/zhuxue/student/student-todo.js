@@ -220,22 +220,25 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                     {
 
                                         var filenamesstr = eval('v['+i+'].'+key+'['+j+'].'+photokey);
-  										var aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
-                                        var content = aobj[0].cloneNode(true).outerHTML;
-                                        if(filenamesstr!=null&&filenamesstr.length>0)
-                                        {
-                                            var filenames=filenamesstr.split(":",-1);
-                                            for(var i =0; i<filenames.length;i++)
-                                                if(filenames[i].length>0)
-                                                {
-                                                    
-                                                    if(i>0)
-                                                    	{                                                    		
-                                                    		content = content.replace(photokey, photokey+i);
-                                                        	aobj.after(content);
-                                                    	}
-                                                    myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+1).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[i]);
-                                                }                                            
+                                        var aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
+                                        if(aobj.length>0)
+                                        {  
+                                            var content = aobj[0].cloneNode(true).outerHTML;
+                                            if(filenamesstr!=null&&filenamesstr.length>0)
+                                            {
+                                                var filenames=filenamesstr.split(":",-1);
+                                                for(var i =0; i<filenames.length;i++)
+                                                    if(filenames[i].length>0)
+                                                    {
+                                                        
+                                                        if(i>0)
+                                                            {                                                    		
+                                                                content = content.replace(photokey, photokey+i);
+                                                                aobj.after("<br/>"+content);
+                                                            }
+                                                        myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+1).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[i]);
+                                                    }                                            
+                                            }
                                         }
                                     }
                                                                            //add line
