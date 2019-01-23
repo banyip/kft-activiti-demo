@@ -243,6 +243,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                                 $(aobj[ii-1]).after("<br/>"+content);
                                                             }
                                                         $(myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
+                                                         $(myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey)[ii]).text("显示图片");
                                                     }                                            
                                             }
                                         }
@@ -251,13 +252,21 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                    // insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                 }   
                         
-                        else
+                       
                         myparent.find('input[id="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
                 
                     }
                     //add line
                 }
-            } else if (k.substr(0,2) == 'if') 
+            }else if (k == 'picture') 
+            {
+                if(v.length>0)
+                {
+                    myparent.find("a[name="+k+"].studentPhoto").attr('href',ctx+'/zhuxue/student/showPic/'+v);                
+                    myparent.find("a[name="+k+"].studentPhoto").text("显示图片");
+                }
+            }
+             else if (k.substr(0,2) == 'if') 
             {
                 if(v=="true")
                  myparent.find("input[type=checkbox][name="+k+"].studentApply").attr("checked",true);                

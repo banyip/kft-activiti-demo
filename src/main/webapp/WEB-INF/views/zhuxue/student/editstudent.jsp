@@ -58,7 +58,7 @@
 		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
 		<td class="style11">学生照片</td>
 		<td colspan="3" class="style11">
-		<input type="file" class="studentPhoto" id="student_picture" name="picture" /></td>
+		<a class="studentPhoto" id="student_picture" name="picture" >没有照片</a></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style12">
@@ -318,15 +318,15 @@
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
 				<input class="studentApply" type="text" id="audits[0]_auditphotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
 		<td class="style11" style="width: 66pt">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">显示图片</a></td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">没有图片</a></td>
 		<td class="style11" style="width: 123px">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_studentEditPhoto" name="auditPhoto[0]_studentEditPhoto" style="width: 80px">显示图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_studentEditPhoto" name="auditPhoto[0]_studentEditPhoto" style="width: 80px">没有图片</a>　</td>
 		<td class="style11" style="width: 119px" >
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">显示图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">没有图片</a>　</td>
 		<td class="style11" style="width: 98px">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">显示图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">没有图片</a>　</td>
 		<td colspan="3" class="style11">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">显示图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">没有图片</a>　</td>
 	</tr>
 	</table>
 	</div>
@@ -619,15 +619,15 @@
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
 				<input class="studentApply" type="text" id="audits[1]_auditphotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
 		<td class="style11" style="width: 66pt">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">显示图片</a></td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">没有图片</a></td>
 		<td class="style11" style="width: 123px">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_studentEditPhoto" name="auditPhoto[0]_studentEditPhoto" style="width: 80px">显示图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_studentEditPhoto" name="auditPhoto[0]_studentEditPhoto" style="width: 80px">没有图片</a>　</td>
 		<td class="style11" style="width: 119px" >
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">显示图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">没有图片</a>　</td>
 		<td class="style11" style="width: 98px">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">显示图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">没有图片</a>　</td>
 		<td colspan="3" class="style11">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">显示图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">没有图片</a>　</td>
 	</tr>
 	</table>
 	</div>
