@@ -11,6 +11,7 @@ import javax.persistence.*;
 import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
+import java.lang.reflect.Method;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -205,6 +206,7 @@ public class Student extends IdEntity implements Serializable {
 	private String studentContactNo;
 	private String studentId;
 	private String studentName;
+	private String applyEvaluationPicture;
 	private String supplemetaryEvaluation;
 	private String userId;
 	private Map<String, Object> variables;
@@ -215,6 +217,15 @@ public class Student extends IdEntity implements Serializable {
 	private List<Transfer> transfers = new ArrayList<Transfer>();
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private List<Evaluate> evaluates = new ArrayList<Evaluate>();
+
+	@Column(length = 50 )
+	public String getApplyEvaluationPicture() {
+		return applyEvaluationPicture;
+	}
+
+	public void setApplyEvaluationPicture(String applyEvaluationPicture) {
+		this.applyEvaluationPicture = applyEvaluationPicture;
+	}
 
 	@Column(length = 50)
 	public String getRelativeSponseIncome() {
@@ -802,17 +813,25 @@ public class Student extends IdEntity implements Serializable {
 		return workSituation;
 	}
 
-	public void savePicture(MultipartFile file) throws IOException {
+	public void savePicture(MultipartFile file,String whatPhoto) throws Exception {
 		// 原始文件名
 		String originalFileName = file.getOriginalFilename();
 		// 获取图片后缀
 		String suffix = originalFileName.substring(originalFileName.lastIndexOf("."));
 		// 生成图片存储的名称，UUID 避免相同图片名冲突，并加上图片后缀
-		String fileName = this.getStudentName() + UUID.randomUUID().toString() + suffix;
+		String fileName = this.getStudentName() + whatPhoto + UUID.randomUUID().toString() + suffix;
 		// 图片存储路径
 		String filePath = "pictures/" + fileName;
 		File saveFile = new File(filePath);
 		// 将上传的文件保存到服务器文件系统
+		String methodname = "set" + whatPhoto.substring(0, 1).toUpperCase() + whatPhoto.substring(1);
+		Class clazz = this.getClass();		
+        Class[] params = new Class[1];
+        params[0] = String.class;
+        Method m = clazz.getDeclaredMethod(methodname, params);
+        Object[] p = new Object[1];
+        p[0]=fileName;
+        m.invoke(this,p);   
 		file.transferTo(saveFile);
 		// 记录服务器文件系统图片名称
 		this.setPicture(fileName);

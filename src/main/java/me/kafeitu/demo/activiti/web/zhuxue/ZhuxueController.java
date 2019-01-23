@@ -285,7 +285,9 @@ public class ZhuxueController {
 		        {
 		        	if(filename.indexOf("student_")==0)
 		        	{
-		        		student.savePicture(studentPictureFile);
+		        		int pos = "Student_".length();
+		        		String whatPhoto = filename.substring(pos);
+		        		student.savePicture(studentPictureFile,whatPhoto);
 		        	}
 		        	if(filename.indexOf("audits")==0)
 		        	{
