@@ -378,7 +378,7 @@ public class Student extends IdEntity implements Serializable {
 		return evaluateScore;
 	}
 
-	@Column(length = 50)
+	@Column(length = 200)
 	public String getEvaluateScorePicture() {
 		return evaluateScorePicture;
 	}
@@ -610,7 +610,7 @@ public class Student extends IdEntity implements Serializable {
 		return parentName;
 	}
 
-	@Column(length = 50)
+	@Column(length = 200)
 	public String getPicture() {
 		return picture;
 	}
