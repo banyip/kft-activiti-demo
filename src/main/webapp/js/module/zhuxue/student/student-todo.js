@@ -236,7 +236,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                                 //var content1 = content.replace(photokey, photokey+ii);
                                                                 $(aobj[ii-1]).after("<br/>"+content);
                                                             }
-                                                        $(aobj[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
+                                                        $(myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
                                                     }                                            
                                             }
                                         }
