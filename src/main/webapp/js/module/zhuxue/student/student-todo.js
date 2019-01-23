@@ -217,9 +217,25 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                         //add line
                                         insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
-                                        if(eval('v['+i+'].'+key+'['+j+'].'+photokey)!=null&&eval('v['+i+'].'+key+'['+j+'].'+photokey).length>0)
-                                            myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key+'['+j+'].'+photokey));
-                                    //add line
+                                    {
+
+                                        var filenamesstr = eval('v['+i+'].'+key+'['+j+'].'+photokey);
+                                        if(filenamesstr!=null&&filenames.length>0)
+                                        {
+                                            var filenames=filenamesstr.split(":",-1);
+                                            $.each(filenames,function(){
+                                                if(this.length>0)
+                                                {
+                                                    var aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
+                                                    if(aobj.length>1)
+                                                        aobj.after(aobj[0].cloneNode(true).outerHTML);
+                                                    aobj[aobj.length-1].attr('href',ctx+'/zhuxue/student/showPic/'+filename);
+
+                                                }
+                                            });
+                                        }
+                                    }
+                                                                           //add line
                                    // insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                 }   
                         
