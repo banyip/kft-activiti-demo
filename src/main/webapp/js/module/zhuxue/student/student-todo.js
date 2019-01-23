@@ -185,7 +185,7 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
  * @param {Object} id
  */
 function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
-    $('#'+whichpage).innerHTML = innerhtmls.get(whichpage);
+    $('#'+whichpage)[0].innerHTML = innerhtmls.get(whichpage);
     var dialog = this;
     var myparent=$('#'+whichpage);
     $.getJSON(ctx + '/zhuxue/student/detail-with-vars/' + leaveId , function(data) {
