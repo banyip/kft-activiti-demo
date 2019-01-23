@@ -203,7 +203,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                         inserttable(whichpage,k)
                     for(let key in v[i])
                     {
-                        if(key.indexOf("Picture")>0||key.indexOf("Photo"))
+                        if(key.indexOf("Picture")>0||key.indexOf("Photo")>=0)
                         {
                             myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key));                
                             myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').text("显示图片");
