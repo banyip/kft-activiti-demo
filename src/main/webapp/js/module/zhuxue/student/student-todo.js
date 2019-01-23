@@ -223,16 +223,15 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                         if(filenamesstr!=null&&filenamesstr.length>0)
                                         {
                                             var filenames=filenamesstr.split(":",-1);
-                                            $.each(filenames,function(){
-                                                if(this.length>0)
+                                            for(var i =0; i<filenames.length;i++)
+                                                if(filenames[i].length>0)
                                                 {
                                                     var aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
-                                                    if(aobj.length>1)
+                                                    if(i>0)
                                                         aobj.after(aobj[0].cloneNode(true).outerHTML);
-                                                    $(aobj[aobj.length-1]).attr('href',ctx+'/zhuxue/student/showPic/'+this);
+                                                    $(aobj[i]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[i]);
 
-                                                }
-                                            });
+                                                }                                            
                                         }
                                     }
                                                                            //add line
