@@ -617,7 +617,7 @@
 				<table class="class_audits[1]_auditphotosa" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
-				<input class="studentApply" type="text" id="audits[1]_auditphotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
+				<a class="studentPhoto" type="text" id="audits[1]_auditphotos[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 86px"></td>
 		<td class="style11" style="width: 66pt">
 		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px">没有图片</a></td>
 		<td class="style11" style="width: 123px">
