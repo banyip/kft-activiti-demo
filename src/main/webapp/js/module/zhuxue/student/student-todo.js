@@ -1,6 +1,6 @@
-var innerhtmls=new Set();
+var innerhtmls=new Map();
 $.each($('.div_maindialog'),function(){
-innerhtmls.add('editstudent')=$(this).innerHTML;
+innerhtmls.set('editstudent',$(this).innerHTML);
 });
 
 /**
