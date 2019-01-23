@@ -227,16 +227,16 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                             if(filenamesstr!=null&&filenamesstr.length>0)
                                             {
                                                 var filenames=filenamesstr.split(":",-1);
-                                                for(var K =0; K<filenames.length;K++)
-                                                    if(filenames[k].length>0)
+                                                for(var ii =0; K<filenames.length;ii++)
+                                                    if(filenames[ii].length>0)
                                                     {
                                                         
                                                         if(k>0)
                                                             {                                                    		
-                                                                content = content.replace(photokey, photokey+k);
+                                                                content = content.replace(photokey, photokey+ii);
                                                                 aobj.after("<br/>"+content);
                                                             }
-                                                        myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+1).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[k]);
+                                                        myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+1).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
                                                     }                                            
                                             }
                                         }
