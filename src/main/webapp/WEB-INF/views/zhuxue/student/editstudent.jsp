@@ -58,7 +58,7 @@
 		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
 		<td class="style11">学生照片</td>
 		<td colspan="3" class="style11">
-		<a class="studentPhoto" id="student_picture" name="picture" >没有照片</a></td>
+		<a class="studentPhoto" id="student_picture" target=showpic name="picture" >没有照片</a></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style12">
@@ -396,7 +396,7 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">申请评定表</td>
-		<td colspan="6" class="style85">　<input type="file" class="applyEvaluationPicture" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_feedbackPhoto0" style="width: 303px">&nbsp;</td>
+		<td colspan="6" class="style85">　<a target=showpic class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_applyEvaluationPicture" style="width: 303px">没有照片</a><!--<input type="file" class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_applyEvaluationPicture" style="width: 303px">--></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">评定表得分</td>
@@ -532,7 +532,7 @@
 		<td colspan="3" class="style11" style="width: 268435376px" >
 				<input class="studentApply" type="text" id="communicates[0]_content" name="content" style="width: 187px"></td>
 		<td class="style11" colspan="3">
-				<input class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px"></td>
+				<a target=showpic class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px"></td>
 	</tr>
 	</table>
 	</div></td></tr>
