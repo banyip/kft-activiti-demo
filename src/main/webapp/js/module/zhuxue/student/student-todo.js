@@ -259,16 +259,20 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                                            //add line
                                    // insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                 }   
-                        
-                       
-                        myparent.find('input[id="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
+                        else if(key.indexOf("Picture")>0||key.indexOf("Photo"))
+                        {
+                            myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key));                
+                            myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').text("显示图片");
+                        }
+                        else
+                            myparent.find('input[id="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
                 
                     }
                     //add line
                 }
             }else if (k == 'picture') 
             {
-                if(v.length>0)
+                if(v!=null&&v.length>0)
                 {
                     myparent.find("a[name="+k+"].studentPhoto").attr('href',ctx+'/zhuxue/student/showPic/'+v);                
                     myparent.find("a[name="+k+"].studentPhoto").text("显示图片");
