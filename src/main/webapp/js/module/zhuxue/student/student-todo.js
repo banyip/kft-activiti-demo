@@ -393,7 +393,7 @@ var handleOpts = {
                         {
                             for(var i=0;i<this.files.length;i++)
                             {
-                                filenames = filenames +":" +  +this.id ;
+                                filenames = filenames +":" +  this.id ;
                                 files.push(this.files[i]);
                             }
                         }                        
