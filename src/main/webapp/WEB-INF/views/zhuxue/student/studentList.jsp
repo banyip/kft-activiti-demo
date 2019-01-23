@@ -67,7 +67,7 @@
  
 
     <!-- 学生信息登记学生信息 -->
-	<div id="newstudent" style="display: none">
+	<div id="newstudent" style="display: none" class="div_maindialog">
 		<!-- table用来显示信息，方便办理任务 -->
             <%@include file="newstudent.jsp" %>
 
@@ -75,7 +75,7 @@
     </div>
 
     <!-- 学生信息登记学生信息 -->
-	<div id="editstudent" style="display: none">
+	<div id="editstudent" style="display: none" class="div_maindialog">
 		<!-- table用来显示信息，方便办理任务 -->
          <%@include file="editstudent.jsp" %>
     </div>
