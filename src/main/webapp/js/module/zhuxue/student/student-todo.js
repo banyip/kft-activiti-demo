@@ -1,3 +1,8 @@
+var innerhtmls=new Set();
+$.each($('.div_maindialog'),function(){
+innerhtmls.add('editstudent')=$(this).innerHTML;
+});
+
 /**
  * 请假流程任务办理
  */
@@ -36,7 +41,7 @@ $("#drop-area").dmUploader({
     }).click(deletestudent);
     // 跟踪
     $('.trace').click(graphTrace);
-    
+    editstudentinnerhtml
 });
 
 
@@ -180,6 +185,7 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
  * @param {Object} id
  */
 function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
+    $('#'+whichpage).innerHTML = innerhtmls.get(whichpage);
     var dialog = this;
     var myparent=$('#'+whichpage);
     $.getJSON(ctx + '/zhuxue/student/detail-with-vars/' + leaveId , function(data) {
