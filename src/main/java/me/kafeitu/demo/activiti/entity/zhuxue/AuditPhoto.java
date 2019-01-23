@@ -40,7 +40,7 @@ public class AuditPhoto  extends IdEntity implements Serializable{
 	public String getPhotoDate() {
 		return photoDate;
 	}
-	@Column
+	@Column(length = 1000)
 	public String getFamilyPhoto() {
 		return familyPhoto;
 	}
@@ -56,7 +56,7 @@ public class AuditPhoto  extends IdEntity implements Serializable{
 	public String getRecieptphoto() {
 		return recieptphoto;
 	}
-	@Column
+	@Column(length = 1000)
 	public String getOtherPhoto() {
 		return otherPhoto;
 	}
@@ -104,12 +104,21 @@ public class AuditPhoto  extends IdEntity implements Serializable{
         String originalName = (String)m.invoke(this,null);        
         // 记录服务器文件系统图片名称
         params[0] = String.class;
+        methodname = "set" + whatPhoto.substring(0, 1).toUpperCase() + whatPhoto.substring(1);
         m = clazz.getDeclaredMethod(methodname, params);
         Object[] p = new Object[1];
         if(originalName.length()>0)
         	fileName=originalName + ":" +fileName;
         p[0]=fileName;
         m.invoke(this,p);
+        methodname=null;
+        originalFileName=null;
+        clazz=null;
+        m=null;
+        p=null;
+        params=null;
+        saveFile=null;
+        
         
 	}
 }
