@@ -231,9 +231,9 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                     if(filenames[ii].length>0)
                                                     {
                                                         
-                                                        if(ii>0)
+                                                        if(ii==aobj.length)
                                                             {                                                    		
-                                                                content = content.replace(photokey, photokey+ii);
+                                                                //var content1 = content.replace(photokey, photokey+ii);
                                                                 aobj.after("<br/>"+content);
                                                             }
                                                         myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+1).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
