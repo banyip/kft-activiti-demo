@@ -291,25 +291,34 @@ public class ZhuxueController {
 		        	}
 		        	if(filename.indexOf("audits")==0)
 		        	{
-		 				String invokeClassName = "Audit";   				
-		   				int pos = (invokeClassName).length()+1;
-		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
+		 				String invokeClassName = "audits"; 
+		        		int pos = (invokeClassName).length();
+		        		int index = Integer.parseInt(filename.substring(pos+1,pos+2));
 		   				List<Audit> audits =  student.getAudits();
 		   				while(index>=audits.size())
 		   				{
 		   					audits.add(new Audit());
 		   				}
 		   				Audit audit = audits.get(index);
-		   				pos = "audits[0]_auditPhoto".length();
-		   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
-		   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
-		   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
-		   				while(index>=auditPhotos.size())
+		   				if(filename.indexOf("auditPhoto")>=0)
 		   				{
-		   					auditPhotos.add(new AuditPhoto());
-		   				}	   				
-		   				AuditPhoto auditPhoto = auditPhotos.get(index);
-		   				auditPhoto.savePicture(studentPictureFile, whattosave);
+			   				pos = "audits[0]_auditPhoto".length();
+			   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
+			   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+			   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
+			   				while(index>=auditPhotos.size())
+			   				{
+			   					auditPhotos.add(new AuditPhoto());
+			   				}	   				
+			   				AuditPhoto auditPhoto = auditPhotos.get(index);
+			   				auditPhoto.savePicture(studentPictureFile, whattosave);
+			   			}		        	
+		   				else {
+  			
+			   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+			   				audit.savePicture(studentPictureFile, whattosave);
+		   				}
+	   				}
 		        	}else if(filename.indexOf("communicates")==0)
 		        	{
 		 				String invokeClassName = "communicates";   				
@@ -326,7 +335,6 @@ public class ZhuxueController {
 		        	}
 		        }
 	        }
-   		}
         studentManager.saveStudent(student);
         return "success";	 
       }catch (Exception e) {

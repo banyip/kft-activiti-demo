@@ -834,7 +834,6 @@ public class Student extends IdEntity implements Serializable {
         m.invoke(this,p);   
 		file.transferTo(saveFile);
 		// 记录服务器文件系统图片名称
-		this.setPicture(fileName);
 
 	}
 
