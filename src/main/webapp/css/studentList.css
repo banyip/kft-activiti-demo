@@ -66,9 +66,10 @@ input[type="number"]
 	text-align: center;
 	vertical-align: middle;
 	white-space: nowrap;
-	border-style: none;
-	border-color: inherit;
-	border-width: medium;
+	border-left: 1.5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 }
 .style2 {
@@ -100,10 +101,8 @@ input[type="number"]
 	vertical-align: middle;
 	white-space: nowrap;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: 1.5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
 	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 }
@@ -154,11 +153,9 @@ input[type="number"]
 	vertical-align: middle;
 	white-space: normal;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
+	border-right: 1.5pt solid windowtext;
 	border-top: .5pt solid windowtext;
-	border-bottom: 1.5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 }
 .style7 {
@@ -172,16 +169,9 @@ input[type="number"]
 	vertical-align: middle;
 	white-space: nowrap;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
-	padding: 0px;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
 	background: #B6AD38;
 }
 .style8 {
@@ -194,11 +184,9 @@ input[type="number"]
 	text-align: center;
 	vertical-align: middle;
 	white-space: nowrap;
-	border-left: 1.5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: 1.5pt solid windowtext;
+	border-left: .5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
 	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 	background: white;
@@ -214,7 +202,7 @@ input[type="number"]
 	vertical-align: middle;
 	white-space: nowrap;
 	border-left: 1.5pt solid windowtext;
-	border-right: .5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
 	border-top: .5pt solid windowtext;
 	border-bottom: .5pt solid windowtext;
 	padding: 0px;
@@ -230,9 +218,7 @@ input[type="number"]
 	vertical-align: middle;
 	white-space: nowrap;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
+	border-right: 1.5pt solid windowtext;
 	border-top: .5pt solid windowtext;
 	border-bottom: .5pt solid windowtext;
 	padding: 0px;
@@ -246,7 +232,11 @@ input[type="number"]
 	font-family: ËÎÌו;
 	text-align: center;
 	vertical-align: middle;
-	white-space: nowrap;
+    white-space: nowrap;
+    border-left: .5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
 	border: .5pt solid windowtext;
 	padding: 0px;
 }
@@ -485,13 +475,9 @@ input[type="number"]
 	vertical-align: bottom;
 	white-space: normal;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top: 1.5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 	background: white;
 }
@@ -527,15 +513,9 @@ input[type="number"]
 	vertical-align: bottom;
 	white-space: normal;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 	background: white;
 }
@@ -550,15 +530,9 @@ input[type="number"]
 	vertical-align: bottom;
 	white-space: nowrap;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 	background: white;
 }
@@ -592,13 +566,9 @@ input[type="number"]
 	vertical-align: bottom;
 	white-space: normal;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
+	border-right: 1.5pt solid windowtext;
 	border-top: .5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
+	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 	background: white;
 }
@@ -634,13 +604,9 @@ input[type="number"]
 	vertical-align: middle;
 	white-space: normal;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
+	border-right: 1.5pt solid windowtext;
 	border-top: .5pt solid windowtext;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
+	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 	background: white;
 }
@@ -678,15 +644,9 @@ input[type="number"]
 	vertical-align: middle;
 	white-space: nowrap;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 }
 .style35 {
@@ -700,15 +660,9 @@ input[type="number"]
 	vertical-align: middle;
 	white-space: nowrap;
 	border-left: .5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
-	border-top-style: none;
-	border-top-color: inherit;
-	border-top-width: medium;
-	border-bottom-style: none;
-	border-bottom-color: inherit;
-	border-bottom-width: medium;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
 	padding: 0px;
 }
 .style36 {
