@@ -230,7 +230,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                 for(var ii =0; ii<filenames.length;ii++)
                                                     if(filenames[ii].length>0)
                                                     {
-                                                        
+                                                        aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
                                                         if(ii==aobj.length)
                                                             {                                                    		
                                                                 //var content1 = content.replace(photokey, photokey+ii);
