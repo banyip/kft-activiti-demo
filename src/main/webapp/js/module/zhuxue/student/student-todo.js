@@ -230,7 +230,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
                                     {
                                         if(photokey.indexOf("photoDate")>0)
-                                            myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).text(eval('v['+i+'].'+key+'['+j+'].'+photokey));
+                                            myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).val(eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                         else{
                                             var filenamesstr = eval('v['+i+'].'+key+'['+j+'].'+photokey);
                                             var aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
