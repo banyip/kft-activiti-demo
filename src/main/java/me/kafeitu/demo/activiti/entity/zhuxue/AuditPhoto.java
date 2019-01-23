@@ -40,7 +40,7 @@ public class AuditPhoto  extends IdEntity implements Serializable{
 	public String getPhotoDate() {
 		return photoDate;
 	}
-	@Column(length = 1000)
+	@Column(length = 2000)
 	public String getFamilyPhoto() {
 		return familyPhoto;
 	}
@@ -56,7 +56,7 @@ public class AuditPhoto  extends IdEntity implements Serializable{
 	public String getRecieptphoto() {
 		return recieptphoto;
 	}
-	@Column(length = 1000)
+	@Column(length = 2000)
 	public String getOtherPhoto() {
 		return otherPhoto;
 	}
