@@ -107,7 +107,7 @@ public class AuditPhoto  extends IdEntity implements Serializable{
         methodname = "set" + whatPhoto.substring(0, 1).toUpperCase() + whatPhoto.substring(1);
         m = clazz.getDeclaredMethod(methodname, params);
         Object[] p = new Object[1];
-        if(originalName.length()>0)
+        if(originalName!=null&&originalName.length()>0)
         	fileName=originalName + ":" +fileName;
         p[0]=fileName;
         m.invoke(this,p);
