@@ -229,7 +229,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                     var aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
                                                     if(aobj.length>1)
                                                         aobj.after(aobj[0].cloneNode(true).outerHTML);
-                                                    aobj[aobj.length-1].attr('href',ctx+'/zhuxue/student/showPic/'+this);
+                                                    $(aobj[aobj.length-1]).attr('href',ctx+'/zhuxue/student/showPic/'+this);
 
                                                 }
                                             });
