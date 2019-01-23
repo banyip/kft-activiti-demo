@@ -218,7 +218,7 @@ public class Student extends IdEntity implements Serializable {
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private List<Evaluate> evaluates = new ArrayList<Evaluate>();
 
-	@Column(length = 50 )
+	@Column(length = 200 )
 	public String getApplyEvaluationPicture() {
 		return applyEvaluationPicture;
 	}
@@ -378,7 +378,7 @@ public class Student extends IdEntity implements Serializable {
 		return evaluateScore;
 	}
 
-	@Column(length = 200)
+	@Column(length = 250)
 	public String getEvaluateScorePicture() {
 		return evaluateScorePicture;
 	}
