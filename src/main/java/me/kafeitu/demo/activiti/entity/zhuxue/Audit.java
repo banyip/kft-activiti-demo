@@ -64,7 +64,7 @@ public class Audit extends IdEntity implements Serializable {
 	public String getSupplemetaryEvaluation() {
 		return supplemetaryEvaluation;
 	}
-    @Column( length = 50)
+    @Column( length = 250)
 	public String getApplyEvaluationPicture() {
 		return applyEvaluationPicture;
 	}

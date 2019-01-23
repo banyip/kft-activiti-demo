@@ -206,7 +206,7 @@ public class Student extends IdEntity implements Serializable {
 	private String studentContactNo;
 	private String studentId;
 	private String studentName;
-	private String applyEvaluationPicture;
+
 	private String supplemetaryEvaluation;
 	private String userId;
 	private Map<String, Object> variables;
@@ -218,14 +218,6 @@ public class Student extends IdEntity implements Serializable {
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private List<Evaluate> evaluates = new ArrayList<Evaluate>();
 
-	@Column(length = 200 )
-	public String getApplyEvaluationPicture() {
-		return applyEvaluationPicture;
-	}
-
-	public void setApplyEvaluationPicture(String applyEvaluationPicture) {
-		this.applyEvaluationPicture = applyEvaluationPicture;
-	}
 
 	@Column(length = 50)
 	public String getRelativeSponseIncome() {
