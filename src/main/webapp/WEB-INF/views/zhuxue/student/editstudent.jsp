@@ -523,8 +523,7 @@
 		<td colspan="3" class="style53">照片上传</td>
 	</tr>
 	
-			<tr><td colspan=8>		    <div id="div_communicates">
-			<input class="studentApply" type="text" id="communicates[0]_id" name="communicates[0]_id" />
+			<tr><td colspan=8>		  
 				<table class="class_communicates" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2 "height="26" class="style9" style="width: 198px">
