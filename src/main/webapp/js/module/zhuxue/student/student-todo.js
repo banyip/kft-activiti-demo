@@ -220,7 +220,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                     {
 
                                         var filenamesstr = eval('v['+i+'].'+key+'['+j+'].'+photokey);
-                                        if(filenamesstr!=null&&filenames.length>0)
+                                        if(filenamesstr!=null&&filenamesstr.length>0)
                                         {
                                             var filenames=filenamesstr.split(":",-1);
                                             $.each(filenames,function(){
