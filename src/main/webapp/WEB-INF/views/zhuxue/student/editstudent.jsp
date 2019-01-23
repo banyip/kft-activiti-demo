@@ -1,3 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题 1</title>
+</head>
+
+<body>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -524,14 +533,12 @@
 	</tr>
 	
 			<tr><td colspan=8>		  
-				<table class="class_communicates" width="100%">
+				<table class="class_communicates" style="width: 100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2 "height="26" class="style9" style="width: 198px">
+		<td colspan="1 "height="26" class="style9" style="width: 258px">
 				<input class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
-		<td colspan="3" class="style11" style="width: 268435376px" >
-				<input class="studentApply" type="text" id="communicates[0]_content" name="content" style="width: 187px"></td>
-		<td class="style11" colspan="3">
-				<a target=showpic class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px"></td>
+		<td colspan="7" style="width: 268434864px" >
+				<input class="studentApply" type="text" id="communicates[0]_content" name="content" style="width: 516px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				<a target=showpic class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px">没有图片</a></td>
 	</tr>
 	</table>
 	</div></td></tr>
@@ -716,3 +723,7 @@
 
 
 
+
+</body>
+
+</html>
