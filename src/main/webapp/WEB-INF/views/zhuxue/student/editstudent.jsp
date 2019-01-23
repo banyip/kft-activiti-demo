@@ -13,7 +13,7 @@
 	</colgroup>
 	<tr height="48" style="mso-height-source:userset;height:36.0pt">
 		<td colspan="8" height="48" style="height: 36.0pt; " class="style1">
-		学生登记信息明细</td>
+		学生登记信息明细<input type="hidden" class=studentApply id=student_id name="id" /></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style2">
