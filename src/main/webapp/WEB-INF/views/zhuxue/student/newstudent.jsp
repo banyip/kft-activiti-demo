@@ -374,7 +374,7 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">申请评定表</td>
-		<td colspan="6" class="style85">　<input type="file" class="applyEvaluationPicture" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_feedbackPhoto0" style="width: 303px">&nbsp;</td>
+		<td colspan="6" class="style85">　<input type="file" class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_feedbackPhoto0" style="width: 303px">&nbsp;</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">评定表得分</td>
