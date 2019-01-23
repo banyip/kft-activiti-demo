@@ -234,9 +234,9 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                         if(ii==aobj.length)
                                                             {                                                    		
                                                                 //var content1 = content.replace(photokey, photokey+ii);
-                                                                aobj.after("<br/>"+content);
+                                                                $(aobj[ii-1]).after("<br/>"+content);
                                                             }
-                                                        $(myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
+                                                        $(aobj[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
                                                     }                                            
                                             }
                                         }
