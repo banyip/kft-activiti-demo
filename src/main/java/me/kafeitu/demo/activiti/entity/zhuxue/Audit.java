@@ -141,7 +141,7 @@ public class Audit extends IdEntity implements Serializable {
 		// 获取图片后缀
 		String suffix = originalFileName.substring(originalFileName.lastIndexOf("."));
 		// 生成图片存储的名称，UUID 避免相同图片名冲突，并加上图片后缀
-		String fileName = this.getStudentName() + whatPhoto + UUID.randomUUID().toString() + suffix;
+		String fileName = whatPhoto + UUID.randomUUID().toString() + suffix;
 		// 图片存储路径
 		String filePath = "pictures/" + fileName;
 		File saveFile = new File(filePath);
