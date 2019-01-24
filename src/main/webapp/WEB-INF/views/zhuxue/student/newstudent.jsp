@@ -503,7 +503,7 @@
 	</tr>
 	
 			<tr><td colspan=8>
-                <div class="div_communicates">
+                <div id="div_communicates">
 				<table class="class_communicates" style="width: 100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="1 "height="26" class="style49" style="width: 258px">
