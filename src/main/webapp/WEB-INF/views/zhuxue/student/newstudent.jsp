@@ -502,8 +502,8 @@
 		<td colspan="3" class="style11">照片上传</td>
 	</tr>
 	
-			<tr><td colspan=8>		  
-                <div class=div_communicates>
+			<tr><td colspan=8>
+                <div class="div_communicates">
 				<table class="class_communicates" style="width: 100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="1 "height="26" class="style49" style="width: 258px">
