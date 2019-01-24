@@ -178,7 +178,7 @@
 				<td colspan="8" class="style1">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('newstudent','relatives')" />      
+					onclick="inserttable('newstudent','relatives')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('newstudent','relatives')" />
@@ -293,10 +293,10 @@
 	</tr>
 	
 	
-		<tr><td colspan=8>		    
+		<tr><td colspan=8>
 		<table class="class_audits" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
+		<td colspan="8" height="26" style="height: 20.1pt" class="style1">
 		相关走访资料上传</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
@@ -308,34 +308,35 @@
 		<td colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
-	<tr><td colspan=8><div id="div_audits[0]_auditphotos">
-				<table class="class_audits[0]_auditphotos" width="100%">
+	
+
+<tr><td colspan=8>		    <div id="div_audits[1]_auditphotos">
+				<table class="class_audits[1]_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">
-		<input type="text" class="studentApply" id="audits[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 80px" /></td>
-        <td class="style11" style="width: 66pt">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px" multiple="multiple" /></td>
+		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audits[0]_auditPhoto[1]_photoDate" name="auditPhoto[1]_photoDate" style="width: 80px"></td>
+		<td class="style11" style="width: 66pt">
+		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[1]_familyPhoto" name="auditPhoto[1]_familyPhoto" style="width: 80px"></td>
 		<td class="style11" style="width: 123px">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto" style="width: 80px"/>　</td>
+		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[1]_studentPhoto" name="auditPhoto[1]_studentPhoto" style="width: 80px">　</td>
 		<td class="style11" style="width: 119px" >
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px"/>　</td>
+		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[1]_feedbackPhoto" name="auditPhoto[1]_feedbackPhoto" style="width: 80px">　</td>
 		<td class="style11" style="width: 98px">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px"/>　</td>
+		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[1]_recieptphoto" name="auditPhoto[1]_recieptphoto" style="width: 80px">　</td>
 		<td colspan="3" class="style11">
-		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px"/>　</td>
+		<input  type="file" class="studentPhoto" id="audits[0]_auditPhoto[1]_otherPhoto" name="auditPhoto[1]_otherPhoto" style="width: 80px">　</td>
 	</tr>
-	</table>
-	</div>
-	</td></tr>
+	</table></div>
+	</td></tr>	
 			<tr>
 				<td colspan="8" class="style1">
-							
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertauditphotos('newstudent','audits\\[0\\]_auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('newstudent','audits\\[0\\]_auditphotos')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','audits[0]_auditphotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
@@ -343,46 +344,46 @@
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style40">走访时间</td>
-		<td class="style85" colspan="6" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_auditDate" name="auditDate" style="width: 95px" /></span></td>
+		<td class="style59" colspan="6" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_auditDate" name="auditDate" style="width: 95px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
 		家庭贫困原因</td>
-		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_poorReason" name="poorReason" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style59">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_poorReason" name="poorReason" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
 		对学生个人评价</td>
-		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style59">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-		<td colspan="2" style="height: 20pt" class="style40">走访结论</td>
-		<td colspan="6" class="style85" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
+		<td colspan="2" style="height: 5pt" class="style40">走访结论</td>
+		<td colspan="6" class="style59" style="height: 5pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[0]_auditPass" name="auditPass">
+		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[0]_ifAuditPass" name="ifAuditPass">
 		<option selected="" value="true">是</option>
 		<option value="false">否</option>
 		</select>&nbsp;</td>
-		<td class="style44">&nbsp;</td>
-		<td class="style45" >审核人</td>
-		<td class="style45"><span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
-		<td class="style45">电话</td>
-		<td colspan="2" class="style85"><span style="mso-spacerun:yes">
-		<input  class="studentApply" id="audits[0]_auditPersonContactNo" name="auditPersonContactNo" style="width: 124px" /></span>&nbsp;</td>
+		<td class="style11">&nbsp;</td>
+		<td class="style11" >审核人</td>
+		<td class="style11"><span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
+		<td class="style11">电话</td>
+		<td colspan="2" class="style59"><span style="mso-spacerun:yes">
+		&nbsp;<input  class="studentApply" id="audits[0]_auditPersonContactNo" name="auditPersonContactNo" style="width: 114px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">申请评定表</td>
-		<td colspan="6" class="style85">　<input type="file" class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_feedbackPhoto0" style="width: 303px">&nbsp;</td>
+		<td colspan="6" class="style11">　<a target=showpic class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_applyEvaluationPicture" style="width: 303px">没有照片</a><!--<input type="file" class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_applyEvaluationPicture" style="width: 303px">--></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">评定表得分</td>
-		<td colspan="6" class="style41">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_evaluateScore" name="evaluateScore" style="width: 124px" /></span></td>
+		<td colspan="6" class="style59">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_evaluateScore" name="evaluateScore" style="width: 124px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">补充评价</td>
-		<td colspan="6" class="style41">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_supplemetaryEvaluation" name="supplemetaryEvaluation" style="width: 420px" /></span></td>
+		<td colspan="6" class="style59">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_supplemetaryEvaluation" name="supplemetaryEvaluation" style="width: 418px" /></span></td>
 	</tr>
 	</table></div>
 	</td></tr>
@@ -390,10 +391,10 @@
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="3" height="26" style="height: 20.1pt" class="style46">
 		官网上线发布时间</td>
-		<td colspan="5" class="style47">　<input class="studentApply" id="student_publishTime" name="publishTime"  style="width: 295px" /></td>
+		<td colspan="5" class="style59">　<input class="studentApply" id="student_publishTime" name="publishTime"  style="width: 295px" /></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style48">考试成绩</td>
+		<td colspan="8" height="26" style="height: 20.1pt" class="style9">考试成绩</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">考试时间</td>
@@ -403,7 +404,7 @@
 		<td class="style11">化学</td>
 		<td class="style11">物理</td>
 		<td class="style11">专业科</td>
-		<td class="style19">年级排名</td>
+		<td class="style11">年级排名</td>
 	</tr>
 		<tr><td colspan=8>		    <div id="div_exams">
 				<table class="class_exams" width="100%">
@@ -422,13 +423,15 @@
 				<input class="studentApply" type="text" id="exams[0]_physical" name="physical" style="width: 86px"></td>
 		<td class="style11">
 				<input class="studentApply" type="text" id="exams[0]_profectional" name="profectional" style="width: 86px"></td>
-		<td class="style19">
+		<td class="style11">
 				<input class="studentApply" type="text" id="exams[0]_position" name="position" style="width: 86px"></td>
 	</tr>
 	</table>
 	</div></td></tr>
 				<tr>
-				<td colspan="8" class="style1">
+				<td colspan="8" class="style9">
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','exams')" />      
@@ -447,7 +450,7 @@
 		<td class="style50">发款学期</td>
 		<td class="style50" >发款方式</td>
 		<td class="style50">发款人</td>
-		<td colspan="3" class="style50">联系电话</td>
+		<td colspan="3" class="style11">联系电话</td>
 	</tr>
 		<tr><td colspan=8>		    <div id="div_transfers">
 				<table class="class_transfers" width="100%">
@@ -469,7 +472,9 @@
 	</div></td></tr>
 	
 				<tr>
-				<td colspan="8" class="style1">
+				<td colspan="8" class="style9">
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','transfers')" />      
@@ -485,13 +490,13 @@
 		<td class="style52">　</td>
 		<td class="style52" >　</td>
 		<td class="style52">　</td>
-		<td colspan="3" class="style52">　</td>
+		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style49">
 		通信记录登记</td>
 	</tr>
-<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" class="style49">日期</td>
 		<td colspan="4" class="style50">信件内容</td>
 		<td colspan="3" class="style11">照片上传</td>
@@ -509,6 +514,8 @@
 	</div></td></tr>
 				<tr>
 				<td colspan="8" class="style1">
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="inserttable('newstudent','communicates')" />      
@@ -524,7 +531,7 @@
 		<td class="style55">　</td>
 		<td class="style55" >　</td>
 		<td class="style55">　</td>
-		<td colspan="3" class="style56">　</td>
+		<td colspan="3" class="style11">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style49">
@@ -534,7 +541,7 @@
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">时间</td>
 		<td class="style11" style="width: 60pt">信息提供人</td>
 		<td class="style11">家庭情况变化</td>
-		<td colspan="5" class="style57">
+		<td colspan="5" class="style11">
 		学生性格、学习情况(交流沟通、性格、学习态度、学习成绩、爱心情况等）</td>
 	</tr>
 	    <tr>
@@ -570,7 +577,7 @@
 	<div id="div_audits">
 				<table class="class_audits" width="100%">	
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style37">
+		<td colspan="8" height="26" style="height: 20.1pt" class="style1">
 		相关走访资料上传</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
@@ -579,75 +586,79 @@
 		<td class="style11" style="height: 20pt">学生个人独照</td>
 		<td class="style11" style="width: 48pt; height: 20pt;">反馈表照片</td>
 		<td class="style11" style="height: 20pt">发款签收照片</td>
-		<td colspan="3" class="style38" style="height: 20pt">
+		<td colspan="3" class="style11" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
 	<tr><td colspan=8>		    <div id="div_audits[1]_auditphotos">
 				<table class="class_audits[1]_auditphotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audits[0]_auditPhoto[0]_photoDate" name="auditPhoto[0]_photoDate" style="width: 80px"></td>
+		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audits[1]_auditPhoto[1]_photoDate" name="auditPhoto[1]_photoDate" style="width: 80px"></td>
 		<td class="style11" style="width: 66pt">
-		<input type="file" multiple="multiple"  class="studentPhoto" id="audits[1]_auditPhoto[0]_familyPhoto" name="auditPhoto[0]_familyPhoto" style="width: 80px"></td>
+		<input type="file" class="studentPhoto" id="audits[1]_auditPhoto[1]_familyPhoto" name="auditPhoto[1]_familyPhoto" style="width: 80px"></td>
 		<td class="style11" style="width: 123px">
-		<input type="file" class="studentPhoto" id="audits[1]_auditPhoto[0]_studentPhoto" name="auditPhoto[0]_studentPhoto" style="width: 80px">　</td>
+		<input type="file" class="studentPhoto" id="audits[1]_auditPhoto[1]_studentPhoto" name="auditPhoto[1]_studentPhoto" style="width: 80px">　</td>
 		<td class="style11" style="width: 119px" >
-		<input type="file" class="studentPhoto" id="audits[1]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[0]_feedbackPhoto" style="width: 80px">　</td>
+		<input type="file" class="studentPhoto" id="audits[1]_auditPhoto[1]_feedbackPhoto" name="auditPhoto[1]_feedbackPhoto" style="width: 80px">　</td>
 		<td class="style11" style="width: 98px">
-		<input type="file" class="studentPhoto" id="audits[1]_auditPhoto[0]_recieptphoto" name="auditPhoto[0]_recieptphoto" style="width: 80px">　</td>
+		<input type="file" class="studentPhoto" id="audits[1]_auditPhoto[1]_recieptphoto" name="auditPhoto[1]_recieptphoto" style="width: 80px">　</td>
 		<td colspan="3" class="style11">
-		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[1]_auditPhoto[0]_otherPhoto" name="auditPhoto[0]_otherPhoto" style="width: 80px">　</td>
+		<input  type="file" class="studentPhoto" id="audits[1]_auditPhoto[1]_otherPhoto" name="auditPhoto[1]_otherPhoto" style="width: 80px">　</td>
 	</tr>
 	</table></div>
 	</td></tr>
 			<tr>
 				<td colspan="8" class="style1">
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertauditphotos('newstudent','audits\\[1\\]_auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('newstudent','audits\\[1\\]_auditphotos')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','auditphotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
-		<td colspan="8" style="height: 20pt" class="style39">复审评价</td>
+		<td colspan="8" style="height: 20pt" class="style1">复审评价</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style40">走访时间</td>
-		<td class="style85" colspan="6" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_auditDate" name="auditDate" style="width: 95px" /></span></td>
+		<td class="style59" colspan="6" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_auditDate" name="auditDate" style="width: 95px" /></span></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
 		家庭贫困原因</td>
-		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_poorReason" name="poorReason" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style59">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_poorReason" name="poorReason" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">
 		对学生个人评价</td>
-		<td colspan="6" class="style85">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style59">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style40">走访结论</td>
-		<td colspan="6" class="style85" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style59" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[1]_auditPass" name="auditPass">
+		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[1]_ifAuditPass" name="ifAuditPass">
 		<option selected="" value="true">是</option>
 		<option value="false">否</option>
 		</select>&nbsp;</td>
-		<td class="style44">&nbsp;</td>
-		<td class="style45" >审核人</td>
-		<td class="style45"><span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
-		<td class="style45">电话</td>
-		<td colspan="2" class="style85"><span style="mso-spacerun:yes">
+		<td class="style59">&nbsp;</td>
+		<td class="style59" >审核人</td>
+		<td class="style59"><span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_auditPerson" name="auditPerson" style="width: 81px" /></span></td>
+		<td class="style59">电话</td>
+		<td colspan="2" class="style59"><span style="mso-spacerun:yes">
 		<input  class="studentApply" id="audits[1]_auditPersonContactNo" name="auditPersonContactNo" style="width: 124px" /></span>&nbsp;</td>
-	</tr>
+	</tr> 
 	</table></div>
 	</td>
 	</tr>
 				<tr>
-				<td colspan="8" class="style1">                  
+				<td colspan="8" class="style1">
+
+
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertaudit('newstudent')" />      
