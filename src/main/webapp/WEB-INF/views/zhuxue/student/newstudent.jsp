@@ -491,21 +491,19 @@
 		<td colspan="8" height="26" style="height: 20.1pt" class="style49">
 		通信记录登记</td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" class="style49">日期</td>
 		<td colspan="4" class="style50">信件内容</td>
-		<td colspan="3" class="style53">照片上传</td>
+		<td colspan="3" class="style11">照片上传</td>
 	</tr>
 	
-			<tr><td colspan=8>		    <div id="div_communicates">
-				<table class="class_communicates" width="100%">
+			<tr><td colspan=8>		  
+				<table class="class_communicates" style="width: 100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2 "height="26" class="style9" style="width: 198px">
+		<td colspan="1 "height="26" class="style49" style="width: 258px">
 				<input class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
-		<td colspan="3" class="style11" style="width: 268435376px" >
-				<input class="studentApply" type="text" id="communicates[0]_content" name="content" style="width: 187px"></td>
-		<td class="style11" colspan="3">
-				<input class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px"></td>
+		<td colspan="7" style="width: 268434864px" class="style11" >
+				<input class="style58" type="text" id="communicates[0]_content" name="content" style="width: 588px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;				<a target=showpic class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px">没有图片</a></td>
 	</tr>
 	</table>
 	</div></td></tr>
