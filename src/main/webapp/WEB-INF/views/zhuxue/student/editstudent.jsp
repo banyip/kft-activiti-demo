@@ -357,7 +357,7 @@
 					onclick="insertauditphotos('newstudent','audits\\[0\\]_auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits[0]_auditphotos')" />
+					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits\\[0\\]_auditphotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
@@ -523,7 +523,8 @@
 		<td colspan="3" class="style11">照片上传</td>
 	</tr>
 	
-			<tr><td colspan=8>		  
+			<tr><td colspan=8>	
+                <div id="div_communicates"></div>	  
 				<table class="class_communicates" style="width: 100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="1 "height="26" class="style49" style="width: 258px">
@@ -655,7 +656,7 @@
 					onclick="insertauditphotos('newstudent','audits\\[1\\]_auditPhotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','auditPhotos')" />
+					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits\\[1\\]_auditPhotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">

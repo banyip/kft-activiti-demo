@@ -336,7 +336,7 @@
 					onclick="insertauditphotos('newstudent','audits\\[0\\]_auditPhotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('newstudent','audits[0]_auditPhotos')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','audits\\[0\\]_auditPhotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
@@ -503,7 +503,7 @@
 	</tr>
 	
 			<tr><td colspan=8>		  
-                <div class=div_communicates></div>
+                <div class=div_communicates>
 				<table class="class_communicates" style="width: 100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="1 "height="26" class="style49" style="width: 258px">
