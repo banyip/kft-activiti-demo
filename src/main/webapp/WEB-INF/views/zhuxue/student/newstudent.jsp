@@ -640,7 +640,7 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style39">是否通过审核</td>
-		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[1]_ifAuditPass" name="ifAuditPass">
+		<td class="style44" style="width: 60pt"><select class="studentApply" id="audits[1]_auditPass" name="auditPass">
 		<option selected="" value="true">是</option>
 		<option value="false">否</option>
 		</select>&nbsp;</td>
