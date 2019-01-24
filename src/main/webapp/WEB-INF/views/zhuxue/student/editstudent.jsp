@@ -536,11 +536,9 @@
 	</div></td></tr>
 				<tr>
 				<td colspan="8" class="style1">
-
-
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('newstudent','communicates')" />      
+					onclick="inserttable('editstudent','communicates')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','communicates')" />
@@ -588,7 +586,7 @@
 				<td colspan="8" class="style1">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('newstudent','evaluates')" />      
+					onclick="inserttable('editstudent','evaluates')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','evaluates')" />
@@ -653,7 +651,7 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="insertauditphotos('newstudent','audits\\[1\\]_auditPhotos')" />      
+					onclick="insertauditphotos('editstudent','audits\\[1\\]_auditPhotos')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits\\[1\\]_auditPhotos')" />
@@ -702,7 +700,7 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="insertaudit('newstudent')" />      
+					onclick="insertaudit('editstudent')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits')" />
