@@ -38,6 +38,27 @@ public class Transfer extends IdEntity implements Serializable {
 	private String method;
 	private String transferMan;
 	private String contactNo;
+    private Student studentToSponse;
+    private Sponser sponser;
+    
+	@Column
+    @ManyToOne
+	@JoinColumn(name="sponserId")
+    public Sponser getSponser() {
+		return sponser;
+	}
+	public void setSponser(Sponser sponser) {
+		this.sponser = sponser;
+	}
+	@Column
+    @ManyToOne
+	@JoinColumn(name="studentId")
+    public Student getStudentToSponse() {
+		return studentToSponse;
+	}
+	public void setStudentToSponse(Student studentToSponse) {
+		this.studentToSponse = studentToSponse;
+	}
 	
 	@Column
 	public String getTransferTime() {

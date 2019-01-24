@@ -6,6 +6,9 @@
 		<ul>
 			<li><a rel="/zhuxue/student/list/student">学生申请办理</a></li>
 		</ul>
+		<ul>
+			<li><a rel="/zhuxue/student/list/sponser">资助人申请办理</a></li>
+		</ul>		
     </li>
     
 

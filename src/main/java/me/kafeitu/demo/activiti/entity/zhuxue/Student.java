@@ -260,7 +260,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	public void setTransfer(List<Transfer> transfers) {
-		this.transfers = transfers;
+		this.transfers = transfers;		
 	}
 
 	@Column

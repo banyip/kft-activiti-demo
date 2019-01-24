@@ -12,7 +12,8 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Communicate;
 import me.kafeitu.demo.activiti.entity.zhuxue.Evaluate;
 import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
-
+import me.kafeitu.demo.activiti.entity.zhuxue.Sponser;
+import me.kafeitu.demo.activiti.service.zhuxue.student.SponserManager;
 import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
 
 import me.kafeitu.demo.activiti.util.Page;
@@ -98,11 +99,34 @@ public class ZhuxueController {
 
     @Autowired
     protected StudentManager studentManager;
+    @Autowired
+    protected SponserManager sponserManager;
 
     private Map<String, Object> variables;
 
 
 
+    
+    /**
+     * 读取支助人员列表
+     *
+     * @param sponser
+     */
+    @RequestMapping(value = "list/sponser")
+    public ModelAndView sponserList(HttpSession session, HttpServletRequest request) {
+        ModelAndView mav = new ModelAndView("/zhuxue/student/sponserList");
+        Page<Sponser> page = new Page<Sponser>(PageUtil.PAGE_SIZE);
+        int[] pageParams = PageUtil.init(page, request);
+        
+		List<Sponser> results=sponserManager.getAllSponser();
+        String userId = UserUtil.getUserFromSession(session).getId();
+        page.setTotalCount(results.size());
+        page.setResult(results);
+        mav.addObject("page", page);
+        return mav;
+    }
+
+    
     /**
      * 读取学生列表
      *
@@ -266,7 +290,9 @@ public class ZhuxueController {
    				List<Transfer> items = student.getTransfers();
    				while(index>=items.size())
    				{
-   					items.add(new Transfer());
+   					Transfer newTransfer = new Transfer();
+   					newTransfer.setStudentToSponse(student);
+   					items.add(newTransfer);
    				}
    				Transfer item = items.get(index);
    				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				

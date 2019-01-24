@@ -49,10 +49,8 @@ public class Audit extends IdEntity implements Serializable {
     private String supplemetaryEvaluation;
     private String applyEvaluationPicture;
     private List<AuditPhoto> auditPhotos = new ArrayList <AuditPhoto>();
-    
-  
 
-    @Column( length = 50)
+	@Column( length = 50)
     public String getEvaluateScore() {
 		return evaluateScore;
 	}
