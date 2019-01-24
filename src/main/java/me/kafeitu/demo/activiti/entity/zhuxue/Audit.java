@@ -48,7 +48,7 @@ public class Audit extends IdEntity implements Serializable {
     private String auditPersonContactNo;
     private String supplemetaryEvaluation;
     private String applyEvaluationPicture;
-    private List<AuditPhoto> auditphotos = new ArrayList <AuditPhoto>();
+    private List<AuditPhoto> auditPhotos = new ArrayList <AuditPhoto>();
     
   
 
@@ -111,7 +111,7 @@ public class Audit extends IdEntity implements Serializable {
     @Column
     @OneToMany(cascade = {CascadeType.ALL})
 	public List<AuditPhoto> getAuditphotos() {
-		return auditphotos;
+		return auditPhotos;
 	}
 	public void setAuditDate(String auditDate) {
 		this.auditDate = auditDate;
@@ -131,8 +131,8 @@ public class Audit extends IdEntity implements Serializable {
 	public void setAuditPerson(String auditPerson) {
 		this.auditPerson = auditPerson;
 	}
-	public void setAuditphotos(List<AuditPhoto> auditphotos) {
-		this.auditphotos = auditphotos;
+	public void setAuditphotos(List<AuditPhoto> auditPhotos) {
+		this.auditPhotos = auditPhotos;
 	} 
     
 	public void savePicture(MultipartFile file,String whatPhoto) throws Exception {
