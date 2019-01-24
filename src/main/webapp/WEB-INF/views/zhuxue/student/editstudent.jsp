@@ -181,7 +181,7 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('newstudent','relatives')" />      
+					onclick="inserttable('editsutdent','relatives')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','relatives')" />
@@ -354,7 +354,7 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="insertauditphotos('newstudent','audits\\[0\\]_auditphotos')" />      
+					onclick="insertauditphotos('editsutdent','audits\\[0\\]_auditphotos')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits\\[0\\]_auditphotos')" />
@@ -455,7 +455,7 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('newstudent','exams')" />      
+					onclick="inserttable('editsutdent','exams')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','exams')" />
@@ -498,7 +498,7 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('newstudent','transfers')" />      
+					onclick="inserttable('editsutdent','transfers')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','transfers')" />
