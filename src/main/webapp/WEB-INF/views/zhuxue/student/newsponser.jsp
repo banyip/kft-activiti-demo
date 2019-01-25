@@ -24,10 +24,6 @@
 		<td class="style1">照片</td>
 		<td colspan="3" class="style1">邮箱</td>
 	</tr>
-		<caption>
-		<form method="post">
-			<input name="Text1" type="text" /></form>
-		</caption>
 		<td height="26" style="height: 20.1pt;" class="style1">
 			<input class="sponserApply" id="sponser_sponserNo" name="sponserNo" type="text" style="width: 81px" />
 		</td>

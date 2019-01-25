@@ -338,7 +338,7 @@ function submitbtnclick(parentstring)
 	);
 	filenames = filenames.substr(1);
 	// 提交的时候把变量
-	complete(variables,'/zhuxue/student/'+parentsting+'/',filenames,files);
+	complete(variables,'/zhuxue/student/'+parentstring+'/',filenames,files);
 }
 
 /**
