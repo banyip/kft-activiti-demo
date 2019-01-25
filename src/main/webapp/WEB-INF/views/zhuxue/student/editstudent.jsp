@@ -336,7 +336,7 @@
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audits[0]_auditPhotos[1]_photoDate" name="auditPhotos[1]_photoDate" style="width: 80px"></td>
 		<td class="style11" style="width: 66pt">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_familyPhoto" name="auditPhotos[1]_familyPhoto" style="width: 80px"></td>
+		<input type="file" multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[1]_familyPhoto" name="auditPhotos[1]_familyPhoto" style="width: 80px"></td>
 		<td class="style11" style="width: 123px">
 		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_studentPhoto" name="auditPhotos[1]_studentPhoto" style="width: 80px">　</td>
 		<td class="style11" style="width: 119px" >
@@ -344,7 +344,7 @@
 		<td class="style11" style="width: 98px">
 		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_recieptphoto" name="auditPhotos[1]_recieptphoto" style="width: 80px">　</td>
 		<td colspan="3" class="style11">
-		<input  type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_otherPhoto" name="auditPhotos[1]_otherPhoto" style="width: 80px">　</td>
+		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[1]_otherPhoto" name="auditPhotos[1]_otherPhoto" style="width: 80px">　</td>
 	</tr>
 	</table></div>
 	</td></tr>	

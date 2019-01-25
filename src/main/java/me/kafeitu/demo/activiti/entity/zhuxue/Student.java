@@ -212,12 +212,20 @@ public class Student extends IdEntity implements Serializable {
 	private Map<String, Object> variables;
 	private String workIncome;
 	private String workSituation;
-
+	private String sponseRecommandation;
 	private List<Exam> exams = new ArrayList<Exam>();
 	private List<Transfer> transfers = new ArrayList<Transfer>();
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private List<Evaluate> evaluates = new ArrayList<Evaluate>();
 
+	@Column(length=20)
+	public String getSponseRecommandation() {
+		return sponseRecommandation;
+	}
+
+	public void setSponseRecommandation(String sponseRecommandation) {
+		this.sponseRecommandation = sponseRecommandation;
+	}
 
 	@Column(length = 50)
 	public String getRelativeSponseIncome() {

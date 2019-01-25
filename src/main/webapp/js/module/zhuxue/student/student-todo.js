@@ -90,7 +90,8 @@ function insertaudit(whichpage) {
     var content = newnode.innerHTML;
     content = content.replace(/audits\[0\]/g, "audits["+ myparent.find('.'+tableclass).length + "]");
     content = content.replace(/audits\\\\\[0\\\\\]/g, "audits\\\\\["+ myparent.find('.'+tableclass).length + "\\\\\]");
-	content = "<table class='"+tableclass+"'>" + content + "</table>";
+    content = content.replace(/初审评价/g, "复审评价");
+    content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
 	if(myparent.find('.'+tableclass).length <=6){
     myparent.find('#'+divid).append(content);
