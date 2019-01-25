@@ -21,7 +21,7 @@
 		<td class="style1">姓名</td>
 		<td class="style1">官网登记昵称</td>
 		<td class="style1">联系电话</td>
-		<td class="style1">ＱＱ</td>
+		<td class="style1">照片</td>
 		<td colspan="3" class="style1">邮箱</td>
 	</tr>
 		<caption>
@@ -37,8 +37,7 @@
 			<input class="sponserApply" id="sponser_nickname" name="nickname" type="text" style="width: 81px" />　</td>
 		<td class="style1">
 			<input class="sponserApply" id="sponser_contactNo" name="contactNo" type="text" style="width: 95px" />　</td>
-		<td class="style1">
-			<input class="sponserApply" id="sponser_qq" name="qq" type="text" style="width: 81px" /></td>
+		<td class="style1"><input class="sponserPhoto" id="sponser_picture" name="picture" type="file" style="width: 189px" /></td>
 		<td colspan="3" class="style1">
 			<input class="sponserApply" id="sponser_email" name="email" type="text" style="width: 214px" /></td>
 	</tr>
@@ -48,7 +47,7 @@
 		<td class="style1">地址</td>
 		<td class="style1">资助期限</td>
 		<td class="style1">是否开捐赠收据</td>
-		<td class="style1">照片</td>
+		<td class="style1">ＱＱ</td>
 		<td class="style1">职业</td>
 		<td class="style1">政治面貌</td>
 	</tr>
@@ -68,7 +67,8 @@
 			<option value="false">否</option>
 			</select>
 		</td>
-		<td class="style1" style="height: 18pt">上传</td>
+		<td class="style1" style="height: 18pt">
+			<input class="sponserApply" id="sponser_qq" name="qq" type="text" style="width: 81px" /></td>
 		<td class="style1" style="height: 18pt">
 			<input class="sponserApply" id="sponser_profectional" name="profectional" type="text" style="width: 92px" /></td>
 		<td class="style1" style="height: 18pt">
@@ -85,35 +85,35 @@
 		<td colspan="3" class="style1">
 			<input class="sponserApply" id="sponser_sponseEndReason" name="sponseEndReason" type="text" style="width: 254px" /></td>
 	</tr>
-	<tr><td colspan=7>		    <div>
+	<tr><td colspan=8>		    <div>
 	<table width="100%">
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
-		<td height="24" style="height: 18.0pt;" class="style1">资助汇款时间</td>
-		<td class="style1">汇款银行</td>
-		<td class="style1">汇款人</td>
-		<td class="style2">受助学生编号</td>
-		<td class="style2">资助学期</td>
-		<td class="style1">金额</td>
+		<td height="24" style="height: 18.0pt; width: 107px;" class="style1">资助汇款时间</td>
+		<td class="style1" style="width: 105px">汇款银行</td>
+		<td class="style1" style="width: 106px">汇款人</td>
+		<td class="style2" style="width: 141px">受助学生编号</td>
+		<td class="style2" style="width: 94px">资助学期</td>
+		<td class="style1" style="width: 85px">金额</td>
 		<td colspan="2" class="style1">备注（资助多位学生备注）</td>
 </tr>
 	</table>
 	</div></td>
 	</tr>
 	
-	<tr><td colspan=7>		    <div id="div_transfers">
+	<tr><td colspan=8>		    <div id="div_transfers">
 				<table class="class_transfers" width="100%">
 	<tr style="mso-height-source:userset;">
-		<td style="height: 18pt;" class="style1">
+		<td style="height: 18pt; width: 107px;" class="style1">
 			<input class="sponserApply" id="transfers[0]_transferTime" name="transfers[0]_transferTime" type="text" style="width: 78px" />　</td>
-		<td class="style1" style="height: 18pt">
+		<td class="style1" style="height: 18pt; width: 105px;">
 			<input class="sponserApply" id="transfers[0]_transferBank" name="transfers[0]_transferBank" type="text" style="width: 78px" /></td>
-		<td class="style1" style="height: 18pt">
+		<td class="style1" style="height: 18pt; width: 106px;">
 			<input class="sponserApply" id="transfers[0]_transferMan" name="transfers[0]_transferMan" type="text" style="width: 78px" /></td>
-		<td class="style1" style="height: 18pt">
+		<td class="style1" style="height: 18pt; width: 141px;">
 			<input class="sponserApply" id="transfers[0]_studentToSponse_id" name="transfers[0]_studentToSponse_id" type="text" style="width: 78px" /></td>
-		<td class="style2" style="height: 18pt">
+		<td class="style2" style="height: 18pt; width: 94px;">
 			<input class="sponserApply" id="transfers[0]_helpSemester" name="transfers[0]_helpSemester" type="text" style="width: 78px" /></td>
-		<td class="style2" style="height: 18pt">
+		<td class="style2" style="height: 18pt; width: 85px;">
 			<input class="sponserApply" id="transfers[0]_amount" name="transfers[0]_amount" type="text" style="width: 78px" /></td>
 		<td colspan="2" class="style1" style="height: 18pt">
 			<input class="style3" id="transfers[0]_amount0" name="transfers[0]_amount0" type="text" style="width: 183px" /></td>
@@ -134,3 +134,4 @@
 				</td>
 			</tr>
 </table>
+

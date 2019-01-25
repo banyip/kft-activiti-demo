@@ -305,6 +305,41 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
 }
 
 
+function submitbtnclick(parentsting,variables)
+{
+	myparent=$('#'+parentstring);
+	var variables = [];
+	$.each(myparent.find('.sponserApply'),function()
+	    {
+	        if(this.type=="checkbox")
+	        variables.push({
+	            key: this.id,
+	            value: this.checked,
+	            type: 'S'
+	        });
+	        else if(this.disabled==false&&this.value!=null)
+	        variables.push({
+	            key: this.id,
+	            value: this.value,
+	            type: 'S'
+	        });
+	    }
+	);
+	var filenames="";
+	var files = new Array();
+	 $.each($(':file.sponserPhoto'),function()
+	    {
+	        for(var i=0;i<this.files.length;i++)
+	        {
+	            filenames = filenames +":" +  this.id ;
+	            files.push(this.files[i]);
+	        }
+	    }                        
+	);
+	filenames = filenames.substr(1);
+	// 提交的时候把变量
+	complete(variables,'/zhuxue/student/'+parentsting'/',filenames,files);
+}
 
 /**
  * 完成任务
@@ -407,31 +442,11 @@ var handleOpts = {
 			},
 			btns: [{
 				text: '提交',
-				click: function() {					
-					var reApply = $(':radio[name=reApply]:checked').val();
-                    var variables = [{
-						key: 'reApply',
-						value: reApply,
-						type: 'B'
-					}
-                    ];
-			 /*       var content2 = "";
-			        for (let i = 0; i<$('#div_bjbr').find(".yltable").length ; i++ ){
-			            var yltable = $('#div_bjbr').find(".yltable")[i];
-			            var content1 = "";
-			            for (let index = 0; index <  $(yltable).find(".relative").length; index++) {
-			                content1 =  content1 + ":" + $(yltable).find(".relative")[index].value ;
-			                
-			            }
-			            content1=content1.substr(1);
-			            content2=content2 + ";" +content1;
-			        }
-			        content2=content2.substr(1);
-			        
-			        $('#relative')[0].value = content2;
-*/
-                    myparent=$('#newstudent');
-                    $.each(myparent.find('.studentApply'),function()
+				click: function() {								
+                    
+                    submitbtnclick('newsponser');
+/*                    myparent=$('#newsponser');
+                    $.each(myparent.find('.sponserApply'),function()
                         {
                             if(this.type=="checkbox")
                             variables.push({
@@ -449,7 +464,7 @@ var handleOpts = {
                     );
                     var filenames="";
                     var files = new Array();
-					 $.each($(':file.studentPhoto'),function()
+					 $.each($(':file.sponserPhoto'),function()
                         {
                             for(var i=0;i<this.files.length;i++)
                             {
@@ -461,6 +476,7 @@ var handleOpts = {
 					filenames = filenames.substr(1);
 					// 提交的时候把变量
 					complete(variables,'/zhuxue/student/newsponser/',filenames,files);
+*/
 				}
 			},{
 				text: '取消',
