@@ -36,7 +36,7 @@ import java.util.List;
 public class Sponser extends IdEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
-	private String spnserNo;
+	private String sponserNo;
 	private String name;
 	private String nickName;
 	private String contactNo;
@@ -61,8 +61,8 @@ public class Sponser extends IdEntity implements Serializable {
 	}	
 	
 	@Column(length=50)
-	public String getSpnserNo() {
-		return spnserNo;
+	public String getSponserNo() {
+		return sponserNo;
 	}
 	@Column(length=50)
 	public String getName() {
@@ -135,8 +135,8 @@ public class Sponser extends IdEntity implements Serializable {
 	public List<Transfer> getTransfers() {
 		return transfers;
 	}
-	public void setSpnserNo(String spnserNo) {
-		this.spnserNo = spnserNo;
+	public void setSponserNo(String sponserNo) {
+		this.sponserNo = sponserNo;
 	}
 	public void setName(String name) {
 		this.name = name;
