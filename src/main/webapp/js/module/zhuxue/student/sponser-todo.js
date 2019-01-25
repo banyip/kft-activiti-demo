@@ -390,7 +390,7 @@ function complete(variables,url,filenames,files) {
 
 
 var handleOpts = {
-			newstudent: {
+			newsponser: {
 			width: 1100,
 			height: 700,
 			open: function(id) {
@@ -470,7 +470,7 @@ var handleOpts = {
 			}]
 		},
 
-editstudent: {
+editsponser: {
 			width: 1300,
 			height: 570,
 			open: function(id) {

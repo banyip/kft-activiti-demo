@@ -167,6 +167,26 @@ public class ZhuxueController {
    }
    
    /*
+    * newsponser
+    *
+    * @param id
+    * @return
+    */
+   @RequestMapping(value = "newsponser", method = {RequestMethod.POST})
+   @ResponseBody
+   public String newsSponser(Variable var,@RequestParam("filenames") String filenames,@RequestParam("studentpictures") MultipartFile[] studentPictureFiles) {
+			try {
+			   Sponser sponser = new Sponser();
+			   return completesponser(var,filenames,studentPictureFiles,sponser);
+		    }catch (Exception e) {
+			  	logger.error("error on complete task", e);
+			  	logger.error("error on complete , variables={}", new Object[]{var.getVariableMap(), e});
+			  	return "error";
+		  }	   
+   }
+   
+   
+   /*
     * editstudent
     *
     * @param id
@@ -402,7 +422,75 @@ public class ZhuxueController {
       
   }
 
-   
+   private String completesponser(Variable var,String filenames,MultipartFile[] studentPictureFiles,Sponser sponser) throws Exception {
+	   
+       Map<String, Object> variables = var.getVariableMap();
+       
+       Set<String> variableNames = variables.keySet();
+
+/*          //把student.relatives存放到list
+       List<Relative> relatives = new ArrayList<Relative>();
+*/
+
+       logger.debug("学生信息保存中filenames："+filenames);
+       //logger.debug("学生信息保存中filenames："+studentPictureFiles);
+		for (String key : variableNames) {
+			
+			if(key.indexOf("sponser_")==0)
+			{
+				logger.debug("资助人信息保存内容key："+key);
+				String methodname= "set"+key.substring(8,9).toUpperCase()+key.substring(9);
+				Object value = variables.get(key);
+				invoke(methodname,value,(Object)sponser,"Student","java.lang.String");
+				logger.debug("资助人信息保存成功："+key);
+			}else if(key.indexOf("transfers")==0)
+			{
+				Object value = variables.get(key);
+				String invokeClassName = "Transfer";   				
+				int pos = (invokeClassName).length()+1;
+				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+				List<Transfer> items = sponser.getTransfers();
+				while(index>=items.size())
+				{
+					Transfer newTransfer = new Transfer();
+					newTransfer.setSponser(sponser);
+					items.add(newTransfer);
+				}
+				Transfer item = items.get(index);
+				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+			}			
+			
+		}
+		//保存所有图片
+		
+		if(filenames.length()>0)
+		{
+   		String[] fileNameList = filenames.split(":",-1);
+        for(int i=0;i<fileNameList.length;i++)
+        {
+        	String filename = fileNameList[i];
+
+        	MultipartFile studentPictureFile = studentPictureFiles[i];
+	   		if(!studentPictureFile.isEmpty())
+	        {
+	        	if(filename.indexOf("sponser_")==0)
+	        	{
+	        		int pos = "Sponser_".length();
+	        		String whatPhoto = filename.substring(pos);
+	        		sponser.savePicture(studentPictureFile,whatPhoto);
+	        	}
+	        }
+        }
+
+   }
+   sponserManager.saveSponser(sponser);
+   return "success";	 
+
+  
+}
+
+
    
 
 
