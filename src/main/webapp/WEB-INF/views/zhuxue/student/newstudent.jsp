@@ -300,23 +300,14 @@
 		相关走访资料上传</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-    <td colspan=8>
-    <div>
-    <table width="100%">
-    <tr>
-		<td width="199" class="style9" style=" width: 149pt;">拍摄时间</td>
-		<td width="80" class="style11" style="width: 60pt; ">家庭环境照片</td>
-		<td width="58" class="style11" style="height: 20pt">学生个人独照</td>
-		<td width="86" class="style11" style="width: 48pt; ">反馈表照片</td>
-		<td width="96" class="style11" style="height: 20pt">发款签收照片</td>
-		<td width="420" colspan="3" class="style38" style="height: 20pt">
+		<td style="height: 20pt; width: 149pt;" class="style9">拍摄时间</td>
+		<td class="style11" style="width: 60pt; height: 20pt;">家庭环境照片</td>
+		<td class="style11" style="height: 20pt">学生个人独照</td>
+		<td class="style11" style="width: 48pt; height: 20pt;">反馈表照片</td>
+		<td class="style11" style="height: 20pt">发款签收照片</td>
+		<td colspan="3" class="style11" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
-	</tr>
-    </table>
-    </div>
-    </td>
-    </tr>
-    
+	</tr>   
 	
 
 <tr><td colspan=8>		    <div id="div_audits[0]_auditPhotos">
@@ -397,12 +388,12 @@
 	</table></div>
 	</td></tr>
 	<tr style="mso-height-source:userset;">
-		<td colspan="2" style="height: 20pt" class="style40">支助建议</td>
+		<td colspan="2" style="height: 20pt" class="style40">资助建议</td>
 		<td colspan="6" class="style59" style="height: 20pt">　<span style="mso-spacerun:yes">
 		<select class="sponserApply" id="student_sponseRecommandation" name="sponseRecommandation" style="width: 150px">
 			<option value="long">建议长期资助</option>
 			<option value="short">短期困难</option>
-			<option value="no">不支助</option>
+			<option value="no">不资助</option>
 			</select>
 		</span>　</td>
 	</tr>
@@ -535,7 +526,7 @@
 		<td colspan="1 "height="26" class="style49" style="width: 258px">
 				<input class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
 		<td colspan="7" style="width: 268434864px" class="style11" >
-				<input class="studentApply" type="text" id="communicates[0]_content" name="content" style="width: 588px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;				<input type="file" class="studentPhoto" id="communicates[0]_picture" name="communicates[0]_picture" style="width: 80px"></td>
+				<input class="studentApply" type="text" id="communicates[0]_content" name="content" style="width: 588px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;				<input type="file" multiple=multiple class="studentPhoto" id="communicates[0]_picture" name="communicates[0]_picture" style="width: 80px"></td>
 	</tr>
 	</table>
 	</div></td></tr>

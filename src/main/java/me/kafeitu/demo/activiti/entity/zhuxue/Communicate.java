@@ -64,11 +64,9 @@ public class Communicate extends IdEntity implements Serializable {
 	
 	public void savePicture( MultipartFile file ,String whatPhoto) throws Exception
 	{
-		String methodname = "set" + whatPhoto.substring(0, 1).toUpperCase() + whatPhoto.substring(1);
+		String methodname = "get" + whatPhoto.substring(0, 1).toUpperCase() + whatPhoto.substring(1);
 		Class clazz = this.getClass();
-        Class[] params = new Class[1];
-        params[0] = String.class;
-        Method m = clazz.getDeclaredMethod(methodname, params);
+        
 		// 原始文件名
         String originalFileName = file.getOriginalFilename(); 
         // 获取图片后缀
@@ -80,11 +78,22 @@ public class Communicate extends IdEntity implements Serializable {
         File saveFile = new File(filePath);
         // 将上传的文件保存到服务器文件系统
         file.transferTo(saveFile);
+        // 获取原有文件名
+        Class[] params = new Class[1];
+        params[0] = String.class;
+        Method m = clazz.getDeclaredMethod(methodname, null);
+//        Object[] p = new Object[1];
+//        p[0]=fileName;
+        String originalName = (String)m.invoke(this,null);        
         // 记录服务器文件系统图片名称
+        params[0] = String.class;
+        methodname = "set" + whatPhoto.substring(0, 1).toUpperCase() + whatPhoto.substring(1);
+        m = clazz.getDeclaredMethod(methodname, params);
         Object[] p = new Object[1];
+        if(originalName!=null&&originalName.length()>0)
+        	fileName=originalName + ":" +fileName;
         p[0]=fileName;
         m.invoke(this,p);
-        
 	}
 
 	public Communicate() {

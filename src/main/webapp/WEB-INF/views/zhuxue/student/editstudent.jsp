@@ -409,12 +409,12 @@
 	</table></div>
 	</td></tr>
 	<tr style="mso-height-source:userset;">
-		<td colspan="2" style="height: 20pt" class="style40">支助建议</td>
+		<td colspan="2" style="height: 20pt" class="style40">资助建议</td>
 		<td colspan="6" class="style59" style="height: 20pt">　<span style="mso-spacerun:yes">
 		<select class="sponserApply" id="student_sponseRecommandation" name="sponseRecommandation" style="width: 150px">
 			<option value="long">建议长期资助</option>
 			<option value="short">短期困难</option>
-			<option value="no">不支助</option>
+			<option value="no">不资助</option>
 			</select>
 		</span>　</td>
 	</tr>
@@ -539,7 +539,7 @@
 		<td colspan="1 "height="26" class="style49" style="width: 258px">
 				<input class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
 		<td colspan="7" style="width: 268434864px" class="style11" >
-				<input class="style58" type="text" id="communicates[0]_content" name="content" style="width: 588px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;				<a target=showpic class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px">没有图片</a></td>
+				<input class="style58" type="text" id="communicates[0]_content" name="content" style="width: 588px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;				<a target=showpic multiple=multiple class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px">没有图片</a></td>
 	</tr>
 	</table>
 	</div></td></tr>
