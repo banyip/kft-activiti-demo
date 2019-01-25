@@ -375,7 +375,7 @@
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">申请评定表</td>
-		<td colspan="6" class="style11">　<a target=showpic class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_applyEvaluationPicture" style="width: 303px">没有照片</a><!--<input type="file" class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_applyEvaluationPicture" style="width: 303px">--></td>
+		<td colspan="6" class="style11">　<input type=file class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_applyEvaluationPicture" style="width: 303px" /><!--<input type="file" class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhoto[0]_applyEvaluationPicture" style="width: 303px">--></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style40">评定表得分</td>
@@ -390,7 +390,7 @@
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style40">支助建议</td>
 		<td colspan="6" class="style59" style="height: 20pt">　<span style="mso-spacerun:yes">
-		<select class="sponserApply" id="student_sponseRecommandation" name="sponseRecommandation" style="width: 69px">
+		<select class="sponserApply" id="student_sponseRecommandation" name="sponseRecommandation" style="width: 150px">
 			<option value="long">建议长期资助</option>
 			<option value="short">短期困难</option>
 			<option value="no">不支助</option>

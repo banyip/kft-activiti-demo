@@ -408,7 +408,16 @@
 	</tr>
 	</table></div>
 	</td></tr>
-
+	<tr style="mso-height-source:userset;">
+		<td colspan="2" style="height: 20pt" class="style40">支助建议</td>
+		<td colspan="6" class="style59" style="height: 20pt">　<span style="mso-spacerun:yes">
+		<select class="sponserApply" id="student_sponseRecommandation" name="sponseRecommandation" style="width: 150px">
+			<option value="long">建议长期资助</option>
+			<option value="short">短期困难</option>
+			<option value="no">不支助</option>
+			</select>
+		</span>　</td>
+	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="3" height="26" style="height: 20.1pt" class="style46">
 		官网上线发布时间</td>
