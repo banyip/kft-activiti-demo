@@ -29,7 +29,7 @@ import java.util.List;
  * @author HenryYan
  */
 @Entity
-@Table(name = "ZHUXUE_TRANSFER")
+@Table(name = "ZHUXUE_SPONSER")
 public class Sponser extends IdEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
