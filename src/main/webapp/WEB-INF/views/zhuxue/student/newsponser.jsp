@@ -107,8 +107,8 @@
 			<input class="sponserApply" id="transfers[0]_transferMan" name="transfers[0]_transferMan" type="text" style="width: 78px" /></td>
 		<td class="style1" style="height: 18pt; width: 141px;">
 				<select class="sponserApply" id="transfers[0]_studentToSponse" name="transfers[0]_studentToSponse">
-					<c:forEach items="${studentList}" var="student"> 
-					<option value="${student.id}">&{student.studentName}</option>
+					<c:forEach items="${studentList }" var="student"> 
+					<option value="${student.id }">&{student.studentName }</option>
 					</c:forEach>				
 				</select></td>
 		<td class="style2" style="height: 18pt; width: 94px;">
