@@ -119,10 +119,12 @@ public class ZhuxueController {
         int[] pageParams = PageUtil.init(page, request);
         
 		List<Sponser> results=sponserManager.getAllSponser();
+		List<Student> studentList = studentManager.getAllStudent();
         String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
         page.setResult(results);
         mav.addObject("page", page);
+        mav.addObject("studentList",studentList);
         return mav;
     }
 
@@ -145,7 +147,24 @@ public class ZhuxueController {
         return mav;
     }
 
-    
+    /**
+     * 读取学生列表
+     *
+     * @param student
+     */
+    @RequestMapping(value = "list/studentsimple")
+    public ModelAndView studentsimpleList(HttpSession session, HttpServletRequest request) {
+        ModelAndView mav = new ModelAndView("/zhuxue/student/studentList");
+        Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
+        int[] pageParams = PageUtil.init(page, request);
+        List<Student> results=studentManager.getAllStudent();
+        String userId = UserUtil.getUserFromSession(session).getId();
+        page.setTotalCount(results.size());
+        page.setResult(results);
+        mav.addObject("page", page);
+        return mav;
+    }
+   
     
     /*
     * newstudent

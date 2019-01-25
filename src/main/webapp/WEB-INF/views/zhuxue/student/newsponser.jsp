@@ -30,7 +30,7 @@
 		<td class="style1">
 			<input class="sponserApply" id="sponser_name" name="name" type="text" style="width: 81px" /></td>
 		<td class="style1">
-			<input class="sponserApply" id="sponser_nickname" name="nickname" type="text" style="width: 81px" />　</td>
+			<input class="sponserApply" id="sponser_nickName" name="nickName" type="text" style="width: 81px" />　</td>
 		<td class="style1">
 			<input class="sponserApply" id="sponser_contactNo" name="contactNo" type="text" style="width: 95px" />　</td>
 		<td class="style1"><input class="sponserPhoto" id="sponser_picture" name="picture" type="file" style="width: 189px" /></td>
@@ -106,7 +106,11 @@
 		<td class="style1" style="height: 18pt; width: 106px;">
 			<input class="sponserApply" id="transfers[0]_transferMan" name="transfers[0]_transferMan" type="text" style="width: 78px" /></td>
 		<td class="style1" style="height: 18pt; width: 141px;">
-			<input class="sponserApply" id="transfers[0]_studentToSponse_id" name="transfers[0]_studentToSponse_id" type="text" style="width: 78px" /></td>
+				<select class="sponserApply" id="transfers[0]_studentToSponse" name="transfers[0]_studentToSponse">
+					<c:forEach items="${studentList}" var="student"> 
+					<option value="${student.id}">&{student.studentName}</option>
+					</c:forEach>				
+				</select></td>
 		<td class="style2" style="height: 18pt; width: 94px;">
 			<input class="sponserApply" id="transfers[0]_helpSemester" name="transfers[0]_helpSemester" type="text" style="width: 78px" /></td>
 		<td class="style2" style="height: 18pt; width: 85px;">
@@ -130,4 +134,5 @@
 				</td>
 			</tr>
 </table>
+
 

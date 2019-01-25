@@ -2,11 +2,13 @@ package me.kafeitu.demo.activiti.entity.zhuxue;
 
 
 import me.kafeitu.demo.activiti.entity.IdEntity;
+import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
 
 import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 
 
@@ -43,6 +45,8 @@ public class Transfer extends IdEntity implements Serializable {
     private String helpSemester;
     private String memo;
     private Sponser sponser;
+    @Autowired
+    protected StudentManager studentManager;
     
     @Column
     public String getTransferBank() {
@@ -81,6 +85,11 @@ public class Transfer extends IdEntity implements Serializable {
 	}
 	public void setStudentToSponse(Student studentToSponse) {
 		this.studentToSponse = studentToSponse;
+	}
+	
+	public void setStudentToSponse(String studentId) {
+        Student student =studentManager.getStudent(Long.parseLong(studentId));
+		this.setStudentToSponse(student);
 	}
 	
 	@Column
