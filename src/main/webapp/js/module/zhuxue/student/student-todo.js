@@ -50,6 +50,32 @@ var detail = {};
 
 //count the poor score
 
+
+
+function showMultiplePics(filenamesstr,aid)
+{
+    var aobj = myparent.find(aid);
+    if(aobj.length>0)
+    {  
+        var content = aobj[0].cloneNode(true).outerHTML;
+        if(filenamesstr!=null&&filenamesstr.length>0)
+        {
+            var filenames=filenamesstr.split(":",-1);
+            for(var ii =0; ii<filenames.length;ii++)
+                if(filenames[ii].length>0)
+                {
+                    aobj = myparent.find(aid);
+                    if(ii==aobj.length)
+                        {                                                    		
+                            //var content1 = content.replace(photokey, photokey+ii);
+                            $(aobj[ii-1]).after("<br/>"+content);
+                        }
+                    $(myparent.find(aid)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
+                    $(myparent.find(aid)[ii]).text("显示图片");
+                }                                            
+        }
+    }
+}
 function countPoorScore()
 {
     var totalScore=0;
@@ -224,7 +250,8 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                     {
                         if(key=="auditphotos")                  
                             for(var j=0;j<eval('v['+i+'].'+key).length;j++)
-                                {
+                                {          
+                            	    //超过1行加一行
                                     if(j>0)
                                         //add line
                                         insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
@@ -233,6 +260,8 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                         if(photokey.indexOf("photoDate")>=0)
                                             myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).val(eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                         else{
+                                        	showMultiplePics(eval('v['+i+'].'+key+'['+j+'].'+photokey),'#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
+                                        	/*
                                             var filenamesstr = eval('v['+i+'].'+key+'['+j+'].'+photokey);
                                             var aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
                                             if(aobj.length>0)
@@ -254,7 +283,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                             $(myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey)[ii]).text("显示图片");
                                                         }                                            
                                                 }
-                                            }
+                                            }*/
                                         }
                                     }
                                                                            //add line
