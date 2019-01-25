@@ -52,7 +52,7 @@ public class SponserManager {
     public void saveSponser(Sponser entity) throws IllegalArgumentException, IllegalAccessException {
     	
     	if (entity.getId() == null) {
-            entity.setApplyTime(new Date());
+//            entity.setApplyTime(new Date());
         }
 //        List<Relative> items = entity.getRelatives();
 //        this.<Relative>cleanEmpty(items);
