@@ -460,7 +460,7 @@ var handleOpts = {
                     );
 					filenames = filenames.substr(1);
 					// 提交的时候把变量
-					complete(variables,'/zhuxue/student/newstudent/',filenames,files);
+					complete(variables,'/zhuxue/student/newsponser/',filenames,files);
 				}
 			},{
 				text: '取消',
@@ -525,7 +525,7 @@ editsponser: {
 					
 					
 					// 提交的时候把变量
-					complete(variables,'/zhuxue/student/editstudent/',filenames,files);
+					complete(variables,'/zhuxue/student/editsponser/',filenames,files);
 				}
 			},{
 				text: '取消',
