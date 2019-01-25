@@ -33,16 +33,39 @@ public class Transfer extends IdEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 	private String transferTime;
+	private String transferBank;
 	private int amount;
 	private String semester;
 	private String method;
 	private String transferMan;
 	private String contactNo;
     private Student studentToSponse;
+    private String helpSemester;
+    private String memo;
     private Sponser sponser;
     
-
-    @ManyToOne
+    @Column
+    public String getTransferBank() {
+		return transferBank;
+	}
+    @Column
+	public String getHelpSemester() {
+		return helpSemester;
+	}
+    @Column
+	public String getMemo() {
+		return memo;
+	}
+	public void setTransferBank(String transferBank) {
+		this.transferBank = transferBank;
+	}
+	public void setHelpSemester(String helpSemester) {
+		this.helpSemester = helpSemester;
+	}
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+	@ManyToOne
 	@JoinColumn(name="sponserId")
     public Sponser getSponser() {
 		return sponser;
