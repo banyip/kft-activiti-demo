@@ -305,7 +305,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
 }
 
 
-function submitbtnclick(parentsting,variables)
+function submitbtnclick(parentsting)
 {
 	myparent=$('#'+parentstring);
 	var variables = [];
