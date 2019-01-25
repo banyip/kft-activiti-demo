@@ -53,7 +53,7 @@
 					<td>${student.grade }</td>
 					<td>${student.className }</td>
 					<td>${student.applyTime }</td>
-                    <td><a class="handle" tkey='editstudent' tname='修改' href="#">办理</a>
+                    <td><a class="handle" tkey='editstudent' tname='修改' href="#">修改</a>
                         <a class="deleterow" tname=删除 href="#">删除</a>
 					</td>
 				</tr>

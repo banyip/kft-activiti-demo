@@ -22,7 +22,7 @@
 	<script src="${ctx }/js/common/plugins/html/jquery.outerhtml.js" type="text/javascript"></script>
 	<script src="${ctx }/js/common/plugins/blockui/jquery.blockUI.js" type="text/javascript"></script>
 	<script src="${ctx }/js/module/activiti/workflow.js" type="text/javascript"></script>
-	<script src="${ctx }/js/module/zhuxue/student/student-todo.js" type="text/javascript"></script>	
+	<script src="${ctx }/js/module/zhuxue/student/sponser-todo.js" type="text/javascript"></script>	
 </head>
 
 <body>
@@ -30,7 +30,7 @@
 		<div id="message" class="alert alert-success">${message}</div>
     </c:if>
     	<div style="text-align: right;padding: 2px 1em 2px">
-		<a class='handle' tkey=newstudent tname="登记新学生申请" href='#'>登记新学生申请</a>
+		<a class='handle' tkey=newsponser tname="登记新资助人"  href='#'>登记新学生申请</a>
 	</div>
 	<table width="100%" class="need-border">
 		<th>
@@ -48,7 +48,7 @@
 				    <td>${sponser.name }</td>
 					<td>${sponser.nickName }</td>
 
-                    <td><a class="handle" tkey='editstudent' tname='修改' href="#">办理</a>
+                    <td><a class="handle" tkey='editsponser' tname='修改' href="#">修改</a>
                         <a class="deleterow" tname=删除 href="#">删除</a>
 					</td>
 				</tr>
