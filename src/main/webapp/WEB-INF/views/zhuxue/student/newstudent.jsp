@@ -281,7 +281,7 @@
 		<input  class="studentApply" id="student_ifBorrowHouse" name="ifBorrowHouse" type="checkbox" />借用房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>来源：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_rentFrom" name="rentFrom" style="width: 422px" /></span>。</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="6" style="height: 20pt; mso-ignore: colspan" class="style35">
+		<td colspan="6" style=" mso-ignore: colspan" class="style35">
 		3.  
 		<input  class="studentApply" id="student_ifRentHouse" name="ifRentHouse" type="checkbox" />租用房屋<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>租金：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_rentFee" name="rentFee" style="width: 41px" /></span>元/月<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>房屋内部装修：<span style="mso-spacerun:yes">&nbsp;
 		<input  class="studentApply" id="student_ifRentSimple" name="ifRentSimple" type="checkbox" /></span>简陋<span style="mso-spacerun:yes">&nbsp;&nbsp; 
@@ -300,29 +300,38 @@
 		相关走访资料上传</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-		<td style="height: 20pt; width: 149pt;" class="style9">拍摄时间</td>
-		<td class="style11" style="width: 60pt; height: 20pt;">家庭环境照片</td>
-		<td class="style11" style="height: 20pt">学生个人独照</td>
-		<td class="style11" style="width: 48pt; height: 20pt;">反馈表照片</td>
-		<td class="style11" style="height: 20pt">发款签收照片</td>
-		<td colspan="3" class="style38" style="height: 20pt">
+    <td colspan=8>
+    <div>
+    <table width="100%">
+    <tr>
+		<td width="199" class="style9" style=" width: 149pt;">拍摄时间</td>
+		<td width="80" class="style11" style="width: 60pt; ">家庭环境照片</td>
+		<td width="58" class="style11" style="height: 20pt">学生个人独照</td>
+		<td width="86" class="style11" style="width: 48pt; ">反馈表照片</td>
+		<td width="96" class="style11" style="height: 20pt">发款签收照片</td>
+		<td width="420" colspan="3" class="style38" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
+    </table>
+    </div>
+    </td>
+    </tr>
+    
 	
 
 <tr><td colspan=8>		    <div id="div_audits[0]_auditPhotos">
 				<table class="class_audits[0]_auditPhotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 205px;" class="style9">		<input type="text" class="studentApply" id="audits[0]_auditPhoto[1]_photoDate" name="auditPhoto[1]_photoDate" style="width: 80px"></td>
-		<td class="style11" style="width: 66pt">
+		<td width="205" height="26" class="style9" style="height: 20.1pt; width: 205px;">		<input type="text" class="studentApply" id="audits[0]_auditPhoto[1]_photoDate" name="auditPhoto[1]_photoDate" style="width: 80px"></td>
+		<td width="88" class="style11" style="width: 66pt">
 		<input type="file" multiple="multiple" class="studentPhoto" id="audits[0]_auditPhoto[0]_familyPhoto" name="auditPhoto[1]_familyPhoto" style="width: 80px"></td>
-		<td class="style11" style="width: 123px">
+		<td width="121" class="style11" style="width: 123px">
 		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_studentPhoto" name="auditPhoto[1]_studentPhoto" style="width: 80px">　</td>
-		<td class="style11" style="width: 119px" >
+		<td width="121" class="style11" style="width: 119px" >
 		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_feedbackPhoto" name="auditPhoto[1]_feedbackPhoto" style="width: 80px">　</td>
-		<td class="style11" style="width: 98px">
+		<td width="98" class="style11" style="width: 98px">
 		<input type="file" class="studentPhoto" id="audits[0]_auditPhoto[0]_recieptPhoto" name="auditPhoto[1]_recieptPhoto" style="width: 80px">　</td>
-		<td colspan="3" class="style11">
+		<td width="306" colspan="3" class="style11">
 		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[0]_auditPhoto[0]_otherPhoto" name="auditPhoto[1]_otherPhoto" style="width: 80px">　</td>
 	</tr>
 	</table></div>
@@ -406,33 +415,41 @@
 		<td colspan="8" height="26" style="height: 20.1pt" class="style9">考试成绩</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">考试时间</td>
-		<td class="style11" style="width: 60pt">语文</td>
-		<td class="style11">英语</td>
-		<td class="style11" >数学</td>
-		<td class="style11">化学</td>
-		<td class="style11">物理</td>
-		<td class="style11">专业科</td>
-		<td class="style11">年级排名</td>
+    <td colspan=8>
+    <div>
+    <table width=100%>
+    <tr>
+		<td width="199" height="26" class="style9" style="height: 20.1pt; width: 149pt;">考试时间</td>
+		<td width="80" class="style11" style="width: 60pt">语文</td>
+		<td width="105" class="style11">英语</td>
+		<td width="117" class="style11" >数学</td>
+		<td width="109" class="style11">化学</td>
+		<td width="112" class="style11">物理</td>
+		<td width="105" class="style11">专业科</td>
+		<td width="112" class="style11">年级排名</td>
+     </tr>
+     </table>
+     </div>
+     </td>     
 	</tr>
 		<tr><td colspan=8>		    <div id="div_exams">
 				<table class="class_exams" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
+		<td width="199" height="26" class="style9" style="height: 20.1pt; width: 149pt;">
 				<input class="studentApply" type="text" id="exams[0]_examTime" name="examTime" style="width: 86px"></td>
-		<td class="style11" style="width: 60pt">
+		<td width="86" class="style11" style="width: 60pt">
 				<input class="studentApply" type="text" id="exams[0]_chinese" name="chinese" style="width: 86px"></td>
-		<td class="style11">
+		<td width="100" class="style11">
 				<input class="studentApply" type="text" id="exams[0]_english" name="english" style="width: 86px"></td>
-		<td class="style11" >
+		<td width="118" class="style11" >
 				<input class="studentApply" type="text" id="exams[0]_math" name="math" style="width: 86px"></td>
-		<td class="style11">
+		<td width="109" class="style11">
 				<input class="studentApply" type="text" id="exams[0]_chemical" name="chemical" style="width: 86px"></td>
-		<td class="style11">
+		<td width="109" class="style11">
 				<input class="studentApply" type="text" id="exams[0]_physical" name="physical" style="width: 86px"></td>
-		<td class="style11">
+		<td width="109" class="style11">
 				<input class="studentApply" type="text" id="exams[0]_profectional" name="profectional" style="width: 86px"></td>
-		<td class="style11">
+		<td width="109" class="style11">
 				<input class="studentApply" type="text" id="exams[0]_position" name="position" style="width: 86px"></td>
 	</tr>
 	</table>
@@ -589,10 +606,10 @@
 		相关走访资料上传</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
-		<td style="height: 20pt; width: 149pt;" class="style9">拍摄时间</td>
-		<td class="style11" style="width: 60pt; height: 20pt;">家庭环境照片</td>
+		<td style=" width: 149pt;" class="style9">拍摄时间</td>
+		<td class="style11" style="width: 60pt; ">家庭环境照片</td>
 		<td class="style11" style="height: 20pt">学生个人独照</td>
-		<td class="style11" style="width: 48pt; height: 20pt;">反馈表照片</td>
+		<td class="style11" style="width: 48pt; ">反馈表照片</td>
 		<td class="style11" style="height: 20pt">发款签收照片</td>
 		<td colspan="3" class="style11" style="height: 20pt">
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
