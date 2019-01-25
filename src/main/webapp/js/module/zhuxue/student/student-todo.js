@@ -52,7 +52,7 @@ var detail = {};
 
 
 
-function showMultiplePics(filenamesstr,aid)
+function showMultiplePics(myparent,filenamesstr,aid)
 {
     var aobj = myparent.find(aid);
     if(aobj.length>0)
@@ -260,7 +260,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                         if(photokey.indexOf("photoDate")>=0)
                                             myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).val(eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                         else{
-                                        	showMultiplePics(eval('v['+i+'].'+key+'['+j+'].'+photokey),'#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
+                                        	showMultiplePics(myparent,eval('v['+i+'].'+key+'['+j+'].'+photokey),'#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
                                         	/*
                                             var filenamesstr = eval('v['+i+'].'+key+'['+j+'].'+photokey);
                                             var aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
