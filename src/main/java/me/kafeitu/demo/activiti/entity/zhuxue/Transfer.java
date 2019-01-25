@@ -41,7 +41,7 @@ public class Transfer extends IdEntity implements Serializable {
     private Student studentToSponse;
     private Sponser sponser;
     
-	@Column
+
     @ManyToOne
 	@JoinColumn(name="sponserId")
     public Sponser getSponser() {
@@ -50,7 +50,7 @@ public class Transfer extends IdEntity implements Serializable {
 	public void setSponser(Sponser sponser) {
 		this.sponser = sponser;
 	}
-	@Column
+
     @ManyToOne
 	@JoinColumn(name="studentId")
     public Student getStudentToSponse() {
