@@ -441,7 +441,7 @@ public class ZhuxueController {
 				logger.debug("资助人信息保存内容key："+key);
 				String methodname= "set"+key.substring(8,9).toUpperCase()+key.substring(9);
 				Object value = variables.get(key);
-				invoke(methodname,value,(Object)sponser,"Student","java.lang.String");
+				invoke(methodname,value,(Object)sponser,"Sponser","java.lang.String");
 				logger.debug("资助人信息保存成功："+key);
 			}else if(key.indexOf("transfers")==0)
 			{
