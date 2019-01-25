@@ -232,8 +232,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                     {
                         if(key.indexOf("Picture")>0||key.indexOf("Photo")>=0)
                         {
-                            myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+eval('v['+i+'].'+key));                
-                            myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').text("显示图片");
+                        	showMultiplePics(myparent,eval('v['+i+'].'+key),'a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto');
                         }
                         else
                             myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
