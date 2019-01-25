@@ -260,30 +260,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                             myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).val(eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                         else{
                                         	showMultiplePics(myparent,eval('v['+i+'].'+key+'['+j+'].'+photokey),'#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
-                                        	/*
-                                            var filenamesstr = eval('v['+i+'].'+key+'['+j+'].'+photokey);
-                                            var aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
-                                            if(aobj.length>0)
-                                            {  
-                                                var content = aobj[0].cloneNode(true).outerHTML;
-                                                if(filenamesstr!=null&&filenamesstr.length>0)
-                                                {
-                                                    var filenames=filenamesstr.split(":",-1);
-                                                    for(var ii =0; ii<filenames.length;ii++)
-                                                        if(filenames[ii].length>0)
-                                                        {
-                                                            aobj = myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
-                                                            if(ii==aobj.length)
-                                                                {                                                    		
-                                                                    //var content1 = content.replace(photokey, photokey+ii);
-                                                                    $(aobj[ii-1]).after("<br/>"+content);
-                                                                }
-                                                            $(myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
-                                                            $(myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey)[ii]).text("显示图片");
-                                                        }                                            
-                                                }
-                                            }*/
-                                        }
+                                       }
                                     }
                                                                            //add line
                                    // insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
