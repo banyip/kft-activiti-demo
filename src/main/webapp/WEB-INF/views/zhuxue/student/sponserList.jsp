@@ -49,7 +49,7 @@
 					<td>${sponser.nickName }</td>
 
                     <td><a class="handle" tkey='editsponser' tname='修改' href="#">修改</a>
-                        <a class="deleterow" tname=删除 href="#">删除</a>
+                        <a class="deleterow" tkey="deletesponser" tname=删除 href="#">删除</a>
 					</td>
 				</tr>
 			</c:forEach>

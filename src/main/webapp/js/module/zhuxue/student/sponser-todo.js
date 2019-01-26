@@ -36,7 +36,7 @@ $("#drop-area").dmUploader({
         icons: {
             primary: 'ui-icon-comment'
         }
-    }).click(deletestudent);
+    }).click(deleteitem);
     // 跟踪
     $('.trace').click(graphTrace);
      $.each($('.div_maindialog'),function(){
@@ -556,7 +556,7 @@ editsponser: {
 /**
  * 办理流程
  */
-function deletestudent() {
+function deleteitem() {
 	// 当前节点的英文名称
 	var tkey = $(this).attr('tkey');
 	
@@ -566,7 +566,7 @@ function deletestudent() {
 	// 请假记录ID
 	var rowId = $(this).parents('tr').attr('id');
 	
-   $.post(ctx + '/zhuxue/student/deletestudent/'+rowId ,{}, function(resp) {
+   $.post(ctx + '/zhuxue/student/'+tkey+'/'+rowId ,{}, function(resp) {
 		$.unblockUI();
         if (resp == 'success') {
             alert('任务完成');

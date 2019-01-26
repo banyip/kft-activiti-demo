@@ -548,6 +548,22 @@ public class ZhuxueController {
      * @param id
      * @return
      */
+    @RequestMapping(value = "deletesponser/{id}")
+    @ResponseBody
+    public String delsponser(HttpSession session,@PathVariable("id") Long id) {
+        String userId = UserUtil.getUserFromSession(session).getId();
+        sponserManager.delSponser(id);
+        logger.debug("资助人删除成功：id="+id);
+       // Map<String, Object> variables = taskService.getVariables(taskId);
+        return "success";
+    }   
+    
+    /**
+     * 读取详细数据
+     *
+     * @param id
+     * @return
+     */
     @RequestMapping(value = "detail-with-vars/{id}")
     @ResponseBody
     public Student getStudentWithVars(@PathVariable("id") Long id) {
