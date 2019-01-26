@@ -47,7 +47,7 @@ public class Transfer extends IdEntity implements Serializable {
     private Student studentToSponse;
     private String helpSemester;
     private String memo;
-    private Sponser sponser;
+ //   private Sponser sponser;
     
     
 
@@ -72,6 +72,8 @@ public class Transfer extends IdEntity implements Serializable {
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
+
+	/*
 	@ManyToOne
 	@JoinColumn(name="sponserId")
     public Sponser getSponser() {
@@ -89,6 +91,7 @@ public class Transfer extends IdEntity implements Serializable {
 	public void setStudentToSponse(Student studentToSponse) {
 		this.studentToSponse = studentToSponse;
 	}
+*/
 
 /*
     @Autowired
