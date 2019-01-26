@@ -74,8 +74,8 @@ public class Transfer extends IdEntity implements Serializable {
 	}
 
 	
-//	@ManyToOne
-//	@JoinColumn(name="sponserId")
+	@ManyToOne
+	@JoinColumn(name="sponserId")
     public Sponser getSponser() {
 		return sponser;
 	}
@@ -89,11 +89,11 @@ public class Transfer extends IdEntity implements Serializable {
 		return studentToSponse;
 	}
 	public void setStudentToSponse(Student studentToSponse) {
-//		this.studentToSponse = studentToSponse;
+	this.studentToSponse = studentToSponse;
 	}
 
 
-/*
+
     @Autowired
     private StudentManager studentManager;
     
@@ -103,7 +103,7 @@ public class Transfer extends IdEntity implements Serializable {
         Student student =studentManager.getStudent(studentid);
 		this.setStudentToSponse(student);
 	}
-*/	
+	
 	@Column
 	public String getTransferTime() {
 		return transferTime;
