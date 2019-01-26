@@ -48,8 +48,9 @@ public class Transfer extends IdEntity implements Serializable {
     private String helpSemester;
     private String memo;
     private Sponser sponser;
+    
     @Autowired
-    protected StudentManager studentManager;
+    protected StudentManager studentManager=new StudentManager();
     
     @Column
     public String getTransferBank() {
