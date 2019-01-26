@@ -103,6 +103,7 @@ public class Transfer extends IdEntity implements Serializable {
 		StudentManager studentManager= new StudentManager();
         Student student =studentManager.getStudent(studentid);
 		this.setStudentToSponse(student);
+		student.addTransfer(this);
 	}
 	
 	@Column

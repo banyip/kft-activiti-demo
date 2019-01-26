@@ -218,6 +218,12 @@ public class Student extends IdEntity implements Serializable {
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private List<Evaluate> evaluates = new ArrayList<Evaluate>();
 
+	
+	public void addTransfer(Transfer transfer)
+	{
+		if(transfer!=null)
+			transfers.add(transfer);
+	}
 	@Column(length=20)
 	public String getSponseRecommandation() {
 		return sponseRecommandation;
