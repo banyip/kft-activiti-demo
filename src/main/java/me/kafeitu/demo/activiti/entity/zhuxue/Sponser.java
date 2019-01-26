@@ -140,7 +140,7 @@ public class Sponser extends IdEntity implements Serializable {
 	}
 	
 	@Column
-	@OneToMany(cascade = { CascadeType.ALL })
+	@OneToMany(mappedBy ="sponser",cascade = { CascadeType.ALL })
 	public List<Transfer> getTransfers() {
 		return transfers;
 	}
