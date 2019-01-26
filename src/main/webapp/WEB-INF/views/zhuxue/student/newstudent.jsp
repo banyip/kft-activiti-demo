@@ -469,6 +469,7 @@
 		<td class="style50">发款人</td>
 		<td colspan="3" class="style11">联系电话</td>
 	</tr>
+	<!-- 
 		<tr><td colspan=8>		    <div id="div_transfers">
 				<table class="class_transfers" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
@@ -500,7 +501,7 @@
 					style="width:60px; height:24px;" onclick="deletetable('newstudent','transfers')" />
 				</td>
 			</tr>
-
+-->
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style51">　</td>
 		<td class="style52" style="width: 60pt">　</td>
