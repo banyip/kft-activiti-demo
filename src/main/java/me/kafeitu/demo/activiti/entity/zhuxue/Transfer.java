@@ -92,7 +92,8 @@ public class Transfer extends IdEntity implements Serializable {
 	
 	public void setStudentToSponse(String studentId) {
 		logger.debug("资助学生信息保存内容studentid："+studentId);
-        Student student =studentManager.getStudent(Long.parseLong(studentId));
+		long studentid=Long.parseLong(studentId);
+        Student student =studentManager.getStudent(studentid);
 		this.setStudentToSponse(student);
 	}
 	
