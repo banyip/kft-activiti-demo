@@ -93,13 +93,14 @@ public class Transfer extends IdEntity implements Serializable {
 	}
 
 
-
+/*
     @Autowired
     private StudentManager studentManager;
-    
+ */   
 	public void setStudentToSponse(String studentId) {
 		logger.debug("资助学生信息保存内容studentid："+studentId);
 		long studentid=Long.parseLong(studentId);
+		StudentManager studentManager= new StudentManager();
         Student student =studentManager.getStudent(studentid);
 		this.setStudentToSponse(student);
 	}
