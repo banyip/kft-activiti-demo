@@ -464,6 +464,7 @@ public class ZhuxueController {
 				logger.debug("资助人信息保存成功："+key);
 			}else if(key.indexOf("transfers")==0)
 			{
+					
 				Object value = variables.get(key);
 				String invokeClassName = "Transfer";   				
 				int pos = (invokeClassName).length()+1;
@@ -477,7 +478,13 @@ public class ZhuxueController {
 				}
 				Transfer item = items.get(index);
 				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
-				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+				if(key.indexOf("studentToSponse")>=0)
+				{
+					Student student = studentManager.getStudent(Long.parseLong((String) value));
+					item.setStudentToSponse(student);
+					
+				}else
+					invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
 			}			
 			
 		}
