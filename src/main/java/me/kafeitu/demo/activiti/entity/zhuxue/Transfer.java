@@ -83,8 +83,8 @@ public class Transfer extends IdEntity implements Serializable {
 		this.sponser = sponser;
 	}
 
-//    @ManyToOne
-//	@JoinColumn(name="studentId")
+    @ManyToOne(fetch = FetchType.EAGER,cascade=CascadeType.ALL)
+	@JoinColumn(name="studentId")
     public Student getStudentToSponse() {
 		return studentToSponse;
 	}

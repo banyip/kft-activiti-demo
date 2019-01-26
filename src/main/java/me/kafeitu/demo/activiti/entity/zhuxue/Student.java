@@ -262,7 +262,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	@Column
-	@OneToMany(cascade = { CascadeType.ALL })
+	@OneToMany(mappedBy="student",cascade = { CascadeType.PERSIST })
 	public List<Transfer> getTransfers() {
 		return transfers;
 	}
