@@ -215,14 +215,14 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
     $('#'+whichpage)[0].innerHTML = innerhtmls.get(whichpage);
     var dialog = this;
     var myparent=$('#'+whichpage);
-    $.getJSON(ctx + '/zhuxue/student/detail-with-vars/' + leaveId , function(data) {
+    $.getJSON(ctx + '/zhuxue/student/sponserdetail-with-vars/' + leaveId , function(data) {
         detail = data;
         $.each(data, function(k, v) {
             // 格式化日期
 			if (k == 'applyTime' || k == 'startTime' || k == 'endTime') {
 				myparent.find('.partly#' + k ).html(new Date(v).format('yyyy-MM-dd hh:mm'));
             } 
-            else if (k == 'relatives' || k == 'transfers' || k == 'exams' || k == 'transfers' || k == 'communicates' || k == 'evaluates') 
+            else if (k == 'transfers') 
             {                
                 for(var i=0;i<v.length;i++)
                 {   
@@ -232,70 +232,14 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                     {
                         if(key.indexOf("Picture")>0||key.indexOf("Photo")>=0)
                         {
-                        	showMultiplePics(myparent,eval('v['+i+'].'+key),'a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto');
+                        	showMultiplePics(myparent,eval('v['+i+'].'+key),'a[id="'+k+'\\['+i+'\\]_' + key+'"]');
                         }
                         else
-                            myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
+                            myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"]').val(eval('v['+i+'].'+key));   
                     }                        
                 }
-            }
-            else if (k == 'audits') 
-            {                
-                for(var i=0;i<v.length;i++)
-                {   
-                    if(i>1)
-                        inserttable(whichpage,k)
-                    for(let key in v[i])
-                    {
-                        if(key=="auditphotos")                  
-                            for(var j=0;j<eval('v['+i+'].'+key).length;j++)
-                                {          
-                            	    //超过1行加一行
-                                    if(j>0)
-                                        //add line
-                                        insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
-                                    for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
-                                    {
-                                        if(photokey.indexOf("photoDate")>=0)
-                                            myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).val(eval('v['+i+'].'+key+'['+j+'].'+photokey));
-                                        else{
-                                        	showMultiplePics(myparent,eval('v['+i+'].'+key+'['+j+'].'+photokey),'#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
-                                       }
-                                    }
-                                                                           //add line
-                                   // insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
-                                }   
-                        else if(key.indexOf("Picture")>=0||key.indexOf("Photo")>=0)
-                        {
-                            var filename=eval('v['+i+'].'+key);
-                            if(filename!=null&&filename.length>0)
-                            {
-                                myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+filename);                
-                                myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').text("显示图片");
-                        
-                            }
-                        }
-                        else
-                            myparent.find('input[id="audits\\['+i+'\\]_' + key+'"].studentApply').val(eval('v['+i+'].'+key));   
-                
-                    }
-                    //add line
-                }
-            }else if (k == 'picture') 
-            {
-                if(v!=null&&v.length>0)
-                {
-                    myparent.find("a[name="+k+"].studentPhoto").attr('href',ctx+'/zhuxue/student/showPic/'+v);                
-                    myparent.find("a[name="+k+"].studentPhoto").text("显示图片");
-                }
-            }
-             else if (k.substr(0,2) == 'if') 
-            {
-                if(v=="true")
-                 myparent.find("input[type=checkbox][name="+k+"].studentApply").attr("checked",true);                
-            } 
-            else {
-				myparent.find('input[name=' + k + '].studentApply' ).val(v);
+            } else {
+				myparent.find('input[name=' + k + ']' ).val(v);
 			}
         });
 		if ($.isFunction(callback)) {
@@ -496,7 +440,7 @@ editsponser: {
                 
                 
 				// 打开对话框的时候读取请假内容
-				loadPartlyDetailWithTaskVars.call(this, "editstudent",id, null);
+				loadPartlyDetailWithTaskVars.call(this, "editsponser",id, null);
 
 			},
 			btns: [{

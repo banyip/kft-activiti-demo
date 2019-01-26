@@ -582,6 +582,22 @@ public class ZhuxueController {
     }
     
     /**
+     * 读取详细数据
+     *
+     * @param id
+     * @return
+     */
+    @RequestMapping(value = "sponserdetail-with-vars/{id}")
+    @ResponseBody
+    public Sponser getSponserWithVars(@PathVariable("id") Long id) {
+        Sponser sponser = sponserManager.getSponser(id) ;
+        logger.debug("学生信息读取成功：id="+ sponser.getId());
+       // Map<String, Object> variables = taskService.getVariables(taskId);
+        sponser.setVariables(variables);
+        return sponser;
+    }   
+    
+    /**
      * 处理图片显示请求
      * @param fileName
      */

@@ -54,7 +54,16 @@ public class Sponser extends IdEntity implements Serializable {
 	private String sponseEndTime;
 	private String sponseEndReason;
 	private List<Transfer> transfers=new ArrayList<Transfer>();
-	
+	private Map<String, Object> variables;
+	@Transient
+	public Map<String, Object> getVariables() {
+		return variables;
+	}
+
+	public void setVariables(Map<String, Object> variables) {
+		this.variables = variables;
+	}
+
 	public Sponser() {
 		super();
 		// TODO Auto-generated constructor stub
