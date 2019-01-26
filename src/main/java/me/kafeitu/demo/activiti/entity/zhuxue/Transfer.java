@@ -49,9 +49,8 @@ public class Transfer extends IdEntity implements Serializable {
     private String memo;
     private Sponser sponser;
     
-    @Autowired
-    private StudentManager studentManager;
     
+
     @Column
     public String getTransferBank() {
 		return transferBank;
@@ -90,14 +89,18 @@ public class Transfer extends IdEntity implements Serializable {
 	public void setStudentToSponse(Student studentToSponse) {
 		this.studentToSponse = studentToSponse;
 	}
-	
+
+/*
+    @Autowired
+    private StudentManager studentManager;
+    
 	public void setStudentToSponse(String studentId) {
 		logger.debug("资助学生信息保存内容studentid："+studentId);
 		long studentid=Long.parseLong(studentId);
         Student student =studentManager.getStudent(studentid);
 		this.setStudentToSponse(student);
 	}
-	
+*/	
 	@Column
 	public String getTransferTime() {
 		return transferTime;
