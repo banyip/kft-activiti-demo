@@ -8,6 +8,8 @@ import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -33,6 +35,7 @@ import java.util.List;
 @Table(name = "ZHUXUE_TRANSFER")
 public class Transfer extends IdEntity implements Serializable {
 
+    private Logger logger = LoggerFactory.getLogger(getClass());
     private static final long serialVersionUID = 1L;
 	private String transferTime;
 	private String transferBank;
@@ -88,6 +91,7 @@ public class Transfer extends IdEntity implements Serializable {
 	}
 	
 	public void setStudentToSponse(String studentId) {
+		logger.debug("资助学生信息保存内容studentid："+studentId);
         Student student =studentManager.getStudent(Long.parseLong(studentId));
 		this.setStudentToSponse(student);
 	}
