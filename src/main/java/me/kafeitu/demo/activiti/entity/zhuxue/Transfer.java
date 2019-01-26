@@ -90,7 +90,7 @@ public class Transfer extends IdEntity implements Serializable {
 	}
 	public void setStudentToSponse(Student studentToSponse) {
 	this.studentToSponse = studentToSponse;
-	studentToSponse.addTransfer(this);
+	
 	}
 
 

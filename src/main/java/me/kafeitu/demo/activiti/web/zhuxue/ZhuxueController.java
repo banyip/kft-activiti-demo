@@ -482,6 +482,7 @@ public class ZhuxueController {
 				{
 					Student student = studentManager.getStudent(Long.parseLong((String) value));
 					item.setStudentToSponse(student);
+					student.addTransfer(item);
 					
 				}else
 					invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
