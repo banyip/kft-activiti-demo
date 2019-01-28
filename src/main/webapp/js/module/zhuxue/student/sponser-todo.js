@@ -107,46 +107,8 @@ function inserttable(whichpage,whichpart) {
 	}
 }
 
-//add audits part
-function insertaudit(whichpage) {
-    tableclass='class_audits'
-    divid="div_audits";
-    myparent=$('#'+whichpage);
-	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
-    var content = newnode.innerHTML;
-    content = content.replace(/audits\[0\]/g, "audits["+ myparent.find('.'+tableclass).length + "]");
-    content = content.replace(/audits\\\\\[0\\\\\]/g, "audits\\\\\["+ myparent.find('.'+tableclass).length + "\\\\\]");
-    content = content.replace(/初审评价/g, "复审评价");
-    content = "<table class='"+tableclass+"'>" + content + "</table>";
-	
-	if(myparent.find('.'+tableclass).length <=6){
-    myparent.find('#'+divid).append(content);
 
-	}else{
-		alert("最多同时添加5个信息!");
-	}
-}
 
-function insertauditphotos(whichpage,whichpart) 
-{    
-    tableclass='class_'+whichpart
-    divid="div_"+whichpart
-    pageid='[id$="student"]';  
-    myparent=$('#'+whichpage);
-	var newnode =myparent.find('.'+tableclass)[0].cloneNode(true);
-    var content = newnode.innerHTML;
-	content = content.replace(/auditPhoto\[0\]/g, "auditPhoto["+ myparent.find(tableclass).length + "]");
-	content = "<table class='"+tableclass+"'>" + content + "</table>";
-	
-	if(myparent.find('.'+tableclass).length <=6){
-    myparent.find('#'+divid).append(content);
-/*    myparent.find('[id$="Time"],[id$="Date"]').datetimepicker({
-            stepMinute: 5
-    });*/
-	}else{
-		alert("最多同时添加5个信息!");
-	}
-}
 
 
 
@@ -212,7 +174,7 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
  * @param {Object} id
  */
 function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
-    $('#'+whichpage)[0].innerHTML = innerhtmls.get(whichpage);
+    $('#'+whichpage)[0].innerHTML = innerhtmls.get(whichpage).replace(/newsponse/g,'editsponse');
     var dialog = this;
     var myparent=$('#'+whichpage);
     $.getJSON(ctx + '/zhuxue/student/sponserdetail-with-vars/' + leaveId , function(data) {
@@ -453,8 +415,8 @@ editsponser: {
 						type: 'B'
 					}
                     ];
-                    myparent=$('#editstudent');
-                    $.each(myparent.find('.studentApply'),function()
+                    myparent=$('#editsponser');
+                    $.each(myparent.find('.sponserApply'),function()
                         {
                             if(this.type=="checkbox")
                             variables.push({
@@ -472,7 +434,7 @@ editsponser: {
                     );
                     var filenames="";
                     var files = new Array();
-					 $.each($(':file.studentPhoto'),function()
+					 $.each($(':file.sponserPhoto'),function()
                         {
                             if(this.files.length>0)
                             {
@@ -485,7 +447,7 @@ editsponser: {
 					
 					
 					// 提交的时候把变量
-					complete(variables,'/zhuxue/student/editsponser/',filenames,files);
+					complete(variables,'/zhuxue/sponser/editsponser/',filenames,files);
 				}
 			},{
 				text: '取消',
@@ -510,7 +472,7 @@ function deleteitem() {
 	// 请假记录ID
 	var rowId = $(this).parents('tr').attr('id');
 	
-   $.post(ctx + '/zhuxue/student/'+tkey+'/'+rowId ,{}, function(resp) {
+   $.post(ctx + '/zhuxue/sponser/'+tkey+'/'+rowId ,{}, function(resp) {
 		$.unblockUI();
         if (resp == 'success') {
             alert('任务完成');

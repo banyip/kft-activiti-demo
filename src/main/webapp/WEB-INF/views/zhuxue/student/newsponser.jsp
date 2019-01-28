@@ -87,7 +87,7 @@
 		<td height="24" style="height: 18.0pt; width: 107px;" class="style1">资助汇款时间</td>
 		<td class="style1" style="width: 105px">汇款银行</td>
 		<td class="style1" style="width: 106px">汇款人</td>
-		<td class="style2" style="width: 141px">受助学生编号</td>
+		<td class="style2" style="width: 141px">受助学生</td>
 		<td class="style2" style="width: 94px">资助学期</td>
 		<td class="style1" style="width: 85px">金额</td>
 		<td colspan="2" class="style1">备注（资助多位学生备注）</td>
