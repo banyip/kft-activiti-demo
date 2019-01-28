@@ -13,7 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -74,7 +74,7 @@ public class Transfer extends IdEntity implements Serializable {
 	}
 
 	
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="sponserId")
     public Sponser getSponser() {
 		return sponser;
@@ -83,8 +83,9 @@ public class Transfer extends IdEntity implements Serializable {
 		this.sponser = sponser;
 	}
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="studentId")
+    @JsonIgnore 
     public Student getStudentToSponse() {
 		return studentToSponse;
 	}
