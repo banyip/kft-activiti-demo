@@ -6,6 +6,8 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 import java.io.File;
@@ -269,6 +271,7 @@ public class Student extends IdEntity implements Serializable {
 
 	@Column
 	@OneToMany(mappedBy="studentToSponse")
+	@JsonManagedReference
 	public List<Transfer> getTransfers() {
 		return transfers;
 	}

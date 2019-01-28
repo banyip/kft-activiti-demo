@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
@@ -76,6 +77,7 @@ public class Transfer extends IdEntity implements Serializable {
 	
 	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="sponserId")
+	@JsonBackReference
     public Sponser getSponser() {
 		return sponser;
 	}
@@ -85,7 +87,7 @@ public class Transfer extends IdEntity implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="studentId")
-    @JsonIgnore 
+    @JsonBackReference 
     public Student getStudentToSponse() {
 		return studentToSponse;
 	}

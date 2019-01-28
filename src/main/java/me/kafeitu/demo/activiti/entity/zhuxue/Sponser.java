@@ -10,6 +10,8 @@ import org.activiti.engine.task.Task;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 
 import java.io.File;
@@ -141,6 +143,7 @@ public class Sponser extends IdEntity implements Serializable {
 	
 	@Column
 	@OneToMany(mappedBy ="sponser",cascade = { CascadeType.PERSIST })
+	@JsonManagedReference
 	public List<Transfer> getTransfers() {
 		return transfers;
 	}
