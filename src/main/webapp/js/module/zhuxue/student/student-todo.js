@@ -40,7 +40,7 @@ $("#drop-area").dmUploader({
     // 跟踪
     $('.trace').click(graphTrace);
      $.each($('.div_maindialog'),function(){
-        innerhtmls.set('editstudent',this.innerHTML);
+        innerhtmls.set(this.id,this.innerHTML);
         });
 });
 

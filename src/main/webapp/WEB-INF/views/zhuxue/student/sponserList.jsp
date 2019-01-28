@@ -70,7 +70,7 @@
     </div>
 
     <!-- 学生信息登记学生信息 -->
-	<div id="editsponser" class="div_maindialog">
+	<div id="editsponser" style="display: none" class="div_maindialog">
 		<!-- table用来显示信息，方便办理任务
 		<input type=hidden id="sponser_id" name="sponser_id"/>  -->
  		 	<%@include file="newsponser.jsp" %>
