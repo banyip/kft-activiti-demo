@@ -500,19 +500,7 @@
 	</tr>
 	</table>
 	</div></td></tr>
-	
-				<tr>
-				<td colspan="8" class="style9">
 
-
-					<input type="button" name="button"
-					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('editstudent','transfers')" />      
-					<input
-					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','transfers')" />
-				</td>
-			</tr>
 
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style51">　</td>
