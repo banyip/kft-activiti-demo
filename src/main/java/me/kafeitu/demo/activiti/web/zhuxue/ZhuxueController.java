@@ -596,7 +596,8 @@ public class ZhuxueController {
         logger.debug("资助人信息读取成功：name="+ sponser.getName());
        // Map<String, Object> variables = taskService.getVariables(taskId);
         logger.debug("资助人信息读取成功sponser："+ sponser);
-        sponser.setVariables(variables);
+        //sponser.setVariables(variables);
+        
         return sponser;
     }   
     
