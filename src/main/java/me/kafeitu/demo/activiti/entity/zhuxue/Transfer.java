@@ -74,7 +74,7 @@ public class Transfer extends IdEntity implements Serializable {
 	}
 
 	
-	@ManyToOne(fetch = FetchType.LAZY,cascade=CascadeType.ALL)
+	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="sponserId")
     public Sponser getSponser() {
 		return sponser;
@@ -83,7 +83,7 @@ public class Transfer extends IdEntity implements Serializable {
 		this.sponser = sponser;
 	}
 
-    @ManyToOne(fetch = FetchType.LAZY,cascade=CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="studentId")
     public Student getStudentToSponse() {
 		return studentToSponse;
