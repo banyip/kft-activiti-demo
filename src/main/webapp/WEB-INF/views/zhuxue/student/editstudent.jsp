@@ -486,17 +486,17 @@
 				<table class="class_transfers" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
-				<input class="studentApply" type="text" id="transfers[0]_transferTime" name="transferTime" style="width: 86px"></td>
+				<input disabled="disabled" class="studentApply" type="text" id="transfers[0]_transferTime" name="transferTime" style="width: 86px"></td>
 		<td class="style11" style="width: 60pt">
-				<input class="studentApply" type="text" id="transfers[0]_amount" name="amount" style="width: 86px"></td>
+				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_amount" name="amount" style="width: 86px"></td>
 		<td class="style11">
-				<input class="studentApply" type="text" id="transfers[0]_semester" name="semester" style="width: 86px"></td>
+				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_semester" name="semester" style="width: 86px"></td>
 		<td class="style11" >
-				<input class="studentApply" type="text" id="transfers[0]_method" name="semester0" style="width: 86px"></td>
+				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_method" name="method" style="width: 86px"></td>
 		<td class="style11">
-				<input class="studentApply" type="text" id="transfers[0]_transferMan" name="transferMan" style="width: 86px"></td>
+				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_transferMan" name="transferMan" style="width: 86px"></td>
 		<td colspan="3" class="style11">
-				<input class="studentApply" type="text" id="transfers[0]_contactNo" name="contactNo" style="width: 86px"></td>
+				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_contactNo" name="contactNo" style="width: 86px"></td>
 	</tr>
 	</table>
 	</div></td></tr>
