@@ -408,47 +408,7 @@ editsponser: {
 			btns: [{
 				text: '提交',
 				click: function() {
-					var reApply = $(':radio[name=reApply]:checked').val();
-                    var variables = [{
-						key: 'reApply',
-						value: reApply,
-						type: 'B'
-					}
-                    ];
-                    myparent=$('#editsponser');
-                    $.each(myparent.find('.sponserApply'),function()
-                        {
-                            if(this.type=="checkbox")
-                            variables.push({
-                                key: this.id,
-                                value: this.checked,
-                                type: 'S'
-                            });
-                            else if(this.disabled==false&&this.value!=null)
-                            variables.push({
-                                key: this.id,
-                                value: this.value,
-                                type: 'S'
-                            });
-                        }
-                    );
-                    var filenames="";
-                    var files = new Array();
-					 $.each($(':file.sponserPhoto'),function()
-                        {
-                            if(this.files.length>0)
-                            {
-                                filenames = filenames + ":" +this.id;
-                                files.push(this.files[0]);
-                            }
-                        }                        
-                    );
-					filenames = filenames.substr(1);
-					
-					
-					// 提交的时候把变量
-					complete(variables,'/zhuxue/sponser/editsponser/',filenames,files);
-				}
+                    submitbtnclick('editsponser');				}
 			},{
 				text: '取消',
 				click: function() {
