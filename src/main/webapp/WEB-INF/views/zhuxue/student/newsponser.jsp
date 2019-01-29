@@ -25,17 +25,17 @@
 		<td colspan="3" class="style1">邮箱</td>
 	</tr>
 		<td height="26" style="height: 20.1pt;" class="style1">
-			<input class="sponserApply" id="sponser_sponserNo" name="sponserNo" type="text" style="width: 81px" />
+			<input class="sponserApply" id="sponserNo" name="sponserNo" type="text" style="width: 81px" />
 		</td>
 		<td class="style1">
-			<input class="sponserApply" id="sponser_name" name="name" type="text" style="width: 81px" /></td>
+			<input class="sponserApply" id="name" name="name" type="text" style="width: 81px" /></td>
 		<td class="style1">
-			<input class="sponserApply" id="sponser_nickName" name="nickName" type="text" style="width: 81px" />　</td>
+			<input class="sponserApply" id="nickName" name="nickName" type="text" style="width: 81px" />　</td>
 		<td class="style1">
-			<input class="sponserApply" id="sponser_contactNo" name="contactNo" type="text" style="width: 95px" />　</td>
-		<td class="style1"><input type="file" class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px"></td>
+			<input class="sponserApply" id="contactNo" name="contactNo" type="text" style="width: 95px" />　</td>
+		<td class="style1"><input type="file" class="sponserPhoto" id="picture" name="picture" style="width: 189px"></td>
 		<td colspan="3" class="style1">
-			<input class="sponserApply" id="sponser_email" name="email" type="text" style="width: 214px" /></td>
+			<input class="sponserApply" id="email" name="email" type="text" style="width: 214px" /></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td height="24" style="height: 18.0pt;" class="style1">微信号</td>
@@ -49,37 +49,37 @@
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td style="height: 18pt;" class="style1">
-			<input class="sponserApply" id="sponser_wechat" name="wechat" type="text" style="width: 81px" /></td>
+			<input class="sponserApply" id="wechat" name="wechat" type="text" style="width: 81px" /></td>
 		<td class="style1" style="height: 18pt">
-			<input class="sponserApply" id="sponser_birthdate" name="birthdate" type="text" style="width: 81px" /></td>
+			<input class="sponserApply" id="birthdate" name="birthdate" type="text" style="width: 81px" /></td>
 		<td class="style1" style="height: 18pt">
-			<input class="sponserApply" id="sponser_address" name="address" type="text" style="width: 92px" /></td>
+			<input class="sponserApply" id="address" name="address" type="text" style="width: 92px" /></td>
 		<td class="style1" style="height: 18pt">
-			<input class="sponserApply" id="sponser_sponseDeadline" name="sponseDeadline" type="text" style="width: 92px" />　</td>
+			<input class="sponserApply" id="sponseDeadline" name="sponseDeadline" type="text" style="width: 92px" />　</td>
 		<td class="style1" style="height: 18pt">
 		
-			<select class="sponserApply" id="sponser_needReciept" name="needReciept" style="width: 69px">
+			<select class="sponserApply" id="needReciept" name="needReciept" style="width: 69px">
 			<option value="true">是</option>
 			<option value="false">否</option>
 			</select>
 		</td>
 		<td class="style1" style="height: 18pt">
-			<input class="sponserApply" id="sponser_qq" name="qq" type="text" style="width: 81px" /></td>
+			<input class="sponserApply" id="qq" name="qq" type="text" style="width: 81px" /></td>
 		<td class="style1" style="height: 18pt">
-			<input class="sponserApply" id="sponser_profectional" name="profectional" type="text" style="width: 92px" /></td>
+			<input class="sponserApply" id="profectional" name="profectional" type="text" style="width: 92px" /></td>
 		<td class="style1" style="height: 18pt">
-			<input class="sponserApply" id="sponser_politicFace" name="politicFace" type="text" style="width: 85px" /></td>
+			<input class="sponserApply" id="politicFace" name="politicFace" type="text" style="width: 85px" /></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td height="24" style="height: 18.0pt;" class="style1">起始资助时间</td>
 		<td class="style1">
-			<input class="sponserApply" id="sponser_sponseStartTime" name="sponseStartTime" type="text" style="width: 78px" /></td>
+			<input class="sponserApply" id="sponseStartTime" name="sponseStartTime" type="text" style="width: 78px" /></td>
 		<td class="style1">终止资助时间</td>
 		<td class="style1">
-			<input class="sponserApply" id="sponser_sponseEndTime" name="sponseEndtime" type="text" style="width: 78px" /></td>
+			<input class="sponserApply" id="sponseEndTime" name="sponseEndtime" type="text" style="width: 78px" /></td>
 		<td class="style1">终止资助原因</td>
 		<td colspan="3" class="style1">
-			<input class="sponserApply" id="sponser_sponseEndReason" name="sponseEndReason" type="text" style="width: 254px" /></td>
+			<input class="sponserApply" id="sponseEndReason" name="sponseEndReason" type="text" style="width: 254px" /></td>
 	</tr>
 	<tr><td colspan=8>		    <div>
 	<table width="100%">

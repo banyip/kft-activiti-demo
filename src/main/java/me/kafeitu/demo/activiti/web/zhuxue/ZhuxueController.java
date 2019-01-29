@@ -244,7 +244,7 @@ public class ZhuxueController {
 				Map<String, Object> variables = var.getVariableMap();
 		           
 		        Set<String> variableNames = variables.keySet();
-		        String sponserId = (String)variables.get("sponser_id");
+		        String sponserId = (String)variables.get("id");
 		        Sponser sponser =sponserManager.getSponser(Long.parseLong(sponserId));
 
 				
@@ -485,14 +485,7 @@ public class ZhuxueController {
        //logger.debug("学生信息保存中filenames："+studentPictureFiles);
 		for (String key : variableNames) {
 			
-			if(key.indexOf("sponser_")==0)
-			{
-				logger.debug("资助人信息保存内容key："+key);
-				String methodname= "set"+key.substring(8,9).toUpperCase()+key.substring(9);
-				Object value = variables.get(key);
-				invoke(methodname,value,(Object)sponser,"Sponser","java.lang.String");
-				logger.debug("资助人信息保存成功："+key);
-			}else if(key.indexOf("transfers")==0)
+			if(key.indexOf("transfers")==0)
 			{
 					
 				Object value = variables.get(key);
@@ -516,7 +509,14 @@ public class ZhuxueController {
 					
 				}else
 					invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
-			}			
+			} else 
+			{
+				logger.debug("资助人信息保存内容key："+key);
+				String methodname= "set"+key.substring(8,9).toUpperCase()+key.substring(9);
+				Object value = variables.get(key);
+				invoke(methodname,value,(Object)sponser,"Sponser","java.lang.String");
+				logger.debug("资助人信息保存成功："+key);
+			}
 			
 		}
 		//保存所有图片
@@ -531,12 +531,9 @@ public class ZhuxueController {
         	MultipartFile studentPictureFile = studentPictureFiles[i];
 	   		if(!studentPictureFile.isEmpty())
 	        {
-	        	if(filename.indexOf("sponser_")==0)
-	        	{
-	        		int pos = "Sponser_".length();
+	        		int pos = 0;
 	        		String whatPhoto = filename.substring(pos);
 	        		sponser.savePicture(studentPictureFile,whatPhoto);
-	        	}
 	        }
         }
 

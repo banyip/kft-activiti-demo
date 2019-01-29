@@ -40,9 +40,6 @@ $("#drop-area").dmUploader({
     // 跟踪
     $('.trace').click(graphTrace);
      $.each($('.div_maindialog'),function(){
-    	if(this.id=='editsponser')
-    		this.innerHTML=this.innerHTML.replace('<input type="file" class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px">','<a target=showpic class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px" //>','<input type="file" class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px" />'+escape('没有图片')+'</a>');
-
         innerhtmls.set(this.id,this.innerHTML);
         });
 });
@@ -57,7 +54,8 @@ var detail = {};
 
 function showMultiplePics(myparent,filenamesstr,aid)
 {
-    var aobj = myparent.find(aid);
+	myparent.find(aid).innerHTML=myparent.find(aid).innerHTML.replace('<input type="file" class="sponserPhoto" id="'+aid+'" name="'+aid+'" style="width: 189px">','<a target=showpic class="sponserPhoto" id="'+aid+'" name="'+aid+'" style="width: 189px" />No picture</a>');
+	var aobj = myparent.find(aid);
     if(aobj.length>0)
     {  
         var content = aobj[0].cloneNode(true).outerHTML;
@@ -73,6 +71,7 @@ function showMultiplePics(myparent,filenamesstr,aid)
                             //var content1 = content.replace(photokey, photokey+ii);
                             $(aobj[ii-1]).after("<br/>"+content);
                         }
+
                     $(myparent.find(aid)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
                     $(myparent.find(aid)[ii]).text("显示图片");
                 }                                            
@@ -178,6 +177,7 @@ function loadDetailWithTaskVars(leaveId, taskId, callback) {
  */
 function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
     $('#'+whichpage)[0].innerHTML = innerhtmls.get(whichpage).replace(/newsponse/g,'editsponse');
+
     var dialog = this;
     var myparent=$('#'+whichpage);
     $.getJSON(ctx + '/zhuxue/student/sponserdetail-with-vars/' + leaveId , function(data) {
@@ -203,7 +203,10 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                             myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"]').val(eval('v['+i+'].'+key));   
                     }                        
                 }
-            } else {
+            } else if(key.indexOf("Picture")>0||key.indexOf("Photo")>=0)
+                 {
+                 	showMultiplePics(myparent,eval('v.'+k),'#' + k);
+                 } else            {
 				myparent.find('input[name=' + k + ']' ).val(v);
 			}
         });
