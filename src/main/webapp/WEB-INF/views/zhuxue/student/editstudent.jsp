@@ -494,7 +494,7 @@
 		<td class="style11" >
 				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_method" name="method" style="width: 86px" /></td>
 		<td class="style11">
-				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_name" name="name" style="width: 86px" /></td>
+				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_transferMan" name="name" style="width: 86px" /></td>
 		<td colspan="3" class="style11">
 				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_contactNo" name="contactNo" style="width: 86px" /></td>
 	</tr>

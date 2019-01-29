@@ -119,7 +119,7 @@
 		<td class="style2" style="height: 18pt; width: 85px;">
 			<input class="sponserApply" id="transfers[0]_amount" name="transfers[0]_amount" type="text" style="width: 78px" /></td>
 		<td colspan="2" class="style1" style="height: 18pt">
-			<input class="style3" id="transfers[0]_memo" name="transfers[0]_memo" type="text" style="width: 183px" /></td>
+			<input class="sponserApply" id="transfers[0]_memo" name="transfers[0]_memo" type="text" style="width: 183px" /></td>
 	</tr>
 	</table>
 	</div></td>

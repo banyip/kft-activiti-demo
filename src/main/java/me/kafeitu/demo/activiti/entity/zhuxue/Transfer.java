@@ -118,12 +118,16 @@ public class Transfer extends IdEntity implements Serializable {
 	public String getMethod() {
 		return method;
 	}
-	@Column
+
 	public String getTransferMan() {
+		if(sponser!=null)
+			transferMan=sponser.getName();
 		return transferMan;
 	}
-	@Column
+
 	public String getContactNo() {
+		if(sponser!=null)
+			contactNo=sponser.getContactNo();
 		return contactNo;
 	}
 
