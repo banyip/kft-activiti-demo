@@ -87,7 +87,8 @@
 		<td height="24" style="height: 18.0pt; width: 107px;" class="style1">资助汇款时间</td>
 		<td class="style1" style="width: 105px">汇款银行</td>
 		<td class="style1" style="width: 106px">汇款人</td>
-		<td class="style2" style="width: 141px">受助学生</td>
+		<td class="style1" style="width: 106px">汇款方式</td>
+		<td class="style2" style="width: 141px">受助学生编号</td>
 		<td class="style2" style="width: 94px">资助学期</td>
 		<td class="style1" style="width: 85px">金额</td>
 		<td colspan="2" class="style1">备注（资助多位学生备注）</td>
@@ -105,12 +106,14 @@
 			<input class="sponserApply" id="transfers[0]_transferBank" name="transfers[0]_transferBank" type="text" style="width: 78px" /></td>
 		<td class="style1" style="height: 18pt; width: 106px;">
 			<input class="sponserApply" id="transfers[0]_transferMan" name="transfers[0]_transferMan" type="text" style="width: 78px" /></td>
+		<td class="style1" style="height: 18pt; width: 106px;">
+			<input class="sponserApply" id="transfers[0]_method" name="transfers[0]_method" type="text" style="width: 78px" /></td>
 		<td class="style1" style="height: 18pt; width: 141px;">
 				<select class="sponserApply" id="transfers[0]_studentToSponse" name="transfers[0]_studentToSponse">
 					<c:forEach items="${studentList }" var="student"> 
-					<option value="${student.id }">${student.studentName }</option>
+					<option value="${student.id }">${student.studentName }</option> 
 					</c:forEach>				
-				</select></td>
+				</select></td> 
 		<td class="style2" style="height: 18pt; width: 94px;">
 			<input class="sponserApply" id="transfers[0]_semester" name="transfers[0]_semester" type="text" style="width: 78px" /></td>
 		<td class="style2" style="height: 18pt; width: 85px;">
@@ -127,7 +130,7 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('newsponser','transfers')" />      
+					onclick="inserttable('newsponser','transfers')" /> &nbsp;&nbsp;&nbsp;&nbsp; 
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('newsponser','transfers')" />
