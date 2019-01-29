@@ -54,7 +54,7 @@ var detail = {};
 
 function showMultiplePics(myparent,filenamesstr,aid)
 {
-	var aobj = myparent.find(aid);
+	var aobj = myparent.find('#'+aid);
 	aobj.replaceWith('<a target=showpic class="sponserPhoto" id="'+aid+'" name="'+aid+'" style="width: 189px" />No picture</a>');
 	
     if(aobj.length>0)
@@ -206,7 +206,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                 }
             } else if(k.indexOf("picture")>=0||k.indexOf("Photo")>=0)
                  {
-                 	showMultiplePics(myparent,v,'#' + k);
+                 	showMultiplePics(myparent,v, k);
                  } else            {
 				myparent.find('input[name=' + k + ']' ).val(v);
 			}
