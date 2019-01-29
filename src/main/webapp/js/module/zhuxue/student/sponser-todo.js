@@ -54,7 +54,7 @@ var detail = {};
 
 function showMultiplePics(myparent,filenamesstr,aid)
 {
-	myparent.find(aid)[0].outerHTML='<a target=showpic class="sponserPhoto" id="'+aid+'" name="'+aid+'" style="width: 189px" />No picture</a>';
+	myparent.find(aid)[0].replaceWith('<a target=showpic class="sponserPhoto" id="'+aid+'" name="'+aid+'" style="width: 189px" />No picture</a>');
 	var aobj = myparent.find(aid);
     if(aobj.length>0)
     {  
