@@ -206,7 +206,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                 }
             } else if(k.indexOf("picture")>=0||k.indexOf("Photo")>=0)
                  {
-                 	showMultiplePics(myparent,eval('v.'+k),'#' + k);
+                 	showMultiplePics(myparent,v,'#' + k);
                  } else            {
 				myparent.find('input[name=' + k + ']' ).val(v);
 			}
