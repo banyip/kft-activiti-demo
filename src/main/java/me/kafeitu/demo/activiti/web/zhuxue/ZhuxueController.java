@@ -512,7 +512,7 @@ public class ZhuxueController {
 			} else 
 			{
 				logger.debug("资助人信息保存内容key："+key);
-				String methodname= "set"+key.substring(8,9).toUpperCase()+key.substring(9);
+				String methodname= "set"+key.substring(0,1).toUpperCase()+key.substring(1);
 				Object value = variables.get(key);
 				invoke(methodname,value,(Object)sponser,"Sponser","java.lang.String");
 				logger.debug("资助人信息保存成功："+key);
