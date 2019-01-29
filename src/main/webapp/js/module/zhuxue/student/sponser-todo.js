@@ -54,7 +54,8 @@ var detail = {};
 
 function showMultiplePics(myparent,filenamesstr,aid)
 {
-	var aobj = myparent.find('#'+aid);
+	var aselector = '#'+aid;
+	var aobj = myparent.find(aselector);
 	aobj.replaceWith('<a target=showpic class="sponserPhoto" id="'+aid+'" name="'+aid+'" style="width: 189px" />No picture</a>');
 	
     if(aobj.length>0)
@@ -66,15 +67,15 @@ function showMultiplePics(myparent,filenamesstr,aid)
             for(var ii =0; ii<filenames.length;ii++)
                 if(filenames[ii].length>0)
                 {
-                    aobj = myparent.find(aid);
+                    aobj = myparent.find(aselector);
                     if(ii==aobj.length)
                         {                                                    		
                             //var content1 = content.replace(photokey, photokey+ii);
                             $(aobj[ii-1]).after("<br/>"+content);
                         }
 
-                    $(myparent.find(aid)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
-                    $(myparent.find(aid)[ii]).text("显示图片");
+                    $(myparent.find(aselector)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
+                    $(myparent.find(aselector)[ii]).text("显示图片");
                 }                                            
         }
     }
