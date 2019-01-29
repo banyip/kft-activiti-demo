@@ -54,8 +54,9 @@ var detail = {};
 
 function showMultiplePics(myparent,filenamesstr,aid)
 {
-	myparent.find(aid)[0].replaceWith('<a target=showpic class="sponserPhoto" id="'+aid+'" name="'+aid+'" style="width: 189px" />No picture</a>');
 	var aobj = myparent.find(aid);
+	aobj[0].replaceWith('<a target=showpic class="sponserPhoto" id="'+aid+'" name="'+aid+'" style="width: 189px" />No picture</a>');
+	
     if(aobj.length>0)
     {  
         var content = aobj[0].cloneNode(true).outerHTML;
