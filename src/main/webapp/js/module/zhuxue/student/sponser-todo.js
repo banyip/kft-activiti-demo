@@ -203,7 +203,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                             myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"]').val(eval('v['+i+'].'+key));   
                     }                        
                 }
-            } else if(key.indexOf("Picture")>0||key.indexOf("Photo")>=0)
+            } else if(k.indexOf("Picture")>0||k.indexOf("Photo")>=0)
                  {
                  	showMultiplePics(myparent,eval('v.'+k),'#' + k);
                  } else            {
