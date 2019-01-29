@@ -41,7 +41,7 @@ $("#drop-area").dmUploader({
     $('.trace').click(graphTrace);
      $.each($('.div_maindialog'),function(){
     	if(this.id=='editsponser')
-    		this.innerHTML=this.innerHTML.replace('<input type="file" class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px">','<a target=showpic class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px" //>','<input type="file" class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px" />'+escape(没有图片)+'</a>');
+    		this.innerHTML=this.innerHTML.replace('<input type="file" class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px">','<a target=showpic class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px" //>','<input type="file" class="sponserPhoto" id="sponser_picture" name="picture" style="width: 189px" />'+escape('没有图片')+'</a>');
 
         innerhtmls.set(this.id,this.innerHTML);
         });
