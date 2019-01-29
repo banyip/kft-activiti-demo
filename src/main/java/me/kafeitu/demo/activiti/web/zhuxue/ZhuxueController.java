@@ -229,6 +229,36 @@ public class ZhuxueController {
 	  }	   
       
   }  
+   
+   
+   /*
+    * editsponser
+    *
+    * @param id
+    * @return
+    */
+   @RequestMapping(value = "editsponser", method = {RequestMethod.POST})
+   @ResponseBody
+   public String editSponser(Variable var,@RequestParam("filenames") String filenames,@RequestParam("studentpictures") MultipartFile[] studentPictureFiles) {
+			try {
+				Map<String, Object> variables = var.getVariableMap();
+		           
+		        Set<String> variableNames = variables.keySet();
+		        String sponserId = (String)variables.get("sponser_id");
+		        Sponser sponser =sponserManager.getSponser(Long.parseLong(sponserId));
+
+				
+			   return completesponser(var,filenames,studentPictureFiles,sponser);
+		    }catch (Exception e) {
+			  	logger.error("error on complete task", e);
+			  	logger.error("error on complete , variables={}", new Object[]{var.getVariableMap(), e});
+			  	return "error";
+		  }	   
+   }
+    
+   
+   
+   
    private String complete(Variable var,String filenames,MultipartFile[] studentPictureFiles,Student student) throws Exception {
   
            Map<String, Object> variables = var.getVariableMap();
