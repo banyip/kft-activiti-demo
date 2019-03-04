@@ -137,6 +137,67 @@
 					style="width:60px; height:24px;" onclick="deletetable('newsponser','transfers')" />
 				</td>
 			</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="8" height="26" style="height: 20.1pt" class="style49">
+		反馈记录登记</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td height="26" class="style49">日期</td>
+		<td colspan="4" class="style50">反馈学期</td>
+		<td colspan="3" class="style11">照片上传</td>
+	</tr>
+			<tr><td colspan=8>
+                <div id="div_feedbacks">
+				<table class="class_feedbacks" style="width: 100%">
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="1 "height="26" class="style49" style="width: 258px">
+				<input class="sponserApply" type="text" id="feedbacks[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
+		<td colspan="7" style="width: 268434864px" class="style11" >
+				<input class="sponserApply" type="text" id="feedbacks[0]_content" name="content" style="width: 588px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;				<input type="file" multiple=multiple class="studentPhoto" id="feedbacks[0]_picture" name="feedbacks[0]_picture" style="width: 80px"></td>
+	</tr>
+	</table>
+	</div></td></tr>
+				<tr>
+				<td colspan="8" class="style1">
+					<input type="button" name="button"
+					value="新 增" style="width:60px; height:24px;"
+					onclick="inserttable('newsponser','feedbacks')" />      
+					<input
+					type="button" name="button" value="删 除"
+					style="width:60px; height:24px;" onclick="deletetable('newsponser','feedbacks')" />
+				</td>
+			</tr>		
+			
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="8" height="26" style="height: 20.1pt" class="style49">
+		通信记录登记</td>
+	</tr>
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td height="26" class="style49">日期</td>
+		<td colspan="4" class="style50">信件内容</td>
+		<td colspan="3" class="style11">照片上传</td>
+	</tr>
+			<tr><td colspan=8>
+                <div id="div_communicates">
+				<table class="class_communicates" style="width: 100%">
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="1 "height="26" class="style49" style="width: 258px">
+				<input class="sponserApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
+		<td colspan="7" style="width: 268434864px" class="style11" >
+				<input class="sponserApply" type="text" id="communicates[0]_content" name="content" style="width: 588px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;				<input type="file" multiple=multiple class="studentPhoto" id="communicates[0]_picture" name="communicates[0]_picture" style="width: 80px"></td>
+	</tr>
+	</table>
+	</div></td></tr>
+				<tr>
+				<td colspan="8" class="style1">
+					<input type="button" name="button"
+					value="新 增" style="width:60px; height:24px;"
+					onclick="inserttable('newsponser','communicates')" />      
+					<input
+					type="button" name="button" value="删 除"
+					style="width:60px; height:24px;" onclick="deletetable('newsponser','communicates')" />
+				</td>
+			</tr>					
 </table>
 
 

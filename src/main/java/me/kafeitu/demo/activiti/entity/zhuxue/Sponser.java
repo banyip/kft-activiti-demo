@@ -56,6 +56,7 @@ public class Sponser extends IdEntity implements Serializable {
 	private String sponseEndTime;
 	private String sponseEndReason;
 	private List<Transfer> transfers=new ArrayList<Transfer>();
+	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private Map<String, Object> variables;
 	@Transient
 	public Map<String, Object> getVariables() {
@@ -147,6 +148,17 @@ public class Sponser extends IdEntity implements Serializable {
 	public List<Transfer> getTransfers() {
 		return transfers;
 	}
+	
+	@Column
+	@OneToMany(cascade = { CascadeType.ALL })
+	public List<Communicate> getCommunicates() {
+		return communicates;
+	}
+
+	public void setCommunicates(List<Communicate> communicates) {
+		this.communicates = communicates;
+	}
+
 	public void setSponserNo(String sponserNo) {
 		this.sponserNo = sponserNo;
 	}
