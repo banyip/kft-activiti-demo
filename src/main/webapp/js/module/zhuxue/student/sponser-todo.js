@@ -215,7 +215,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                     {
                         if(key.indexOf("picture")>=0||key.indexOf("Photo")>=0)
                         {
-                        	showMultiplePics(myparent,eval('v['+i+'].'+key),'a[id="'+k+'\\['+i+'\\]_' + key+'"]');
+                        	showMultiplePics(myparent,eval('v['+i+'].'+key),k+'\\['+i+'\\]_' + key);
                         }
                         else
                             myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"]').val(eval('v['+i+'].'+key));   
