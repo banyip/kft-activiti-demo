@@ -39,6 +39,7 @@ public class Feedback extends IdEntity implements Serializable {
     private String feedbackDate;
     private String content;
     private String picture;
+    private String semester;
     @Column
     public String getFeedbackDate() {
 		return feedbackDate;
@@ -52,6 +53,14 @@ public class Feedback extends IdEntity implements Serializable {
 	public String getPicture() {
 		return picture;
 	}
+	public String getSemester() {
+		return semester;
+	}
+    @Column
+	public void setSemester(String semester) {
+		this.semester = semester;
+	}
+
 	public void setFeedbackDate(String feedbackDate) {
 		this.feedbackDate = feedbackDate;
 	}
