@@ -8,7 +8,7 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.entity.zhuxue.Transfer;
 import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 import me.kafeitu.demo.activiti.entity.zhuxue.AuditPhoto;
-import me.kafeitu.demo.activiti.entity.zhuxue.Communicate;
+import me.kafeitu.demo.activiti.entity.zhuxue.Feedback;
 import me.kafeitu.demo.activiti.entity.zhuxue.Evaluate;
 import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
@@ -63,12 +63,12 @@ public class ZhuxueController {
 			//String invokeClassName = invokeClass.getName()+"s";   				
 			int pos = (invokeClassName).length();
 			int index = Integer.parseInt(key.substring(pos+1,pos+2));
-			List<T> items = student.getCommunicates();
+			List<T> items = student.getFeedbacks();
 			while(index>=items.size())
 			{
-				items.add(new Communicate());
+				items.add(new Feedback());
 			}
-			Communicate item = items.get(index);
+			Feedback item = items.get(index);
 			String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
 			
 			invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
@@ -320,18 +320,18 @@ public class ZhuxueController {
    					methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
    					invoke(methodname,value,(Object)audits.get(index),invokeClassName,"java.lang.String"); 
    				}
-   			}else if(key.indexOf("communicates")==0)
+   			}else if(key.indexOf("Feedbacks")==0)
    			{
    				Object value = variables.get(key);
-   				String invokeClassName = "Communicate";   				
+   				String invokeClassName = "Feedback";   				
    				int pos = (invokeClassName).length()+1;
    				int index = Integer.parseInt(key.substring(pos+1,pos+2));
-   				List<Communicate> items = student.getCommunicates();
+   				List<Feedback> items = student.getFeedbacks();
    				while(index>=items.size())
    				{
-   					items.add(new Communicate());
+   					items.add(new Feedback());
    				}
-   				Communicate item = items.get(index);
+   				Feedback item = items.get(index);
    				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
    				
    				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
@@ -449,17 +449,17 @@ public class ZhuxueController {
 			   				audit.savePicture(studentPictureFile, whattosave);
 		   				}
 	   				}
-		        	}else if(filename.indexOf("communicates")==0)
+		        	}else if(filename.indexOf("Feedbacks")==0)
 		        	{
-		 				String invokeClassName = "communicates";   				
+		 				String invokeClassName = "Feedbacks";   				
 		   				int pos = (invokeClassName).length();
 		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
-		   				List<Communicate> items =  student.getCommunicates();
+		   				List<Feedback> items =  student.getFeedbacks();
 		   				while(index>=items.size())
 		   				{
-		   					items.add(new Communicate());
+		   					items.add(new Feedback());
 		   				}
-		   				Communicate item = items.get(index);
+		   				Feedback item = items.get(index);
 		   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
 		   				item.savePicture(studentPictureFile, whattosave);
 		        	}
@@ -509,36 +509,36 @@ public class ZhuxueController {
 					
 				}else
 					invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
-			}else if(key.indexOf("communicates")==0)
+			}else if(key.indexOf("Feedbacks")==0)
 			{
 					
 				Object value = variables.get(key);
-				String invokeClassName = "Communicate";   				
+				String invokeClassName = "Feedback";   				
 				int pos = (invokeClassName).length()+1;
 				int index = Integer.parseInt(key.substring(pos+1,pos+2));
-				List<Communicate> items = sponser.getCommunicates();
+				List<Feedback> items = sponser.getFeedbacks();
 				while(index>=items.size())
 				{
-					Communicate newCommunicate = new Communicate();
-					items.add(newCommunicate);
+					Feedback newFeedback = new Feedback();
+					items.add(newFeedback);
 				}
-				Communicate item = items.get(index);
+				Feedback item = items.get(index);
 				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
 				invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
 			}else if(key.indexOf("feedbacks")==0)
 			{
 					
 				Object value = variables.get(key);
-				String invokeClassName = "Communicate";   				
+				String invokeClassName = "Feedback";   				
 				int pos = (invokeClassName).length()+1;
 				int index = Integer.parseInt(key.substring(pos+1,pos+2));
-				List<Communicate> items = sponser.getCommunicates();
+				List<Feedback> items = sponser.getFeedbacks();
 				while(index>=items.size())
 				{
-					Communicate newCommunicate = new Communicate();
-					items.add(newCommunicate);
+					Feedback newFeedback = new Feedback();
+					items.add(newFeedback);
 				}
-				Communicate item = items.get(index);
+				Feedback item = items.get(index);
 				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
 				invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
 			} else 
