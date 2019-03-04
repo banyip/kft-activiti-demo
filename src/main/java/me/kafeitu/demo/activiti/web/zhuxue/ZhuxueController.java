@@ -509,6 +509,38 @@ public class ZhuxueController {
 					
 				}else
 					invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
+			}else if(key.indexOf("communicates")==0)
+			{
+					
+				Object value = variables.get(key);
+				String invokeClassName = "Communicate";   				
+				int pos = (invokeClassName).length()+1;
+				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+				List<Communicate> items = sponser.getCommunicates();
+				while(index>=items.size())
+				{
+					Communicate newCommunicate = new Communicate();
+					items.add(newCommunicate);
+				}
+				Communicate item = items.get(index);
+				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+				invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
+			}else if(key.indexOf("feedbacks")==0)
+			{
+					
+				Object value = variables.get(key);
+				String invokeClassName = "Communicate";   				
+				int pos = (invokeClassName).length()+1;
+				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+				List<Communicate> items = sponser.getCommunicates();
+				while(index>=items.size())
+				{
+					Communicate newCommunicate = new Communicate();
+					items.add(newCommunicate);
+				}
+				Communicate item = items.get(index);
+				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+				invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
 			} else 
 			{
 				logger.debug("资助人信息保存内容key："+key);
