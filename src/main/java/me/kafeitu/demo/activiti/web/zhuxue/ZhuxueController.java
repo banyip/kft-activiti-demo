@@ -564,12 +564,7 @@ public class ZhuxueController {
         	MultipartFile studentPictureFile = studentPictureFiles[i];
 	   		if(!studentPictureFile.isEmpty())
 	        {
-	        	if(filename.indexOf("sponser_")==0)
-	        	{
-	        		int pos = "Sponser_".length();
-	        		String whatPhoto = filename.substring(pos);
-	        		sponser.savePicture(studentPictureFile,whatPhoto);
-	        	}else if(filename.indexOf("communicates")==0)
+	        	if(filename.indexOf("communicates")==0)
 	        	{
 	 				String invokeClassName = "communicates";   				
 	   				int pos = (invokeClassName).length();
@@ -595,7 +590,12 @@ public class ZhuxueController {
 	   				Feedback item = items.get(index);
 	   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
 	   				item.savePicture(studentPictureFile, whattosave);
+	        	}else 
+	        	{
+	        		String whatPhoto = filename;
+	        		sponser.savePicture(studentPictureFile,whatPhoto);
 	        	}
+	        	
 	        }
         }
 

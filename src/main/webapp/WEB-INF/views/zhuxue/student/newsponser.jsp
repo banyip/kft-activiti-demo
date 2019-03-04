@@ -33,7 +33,7 @@
 			<input class="sponserApply" id="nickName" name="nickName" type="text" style="width: 81px" />　</td>
 		<td class="style1">
 			<input class="sponserApply" id="contactNo" name="contactNo" type="text" style="width: 95px" />　</td>
-		<td class="style1"><input type="file" class="sponserPhoto" id="picture" name="picture" style="width: 189px"></td>
+		<td class="style1"><input type="file" multiple=multiple class="sponserPhoto" id="picture" name="picture" style="width: 189px"></td>
 		<td colspan="3" class="style1">
 			<input class="sponserApply" id="email" name="email" type="text" style="width: 214px" /></td>
 	</tr>
@@ -77,7 +77,7 @@
 			<input class="sponserApply" id="sponseStartTime" name="sponseStartTime" type="text" style="width: 78px" /></td>
 		<td class="style1">终止资助时间</td>
 		<td class="style1">
-			<input class="sponserApply" id="sponseEndTime" name="sponseEndtime" type="text" style="width: 78px" /></td>
+			<input class="sponserApply" id="sponseEndTime" name="sponseEndTime" type="text" style="width: 78px" /></td>
 		<td class="style1">终止资助原因</td>
 		<td colspan="3" class="style1">
 			<input class="sponserApply" id="sponseEndReason" name="sponseEndReason" type="text" style="width: 254px" /></td>
