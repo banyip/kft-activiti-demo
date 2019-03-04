@@ -151,9 +151,11 @@
 				<table class="class_feedbacks" style="width: 100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="1 "height="26" class="style49" style="width: 258px">
-				<input class="sponserApply" type="text" id="feedbacks[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
-		<td colspan="7" style="width: 268434864px" class="style11" >
-				<input class="sponserApply" type="text" id="feedbacks[0]_content" name="content" style="width: 588px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;				<input type="file" multiple=multiple class="studentPhoto" id="feedbacks[0]_picture" name="feedbacks[0]_picture" style="width: 80px"></td>
+				<input class="sponserApply" type="text" id="feedbacks[0]_feedbackDate" name="feedbackDate" style="width: 86px"></td>
+		<td colspan="4" class="style11" >
+				<input class="sponserApply" type="text" id="feedbacks[0]_semester" name="semester" style="width: 100px" /></td>
+		<td colspan="3" class="style11" >
+				<input type="file" multiple=multiple class="studentPhoto" id="feedbacks[0]_picture" name="feedbacks[0]_picture" style="width: 80px" /></td>
 	</tr>
 	</table>
 	</div></td></tr>
