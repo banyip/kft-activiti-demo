@@ -564,9 +564,38 @@ public class ZhuxueController {
         	MultipartFile studentPictureFile = studentPictureFiles[i];
 	   		if(!studentPictureFile.isEmpty())
 	        {
-	        		int pos = 0;
+	        	if(filename.indexOf("sponser_")==0)
+	        	{
+	        		int pos = "Sponser_".length();
 	        		String whatPhoto = filename.substring(pos);
 	        		sponser.savePicture(studentPictureFile,whatPhoto);
+	        	}else if(filename.indexOf("communicates")==0)
+	        	{
+	 				String invokeClassName = "communicates";   				
+	   				int pos = (invokeClassName).length();
+	   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
+	   				List<Communicate> items =  sponser.getCommunicates();
+	   				while(index>=items.size())
+	   				{
+	   					items.add(new Communicate());
+	   				}
+	   				Communicate item = items.get(index);
+	   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+	   				item.savePicture(studentPictureFile, whattosave);
+	        	}else if(filename.indexOf("feedbacks")==0)
+	        	{
+	 				String invokeClassName = "feedbacks";   				
+	   				int pos = (invokeClassName).length();
+	   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
+	   				List<Feedback> items =  sponser.getFeedbacks();
+	   				while(index>=items.size())
+	   				{
+	   					items.add(new Feedback());
+	   				}
+	   				Feedback item = items.get(index);
+	   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+	   				item.savePicture(studentPictureFile, whattosave);
+	        	}
 	        }
         }
 
