@@ -197,7 +197,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                         inserttable(whichpage,k)
                     for(let key in v[i])
                     {
-                        if(key.indexOf("picture")>0||key.indexOf("Photo")>=0)
+                        if(key.indexOf("picture")>=0||key.indexOf("Photo")>=0)
                         {
                         	showMultiplePics(myparent,eval('v['+i+'].'+key),'a[id="'+k+'\\['+i+'\\]_' + key+'"]');
                         }
@@ -213,7 +213,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                         inserttable(whichpage,k)
                     for(let key in v[i])
                     {
-                        if(key.indexOf("picture")>0||key.indexOf("Photo")>=0)
+                        if(key.indexOf("picture")>=0||key.indexOf("Photo")>=0)
                         {
                         	showMultiplePics(myparent,eval('v['+i+'].'+key),'a[id="'+k+'\\['+i+'\\]_' + key+'"]');
                         }
@@ -229,7 +229,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                         inserttable(whichpage,k)
                     for(let key in v[i])
                     {
-                        if(key.indexOf("picture")>0||key.indexOf("Photo")>=0)
+                        if(key.indexOf("picture")>=0||key.indexOf("Photo")>=0)
                         {
                         	showMultiplePics(myparent,eval('v['+i+'].'+key),'a[id="'+k+'\\['+i+'\\]_' + key+'"]');
                         }
