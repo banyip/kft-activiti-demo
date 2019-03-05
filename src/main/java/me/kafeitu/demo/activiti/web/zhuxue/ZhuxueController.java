@@ -247,7 +247,7 @@ public class ZhuxueController {
 		        Set<String> variableNames = variables.keySet();
 		        String sponserId = (String)variables.get("sponser_id");
 		        Sponser sponser =sponserManager.getSponser(Long.parseLong(sponserId));
-
+		        variables.remove("sponser_id");
 				
 			   return completesponser(var,filenames,studentPictureFiles,sponser);
 		    }catch (Exception e) {
