@@ -473,7 +473,7 @@ function deleteitem() {
 	// 请假记录ID
 	var rowId = $(this).parents('tr').attr('id');
 	
-   $.post(ctx + '/zhuxue/sponser/'+tkey+'/'+rowId ,{}, function(resp) {
+   $.post(ctx + '/zhuxue/student/'+tkey+'/'+rowId ,{}, function(resp) {
 		$.unblockUI();
         if (resp == 'success') {
             alert('任务完成');
