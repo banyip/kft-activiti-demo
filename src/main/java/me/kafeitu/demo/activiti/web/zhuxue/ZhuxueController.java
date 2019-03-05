@@ -220,6 +220,7 @@ public class ZhuxueController {
            
            Set<String> variableNames = variables.keySet();
            String studentId = (String)variables.get("student_id");
+           variables.remove("student_id");
            Student student =studentManager.getStudent(Long.parseLong(studentId));
 
 		   return complete(var,filenames,studentPictureFiles,student);
