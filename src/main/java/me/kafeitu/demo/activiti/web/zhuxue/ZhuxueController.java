@@ -245,7 +245,7 @@ public class ZhuxueController {
 				Map<String, Object> variables = var.getVariableMap();
 		           
 		        Set<String> variableNames = variables.keySet();
-		        String sponserId = (String)variables.get("id");
+		        String sponserId = (String)variables.get("sponser_id");
 		        Sponser sponser =sponserManager.getSponser(Long.parseLong(sponserId));
 
 				
