@@ -144,7 +144,7 @@ public class Sponser extends IdEntity implements Serializable {
 	}
 	
 	@Column
-	@OneToMany(mappedBy ="sponser",cascade = { CascadeType.PERSIST })
+	@OneToMany(mappedBy ="sponser",cascade = { CascadeType.PERSIST,CascadeType.REMOVE })
 	@JsonManagedReference
 	public List<Transfer> getTransfers() {
 		return transfers;
