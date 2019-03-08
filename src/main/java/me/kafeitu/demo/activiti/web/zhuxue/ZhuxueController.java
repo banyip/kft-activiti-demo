@@ -400,7 +400,19 @@ public class ZhuxueController {
    				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");
    			
    			}
-   			
+   			else if(key.indexOf("transfers")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "Transfer";   				
+   				int pos = (invokeClassName).length()+1;
+   				logger.debug("转账信息保存key："+key);
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<Transfer> items = student.getTransfers();
+   				Transfer item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");
+   				
+   			}   			
    			
    		}
    		//保存所有图片
