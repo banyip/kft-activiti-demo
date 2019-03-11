@@ -61,8 +61,6 @@ public class Student extends IdEntity implements Serializable {
 
 	private String chineseScore;
 
-	private String className;
-
 	private String debt;
 
 	private String email;
@@ -82,9 +80,6 @@ public class Student extends IdEntity implements Serializable {
 	private String farmPlanting;
 	private String farmPlantingIncome;
 	private String firstAuditNote;
-	private String grade;
-	private String headTeacher;
-	private String headTeachercontactNum;
 	private String ifAgreeToMail;
 	private String ifAgreeToPublish;
 	private String ifBorrowHouse;
@@ -115,8 +110,6 @@ public class Student extends IdEntity implements Serializable {
 	private String ifWood;
 
 	private String illnessExpenditure;
-
-	private String leaveType;
 
 	private String mainExpenditure;
 
@@ -185,10 +178,6 @@ public class Student extends IdEntity implements Serializable {
 
 	private String rentFrom;
 
-	private String school;
-
-	private String schoolContactNo;
-
 	private String schoolContactPerson;
 
 	private String schoolPerfomance;
@@ -215,6 +204,7 @@ public class Student extends IdEntity implements Serializable {
 	private String workIncome;
 	private String workSituation;
 	private String sponseRecommandation;
+	private List<School> schools = new ArrayList<School>();
 	private List<Exam> exams = new ArrayList<Exam>();
 	private List<Transfer> transfers = new ArrayList<Transfer>();
 	private List<Communicate> communicates = new ArrayList<Communicate>();
@@ -357,11 +347,6 @@ public class Student extends IdEntity implements Serializable {
 		return chineseScore;
 	}
 
-	@Column(length = 10)
-	public String getClassName() {
-		return className;
-	}
-
 	@Column(length = 50)
 	public String getDebt() {
 		return debt;
@@ -435,21 +420,6 @@ public class Student extends IdEntity implements Serializable {
 	@Column(length = 255)
 	public String getFirstAuditNote() {
 		return firstAuditNote;
-	}
-
-	@Column(length = 10)
-	public String getGrade() {
-		return grade;
-	}
-
-	@Column(length = 20)
-	public String getHeadTeacher() {
-		return headTeacher;
-	}
-
-	@Column(length = 20)
-	public String getHeadTeachercontactNum() {
-		return headTeachercontactNum;
 	}
 
 	@Column(length = 10)
@@ -721,16 +691,6 @@ public class Student extends IdEntity implements Serializable {
 		return rentFrom;
 	}
 
-	@Column(length = 255)
-	public String getSchool() {
-		return school;
-	}
-
-	@Column(length = 50)
-	public String getSchoolContactNo() {
-		return schoolContactNo;
-	}
-
 	@Column(length = 50)
 	public String getSchoolContactPerson() {
 		return schoolContactPerson;
@@ -822,6 +782,14 @@ public class Student extends IdEntity implements Serializable {
 		return workSituation;
 	}
 
+	@Column
+	@OneToMany(cascade = { CascadeType.ALL })
+	public List<School> getSchools() {
+		return schools;
+	}
+	public void setSchools(List<School> schools) {
+		this.schools = schools;
+	}
 	public void savePicture(MultipartFile file,String whatPhoto) throws Exception {
 		// 原始文件名
 		String originalFileName = file.getOriginalFilename();
@@ -898,10 +866,6 @@ public class Student extends IdEntity implements Serializable {
 		this.chineseScore = chineseScore;
 	}
 
-	public void setClassName(String className) {
-		this.className = className;
-	}
-
 	public void setDebt(String debt) {
 		this.debt = debt;
 	}
@@ -972,18 +936,6 @@ public class Student extends IdEntity implements Serializable {
 
 	public void setFirstAuditNote(String firstAuditNote) {
 		this.firstAuditNote = firstAuditNote;
-	}
-
-	public void setGrade(String grade) {
-		this.grade = grade;
-	}
-
-	public void setHeadTeacher(String headTeacher) {
-		this.headTeacher = headTeacher;
-	}
-
-	public void setHeadTeachercontactNum(String headTeachercontactNum) {
-		this.headTeachercontactNum = headTeachercontactNum;
 	}
 
 	public void setIfAgreeToMail(String ifAgreeToMail) {
@@ -1074,10 +1026,6 @@ public class Student extends IdEntity implements Serializable {
 
 	public void setIllnessExpenditure(String illnessExpenditure) {
 		this.illnessExpenditure = illnessExpenditure;
-	}
-
-	public void setLeaveType(String leaveType) {
-		this.leaveType = leaveType;
 	}
 
 	public void setMainExpenditure(String mainExpenditure) {
@@ -1214,14 +1162,6 @@ public class Student extends IdEntity implements Serializable {
 
 	public void setRentFrom(String rentFrom) {
 		this.rentFrom = rentFrom;
-	}
-
-	public void setSchool(String school) {
-		this.school = school;
-	}
-
-	public void setSchoolContactNo(String schoolContactNo) {
-		this.schoolContactNo = schoolContactNo;
 	}
 
 	public void setSchoolContactPerson(String schoolContactPerson) {

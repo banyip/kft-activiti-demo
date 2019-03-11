@@ -13,6 +13,7 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Evaluate;
 import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Feedback;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
+import me.kafeitu.demo.activiti.entity.zhuxue.School;
 import me.kafeitu.demo.activiti.entity.zhuxue.Sponser;
 import me.kafeitu.demo.activiti.service.zhuxue.student.SponserManager;
 import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
@@ -368,7 +369,23 @@ public class ZhuxueController {
    				Transfer item = items.get(index);
    				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
    				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
-   			}*/else if(key.indexOf("evaluates")==0)
+   			}*/
+   			else if(key.indexOf("schools")==0)
+   			{
+   				Object value = variables.get(key);
+   				String invokeClassName = "School";   				
+   				int pos = (invokeClassName).length()+1;
+   				int index = Integer.parseInt(key.substring(pos+1,pos+2));
+   				List<School> items = student.getSchools();
+   				while(index>=items.size())
+   				{
+   					items.add(new School());
+   				}
+   				//School item = items.get(index);
+   				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);
+   				
+   				invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
+   			}else if(key.indexOf("evaluates")==0)
    			{
    				Object value = variables.get(key);
    				String invokeClassName = "Evaluate";   				
