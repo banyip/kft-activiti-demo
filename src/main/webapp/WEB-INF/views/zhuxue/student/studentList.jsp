@@ -37,9 +37,7 @@
 			<tr>
 				<th>申请人</th>				
 				<th>学生名称</th>
-				<th>学校</th>
-				<th>年级</th>
-				<th>班号</th>
+
 				<th>任务创建时间</th>
 				<th>操作</th>
 			</tr>
@@ -49,9 +47,7 @@
 				<tr id="${student.id }">
 				    <td>${student.applicantName }</td>
 				    <td>${student.studentName }</td>
-					<td>${student.school }</td>
-					<td>${student.grade }</td>
-					<td>${student.className }</td>
+
 					<td>${student.applyTime }</td>
                     <td><a class="handle" tkey='editstudent' tname='修改' href="#">修改</a>
                         <a class="deleterow" tname=删除 href="#">删除</a>
