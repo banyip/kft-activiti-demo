@@ -68,8 +68,8 @@
 		<td colspan="3" class="style10">
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
     </tr>   
- 	<tr><td colspan=8>		    <div id="div_transfers">
-				<table class="class_transfers" width="100%">
+ 	<tr><td colspan=8>		    <div">
+				<table width="100%">
 
  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
@@ -105,7 +105,7 @@
 			onclick="inserttable('editstudent','schools')" />      
 			<input
 			type="button" name="button" value="删 除"
-			style="width:60px; height:24px;" onclick="deletetable('editstudent','shcools')" />
+			style="width:60px; height:24px;" onclick="deletetable('editstudent','schools')" />
 		</td>
 	</tr>
   	<tr height="26" style="mso-height-source:userset;height:20.1pt">
