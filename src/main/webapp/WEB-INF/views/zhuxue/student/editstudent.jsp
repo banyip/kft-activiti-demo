@@ -474,16 +474,18 @@
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" height="26" style="height: 20.1pt" class="style9">发款信息登记</td>
 	</tr>
+	<tr><td colspan="8"><div><table width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 132pt;" class="style49">日期</td>
+		<td style="height: 20.1pt; width: 116pt;" class="style9" class="style49">日期</td>
 		<td class="style50" style="width: 60pt">收款金额</td>
-		<td class="style50">发款学期</td>
-		<td class="style50" >发款方式</td>
-		<td class="style50">发款人</td>
-		<td class="style50">联系电话</td>
-		<td class="style50">发款金额</td>
-		<td class="style11">发款日期</td>
+		<td class="style50" style="width: 123px">发款学期</td>
+		<td class="style50" style="width: 122px">发款方式</td>
+		<td class="style50"  style="width: 95px">发款人</td>
+		<td class="style50" style="width: 90px">联系电话</td>
+		<td class="style50" style="width: 81px">发款金额</td>
+		<td class="style11" style="width: 84px">发款日期</td>
 	</tr>
+	</table></div></td></tr>
 		<tr><td colspan=8>		    <div id="div_transfers">
 				<table class="class_transfers" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
@@ -497,11 +499,11 @@
 				<input  class="studentApply" type="text" id="transfers[0]_method" name="method" style="width: 86px" /></td>
 		<td class="style11" style="width: 95px">
 				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_transferMan" name="name" style="width: 86px" /></td>
-		<td class="style11">
-				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_contactNo" name="contactNo" style="width: 86px" /></td>
-		<td class="style11">
+		<td class="style11" style="width: 90px">
+				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_contactNo" name="contactNo" style="width: 89px" /></td>
+		<td class="style11" style="width: 81px">
 				<input class="studentApply" type="text" id="transfers[0]_grantAmount" name="grantAmount" style="width: 86px" /></td>
-		<td class="style11">
+		<td class="style11" style="width: 84px">
 				<input class="studentApply" type="text" id="transfers[0]_grantTime" name="grantTime" style="width: 86px" /></td>
 
 	</tr>

@@ -40,7 +40,7 @@ public class Transfer extends IdEntity implements Serializable {
     private static final long serialVersionUID = 1L;
 	private String transferTime;
 	private String transferBank;
-	private int amount;
+	private int amount=0;
 	private String semester;
 	private String method;
 	private String transferMan;
@@ -49,7 +49,7 @@ public class Transfer extends IdEntity implements Serializable {
     private String memo;
     private Sponser sponser;
     private String grantTime;
-    private int grantAmount;
+    private int grantAmount=0;
     
 
     @Column
