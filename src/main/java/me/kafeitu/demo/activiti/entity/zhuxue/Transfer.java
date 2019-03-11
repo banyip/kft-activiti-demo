@@ -48,7 +48,8 @@ public class Transfer extends IdEntity implements Serializable {
     private Student studentToSponse;
     private String memo;
     private Sponser sponser;
-    
+    private String grantTime;
+    private int grantAmount;
     
 
     @Column
@@ -131,6 +132,23 @@ public class Transfer extends IdEntity implements Serializable {
 		return contactNo;
 	}
 
+	@Column
+	public String getGrantTime() {
+		return grantTime;
+	}
+	@Column
+	public int getGrantAmount() {
+		return grantAmount;
+	}
+	public void setGrantTime(String grantTime) {
+		this.grantTime = grantTime;
+	}
+	public void setGrantAmount(int grantAmount) {
+		this.grantAmount = grantAmount;
+	}
+	public void setGrantAmount(String grantAmount) {
+		this.grantAmount = Integer.parseInt(grantAmount);
+	}
 	public void setTransferTime(String transferTime) {
 		this.transferTime = transferTime;
 	}
