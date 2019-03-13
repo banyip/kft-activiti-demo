@@ -85,15 +85,15 @@
 				<table class="class_schools" width="100%">
  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
-		<input class="studentApply" id="school[0]_school" name="school" style="width: 126px" />　</td>
+		<input class="studentApply" id="schools[0]_school" name="school" style="width: 126px" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="school[0]_grade" name="grade" />　</td>
+		<input class="studentApply" id="schools[0]_grade" name="grade" />　</td>
 		<td class="style11" style="width: 48pt">
-		<input class="studentApply" id="school[0]_className" name="className" />　</td>
+		<input class="studentApply" id="schools[0]_className" name="className" />　</td>
 		<td class="style11">
-		<input class="studentApply" id="school[0]_headTeacher" name="headTeacher" style="width: 81px" />　</td>
+		<input class="studentApply" id="schools[0]_headTeacher" name="headTeacher" style="width: 81px" />　</td>
 		<td colspan="3" class="style10">
-		<input class="studentApply" id="school[0]_schoolContactNo" name="schoolContactNo" style="width: 109px" />　</td>
+		<input class="studentApply" id="schools[0]_schoolContactNo" name="schoolContactNo" style="width: 109px" />　</td>
     </tr>
     </table></div></td></tr>
 	<tr>
