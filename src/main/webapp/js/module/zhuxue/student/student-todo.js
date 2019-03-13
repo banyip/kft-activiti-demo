@@ -222,7 +222,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
 			if (k == 'applyTime' || k == 'startTime' || k == 'endTime') {
 				myparent.find('.partly#' + k ).html(new Date(v).format('yyyy-MM-dd hh:mm'));
             } 
-            else if (k == 'relatives' || k == 'transfers' || k == 'exams' || k == 'transfers' || k == 'communicates' || k == 'evaluates') 
+            else if (k == 'schools' || k == 'relatives' || k == 'transfers' || k == 'exams' || k == 'transfers' || k == 'communicates' || k == 'evaluates') 
             {                
                 for(var i=0;i<v.length;i++)
                 {   
