@@ -71,30 +71,29 @@
     </tr>   
 	<tr><td colspan=8>		    <div >
 				<table width="100%">
-
  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
+		<td colspan="2" height="26" style="height: 20.1pt; width: 69px;" class="style14">
 		学校名称</td>
-		<td class="style11">年级</td>
-		<td class="style11" style="width: 48pt">班号/专业</td>
+		<td class="style11" style="width: 76px">年级</td>
+		<td class="style11" style="width: 55pt">班号/专业</td>
 		<td class="style11">班主任姓名</td>
-		<td colspan="3" class="style11">联系电话</td>
+		<td colspan="3" class="style11"  style="width: 109px">联系电话</td>
     </tr>
     </table></div></td></tr>
     
 		<tr><td colspan=8>		    <div id="div_schools">
 				<table class="class_schools" width="100%">
  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt; " class="style14">
-		<input class="studentApply" id="schools[0]_school" name="school" style="width: 126px" />　</td>
-		<td class="style11">
-		<input class="studentApply" id="schools[0]_grade" name="grade" />　</td>
-		<td class="style11" style="width: 48pt">
+		<td colspan="2" style="width: 69px" class="style14">
+		<input class="studentApply" id="schools[0]_school" name="school"  /></td>
+		<td class="style11" style="width: 76px">
+		<input class="studentApply" id="schools[0]_grade" name="grade"  /></td>
+		<td class="style11" style="width: 55pt">
 		<input class="studentApply" id="schools[0]_className" name="className" />　</td>
-		<td class="style11">
-		<input class="studentApply" id="schools[0]_headTeacher" name="headTeacher" style="width: 81px" />　</td>
-		<td colspan="3" class="style10">
-		<input class="studentApply" id="schools[0]_schoolContactNo" name="schoolContactNo" style="width: 109px" />　</td>
+		<td class="style11" style="width: 81px">
+		<input class="studentApply" id="schools[0]_headTeacher" name="headTeacher"  />　</td>
+		<td colspan="3" class="style10"  style="width: 109px">
+		<input class="studentApply" id="schools[0]_schoolContactNo" name="schoolContactNo" />　</td>
     </tr>
     </table></div></td></tr>
 	<tr>
@@ -505,6 +504,7 @@
 		<td class="style50" style="width: 90px">联系电话</td>
 		<td class="style50" style="width: 81px">发款金额</td>
 		<td class="style11" style="width: 84px">发款日期</td>
+		<td class="style11" style="width: 84px">备注</td>
 	</tr>
 	</table></div></td></tr>
 		<tr><td colspan=8>		    <div id="div_transfers">
@@ -526,6 +526,8 @@
 				<input class="studentApply" type="text" id="transfers[0]_grantAmount" name="grantAmount" style="width: 86px" /></td>
 		<td class="style11" style="width: 84px">
 				<input class="studentApply" type="text" id="transfers[0]_grantTime" name="grantTime" style="width: 86px" /></td>
+		<td class="style11" style="width: 84px">
+				<input class="studentApply" type="text" id="transfers[0]_memo" name="memo" style="width: 86px" /></td>
 
 	</tr>
 	</table>
@@ -587,9 +589,8 @@
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 132pt;" class="style9">时间</td>
 		<td class="style11" style="width: 60pt">信息提供人</td>
-		<td class="style11">家庭情况变化</td>
-		<td colspan="5" class="style11">
-		学生性格、学习情况(交流沟通、性格、学习态度、学习成绩、爱心情况等）</td>
+		<td colspan="6" class="style11">
+		家庭情况变化、学生性格、学习情况(交流沟通、性格、学习态度、学习成绩、爱心情况等）</td>
 	</tr>
 	    <tr>
 	    <td colspan=8>				    		
@@ -600,9 +601,7 @@
 				<input class="studentApply" type="text" id="evaluates[0]_evaluateDate" name="evaluateDate" style="width: 86px"></td>
 		<td class="style16" style="width: 60pt">
 				<input class="studentApply" type="text" id="evaluates[0]_provider" name="provider" style="width: 86px"></td>
-		<td class="style16">
-				<input class="studentApply" type="text" id="evaluates[0]_familyChange" name="familyChange" style="width: 121px"></td>
-		<td colspan="5" class="style10">
+		<td colspan="6" class="style10">
 				<input class="studentApply" type="text" id="evaluates[0]_studentSituation" name="studentSituation" style="width: 468px"></td>
 	</tr>
 	    </table>
