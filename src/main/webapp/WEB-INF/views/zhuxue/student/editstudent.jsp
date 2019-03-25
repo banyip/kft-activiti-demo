@@ -79,8 +79,7 @@
 		<td class="style11" style="width: 81px">班主任姓名</td>
 		<td colspan="3" class="style11"  style="width: 109px">联系电话</td>
     </tr>
-    </table></div></td></tr>
-    
+    </table></div></td></tr>    
 		<tr><td colspan=8>		    <div id="div_schools">
 				<table class="class_schools" width="100%">
  	<tr style="mso-height-source:userset;">
