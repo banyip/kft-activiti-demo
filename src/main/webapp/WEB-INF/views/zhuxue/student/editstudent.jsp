@@ -84,8 +84,8 @@
 		<tr><td colspan=8>		    <div id="div_schools">
 				<table class="class_schools" width="100%">
  	<tr style="mso-height-source:userset;">
-		<td colspan="2" style="height: 20pt;">
-		<input class="studentApply" id="schools[0]_school" name="school" style="width: 395px" /></td>
+		<td colspan="2" style="height: 20pt; width: 262px;">
+		<input class="studentApply" id="schools[0]_school" name="school" style="width: 259px" /></td>
 		<td class="style11" style="width: 76px; height: 20pt;">
 		<input class="studentApply" id="schools[0]_grade" name="grade" style="width: 74px"  /></td>
 		<td class="style11" style="width: 55pt; height: 20pt;">
