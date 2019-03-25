@@ -72,15 +72,14 @@
 	<tr><td colspan=8>		    <div >
 				<table width="100%">
  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" style="width: 262px;" class="style11">
-		学校名称</td>
+		<td colspan="2" style="width: 262px;" class="style11">学校名称</td>
 		<td class="style11" style="width: 76px">年级</td>
 		<td class="style11" style="width: 75pt">班号/专业</td>
 		<td class="style11" style="width: 81px">班主任姓名</td>
 		<td colspan="3" class="style11"  style="width: 109px">联系电话</td>
     </tr>
     </table></div></td></tr>    
-		<tr><td colspan=8>		    <div id="div_schools">
+		<tr><td colspan=8> <div id="div_schools">
 				<table class="class_schools" width="100%">
  	<tr style="mso-height-source:userset;">
 		<td colspan="2"  class="style11" style="height: 20pt; width: 262px;">
@@ -91,7 +90,7 @@
 		<input class="studentApply" id="schools[0]_className" name="className" style="width: 70pt" />　</td>
 		<td class="style11" style="width: 81px; height: 20pt;">
 		<input class="studentApply" id="schools[0]_headTeacher" name="headTeacher" style="width: 78%"  />　</td>
-		<td colspan="3" class="style10"  style="width: 109px; height: 20pt;">
+		<td colspan="3" class="style11"  style="width: 109px; height: 20pt;">
 		<input class="studentApply" id="schools[0]_schoolContactNo" name="schoolContactNo" width="100%"/>　</td>
     </tr>
     </table></div></td></tr>
@@ -670,8 +669,6 @@
 	</td></tr>
 			<tr>
 				<td colspan="8" class="style1">
-
-
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertauditphotos('editstudent','audits\\[1\\]_auditPhotos')" />      
@@ -717,10 +714,8 @@
 	</table></div>
 	</td>
 	</tr>
-				<tr>
+	<tr>
 				<td colspan="8" class="style1">
-
-
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
 					onclick="insertaudit('editstudent')" />      
