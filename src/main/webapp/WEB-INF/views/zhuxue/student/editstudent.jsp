@@ -4,7 +4,6 @@
 
 
 
-
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -437,21 +436,21 @@
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style11">走访时间</td>
-		<td class="style11" colspan="6" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_auditDate" name="auditDate" style="width: 95px" /></span></td>
+		<td class="style11" colspan="6" style="height: 20pt">　<input  class="studentApply" id="audits[0]_auditDate" name="auditDate" style="width: 95px" /></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style11">
 		家庭贫困原因</td>
-		<td colspan="6" class="style11">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_poorReason" name="poorReason" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style11">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_poorReason" name="poorReason" style="width: 95%" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style11">
 		对学生个人评价</td>
-		<td colspan="6" class="style11">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style11">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_studentEvaluation" name="studentEvaluation" style="width: 95%" /></span>　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 5pt" class="style11">走访结论</td>
-		<td colspan="6" class="style11" style="height: 5pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style11" style="height: 5pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_auditResult" name="auditResult" style="width: 95%" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style11">是否通过审核</td>
@@ -733,16 +732,16 @@
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style11">
 		家庭贫困原因</td>
-		<td colspan="6" class="style11">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_poorReason" name="poorReason" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style11">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_poorReason" name="poorReason" style="width: 95%" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" height="26" style="height: 20.1pt" class="style11">
 		对学生个人评价</td>
-		<td colspan="6" class="style11">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_studentEvaluation" name="studentEvaluation" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style11">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_studentEvaluation" name="studentEvaluation" style="width: 95%" /></span>　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style11">走访结论</td>
-		<td colspan="6" class="style11" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_auditResult" name="auditResult" style="width: 422px" /></span>　</td>
+		<td colspan="6" class="style11" style="height: 20pt">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[1]_auditResult" name="auditResult" style="width: 95%" /></span>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style11">是否通过审核</td>
