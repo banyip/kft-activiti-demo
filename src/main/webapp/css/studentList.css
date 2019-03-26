@@ -3,7 +3,14 @@ input:not([type="checkbox"]) {
 	width:95%
 	
 }
-
+td{
+	width:100%;
+	border-left: .5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	border: .5pt solid windowtext;
+}
 input[type="text"]
     {color:black;
     width:95%;
