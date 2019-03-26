@@ -209,8 +209,47 @@ public class Student extends IdEntity implements Serializable {
 	private List<Transfer> transfers = new ArrayList<Transfer>();
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private List<Evaluate> evaluates = new ArrayList<Evaluate>();
-
+	private String studyExpenditure;
+	private String studyDescribe;
+	private String liveExpenditure;
+	private String liveDescribe;
+	private String debtDescribe;
 	
+	@Column(length=20)
+	public String getStudyExpenditure() {
+		return studyExpenditure;
+	}
+	@Column(length=250)
+	public String getStudyDescribe() {
+		return studyDescribe;
+	}
+	@Column(length=20)
+	public String getLiveExpenditure() {
+		return liveExpenditure;
+	}
+	@Column(length=250)
+	public String getLiveDescribe() {
+		return liveDescribe;
+	}
+	@Column(length=250)
+	public String getDebtDescribe() {
+		return debtDescribe;
+	}
+	public void setStudyExpenditure(String studyExpenditure) {
+		this.studyExpenditure = studyExpenditure;
+	}
+	public void setStudyDescribe(String studyDescribe) {
+		this.studyDescribe = studyDescribe;
+	}
+	public void setLiveExpenditure(String liveExpenditure) {
+		this.liveExpenditure = liveExpenditure;
+	}
+	public void setLiveDescribe(String liveDescribe) {
+		this.liveDescribe = liveDescribe;
+	}
+	public void setDebtDescribe(String debtDescribe) {
+		this.debtDescribe = debtDescribe;
+	}
 	public void addTransfer(Transfer transfer)
 	{
 		if(transfer!=null)
