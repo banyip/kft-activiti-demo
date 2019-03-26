@@ -637,7 +637,7 @@
 	    <td colspan=8>				    		
 		    <div id="div_evaluates">
 				<table class="class_evaluates" width="100%">
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	<tr>
 		<td height="26" style="height: 20.1pt; width: 149pt;" class="style9">
 				<input class="studentApply" type="text" id="evaluates[0]_evaluateDate" name="evaluateDate" style="width: 86px"></td>
 		<td class="style16" style="width: 60pt">
