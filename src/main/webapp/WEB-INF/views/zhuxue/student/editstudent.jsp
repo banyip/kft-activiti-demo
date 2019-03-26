@@ -216,11 +216,9 @@
 
     
 			<tr>
-				<td colspan="8" class="style1">
-
-
+				<td colspan="8" class="style1" width="100%">
 					<table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:
- collapse;width:674pt">
+ collapse;width:100%">
 						<colgroup>
 							<col width="118"><col span="1">
 							<col width="103" span="1">
@@ -273,7 +271,7 @@
 						<tr height="26">
 							<td style="height: 20pt; width: 144pt" class="style1">
 							<span lang="EN-US">4.政策性补助</span></td>
-							<td width="141" style="width: 106pt; height: 20pt;" class="style11">
+							<td width="141" style="width: 106pt; height: 20pt;" class="style1">
 							<span lang="EN-US"><span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherIncome" name="otherIncome" style="width: 87px" /></span>　</span></td>
 							<td style="width: 76pt; height: 20pt;" class="style11">
 							元<font class="font5">/</font><font class="font6">年</font></td>
@@ -310,16 +308,16 @@
 							<input  class="studentApply" id="student_studyDescribe" name="studyDescribe" style="width: 100%" /></span></td>
 						</tr>
 						<tr>
-							<td style="width: 144pt" class="style1">
+							<td style="width: 144pt; height: 23px;" class="style1">
 							<span lang="EN-US">3.生活支出</span></td>
-							<td width="141" style="width: 106pt" class="style1">
+							<td width="141" style="width: 106pt; height: 23px;" class="style1">
 							<span style="mso-spacerun:yes">
 							<input  class="studentApply" id="student_liveExpenditure" name="liveExpenditure" style="width: 87px" /></span></td>
-							<td style="width: 76pt">
+							<td style="width: 76pt; height: 23px;">
 							元/年</td>
-							<td style="width: 143pt">
+							<td style="width: 143pt; height: 23px;">
 							支出原因</td>
-							<td colspan="2" class="style26"><span style="mso-spacerun:yes">
+							<td colspan="2" class="style26" style="height: 23px"><span style="mso-spacerun:yes">
 							<input  class="studentApply" id="student_liveDescribe" name="liveDescribe" style="width: 95%" /></span></td>
 						</tr>
 						<tr height="26">
