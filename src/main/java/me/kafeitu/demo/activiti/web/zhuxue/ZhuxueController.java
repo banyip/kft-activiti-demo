@@ -302,9 +302,9 @@ public class ZhuxueController {
    				}
    				Audit audit = audits.get(index);
    				String methodname;
-   				if(key.indexOf("auditPhoto")>0)
+   				if(key.indexOf("auditPhotos")>0)
    				{
-   					int photopos = "audits[0]_auditPhoto".length();
+   					int photopos = "audits[0]_auditPhotos".length();
    					int photoindex = Integer.parseInt(key.substring(pos+1,pos+2));
    					List<AuditPhoto> auditphotos = audit.getAuditphotos();
    					while(photoindex>=auditphotos.size())
@@ -461,9 +461,9 @@ public class ZhuxueController {
 		   					audits.add(new Audit());
 		   				}
 		   				Audit audit = audits.get(index);
-		   				if(filename.indexOf("auditPhoto")>=0)
+		   				if(filename.indexOf("auditPhotos")>=0)
 		   				{
-			   				pos = "audits[0]_auditPhoto".length();
+			   				pos = "audits[0]_auditPhotos".length();
 			   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
 			   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
 			   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
