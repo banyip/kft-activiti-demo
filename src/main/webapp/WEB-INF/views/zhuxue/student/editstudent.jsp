@@ -2,6 +2,15 @@
     pageEncoding="UTF-8"%>
 
 
+<head>
+<style type="text/css">
+.style1 {
+	text-align: left;
+}
+</style>
+</head>
+
+
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -223,7 +232,7 @@
 							家庭经济情况</td>
 							<td rowspan="4" width="103" style="width: 77pt" class="style11">
 							主要收入</td>
-							<td style="width: 144pt" class="style11">
+							<td style="width: 144pt" class="style1">
 							<span lang="EN-US">1.<font class="font6">务农收入</font></span></td>
 							<td width="141" style="width: 106pt" class="style11">
 							<span style="mso-spacerun:yes">
@@ -237,7 +246,7 @@
 							<input  class="studentApply" id="student_farmPlanting" name="farmPlanting"  /></span></td>
 						</tr>
 						<tr height="26">
-							<td height="26" style="height: 20.1pt; width: 144pt" class="style11">
+							<td height="26" style="height: 20.1pt; width: 144pt" class="style1">
 							<span lang="EN-US">2.打工/经营收入</span></td>
 							<td width="141" style="width: 106pt" class="style11">
 							<span style="mso-spacerun:yes">
@@ -250,7 +259,7 @@
 							<input  class="studentApply" id="student_workSituation" name="workSituation" style="width: 250px" /></span></td>
 						</tr>
 						<tr height="26">
-							<td height="26" style="height: 20.1pt; width: 144pt" class="style11">
+							<td height="26" style="height: 20.1pt; width: 144pt" class="style1">
 							<span lang="EN-US">3.<font class="font6">亲戚资助</font></span></td>
 							<td width="141" style="width: 106pt" class="style11">
 							<span style="mso-spacerun:yes"><input  class="studentApply" id="student_relativeSponseIncome" name="relativeSponseIncome" style="width: 87px" /></span></td>
@@ -262,8 +271,8 @@
 							<input  class="studentApply" id="student_relativeSponse" name="relativeSponse" style="width: 250px" /></span></td>
 						</tr>
 						<tr height="26">
-							<td style="height: 20pt; width: 144pt" class="style11">
-							<span lang="EN-US">4.<font class="font6">政策性补助</font></span></td>
+							<td style="height: 20pt; width: 144pt" class="style1">
+							<span lang="EN-US">4.政策性补助</span></td>
 							<td width="141" style="width: 106pt; height: 20pt;" class="style11">
 							<span lang="EN-US"><span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherIncome" name="otherIncome" style="width: 87px" /></span>　</span></td>
 							<td style="width: 76pt; height: 20pt;" class="style11">
@@ -276,7 +285,7 @@
 						<tr height="26">
 							<td rowspan="4" height="104" width="103" style="height: 80.4pt; width: 77pt" class="style11">
 							主要支出</td>
-							<td style="width: 144pt" class="style11">
+							<td style="width: 144pt" class="style1">
 							<span lang="EN-US">1.<font class="font6">医疗支出</font></span></td>
 							<td width="141" style="width: 106pt" class="style11">
 							<span style="mso-spacerun:yes"><input  class="studentApply" id="student_illnessExpenditure" name="illnessExpenditure" style="width: 87px" /></span></td>
@@ -287,23 +296,23 @@
 							<td colspan="2" class="style26"><span style="mso-spacerun:yes">
 							<input  class="studentApply" id="student_familyIllnessDescribe" name="familyIllnessDescribe" style="width: 100%" /></span></td>
 						</tr>
-						<tr height="26">
-							<td height="26" style="height: 20.1pt; width: 144pt" class="style11">
+						<tr>
+							<td style="height: 20pt; width: 144pt" class="style1">
 							<span lang="EN-US">2.学习支出</span></td>
-							<td width="141" style="width: 106pt" class="style11">
+							<td width="141" style="width: 106pt; height: 20pt;" class="style11">
 							<span style="mso-spacerun:yes">
 							<input  class="studentApply" id="student_studyExpenditure" name="studyExpenditure" style="width: 87px" /></span></td>
-							<td style="width: 76pt" class="style11">
+							<td style="width: 76pt; height: 20pt;" class="style11">
 							元/年</td>
-							<td style="width: 143pt" class="style11">
+							<td style="width: 143pt; height: 20pt;" class="style11">
 							支出原因</td>
-							<td colspan="2" class="style26"><span style="mso-spacerun:yes">
+							<td colspan="2" class="style26" style="height: 20pt"><span style="mso-spacerun:yes">
 							<input  class="studentApply" id="student_studyDescribe" name="studyDescribe" style="width: 100%" /></span></td>
 						</tr>
 						<tr>
-							<td style="width: 144pt">
+							<td style="width: 144pt" class="style1">
 							<span lang="EN-US">3.生活支出</span></td>
-							<td width="141" style="width: 106pt">
+							<td width="141" style="width: 106pt" class="style1">
 							<span style="mso-spacerun:yes">
 							<input  class="studentApply" id="student_liveExpenditure" name="liveExpenditure" style="width: 87px" /></span></td>
 							<td style="width: 76pt">
@@ -314,7 +323,7 @@
 							<input  class="studentApply" id="student_liveDescribe" name="liveDescribe" style="width: 95%" /></span></td>
 						</tr>
 						<tr height="26">
-							<td height="26" style="height: 20.1pt; width: 144pt" class="style11">
+							<td height="26" style="height: 20.1pt; width: 144pt" class="style1">
 							<span lang="EN-US">4.债务情况</span></td>
 							<td width="141" style="width: 106pt" class="style11">
 							<span style="mso-spacerun:yes">
