@@ -254,7 +254,7 @@
 							<td style="width: 143pt" class="style8">
 							收入来源（职业）</td>
 							<td colspan="2" class="style26"><span style="mso-spacerun:yes">
-							<input  class="studentApply" id="student_workSituation" name="workSituation" style="width: 250px" /></span></td>
+							<input  class="studentApply" id="student_workSituation" name="workSituation" style="width: 95%" /></span></td>
 						</tr>
 						<tr height="26">
 							<td height="26" style="height: 20.1pt; width: 144pt" class="style1">
@@ -266,10 +266,10 @@
 							<td style="width: 143pt" class="style8">
 							收入来源</td>
 							<td colspan="2" class="style26"><span style="mso-spacerun:yes">
-							<input  class="studentApply" id="student_relativeSponse" name="relativeSponse" style="width: 250px" /></span></td>
+							<input  class="studentApply" id="student_relativeSponse" name="relativeSponse" style="width: 95%" /></span></td>
 						</tr>
 						<tr height="26">
-							<td style="height: 20pt; width: 144pt" class="style1">
+							<td style="height: 20pt; width: 144pt" class="style11">
 							<span lang="EN-US">4.政策性补助</span></td>
 							<td width="141" style="width: 106pt; height: 20pt;" class="style1">
 							<span lang="EN-US"><span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherIncome" name="otherIncome" style="width: 87px" /></span>　</span></td>
@@ -278,7 +278,7 @@
 							<td style="width: 143pt; height: 20pt;" class="style11">
 							收入来源</td>
 							<td colspan="2" class="style26" style="height: 20pt"><span style="mso-spacerun:yes">
-							<input  class="studentApply" id="student_otherIncomeSource" name="otherIncomeSource" style="width: 250px" /></span></td>
+							<input  class="studentApply" id="student_otherIncomeSource" name="otherIncomeSource" style="width: 95%" /></span></td>
 						</tr>
 						<tr height="26">
 							<td rowspan="4" height="104" width="103" style="height: 80.4pt; width: 77pt" class="style11">
@@ -292,7 +292,7 @@
 							<td style="width: 143pt" class="style11">
 							支出原因</td>
 							<td colspan="2" class="style26"><span style="mso-spacerun:yes">
-							<input  class="studentApply" id="student_familyIllnessDescribe" name="familyIllnessDescribe" style="width: 100%" /></span></td>
+							<input  class="studentApply" id="student_familyIllnessDescribe" name="familyIllnessDescribe" style="width: 95%" /></span></td>
 						</tr>
 						<tr>
 							<td style="height: 20pt; width: 144pt" class="style1">
@@ -305,17 +305,17 @@
 							<td style="width: 143pt; height: 20pt;" class="style11">
 							支出原因</td>
 							<td colspan="2" class="style26" style="height: 20pt"><span style="mso-spacerun:yes">
-							<input  class="studentApply" id="student_studyDescribe" name="studyDescribe" style="width: 100%" /></span></td>
+							<input  class="studentApply" id="student_studyDescribe" name="studyDescribe" style="width: 95%" /></span></td>
 						</tr>
 						<tr>
-							<td style="width: 144pt; height: 23px;" class="style1">
+							<td style="width: 144pt; height: 23px;" class="style11">
 							<span lang="EN-US">3.生活支出</span></td>
 							<td width="141" style="width: 106pt; height: 23px;" class="style1">
 							<span style="mso-spacerun:yes">
 							<input  class="studentApply" id="student_liveExpenditure" name="liveExpenditure" style="width: 87px" /></span></td>
-							<td style="width: 76pt; height: 23px;">
+							<td style="width: 76pt; height: 23px;" class="style11">
 							元/年</td>
-							<td style="width: 143pt; height: 23px;">
+							<td style="width: 143pt; height: 23px;" class="style11">
 							支出原因</td>
 							<td colspan="2" class="style26" style="height: 23px"><span style="mso-spacerun:yes">
 							<input  class="studentApply" id="student_liveDescribe" name="liveDescribe" style="width: 95%" /></span></td>
@@ -331,82 +331,13 @@
 							<td style="width: 143pt" class="style11">
 							支出原因</td>
 							<td colspan="2" class="style26"><span style="mso-spacerun:yes">
-							<input  class="studentApply" id="student_debtDescribe" name="debtDescribe" style="width: 328px" /></span></td>
+							<input  class="studentApply" id="student_debtDescribe" name="debtDescribe" style="width: 95%" /></span></td>
 						</tr>
 					</table>
 				</td>
 			</tr>
 
     
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td rowspan="11" height="286" style="height: 221.1pt; width: 132pt; layout-flow: vertical-ideographic;" class="style23">
-		家庭经济情况</td>
-		<td align="center" style="width: 60pt; layout-flow: vertical-ideographic;" class="style24">
-		主要收入</td>
-		<td colspan="6" class="style25">
-		1、农业生产：农田<span style="mso-spacerun:yes"><input  class="studentApply" id="student_farmArea" name="farmArea" style="width: 41px" /></span>亩，种植情况<span style="mso-spacerun:yes">
-		</span>，出售收入元/年</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt layout-flow: vertical-ideographic;" class="style26">
-		　</td>
-		<td colspan="6" class="style27">
-		2、禽畜养殖及用途：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_farmAnimalUsage" name="farmAnimalUsage" style="width: 422px" />，</span>出售收入<span style="mso-spacerun:yes"><input  class="studentApply" id="student_farmAnimalIncome" name="farmAnimalIncome0" style="width: 41px" /></span>元/年</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt layout-flow: vertical-ideographic;" class="style26">
-		　</td>
-		<td colspan="6" class="style27">
-		3、打工或经商情况：，收入<span style="mso-spacerun:yes">&nbsp;</span>元/年</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt layout-flow: vertical-ideographic;" class="style26">
-		　</td>
-		<td colspan="6" class="style28">4、亲戚资助情况：<span style="mso-spacerun:yes">
-		</span>，收入元/年</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt layout-flow: vertical-ideographic;" class="style26">
-		　</td>
-		<td colspan="6" class="style27">
-		5、其他收入来源：<span style="mso-spacerun:yes">，
-		</span>收入元/年</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt layout-flow: vertical-ideographic;" class="style26">
-		　</td>
-		<td colspan="6" class="style27">
-		6、是否拥有汽车等大件商品(有的请列出）：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherAsset" name="otherAsset" style="width: 422px" /></span></td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" align="center" style="height: 20.1pt layout-flow: vertical-ideographic;" class="style29">
-		主要支出</td>
-		<td colspan="6" class="style30">1、主要支出：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_mainExpenditure" name="othermainExpenditure" style="width: 422px" /></span></td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt layout-flow: vertical-ideographic;" class="style26">
-		　</td>
-		<td colspan="6" class="style27">
-		2、家人患病情况：<span style="mso-spacerun:yes">，</span>治疗费用每年支出元</td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt layout-flow: vertical-ideographic;" class="style26">
-		　</td>
-		<td colspan="6" class="style27">
-		病情描述(有的请列出）：</td>
-	</tr>
-	<tr style="mso-height-source:userset;">
-		<td class="style26">
-		　</td>
-		<td colspan="6" class="style27">
-		3、其它支出情况(有的请列出）：<span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherExpenditure" name="otherExpenditure" style="width: 422px" /></span></td>
-	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt layout-flow: vertical-ideographic;" class="style26">
-		　</td>
-		<td colspan="6" class="style27">
-		4、欠债情况(有的请列出借贷原因）：</td>
-	</tr>
 	<tr style="mso-height-source:userset;">
 		<td rowspan="4" align="center" style="width: 132pt; layout-flow: vertical-ideographic;" class="style31">
 		<span style="mso-spacerun:yes">&nbsp;</span>住房情况<span style="mso-spacerun:yes">&nbsp;</span></td>
