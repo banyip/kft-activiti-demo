@@ -527,49 +527,6 @@
 			</tr>
 
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style12">发款信息登记</td>
-	</tr>
-	<tr><td colspan="8"><div><table width="100%">
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td  style="width: 10%" class="style12">日期</td>
-		<td class="style12" style="width: 10%">收款金额</td>
-		<td class="style12" style="width: 10%">发款学期</td>
-		<td class="style12" style="width: 10%">发款方式</td>
-		<td class="style12"  style="width: 10%">发款人</td>
-		<td class="style12" style="width: 10%">联系电话</td>
-		<td class="style50" style="width: 10%">发款金额</td>
-		<td class="style11" style="width: 10%">发款日期</td>
-		<td class="style11" style="width: 20%">备注</td>
-	</tr>
-	</table></div></td></tr>
-		<tr><td colspan=8>		    <div id="div_transfers">
-				<table class="class_transfers" width="100%">
-	<tr >
-		<td  style="width: 10%" class="style12">
-				<input disabled="disabled" class="studentApply" type="text" id="transfers[0]_transferTime" name="transferTime" style="width: 86px" /></td>
-		<td class="style12"  style="width: 10%">
-				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_amount" name="amount" style="width: 86px" /></td>
-		<td class="style12" style="width: 10%">
-				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_semester" name="semester" style="width: 86px" /></td>
-		<td class="style12" style="width: 10%">
-				<input  class="studentApply" type="text" id="transfers[0]_method" name="method" style="width: 86px" /></td>
-		<td class="style12" style="width: 10%">
-				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_transferMan" name="name" style="width: 86px" /></td>
-		<td class="style12" style="width: 10%">
-				<input  disabled="disabled" class="studentApply" type="text" id="transfers[0]_contactNo" name="contactNo" style="width: 89px" /></td>
-		<td class="style12" style="width: 10%">
-				<input class="studentApply" type="text" id="transfers[0]_grantAmount" name="grantAmount" style="width: 86px" /></td>
-		<td class="style11" style="width: 10%">
-				<input class="studentApply" type="text" id="transfers[0]_grantTime" name="grantTime" style="width: 86px" /></td>
-		<td class="style11" style="width: 20%">
-				<input class="studentApply" type="text" id="transfers[0]_memo" name="memo" style="width: 86px" /></td>
-
-	</tr>
-	</table>
-	</div></td></tr>
-
-
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="8" class="style11">　</td>
 	</tr>
 	<tr style="mso-height-source:userset;">
