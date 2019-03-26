@@ -2,8 +2,6 @@
     pageEncoding="UTF-8"%>
 
 
-
-
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -72,12 +70,12 @@
 		<td colspan="3" class="style11">
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
     </tr>   
-	<tr><td colspan=8>		    <div >
+	<tr><td colspan="8">		    <div >
 				<table width="100%">
- 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" style="width: 262px;" class="style11">学校名称</td>
+ 	<tr height="26">
+		<td colspan="2" class="style11">学校名称</td>
 		<td class="style11" style="width: 76px">年级</td>
-		<td class="style11" style="width: 75pt">班号/专业</td>
+		<td class="style11" style="width: 75px">班号/专业</td>
 		<td class="style11" style="width: 81px">班主任姓名</td>
 		<td colspan="3" class="style11"  style="width: 109px">联系电话</td>
     </tr>
@@ -85,11 +83,11 @@
 		<tr><td colspan=8> <div id="div_schools">
 				<table class="class_schools" width="100%">
  	<tr style="mso-height-source:userset;">
-		<td colspan="2"  class="style11" style="height: 20pt; width: 262px;">
+		<td colspan="2"  class="style11" >
 		<input class="studentApply" id="schools[0]_school" name="school" style="width: 259px" /></td>
 		<td class="style11" style="width: 76px; height: 20pt;">
 		<input class="studentApply" id="schools[0]_grade" name="grade" style="width: 73px"  /></td>
-		<td class="style11" style="width: 75pt; height: 20pt;">
+		<td class="style11" style="width: 75px; height: 20pt;">
 		<input class="studentApply" id="schools[0]_className" name="className" style="width: 70pt" />　</td>
 		<td class="style11" style="width: 81px; height: 20pt;">
 		<input class="studentApply" id="schools[0]_headTeacher" name="headTeacher" style="width: 78%"  />　</td>
@@ -98,7 +96,7 @@
     </tr>
     </table></div></td></tr>
 	<tr>
-		<td colspan="8" class="style9">	
+		<td colspan="8" class="style12">	
 			<input type="button" name="button"
 			value="新 增" style="width:60px; height:24px;"
 			onclick="inserttable('editstudent','schools')" />      
