@@ -389,17 +389,17 @@
 				<table class="class_audits[0]_auditPhotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="width: 8%" class="style11">
-		<input type="text" class="studentApply" id="audits[0]_auditPhotos[1]_photoDate" name="auditPhotos[1]_photoDate"></td>
+		<input type="text" class="studentApply" id="audits[0]_auditPhotos[0]_photoDate" name="auditPhotos[0]_photoDate"></td>
 		<td class="style12"  style="width: 15%">
-		<input type="file" multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[1]_familyPhoto" name="auditPhotos[1]_familyPhoto"></td>
+		<input type="file" multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto"></td>
 		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_studentPhoto" name="auditPhotos[1]_studentPhoto"></td>
+		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[0]_studentPhoto" name="auditPhotos[0]_studentPhoto"></td>
 		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_feedbackPhoto" name="auditPhotos[1]_feedbackPhoto"></td>
+		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto"></td>
 		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_recieptphoto" name="auditPhotos[1]_recieptphoto"></td>
+		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto"></td>
 		<td class="style12"  style="width: 32%">
-		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[1]_otherPhoto" name="auditPhotos[1]_otherPhoto" ></td>
+		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto" ></td>
 	</tr>
 	</table></div>
 	</td></tr>	
@@ -461,7 +461,7 @@
 		<td colspan="2" height="26" style="height: 20.1pt" class="style11">补充评价</td>
 		<td colspan="6" class="style11">　<span style="mso-spacerun:yes"><input  class="studentApply" id="audits[0]_supplemetaryEvaluation" name="supplemetaryEvaluation" style="width: 95%" /></span></td>
 	</tr>
-	</table></div>
+	</table>
 	</td></tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style11">资助建议</td>
@@ -550,7 +550,7 @@
 		<td style="width: 60%" class="style11" >
 				<input class="style58" type="text" id="communicates[0]_content" name="content">				
 		<td style="width: 25%" class="style11" >
-<input type="file" multiple=multiple class="studentPhoto" id="communicates[0]_picture" name="communicates[0]_picture" style="width: 80px"></td>
+<input type="file" multiple=multiple class="studentPhoto" id="communicates[0]_picture" name="communicates[0]_picture"></td>
 	</tr>
 	</table>
 	</div></td></tr>
@@ -630,17 +630,17 @@
 				<table class="class_audits[1]_auditPhotos" width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td height="26" style="width: 8%" class="style11">
-		<input type="text" class="studentApply" id="audits[1]_auditPhotos[1]_photoDate" name="auditPhotos[1]_photoDate"></td>
+		<input type="text" class="studentApply" id="audits[1]_auditPhotos[0]_photoDate" name="auditPhotos[0]_photoDate"></td>
 		<td class="style12"  style="width: 15%">
-		<input type="file" multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[1]_familyPhoto" name="auditPhotos[1]_familyPhoto"></td>
+		<input type="file" multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto"></td>
 		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[1]_auditPhotos[1]_studentPhoto" name="auditPhotos[1]_studentPhoto"></td>
+		<input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_studentPhoto" name="auditPhotos[0]_studentPhoto"></td>
 		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[1]_auditPhotos[1]_feedbackPhoto" name="auditPhotos[1]_feedbackPhoto"></td>
+		<input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto"></td>
 		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[1]_auditPhotos[1]_recieptphoto" name="auditPhotos[1]_recieptphoto"></td>
+		<input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto"></td>
 		<td class="style12"  style="width: 32%">
-		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[1]_otherPhoto" name="auditPhotos[1]_otherPhoto" ></td>
+		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto" ></td>
 	</tr>
 	</table></div>
 	</td></tr>			<tr>
