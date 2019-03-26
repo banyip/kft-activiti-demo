@@ -4,7 +4,6 @@ input:not([type="checkbox"]) {
 	
 }
 td{
-	width:100%;
 	border-left: .5pt solid windowtext;
 	border-right: 1.5pt solid windowtext;
 	border-top: .5pt solid windowtext;
