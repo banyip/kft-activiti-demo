@@ -2,6 +2,8 @@
     pageEncoding="UTF-8"%>
 
 
+
+
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -262,8 +264,8 @@
 						<tr height="26">
 							<td style="height: 20pt; width: 144pt" class="style1">
 							<span lang="EN-US">4.政策性补助</span></td>
-							<td width="141" style="width: 106pt; height: 20pt;" class="style1">
-							<span lang="EN-US" class="style11"><span style="mso-spacerun:yes"><input  class="studentApply" id="student_otherIncome" name="otherIncome" style="width: 87px" /></span>　</span></td>
+							<td width="141" style="width: 106pt; height: 20pt;" class="style11">
+							<span lang="EN-US"><input  class="studentApply" id="student_otherIncome" name="otherIncome" style="width: 87px" /></span></td>
 							<td style="width: 76pt; height: 20pt;" class="style11">
 							元<font class="font5">/</font><font class="font6">年</font></td>
 							<td class="style11">
