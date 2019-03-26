@@ -1,4 +1,7 @@
 
+div{
+	margin:0px;
+}
 input:not([type="checkbox"]) {
 	width:95%
 	
