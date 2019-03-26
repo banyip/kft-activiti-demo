@@ -251,13 +251,12 @@ input[type="number"]
 	font-family: ËÎÌו;
 	text-align: center;
 	vertical-align: middle;
-	white-space: nowrap;
-	border-left: 1.5pt solid windowtext;
-	border-right-style: none;
-	border-right-color: inherit;
-	border-right-width: medium;
+    white-space: nowrap;
+    border-left: .5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
 	border-top: .5pt solid windowtext;
 	border-bottom: .5pt solid windowtext;
+	border: .5pt solid windowtext;
 	padding: 0px;
 }
 .style13 {
