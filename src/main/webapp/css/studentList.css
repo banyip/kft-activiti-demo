@@ -1,4 +1,8 @@
 
+input:not([type="checkbox"]) {
+	width:95%
+	
+}
 
 input[type="text"]
     {color:black;
