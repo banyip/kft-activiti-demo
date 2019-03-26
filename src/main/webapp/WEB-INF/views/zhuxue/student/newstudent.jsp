@@ -100,10 +100,10 @@
 		<td colspan="8" class="style12">	
 			<input type="button" name="button"
 			value="新 增" style="width:60px; height:24px;"
-			onclick="inserttable('editstudent','schools')" />      
+			onclick="inserttable('newstudent','schools')" />      
 			<input
 			type="button" name="button" value="删 除"
-			style="width:60px; height:24px;" onclick="deletetable('editstudent','schools')" />
+			style="width:60px; height:24px;" onclick="deletetable('newstudent','schools')" />
 		</td>
 	</tr>
     
@@ -201,10 +201,10 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('editstudent','relatives')" />      
+					onclick="inserttable('newstudent','relatives')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','relatives')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','relatives')" />
 				</td>
 			</tr>
 
@@ -409,10 +409,10 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="insertauditphotos('editstudent','audits\\[0\\]_auditPhotos')" />      
+					onclick="insertauditphotos('newstudent','audits\\[0\\]_auditPhotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits\\[0\\]_auditPhotos')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','audits\\[0\\]_auditPhotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;">
@@ -519,10 +519,10 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('editstudent','exams')" />      
+					onclick="inserttable('newstudent','exams')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','exams')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','exams')" />
 				</td>
 			</tr>
 
@@ -601,10 +601,10 @@
 				<td colspan="8" class="style12">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('editstudent','communicates')" />      
+					onclick="inserttable('newstudent','communicates')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','communicates')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','communicates')" />
 				</td>
 			</tr>
 	
@@ -644,10 +644,10 @@
 				<td colspan="8" class="style12">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('editstudent','evaluates')" />      
+					onclick="inserttable('newstudent','evaluates')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','evaluates')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','evaluates')" />
 				</td>
 			</tr>
 
@@ -690,10 +690,10 @@
 				<td colspan="8" class="style12">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="insertauditphotos('editstudent','audits\\[1\\]_auditPhotos')" />      
+					onclick="insertauditphotos('newstudent','audits\\[1\\]_auditPhotos')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits\\[1\\]_auditPhotos')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','audits\\[1\\]_auditPhotos')" />
 				</td>
 			</tr>
 	<tr style="mso-height-source:userset;" class="style11">
@@ -737,10 +737,10 @@
 				<td colspan="8" class="style12">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="insertaudit('editstudent')" />      
+					onclick="insertaudit('newstudent')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits')" />
+					style="width:60px; height:24px;" onclick="deletetable('newstudent','audits')" />
 				</td>
 			</tr>
 	
