@@ -2,6 +2,52 @@
     pageEncoding="UTF-8"%>
 
 
+<head>
+<style type="text/css">
+input:not([type="checkbox"]) {
+	width:95%
+	
+}
+.style11 {
+	color: #2F2B20;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+    white-space: nowrap;
+    border-left: .5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	border: .5pt solid windowtext;
+	padding: 0px;
+}
+.style12 {
+	color: #2F2B20;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: center;
+	vertical-align: middle;
+    white-space: nowrap;
+    border-left: .5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	border: .5pt solid windowtext;
+	padding: 0px;
+}
+
+</style>
+
+</head>
+
+
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -580,7 +626,7 @@
 		<td class="style11" style="width: 10%">
 				<input class="studentApply" type="text" id="transfers[0]_grantTime" name="grantTime" style="width: 86px" /></td>
 		<td class="style11" style="width: 20%">
-				<input class="studentApply" type="text" id="transfers[0]_memo" name="memo" style="width: 86px" /></td>
+				<input class="studentApply" type="text" id="transfers[0]_memo" name="memo" /></td>
 
 	</tr>
 	</table>
