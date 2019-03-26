@@ -3,7 +3,6 @@
 
 
 
-
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -19,44 +18,44 @@
 		学生登记信息明细<input type="hidden" class=studentApply id=student_id name="id" /></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt; " class="style2">
+		<td colspan="2" height="26" style="height: 20.1pt; " class="style11">
 		申请人姓名</td>
-		<td colspan="2" class="style3">联系电话</td>
-		<td colspan="4" class="style3">单位名称</td>
+		<td colspan="2" class="style11">联系电话</td>
+		<td colspan="4" class="style11">单位名称</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style4">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style11">
 			<input class="studentApply" id="student_applicantName" name="applicantName" />　</td>
-		<td colspan="2" class="style5">
+		<td colspan="2" class="style11">
 		<input  class=studentApply id=student_applicantContactNum name="applicantContactNum" />　</td>
 		<td colspan="4" class="style11">
 		<input  class=studentApply id=student_applicantCompany name="applicantCompany" />　</td>
     </tr>
  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style7">　</td>
+		<td colspan="8" height="26" style="height: 20.1pt" class="style11">　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style8">
+		<td colspan="8" height="26" style="height: 20.1pt" class="style11">
 		学生信息登记表</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style9">通过审核编号</td>
-		<td colspan="2" class="style10">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style11">通过审核编号</td>
+		<td colspan="2" class="style11">
 			<input class="studentApply" id="student_auditNo" name="auditNo" />　</td>
 		<td class="style11">资助状态</td>
-		<td colspan="3" class="style10">
+		<td colspan="3" class="style11">
 			<input class="studentApply" id="student_sponseState" name="sponseState" />　</td>
     </tr>
     
  	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style12">学生姓名</td>
-		<td colspan="2" class="style10"><input class="studentApply" id="student_studentName" name="studentName" /></td>
+		<td colspan="2" height="26" style="height: 20.1pt" class="style11">学生姓名</td>
+		<td colspan="2" class="style11"><input class="studentApply" id="student_studentName" name="studentName" /></td>
 		<td class="style11">民族</td>
-		<td colspan="3" class="style10">
+		<td colspan="3" class="style11">
 		<input class="studentApply" id="student_nationality" name="nationality" />　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style9">身份证号</td>
+		<td colspan="2" height="26" style="height: 20.1pt" class="style11">身份证号</td>
 		<td colspan="2" class="style11">
 		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
 		<td class="style11">学生照片</td>
@@ -64,12 +63,12 @@
 		<a class="studentPhoto" id="student_picture" target=showpic name="picture" >没有照片</a></td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt" class="style12">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style11">
 		学生个人银行卡号</td>
-		<td colspan="2" class="style13">
+		<td colspan="2" class="style11">
 		<input class="studentApply" id="student_bankCard" name="bankCard" />　</td>
 		<td class="style11">开户银行</td>
-		<td colspan="3" class="style10">
+		<td colspan="3" class="style11">
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
     </tr>   
 	<tr><td colspan=8>		    <div >
@@ -109,7 +108,7 @@
 	</tr>
     
   	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" height="26" style="height: 20.1pt; " class="style15">
+		<td colspan="2" height="26" style="height: 20.1pt; " class="style11">
 		　</td>
 		<td class="style11">　</td>
 		<td class="style11" >　</td>
@@ -120,43 +119,43 @@
 		<td style="height: 22pt; width: 132pt;" class="style11">出生日期</td>
 		<td class="style11" style="height: 22pt">性别</td>
 		<td class="style11" style="height: 22pt">QQ</td>
-		<td class="style16" style="height: 22pt">邮箱</td>
-		<td class="style16" style="height: 22pt">联系电话</td>
+		<td class="style11" style="height: 22pt">邮箱</td>
+		<td class="style11" style="height: 22pt">联系电话</td>
 		<td class="style11" style="height: 22pt">开始资助时间</td>
-		<td class="style16" style="height: 22pt">结束资助时间</td>
-		<td class="style17" style="height: 22pt">结案原因</td>
+		<td class="style11" style="height: 22pt">结束资助时间</td>
+		<td class="style11" style="height: 22pt">结案原因</td>
     </tr>     
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+	<tr height="26" style="mso-height-source:userset;height:20.1pt" class="style11">
 		<td height="26" style="height: 20.1pt; width: 132pt;" class="style11">
 		<input class="studentApply" id="student_age" name="age"  style="width: 68px"/>　</td>
 		<td class="style11" style="width: 60pt">
 		<input class="studentApply" id="student_sex" name="sex"  style="width: 50px"/>　</td>
 		<td class="style11">
 		<input class="studentApply" id="student_qq" name="qq"  style="width: 90px" />　</td>
-		<td class="style16" >
+		<td class="style11" >
 		<input class="studentApply" id="student_email" name="email"  style="width: 90px"/>　</td>
-		<td class="style16">
+		<td class="style11">
 		<input class="studentApply" id="student_studentContactNo" name="studentContactNo"  style="width: 90px" />　</td>
 		<td class="style11">
 		<input class="studentApply" id="student_sponseStartTime" name="sponseStartTime"  style="width: 90px" />　</td>
-		<td class="style16">
+		<td class="style11">
 		<input class="studentApply" id="student_sponseEndTime" name="sponseEndTime"  style="width: 90px"/>　</td>
-		<td class="style17">
+		<td class="style11">
 		<input class="studentApply" id="student_endReason" name="endReason"  style="width: 90px"/>　</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style9">
+		<td colspan="8" height="26" style="height: 20.1pt" class="style11">
 		&quot;共同生活&quot;家庭成员情况（如父母、亲兄弟姐妹，爷爷奶奶或外公外婆同住也需要登记在内）</td>
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 132pt;" class="style9">关系</td>
+		<td height="26" style="height: 20.1pt; width: 132pt;" class="style11">关系</td>
 		<td class="style11">姓名</td>
 		<td class="style11">出生年月日</td>
 		<td class="style11" >联系电话</td>
 		<td class="style11">职业/学校</td>
 		<td class="style11">年收入</td>
-		<td class="style18">其他收入/补助</td>
-		<td class="style19">健康情况</td>
+		<td class="style11">其他收入/补助</td>
+		<td class="style11">健康情况</td>
     </tr> 
     <tr>
 	    <td colspan=8 class="style9">				    		
@@ -173,7 +172,7 @@
 	</colgroup>
 
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt; width: 101px;" class="style9">
+		<td height="26" style="height: 20.1pt; width: 101px;" class="style11">
 		<input class="studentApply" type="text" id="relatives[0]_relationship" name="relationship" style="width: 40px">　</td>
 		<td class="style11">
 		<input class="studentApply" type="text" id="relatives[0]_name" name="name" style="width: 73px"></td>
@@ -242,8 +241,8 @@
 							<td width="141" style="width: 106pt" class="style11">
 							<span style="mso-spacerun:yes">
 							<input  class="studentApply" id="student_workIncome" name="workIncome" style="width: 87px" /></span></td>
-							<td style="width: 76pt" class="style7">
-							元<font class="font5">/</font><font class="font6">年</font></td>
+							<td class="style11">
+							元<font>/年</font></td>
 							<td class="style11">
 							收入来源（职业）</td>
 							<td colspan="2" class="style11"><span style="mso-spacerun:yes">
@@ -254,8 +253,8 @@
 							<span lang="EN-US">3.<font class="font6">亲戚资助</font></span></td>
 							<td width="141" style="width: 106pt" class="style11">
 							<span style="mso-spacerun:yes"><input  class="studentApply" id="student_relativeSponseIncome" name="relativeSponseIncome" style="width: 87px" /></span></td>
-							<td style="width: 76pt" class="style7">
-							元<font class="font5">/</font><font class="font6">年</font></td>
+							<td class="style11">
+							元<font>/年</font></td>
 							<td class="style11">
 							收入来源</td>
 							<td colspan="2" class="style11"><span style="mso-spacerun:yes">
