@@ -36,6 +36,8 @@ public class School extends IdEntity implements Serializable {
 	private String className;
 	private String headTeacher;
 	private String schoolContactNo;
+	private String graduateTime;
+	
 	public School() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -61,6 +63,16 @@ public class School extends IdEntity implements Serializable {
 	public String getSchoolContactNo() {
 		return schoolContactNo;
 	}
+	
+	@Column(length = 50)
+	public String getGraduateTime() {
+		return graduateTime;
+	}
+
+	public void setGraduateTime(String graduateTime) {
+		this.graduateTime = graduateTime;
+	}
+
 	public void setSchool(String school) {
 		this.school = school;
 	}

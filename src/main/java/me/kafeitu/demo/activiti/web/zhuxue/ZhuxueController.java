@@ -3,6 +3,7 @@ package me.kafeitu.demo.activiti.web.zhuxue;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
 
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.entity.zhuxue.Transfer;
@@ -750,5 +751,54 @@ public class ZhuxueController {
         }
     }
 
+ /*   
+  //导出EXCEL
+    @RequestMapping("room/export")
+    public String getRoomExportExcel2(String COName, String FullName, String Name, PageUtil pageBean, HttpServletResponse response) throws Exception {
 
+        //填充list数据
+        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
+        String fileName = "导出房屋excel" + sf.format(new Date()) + ".xlsx";
+
+        // 获取数据来源
+        pageBean.setPageSize(101);
+        PageUtil result = personRoomDao.getRoomList(pageBean, COName, FullName, Name);
+        List<RoomInfo> roomLists = result.getRows();
+        String columnNames[] = { "序号", "房间号", "所属地区","所属社区", "社区结构", "修改时间"};  ;//列名
+        String keys[] = {"no", "roomName", "regionName", "coName", "structName", "modifytime"};//map中的key
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        try {
+        ExportExcel.createWorkBook(roomLists, keys, columnNames, RoomInfo.class).write(os);
+        } catch (IOException e) {
+          e.printStackTrace();
+        }
+        byte[] content = os.toByteArray();
+        InputStream is = new ByteArrayInputStream(content);
+        // 设置response参数，可以打开下载页面
+        response.reset();
+        response.setContentType("application/vnd.ms-excel;charset=utf-8");
+        response.setHeader("Content-Disposition", "attachment;filename="+ new String(fileName.getBytes(), "iso-8859-1"));
+        ServletOutputStream out = response.getOutputStream();
+        BufferedInputStream bis = null;
+        BufferedOutputStream bos = null;
+        try {
+          bis = new BufferedInputStream(is);
+          bos = new BufferedOutputStream(out);
+          byte[] buff = new byte[2048];
+          int bytesRead;
+          // Simple read/write loop.
+          while (-1 != (bytesRead = bis.read(buff, 0, buff.length))) {
+            bos.write(buff, 0, bytesRead);
+          }
+        } catch (final IOException e) {
+          throw e;
+        } finally {
+          if (bis != null)
+            bis.close();
+          if (bos != null)
+            bos.close();
+        }
+        return null;
+    }
+*/
 }
