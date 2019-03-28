@@ -1,26 +1,15 @@
 package me.kafeitu.demo.activiti.entity.zhuxue;
 
 
-import me.kafeitu.demo.activiti.entity.IdEntity;
 import me.kafeitu.demo.activiti.service.zhuxue.student.SponserManager;
 import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
 
-import org.activiti.engine.history.HistoricProcessInstance;
-import org.activiti.engine.repository.ProcessDefinition;
-import org.activiti.engine.runtime.ProcessInstance;
-import org.activiti.engine.task.Task;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
 
 
 
 import javax.persistence.*;
-import java.io.Serializable;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.Map;
-import java.util.Set;
-import java.util.HashSet;
 import java.util.List;
 
 /**
