@@ -53,8 +53,6 @@
 		<a rel="#">报表导出</a>
 		<ul>
 			<li><a href="${ctx}/zhuxue/student/exportstudent" target="_blank">学生名录</a></li>
-		</ul>
-		<ul>
 			<li><a href="${ctx}/zhuxue/student/exportsponser" target="_blank">资助人</a></li>
 		</ul>		
 	</li>
