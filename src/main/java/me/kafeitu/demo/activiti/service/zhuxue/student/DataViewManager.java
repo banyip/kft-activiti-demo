@@ -96,7 +96,7 @@ public class DataViewManager  {
 
 	public String setSponserRows() {
 		fileName = "学生名录" + System.currentTimeMillis() + ".xls";
-		String[] sponserTitles = {"编号","资助人姓名","邮箱","电话","QQ","地址","收据","政治面貌","汇款人/单位","出生日期","资助学生编号","起始资助时间","终止资助时间","终止资助原因"};
+		String[] sponserTitles = {"编号","资助人姓名","邮箱","电话","QQ","地址","收据","政治面貌","汇款人/单位","出生日期","资助学生编号","起始资助时间","终止资助时间","终止资助原因","微信号"};
 		titles = sponserTitles;
 		int cols = titles.length;
 		List<Sponser> results=sponserManager.getAllSponser();
