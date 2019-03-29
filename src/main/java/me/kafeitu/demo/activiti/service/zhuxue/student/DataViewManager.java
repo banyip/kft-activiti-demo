@@ -75,7 +75,7 @@ public class DataViewManager  {
 	public void writeToExcelFile(int startRowNum,OutputStream os)
 	{
 		
-        HSSFWorkbook hssfWorkbook = ExcelUtil.writeExcel(2,"学生名录", titles, datas);
+        HSSFWorkbook hssfWorkbook = ExcelUtil.writeExcel(startRowNum,"学生名录", titles, datas);
         
         // 响应到客户端
         try {
@@ -89,7 +89,7 @@ public class DataViewManager  {
 	
 	public void writeStudentsToExcelFile(OutputStream os)
 	{
-		this.writeToExcelFile(1, os);
+		this.writeToExcelFile(0, os);
 	}
 
 }
