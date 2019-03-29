@@ -40,7 +40,7 @@ public class ExcelUtil <T>{
      * @return
      * @info 写出Excel标题内容
      */
-    public static byte[] writeExcel(String[] titles, List<Map<Integer, String>> lists) throws IOException {
+    public static byte[] writeExcel(int startRowNum,String[] titles, String[][] lists /*List<Map<Integer, String>> lists*/) throws IOException {
         HSSFWorkbook xls = new HSSFWorkbook();
         HSSFSheet sheet = xls.createSheet();
         HSSFRow row = sheet.createRow(0);// 第一行
@@ -49,12 +49,13 @@ public class ExcelUtil <T>{
             row.createCell(i).setCellValue(titles[i]);
         }
         // 内容
-        int rowNum = 1;
-        for (Map<Integer, String> map : lists) {
+        int cols = titles.length;
+        int rowNum = startRowNum;
+        //for (Map<Integer, String> map : lists) {
+        for(int j=0;j<lists.length;j++) {
             HSSFRow rowTmp = sheet.createRow(rowNum);
-            int cols = map.size();
             for (int i = 0; i < cols; i++) {
-                rowTmp.createCell(i).setCellValue(map.get(i));
+                rowTmp.createCell(i).setCellValue(lists[j][i]);
             }
             rowNum++;
         }
@@ -260,7 +261,7 @@ public class ExcelUtil <T>{
      * @return 主要用的是这个方法
      * @info 写出Excel标题内容
      */
-    public static HSSFWorkbook writeExcel(String sheetName, String[] titles, List<Map<Integer, String>> lists) {
+    public static HSSFWorkbook writeExcel(int startRowNum,String sheetName, String[] titles,String[][] lists /* List<Map<Integer, String>> lists*/) {
  
         // 第一步，创建一个HSSFWorkbook，对应一个Excel文件
         HSSFWorkbook xls = new HSSFWorkbook();
@@ -269,7 +270,7 @@ public class ExcelUtil <T>{
         HSSFSheet sheet = xls.createSheet(sheetName);
  
         // 第三步，在sheet中添加表头第0行,注意老版本poi对Excel的行数列数有限制
-        HSSFRow row = sheet.createRow(0);// 第一行
+        HSSFRow row = sheet.createRow(startRowNum);// 第一行
  
         // 第四步，创建单元格，并设置值表头 设置表头居中
         HSSFCellStyle style = xls.createCellStyle();
@@ -283,14 +284,13 @@ public class ExcelUtil <T>{
             cell.setCellValue(titles[i]);
             cell.setCellStyle(style);
         }
- 
+        int cols = titles.length;
         // 创建内容
-        int rowNum = 1;
-        for (Map<Integer, String> map : lists) {
+        int rowNum = startRowNum + 1;
+        for(int j=0;j<lists.length;j++) {
             HSSFRow rowTmp = sheet.createRow(rowNum);
-            int cols = map.size();
             for (int i = 0; i < cols; i++) {
-                rowTmp.createCell(i).setCellValue(map.get(i));
+                rowTmp.createCell(i).setCellValue(lists[j][i]);
             }
             rowNum++;
         }

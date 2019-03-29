@@ -50,6 +50,13 @@
     </li>
 -->
 	<li>
+		<a rel="#">报表导出</a>
+		<ul>
+			<li><a href="${ctx}/zhuxue/student/exportstudent" target="_blank">学生名录</a></li>
+		</ul>
+	</li>
+
+	<li>
 		<a rel="#">管理模块</a>
 		<ul>
 			<li>
@@ -66,6 +73,7 @@
 			<li><a href="#" rel='management/identity/user/list'>用户与组</a></li>
 		</ul>
 	</li>
+<!-- 
 	<li>
 		<a rel="#">Rest示例</a>
 		<ul>
@@ -77,4 +85,5 @@
 			<li><a href="${ctx}/rest/identity/groups" target="_blank">组</a></li>
 		</ul>
 	</li>
+ -->
 </ul>

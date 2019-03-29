@@ -1,5 +1,5 @@
 package me.kafeitu.demo.activiti.web.zhuxue;
-
+import org.apache.poi.hssf.usermodel.*;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.lang.reflect.Method;
@@ -10,6 +10,7 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Transfer;
 import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 import me.kafeitu.demo.activiti.entity.zhuxue.AuditPhoto;
 import me.kafeitu.demo.activiti.entity.zhuxue.Communicate;
+import me.kafeitu.demo.activiti.entity.zhuxue.DataView;
 import me.kafeitu.demo.activiti.entity.zhuxue.Evaluate;
 import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Feedback;
@@ -49,7 +50,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
+import me.kafeitu.demo.activiti.util.ExcelUtil;
 /**
  * 请假控制器，包含保存、启动流程
  *
@@ -751,54 +752,46 @@ public class ZhuxueController {
         }
     }
 
- /*   
+   
   //导出EXCEL
-    @RequestMapping("room/export")
-    public String getRoomExportExcel2(String COName, String FullName, String Name, PageUtil pageBean, HttpServletResponse response) throws Exception {
+    @RequestMapping(value = "exportstudent")
+    public void exportStudentExcel(HttpServletResponse response) throws Exception {
 
-        //填充list数据
-        SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
-        String fileName = "导出房屋excel" + sf.format(new Date()) + ".xlsx";
-
-        // 获取数据来源
-        pageBean.setPageSize(101);
-        PageUtil result = personRoomDao.getRoomList(pageBean, COName, FullName, Name);
-        List<RoomInfo> roomLists = result.getRows();
-        String columnNames[] = { "序号", "房间号", "所属地区","所属社区", "社区结构", "修改时间"};  ;//列名
-        String keys[] = {"no", "roomName", "regionName", "coName", "structName", "modifytime"};//map中的key
-        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        // 响应到客户端
         try {
-        ExportExcel.createWorkBook(roomLists, keys, columnNames, RoomInfo.class).write(os);
-        } catch (IOException e) {
-          e.printStackTrace();
+        		DataView dataview = new DataView();
+        		String fileName = dataview.setStudentRows();
+           		this.setResponseHeader(response, fileName);
+        		OutputStream os = response.getOutputStream();
+                dataview.writeStudentsToExcelFile(os);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        byte[] content = os.toByteArray();
-        InputStream is = new ByteArrayInputStream(content);
-        // 设置response参数，可以打开下载页面
-        response.reset();
-        response.setContentType("application/vnd.ms-excel;charset=utf-8");
-        response.setHeader("Content-Disposition", "attachment;filename="+ new String(fileName.getBytes(), "iso-8859-1"));
-        ServletOutputStream out = response.getOutputStream();
-        BufferedInputStream bis = null;
-        BufferedOutputStream bos = null;
-        try {
-          bis = new BufferedInputStream(is);
-          bos = new BufferedOutputStream(out);
-          byte[] buff = new byte[2048];
-          int bytesRead;
-          // Simple read/write loop.
-          while (-1 != (bytesRead = bis.read(buff, 0, buff.length))) {
-            bos.write(buff, 0, bytesRead);
-          }
-        } catch (final IOException e) {
-          throw e;
-        } finally {
-          if (bis != null)
-            bis.close();
-          if (bos != null)
-            bos.close();
-        }
-        return null;
     }
-*/
+
+    /**
+     * @return void
+     * @Author 
+     * @Description 发送响应流方法//TODO
+     * @Date 2019/1/9 10:32
+     * @Param [response, fileName]
+     **/
+    public void setResponseHeader(HttpServletResponse response, String fileName) {
+        try {
+            try {
+                fileName = new String(fileName.getBytes(), "ISO8859-1");
+            } catch (UnsupportedEncodingException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            response.setContentType("application/x-download");
+            response.addHeader("Content-Disposition", "attachment;filename=" + fileName);
+            response.addHeader("Pargam", "no-cache");
+            response.addHeader("Cache-Control", "no-cache");
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+
 }
