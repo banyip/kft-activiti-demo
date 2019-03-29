@@ -1,6 +1,7 @@
 package me.kafeitu.demo.activiti.service.zhuxue.student;
 
-
+import me.kafeitu.demo.activiti.entity.zhuxue.Transfer;
+import me.kafeitu.demo.activiti.entity.zhuxue.Sponser;
 import me.kafeitu.demo.activiti.entity.zhuxue.School;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.service.zhuxue.student.SponserManager;
@@ -93,4 +94,48 @@ public class DataViewManager  {
 		this.writeToExcelFile(0, os);
 	}
 
+	public String setSponserRows() {
+		fileName = "学生名录" + System.currentTimeMillis() + ".xls";
+		String[] sponserTitles = {"编号","资助人姓名","邮箱","电话","QQ","地址","收据","政治面貌","汇款人/单位","出生日期","资助学生编号","起始资助时间","终止资助时间","终止资助原因"};
+		titles = sponserTitles;
+		int cols = titles.length;
+		List<Sponser> results=sponserManager.getAllSponser();
+		int rows = results.size();
+		datas = new String[rows][cols];		
+		for(int i=0;i<rows ;i++)
+		{
+			Sponser result = results.get(i);
+/*
+			List<Transfer> transfers = result.getTransfers();
+			String sponseStudentNos ="" ;
+			for(int l=0;i<transfers.size();l++)
+				sponseStudentNos += "/" + transfers.get(l).getStudentToSponse().getAuditNo();
+			sponseStudentNos = sponseStudentNos.substring(1);
+*/
+			int k = 0;
+			datas[i][k++] = result.getSponserNo();
+			datas[i][k++] = result.getName();
+			datas[i][k++] = result.getEmail();
+			datas[i][k++] = result.getContactNo();
+			datas[i][k++] = result.getQq();
+			datas[i][k++] = result.getAddress();
+			datas[i][k++] = result.getNeedReciept();
+			datas[i][k++] = result.getPoliticFace();
+			datas[i][k++] = result.getProfectional();
+			datas[i][k++] = result.getBirthdate();
+			datas[i][k++] = result.getStudentsToSponse();
+			datas[i][k++] = result.getSponseStartTime();
+			datas[i][k++] = result.getSponseEndTime();
+			datas[i][k++] = result.getSponseEndReason();
+			datas[i][k++] = result.getWechat();
+		}
+		return fileName;
+	}
+	
+	public void writeSponsersToExcelFile(OutputStream os)
+	{
+		this.writeToExcelFile(0, os);
+	}
+	
+	
 }

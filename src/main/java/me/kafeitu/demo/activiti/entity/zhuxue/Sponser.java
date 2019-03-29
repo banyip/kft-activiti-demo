@@ -55,6 +55,7 @@ public class Sponser extends IdEntity implements Serializable {
 	private String sponseStartTime;
 	private String sponseEndTime;
 	private String sponseEndReason;
+	private String studentsToSponse;
 	private List<Transfer> transfers=new ArrayList<Transfer>();
 	private List<Feedback> feedbacks = new ArrayList<Feedback>();
 	private List<Communicate> communicates = new ArrayList<Communicate>();
@@ -160,6 +161,15 @@ public class Sponser extends IdEntity implements Serializable {
 	@OneToMany(cascade = { CascadeType.ALL })
 	public List<Feedback> getFeedbacks() {
 		return feedbacks;
+	}
+
+	@Column
+	public String getStudentsToSponse() {
+		return studentsToSponse;
+	}
+
+	public void setStudentsToSponse(String studentsToSponse) {
+		this.studentsToSponse = studentsToSponse;
 	}
 
 	public void setFeedbacks(List<Feedback> feedbacks) {
