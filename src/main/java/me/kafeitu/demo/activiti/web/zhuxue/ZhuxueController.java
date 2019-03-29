@@ -10,7 +10,7 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Transfer;
 import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 import me.kafeitu.demo.activiti.entity.zhuxue.AuditPhoto;
 import me.kafeitu.demo.activiti.entity.zhuxue.Communicate;
-import me.kafeitu.demo.activiti.entity.zhuxue.DataView;
+import me.kafeitu.demo.activiti.service.zhuxue.student.DataViewManager;
 import me.kafeitu.demo.activiti.entity.zhuxue.Evaluate;
 import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Feedback;
@@ -105,7 +105,8 @@ public class ZhuxueController {
     protected StudentManager studentManager;
     @Autowired
     protected SponserManager sponserManager;
-
+    @Autowired
+    protected DataViewManager dataview;
     private Map<String, Object> variables;
 
 
@@ -758,8 +759,7 @@ public class ZhuxueController {
     public void exportStudentExcel(HttpServletResponse response) throws Exception {
 
         // 响应到客户端
-        try {
-        		DataView dataview = new DataView();
+        try {        		
         		String fileName = dataview.setStudentRows();
            		this.setResponseHeader(response, fileName);
         		OutputStream os = response.getOutputStream();

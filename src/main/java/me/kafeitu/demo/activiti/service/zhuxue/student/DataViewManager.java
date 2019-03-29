@@ -1,14 +1,16 @@
-package me.kafeitu.demo.activiti.entity.zhuxue;
+package me.kafeitu.demo.activiti.service.zhuxue.student;
 
 
+import me.kafeitu.demo.activiti.entity.zhuxue.School;
+import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.service.zhuxue.student.SponserManager;
 import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
 import me.kafeitu.demo.activiti.util.ExcelUtil;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
-
-
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.*;
 
@@ -20,9 +22,10 @@ import java.util.List;
  *
  * @author HenryYan
  */
-
-public class DataView  {
-    public DataView() {
+@Component
+@Transactional(readOnly = true)
+public class DataViewManager  {
+    public DataViewManager() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -40,7 +43,7 @@ public class DataView  {
 		int cols = titles.length;
 		List<Student> results=studentManager.getAllStudent();
 		int rows = results.size();
-		datas = new String[rows][cols];
+		datas = new String[rows][cols];		
 		for(int i=0;i<rows ;i++)
 		{
 			Student result = results.get(i);
