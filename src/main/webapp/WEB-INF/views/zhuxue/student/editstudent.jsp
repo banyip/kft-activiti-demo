@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 
 
+
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -598,13 +599,13 @@
 	</tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="8" style="height: 20pt" class="style12">
-		通信记录登记</td>
+		学生近况</td>
 	</tr>
 	<tr>
 	<td colspan="8"><div><table style="width: 100%">
 	<tr>
 		<td class="style12" style="width: 15%">日期</td>
-		<td class="style12"  style="width: 60%">信件内容</td>
+		<td class="style12"  style="width: 60%">近况</td>
 		<td class="style12" style="width: 25%">照片上传</td>
 	</tr>
 	</table></div></td></tr>
