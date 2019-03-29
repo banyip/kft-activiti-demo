@@ -38,7 +38,7 @@ public class DataViewManager  {
 	private String[][] datas;
 	public String setStudentRows() {
 		fileName = "学生名录" + System.currentTimeMillis() + ".xls";
-		String[] studentTitles = {"编号","姓名","资助状态","性别","","出生年月","学校","年级","班级","毕业时间","学校联系人","电话","住址","家长姓名","家庭电话","学生电话","QQ","备注","开始资助时间","身份证","学生账号","非本人账号"};
+		String[] studentTitles = {"编号","姓名","资助状态","性别","","出生年月","学校","年级","班级","毕业时间","学校联系人","电话","住址","家长姓名","家庭电话","学生电话","QQ","备注","开始资助时间","身份证","学生账号"};
 		titles = studentTitles;
 		int cols = titles.length;
 		List<Student> results=studentManager.getAllStudent();
@@ -64,11 +64,10 @@ public class DataViewManager  {
 			datas[i][13] = result.getParentContactNo();
 			datas[i][14] = result.getStudentContactNo();
 			datas[i][15] = result.getQq();
-			datas[i][16] = "";
+			datas[i][16] = result.getMemo();
 			datas[i][17] = result.getSponseStartTime();
 			datas[i][18] = result.getUserId();
-			datas[i][19] = "";
-			datas[i][20] = "";			
+			datas[i][19] = result.getBankCard();	
 		}
 		return fileName;
 	}

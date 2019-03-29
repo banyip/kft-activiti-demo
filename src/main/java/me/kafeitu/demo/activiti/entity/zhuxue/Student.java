@@ -214,6 +214,7 @@ public class Student extends IdEntity implements Serializable {
 	private String liveExpenditure;
 	private String liveDescribe;
 	private String debtDescribe;
+	private String memo;
 	
 	@Column(length=20)
 	public String getStudyExpenditure() {
@@ -825,6 +826,14 @@ public class Student extends IdEntity implements Serializable {
 	@OneToMany(cascade = { CascadeType.ALL })
 	public List<School> getSchools() {
 		return schools;
+	}
+	
+	@Column(length = 600)
+	public String getMemo() {
+		return memo;
+	}
+	public void setMemo(String memo) {
+		this.memo = memo;
 	}
 	public void setSchools(List<School> schools) {
 		this.schools = schools;

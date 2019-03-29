@@ -2,52 +2,6 @@
     pageEncoding="UTF-8"%>
 
 
-<head>
-<style type="text/css">
-input:not([type="checkbox"]) {
-	width:95%
-	
-}
-.style11 {
-	color: #2F2B20;
-	font-size: 11.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-    white-space: nowrap;
-    border-left: .5pt solid windowtext;
-	border-right: 1.5pt solid windowtext;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	border: .5pt solid windowtext;
-	padding: 0px;
-}
-.style12 {
-	color: #2F2B20;
-	font-size: 11.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: center;
-	vertical-align: middle;
-    white-space: nowrap;
-    border-left: .5pt solid windowtext;
-	border-right: 1.5pt solid windowtext;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	border: .5pt solid windowtext;
-	padding: 0px;
-}
-
-</style>
-
-</head>
-
-
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -116,6 +70,12 @@ input:not([type="checkbox"]) {
 		<td colspan="3" class="style11">
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
     </tr>   
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style11">
+		备注</td>
+		<td colspan="6" class="style11">
+		<input class="studentApply" id="student_memo" name="memo" />　</td>
+    </tr>     
 	<tr><td colspan="8">		    <div >
 				<table width="100%">
  	<tr height="26">

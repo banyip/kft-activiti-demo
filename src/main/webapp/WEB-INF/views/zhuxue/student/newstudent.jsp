@@ -71,6 +71,12 @@
 		<td colspan="3" class="style11">
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
     </tr>   
+	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" height="26" style="height: 20.1pt" class="style11">
+		备注</td>
+		<td colspan="6" class="style11">
+		<input class="studentApply" id="student_memo" name="memo" />　</td>
+    </tr>       
 	<tr><td colspan="8">		    <div >
 				<table width="100%">
  	<tr height="26">
