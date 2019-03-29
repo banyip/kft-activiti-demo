@@ -58,10 +58,10 @@
 			<input class="sponserApply" id="sponseDeadline" name="sponseDeadline" type="text" style="width: 92px" />　</td>
 		<td class="style1" style="height: 18pt">
 		
-			<select class="sponserApply" id="needReciept" name="needReciept" style="width: 69px">			
-			<option value="false">否</option>
-			<option value="true">是、拍</option>
-			<option value="true">是、寄</option>
+			<select class="sponserApply" id="needReciept" name="needReciept" style="width: 69px; height: 22px;">			
+			<option value="否">否</option>
+			<option value="是、拍">是、拍</option>
+			<option value="是、寄">是、寄</option>
 			</select>
 		</td>
 		<td class="style1" style="height: 18pt">
