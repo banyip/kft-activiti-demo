@@ -20,7 +20,7 @@ import java.util.List;
  *
  * @author HenryYan
  */
-@Entity
+
 public class DataView  {
     public DataView() {
 		super();
