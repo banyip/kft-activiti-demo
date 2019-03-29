@@ -373,7 +373,7 @@ function complete(variables,url,filenames,files) {
 
 var handleOpts = {
 			newsponser: {
-			width: 930,
+			width: 1000,
 			height: 700,
 			open: function(id) {
 				var dialog = this;
@@ -434,7 +434,7 @@ var handleOpts = {
 		},
 
 editsponser: {
-			width: 930,
+			width: 1000,
 			height: 700,
 			open: function(id) {
 				var dialog = this;
