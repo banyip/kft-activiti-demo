@@ -790,7 +790,7 @@ public class ZhuxueController {
 
         // 响应到客户端
         try {        		
-        		String fileName = dataview.setSponserRows();
+        		String fileName = dataview.setSponseRegistryRows();
            		this.setResponseHeader(response, fileName);
         		OutputStream os = response.getOutputStream();
                 dataview.writeSponsersToExcelFile(os);

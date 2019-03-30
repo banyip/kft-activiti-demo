@@ -135,7 +135,7 @@ public class DataViewManager  {
 	
 //设置资助登记表内容	
 	public String setSponseRegistryRows() {
-		fileName = "支助人" + System.currentTimeMillis() + ".xls";
+		fileName = "资助登记表" + System.currentTimeMillis() + ".xls";
 		String[] sponserTitles = {"学生编号","学生姓名","学校","年级","资助人编号","资助人","邮箱","电话","QQ","资助金额"};
 		titles = sponserTitles;
 		int cols = titles.length;
