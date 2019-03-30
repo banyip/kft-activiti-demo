@@ -64,7 +64,7 @@ public class Sponser extends IdEntity implements Serializable {
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private Map<String, Object> variables;
 	
-	public String getStudentsToSponseString()
+	public String StudentsToSponseString()
 	{
 		String s_studentsToSponse = "";
 		for(int l=0;l<this.studentsToSponse.size();l++)

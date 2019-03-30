@@ -123,7 +123,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getPoliticFace();
 			datas[i][k++] = result.getProfectional();
 			datas[i][k++] = result.getBirthdate();
-			datas[i][k++] = result.getStudentsToSponseString();
+			datas[i][k++] = result.StudentsToSponseString();
 			datas[i][k++] = result.getSponseStartTime();
 			datas[i][k++] = result.getSponseEndTime();
 			datas[i][k++] = result.getSponseEndReason();
