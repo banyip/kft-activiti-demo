@@ -168,11 +168,11 @@ public class DataViewManager  {
 			datas[i][k++] = result.getQq();
 			List<Transfer> transfers = result.getTransfers();
 			int sponseAmount=0;
-			for(int l=0;i<transfers.size();l++)
+/*			for(int l=0;i<transfers.size();l++)
 			{
-//				sponseAmount += transfers.get(l).getGrantAmount();
+				sponseAmount += transfers.get(l).getGrantAmount();
 			}
-			datas[i][k++] = Integer.toString(transfers.size());//Integer.toString(sponseAmount);
+*/			datas[i][k++] = Integer.toString(transfers.size());//Integer.toString(sponseAmount);
 		}
 		return fileName;
 	}	
