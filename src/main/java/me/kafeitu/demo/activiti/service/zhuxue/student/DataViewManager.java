@@ -159,7 +159,10 @@ public class DataViewManager  {
 			datas[i][k++] = school.getSchool();
 			datas[i][k++] = school.getGrade();
 			Sponser sponser = result.getSponser();
-			datas[i][k++] = sponser.getName();
+			if(sponser!=null)
+				datas[i][k++] = sponser.getName();
+			else
+				k++;
 			datas[i][k++] = result.getEmail();
 			datas[i][k++] = result.getApplicantContactNum();
 			datas[i][k++] = result.getQq();
