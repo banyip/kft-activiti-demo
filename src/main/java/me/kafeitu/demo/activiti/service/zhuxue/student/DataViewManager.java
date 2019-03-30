@@ -160,19 +160,28 @@ public class DataViewManager  {
 			datas[i][k++] = school.getGrade();
 			Sponser sponser = result.getSponser();
 			if(sponser!=null)
+			{	
+				datas[i][k++] = sponser.getSponserNo();
 				datas[i][k++] = sponser.getName();
+			
+			}
 			else
-				k++;
+				k +=2 ;
 			datas[i][k++] = result.getEmail();
 			datas[i][k++] = result.getApplicantContactNum();
 			datas[i][k++] = result.getQq();
 			List<Transfer> transfers = result.getTransfers();
 			int sponseAmount=0;
-/*			for(int l=0;i<transfers.size();l++)
+			if(transfers!=null)
 			{
-				sponseAmount += transfers.get(l).getGrantAmount();
+				int transferssize  = transfers.size();
+				for(int l=0;i<transferssize;l++)
+				{
+					sponseAmount += transfers.get(l).getGrantAmount();
+				}
+				datas[i][k++] = Integer.toString(transfers.size());//Integer.toString(sponseAmount);
 			}
-*/			datas[i][k++] = Integer.toString(transfers.size());//Integer.toString(sponseAmount);
+
 		}
 		return fileName;
 	}	
