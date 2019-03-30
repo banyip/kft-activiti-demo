@@ -69,7 +69,8 @@ public class Sponser extends IdEntity implements Serializable {
 		String s_studentsToSponse = "";
 		for(int l=0;l<this.studentsToSponse.size();l++)
 			s_studentsToSponse += this.studentsToSponse.get(l).getAuditNo();
-		s_studentsToSponse = s_studentsToSponse.substring(1);		
+		if(s_studentsToSponse.length()>0)
+			s_studentsToSponse = s_studentsToSponse.substring(1);		
 		return s_studentsToSponse;
 	}
 	
