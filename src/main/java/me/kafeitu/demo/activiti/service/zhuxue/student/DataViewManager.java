@@ -174,12 +174,11 @@ public class DataViewManager  {
 			int sponseAmount=0;
 			if(transfers!=null)
 			{
-				int transferssize  = transfers.size();
-				for(int l=0;i<transferssize;l++)
+				for(int l=0;l<transfers.size();l++)
 				{
 					sponseAmount += transfers.get(l).getGrantAmount();
 				}
-				datas[i][k++] = Integer.toString(transfers.size());//Integer.toString(sponseAmount);
+				datas[i][k++] = Integer.toString(sponseAmount);
 			}
 
 		}
