@@ -185,21 +185,23 @@ input:not([type="checkbox"]) {
 		<td colspan="8" height="26" style="height: 20.1pt" class="style49">
 		反馈记录登记</td>
 	</tr>
+	<tr><td colspan=8><div><table width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" class="style49">日期</td>
-		<td colspan="4" class="style50">反馈学期</td>
-		<td colspan="3" class="style11">照片上传</td>
+		<td style="width: 33%" class="style12">日期</td>
+		<td style="width: 33%" class="style12">反馈学期</td>
+		<td style="width: 33%" class="style12">照片上传</td>
 	</tr>
+	</table></div></td></tr>
 			<tr><td colspan=8>
                 <div id="div_feedbacks">
 				<table class="class_feedbacks" style="width: 100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="1 "height="26" class="style49" style="width: 258px">
-				<input class="sponserApply" type="text" id="feedbacks[0]_feedbackDate" name="feedbackDate" style="width: 86px"></td>
-		<td colspan="4" class="style11" >
-				<input class="sponserApply" type="text" id="feedbacks[0]_semester" name="semester" style="width: 100px" /></td>
-		<td colspan="3" class="style11" >
-				<input type="file" multiple=multiple class="sponserPhoto" id="feedbacks[0]_picture" name="feedbacks[0]_picture" style="width: 80px" /></td>
+		<td  style="width: 33%"  class="style12">
+				<input  disabled="disabled" class="sponserApply" type="text" id="feedbacks[0]_feedbackDate" name="feedbackDate"></td>
+		<td style="width: 33%" class="style12" >
+				<input disabled="disabled" class="sponserApply" type="text" id="feedbacks[0]_semester" name="semester"/></td>
+		<td  style="width: 33%" class="style12" >
+				<input disabled="disabled"  type="file" multiple=multiple class="sponserPhoto" id="feedbacks[0]_picture" name="feedbacks[0]_picture"/></td>
 	</tr>
 	</table>
 	</div></td></tr>
@@ -215,22 +217,27 @@ input:not([type="checkbox"]) {
 			</tr>		
 			
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
+		
 		<td colspan="8" height="26" style="height: 20.1pt" class="style49">
 		通信记录登记</td>
 	</tr>
+	<tr><td colspan=8><div><table width="100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" class="style49">日期</td>
-		<td colspan="4" class="style50">信件内容</td>
-		<td colspan="3" class="style11">照片上传</td>
+		<td style="width: 9%" class="style12">日期</td>
+		<td style="width: 69%" class="style12">信件内容</td>
+		<td style="width: 22%" class="style12">照片上传</td>
 	</tr>
+	</table></div></td></tr>
 			<tr><td colspan=8>
                 <div id="div_communicates">
 				<table class="class_communicates" style="width: 100%">
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="1 "height="26" class="style49" style="width: 258px">
-				<input class="sponserApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
-		<td colspan="7" style="width: 268434864px" class="style11" >
-				<input class="sponserApply" type="text" id="communicates[0]_content" name="content" style="width: 588px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;				<input type="file" multiple=multiple class="sponserPhoto" id="communicates[0]_picture" name="communicates[0]_picture" style="width: 80px"></td>
+		<td class="style12"  style="width: 9%">
+				<input class="sponserApply" type="text" id="communicates[0]_communicateDate" name="communicateDate"></td>
+		<td  style="width: 69%" class="style12" >
+				<input class="sponserApply" type="text" id="communicates[0]_content" name="content">
+		<td  style="width: 22%" class="style12" >			
+				<input type="file" multiple=multiple class="sponserPhoto" id="communicates[0]_picture" name="communicates[0]_picture" ></td>
 	</tr>
 	</table>
 	</div></td></tr>
