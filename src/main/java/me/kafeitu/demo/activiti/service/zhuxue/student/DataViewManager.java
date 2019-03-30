@@ -123,7 +123,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getPoliticFace();
 			datas[i][k++] = result.getProfectional();
 			datas[i][k++] = result.getBirthdate();
-			datas[i][k++] = result.getStudentsToSponse();
+			datas[i][k++] = result.getStudentsToSponseString();
 			datas[i][k++] = result.getSponseStartTime();
 			datas[i][k++] = result.getSponseEndTime();
 			datas[i][k++] = result.getSponseEndReason();
@@ -132,10 +132,58 @@ public class DataViewManager  {
 		return fileName;
 	}
 	
+	
+//设置资助登记表内容	
+	public String setSponseRegistryRows() {
+		fileName = "支助人" + System.currentTimeMillis() + ".xls";
+		String[] sponserTitles = {"学生编号","学生姓名","学校","年级","资助人编号","资助人","邮箱","电话","QQ","资助金额"};
+		titles = sponserTitles;
+		int cols = titles.length;
+		List<Student> results=studentManager.getAllStudent();
+		int rows = results.size();
+		datas = new String[rows][cols];		
+		for(int i=0;i<rows ;i++)
+		{
+			Student result = results.get(i);
+/*
+			List<Transfer> transfers = result.getTransfers();
+			String sponseStudentNos ="" ;
+			for(int l=0;i<transfers.size();l++)
+				sponseStudentNos += "/" + transfers.get(l).getStudentToSponse().getAuditNo();
+			sponseStudentNos = sponseStudentNos.substring(1);
+*/
+			int k = 0;
+			datas[i][k++] = result.getAuditNo();
+			datas[i][k++] = result.getStudentName();	
+			School school = result.getSchools().get(0);			
+			datas[i][k++] = school.getSchool();
+			datas[i][k++] = school.getGrade();
+			Sponser sponser = result.getSponser();
+			datas[i][k++] = sponser.getName();
+			datas[i][k++] = result.getEmail();
+			datas[i][k++] = result.getApplicantContactNum();
+			datas[i][k++] = result.getQq();
+			List<Transfer> transfers = result.getTransfers();
+			int sponseAmount=0;
+			for(int l=0;i<transfers.size();l++)
+			{
+				sponseAmount += transfers.get(l).getGrantAmount();
+			}
+			datas[i][k++] = Integer.toString(sponseAmount);
+		}
+		return fileName;
+	}	
+	
 	public void writeSponsersToExcelFile(OutputStream os)
 	{
 		this.writeToExcelFile(0, os);
 	}
+
+	public void writeSponseRegistryToExcelFile(OutputStream os)
+	{
+		this.writeToExcelFile(0, os);
+	}
+
 	
 	
 }

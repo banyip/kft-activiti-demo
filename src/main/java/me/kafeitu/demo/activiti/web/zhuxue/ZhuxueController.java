@@ -754,7 +754,7 @@ public class ZhuxueController {
     }
 
    
-  //导出EXCEL
+  //导出学生到EXCEL
     @RequestMapping(value = "exportstudent")
     public void exportStudentExcel(HttpServletResponse response) throws Exception {
 
@@ -769,7 +769,7 @@ public class ZhuxueController {
         }
     }
 
-    //导出EXCEL
+    //导出资助人到EXCEL
     @RequestMapping(value = "exportsponser")
     public void exportSponserExcel(HttpServletResponse response) throws Exception {
 
@@ -783,6 +783,24 @@ public class ZhuxueController {
             e.printStackTrace();
         }
     }
+ 
+    //导出资助登记到EXCEL
+    @RequestMapping(value = "exportsponseregistry")
+    public void exportSponseRegistryExcel(HttpServletResponse response) throws Exception {
+
+        // 响应到客户端
+        try {        		
+        		String fileName = dataview.setSponserRows();
+           		this.setResponseHeader(response, fileName);
+        		OutputStream os = response.getOutputStream();
+                dataview.writeSponsersToExcelFile(os);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+    
+    
     /**
      * @return void
      * @Author 

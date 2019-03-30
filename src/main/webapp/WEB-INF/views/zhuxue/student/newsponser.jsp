@@ -117,7 +117,7 @@ input:not([type="checkbox"]) {
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td colspan="2" height="24" style="height: 18.0pt;" class="style1">资助学生</td>
 		<td colspan="6" class="style1">
-			<input class="sponserApply" id="studentsToSponse" name="studentsToSponse" type="text" style="width: 95%" /></td>
+			<input disabled="disabled" class="sponserApply" id="studentsToSponse" name="studentsToSponse" type="text" style="width: 95%" /></td>
 	</tr>
 	
 	<tr><td colspan=8>		    <div>

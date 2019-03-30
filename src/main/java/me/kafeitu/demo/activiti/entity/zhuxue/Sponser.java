@@ -55,14 +55,25 @@ public class Sponser extends IdEntity implements Serializable {
 	private String sponseStartTime;
 	private String sponseEndTime;
 	private String sponseEndReason;
-	private String studentsToSponse;
 	private String sendEmail;
 	private String operatingFee;
 	
+	private List<Student> studentsToSponse=new ArrayList<Student>();
 	private List<Transfer> transfers=new ArrayList<Transfer>();
 	private List<Feedback> feedbacks = new ArrayList<Feedback>();
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private Map<String, Object> variables;
+	
+	public String getStudentsToSponseString()
+	{
+		String s_studentsToSponse = "";
+		for(int l=0;l<this.studentsToSponse.size();l++)
+			s_studentsToSponse += this.studentsToSponse.get(l).getAuditNo();
+		s_studentsToSponse = s_studentsToSponse.substring(1);		
+		return s_studentsToSponse;
+	}
+	
+	
 	@Transient
 	public Map<String, Object> getVariables() {
 		return variables;
@@ -167,11 +178,6 @@ public class Sponser extends IdEntity implements Serializable {
 	}
 
 	@Column
-	public String getStudentsToSponse() {
-		return studentsToSponse;
-	}
-
-	@Column
 	public String getSendEmail() {
 		return sendEmail;
 	}
@@ -181,16 +187,26 @@ public class Sponser extends IdEntity implements Serializable {
 		return operatingFee;
 	}
 
+	@Column
+	@OneToMany(fetch = FetchType.LAZY,mappedBy ="sponser")
+	@JsonManagedReference
+	public List<Student> getStudentsToSponse() {
+		return studentsToSponse;
+	}
+
+	/**
+	 * @param studentsToSponse the studentsToSponse to set
+	 */
+	public void setStudentsToSponse(List<Student> studentsToSponse) {
+		this.studentsToSponse = studentsToSponse;
+	}
+
 	public void setSendEmail(String sendEmail) {
 		this.sendEmail = sendEmail;
 	}
 
 	public void setOperatingFee(String operatingFee) {
 		this.operatingFee = operatingFee;
-	}
-
-	public void setStudentsToSponse(String studentsToSponse) {
-		this.studentsToSponse = studentsToSponse;
 	}
 
 	public void setFeedbacks(List<Feedback> feedbacks) {

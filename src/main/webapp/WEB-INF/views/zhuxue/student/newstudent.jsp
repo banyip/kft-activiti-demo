@@ -472,7 +472,7 @@
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style11">资助建议</td>
 		<td colspan="6" class="style11" style="height: 20pt">　<span style="mso-spacerun:yes">
-		<select class="sponserApply" id="student_sponseRecommandation" name="sponseRecommandation" style="width: 150px">
+		<select class="studentApply" id="student_sponseRecommandation" name="sponseRecommandation" style="width: 150px">
 			<option value="long">建议长期资助</option>
 			<option value="short">短期困难</option>
 			<option value="no">不资助</option>

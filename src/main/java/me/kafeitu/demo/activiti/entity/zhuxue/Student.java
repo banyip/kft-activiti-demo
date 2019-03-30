@@ -6,6 +6,7 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
@@ -206,6 +207,7 @@ public class Student extends IdEntity implements Serializable {
 	private String sponseRecommandation;
 	private List<School> schools = new ArrayList<School>();
 	private List<Exam> exams = new ArrayList<Exam>();
+	private Sponser sponser;
 	private List<Transfer> transfers = new ArrayList<Transfer>();
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private List<Evaluate> evaluates = new ArrayList<Evaluate>();
@@ -216,6 +218,7 @@ public class Student extends IdEntity implements Serializable {
 	private String debtDescribe;
 	private String memo;
 	
+
 	@Column(length=20)
 	public String getStudyExpenditure() {
 		return studyExpenditure;
@@ -831,6 +834,19 @@ public class Student extends IdEntity implements Serializable {
 	@Column(length = 600)
 	public String getMemo() {
 		return memo;
+	}
+ 
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name="sponserId")
+	@JsonBackReference
+	public Sponser getSponser() {
+		return sponser;
+	}
+	/**
+	 * @param sponser the sponser to set
+	 */
+	public void setSponser(Sponser sponser) {
+		this.sponser = sponser;
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;
