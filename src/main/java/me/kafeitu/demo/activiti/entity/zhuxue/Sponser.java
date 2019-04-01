@@ -166,7 +166,7 @@ public class Sponser extends IdEntity implements Serializable {
 		return transfers;
 	}
 	
-	
+	@Transient
 	public List<Communicate> getCommunicates() {
 		int studentCount = this.studentsToSponse.size();
 		communicates.clear();
