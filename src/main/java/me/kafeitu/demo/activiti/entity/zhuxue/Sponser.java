@@ -166,9 +166,10 @@ public class Sponser extends IdEntity implements Serializable {
 		return transfers;
 	}
 	
+	
 	public List<Communicate> getCommunicates() {
 		int studentCount = this.studentsToSponse.size();
-		communicates = null;
+		communicates.clear();
 		for(int i=0;i<studentCount;i++)
 			communicates.addAll(this.studentsToSponse.get(i).getCommunicates());;		
 		return communicates;
