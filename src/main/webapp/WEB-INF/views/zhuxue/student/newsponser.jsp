@@ -181,76 +181,53 @@ input:not([type="checkbox"]) {
 					style="width:60px; height:24px;" onclick="deletetable('newsponser','transfers')" />
 				</td>
 			</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" style="height: 20.1pt" class="style49">
-		反馈记录登记</td>
+	<tr style="mso-height-source:userset;">
+		<td colspan="8" style="height: 20pt" class="style12">
+		学生近况</td>
 	</tr>
-	<tr><td colspan=8><div><table width="100%">
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td style="width: 33%" class="style12">日期</td>
-		<td style="width: 33%" class="style12">反馈学期</td>
-		<td style="width: 33%" class="style12">照片上传</td>
-	</tr>
-	</table></div></td></tr>
-			<tr><td colspan=8>
-                <div id="div_feedbacks">
-				<table class="class_feedbacks" style="width: 100%">
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td  style="width: 33%"  class="style12">
-				<input  disabled="disabled" class="sponserApply" type="text" id="feedbacks[0]_feedbackDate" name="feedbackDate"></td>
-		<td style="width: 33%" class="style12" >
-				<input disabled="disabled" class="sponserApply" type="text" id="feedbacks[0]_semester" name="semester"/></td>
-		<td  style="width: 33%" class="style12" >
-				<input disabled="disabled"  type="file" multiple=multiple class="sponserPhoto" id="feedbacks[0]_picture" name="feedbacks[0]_picture"/></td>
-	</tr>
-	</table>
-	</div></td></tr>
-				<tr>
-				<td colspan="8" class="style1">
-					<input type="button" name="button"
-					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('newsponser','feedbacks')" />      
-					<input
-					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('newsponser','feedbacks')" />
-				</td>
-			</tr>		
-			
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		
-		<td colspan="8" height="26" style="height: 20.1pt" class="style49">
-		通信记录登记</td>
-	</tr>
-	<tr><td colspan=8><div><table width="100%">
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td style="width: 9%" class="style12">日期</td>
-		<td style="width: 69%" class="style12">信件内容</td>
-		<td style="width: 22%" class="style12">照片上传</td>
+	<tr>
+	<td colspan="8"><div><table style="width: 100%">
+	<tr>
+		<td class="style12" style="width: 15%">日期</td>
+		<td class="style12"  style="width: 60%">近况</td>
+		<td class="style12" style="width: 25%">照片上传</td>
 	</tr>
 	</table></div></td></tr>
-			<tr><td colspan=8>
-                <div id="div_communicates">
-				<table class="class_communicates" style="width: 100%">
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td class="style12"  style="width: 9%">
-				<input class="sponserApply" type="text" id="communicates[0]_communicateDate" name="communicateDate"></td>
-		<td  style="width: 69%" class="style12" >
-				<input class="sponserApply" type="text" id="communicates[0]_content" name="content">
-		<td  style="width: 22%" class="style12" >			
-				<input type="file" multiple=multiple class="sponserPhoto" id="communicates[0]_picture" name="communicates[0]_picture" ></td>
+			<tr><td colspan=8>	
+                <div >	  
+				<table style="width: 100%">
+	<tr>
+		<td height="26" class="style11"  style="width: 15%">
+				<input class="sponserApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
+		<td style="width: 60%" class="style11" >
+				<input class="sponserApply" type="text" id="communicates[0]_content" name="content">				
+		<td style="width: 25%" class="style11" >
+<a target=showpic multiple=multiple class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px">没有图片</a></td>
 	</tr>
-	</table>
-	</div></td></tr>
+	</table></div></td></tr>
+	<tr><td colspan=8>	
+    <div id="div_communicates">	  
+	<table class="class_communicates" style="width: 100%">
+	<tr>
+		<td height="26" class="style11"  style="width: 15%">
+				<input class="sponserApply" type="text" id="communicates[1]_communicateDate" name="communicateDate" style="width: 86px"></td>
+		<td style="width: 60%" class="style11" >
+				<input class="sponserApply" type="text" id="communicates[1]_content" name="content">				
+		<td style="width: 25%" class="style11" >
+<input type="file" multiple=multiple class="sponserPhoto" id="communicates[1]_picture" name="communicates[0]_picture"></td>
+	</tr>
+	</table></div></td></tr>
 				<tr>
-				<td colspan="8" class="style1">
+				<td colspan="8" class="style12">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="inserttable('newsponser','communicates')" />      
+					onclick="inserttable('editstudent','communicates')" />      
 					<input
 					type="button" name="button" value="删 除"
-					style="width:60px; height:24px;" onclick="deletetable('newsponser','communicates')" />
+					style="width:60px; height:24px;" onclick="deletetable('editstudent','communicates')" />
 				</td>
-			</tr>					
+			</tr>
+				
 </table>
 
 

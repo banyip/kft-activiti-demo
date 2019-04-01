@@ -169,6 +169,9 @@ public class Sponser extends IdEntity implements Serializable {
 	@Column
 	@OneToMany(cascade = { CascadeType.ALL })
 	public List<Communicate> getCommunicates() {
+		int studentCount = this.studentsToSponse.size();
+		for(int i=0;i<studentCount;i++)
+			communicates.addAll(this.studentsToSponse.get(i).getCommunicates());;		
 		return communicates;
 	}
 
