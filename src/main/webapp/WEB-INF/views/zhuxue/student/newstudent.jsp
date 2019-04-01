@@ -471,13 +471,21 @@
 	</td></tr>
 	<tr style="mso-height-source:userset;">
 		<td colspan="2" style="height: 20pt" class="style11">资助建议</td>
-		<td colspan="6" class="style11" style="height: 20pt">　<span style="mso-spacerun:yes">
+		<td colspan="2" class="style11" style="height: 20pt">　<span style="mso-spacerun:yes">
 		<select class="studentApply" id="student_sponseRecommandation" name="sponseRecommandation" style="width: 150px">
 			<option value="long">建议长期资助</option>
 			<option value="short">短期困难</option>
 			<option value="no">不资助</option>
 			</select>
 		</span>　</td>
+		<td colspan="2" style="height: 20pt" class="style11">资助人</td>
+		<td class="style11" >
+				<select class="studentApply" id="student_sponser" name="sponser">
+					<c:forEach items="${sponserList }" var="sponser"> 
+					<option value="${sponser.id }">${sponser.name }</option> 
+					</c:forEach>				
+				</select></td> 
+		
 	</tr>
 	<tr height="26" style="mso-height-source:userset;height:20.1pt">
 		<td colspan="3" height="26" style="height: 20.1pt" class="style11">
@@ -554,7 +562,7 @@
 		<td height="26" class="style11"  style="width: 15%">
 				<input class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
 		<td style="width: 60%" class="style11" >
-				<input class="studentApply" type="text" id="communicates[0]_content" name="content">				
+				<input class="style58" type="text" id="communicates[0]_content" name="content">				
 		<td style="width: 25%" class="style11" >
 <input type="file" multiple=multiple class="studentPhoto" id="communicates[0]_picture" name="communicates[0]_picture"></td>
 	</tr>

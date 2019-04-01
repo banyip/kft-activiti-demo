@@ -145,10 +145,12 @@ public class ZhuxueController {
         Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
         int[] pageParams = PageUtil.init(page, request);
         List<Student> results=studentManager.getAllStudent();
+        List<Sponser> sponserList = sponserManager.getAllSponser();
         String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
         page.setResult(results);
         mav.addObject("page", page);
+        mav.addObject("sponserlist",sponserList);
         return mav;
     }
 
