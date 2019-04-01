@@ -714,6 +714,7 @@ public class ZhuxueController {
     @ResponseBody
     public Sponser getSponserWithVars(@PathVariable("id") Long id) {
         Sponser sponser = sponserManager.getSponser(id) ;
+        sponser.getCommunicates();
         logger.debug("资助人信息读取成功：id="+ sponser.getId());
         logger.debug("资助人信息读取成功：name="+ sponser.getName());
        // Map<String, Object> variables = taskService.getVariables(taskId);
