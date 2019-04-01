@@ -150,7 +150,7 @@ public class ZhuxueController {
         page.setTotalCount(results.size());
         page.setResult(results);
         mav.addObject("page", page);
-        mav.addObject("sponserlist",sponserList);
+        mav.addObject("sponserList",sponserList);
         return mav;
     }
 
