@@ -284,8 +284,9 @@ public class ZhuxueController {
 			{
 				Object value = variables.get(key);
 				Sponser sponser = sponserManager.getSponser(Long.parseLong((String)  value));
-				sponser.addStudent(student);
-				invoke("setSponser",sponser,(Object)student,"Student","me.kafeitu.demo.activiti.entity.zhuxue.Sponser");
+				if(!sponser.getStudentsToSponse().contains(student))
+					sponser.addStudent(student);
+				student.setSponserId((String)value);
 			}else if(key.indexOf("student_")==0)
    			{
  
