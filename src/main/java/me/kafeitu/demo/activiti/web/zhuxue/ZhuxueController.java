@@ -461,8 +461,7 @@ public class ZhuxueController {
 		        		int pos = "Student_".length();
 		        		String whatPhoto = filename.substring(pos);
 		        		student.savePicture(studentPictureFile,whatPhoto);
-		        	}
-		        	if(filename.indexOf("audits")==0)
+		        	}else if(filename.indexOf("audits")==0)
 		        	{
 		 				String invokeClassName = "audits"; 
 		        		int pos = (invokeClassName).length();
@@ -491,8 +490,7 @@ public class ZhuxueController {
 			   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
 			   				audit.savePicture(studentPictureFile, whattosave);
 		   				}
-	   				}
-		        	}else if(filename.indexOf("communicates")>=0)
+	   				}	else if(filename.indexOf("communicates")>=0)
 		        	{
 		        		logger.debug("开始保存communicates照片");
 		 				String invokeClassName = "communicates";   				
@@ -511,6 +509,7 @@ public class ZhuxueController {
 		        	}
 		        }
 	        }
+	    }
         studentManager.saveStudent(student);
         return "success";	 
 
