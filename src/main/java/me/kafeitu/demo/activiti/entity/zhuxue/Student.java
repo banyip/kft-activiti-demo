@@ -848,13 +848,14 @@ public class Student extends IdEntity implements Serializable {
 		return sponser;
 	}
 	
-	@Column(length = 20)
+//	@Column(length = 20)
+	@Transient
 	public String getSponserId() {
 		return sponserId;
 	}
 	public void setSponserId(String sponserId) {
 		this.sponserId = sponserId;
-		sponserManager.getSponser(Long.parseLong(sponserId));
+		this.sponser = sponserManager.getSponser(Long.parseLong(sponserId));
 	}
 	/**
 	 * @param sponser the sponser to set
