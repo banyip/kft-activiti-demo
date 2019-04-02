@@ -192,8 +192,7 @@ public class Sponser extends IdEntity implements Serializable {
 	}
 
 	@Column
-	@OneToMany(fetch = FetchType.LAZY,mappedBy ="sponser")
-	@JsonManagedReference
+	@OneToMany(fetch = FetchType.LAZY)
 	public List<Student> getStudentsToSponse() {
 		return studentsToSponse;
 	}

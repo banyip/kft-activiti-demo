@@ -306,7 +306,8 @@ public class Student extends IdEntity implements Serializable {
 		this.communicates = communicates;
 	}
 
-	@Column
+	@Column	
+	@OneToMany(fetch = FetchType.EAGER)
 	public List<Transfer> getTransfers() {
 		return transfers;
 	}
