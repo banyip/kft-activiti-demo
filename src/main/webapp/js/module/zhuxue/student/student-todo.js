@@ -80,7 +80,7 @@ function showMultiplePics(myparent,filenamesstr,aid)
                             $(aobj[ii-1]).after("<br/>"+content);
                         }
                     $(myparent.find(id)[ii]).hide();
-                    $(myparent.find(aid)[ii]).show();
+                    $(myparent.find(aid)[ii]).css('visibility', 'visible');;
                     $(myparent.find(aid)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
                     $(myparent.find(aid)[ii]).text("显示图片");
                 }                                            
