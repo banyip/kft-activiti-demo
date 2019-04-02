@@ -855,7 +855,7 @@ public class Student extends IdEntity implements Serializable {
 	}
 	public void setSponserId(String sponserId) {
 		this.sponserId = sponserId;
-		this.sponser = sponserManager.getSponser(Long.parseLong(sponserId));
+		this.setSponser(sponserManager.getSponser(Long.parseLong(sponserId)));
 	}
 	/**
 	 * @param sponser the sponser to set
