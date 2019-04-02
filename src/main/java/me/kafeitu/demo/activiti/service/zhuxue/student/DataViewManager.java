@@ -158,7 +158,7 @@ public class DataViewManager  {
 			School school = result.getSchools().get(0);			
 			datas[i][k++] = school.getSchool();
 			datas[i][k++] = school.getGrade();
-			Sponser sponser = result.getSponser();
+			Sponser sponser = sponserManager.getSponser(Long.parseLong(result.getSponserId()));
 			if(sponser!=null)
 			{	
 				datas[i][k++] = sponser.getSponserNo();
