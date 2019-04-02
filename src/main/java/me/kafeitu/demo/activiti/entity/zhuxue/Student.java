@@ -853,7 +853,7 @@ public class Student extends IdEntity implements Serializable {
 		return sponserId;
 	}
 	public void setSponserId(String sponserId) {
-		this.sponserNo = sponserNo;
+		this.sponserId = sponserId;
 		sponserManager.getSponser(Long.parseLong(sponserId));
 	}
 	/**
