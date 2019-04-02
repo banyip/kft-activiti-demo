@@ -38,8 +38,6 @@ import java.util.List;
 @Table(name = "ZHUXUE_STUDENT")
 public class Student extends IdEntity implements Serializable {
 
-    @Autowired
-    protected SponserManager sponserManager;
     
 	private static final long serialVersionUID = 1L;
 
@@ -855,6 +853,8 @@ public class Student extends IdEntity implements Serializable {
 	}
 	public void setSponserId(String sponserId) {
 		this.sponserId = sponserId;
+		SponserManager sponserManager= new SponserManager();
+
 		this.setSponser(sponserManager.getSponser(Long.parseLong(sponserId)));
 	}
 	/**
