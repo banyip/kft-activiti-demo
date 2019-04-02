@@ -481,6 +481,7 @@
 		<td colspan="2" style="height: 20pt" class="style11">资助人</td>
 		<td class="style11" >
 				<select class="studentApply" id="student_sponser" name="sponser">
+					<option value="">请选择资助人</option>	
 					<c:forEach items="${sponserList }" var="sponser"> 
 					<option value="${sponser.id }">${sponser.name }</option> 
 					</c:forEach>				
