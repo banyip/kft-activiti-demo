@@ -11,6 +11,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.sun.xml.xsom.parser.AnnotationContext;
 
 import javax.persistence.*;
 
@@ -853,9 +854,8 @@ public class Student extends IdEntity implements Serializable {
 	}
 	public void setSponserId(String sponserId) {
 		this.sponserId = sponserId;
-		SponserManager sponserManager= new SponserManager();
-
-		this.setSponser(sponserManager.getSponser(Long.parseLong(sponserId)));
+		
+		 
 	}
 	/**
 	 * @param sponser the sponser to set
@@ -1319,4 +1319,5 @@ public class Student extends IdEntity implements Serializable {
 		this.communicates = communicates;
 	}
 
+	
 }

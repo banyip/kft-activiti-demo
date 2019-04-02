@@ -501,6 +501,7 @@ public class ZhuxueController {
 		        	}
 		        }
 	        }
+   		student.setSponser(sponserManager.getSponser(Long.parseLong(student.getSponserId())));
         studentManager.saveStudent(student);
         return "success";	 
 
