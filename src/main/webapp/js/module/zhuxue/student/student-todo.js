@@ -112,8 +112,8 @@ function inserttable(whichpage,whichpart) {
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
 	if(myparent.find('.'+tableclass).length <=7){
-	content.replace('style="display: none;"','');
-	content.replace("visibility: visible;","");
+	content = content.replace('style="display: none;"','');
+	content = content.replace("visibility: visible;","");
     myparent.find('#'+divid).append(content);
 	}else{
 		alert("最多同时添加5个信息!");
