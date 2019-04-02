@@ -265,7 +265,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                                                            //add line
                                    // insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                 }   
-                        else if(key.indexOf("Picture")>=0||key.indexOf("Photo")>=0)
+                        else if(key.indexOf("picture")>=0||key.indexOf("Picture")>=0||key.indexOf("Photo")>=0)
                         {
                             var filename=eval('v['+i+'].'+key);
                             if(filename!=null&&filename.length>0)
