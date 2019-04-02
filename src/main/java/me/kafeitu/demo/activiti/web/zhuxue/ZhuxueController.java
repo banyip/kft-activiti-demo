@@ -452,7 +452,7 @@ public class ZhuxueController {
 	        for(int i=0;i<fileNameList.length;i++)
 	        {
 	        	String filename = fileNameList[i];
-	
+	        	logger.debug("保存照片filename:"+filename);
 	        	MultipartFile studentPictureFile = studentPictureFiles[i];
 		   		if(!studentPictureFile.isEmpty())
 		        {
