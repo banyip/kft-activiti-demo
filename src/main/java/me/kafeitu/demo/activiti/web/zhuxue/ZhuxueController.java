@@ -492,8 +492,9 @@ public class ZhuxueController {
 			   				audit.savePicture(studentPictureFile, whattosave);
 		   				}
 	   				}
-		        	}else if(filename.indexOf("communicates")==0)
+		        	}else if(filename.indexOf("communicates")>=0)
 		        	{
+		        		logger.debug("开始保存communicates照片");
 		 				String invokeClassName = "communicates";   				
 		   				int pos = (invokeClassName).length();
 		   				int index = Integer.parseInt(filename.substring(pos+1,pos+2));
@@ -504,7 +505,9 @@ public class ZhuxueController {
 		   				}
 		   				Communicate item = items.get(index);
 		   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
+		   				logger.debug("保存照片whattosave:"+whattosave);
 		   				item.savePicture(studentPictureFile, whattosave);
+		   				logger.debug("保存照片成功");
 		        	}
 		        }
 	        }
