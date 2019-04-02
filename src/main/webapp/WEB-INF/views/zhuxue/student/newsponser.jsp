@@ -164,31 +164,21 @@
 		<td class="style12" style="width: 25%">照片上传</td>
 		<td class="style12" style="width: 15%">发送日期</td>
 	</tr>
-	</table></div></td></tr>
 			<tr><td colspan=8>	
-                <div >	  
-				<table style="width: 100%">
+                <div id="div_communicates">	  
+				<table class="class_communicates" style="width: 100%">
 	<tr>
 		<td class="style11"  style="width: 15%">
 				<input class="sponserApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
-		<td style="width: 60%" class="style11" >
+		<td style="width: 45%" class="style11" >
 				<input class="sponserApply" type="text" id="communicates[0]_content" name="content">				
 		<td style="width: 25%" class="style11" >
-<a target=showpic multiple=multiple class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px">没有图片</a></td>
-	</tr>
-	</table></div></td></tr>
-	<tr><td colspan=8>	
-    <div id="div_communicates">	  
-	<table class="class_communicates" style="width: 100%">
-	<tr>
+<input type="file" multiple=multiple class="studentPhoto" id="communicates[0]_picture" name="communicates[0]_picture"></td>
 		<td class="style11"  style="width: 15%">
-				<input class="sponserApply" type="text" id="communicates[1]_communicateDate" name="communicateDate" style="width: 86px"></td>
-		<td style="width: 60%" class="style11" >
-				<input class="sponserApply" type="text" id="communicates[1]_content" name="content">				
-		<td style="width: 25%" class="style11" >
-<input type="file" multiple=multiple class="sponserPhoto" id="communicates[1]_picture" name="communicates[0]_picture"></td>
+				<input class="sponserApply" type="text" id="communicates[0]_sendDate" name="sendDate" style="width: 86px"></td>
 	</tr>
-	</table></div></td></tr>
+	</table>
+	</div></td></tr>
 				<tr>
 				<td colspan="8" class="style12">
 					<input type="button" name="button"

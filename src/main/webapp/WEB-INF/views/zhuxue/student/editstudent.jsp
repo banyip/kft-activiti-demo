@@ -626,7 +626,7 @@
 		<td class="style11"  style="width: 15%">
 				<input class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
 		<td style="width: 45%" class="style11" >
-				<input class="style58" type="text" id="communicates[0]_content" name="content">				
+				<input class="studentApply" type="text" id="communicates[0]_content" name="content">				
 		<td style="width: 25%" class="style11" >
 <a target=showpic multiple=multiple class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px">没有图片</a></td>
 		<td class="style11"  style="width: 15%">
@@ -640,7 +640,7 @@
 		<td class="style11"  style="width: 15%">
 				<input class="studentApply" type="text" id="communicates[1]_communicateDate" name="communicateDate" style="width: 86px"></td>
 		<td style="width: 45%" class="style11" >
-				<input class="style58" type="text" id="communicates[1]_content" name="content">				
+				<input class="studentApply" type="text" id="communicates[1]_content" name="content">				
 		<td style="width: 25%" class="style11" >
 <input type="file" multiple=multiple class="studentPhoto" id="communicates[1]_picture" name="communicates[0]_picture"></td>
 		<td class="style11"  style="width: 15%">
