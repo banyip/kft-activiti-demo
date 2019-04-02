@@ -50,11 +50,20 @@ var detail = {};
 
 //count the poor score
 
-
+function showSinglePic(myparent,filename,aid)
+{
+	var id=aid.substring(1);
+	myparent.find(id).hide();
+	myparent.find(aid).show();
+    myparent.find(aid).attr('href',ctx+'/zhuxue/student/showPic/'+filename);                
+    myparent.find(aid).text("显示图片");
+	
+}
 
 function showMultiplePics(myparent,filenamesstr,aid)
 {
     var aobj = myparent.find(aid);
+    var id = aid.substring(1);
     if(aobj.length>0)
     {  
         var content = aobj[0].cloneNode(true).outerHTML;
@@ -70,6 +79,8 @@ function showMultiplePics(myparent,filenamesstr,aid)
                             //var content1 = content.replace(photokey, photokey+ii);
                             $(aobj[ii-1]).after("<br/>"+content);
                         }
+                    $(myparent.find(id)[ii]).hide();
+                    $(myparent.find(aid)[ii]).show();
                     $(myparent.find(aid)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
                     $(myparent.find(aid)[ii]).text("显示图片");
                 }                                            
