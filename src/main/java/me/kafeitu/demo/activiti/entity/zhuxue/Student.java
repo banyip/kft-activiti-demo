@@ -212,7 +212,6 @@ public class Student extends IdEntity implements Serializable {
 	private String sponseRecommandation;
 	private List<School> schools = new ArrayList<School>();
 	private List<Exam> exams = new ArrayList<Exam>();
-	private Sponser sponser;
 	private List<Transfer> transfers = new ArrayList<Transfer>();
 	private List<Communicate> communicates = new ArrayList<Communicate>();
 	private List<Evaluate> evaluates = new ArrayList<Evaluate>();
@@ -222,6 +221,8 @@ public class Student extends IdEntity implements Serializable {
 	private String liveDescribe;
 	private String debtDescribe;
 	private String memo;
+	private String sponserId;
+	
 	@Column(length=20)
 	public String getStudyExpenditure() {
 		return studyExpenditure;
@@ -839,18 +840,12 @@ public class Student extends IdEntity implements Serializable {
 		return memo;
 	}
  
-	@ManyToOne(fetch = FetchType.EAGER)
-	@JoinColumn(name="sponserId")
-	@JsonBackReference
-	public Sponser getSponser() {
-		return sponser;
+	@Column(length = 600)
+	public String getSponserId() {
+		return sponserId;
 	}
-	
-	/**
-	 * @param sponser the sponser to set
-	 */
-	public void setSponser(Sponser sponser) {
-		this.sponser = sponser;
+	public void setSponserId(String sponserId) {
+		this.sponserId = sponserId;
 	}
 	public void setMemo(String memo) {
 		this.memo = memo;

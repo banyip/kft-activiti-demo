@@ -275,6 +275,11 @@ public class Sponser extends IdEntity implements Serializable {
 	public void setTransfers(List<Transfer> transfers) {
 		this.transfers = transfers;
 	}
+	public void addStudent(Student student)
+	{
+		if(student!=null)
+			this.studentsToSponse.add(student);
+	}
 	
 	public void savePicture(MultipartFile file,String whatPhoto) throws Exception {
 		// 原始文件名

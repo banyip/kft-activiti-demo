@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-
-
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -499,7 +497,7 @@
 		</span>　</td>
 		<td colspan="2" style="height: 20pt" class="style11">资助人</td>
 		<td colspan="2" class="style11" >
-				<select class="studentApply" id="student_sponser" name="sponser">
+				<select class="studentApply" id="student_sponserId" name="sponserId">
 					<option value="">请选择资助人</option>		
 					<c:forEach items="${sponserList }" var="sponser"> 
 					<option value="${sponser.id }">${sponser.name }</option> 

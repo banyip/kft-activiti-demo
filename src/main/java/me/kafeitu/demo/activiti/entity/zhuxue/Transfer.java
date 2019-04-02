@@ -45,7 +45,7 @@ public class Transfer extends IdEntity implements Serializable {
 	private String method;
 	private String transferMan;
 	private String contactNo;
-    private Student studentToSponse;
+    private String studentId;
     private String memo;
     private Sponser sponser;
     private String grantTime;
@@ -81,27 +81,16 @@ public class Transfer extends IdEntity implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="studentId")
     @JsonBackReference 
-    public Student getStudentToSponse() {
-		return studentToSponse;
+    public String getStudentId() {
+		return studentId;
 	}
-	public void setStudentToSponse(Student studentToSponse) {
-	this.studentToSponse = studentToSponse;
+	public void setStudentId(String studentToSponse) {
+	this.studentId = studentToSponse;
 	
 	}
 
 
-/*
-    @Autowired
-    private StudentManager studentManager;
- */   
-	public void setStudentToSponse(String studentId) {
-		logger.debug("资助学生信息保存内容studentid："+studentId);
-		long studentid=Long.parseLong(studentId);
-		StudentManager studentManager= new StudentManager();
-        Student student =studentManager.getStudent(studentid);
-		this.setStudentToSponse(student);
-		student.addTransfer(this);
-	}
+
 	
 	@Column
 	public String getTransferTime() {

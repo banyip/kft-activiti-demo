@@ -2,35 +2,6 @@
     pageEncoding="UTF-8"%>
 
 
-<head>
-<style type="text/css">
-input:not([type="checkbox"]) {
-	width:95%
-	
-}
-.style11 {
-	color: #2F2B20;
-	font-size: 11.0pt;
-	font-weight: 400;
-	font-style: normal;
-	text-decoration: none;
-	font-family: 宋体;
-	text-align: left;
-	vertical-align: middle;
-    white-space: nowrap;
-    border-left: .5pt solid windowtext;
-	border-right: 1.5pt solid windowtext;
-	border-top: .5pt solid windowtext;
-	border-bottom: .5pt solid windowtext;
-	border: .5pt solid windowtext;
-	padding: 0px;
-}
-
-</style>
-
-</head>
-
-    
     
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse:
  collapse;width:674pt">
@@ -150,7 +121,7 @@ input:not([type="checkbox"]) {
 		<td class="style11" style="width: 9%">
 			<input class="sponserApply" id="transfers[0]_method" name="transfers[0]_method" type="text" /></td>
 		<td class="style11" style="width: 9%">
-				<select class="sponserApply" id="transfers[0]_studentToSponse" name="transfers[0]_studentToSponse">
+				<select class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId">
 					<c:forEach items="${studentList }" var="student"> 
 					<option value="${student.id }">${student.studentName }</option> 
 					</c:forEach>				

@@ -280,10 +280,11 @@ public class ZhuxueController {
            logger.debug("学生信息保存中filenames："+filenames);
            //logger.debug("学生信息保存中filenames："+studentPictureFiles);
    		for (String key : variableNames) {
-			if(key.indexOf("sponser")>=0)
+			if(key.indexOf("sponserId")>=0)
 			{
 				Object value = variables.get(key);
 				Sponser sponser = sponserManager.getSponser(Long.parseLong((String)  value));
+				sponser.addStudent(student);
 				invoke("setSponser",sponser,(Object)student,"Student","me.kafeitu.demo.activiti.entity.zhuxue.Sponser");
 			}else if(key.indexOf("student_")==0)
    			{
@@ -542,10 +543,10 @@ public class ZhuxueController {
 				}
 				Transfer item = items.get(index);
 				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
-				if(key.indexOf("studentToSponse")>=0)
+				if(key.indexOf("studentId")>=0)
 				{
 					Student student = studentManager.getStudent(Long.parseLong((String) value));
-					item.setStudentToSponse(student);
+					item.setStudentId((String)value);
 					student.addTransfer(item);
 					
 				}else
