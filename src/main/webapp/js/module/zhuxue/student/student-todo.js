@@ -295,7 +295,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                  myparent.find("input[type=checkbox][name="+k+"].studentApply").attr("checked",true);                
             } 
             else {
-				myparent.find('input[name=' + k + '].studentApply' ).val(v);
+				myparent.find('[name=' + k + '].studentApply' ).val(v);
 			}
         });
 		if ($.isFunction(callback)) {

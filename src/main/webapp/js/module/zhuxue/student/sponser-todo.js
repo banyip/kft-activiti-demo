@@ -202,7 +202,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                         	showMultiplePics(myparent,eval('v['+i+'].'+key),k+'\\['+i+'\\]_' + key);
                         }
                         else
-                            myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"]').val(eval('v['+i+'].'+key));   
+                            myparent.find('[id="'+k+'\\['+i+'\\]_' + key+'"]').val(eval('v['+i+'].'+key));   
                     }                        
                 }
             } else if (k == 'communicates') 
