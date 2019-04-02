@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-
     
     
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse:
@@ -166,8 +165,8 @@
 		<td class="style12" style="width: 15%">发送日期</td>
 	</tr>
 			<tr><td colspan=8>	
-                <div >	  
-				<table style="width: 100%">
+ <div id="div_communicates">	  
+				<table class="class_communicates" style="width: 100%">
 	<tr>
 		<td class="style11"  style="width: 15%">
 				<input disabled="disabled" class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>

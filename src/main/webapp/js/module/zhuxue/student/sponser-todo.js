@@ -213,7 +213,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                         inserttable(whichpage,k)
                     for(let key in v[i])
                     {
-                        if(key.indexOf("picture")>=0||key.indexOf("Photo")>=0)
+                        if(key.indexOf("Picture")>=0||key.indexOf("Photo")>=0)
                         {
                         	showMultiplePics(myparent,eval('v['+i+'].'+key),k+'\\['+i+'\\]_' + key);
                         }
