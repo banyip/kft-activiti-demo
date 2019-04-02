@@ -222,7 +222,6 @@ public class Student extends IdEntity implements Serializable {
 	private String liveDescribe;
 	private String debtDescribe;
 	private String memo;
-	private String sponserId;
 	@Column(length=20)
 	public String getStudyExpenditure() {
 		return studyExpenditure;
@@ -847,16 +846,6 @@ public class Student extends IdEntity implements Serializable {
 		return sponser;
 	}
 	
-//	@Column(length = 20)
-	@Transient
-	public String getSponserId() {
-		return sponserId;
-	}
-	public void setSponserId(String sponserId) {
-		this.sponserId = sponserId;
-		
-		 
-	}
 	/**
 	 * @param sponser the sponser to set
 	 */

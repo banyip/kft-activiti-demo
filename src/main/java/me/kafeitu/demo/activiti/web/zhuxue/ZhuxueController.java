@@ -280,9 +280,14 @@ public class ZhuxueController {
            logger.debug("学生信息保存中filenames："+filenames);
            //logger.debug("学生信息保存中filenames："+studentPictureFiles);
    		for (String key : variableNames) {
-   			
-   			if(key.indexOf("student_")==0)
+			if(key.indexOf("sponser")>=0)
+			{
+				Object value = variables.get(key);
+				Sponser sponser = sponserManager.getSponser(Long.parseLong((String)  value));
+				invoke("setSponser",value,(Object)student,"Student","me.kafeitu.demo.activiti.entity.zhuxue.Sponser");
+			}else if(key.indexOf("student_")==0)
    			{
+ 
    				logger.debug("学生信息保存内容key："+key);
    				String methodname= "set"+key.substring(8,9).toUpperCase()+key.substring(9);
    				Object value = variables.get(key);
@@ -501,7 +506,6 @@ public class ZhuxueController {
 		        	}
 		        }
 	        }
-   		student.setSponser(sponserManager.getSponser(Long.parseLong(student.getSponserId())));
         studentManager.saveStudent(student);
         return "success";	 
 
