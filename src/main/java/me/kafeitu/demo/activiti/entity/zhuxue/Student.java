@@ -307,8 +307,6 @@ public class Student extends IdEntity implements Serializable {
 	}
 
 	@Column
-	@OneToMany(mappedBy="studentToSponse")
-	@JsonManagedReference
 	public List<Transfer> getTransfers() {
 		return transfers;
 	}
