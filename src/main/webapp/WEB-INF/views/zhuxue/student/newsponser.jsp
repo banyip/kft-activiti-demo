@@ -15,19 +15,19 @@
 		<col width="105" style="mso-width-source:userset;mso-width-alt:3360;width:79pt" />
 		<col width="95" style="mso-width-source:userset;mso-width-alt:3040;width:71pt" />
 	</colgroup>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td colspan="8" height="26" width="898" style="height: 20.1pt; width: 674pt" class="style1">
+	<tr style="mso-height-source:userset;height:20.1pt">
+		<td colspan="8" width="898" style="height: 20.1pt; width: 674pt" class="style1">
 		资助人信息登记　</td>
 	</tr>
-	<tr height="26" style="mso-height-source:userset;height:20.1pt">
-		<td height="26" style="height: 20.1pt;" class="style1">编号</td>
+	<tr style="mso-height-source:userset;height:20.1pt">
+		<td style="height: 20.1pt;" class="style1">编号</td>
 		<td class="style1">姓名</td>
 		<td class="style1">官网登记昵称</td>
 		<td class="style1">联系电话</td>
 		<td class="style1">照片</td>
 		<td colspan="3" class="style1">邮箱</td>
 	</tr>
-		<td height="26" style="height: 20.1pt;" class="style1">
+		<td style="height: 20.1pt;" class="style1">
 			<input class="sponserApply" id="sponserNo" name="sponserNo" type="text" style="width: 81px" />
 		</td>
 		<td class="style1">
@@ -160,15 +160,16 @@
 	<td colspan="8"><div><table style="width: 100%">
 	<tr>
 		<td class="style12" style="width: 15%">日期</td>
-		<td class="style12"  style="width: 60%">近况</td>
+		<td class="style12"  style="width: 45%">近况</td>
 		<td class="style12" style="width: 25%">照片上传</td>
+		<td class="style12" style="width: 15%">发送日期</td>
 	</tr>
 	</table></div></td></tr>
 			<tr><td colspan=8>	
                 <div >	  
 				<table style="width: 100%">
 	<tr>
-		<td height="26" class="style11"  style="width: 15%">
+		<td class="style11"  style="width: 15%">
 				<input class="sponserApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
 		<td style="width: 60%" class="style11" >
 				<input class="sponserApply" type="text" id="communicates[0]_content" name="content">				
@@ -180,7 +181,7 @@
     <div id="div_communicates">	  
 	<table class="class_communicates" style="width: 100%">
 	<tr>
-		<td height="26" class="style11"  style="width: 15%">
+		<td class="style11"  style="width: 15%">
 				<input class="sponserApply" type="text" id="communicates[1]_communicateDate" name="communicateDate" style="width: 86px"></td>
 		<td style="width: 60%" class="style11" >
 				<input class="sponserApply" type="text" id="communicates[1]_content" name="content">				
