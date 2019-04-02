@@ -221,23 +221,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                             myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"]').val(eval('v['+i+'].'+key));   
                     }                        
                 }
-            } else if (k == 'feedbacks') 
-            {                
-                for(var i=0;i<v.length;i++)
-                {   
-                    if(i>0)
-                        inserttable(whichpage,k)
-                    for(let key in v[i])
-                    {
-                        if(key.indexOf("picture")>=0||key.indexOf("Photo")>=0)
-                        {
-                        	showMultiplePics(myparent,eval('v['+i+'].'+key),k+'\\['+i+'\\]_' + key);
-                        }
-                        else
-                            myparent.find('input[id="'+k+'\\['+i+'\\]_' + key+'"]').val(eval('v['+i+'].'+key));   
-                    }                        
-                }
-            }			
+            } 		
             else if(k.indexOf("picture")>=0||k.indexOf("Photo")>=0)
                  {
                  	showMultiplePics(myparent,v, k);
