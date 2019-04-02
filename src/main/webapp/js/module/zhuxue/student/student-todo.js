@@ -270,6 +270,8 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                             var filename=eval('v['+i+'].'+key);
                             if(filename!=null&&filename.length>0)
                             {
+                            	myparent.find('[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').hide();
+                            	myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').show();
                                 myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+filename);                
                                 myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').text("显示图片");
                         
