@@ -2,7 +2,10 @@ package me.kafeitu.demo.activiti.entity.zhuxue;
 
 import me.kafeitu.demo.activiti.entity.IdEntity;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
+import me.kafeitu.demo.activiti.service.zhuxue.student.SponserManager;
 import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -35,6 +38,9 @@ import java.util.List;
 @Table(name = "ZHUXUE_STUDENT")
 public class Student extends IdEntity implements Serializable {
 
+    @Autowired
+    protected SponserManager sponserManager;
+    
 	private static final long serialVersionUID = 1L;
 
 	private String address;
@@ -217,8 +223,7 @@ public class Student extends IdEntity implements Serializable {
 	private String liveDescribe;
 	private String debtDescribe;
 	private String memo;
-	
-
+	private String sponserId;
 	@Column(length=20)
 	public String getStudyExpenditure() {
 		return studyExpenditure;
@@ -841,6 +846,15 @@ public class Student extends IdEntity implements Serializable {
 	@JsonBackReference
 	public Sponser getSponser() {
 		return sponser;
+	}
+	
+	@Column(length = 20)
+	public String getSponserId() {
+		return sponserId;
+	}
+	public void setSponserId(String sponserId) {
+		this.sponserNo = sponserNo;
+		sponserManager.getSponser(Long.parseLong(sponserId));
 	}
 	/**
 	 * @param sponser the sponser to set
