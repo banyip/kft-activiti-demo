@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 
 
-
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse: collapse; width: 95%">
 	<colgroup>
 		<col width="83" >
@@ -619,33 +618,18 @@
 		<td class="style12" style="width: 15%">发送日期</td>
 	</tr>
 	</table></div></td></tr>
-			<tr><td colspan=8>	
-                <div >	  
-				<table style="width: 100%">
+	<tr><td colspan=8>	
+    <div id="div_communicates">	  
+	<table class="class_communicates" style="width: 100%">
 	<tr>
 		<td class="style11"  style="width: 15%">
 				<input class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
 		<td style="width: 45%" class="style11" >
 				<input class="studentApply" type="text" id="communicates[0]_content" name="content">				
 		<td style="width: 25%" class="style11" >
-<a target=showpic multiple=multiple class="studentPhoto" type="file" id="communicates[0]_picture" name="picture" style="width: 119px">没有图片</a></td>
+<a target=showpic multiple=multiple class="studentPhoto" type="file" id="communicates[0]_picture" style="width: 119px">没有图片</a></td>
 		<td class="style11"  style="width: 15%">
 				<input class="studentApply" type="text" id="communicates[0]_sendDate" name="sendDate" style="width: 86px"></td>
-	</tr>
-	</table></div></td></tr>
-	<tr><td colspan=8>	
-    <div id="div_communicates">	  
-	<table class="class_communicates" style="width: 100%">
-	<tr>
-		<td class="style11"  style="width: 15%">
-				<input class="studentApply" type="text" id="communicates[1]_communicateDate" name="communicateDate" style="width: 86px"></td>
-		<td style="width: 45%" class="style11" >
-				<input class="studentApply" type="text" id="communicates[1]_content" name="content">				
-		<td style="width: 25%" class="style11" >
-<input type="file" multiple=multiple class="studentPhoto" id="communicates[1]_picture" name="communicates[0]_picture"></td>
-		<td class="style11"  style="width: 15%">
-				<input class="studentApply" type="text" id="communicates[0]_sendDate" name="sendDate" style="width: 86px"></td>
-
 	</tr>
 	</table></div></td></tr>
 				<tr>
