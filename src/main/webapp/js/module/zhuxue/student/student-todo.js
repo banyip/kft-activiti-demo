@@ -279,7 +279,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                         inserttable(whichpage,k)
                     for(let key in v[i])
                     {
-                        if(key=="auditphotos")                  
+                        if(key=="auditPhotos")                  
                             for(var j=0;j<eval('v['+i+'].'+key).length;j++)
                                 {          
                             	    //超过1行加一行
