@@ -90,6 +90,7 @@ public class Audit extends IdEntity implements Serializable {
 	public String getPoorReason() {
 		return poorReason;
 	}
+    
     @Column
 	public String getStudentEvaluation() {
 		return studentEvaluation;
