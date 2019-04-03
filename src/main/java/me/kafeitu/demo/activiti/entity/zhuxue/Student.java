@@ -227,7 +227,7 @@ public class Student extends IdEntity implements Serializable {
 	public String getStudyExpenditure() {
 		return studyExpenditure;
 	}
-	@Column(length=250)
+	@Column(length=250) 
 	public String getStudyDescribe() {
 		return studyDescribe;
 	}
