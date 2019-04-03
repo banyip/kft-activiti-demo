@@ -90,7 +90,7 @@ function showMultiplePics(myparent,filenamesstr,aid)
     		var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+id+'">';
     		aobj = myparent.find(aid);
     		$(aobj[0]).after(inputcontent);
-    		$(aobj[0])..css('visibility', 'hidden');
+    		$(aobj[0]).css('visibility', 'hidden');
         }
     }
 }
