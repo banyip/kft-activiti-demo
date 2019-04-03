@@ -285,7 +285,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                             	    //超过1行加一行
                                     if(j>0)
                                         //add line
-                                    	inserttable(whichpage,'audits\\['+i+'\\]_'+'auditphotos');
+                                    	inserttable(whichpage,'audits\\['+i+'\\]_'+'auditPhotos');
                                         //insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
                                     {

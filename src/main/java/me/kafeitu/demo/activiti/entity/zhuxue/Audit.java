@@ -24,7 +24,7 @@ import java.util.UUID;
 import java.util.HashSet;
 import java.util.List;
 
-/**
+/*
  * Entity: Relative
  *
  * @author HenryYan
