@@ -80,7 +80,7 @@ function showMultiplePics(myparent,filenamesstr,aid)
                             $(aobj[ii-1]).after("<br/>"+content);
                         }
                     $(myparent.find(id)[ii]).hide();
-                    $(myparent.find(aid)[ii]).css('visibility', 'visible');;
+                    $(myparent.find(aid)[ii]).css('visibility', 'visible');
                     $(myparent.find(aid)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
                     $(myparent.find(aid)[ii]).text("显示图片");
                 }                                            
@@ -113,12 +113,11 @@ function inserttable(whichpage,whichpart) {
 	if(myparent.find('.'+tableclass).length <=7){
     myparent.find('#'+divid).append(content);
     var aobjs = $(myparent.find('.'+tableclass+':last-child')).find("a");
-    for(var aobj in aobjs)
-    	{
-    		aobj.hide();
-    		var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+aobj.attr('id')+'">';
-    		aobj.after(inputcontent);
-    	}
+    aobjs.each(function(){
+    		$(this).css('visibility', 'none');
+    		var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+$(this).attr('id')+'">';
+    		$(this).after(inputcontent);
+    	});
 	}else{
 		alert("最多同时添加5个信息!");
 	}
