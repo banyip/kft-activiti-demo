@@ -128,6 +128,13 @@ function inserttable(whichpage,whichpart) {
     		//var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+$(this).attr('id')+'">';
     		//$(this).after(inputcontent);
     	});
+    aobjs = $(myparent.find('.'+tableclass+':last-child')).find("input");
+    aobjs.each(function(){
+    		$(this).css('visibility', 'visible');
+    		$(this).show();
+    		//var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+$(this).attr('id')+'">';
+    		//$(this).after(inputcontent);
+    	});    
 	}else{
 		alert("最多同时添加5个信息!");
 	}
