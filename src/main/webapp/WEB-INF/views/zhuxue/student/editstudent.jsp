@@ -415,7 +415,7 @@
 
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="insertauditPhotos('editstudent','audits\\[0\\]_auditPhotos')" />      
+					onclick="inserttable('editstudent','audits\\[0\\]_auditPhotos')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits\\[0\\]_auditPhotos')" />
@@ -690,7 +690,7 @@
 				<table class="class_audits[1]_auditPhotos" width="100%">
 	<tr style="mso-height-source:userset;height:20.1pt">
 		<td style="width: 8%" class="style11">
-				<input class="studentApply" type="text" id="audits[1]_auditPhotos[0]_photoDate" name="auditPhotos[0]_photoDate"  style="visibility:hidden"></td>
+				<input class="studentApply" type="text" id="audits[1]_auditPhotos[0]_photoDate" name="auditPhotos[0]_photoDate" ></td>
 		<td class="style12"  style="width: 15%">
 		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto" style="visibility:hidden">没有图片</a><input type="file" multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto"></td>
 		<td class="style12"  style="width: 15%">
@@ -709,7 +709,7 @@
 				<td colspan="8" class="style12">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
-					onclick="insertauditPhotos('editstudent','audits\\[1\\]_auditPhotos')" />      
+					onclick="inserttable('editstudent','audits\\[1\\]_auditPhotos')" />      
 					<input
 					type="button" name="button" value="删 除"
 					style="width:60px; height:24px;" onclick="deletetable('editstudent','audits\\[1\\]_auditPhotos')" />
