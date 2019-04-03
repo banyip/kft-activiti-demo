@@ -292,7 +292,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                         if(photokey.indexOf("photoDate")>=0)
                                             myparent.find('#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey).val(eval('v['+i+'].'+key+'['+j+'].'+photokey));
                                         else{
-                                        	showMultiplePics(myparent,eval('v['+i+'].'+key+'['+j+'].'+photokey),'#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
+                                        	showMultiplePics(myparent,eval('v['+i+'].'+key+'['+j+'].'+photokey),'a[id="audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey+'"]');
                                        }
                                     }
                                                                            //add line
