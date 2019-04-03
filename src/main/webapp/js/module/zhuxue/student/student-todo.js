@@ -285,7 +285,8 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                             	    //超过1行加一行
                                     if(j>0)
                                         //add line
-                                        insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
+                                    	inserttable(whichpage,'audits\\['+i+'\\]_'+'auditphotos');
+                                        //insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
                                     {
                                         if(photokey.indexOf("photoDate")>=0)
@@ -302,11 +303,13 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                             var filename=eval('v['+i+'].'+key);
                             if(filename!=null&&filename.length>0)
                             {
+                            	showMultiplePics(myparent,eval('v['+i+'].'+key+'['+j+'].'+photokey),'#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
+                            	/*
                             	myparent.find('[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').hide();
                             	myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').show();
                                 myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').attr('href',ctx+'/zhuxue/student/showPic/'+filename);                
                                 myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').text("显示图片");
-                        
+                       */ 
                             }
                         }
                         else
