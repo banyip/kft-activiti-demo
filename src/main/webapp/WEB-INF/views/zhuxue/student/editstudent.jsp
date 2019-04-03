@@ -692,15 +692,15 @@
 		<td style="width: 8%" class="style11">
 				<input class="studentApply" type="text" id="audits[1]_auditPhotos[0]_photoDate" name="auditPhotos[0]_photoDate" ></td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto" style="visibility:hidden">没有图片</a><input type="file" multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto"></td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto" style="visibility:hidden"></a><input type="file" multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto"></td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_studentEditPhoto" name="auditPhotos[0]_studentEditPhoto" style="visibility:hidden">没有图片</a><input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_studentPhoto" name="auditPhotos[0]_studentPhoto">　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_studentEditPhoto" name="auditPhotos[0]_studentEditPhoto" style="visibility:hidden"></a><input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_studentPhoto" name="auditPhotos[0]_studentPhoto">　</td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto" style="visibility:hidden">没有图片</a><input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto">　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto" style="visibility:hidden"></a><input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto">　</td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto" style="visibility:hidden">没有图片</a><input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto">　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto" style="visibility:hidden"></a><input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto">　</td>
 		<td class="style12"  style="width: 32%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto" style="visibility:hidden">没有图片</a><input  type="file"  multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto" >　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditPhotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto" style="visibility:hidden"></a><input  type="file"  multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto" >　</td>
 	</tr>
 	</table>
 	</div>
