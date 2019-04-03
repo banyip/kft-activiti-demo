@@ -69,7 +69,7 @@ function showMultiplePics(myparent,filenamesstr,aid)
         var content = aobj[0].cloneNode(true).outerHTML;
         if(filenamesstr!=null&&filenamesstr.length>0)
         {
-        	$(myparent.find(id)[0]).hide();
+        	$(myparent.find(id)[0]).css('visibility', 'hidden');;
             var filenames=filenamesstr.split(":",-1);
             for(var ii =0; ii<filenames.length;ii++)
                 if(filenames[ii].length>0)
