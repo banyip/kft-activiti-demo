@@ -116,7 +116,7 @@ function inserttable(whichpage,whichpart) {
     for(var aobj in aobjs)
     	{
     		aobj.hide();
-    		var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+aobj.attr('id')+''">';" +
+    		var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+aobj.attr('id')+'">';
     		aobj.after(inputcontent);
     	}
 	}else{
