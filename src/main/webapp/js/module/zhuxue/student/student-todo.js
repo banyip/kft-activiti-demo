@@ -159,7 +159,7 @@ function insertaudit(whichpage) {
 	}
 }
 
-function insertauditphotos(whichpage,whichpart) 
+function insertauditPhotos(whichpage,whichpart) 
 {    
     tableclass='class_'+whichpart
     divid="div_"+whichpart
@@ -286,7 +286,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                     if(j>0)
                                         //add line
                                     	inserttable(whichpage,'audits\\['+i+'\\]_'+'auditPhotos');
-                                        //insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
+                                        //insertauditPhotos(whichpage,'audits\\['+i+'\\]_'+'auditPhotosa');
                                     for(let photokey in eval('v['+i+'].'+key+'['+j+']'))
                                     {
                                         if(photokey.indexOf("photoDate")>=0)
@@ -296,7 +296,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                                        }
                                     }
                                                                            //add line
-                                   // insertauditphotos(whichpage,'audits\\['+i+'\\]_'+'auditphotosa');
+                                   // insertauditPhotos(whichpage,'audits\\['+i+'\\]_'+'auditPhotosa');
                                 }   
                         else if(key.indexOf("picture")>=0||key.indexOf("Picture")>=0||key.indexOf("Photo")>=0)
                         {
