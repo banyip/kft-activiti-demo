@@ -92,7 +92,7 @@ function showMultiplePics(myparent,filenamesstr,aid)
     		//$(aobj[0]).after(inputcontent);
         	aobj = myparent.find(aid);
         	$(aobj[0]).remove();
-        	$(myparent.find(id)[0]).show();
+        	$(myparent.find(id)[0]).css('visibility', 'visible');
         	
         }
     }
@@ -124,15 +124,13 @@ function inserttable(whichpage,whichpart) {
     myparent.find('#'+divid).append(content);
     var aobjs = $(myparent.find('.'+tableclass+':last-child')).find("a");
     aobjs.each(function(){
-    		$(this).hide();
-    		$(this).css('visibility', 'hidden');
+     		$(this).css('visibility', 'hidden');
     		//var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+$(this).attr('id')+'">';
     		//$(this).after(inputcontent);
     	});
     aobjs = $(myparent.find('.'+tableclass+':last-child')).find("input");
     aobjs.each(function(){
     		$(this).css('visibility', 'visible');
-    		$(this).show();
     		//var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+$(this).attr('id')+'">';
     		//$(this).after(inputcontent);
     	}); 
