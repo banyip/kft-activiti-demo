@@ -303,7 +303,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                             var filename=eval('v['+i+'].'+key);
                             if(filename!=null&&filename.length>0)
                             {
-                            	showMultiplePics(myparent,eval('v['+i+'].'+key+'['+j+'].'+photokey),'#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
+                            	showMultiplePics(myparent,eval('v['+i+'].'+key+'].studentPhoto'),'#audits\\['+i+'\\]_'+key+'\\['+j+'\\]_' + photokey);
                             	/*
                             	myparent.find('[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').hide();
                             	myparent.find('a[id="'+k+'\\['+i+'\\]_' + key+'"].studentPhoto').show();
