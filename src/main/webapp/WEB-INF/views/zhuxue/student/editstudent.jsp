@@ -390,43 +390,25 @@
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
 	</table></div></td></tr>
-	<tr><td colspan=8><div id="div_audits[0]_auditphotosa">
-				<table class="class_audits[0]_auditphotosa" width="100%">
+	<tr><td colspan=8><div id="div_audits[0]_auditphotos">
+				<table class="class_audits[0]_auditphotos" width="100%">
 	<tr style="mso-height-source:userset;height:20.1pt">
 		<td style="width: 8%" class="style11">
 				<input class="studentApply" type="text" id="audits[0]_auditphotos[0]_photoDate" name="auditPhotos[0]_photoDate" ></td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto">没有图片</a></td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto">没有图片</a><input type="file" multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto1" size="20"></td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_studentEditPhoto" name="auditPhotos[0]_studentEditPhoto">没有图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_studentEditPhoto" name="auditPhotos[0]_studentEditPhoto">没有图片</a><input type="file" class="studentPhoto" id="audits[0]_auditPhotos[0]_studentPhoto" name="auditPhotos[0]_studentPhoto1" size="20">　</td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto">没有图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto">没有图片</a><input type="file" class="studentPhoto" id="audits[0]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto1" size="20">　</td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto">没有图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto">没有图片</a><input type="file" class="studentPhoto" id="audits[0]_auditPhotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto1" size="20">　</td>
 		<td class="style12"  style="width: 32%">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto">没有图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditphotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto">没有图片</a><input  type="file"  multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto1" size="20" >　</td>
 	</tr>
 	</table>
 	</div>
 	</td></tr>
-<tr><td colspan=8>		    <div id="div_audits[0]_auditPhotos">
-				<table class="class_audits[0]_auditPhotos" width="100%">
-	<tr style="mso-height-source:userset;height:20.1pt">
-		<td style="width: 8%" class="style11">
-		<input type="text" class="studentApply" id="audits[0]_auditPhotos[1]_photoDate" name="auditPhotos[1]_photoDate"></td>
-		<td class="style12"  style="width: 15%">
-		<input type="file" multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[1]_familyPhoto" name="auditPhotos[1]_familyPhoto"></td>
-		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_studentPhoto" name="auditPhotos[1]_studentPhoto"></td>
-		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_feedbackPhoto" name="auditPhotos[1]_feedbackPhoto"></td>
-		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[0]_auditPhotos[1]_recieptphoto" name="auditPhotos[1]_recieptphoto"></td>
-		<td class="style12"  style="width: 32%">
-		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[1]_otherPhoto" name="auditPhotos[1]_otherPhoto" ></td>
-	</tr>
-	</table></div>
-	</td></tr>	
 			<tr>
 				<td colspan="8" class="style12">
 
@@ -704,43 +686,26 @@
 		其他照片（如病历＼证件＼证明＼信件交流之类）</td>
 	</tr>
 	</table></div></td></tr>
-	<tr><td colspan=8><div id="div_audits[0]_auditphotosa">
-				<table class="class_audits[0]_auditphotosa" width="100%">
+	<tr><td colspan=8> <div id="div_audits[1]_auditPhotos">
+				<table class="class_audits[1]_auditPhotos" width="100%">
 	<tr style="mso-height-source:userset;height:20.1pt">
 		<td style="width: 8%" class="style11">
 				<input class="studentApply" type="text" id="audits[1]_auditphotos[0]_photoDate" name="auditPhotos[0]_photoDate" ></td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto">没有图片</a></td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto">没有图片</a><input type="file" multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto"></td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_studentEditPhoto" name="auditPhotos[0]_studentEditPhoto">没有图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_studentEditPhoto" name="auditPhotos[0]_studentEditPhoto">没有图片</a><input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_studentPhoto" name="auditPhotos[0]_studentPhoto">　</td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto">没有图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto">没有图片</a><input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto">　</td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto">没有图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto">没有图片</a><input type="file" class="studentPhoto" id="audits[1]_auditPhotos[0]_recieptphoto" name="auditPhotos[0]_recieptphoto">　</td>
 		<td class="style12"  style="width: 32%">
-		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto">没有图片</a>　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[1]_auditphotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto">没有图片</a><input  type="file"  multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[0]_otherPhoto" name="auditPhotos[0]_otherPhoto" >　</td>
 	</tr>
 	</table>
 	</div>
 	</td></tr>
-<tr><td colspan=8>		    <div id="div_audits[1]_auditPhotos">
-				<table class="class_audits[1]_auditPhotos" width="100%">
-	<tr style="mso-height-source:userset;height:20.1pt">
-		<td style="width: 8%" class="style11">
-		<input type="text" class="studentApply" id="audits[1]_auditPhotos[1]_photoDate" name="auditPhotos[1]_photoDate"></td>
-		<td class="style12"  style="width: 15%">
-		<input type="file" multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[1]_familyPhoto" name="auditPhotos[1]_familyPhoto"></td>
-		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[1]_auditPhotos[1]_studentPhoto" name="auditPhotos[1]_studentPhoto"></td>
-		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[1]_auditPhotos[1]_feedbackPhoto" name="auditPhotos[1]_feedbackPhoto"></td>
-		<td class="style12"  style="width: 15%">
-		<input type="file" class="studentPhoto" id="audits[1]_auditPhotos[1]_recieptphoto" name="auditPhotos[1]_recieptphoto"></td>
-		<td class="style12"  style="width: 32%">
-		<input  type="file"  multiple="multiple" class="studentPhoto" id="audits[1]_auditPhotos[1]_otherPhoto" name="auditPhotos[1]_otherPhoto" ></td>
-	</tr>
-	</table></div>
-	</td></tr>			<tr>
+			<tr>
 				<td colspan="8" class="style12">
 					<input type="button" name="button"
 					value="新 增" style="width:60px; height:24px;"
