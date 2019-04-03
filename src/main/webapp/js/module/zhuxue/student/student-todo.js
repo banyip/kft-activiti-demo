@@ -64,8 +64,6 @@ function showMultiplePics(myparent,filenamesstr,aid)
 {
     var aobj = myparent.find(aid);
     var id = 'input'+aid.substring(1);    
-    var inputcontent = "<input type='file' multiple=multiple class='studentPhoto' id='"+aobj.attr('id')+"'/>"
-    aobj[0].after(inputcontent);
     if(aobj.length>0)
     {  
         var content = aobj[0].cloneNode(true).outerHTML;
@@ -112,11 +110,15 @@ function inserttable(whichpage,whichpart) {
     var content = newnode.innerHTML;
 	content = content.replace(/\[0\]/g, "["+ myparent.find("."+tableclass).length + "]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
-	
 	if(myparent.find('.'+tableclass).length <=7){
-	content = content.replace('style="display: none;"','');
-	content = content.replace("visibility: visible;","");
     myparent.find('#'+divid).append(content);
+    var aobjs = $(myparent.find('.'+tableclass:lastchild)).find("a");
+    for(var aobj in aobjs)
+    	{
+    		aobj.hide();
+    		var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+aobj.attr('id')+''">';" +
+    		aobj.after(inputcontent);
+    	}
 	}else{
 		alert("最多同时添加5个信息!");
 	}
