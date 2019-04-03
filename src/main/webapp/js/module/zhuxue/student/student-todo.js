@@ -79,11 +79,18 @@ function showMultiplePics(myparent,filenamesstr,aid)
                             //var content1 = content.replace(photokey, photokey+ii);
                             $(aobj[ii-1]).after("<br/>"+content);
                         }
-                    $(myparent.find(id)[ii]).hide();
+                    //$(myparent.find(id)[ii]).hide();
                     $(myparent.find(aid)[ii]).css('visibility', 'visible');
                     $(myparent.find(aid)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
                     $(myparent.find(aid)[ii]).text("显示图片");
                 }                                            
+        }
+        else
+        {
+    		var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+id+'">';
+    		aobj = myparent.find(aid);
+    		$(aobj[0]).after(inputcontent);
+    		$(aobj[0])..css('visibility', 'hidden');
         }
     }
 }
