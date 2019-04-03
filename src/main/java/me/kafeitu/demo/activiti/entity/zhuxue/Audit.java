@@ -109,7 +109,7 @@ public class Audit extends IdEntity implements Serializable {
 	}
     @Column
     @OneToMany(cascade = {CascadeType.ALL})
-	public List<AuditPhoto> getAuditphotos() {
+	public List<AuditPhoto> getAuditPhotos() {
 		return auditPhotos;
 	}
 	public void setAuditDate(String auditDate) {
@@ -130,7 +130,7 @@ public class Audit extends IdEntity implements Serializable {
 	public void setAuditPerson(String auditPerson) {
 		this.auditPerson = auditPerson;
 	}
-	public void setAuditphotos(List<AuditPhoto> auditPhotos) {
+	public void setAuditPhotos(List<AuditPhoto> auditPhotos) {
 		this.auditPhotos = auditPhotos;
 	} 
     
