@@ -398,7 +398,7 @@
 		<td class="style12"  style="width: 15%">
 		<a target=showpic class="studentEditPhoto" id="audits[0]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto" style="visibility:hidden">没有图片</a><input type="file" multiple="multiple" class="studentPhoto" id="audits[0]_auditPhotos[0]_familyPhoto" name="auditPhotos[0]_familyPhoto1" size="20"></td>
 		<td class="style12"  style="width: 15%">
-		<a target=showpic class="studentEditPhoto" id="audits[0]_auditPhotos[0]_studentEditPhoto" name="auditPhotos[0]_studentEditPhoto" style="visibility:hidden">没有图片</a><input type="file" class="studentPhoto" id="audits[0]_auditPhotos[0]_studentPhoto" name="auditPhotos[0]_studentPhoto1" size="20">　</td>
+		<a target=showpic class="studentEditPhoto" id="audits[0]_auditPhotos[0]_studentEditPhoto" name="auditPhotos[0]_studentEditPhoto" style="visibility:hidden">没有图片</a><input type="file" class="studentPhoto" id="audits[0]_auditPhotos[0]_studentPhoto" name="auditPhotos[0]_studentPhoto" size="20">　</td>
 		<td class="style12"  style="width: 15%">
 		<a target=showpic class="studentEditPhoto" id="audits[0]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto" style="visibility:hidden">没有图片</a><input type="file" class="studentPhoto" id="audits[0]_auditPhotos[0]_feedbackPhoto" name="auditPhotos[0]_feedbackPhoto1" size="20">　</td>
 		<td class="style12"  style="width: 15%">
