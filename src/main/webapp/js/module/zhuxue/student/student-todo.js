@@ -112,7 +112,7 @@ function inserttable(whichpage,whichpart) {
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	if(myparent.find('.'+tableclass).length <=7){
     myparent.find('#'+divid).append(content);
-    var aobjs = $(myparent.find('.'+tableclass+':lastchild')).find("a");
+    var aobjs = $(myparent.find('.'+tableclass+':last-child')).find("a");
     for(var aobj in aobjs)
     	{
     		aobj.hide();
