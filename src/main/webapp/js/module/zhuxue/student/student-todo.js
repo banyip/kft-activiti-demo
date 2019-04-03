@@ -69,6 +69,7 @@ function showMultiplePics(myparent,filenamesstr,aid)
         var content = aobj[0].cloneNode(true).outerHTML;
         if(filenamesstr!=null&&filenamesstr.length>0)
         {
+        	$(myparent.find(id)[0]).hide();
             var filenames=filenamesstr.split(":",-1);
             for(var ii =0; ii<filenames.length;ii++)
                 if(filenames[ii].length>0)
@@ -78,8 +79,7 @@ function showMultiplePics(myparent,filenamesstr,aid)
                         {                                                    		
                             //var content1 = content.replace(photokey, photokey+ii);
                             $(aobj[ii-1]).after("<br/>"+content);
-                        }
-                    //$(myparent.find(id)[ii]).hide();
+                        }                    
                     $(myparent.find(aid)[ii]).css('visibility', 'visible');
                     $(myparent.find(aid)[ii]).attr('href',ctx+'/zhuxue/student/showPic/'+filenames[ii]);
                     $(myparent.find(aid)[ii]).text("显示图片");
@@ -87,10 +87,13 @@ function showMultiplePics(myparent,filenamesstr,aid)
         }
         else
         {
-    		var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+id+'">';
-    		aobj = myparent.find(aid);
-    		$(aobj[0]).after(inputcontent);
-    		$(aobj[0]).css('visibility', 'hidden');
+    		//var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+id+'">';
+    		
+    		//$(aobj[0]).after(inputcontent);
+        	aobj = myparent.find(aid);
+        	$(aobj[0]).css('visibility', 'hidden');
+        	$(myparent.find(id)[0]).show();
+        	
         }
     }
 }
@@ -122,8 +125,8 @@ function inserttable(whichpage,whichpart) {
     var aobjs = $(myparent.find('.'+tableclass+':last-child')).find("a");
     aobjs.each(function(){
     		$(this).css('visibility', 'hidden');
-    		var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+$(this).attr('id')+'">';
-    		$(this).after(inputcontent);
+    		//var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+$(this).attr('id')+'">';
+    		//$(this).after(inputcontent);
     	});
 	}else{
 		alert("最多同时添加5个信息!");
