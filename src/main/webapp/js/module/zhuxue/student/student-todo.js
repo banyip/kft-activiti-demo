@@ -64,7 +64,7 @@ function showMultiplePics(myparent,filenamesstr,aid)
 {
     var aobj = myparent.find(aid);
     var id = 'input'+aid.substring(1);    
-    var inputcontent = "<input type='file' multiple=multiple class='studentPhoto' id='"+aobj.attr('id')+"'>"
+    var inputcontent = "<input type='file' multiple=multiple class='studentPhoto' id='"+aobj.attr('id')+"'/>"
     aobj[0].after(inputcontent);
     if(aobj.length>0)
     {  
