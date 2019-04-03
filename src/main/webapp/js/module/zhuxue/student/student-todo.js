@@ -122,7 +122,7 @@ function inserttable(whichpage,whichpart) {
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	if(myparent.find('.'+tableclass).length <=7){
     myparent.find('#'+divid).append(content);
-    var aobjs = $(myparent.find('.'+tableclass+':last-child')).find("a");
+ /*   var aobjs = $(myparent.find('.'+tableclass+':last-child')).find("a");
     aobjs.each(function(){
     		$(this).remove();
     		//var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+$(this).attr('id')+'">';
@@ -134,7 +134,8 @@ function inserttable(whichpage,whichpart) {
     		$(this).show();
     		//var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+$(this).attr('id')+'">';
     		//$(this).after(inputcontent);
-    	});    
+    	}); 
+ */   	   
 	}else{
 		alert("最多同时添加5个信息!");
 	}
