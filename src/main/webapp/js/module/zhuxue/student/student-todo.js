@@ -63,7 +63,9 @@ function showSinglePic(myparent,filename,aid)
 function showMultiplePics(myparent,filenamesstr,aid)
 {
     var aobj = myparent.find(aid);
-    var id = 'input'+aid.substring(1);
+    var id = 'input'+aid.substring(1);    
+    var inputcontent = '<input type="file" multiple=multiple class="studentPhoto" type="file" id="'+aobj.attr('id')+'">'
+    aobj[0].after(inputcontent);
     if(aobj.length>0)
     {  
         var content = aobj[0].cloneNode(true).outerHTML;
