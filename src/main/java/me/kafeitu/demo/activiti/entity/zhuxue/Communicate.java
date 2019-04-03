@@ -39,6 +39,7 @@ public class Communicate extends IdEntity implements Serializable {
     private String communicateDate;
     private String content;
     private String picture;
+    private String sendDate;
     @Column
     public String getCommunicateDate() {
 		return communicateDate;
@@ -52,6 +53,15 @@ public class Communicate extends IdEntity implements Serializable {
 	public String getPicture() {
 		return picture;
 	}
+    @Column
+	public String getSendDate() {
+		return sendDate;
+	}
+
+	public void setSendDate(String sendDate) {
+		this.sendDate = sendDate;
+	}
+
 	public void setCommunicateDate(String communicateDate) {
 		this.communicateDate = communicateDate;
 	}
