@@ -119,8 +119,7 @@ function inserttable(whichpage,whichpart) {
 	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
 	content = content.replace(/\[0\]/g, "["+ myparent.find("."+tableclass).length + "]");
-	tableclass = tableclass.replace("\\","");
-	content = "<table class='"+tableclass+"'>" + content + "</table>";
+	content = "<table class='"+tableclass.replace(/\\/g,"")+"'>" + content + "</table>";
 	if(myparent.find('.'+tableclass).length <=7){
     myparent.find('#'+divid).append(content);
     var aobjs = $(myparent.find('.'+tableclass+':last-child')).find("a");
