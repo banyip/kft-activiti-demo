@@ -318,16 +318,16 @@ public class ZhuxueController {
    				{
    					int photopos = "audits[0]_auditPhotos".length();
    					int photoindex = Integer.parseInt(key.substring(pos+1,pos+2));
-   					List<AuditPhoto> auditphotos = audit.getAuditphotos();
-   					while(photoindex>=auditphotos.size())
+   					List<AuditPhoto> auditPhotos = audit.getAuditPhotos();
+   					while(photoindex>=auditPhotos.size())
    					{
-   						auditphotos.add(new AuditPhoto());
+   						auditPhotos.add(new AuditPhoto());
    					}
-   					AuditPhoto auditphoto = auditphotos.get(photoindex);
-   					auditphoto.setPhotoDate((String) value);
+   					AuditPhoto auditPhoto = auditPhotos.get(photoindex);
+   					auditPhoto.setPhotoDate((String) value);
    					methodname="set" + key.substring(photopos+4,photopos+5).toUpperCase()+key.substring(photopos+5);
    	   				invokeClassName="AuditPhoto";
-   	   				invoke(methodname,value,(Object)auditphoto,invokeClassName,"java.lang.String");   					
+   	   				invoke(methodname,value,(Object)auditPhoto,invokeClassName,"java.lang.String");   					
    	   				
    				}
    				else
@@ -477,7 +477,7 @@ public class ZhuxueController {
 			   				pos = "audits[0]_auditPhotos".length();
 			   				index = Integer.parseInt(filename.substring(pos+1,pos+2));
 			   				String whattosave=filename.substring(pos+4,pos+5).toUpperCase()+filename.substring(pos+5);
-			   				List<AuditPhoto> auditPhotos = audit.getAuditphotos();
+			   				List<AuditPhoto> auditPhotos = audit.getAuditPhotos();
 			   				while(index>=auditPhotos.size())
 			   				{
 			   					auditPhotos.add(new AuditPhoto());
