@@ -118,7 +118,6 @@ function inserttable(whichpage,whichpart) {
     myparent=$('#'+whichpage);
 	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
-    int indexPos=-1;
     if(whichpart.indexOf('auditPhotos')>=0)
     	{
 	    	content = content.replace(/audits\[0\]/g, "audits["+ myparent.find('.'+tableclass).length + "]");
