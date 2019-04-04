@@ -125,7 +125,7 @@ function inserttable(whichpage,whichpart) {
     	}
     else if (whichpart.indexOf('audit')==0)
     	{
-    	   	content = content.replace(/audits\[0\]/g, "audits["+ myparent.find('.'+ tableclass.replace(/\\/g,"")).length + "]");
+    	   	content = content.replace(/audits\[0\]/g, "audits["+ myparent.find('.'+ tableclass).length + "]");
     	    content = content.replace(/audits\\\\\[0\\\\\]/g, "audits\\\\\["+ myparent.find('.'+tableclass).length + "\\\\\]");
     	    content = content.replace(/初审评价/g, "复审评价");    	    	
     	}
