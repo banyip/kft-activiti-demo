@@ -118,7 +118,15 @@ function inserttable(whichpage,whichpart) {
     myparent=$('#'+whichpage);
 	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
-	content = content.replace(/\[0\]/g, "["+ myparent.find("."+tableclass).length + "]");
+    int indexPos=-1;
+    if(whichpart.indexOf('auditPhotos')>=0)
+    	{
+	    	content = content.replace(/audits\[0\]/g, "audits["+ myparent.find('.'+tableclass).length + "]");
+	        content = content.replace(/audits\\\\\[0\\\\\]/g, "audits\\\\\["+ myparent.find('.'+tableclass).length + "\\\\\]");
+	        content = content.replace(/初审评价/g, "复审评价");
+    	}
+    else
+    	content = content.replace(/\[0\]/g, "["+ myparent.find("."+tableclass).length + "]");
 	content = "<table class='"+tableclass.replace(/\\/g,"")+"'>" + content + "</table>";
 	if(myparent.find('.'+tableclass).length <=7){
     myparent.find('#'+divid).append(content);
