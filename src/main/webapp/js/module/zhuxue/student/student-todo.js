@@ -120,9 +120,14 @@ function inserttable(whichpage,whichpart) {
     var content = newnode.innerHTML;
     if(whichpart.indexOf('auditPhotos')>=0)
     	{
-	    	content = content.replace(/audits\[0\]/g, "audits["+ myparent.find('.'+tableclass).length + "]");
-	        content = content.replace(/audits\\\\\[0\\\\\]/g, "audits\\\\\["+ myparent.find('.'+tableclass).length + "\\\\\]");
+    		content = content.replace(/auditPhoto\[0\]/g, "auditPhoto["+ myparent.find(tableclass).length + "]");
 	        content = content.replace(/初审评价/g, "复审评价");
+    	}
+    else if (whichpart.indexOf('audit')==0)
+    	{
+    	   	content = content.replace(/audits\[0\]/g, "audits["+ myparent.find('.'+tableclass).length + "]");
+    	    content = content.replace(/audits\\\\\[0\\\\\]/g, "audits\\\\\["+ myparent.find('.'+tableclass).length + "\\\\\]");
+    	    content = content.replace(/初审评价/g, "复审评价");    	    	
     	}
     else
     	content = content.replace(/\[0\]/g, "["+ myparent.find("."+tableclass).length + "]");
