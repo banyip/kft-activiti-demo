@@ -55,16 +55,23 @@ public class DataViewManager  {
 			datas[i][k++] = result.getSex();
 			datas[i][k++] = result.getNationality();
 			datas[i][k++] = result.getBirthday();
-			School school = result.getSchools().get(0);			
-			if(school!=null)
-				datas[i][k++] = school.getSchool();
+			List<School> schools =result.getSchools();
+			if(schools!=null)
+			{
+				School school = schools.get(0);			
+				datas[i][k++] = school.getGrade();
+				datas[i][k++] = school.getClassName();
+				datas[i][k++] = school.getGraduateTime();
+				datas[i][k++] = school.getHeadTeacher();
+				datas[i][k++] = school.getSchoolContactNo();
+				if(school!=null)
+					datas[i][k++] = school.getSchool();
+				else
+					k++;
+			}
 			else
 				k++;
-			datas[i][k++] = school.getGrade();
-			datas[i][k++] = school.getClassName();
-			datas[i][k++] = school.getGraduateTime();
-			datas[i][k++] = school.getHeadTeacher();
-			datas[i][k++] = school.getSchoolContactNo();
+
 			datas[i][k++] = result.getAddress();
 			datas[i][k++] = result.getParentName();
 			datas[i][k++] = result.getParentContactNo();
