@@ -151,66 +151,53 @@ public class DataViewManager  {
 //设置资助登记表内容	
 	public String setSponseRegistryRows() {
 		fileName = "资助登记表" + System.currentTimeMillis() + ".xls";
-		String[] sponserTitles = {"学生编号","学生姓名","学校","年级","资助人编号","资助人","邮箱","电话","QQ","资助金额"};
+		String[] sponserTitles = {"学生编号","学生姓名","学校","年级","资助人编号","资助人","邮箱","电话","QQ","资助金额","汇款通知","运营费","到账","汇款来源"};
 		titles = sponserTitles;
 		int cols = titles.length;
-		List<Student> results=studentManager.getAllStudent();
-		int rows = results.size();
+		List<Sponser> sponsers=sponserManager.getAllSponser();
+		int rows = sponsers.size();
 		datas = new String[rows][cols];		
 		for(int i=0;i<rows ;i++)
 		{
-			Student result = results.get(i);
-/*
-			List<Transfer> transfers = result.getTransfers();
-			String sponseStudentNos ="" ;
-			for(int l=0;i<transfers.size();l++)
-				sponseStudentNos += "/" + transfers.get(l).getStudentToSponse().getAuditNo();
-			sponseStudentNos = sponseStudentNos.substring(1);
-*/
-			int k = 0;
-			datas[i][k++] = result.getAuditNo();
-			datas[i][k++] = result.getStudentName();	
-			List <School> schools = result.getSchools();
-			if(schools!=null&&schools.size()>0)
-			{
-				School school = schools.get(0);		
-				if(school!=null)
-				{
-					datas[i][k++] = school.getSchool();
-					datas[i][k++] = school.getGrade();
-				}
-				else
-					k+=2;
-			} else
-				k +=2;
-			try {
-				Sponser sponser = sponserManager.getSponser(Long.parseLong(result.getSponserId()));
-				if(sponser!=null)
-				{	
-					datas[i][k++] = sponser.getSponserNo();
-					datas[i][k++] = sponser.getName();
-				
-				}
-				else
-					k +=2 ;
-			}
-			catch (Exception e)
-			{
-				k +=2;
-				logger.error("读取sponser失败：", e);
-			}
-			datas[i][k++] = result.getEmail();
-			datas[i][k++] = result.getApplicantContactNum();
-			datas[i][k++] = result.getQq();
-			List<Transfer> transfers = result.getTransfers();
-			int sponseAmount=0;
+			Sponser sponser = sponsers.get(i);
+
+			List<Transfer> transfers = sponser.getTransfers();
+			int sponseAmount=0;			
 			if(transfers!=null)
 			{
 				for(int l=0;l<transfers.size();l++)
 				{
-					sponseAmount += transfers.get(l).getGrantAmount();
+					Transfer transfer = transfers.get(l);
+					Student result = studentManager.getStudent(Long.parseLong(transfer.getStudentId()));
+					int k = 0;
+					
+					datas[i][k++] = result.getAuditNo();
+					datas[i][k++] = result.getStudentName();	
+					List <School> schools = result.getSchools();
+					School school = schools.get(0);		
+					if(schools!=null&&schools.size()>0)
+					{
+						if(school!=null)
+						{
+							datas[i][k++] = school.getSchool();
+							datas[i][k++] = school.getGrade();
+						}
+						else
+							k+=2;
+					} else
+						k +=2;
+					datas[i][k++] = sponser.getSponserNo();
+					datas[i][k++] = sponser.getName();
+					datas[i][k++] = result.getEmail();
+					datas[i][k++] = result.getApplicantContactNum();
+					datas[i][k++] = result.getQq();
+					datas[i][k++] = Integer.toString(transfer.getAmount());
+					datas[i][k++] = transfer.getSendEmail();
+					datas[i][k++] = transfer.getOperateFee();
+					datas[i][k++] = transfer.getGrantTime();
+					datas[i][k++] = transfer.getMethod();
+					
 				}
-				datas[i][k++] = Integer.toString(sponseAmount);
 			}
 
 		}
