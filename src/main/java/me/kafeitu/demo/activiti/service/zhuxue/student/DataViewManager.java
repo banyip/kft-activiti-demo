@@ -56,7 +56,10 @@ public class DataViewManager  {
 			datas[i][k++] = result.getNationality();
 			datas[i][k++] = result.getBirthday();
 			School school = result.getSchools().get(0);			
-			datas[i][k++] = school.getSchool();
+			if(school!=null)
+				datas[i][k++] = school.getSchool();
+			else
+				k++;
 			datas[i][k++] = school.getGrade();
 			datas[i][k++] = school.getClassName();
 			datas[i][k++] = school.getGraduateTime();
