@@ -9,6 +9,8 @@ import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
 import me.kafeitu.demo.activiti.util.ExcelUtil;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -34,6 +36,7 @@ public class DataViewManager  {
     protected StudentManager studentManager;
     @Autowired
     protected SponserManager sponserManager;
+    private Logger logger = LoggerFactory.getLogger(getClass());
     private String fileName;
     private String[] titles;
 	private String[][] datas;
@@ -170,6 +173,7 @@ public class DataViewManager  {
 			School school = result.getSchools().get(0);			
 			datas[i][k++] = school.getSchool();
 			datas[i][k++] = school.getGrade();
+			try {
 			Sponser sponser = sponserManager.getSponser(Long.parseLong(result.getSponserId()));
 			if(sponser!=null)
 			{	
@@ -179,6 +183,11 @@ public class DataViewManager  {
 			}
 			else
 				k +=2 ;
+			}
+			catch (Exception e)
+			{
+				logger.error("读取sponser失败：", e);
+			}
 			datas[i][k++] = result.getEmail();
 			datas[i][k++] = result.getApplicantContactNum();
 			datas[i][k++] = result.getQq();
