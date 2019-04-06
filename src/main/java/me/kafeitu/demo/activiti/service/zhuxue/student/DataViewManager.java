@@ -59,13 +59,15 @@ public class DataViewManager  {
 			if(schools!=null)
 			{
 				School school = schools.get(0);			
-				datas[i][k++] = school.getGrade();
-				datas[i][k++] = school.getClassName();
-				datas[i][k++] = school.getGraduateTime();
-				datas[i][k++] = school.getHeadTeacher();
-				datas[i][k++] = school.getSchoolContactNo();
 				if(school!=null)
+				{
 					datas[i][k++] = school.getSchool();
+					datas[i][k++] = school.getGrade();
+					datas[i][k++] = school.getClassName();
+					datas[i][k++] = school.getGraduateTime();
+					datas[i][k++] = school.getHeadTeacher();
+					datas[i][k++] = school.getSchoolContactNo();
+				}
 				else
 					k++;
 			}
