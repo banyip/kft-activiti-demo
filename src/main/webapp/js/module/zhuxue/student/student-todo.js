@@ -120,7 +120,7 @@ function inserttable(whichpage,whichpart) {
     var content = newnode.innerHTML;
     if(whichpart.indexOf('auditPhotos')>=0)
     	{
-    		content = content.replace(/auditPhotos\[0\]/g, "auditPhotos["+ myparent.find(tableclass).length + "]");
+    		content = content.replace(/auditPhotos\[0\]/g, "auditPhotos["+ myparent.find('.'+tableclass).length + "]");
 	        content = content.replace(/初审评价/g, "复审评价");
     	}
     else if (whichpart.indexOf('audit')==0)
