@@ -173,14 +173,16 @@ public class DataViewManager  {
 			List <School> schools = result.getSchools();
 			if(schools!=null&&schools.size()>0)
 			{
-			School school = schools.get(0);		
-			if(school!=null)
-			{
-				datas[i][k++] = school.getSchool();
-				datas[i][k++] = school.getGrade();
-			}
-			else
-				k+=2;
+				School school = schools.get(0);		
+				if(school!=null)
+				{
+					datas[i][k++] = school.getSchool();
+					datas[i][k++] = school.getGrade();
+				}
+				else
+					k+=2;
+			} else
+				k +=2;
 			try {
 				Sponser sponser = sponserManager.getSponser(Long.parseLong(result.getSponserId()));
 				if(sponser!=null)
@@ -227,4 +229,4 @@ public class DataViewManager  {
 
 	
 	
-}
+}s
