@@ -170,9 +170,17 @@ public class DataViewManager  {
 			int k = 0;
 			datas[i][k++] = result.getAuditNo();
 			datas[i][k++] = result.getStudentName();	
-			School school = result.getSchools().get(0);			
-			datas[i][k++] = school.getSchool();
-			datas[i][k++] = school.getGrade();
+			List <School> schools = result.getSchools();
+			if(schools!=null&&schools.size()>0)
+			{
+			School school = schools.get(0);		
+			if(school!=null)
+			{
+				datas[i][k++] = school.getSchool();
+				datas[i][k++] = school.getGrade();
+			}
+			else
+				k+=2;
 			try {
 			Sponser sponser = sponserManager.getSponser(Long.parseLong(result.getSponserId()));
 			if(sponser!=null)
