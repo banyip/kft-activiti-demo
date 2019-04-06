@@ -182,18 +182,19 @@ public class DataViewManager  {
 			else
 				k+=2;
 			try {
-			Sponser sponser = sponserManager.getSponser(Long.parseLong(result.getSponserId()));
-			if(sponser!=null)
-			{	
-				datas[i][k++] = sponser.getSponserNo();
-				datas[i][k++] = sponser.getName();
-			
-			}
-			else
-				k +=2 ;
+				Sponser sponser = sponserManager.getSponser(Long.parseLong(result.getSponserId()));
+				if(sponser!=null)
+				{	
+					datas[i][k++] = sponser.getSponserNo();
+					datas[i][k++] = sponser.getName();
+				
+				}
+				else
+					k +=2 ;
 			}
 			catch (Exception e)
 			{
+				k +=2;
 				logger.error("读取sponser失败：", e);
 			}
 			datas[i][k++] = result.getEmail();
