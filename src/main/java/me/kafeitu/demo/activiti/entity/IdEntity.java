@@ -21,6 +21,7 @@ public abstract class IdEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GenericGenerator(name = "persistenceGenerator", strategy = "increment") 
     //@GeneratedValue(strategy = GenerationType.SEQUENCE)
     //@GeneratedValue(generator = "system-uuid")
     //@GenericGenerator(name = "system-uuid", strategy = "uuid")
