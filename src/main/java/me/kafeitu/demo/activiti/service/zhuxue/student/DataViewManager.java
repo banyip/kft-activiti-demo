@@ -56,7 +56,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getNationality();
 			datas[i][k++] = result.getBirthday();
 			List<School> schools =result.getSchools();
-			if(schools!=null)
+			if(schools!=null&&schools.size()>0)
 			{
 				School school = schools.get(0);			
 				if(school!=null)
