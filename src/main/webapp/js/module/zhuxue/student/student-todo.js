@@ -334,8 +334,9 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
             {
                 if(v!=null&&v.length>0)
                 {
-                    myparent.find("a[name="+k+"].studentPhoto").attr('href',ctx+'/zhuxue/student/showPic/'+v);                
-                    myparent.find("a[name="+k+"].studentPhoto").text("显示图片");
+                    //myparent.find("a[name="+k+"].studentPhoto").attr('href',ctx+'/zhuxue/student/showPic/'+v);                
+                    //myparent.find("a[name="+k+"].studentPhoto").text("显示图片");
+                    showMultiplePics(myparent,filename,'a[id=student_"'+k+'"].studentPhoto');
                 }
             }
              else if (k.substr(0,2) == 'if') 
