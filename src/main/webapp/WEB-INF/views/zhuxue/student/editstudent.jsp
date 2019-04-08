@@ -59,7 +59,7 @@
 		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
 		<td class="style11">学生照片</td>
 		<td colspan="3" class="style11">
-		<a class="studentPhoto" id="student_picture" target=showpic name="picture" >没有照片</a></td>
+		<a class="studentPhoto" id="student_picture" target=showpic name="picture" style="visibility:hidden">没有照片</a><input type="file" class="studentPhoto" id="student_picture" name="picture0" /></td>
 	</tr>
 	<tr style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" style="height: 20.1pt" class="style11">
@@ -457,7 +457,7 @@
 	</tr>
 	<tr style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" style="height: 20.1pt" class="style11">申请评定表</td>
-		<td colspan="6" class="style11">　<a target=showpic class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhotos[0]_applyEvaluationPicture" style="width: 303px">没有照片</a><!--<input type="file" class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhotos[0]_applyEvaluationPicture" style="width: 303px">--></td>
+		<td colspan="6" class="style11">　<a target=showpic class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhotos[0]_applyEvaluationPicture" style="width: 303px"  style="visibility:hidden">没有照片</a><input type="file" class="studentPhoto" id="audits[0]_applyEvaluationPicture" name="auditPhotos[0]_applyEvaluationPicture"></td>
 	</tr>
 	<tr style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" style="height: 20.1pt" class="style11">评定表得分</td>
