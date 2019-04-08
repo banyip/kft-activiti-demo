@@ -336,7 +336,7 @@ function loadPartlyDetailWithTaskVars(whichpage,leaveId,  callback) {
                 {
                     //myparent.find("a[name="+k+"].studentPhoto").attr('href',ctx+'/zhuxue/student/showPic/'+v);                
                     //myparent.find("a[name="+k+"].studentPhoto").text("显示图片");
-                    showMultiplePics(myparent,filename,'a[id=student_"'+k+'"].studentPhoto');
+                    showMultiplePics(myparent,filename,'a[id="student_'+k+'"]');
                 }
             }
              else if (k.substr(0,2) == 'if') 
