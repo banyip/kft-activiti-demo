@@ -223,6 +223,17 @@ public class Student extends IdEntity implements Serializable {
 	private String memo;
 	private String sponserId;
 	
+	
+	//获取指定学期反馈发送时间
+	public String getFeedbackDate(String sememster)
+	{
+		for(int i=0;i<communicates.size();i++)
+			if(communicates.get(i).getSemester().equals(sememster))
+				return communicates.get(i).getSendDate();
+		return "";
+			
+	}
+	
 	@Column(length=20)
 	public String getStudyExpenditure() {
 		return studyExpenditure;

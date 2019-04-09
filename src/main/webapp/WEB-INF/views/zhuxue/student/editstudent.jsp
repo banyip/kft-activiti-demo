@@ -59,7 +59,7 @@
 		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
 		<td class="style11">学生照片</td>
 		<td colspan="3" class="style11">
-		<a class="studentPhoto" id="student_picture" target=showpic name="picture" style="visibility:hidden">没有照片</a><input type="file" class="studentPhoto" id="student_picture" name="picture0" /></td>
+		<a class="studentPhoto" id="student_picture" target=showpic name="picture" style="visibility:hidden">没有照片</a><input type="file" class="studentPhoto" id="student_picture" name="picture" /></td>
 	</tr>
 	<tr style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" style="height: 20.1pt" class="style11">
@@ -595,7 +595,8 @@
 	<td colspan="8"><div><table style="width: 100%">
 	<tr>
 		<td class="style12" style="width: 15%">日期</td>
-		<td class="style12"  style="width: 45%">近况</td>
+		<td class="style12"  style="width: 35%">近况</td>
+		<td class="style12" style="width: 10%">发款学期</td>	
 		<td class="style12" style="width: 25%">照片上传</td>
 		<td class="style12" style="width: 15%">发送日期</td>
 	</tr>
@@ -606,8 +607,10 @@
 	<tr>
 		<td class="style11"  style="width: 15%">
 				<input class="studentApply" type="text" id="communicates[0]_communicateDate" name="communicateDate" style="width: 86px"></td>
-		<td style="width: 45%" class="style11" >
+		<td style="width: 35%" class="style11" >
 				<input class="studentApply" type="text" id="communicates[0]_content" name="content">				
+		<td class="style11" style="width: 10%">
+				<input  disabled="disabled" class="studentApply" type="text" id="communicates[0]_semester" name="semester" style="width: 86px" /></td>
 		<td style="width: 25%" class="style11" >
 <a target=showpic multiple=multiple class="studentPhoto" type="file" id="communicates[0]_picture" style="visibility:hidden">没有图片</a><input type="file" multiple=multiple class="studentPhoto" id="communicates[0]_picture" /></td>
 		<td class="style11"  style="width: 15%">
