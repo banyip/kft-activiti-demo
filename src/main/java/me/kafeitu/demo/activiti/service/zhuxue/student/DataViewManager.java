@@ -127,7 +127,6 @@ public class DataViewManager  {
 		List<Sponser> results=sponserManager.getAllSponser();
 		int rows = results.size();
 		datasheets=new HashMap<String,String[][]>();
-		for(int j=0;j<4;j++) {
 		datas = new String[rows][cols];		
 		for(int i=0;i<rows ;i++)
 		{
@@ -155,8 +154,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getSponseEndTime();
 			datas[i][k++] = result.getSponseEndReason();
 			datas[i][k++] = result.getWechat();
-		}
-		datasheets.put("支助人"+j,datas);
+		datasheets.put("支助人",datas);
 		}
 		return fileName;
 	}
@@ -210,6 +208,7 @@ public class DataViewManager  {
 			datas[i][k++] = transfer.getGrantTime();   //发款日期
 			datas[i][k++] = result.getFeedbackDate(semester);  	//反馈
 		}	
+		datasheets.put(semester, datas);
 	}	
 	
 	public String setSponseRegistryRows()
@@ -221,7 +220,6 @@ public class DataViewManager  {
 		{
 			String semester = (String)semesters.get(i);
 			setSponseRegistryRowsSemester(semester);
-			datasheets.put(semester, datas);
 		}		
 		return fileName;
 	}
