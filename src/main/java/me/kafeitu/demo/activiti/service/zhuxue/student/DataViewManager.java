@@ -152,7 +152,7 @@ public class DataViewManager  {
 	
 //设置资助登记表内容	
 	public String setSponseRegistryRowsSemester(String semester) {
-		String[] sponserTitles = {"学生编号","学生姓名","学校","年级","资助人编号","资助人","邮箱","电话","QQ","资助金额","汇款通知","运营费","到账","汇款来源"};
+		String[] sponserTitles = {"学生编号","学生姓名","学校","年级","资助人编号","资助人","邮箱","电话","QQ","资助金额","汇款通知","运营费","到账","汇款来源","财务对帐","确认到帐邮件","发放情况","反馈"};
 		titles = sponserTitles;
 		int cols = titles.length;
 		List<Transfer> transfers = transferManager.getAllTransfer(semester);
@@ -192,11 +192,6 @@ public class DataViewManager  {
 			datas[i][k++] = transfer.getOperateFee();
 			datas[i][k++] = transfer.getTransferTime();
 			datas[i][k++] = transfer.getTransferBank();
-			datas[i][k++] = transfer.getMethod();
-			datas[i][k++] = transfer.getSendEmail();
-			datas[i][k++] = 
-			
-			datas[i][k++] = transfer.getGrantTime();
 			datas[i][k++] = transfer.getMethod();
 			datas[i][k++] = transfer.getSendEmail();
 
