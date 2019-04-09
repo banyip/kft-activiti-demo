@@ -126,6 +126,7 @@ public class DataViewManager  {
 		int cols = titles.length;
 		List<Sponser> results=sponserManager.getAllSponser();
 		int rows = results.size();
+		datasheets=new HashMap<String,String[][]>();
 		for(int j=0;j<4;j++) {
 		datas = new String[rows][cols];		
 		for(int i=0;i<rows ;i++)
@@ -155,7 +156,6 @@ public class DataViewManager  {
 			datas[i][k++] = result.getSponseEndReason();
 			datas[i][k++] = result.getWechat();
 		}
-		datasheets=new HashMap<String,String[][]>();
 		datasheets.put("支助人"+j,datas);
 		}
 		return fileName;
