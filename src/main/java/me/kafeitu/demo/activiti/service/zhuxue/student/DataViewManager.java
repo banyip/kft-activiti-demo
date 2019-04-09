@@ -8,6 +8,7 @@ import me.kafeitu.demo.activiti.service.zhuxue.student.SponserManager;
 import me.kafeitu.demo.activiti.service.zhuxue.student.StudentManager;
 import me.kafeitu.demo.activiti.util.ExcelUtil;
 
+import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +19,10 @@ import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.*;
 
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Entity: Relative
@@ -41,6 +45,7 @@ public class DataViewManager  {
     private Logger logger = LoggerFactory.getLogger(getClass());
     private String fileName;
     private String[] titles;
+    private Map<String,String[][]> datasheets; 
 	private String[][] datas;
 	public String setStudentRows() {
 		fileName = "学生名录" + System.currentTimeMillis() + ".xls";
@@ -89,13 +94,16 @@ public class DataViewManager  {
 			datas[i][k++] = result.getUserId();
 			datas[i][k++] = result.getBankCard();	
 		}
+		datasheets=new HashMap<String,String[][]>();
+		datasheets.put("学生名录",datas);
 		return fileName;
 	}
 	public void writeToExcelFile(int startRowNum,OutputStream os)
 	{
 		
-        HSSFWorkbook hssfWorkbook = ExcelUtil.writeExcel(startRowNum,"学生名录", titles, datas);
-        
+        HSSFWorkbook hssfWorkbook =  ExcelUtil.writeMultiSheets(0, titles, datasheets);
+
+  
         // 响应到客户端
         try {
             hssfWorkbook.write(os);
@@ -146,6 +154,8 @@ public class DataViewManager  {
 			datas[i][k++] = result.getSponseEndReason();
 			datas[i][k++] = result.getWechat();
 		}
+		datasheets=new HashMap<String,String[][]>();
+		datasheets.put("支助人",datas);
 		return fileName;
 	}
 	
@@ -196,14 +206,21 @@ public class DataViewManager  {
 			datas[i][k++] = transfer.getSendEmail();   //确认到账邮件		
 			datas[i][k++] = transfer.getGrantTime();   //发款日期
 			datas[i][k++] = result.getFeedbackDate(semester);  	//反馈
-		}
+		}	
 		return fileName;
 	}	
 	
 	public String setSponseRegistryRows()
 	{
 		String fileName = "资助登记表" + System.currentTimeMillis() + ".xls";
-		this.setSponseRegistryRowsSemester("2018秋");
+		datasheets=new HashMap<String,String[][]>();
+		List<Object> semesters = transferManager.getAllSemester();
+		for(int i=0;i<semesters.size();i++)
+		{
+			String semester = (String)semesters.get(i);
+			setSponseRegistryRowsSemester(semester);
+			datasheets.put(semester, datas);
+		}		
 		return fileName;
 	}
 	
@@ -212,11 +229,11 @@ public class DataViewManager  {
 		this.writeToExcelFile(0, os);
 	}
 
+
 	public void writeSponseRegistryToExcelFile(OutputStream os)
 	{
 		this.writeToExcelFile(0, os);
 	}
-
 	
 	
 }

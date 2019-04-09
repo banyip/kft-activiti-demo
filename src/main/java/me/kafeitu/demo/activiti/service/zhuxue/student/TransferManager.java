@@ -45,6 +45,11 @@ public class TransferManager {
     	List<Transfer> transferList = Lists.newArrayList(geted);  
         return  transferList;
     }
+    
+    public List<Object> getAllSemester(){
+    	List<Object> geted = transferDao.findAllSemester();
+    	return geted;
+    }
 
     @Transactional(readOnly = false)
     public void saveTransfer(Transfer entity) throws IllegalArgumentException, IllegalAccessException {
