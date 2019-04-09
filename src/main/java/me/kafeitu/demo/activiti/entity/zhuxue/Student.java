@@ -225,10 +225,10 @@ public class Student extends IdEntity implements Serializable {
 	
 	
 	//获取指定学期反馈发送时间
-	public String getFeedbackDate(String sememster)
+	public String getFeedbackDate(String semester)
 	{
 		for(int i=0;i<communicates.size();i++)
-			if(communicates.get(i).getSemester().equals(sememster))
+			if(communicates.get(i).getSemester().equals(semester))
 				return communicates.get(i).getSendDate();
 		return "";
 			

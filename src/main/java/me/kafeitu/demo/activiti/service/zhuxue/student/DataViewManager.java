@@ -184,17 +184,18 @@ public class DataViewManager  {
 				k +=2;
 			datas[i][k++] = sponser.getSponserNo();
 			datas[i][k++] = sponser.getName();
-			datas[i][k++] = result.getEmail();
-			datas[i][k++] = result.getApplicantContactNum();
-			datas[i][k++] = result.getQq();
-			datas[i][k++] = Integer.toString(transfer.getAmount());
+			datas[i][k++] = result.getEmail(); 	 				
+			datas[i][k++] = result.getApplicantContactNum();	//电话
+			datas[i][k++] = result.getQq();						//QQ
+			datas[i][k++] = Integer.toString(transfer.getAmount()); //资助金额
 			datas[i][k++] = ""; //新增汇款通知					
-			datas[i][k++] = transfer.getOperateFee();
-			datas[i][k++] = transfer.getTransferTime();
-			datas[i][k++] = transfer.getTransferBank();
-			datas[i][k++] = transfer.getMethod();
-			datas[i][k++] = transfer.getSendEmail();
-
+			datas[i][k++] = transfer.getOperateFee();		//运营费
+			datas[i][k++] = transfer.getTransferTime();    //到账
+			datas[i][k++] = transfer.getTransferBank();   //汇款来源
+			datas[i][k++] = transfer.getMethod();		//财务对帐
+			datas[i][k++] = transfer.getSendEmail();   //确认到账邮件		
+			datas[i][k++] = transfer.getGrantTime();   //发款日期
+			datas[i][k++] = result.getFeedbackDate(semester);  	//反馈
 		}
 		return fileName;
 	}	
