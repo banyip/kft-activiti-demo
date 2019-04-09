@@ -162,6 +162,7 @@ public class DataViewManager  {
 	
 //设置资助登记表内容	
 	public void setSponseRegistryRowsSemester(String semester) {
+		semester = "2018秋";
 		String[] sponserTitles = {"学生编号","学生姓名","学校","年级","资助人编号","资助人","邮箱","电话","QQ","资助金额","汇款通知","运营费","到账","汇款来源","财务对帐","确认到帐邮件","发放情况","反馈"};
 		titles = sponserTitles;
 		int cols = titles.length;
