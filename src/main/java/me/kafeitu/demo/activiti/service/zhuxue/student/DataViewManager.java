@@ -126,7 +126,7 @@ public class DataViewManager  {
 		int cols = titles.length;
 		List<Sponser> results=sponserManager.getAllSponser();
 		int rows = results.size();
-		for(int j=0;j<2;j++) {
+		for(int j=0;j<4;j++) {
 		datas = new String[rows][cols];		
 		for(int i=0;i<rows ;i++)
 		{
