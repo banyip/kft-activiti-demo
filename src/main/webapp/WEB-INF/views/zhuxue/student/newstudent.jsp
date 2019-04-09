@@ -553,7 +553,7 @@
 	<tr>
 		<td class="style12" style="width: 15%">日期</td>
 		<td class="style12"  style="width: 35%">近况</td>
-		<td class="style12" style="width: 10%">发款学期</td>	
+		<td class="style12" style="width: 10%">反馈学期</td>	
 		<td class="style12" style="width: 25%">照片上传</td>
 		<td class="style12" style="width: 15%">发送日期</td>
 	</tr>
@@ -567,7 +567,7 @@
 		<td style="width: 35%" class="style11" >
 				<input class="studentApply" type="text" id="communicates[0]_content" name="content">				
 		<td class="style11" style="width: 10%">
-				<input  disabled="disabled" class="studentApply" type="text" id="communicates[0]_semester" name="semester" style="width: 86px" /></td>		<td style="width: 25%" class="style11" >
+				<input  class="studentApply" type="text" id="communicates[0]_semester" name="semester" style="width: 86px" /></td>		<td style="width: 25%" class="style11" >
 <input type="file" multiple=multiple class="studentPhoto" id="communicates[0]_picture" name="communicates[0]_picture"></td>
 		<td class="style11"  style="width: 15%">
 				<input class="studentApply" type="text" id="communicates[0]_sendDate" name="sendDate" style="width: 86px"></td>
