@@ -16,6 +16,6 @@ import org.springframework.stereotype.Component;
 public interface SponserDao extends CrudRepository<Sponser, Long> {
 
 	@Modifying
-	@Query(value = "delete from zhuxue_student_transfers where transfers in (select id from zhuxue_transfer where sponser_id = ?)1")
+	@Query(value = "delete from zhuxue_student_transfers where transfers in (select id from zhuxue_transfer where sponser_id = ?1)",nativeQuery=true)
 	public void deleteTransferForeignKey(Long sponser_id);
 }
