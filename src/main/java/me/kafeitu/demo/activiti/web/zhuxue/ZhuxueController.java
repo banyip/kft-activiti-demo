@@ -321,11 +321,12 @@ public class ZhuxueController {
    					List<AuditPhoto> auditPhotos = audit.getAuditPhotos();
    					logger.debug("AuditPhotos save key:"+key);
    					logger.debug("AuditPhotos photoindex:" + photoindex);
+   					logger.debug("AuditPhotos origin count:" + auditPhotos.size());
    					while(photoindex>=auditPhotos.size())
    					{
    						auditPhotos.add(new AuditPhoto());
    					}
-   					logger.debug("AuditPhotos number:" + auditPhotos.size());
+   					logger.debug("AuditPhotos count:" + auditPhotos.size());
    					AuditPhoto auditPhoto = auditPhotos.get(photoindex);
    					auditPhoto.setPhotoDate((String) value);
    					methodname="set" + key.substring(photopos+4,photopos+5).toUpperCase()+key.substring(photopos+5);
