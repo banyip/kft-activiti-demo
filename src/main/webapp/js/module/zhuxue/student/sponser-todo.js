@@ -101,7 +101,7 @@ function inserttable(whichpage,whichpart) {
     myparent=$('#'+whichpage);
 	var newnode = myparent.find('.'+tableclass)[0].cloneNode(true);
     var content = newnode.innerHTML;
-	content = content.replace(/\[0\]/g, "["+ myparent.find("."+tableclass).length + "]");
+	content = content.replace(/\[0\]/g, "["+ (myparent.find("."+tableclass).length -1 ) + "]");
 	content = "<table class='"+tableclass+"'>" + content + "</table>";
 	
 	if(myparent.find('.'+tableclass).length <=7){
