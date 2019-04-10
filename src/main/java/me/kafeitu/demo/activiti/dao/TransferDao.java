@@ -16,7 +16,7 @@ import org.springframework.data.jpa.repository.Modifying;
 @Component
 public interface TransferDao extends CrudRepository<Transfer, Long> {
 	Iterable<Transfer> findBySemesterOrderBySemesterDesc(String semester);
-	Iterable<Transfer> findByStudentStudentIdOrderByIdAsc(String studentId);
+	Iterable<Transfer> findByStudentIdOrderByIdAsc(String studentId);
 	   @Query(
 	            value = "select distinct semester from zhuxue_transfer order by semester desc",
 	            nativeQuery = true
