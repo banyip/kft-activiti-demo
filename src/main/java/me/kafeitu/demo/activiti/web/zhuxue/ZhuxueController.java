@@ -317,13 +317,14 @@ public class ZhuxueController {
    				if(key.indexOf("auditPhotos")>0)
    				{
    					int photopos = "audits[0]_auditPhotos".length();
-   					int photoindex = Integer.parseInt(key.substring(pos+1,pos+2));
+   					int photoindex = Integer.parseInt(key.substring(photopos+1,photopos+2));
    					List<AuditPhoto> auditPhotos = audit.getAuditPhotos();
    					logger.debug("AuditPhotos save key:"+key);
    					logger.debug("AuditPhotos photoindex:" + photoindex);
    					logger.debug("AuditPhotos origin count:" + auditPhotos.size());
    					while(photoindex>=auditPhotos.size())
    					{
+   						logger.debug("AuditPhotos count:" + auditPhotos.size());
    						auditPhotos.add(new AuditPhoto());
    					}
    					logger.debug("AuditPhotos count:" + auditPhotos.size());
