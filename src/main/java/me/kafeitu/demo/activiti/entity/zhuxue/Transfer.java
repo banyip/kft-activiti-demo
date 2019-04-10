@@ -84,15 +84,12 @@ public class Transfer extends IdEntity implements Serializable {
 	}
 
 	
-/*	@ManyToOne(fetch = FetchType.EAGER)
+	@ManyToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name="sponserId")
 	@JsonBackReference
-*/
-	@Transient
     public Sponser getSponser() {
 		return sponser;
 	}
-	
 	public void setSponser(Sponser sponser) {
 		this.sponser = sponser;
 	}
