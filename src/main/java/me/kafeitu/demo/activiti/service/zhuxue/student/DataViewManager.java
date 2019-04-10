@@ -198,7 +198,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getApplicantContactNum();	//电话
 			datas[i][k++] = result.getQq();						//QQ
 			datas[i][k++] = Integer.toString(transfer.getAmount()); //资助金额
-			datas[i][k++] = ""; //新增汇款通知					
+			datas[i][k++] = transfer.getNotify(); //汇款通知					
 			datas[i][k++] = transfer.getOperatingFee();		//运营费
 			datas[i][k++] = transfer.getTransferTime();    //到账
 			datas[i][k++] = transfer.getTransferBank();   //汇款来源
