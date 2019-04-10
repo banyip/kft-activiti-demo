@@ -548,9 +548,9 @@ public class ZhuxueController {
 				String methodname="set" + key.substring(pos+4,pos+5).toUpperCase()+key.substring(pos+5);   				
 				if(key.indexOf("studentId")>=0)
 				{
-					Student student = studentManager.getStudent(Long.parseLong((String) value));
+				//	Student student = studentManager.getStudent(Long.parseLong((String) value));
 					item.setStudentId((String)value);
-					student.addTransfer(item);
+				//	student.addTransfer(item);
 					
 				}else
 					invoke(methodname,value,(Object)item,invokeClassName,"java.lang.String");   					
@@ -645,6 +645,7 @@ public class ZhuxueController {
 
    }
    sponserManager.saveSponser(sponser);
+   
    return "success";	 
 
   
