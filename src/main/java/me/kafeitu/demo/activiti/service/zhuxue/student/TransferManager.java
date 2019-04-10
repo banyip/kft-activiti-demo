@@ -47,7 +47,7 @@ public class TransferManager {
     }
     
     public List<Transfer> getAllTransferByStudentId(String studentId) {
-    	Iterable<Transfer> geted = transferDao.findByStudentStudentIdOrderByIdAsc(studentId);
+    	Iterable<Transfer> geted = transferDao.findByStudentIdOrderByIdAsc(studentId);
     	List<Transfer> transferList = Lists.newArrayList(geted);  
         return  transferList;
     }    
