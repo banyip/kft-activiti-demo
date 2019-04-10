@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
-
+import org.springframework.data.jpa.repository.Modifying;
 /**
  * 请假实体管理接口
  *
@@ -22,6 +22,11 @@ public interface TransferDao extends CrudRepository<Transfer, Long> {
 	            nativeQuery = true
 	    )
 	    List<Object> findAllSemester();
+	   
+	
 
 }
 
+
+	
+		

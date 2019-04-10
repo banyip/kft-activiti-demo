@@ -37,6 +37,7 @@ public class SponserManager {
     @Transactional(readOnly = false)
     public void delSponser(Long id)
     {
+    	sponserDao.deleteTransferForeignKey(id);
     	sponserDao.delete(id);
     }
     

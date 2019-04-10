@@ -1,6 +1,9 @@
 package me.kafeitu.demo.activiti.dao;
 
 import me.kafeitu.demo.activiti.entity.zhuxue.Sponser;
+
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Component;
 
@@ -11,4 +14,8 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public interface SponserDao extends CrudRepository<Sponser, Long> {
+
+	@Modifying
+	@Query(value = "delete from zhuxue_student_transfers where transfers in (select id from zhuxue_transfer where sponser_id = ?1")
+	public void deleteTransferForeignKey(Long sponser_id);
 }
