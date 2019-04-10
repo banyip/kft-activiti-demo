@@ -320,6 +320,7 @@ public class ZhuxueController {
    					int photoindex = Integer.parseInt(key.substring(pos+1,pos+2));
    					List<AuditPhoto> auditPhotos = audit.getAuditPhotos();
    					logger.debug("AuditPhotos save key:"+key);
+   					logger.debug("AuditPhotos photoindex:" + photoindex);
    					while(photoindex>=auditPhotos.size())
    					{
    						auditPhotos.add(new AuditPhoto());
