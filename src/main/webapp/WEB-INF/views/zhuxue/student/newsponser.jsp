@@ -1,6 +1,35 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
+
+<head>
+<style type="text/css">
+input:not([type="checkbox"]) {
+	width:95%
+	
+}
+.style11 {
+	color: #2F2B20;
+	font-size: 11.0pt;
+	font-weight: 400;
+	font-style: normal;
+	text-decoration: none;
+	font-family: 宋体;
+	text-align: left;
+	vertical-align: middle;
+    white-space: nowrap;
+    border-left: .5pt solid windowtext;
+	border-right: 1.5pt solid windowtext;
+	border-top: .5pt solid windowtext;
+	border-bottom: .5pt solid windowtext;
+	border: .5pt solid windowtext;
+	padding: 0px;
+}
+
+</style>
+
+</head>
+
     
     
 <table border="0" cellpadding="0" cellspacing="0" width="898" style="border-collapse:
@@ -95,15 +124,16 @@
 	<table width="100%">
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
 		<td height="24" style="height: 18.0pt; width: 9%;" class="style11">资助汇款时间</td>
-		<td class="style11" style="width: 9%">汇款银行</td>
-		<td class="style11" style="width: 9%">汇款人</td>
-		<td class="style11" style="width: 9%">财务核对</td>
-		<td class="style11" style="width: 9%">受助学生</td>
-		<td class="style11" style="width: 9%">资助学期</td>
-		<td class="style11" style="width: 9%">金额</td>
+		<td class="style11" style="width: 8%">汇款银行</td>
+		<td class="style11" style="width: 8%">汇款人</td>
+		<td class="style11" style="width: 8%">财务核对</td>
+		<td class="style11" style="width: 8%">受助学生</td>
+		<td class="style11" style="width: 8%">资助学期</td>
+		<td class="style11" style="width: 8%">金额</td>
+		<td class="style11" style="width: 8%">汇款通知</td>
 		<td class="style11" style="width: 9%">发送确认邮件</td>
-		<td class="style11" style="width: 9%">运营费用</td>
-		<td class="style11" style="width: 19%">备注（资助多位学生备注）</td>
+		<td class="style11" style="width: 8%">运营费用</td>
+		<td class="style11" style="width: 18%">备注（资助多位学生备注）</td>
 </tr>
 	</table>
 	</div></td>
@@ -112,29 +142,31 @@
 	<tr><td colspan=8>		    <div id="div_transfers">
 				<table class="class_transfers" width="100%">
 	<tr style="mso-height-source:userset;">
-		<td style="height: 18pt; width: 9%;" class="style11">
+		<td style="height: 18pt; width: 8%;" class="style11">
 			<input class="sponserApply" id="transfers[0]_transferTime" name="transfers[0]_transferTime" type="text" />　</td>
-		<td class="style11" style="width: 9%">
+		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_transferBank" name="transfers[0]_transferBank" type="text" /></td>
-		<td class="style11" style="width: 9%">
+		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_transferMan" name="transfers[0]_transferMan" type="text" /></td>
-		<td class="style11" style="width: 9%">
+		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_method" name="transfers[0]_method" type="text" /></td>
-		<td class="style11" style="width: 9%">
+		<td class="style11" style="width: 8%">
 				<select class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId">
 					<c:forEach items="${studentList }" var="student"> 
 					<option value="${student.id }">${student.studentName }</option> 
 					</c:forEach>				
 				</select></td> 
-		<td class="style11" style="width: 9%">
+		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_semester" name="transfers[0]_semester" type="text" /></td>
-		<td class="style11" style="width: 9%">
+		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_amount" name="transfers[0]_amount" type="text" /></td>
-		<td class="style11" style="width: 9%">
+		<td class="style11" style="width: 8%">
+			<input class="sponserApply" id="transfers[0]_notify" name="transfers[0]_notify" type="text" /></td>
+		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_sendEmail" name="transfers[0]_sendEmail" type="text"/></td>
-		<td class="style11" style="width: 9%">
+		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_operatingFee" name="transfers[0]_operatingFee" type="text"/></td>
-		<td class="style11" style="width: 19%">
+		<td class="style11" style="width: 18%">
 			<input class="sponserApply" id="transfers[0]_memo" name="transfers[0]_memo" type="text"/></td>
 	</tr>
 	</table>

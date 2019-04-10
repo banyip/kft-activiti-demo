@@ -52,7 +52,8 @@ public class Transfer extends IdEntity implements Serializable {
     private int grantAmount=0;
     private String sendEmail;
     private String operatingFee;
-
+    private String notify;
+    
     @Column
     public String getTransferBank() {
 		return transferBank;
@@ -141,6 +142,13 @@ public class Transfer extends IdEntity implements Serializable {
 	@Column
 	public int getGrantAmount() {
 		return grantAmount;
+	}
+	@Column
+	public String getNotify() {
+		return notify;
+	}
+	public void setNotify(String notify) {
+		this.notify = notify;
 	}
 	public void setGrantTime(String grantTime) {
 		this.grantTime = grantTime;
