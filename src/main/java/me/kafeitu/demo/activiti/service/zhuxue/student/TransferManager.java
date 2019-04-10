@@ -46,6 +46,12 @@ public class TransferManager {
         return  transferList;
     }
     
+    public List<Transfer> getAllTransferByStudentId(String studentId) {
+    	Iterable<Transfer> geted = transferDao.findByStudentStudentIdOrderByIdAsc(studentId);
+    	List<Transfer> transferList = Lists.newArrayList(geted);  
+        return  transferList;
+    }    
+    
     public List<Object> getAllSemester(){
     	List<Object> geted = transferDao.findAllSemester();
     	return geted;

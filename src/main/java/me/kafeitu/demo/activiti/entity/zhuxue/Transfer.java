@@ -84,7 +84,7 @@ public class Transfer extends IdEntity implements Serializable {
 	}
 
 	
-	@ManyToOne(fetch = FetchType.EAGER,cascade = { CascadeType.ALL })
+	@ManyToOne(fetch = FetchType.EAGER,cascade = { CascadeType.PERSIST })
 	@JoinColumn(name="sponserId")
 	@JsonBackReference
     public Sponser getSponser() {

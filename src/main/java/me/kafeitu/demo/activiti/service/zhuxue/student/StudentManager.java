@@ -1,6 +1,7 @@
 package me.kafeitu.demo.activiti.service.zhuxue.student;
 
 import me.kafeitu.demo.activiti.dao.StudentDao;
+import me.kafeitu.demo.activiti.dao.TransferDao;
 import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
@@ -58,9 +59,12 @@ public class StudentManager {
 	}
 
     private StudentDao studentDao;
-
+    @Autowired
+    private TransferManager transferManager;
     public Student getStudent(Long id) {
-        return studentDao.findOne(id);
+        Student student = studentDao.findOne(id);
+        student.setTransfer(transferManager.getAllTransferByStudentId(String.valueOf(id)));
+        return student;
     }
 
     @Transactional(readOnly = false)
