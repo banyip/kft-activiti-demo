@@ -1,3 +1,43 @@
+.second select {
+    width: 11%;
+    height: 106px;
+    margin: 0px;
+    outline: none;
+    border: 1px solid #999;
+    margin-top: 31px;
+}
+.second input {
+    width: 167px;
+    top: 9px;
+    outline: none;
+    border: 0pt;
+    position: absolute;
+    line-height: 30px;
+    left: 8px;
+    height: 30px;
+    border: 1px solid #999;
+}
+.second ul {
+    position: absolute;
+    top: 27px;
+    border: 1px solid #999;
+    left: 8px;
+    width: 125px;
+    line-height: 16px;
+}
+.ul li{
+    list-style: none;
+    width: 161px;
+    /* left: 15px; */
+    margin-left: -40px;
+    font-family: Î¢ÈíÑÅºÚ;
+    padding-left: 4px;
+}
+.blue { 
+    background:#1e91ff; 
+
+}
+
 table{
 	margin:0px;
 }
