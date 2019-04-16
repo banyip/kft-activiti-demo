@@ -1,108 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
-<style type="text/css">
-
-.second select {
-    width: 11%;
-    height: 106px;
-    margin: 0px;
-    outline: none;
-    border: 1px solid #999;
-    margin-top: 31px;
-}
-.second input {
-    width: 167px;
-    top: 9px;
-    outline: none;
-    border: 0pt;
-    position: absolute;
-    line-height: 30px;
-    left: 8px;
-    height: 30px;
-    border: 1px solid #999;
-}
-.second ul {
-    position: absolute;
-    top: 27px;
-    border: 1px solid #999;
-    left: 8px;
-    width: 125px;
-    line-height: 16px;
-}
-.ul li{
-    list-style: none;
-    width: 161px;
-    /* left: 15px; */
-    margin-left: -40px;
-    font-family: å¾®è½¯é›…é»‘;
-    padding-left: 4px;
-}
-.blue { 
-    background:#1e91ff; 
-
-}
-</style>
-
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/jquery-editable-select.min.js"></script>
+<link href="js/jquery-editable-select.min.css" rel="stylesheet"/>
 <script>
-var TempArr=[];//å­˜å‚¨option
-
-$(function(){
-    /*å…ˆå°†æ•°æ®å­˜å…¥æ•°ç»„*/
-    $("#typenum option").each(function(index, el) {
-        TempArr[index] = $(this).text();
-    });
-    $(document).bind('click', function(e) {  
-        var e = e || window.event; //æµè§ˆå™¨å…¼å®¹æ€§   
-        var elem = e.target || e.srcElement;  
-        while (elem) { //å¾ªç¯åˆ¤æ–­è‡³è·ŸèŠ‚ç‚¹ï¼Œé˜²æ­¢ç‚¹å‡»çš„æ˜¯divå­å…ƒç´    
-            if (elem.id && (elem.id == 'typenum' || elem.id == "makeupCo")) {  
-                return;  
-            }  
-            elem = elem.parentNode;  
-        }  
-        $('#typenum').css('display', 'none'); //ç‚¹å‡»çš„ä¸æ˜¯divæˆ–å…¶å­å…ƒç´    
-    });  
-})
- 
-function changeF(this_) {
-    $(this_).prev("input").val($(this_).find("option:selected").text());
-    $("#typenum").css({"display":"none"});
-}
-function setfocus(this_){
-    $("#typenum").css({"display":""});
-    var select = $("#typenum");
-    for(i=0;i<TempArr.length;i++){
-        var option = $("<option></option>").text(TempArr[i]);
-        select.append(option);
-    } 
-}
- 
-function setinput(this_){
-    var select = $("#typenum");
-    select.html("");
-    for(i=0;i<TempArr.length;i++){
-        //è‹¥æ‰¾åˆ°ä»¥txtçš„å†…å®¹å¼€å¤´çš„ï¼Œæ·»option
-        if(TempArr[i].substring(0,this_.value.length).indexOf(this_.value)==0){
-            var option = $("<option></option>").text(TempArr[i]);
-            select.append(option);
-        }
+function(data) {
+    var htm = "";
+    for (var int = 0; int < data.length; int++) {
+        htm += "<option value='" + data[int].name + "'>" + data[int].name + "</option>";
     }
-}
+    $('#numUnit').html(htm);
+    $('#numUnit').editableSelect({
+        effects: 'slide',
+        //¿ÉÑ¡²ÎÊıdefault¡¢fade
+        filter: false // ²»¹ıÂË£¬·ñÔòÑ¡ÖĞºóÆäËüÑ¡ÏîÏûÊ§
+    });
+ 
+    // $("#numUnit").attr("readonly","true"); // ÉèÖÃ²»¿É±à¼­
+    setTimeout(function() {
+        $('#numUnit').val(data[0].name); // ÉèÖÃÄ¬ÈÏÖµ£¬²»ÑÓÊ±Ôò²»ÉúĞ§¡£
+    },
+    300);
+});
 </script>
+</head>
 <body>
-<span class="second">
-    <input type="text" name="makeupCo" id="makeupCo" class="makeinp" onfocus="setfocus(this)" oninput="setinput(this);" placeholder="è¯·é€‰æ‹©æˆ–è¾“å…¥"/>
-    <select name="makeupCoSe" id="typenum" onchange="changeF(this)" size="10" style="display:none;">
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">12323</option>
-        <option value="">31</option>
-        <option value="">1332</option>
-        <option value="">412</option>
-        <option value="">42</option>
-        <option value="">11</option>
-    </select>
-</span>
+<select id="editable-select">
+    <option value="1">Alfa Romeo</option>
+    <option value="2">ÖĞ¹ú</option>
+    <option value="3">ÃÀ¹ú</option>
+    <option value="4">ÈÕ±¾</option>
+</select>
+        <select id="numUnit" name="numUnit" class="form-control">
+        </select>
+
 </body>
+</html>
