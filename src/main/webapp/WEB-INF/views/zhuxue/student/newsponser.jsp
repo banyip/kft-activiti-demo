@@ -154,10 +154,15 @@ input:not([type="checkbox"]) {
 <span class="second">
     <input type="text" name="makeupCo" id="makeupCo" class="makeinp" onfocus="setfocus(this)" oninput="setinput(this);" placeholder="请选择或输入"/>
     <select name="makeupCoSe" id="typenum" onchange="changeF(this)" size="10" style="display:none;">
-						<c:forEach items="${studentList }" var="student"> 
-						<option value="${student.id }">${student.studentName }</option> 
-						</c:forEach>				
-				</select></td>
+        <option value="">1</option>
+        <option value="">2</option>
+        <option value="">12323</option>
+        <option value="">31</option>
+        <option value="">1332</option>
+        <option value="">412</option>
+        <option value="">42</option>
+        <option value="">11</option>
+    </select>
 </span>				
 <!--<select class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId"  list="dataListForSelect" >
 				   <datalist id="dataListForSelect">
