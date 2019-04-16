@@ -57,6 +57,7 @@ public class Sponser extends IdEntity implements Serializable {
 	private String sponseEndReason;
 	private String sendEmail;
 	private String operatingFee;
+	private String studentNosToSponse;
 	
 	private List<Student> studentsToSponse=new ArrayList<Student>();
 	private List<Transfer> transfers=new ArrayList<Transfer>();
@@ -195,6 +196,18 @@ public class Sponser extends IdEntity implements Serializable {
 	public List<Student> getStudentsToSponse() {
 		return studentsToSponse;
 	}
+
+	@Transient
+	public String getStudentNosToSponse() {
+		studentNosToSponse = this.StudentsToSponseString();
+		return studentNosToSponse;
+	}
+
+	
+	public void setStudentNosToSponse(String studentNosToSponse) {
+		this.studentNosToSponse = studentNosToSponse;
+	}
+
 
 	/**
 	 * @param studentsToSponse the studentsToSponse to set
