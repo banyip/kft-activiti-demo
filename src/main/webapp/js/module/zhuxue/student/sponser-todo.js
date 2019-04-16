@@ -1,7 +1,5 @@
 var innerhtmls=new Map();
-$('#editable-select').editableSelect({
-	effects: 'slide'
-});
+
 
 /**
  * 请假流程任务办理
@@ -426,7 +424,9 @@ editsponser: {
 				var dialog = this;
 				
 
-                
+				$('#editable-select').editableSelect({
+					effects: 'slide'
+				});
                 
 				// 打开对话框的时候读取请假内容
 				loadPartlyDetailWithTaskVars.call(this, "editsponser",id, null);
