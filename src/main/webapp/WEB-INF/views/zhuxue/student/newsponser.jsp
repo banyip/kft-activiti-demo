@@ -156,7 +156,7 @@ input:not([type="checkbox"]) {
      					<input id="transfers[0]_studentId" type="text" style="width:100%" class="organ-info cenz input" placeholder="输入相关单位"/>
     				<ul>
 						<c:forEach items="${studentList }" var="student"> 
-	   				       <li title='${student.id }'>${student.studentName</li>
+	   				       <li title='${student.id }'>${student.studentName}</li>
 						</c:forEach>				
 				    </ul>
 				    </div>
