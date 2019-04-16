@@ -151,11 +151,23 @@ input:not([type="checkbox"]) {
 		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_method" name="transfers[0]_method" type="text" /></td>
 		<td class="style11" style="width: 8%">
+			<div class="organ-item">
+     				<div class="nice-select" style="float:left;box-shadow:none">
+     					<input id="transfers[0]_studentId" type="text" style="width:100%" class="organ-info cenz input" placeholder="输入相关单位"/>
+    				<ul>
+						<c:forEach items="${studentList }" var="student"> 
+	   				       <li title='${student.id }'>${student.studentName</li>
+						</c:forEach>				
+				    </ul>
+				    </div>
+			</div>
+<!--				
 				<select class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId">
 					<c:forEach items="${studentList }" var="student"> 
 					<option value="${student.id }">${student.studentName }</option> 
 					</c:forEach>				
 				</select></td> 
+-->
 		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_semester" name="transfers[0]_semester" type="text" /></td>
 		<td class="style11" style="width: 8%">

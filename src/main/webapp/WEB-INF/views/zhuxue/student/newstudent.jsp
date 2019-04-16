@@ -72,11 +72,16 @@
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
     </tr>   
 	<tr style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" style="height: 20.1pt" class="style11">
+	<td colspan="2" style="height: 20.1pt" class="style11">
+		学生住址</td>
+		<td colspan="2" class="style11">
+		<input class="studentApply" id="student_address" name="address" />　</td>		
+	<td colspan="1" style="height: 20.1pt" class="style11">
 		备注</td>
-		<td colspan="6" class="style11">
+		<td colspan="3" class="style11">
 		<input class="studentApply" id="student_memo" name="memo" />　</td>
-    </tr>       
+    </tr>     
+      
 	<tr><td colspan="8">		    <div >
 				<table width="100%">
  	<tr>

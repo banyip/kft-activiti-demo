@@ -222,7 +222,7 @@ public class Student extends IdEntity implements Serializable {
 	private String debtDescribe;
 	private String memo;
 	private String sponserId;
-	
+
 	
 	//获取指定学期反馈发送时间
 	public String getFeedbackDate(String semester)
@@ -1319,5 +1319,7 @@ public class Student extends IdEntity implements Serializable {
 		this.communicates = communicates;
 	}
 
-	
+	 public String toString() {
+		 return this.auditNo;
+	 }
 }

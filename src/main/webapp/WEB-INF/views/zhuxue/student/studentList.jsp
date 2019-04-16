@@ -35,7 +35,7 @@
 	<table width="100%" class="need-border">
 		<th>
 			<tr>
-				<th>申请人</th>				
+				<th>学生编号</th>				
 				<th>学生名称</th>
 
 				<th>任务创建时间</th>
@@ -44,7 +44,7 @@
 		</th>
 		<tbody>
 			<c:forEach items="${page.result }" var="student"> 
-				<tr id="${student.id }">
+				<tr id="${student.auditNo }">
 				    <td>${student.applicantName }</td>
 				    <td>${student.studentName }</td>
 
