@@ -151,19 +151,13 @@ input:not([type="checkbox"]) {
 		<td class="style11" style="width: 8%">
 			<input class="sponserApply" id="transfers[0]_method" name="transfers[0]_method" type="text" /></td>
 		<td class="style11" style="width: 8%">
-<span class="second">
-    <input type="text" name="makeupCo" id="makeupCo" class="makeinp" onfocus="setfocus(this)" oninput="setinput(this);" placeholder="请选择或输入"/>
-    <select name="makeupCoSe" id="typenum" onchange="changeF(this)" size="10" style="display:none;">
-        <option value="">1</option>
-        <option value="">2</option>
-        <option value="">12323</option>
-        <option value="">31</option>
-        <option value="">1332</option>
-        <option value="">412</option>
-        <option value="">42</option>
-        <option value="">11</option>
-    </select>
-</span>				
+<select id="editable-select">
+    <option value="1">Alfa Romeo</option>
+    <option value="2">Audi</option>
+    <option value="3">BMW</option>
+    <option value="4">Citroen</option>
+</select>
+	
 <!--<select class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId"  list="dataListForSelect" >
 				   <datalist id="dataListForSelect">
 						<c:forEach items="${studentList }" var="student"> 

@@ -10,7 +10,9 @@
     <%@ include file="/common/include-jquery-ui-theme.jsp" %>
     <link href="${ctx }/js/common/plugins/uploader/css/jquery.dm-uploader.min.css" rel="stylesheet">
     <link href="${ctx }/js/common/plugins/jui/extends/timepicker/jquery-ui-timepicker-addon.css" type="text/css" rel="stylesheet" />
-    <link href="${ctx }/js/common/plugins/qtip/jquery.qtip.min.css" type="text/css" rel="stylesheet" />
+    <link href="${ctx }/js/common/plugins/editableselect/jquery-editable-select.min.css" type="text/css" rel="stylesheet" />
+<link href="${ctx }/js/common/plugins/qtip/jquery.qtip.min.css" type="text/css" rel="stylesheet" />
+
     <%@ include file="/common/include-custom-styles.jsp" %>
      <link rel="stylesheet" type="text/css" href="${ctx }/css/studentList.css" />
     <script src="${ctx }/js/common/jquery-1.8.3.js" type="text/javascript"></script>
@@ -23,6 +25,7 @@
 	<script src="${ctx }/js/common/plugins/blockui/jquery.blockUI.js" type="text/javascript"></script>
 	<script src="${ctx }/js/module/activiti/workflow.js" type="text/javascript"></script>
 	<script src="${ctx }/js/module/zhuxue/student/sponser-todo.js" type="text/javascript"></script>	
+    <script src="${ctx }/js/common/plugins/jquery-editable-select.min.js" type="text/javascript"></script>
 </head>
 
 <body>
