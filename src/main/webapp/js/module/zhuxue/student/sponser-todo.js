@@ -1,4 +1,45 @@
 var innerhtmls=new Map();
+//学生下拉列表
+
+//input 点击事件
+$(document).on('click','.nice-select',function(e){
+                $(".nice-select").find("ul").hide();// 让ul隐藏（当你一个页面多个这样的输入框时你就会用到） 
+                $(".nice-select ul li").show();// 列表展示
+                $(this).find('ul').show();// 当前子节点显示
+                e.stopPropagation();// 阻止事件冒泡
+            })
+
+// input 输入事件
+$(document).on('input','.input',function(){
+        var keywords = $(this).val();
+        var count = 0;
+        if (keywords != "") {
+           $(".nice-select ul li").each(function(i) {
+                 var contentValue = $(this).text();            if(contentValue.toLowerCase().indexOf(keywords.toLowerCase()) < 0) {
+           $(this).hide();
+           count++;
+ } else {
+         $(this).show();
+        }
+        if (count == (i + 1)) {
+             $(this).parent().find("ul").hide();
+             // $(".nice-select").find("ul").hide();
+         } else {
+             $(this).parent().find("ul").show();
+             // $(".nice-select").find("ul").show();
+         }
+     });
+    } else {
+        $(".nice-select ul li").each(function(i) {
+            $(this).show();
+        });
+    }
+    });
+    // 点击页面的任何一点让input列表隐藏
+    $(document).click(function(){
+       $(".nice-select").find("ul").hide();
+    });
+            
 
 
 /**

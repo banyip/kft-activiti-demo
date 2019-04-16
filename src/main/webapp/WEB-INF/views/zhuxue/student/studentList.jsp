@@ -44,8 +44,8 @@
 		</th>
 		<tbody>
 			<c:forEach items="${page.result }" var="student"> 
-				<tr id="${student.auditNo }">
-				    <td>${student.applicantName }</td>
+				<tr id="${student.id }">
+				    <td>${student.auditNo }</td>
 				    <td>${student.studentName }</td>
 
 					<td>${student.applyTime }</td>
