@@ -194,9 +194,9 @@ public class DataViewManager  {
 				k +=2;
 			datas[i][k++] = sponser.getSponserNo();
 			datas[i][k++] = sponser.getName();
-			datas[i][k++] = result.getEmail(); 	 				
-			datas[i][k++] = result.getApplicantContactNum();	//电话
-			datas[i][k++] = result.getQq();						//QQ
+			datas[i][k++] = sponser.getEmail(); 	 				
+			datas[i][k++] = sponser.getContactNo();	//电话
+			datas[i][k++] = sponser.getQq();						//QQ
 			datas[i][k++] = Integer.toString(transfer.getAmount()); //资助金额
 			datas[i][k++] = transfer.getNotify(); //汇款通知					
 			datas[i][k++] = transfer.getOperatingFee();		//运营费
