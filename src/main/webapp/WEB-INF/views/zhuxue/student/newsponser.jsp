@@ -144,14 +144,14 @@ input:not([type="checkbox"]) {
 	<tr style="mso-height-source:userset;">
 		<td style="height: 18pt; width: 8%;" class="style11">
 			<input class="sponserApply" id="transfers[0]_transferTime" name="transfers[0]_transferTime" type="text" />　</td>
-		<td class="style11" style="width: 8%">
+		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_transferBank" name="transfers[0]_transferBank" type="text" /></td>
-		<td class="style11" style="width: 8%">
+		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_transferMan" name="transfers[0]_transferMan" type="text" /></td>
-		<td class="style11" style="width: 8%">
+		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_method" name="transfers[0]_method" type="text" /></td>
-		<td class="style11" style="width: 8%">
-		<select id="editable-select" class="form-control">
+		<td class="style11" style="width: 8%; height: 18pt;">
+<!--		<select id="editable-select" class="form-control">
     <option>Alfa Romeo</option>
     <option>Audi</option>
 	<option>中国人民银行</option>
@@ -172,27 +172,25 @@ input:not([type="checkbox"]) {
     <option>Peugeot</option>
     <option>Porsche</option>
     <option>Renault</option>
-</select>
+</select>--> 
 	
-<!--<select class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId"  list="dataListForSelect" >
-				   <datalist id="dataListForSelect">
+<select class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId"  >
 						<c:forEach items="${studentList }" var="student"> 
 						<option value="${student.id }">${student.studentName }</option> 
 						</c:forEach>	
-					</datalist>			
 				</select></td> 
---> 
-		<td class="style11" style="width: 8%">
+
+		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_semester" name="transfers[0]_semester" type="text" /></td>
-		<td class="style11" style="width: 8%">
+		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_amount" name="transfers[0]_amount" type="text" /></td>
-		<td class="style11" style="width: 8%">
+		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_notify" name="transfers[0]_notify" type="text" /></td>
-		<td class="style11" style="width: 8%">
+		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_sendEmail" name="transfers[0]_sendEmail" type="text"/></td>
-		<td class="style11" style="width: 8%">
+		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_operatingFee" name="transfers[0]_operatingFee" type="text"/></td>
-		<td class="style11" style="width: 18%">
+		<td class="style11" style="width: 18%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_memo" name="transfers[0]_memo" type="text"/></td>
 	</tr>
 	</table>
