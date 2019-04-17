@@ -59,9 +59,9 @@ public class SponserManager {
     @Transactional(readOnly = false)
     public void saveSponser(Sponser entity) throws IllegalArgumentException, IllegalAccessException {
     	
-    	if (entity.getId() == null) {
+ //   	if (entity.getId() == null) {
 //            entity.setApplyTime(new Date());
-        }
+//        }
 //        List<Relative> items = entity.getRelatives();
 //        this.<Relative>cleanEmpty(items);
 //        List<Exam> exams=entity.getExams();
@@ -74,6 +74,7 @@ public class SponserManager {
            
       }  
    */     
+    	entity.setStudentsToSponse(studentManager.getAllStudentBysponserId(entity.getSponserNo()));
         sponserDao.save(entity);
     }
 

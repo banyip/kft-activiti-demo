@@ -197,9 +197,9 @@ public class Sponser extends IdEntity implements Serializable {
 		return studentsToSponse;
 	}
 
-	@Transient
+	@Column
 	public String getStudentNosToSponse() {
-		studentNosToSponse = this.StudentsToSponseString();
+//		studentNosToSponse = this.StudentsToSponseString();
 		return studentNosToSponse;
 	}
 
@@ -224,6 +224,7 @@ public class Sponser extends IdEntity implements Serializable {
 	 */
 	public void setStudentsToSponse(List<Student> studentsToSponse) {
 		this.studentsToSponse = studentsToSponse;
+		this.studentNosToSponse = this.StudentsToSponseString();
 	}
 
 	public void setSendEmail(String sendEmail) {
