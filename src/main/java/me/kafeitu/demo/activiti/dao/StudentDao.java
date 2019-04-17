@@ -14,5 +14,5 @@ import org.springframework.stereotype.Component;
 @Component
 public interface StudentDao extends CrudRepository<Student, Long> {
 	Iterable<Student> findBySponserIdOrderByIdAsc(String sponserId);
-
+	Iterable<Student> findByAuditNoOrderByIdAsc(String AuditNo);
 }

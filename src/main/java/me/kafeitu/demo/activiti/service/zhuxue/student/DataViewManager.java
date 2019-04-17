@@ -174,7 +174,8 @@ public class DataViewManager  {
 			Transfer transfer= transfers.get(i);
 			
 			Sponser sponser = transfer.getSponser();
-			Student result = studentManager.getStudent(Long.parseLong(transfer.getStudentId()));
+			List<Student> students = studentManager.getAllStudentByAuditNo(transfer.getStudentId());
+			Student result = students.get(0);
 			int k = 0;
 			
 			datas[i][k++] = result.getAuditNo();

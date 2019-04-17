@@ -111,7 +111,13 @@ public class StudentManager {
         return  studentList;
     }      
     
-
+    public List<Student> getAllStudentByAuditNo(String auditNo) {
+    	Iterable<Student> geted = studentDao.findByAuditNoOrderByIdAsc(auditNo);
+    	List<Student> studentList = Lists.newArrayList(geted);  
+        return  studentList;
+    }      
+    
+    
     @Autowired
     public void setStudentDao(StudentDao studentDao) {
         this.studentDao = studentDao;
