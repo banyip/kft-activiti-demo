@@ -62,8 +62,10 @@ public class StudentManager {
     @Autowired
     private TransferManager transferManager;
     public Student getStudent(Long id) {
-        Student student = studentDao.findOne(id);
-        student.setTransfer(transferManager.getAllTransferByStudentId(String.valueOf(id)));
+        Student student = studentDao.findOne(id);        
+        String studentAuditNo=student.getAuditNo();
+        if(studentAuditNo!=null)
+        	student.setTransfer(transferManager.getAllTransferByStudentId(studentAuditNo));
         return student;
     }
 
