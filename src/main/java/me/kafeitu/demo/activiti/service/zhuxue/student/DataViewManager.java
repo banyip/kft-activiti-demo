@@ -149,7 +149,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getPoliticFace();
 			datas[i][k++] = result.getCompany();
 			datas[i][k++] = result.getBirthdate();
-			datas[i][k++] = result.StudentsToSponseString();
+			datas[i][k++] = result.getStudentNosToSponse();
 			datas[i][k++] = result.getSponseStartTime();
 			datas[i][k++] = result.getSponseEndTime();
 			datas[i][k++] = result.getSponseEndReason();
