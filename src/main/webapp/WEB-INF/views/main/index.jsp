@@ -28,7 +28,7 @@ PropertyFileUtil.init();
 	#add_tab { cursor: pointer; }
 	</style>
 
-    <script src="${ctx }/js/common/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="${ctx }/js/common/jquery-1.8.3.js" type="text/javascript"></script>
     <script src="${ctx }/js/common/plugins/jui/jquery-ui-${themeVersion }.min.js" type="text/javascript"></script>
     <script src="${ctx }/js/common/plugins/jui/extends/themeswitcher/jquery.ui.switcher.js" type="text/javascript"></script>
     <script src="${ctx }/js/common/plugins/tools/jquery.cookie.js" type="text/javascript"></script>
