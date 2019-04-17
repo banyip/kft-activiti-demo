@@ -15,7 +15,7 @@
 
     <%@ include file="/common/include-custom-styles.jsp" %>
      <link rel="stylesheet" type="text/css" href="${ctx }/css/studentList.css" />
-    <script src="${ctx }/js/common/jquery-1.9.0.min.js" type="text/javascript"></script> 
+    <script src="${ctx }/js/common/jquery-1.12.4.js" type="text/javascript"></script> 
  
   <script src="${ctx }/js/common/plugins/jui/jquery-ui-${themeVersion }.min.js" type="text/javascript"></script>
     <script src="${ctx }/js/common/plugins/jui/extends/timepicker/jquery-ui-timepicker-addon.js" type="text/javascript"></script>
