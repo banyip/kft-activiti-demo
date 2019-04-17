@@ -64,7 +64,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getSponseState();
 			datas[i][k++] = result.getSex();
 			datas[i][k++] = result.getNationality();
-			datas[i][k++] = result.getBirthday();
+			datas[i][k++] = result.getAge();
 			List<School> schools =result.getSchools();
 			if(schools!=null&&schools.size()>0)
 			{
@@ -91,7 +91,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getQq();
 			datas[i][k++] = result.getMemo();
 			datas[i][k++] = result.getSponseStartTime();
-			datas[i][k++] = result.getUserId();
+			datas[i][k++] = result.getStudentId();
 			datas[i][k++] = result.getBankCard();	
 		}
 		datasheets=new HashMap<String,String[][]>();
@@ -147,7 +147,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getAddress();
 			datas[i][k++] = result.getNeedReciept();
 			datas[i][k++] = result.getPoliticFace();
-			datas[i][k++] = result.getProfectional();
+			datas[i][k++] = result.getCompany();
 			datas[i][k++] = result.getBirthdate();
 			datas[i][k++] = result.StudentsToSponseString();
 			datas[i][k++] = result.getSponseStartTime();

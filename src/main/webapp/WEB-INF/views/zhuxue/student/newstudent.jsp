@@ -54,14 +54,24 @@
 		<td colspan="3" class="style11">
 		<input class="studentApply" id="student_nationality" name="nationality" />　</td>
 	</tr>
-	<tr style="mso-height-source:userset;height:20.1pt">
-		<td colspan="2" style="height: 20.1pt" class="style11">身份证号</td>
-		<td colspan="2" class="style11">
+	<tr style="mso-height-source:userset;">
+		<td colspan="2" style="height: 20pt" class="style11">身份证号</td>
+		<td colspan="2" class="style11" style="height: 20pt">
 		<input class="studentApply" id="student_studentId" name="studentId" />　</td>
-		<td class="style11">学生照片</td>
-		<td colspan="3" class="style11">
+		<td class="style11" style="height: 20pt">学生照片</td>
+		<td colspan="3" class="style11" style="height: 20pt">
 		<input type="file" class="studentPhoto" id="student_picture" name="picture0" /></td>
 	</tr>
+	<tr style="mso-height-source:userset;height:20.1pt">
+		<td colspan="2" style="height: 20.1pt" class="style11">
+		家长姓名</td>
+		<td colspan="2" class="style11">
+		<input class="studentApply" id="student_parentName" name="parentName" />　</td>
+		<td class="style11">家庭电话</td>
+		<td colspan="3" class="style11">
+		<input class="studentApply" id="student_parentContactNo" name="parentContactNo" />　</td>
+    </tr>   
+	
 	<tr style="mso-height-source:userset;height:20.1pt">
 		<td colspan="2" style="height: 20.1pt" class="style11">
 		学生个人银行卡号</td>
@@ -71,6 +81,7 @@
 		<td colspan="3" class="style11">
 		<input class="studentApply" id="student_bank" name="bank" />　</td>
     </tr>   
+    
 	<tr style="mso-height-source:userset;height:20.1pt">
 	<td colspan="2" style="height: 20.1pt" class="style11">
 		学生住址</td>
@@ -85,9 +96,10 @@
 	<tr><td colspan="8">		    <div >
 				<table width="100%">
  	<tr>
-		<td colspan="2" class="style11" style="width:40%">学校名称</td>
-		<td class="style11" style="width: 15%">年级</td>
+		<td colspan="2" class="style11" style="width:30%">学校名称</td>
+		<td class="style11" style="width: 10%">年级</td>
 		<td class="style11" style="width: 15%">班号/专业</td>
+		<td class="style11" style="width: 15%">毕业时间</td>
 		<td class="style11" style="width: 15%">班主任姓名</td>
 		<td colspan="3" class="style11"  style="width: 15%">联系电话</td>
     </tr>
@@ -95,15 +107,17 @@
 		<tr><td colspan=8> <div id="div_schools">
 				<table class="class_schools" width="100%">
  	<tr >
-		<td colspan="2"  class="style11" style="width: 40%">
+		<td colspan="2"  class="style11" style="width: 30%">
 		<input class="studentApply" id="schools[0]_school" name="school"  style="width: 100%"/></td>
-		<td class="style11" style="width: 15%%; height: 15%;">
+		<td class="style11" style="width: 15%; height: 15%;">
 		<input class="studentApply" id="schools[0]_grade" name="grade" style="width: 95%"  /></td>
-		<td class="style11" style="width: 15%; height: 20pt;">
+		<td class="style11" style="width: 10%; height: 20pt;">
 		<input class="studentApply" id="schools[0]_className" name="className" style="width: 95%" />　</td>
 		<td class="style11" style="width: 15%; height: 20pt;">
+		<input class="studentApply" id="schools[0]_guaduateTime" name="guaduateTime" style="width: 95%" />　</td>
+		<td class="style11" style="width: 15%; height: 20pt;">
 		<input class="studentApply" id="schools[0]_headTeacher" name="headTeacher" style="width: 95%"  />　</td>
-		<td colspan="3" class="style11"  style="width:15%; height: 20pt;">
+		<td colspan="2" class="style11"  style="width:15%; height: 20pt;">
 		<input class="studentApply" id="schools[0]_schoolContactNo" name="schoolContactNo" width="95%"/>　</td>
     </tr>
     </table></div></td></tr>

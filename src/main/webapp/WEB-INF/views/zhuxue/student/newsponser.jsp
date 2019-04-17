@@ -115,9 +115,12 @@ input:not([type="checkbox"]) {
 			<input class="sponserApply" id="sponseEndReason" name="sponseEndReason" type="text" style="width: 254px" /></td>
 	</tr>
 	<tr height="24" style="mso-height-source:userset;height:18.0pt">
-		<td colspan="2" height="24" style="height: 18.0pt;" class="style1">资助学生</td>
-		<td colspan="6" class="style1">
+		<td colspan="1" height="24" style="height: 18.0pt;" class="style1">资助学生</td>
+		<td colspan="3" class="style1">
 			<input disabled="disabled" class="sponserApply" id="studentNosToSponse" name="studentNosToSponse" type="text" style="width: 95%" /></td>
+		<td colspan="1" height="24" style="height: 18.0pt;" class="style1">单位</td>
+		<td colspan="3" class="style1">
+			<input class="sponserApply" id="company" name="company" type="text" style="width: 95%" /></td>
 	</tr>
 	
 	<tr><td colspan=8>		    <div>
@@ -151,35 +154,7 @@ input:not([type="checkbox"]) {
 		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_method" name="transfers[0]_method" type="text" /></td>
 		<td class="style11" style="width: 8%; height: 18pt;">
-<!--		<select id="editable-select" class="form-control">
-    <option>Alfa Romeo</option>
-    <option>Audi</option>
-	<option>中国人民银行</option>
-    <option>中国人民</option>
-    <option>中国</option>
-    <option>BMW</option>
-    <option>Citroen</option>
-    <option>Fiat</option>
-    <option>Ford</option>
-    <option>Jaguar</option>
-    <option>Jeep</option>
-    <option>Lancia</option>
-    <option>Land Rover</option>
-    <option>Mercedes</option>
-    <option>Mini</option>
-    <option>Nissan</option>
-    <option>Opel</option>
-    <option>Peugeot</option>
-    <option>Porsche</option>
-    <option>Renault</option>
-</select>--> 
-	
-<select class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId"  >
-						<c:forEach items="${studentList }" var="student"> 
-						<option value="${student.id }">${student.studentName }</option> 
-						</c:forEach>	
-				</select></td> 
-
+			<input class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId" / ></td>
 		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_semester" name="transfers[0]_semester" type="text" /></td>
 		<td class="style11" style="width: 8%; height: 18pt;">

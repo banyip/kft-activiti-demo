@@ -58,6 +58,7 @@ public class Sponser extends IdEntity implements Serializable {
 	private String sendEmail;
 	private String operatingFee;
 	private String studentNosToSponse;
+	private String company;
 	
 	private List<Student> studentsToSponse=new ArrayList<Student>();
 	private List<Transfer> transfers=new ArrayList<Transfer>();
@@ -202,7 +203,17 @@ public class Sponser extends IdEntity implements Serializable {
 		return studentNosToSponse;
 	}
 
-	
+	@Column
+	public String getCompany() {
+		return company;
+	}
+
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
+
 	public void setStudentNosToSponse(String studentNosToSponse) {
 		this.studentNosToSponse = studentNosToSponse;
 	}
