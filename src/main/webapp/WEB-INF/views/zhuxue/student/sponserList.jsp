@@ -27,7 +27,7 @@
 	<script src="${ctx }/js/common/plugins/blockui/jquery.blockUI.js" type="text/javascript"></script>
 	<script src="${ctx }/js/module/activiti/workflow.js" type="text/javascript"></script>
 
-    <script src="${ctx }/js/common/plugins/editableselect/jquery.editable-select.min.js" type="text/javascript"></script>
+    <script src="${ctx }/js/common/plugins/editableselect/jquery-editable-select.js" type="text/javascript"></script>
 	<script src="${ctx }/js/module/zhuxue/student/sponser-todo.js" type="text/javascript"></script>	
 
 </head>
