@@ -427,7 +427,7 @@ editsponser: {
                 
 				// 打开对话框的时候读取请假内容
 				loadPartlyDetailWithTaskVars.call(this, "editsponser",id, null);
-				$('#editable-select').editableSelect({
+				$('select#editable-select').editableSelect({
 					effects: 'slide'
 				});
 			},
