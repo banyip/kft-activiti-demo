@@ -29,9 +29,16 @@ public class SponserManager {
 
 
     private SponserDao sponserDao;
-
+    @Autowired
+    private StudentManager studentManager;
     public Sponser getSponser(Long id) {
-        return sponserDao.findOne(id);
+    	Sponser sponser = sponserDao.findOne(id); 
+    	String sponserNo=sponser.getSponserNo();
+        if(sponserNo!=null)
+        	sponser.setStudentsToSponse(studentManager.getAllStudentBysponserId(sponserNo));
+   	
+        return sponser;
+        
     }
 
     @Transactional(readOnly = false)

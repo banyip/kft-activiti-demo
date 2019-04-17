@@ -5,6 +5,7 @@ import me.kafeitu.demo.activiti.dao.TransferDao;
 import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
+import me.kafeitu.demo.activiti.entity.zhuxue.Transfer;
 import me.kafeitu.demo.activiti.util.Page;
 
 import com.google.common.collect.Lists;
@@ -103,6 +104,13 @@ public class StudentManager {
    */     
         studentDao.save(entity);
     }
+    
+    public List<Student> getAllStudentBysponserId(String sponserId) {
+    	Iterable<Student> geted = studentDao.findBySponserIdOrderByIdAsc(sponserId);
+    	List<Student> studentList = Lists.newArrayList(geted);  
+        return  studentList;
+    }      
+    
 
     @Autowired
     public void setStudentDao(StudentDao studentDao) {

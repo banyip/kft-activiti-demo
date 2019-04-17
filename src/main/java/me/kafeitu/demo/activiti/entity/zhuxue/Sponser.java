@@ -191,8 +191,7 @@ public class Sponser extends IdEntity implements Serializable {
 		return operatingFee;
 	}
 
-	@Column
-	@OneToMany(fetch = FetchType.LAZY)
+	@Transient
 	public List<Student> getStudentsToSponse() {
 		return studentsToSponse;
 	}

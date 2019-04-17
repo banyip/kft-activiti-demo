@@ -280,14 +280,15 @@ public class ZhuxueController {
            logger.debug("学生信息保存中filenames："+filenames);
            //logger.debug("学生信息保存中filenames："+studentPictureFiles);
    		for (String key : variableNames) {
-			if(key.indexOf("sponserId")>=0)
+/*			if(key.indexOf("sponserId")>=0)
 			{
 				Object value = variables.get(key);
 				Sponser sponser = sponserManager.getSponser(Long.parseLong((String)  value));
 				if(!sponser.getStudentsToSponse().contains(student))
 					sponser.addStudent(student);
 				student.setSponserId((String)value);
-			}else if(key.indexOf("student_")==0)
+			}else*/
+   			if(key.indexOf("student_")==0)
    			{
  
    				logger.debug("学生信息保存内容key："+key);
