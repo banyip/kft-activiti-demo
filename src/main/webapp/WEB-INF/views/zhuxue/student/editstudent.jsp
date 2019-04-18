@@ -111,7 +111,7 @@
 		<td class="style11" style="width: 10%; height: 20pt;">
 		<input class="studentApply" id="schools[0]_className" name="className" style="width: 95%" />　</td>
 		<td class="style11" style="width: 15%; height: 20pt;">
-		<input class="studentApply" id="schools[0]_guaduateTime" name="guaduateTime" style="width: 95%" />　</td>
+		<input class="studentApply" id="schools[0]_graduateTime" name="graduateTime" style="width: 95%" />　</td>
 		<td class="style11" style="width: 15%; height: 20pt;">
 		<input class="studentApply" id="schools[0]_headTeacher" name="headTeacher" style="width: 95%"  />　</td>
 		<td colspan="2" class="style11"  style="width:15%; height: 20pt;">
