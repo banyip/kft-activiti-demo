@@ -162,13 +162,15 @@ public class DataViewManager  {
 	
 //设置资助登记表内容	
 	public void setSponseRegistryRowsSemester(String semester) {
-		String[] sponserTitles = {"学生编号","学生姓名","学校","年级","资助人编号","资助人","邮箱","电话","QQ","资助金额","汇款通知","运营费","到账","汇款来源","财务对帐","确认到帐邮件","发放情况","反馈"};
-		titles = sponserTitles;
-		int cols = titles.length;
 		List<Transfer> transfers = transferManager.getAllTransfer(semester);
 		//List<Sponser> sponsers=sponserManager.getAllSponser();
 		int rows = transfers.size();
-		datas = new String[rows][cols];		
+		String[] sponserTitles = {"学生编号","学生姓名","学校","年级","资助人编号","资助人","邮箱","电话","QQ","资助金额","汇款通知","运营费","到账","汇款来源","财务对帐","确认到帐邮件","发放情况","反馈"};
+		titles = sponserTitles;
+		int cols = titles.length;
+		List<Student> studentsWithoutTransfer = studentManager.getAllStudentsWithoutTransfer(semester);
+		int rows1 = studentsWithoutTransfer.size();
+		datas = new String[rows+rows1][cols];		
 		for(int i=0;i<rows ;i++)
 		{
 			Transfer transfer= transfers.get(i);
@@ -207,7 +209,43 @@ public class DataViewManager  {
 			datas[i][k++] = transfer.getSendEmail();   //确认到账邮件		
 			datas[i][k++] = transfer.getGrantTime();   //发款日期
 			datas[i][k++] = result.getFeedbackDate(semester);  	//反馈
-		}	
+		}
+		for(int i=0;i<rows1;i++)
+		{	
+			Student result = studentsWithoutTransfer.get(i);
+			Sponser sponser = sponserManager.getSponserBysponserNo(result.getSponserId()).get(0);
+			int k = 0;
+			
+			datas[i][k++] = result.getAuditNo();
+			datas[i][k++] = result.getStudentName();	
+			List <School> schools = result.getSchools();
+			School school = schools.get(0);		
+			if(schools!=null&&schools.size()>0)
+			{
+				if(school!=null)
+				{
+					datas[i][k++] = school.getSchool();
+					datas[i][k++] = school.getGrade();
+				}
+				else
+					k+=2;
+			} else
+				k +=2;
+			datas[i][k++] = sponser.getSponserNo();
+			datas[i][k++] = sponser.getName();
+			datas[i][k++] = sponser.getEmail(); 	 				
+			datas[i][k++] = sponser.getContactNo();	//电话
+			datas[i][k++] = sponser.getQq();						//QQ
+			datas[i][k++] = ""; //资助金额
+			datas[i][k++] = ""; //汇款通知					
+			datas[i][k++] = "";		//运营费
+			datas[i][k++] = "";    //到账
+			datas[i][k++] = "";   //汇款来源
+			datas[i][k++] = "";		//财务对帐
+			datas[i][k++] = "";   //确认到账邮件		
+			datas[i][k++] = "";   //发款日期
+			datas[i][k++] = result.getFeedbackDate(semester);  	//反馈
+		}
 		datasheets.put(semester, datas);
 	}	
 	

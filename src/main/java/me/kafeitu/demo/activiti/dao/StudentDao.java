@@ -1,9 +1,13 @@
 package me.kafeitu.demo.activiti.dao;
 
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
-import me.kafeitu.demo.activiti.entity.zhuxue.Transfer;
 
+
+
+
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Component;
 
 /**
@@ -15,4 +19,9 @@ import org.springframework.stereotype.Component;
 public interface StudentDao extends CrudRepository<Student, Long> {
 	Iterable<Student> findBySponserIdOrderByIdAsc(String sponserId);
 	Iterable<Student> findByAuditNoOrderByIdAsc(String AuditNo);
+	@Query(
+            value = "from Student a,Transfer b where a.auditNo not in (select distinct studentId from Transfer where semester=:semester)"
+    )
+	Iterable<Student> findAllStudentsWithoutTransfer(@Param("semester")String semester);
+   	
 }

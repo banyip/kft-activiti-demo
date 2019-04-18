@@ -4,6 +4,7 @@ import me.kafeitu.demo.activiti.dao.SponserDao;
 import me.kafeitu.demo.activiti.entity.zhuxue.Exam;
 import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import me.kafeitu.demo.activiti.entity.zhuxue.Sponser;
+import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 import me.kafeitu.demo.activiti.util.Page;
 
 import com.google.common.collect.Lists;
@@ -40,6 +41,13 @@ public class SponserManager {
         return sponser;
         
     }
+    
+    //获取某sponserNo对应的资助人
+    public List<Sponser> getSponserBysponserNo(String sponserNo) {
+    	Iterable<Sponser> geted = sponserDao.findBySponserNoOrderByIdAsc(sponserNo);
+    	List<Sponser> SponserList = Lists.newArrayList(geted);  
+        return  SponserList;
+    }       
 
     @Transactional(readOnly = false)
     public void delSponser(Long id)

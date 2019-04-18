@@ -105,12 +105,21 @@ public class StudentManager {
         studentDao.save(entity);
     }
     
-    public List<Student> getAllStudentBysponserId(String sponserId) {
-    	Iterable<Student> geted = studentDao.findBySponserIdOrderByIdAsc(sponserId);
+    //获取某sponser资助的所有学生
+    public List<Student> getAllStudentBysponserId(String sponserNo) {
+    	Iterable<Student> geted = studentDao.findBySponserIdOrderByIdAsc(sponserNo);
     	List<Student> studentList = Lists.newArrayList(geted);  
         return  studentList;
     }      
     
+    //获取某指定学期没有被汇款的所有学生
+    public List<Student> getAllStudentsWithoutTransfer(String semester) {
+    	Iterable<Student> geted = studentDao.findAllStudentsWithoutTransfer(semester);
+    	List<Student> studentList = Lists.newArrayList(geted);  
+        return  studentList;
+    }      
+    
+    //获取审核编号为auditNo的所有学生
     public List<Student> getAllStudentByAuditNo(String auditNo) {
     	Iterable<Student> geted = studentDao.findByAuditNoOrderByIdAsc(auditNo);
     	List<Student> studentList = Lists.newArrayList(geted);  
