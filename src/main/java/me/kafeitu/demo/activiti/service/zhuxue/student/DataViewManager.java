@@ -213,7 +213,6 @@ public class DataViewManager  {
 		for(int i=0;i<rows1;i++)
 		{	
 			Student result = studentsWithoutTransfer.get(i);
-			Sponser sponser = sponserManager.getSponserBysponserNo(result.getSponserId()).get(0);
 			int k = 0;
 			
 			datas[i][k++] = result.getAuditNo();
@@ -231,11 +230,19 @@ public class DataViewManager  {
 					k+=2;
 			} else
 				k +=2;
-			datas[i][k++] = sponser.getSponserNo();
-			datas[i][k++] = sponser.getName();
-			datas[i][k++] = sponser.getEmail(); 	 				
-			datas[i][k++] = sponser.getContactNo();	//电话
-			datas[i][k++] = sponser.getQq();						//QQ
+			String sponserNo = result.getSponserId();
+			Sponser sponser;
+			if(sponserNo!=null)
+			{
+				sponser = sponserManager.getSponserBysponserNo(sponserNo).get(0);
+				datas[i][k++] = sponser.getSponserNo();
+				datas[i][k++] = sponser.getName();
+				datas[i][k++] = sponser.getEmail(); 	 				
+				datas[i][k++] = sponser.getContactNo();	//电话
+				datas[i][k++] = sponser.getQq();						//QQ
+			}else
+				k += 5;
+			
 			datas[i][k++] = ""; //资助金额
 			datas[i][k++] = ""; //汇款通知					
 			datas[i][k++] = "";		//运营费
