@@ -210,7 +210,7 @@ public class DataViewManager  {
 			datas[i][k++] = transfer.getGrantTime();   //发款日期
 			datas[i][k++] = result.getFeedbackDate(semester);  	//反馈
 		}
-		for(int i=0;i<rows1;i++)
+		for(int i=rows;i<rows+rows1;i++)
 		{	
 			Student result = studentsWithoutTransfer.get(i);
 			int k = 0;
