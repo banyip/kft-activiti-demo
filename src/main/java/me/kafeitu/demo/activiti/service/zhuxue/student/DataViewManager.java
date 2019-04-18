@@ -212,7 +212,7 @@ public class DataViewManager  {
 		}
 		for(int i=rows;i<rows+rows1;i++)
 		{	
-			Student result = studentsWithoutTransfer.get(i);
+			Student result = studentsWithoutTransfer.get(i-rows);
 			int k = 0;
 			
 			datas[i][k++] = result.getAuditNo();
