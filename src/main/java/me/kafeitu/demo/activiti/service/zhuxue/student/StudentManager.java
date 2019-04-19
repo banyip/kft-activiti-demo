@@ -9,6 +9,9 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Transfer;
 import me.kafeitu.demo.activiti.util.Page;
 
 import com.google.common.collect.Lists;
+
+import org.hibernate.search.jpa.FullTextEntityManager;
+import org.hibernate.search.query.dsl.QueryBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,6 +23,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import javax.persistence.EntityManager;
+import javax.persistence.Persistence;
+
 /**
  * 请假实体管理
  *
@@ -29,6 +35,35 @@ import java.util.Set;
 @Transactional(readOnly = true)
 public class StudentManager {
 
+	public List<Student> searchStudents(String queryString)
+	{
+		EntityManager em = Persistence.createEntityManagerFactory("Student").createEntityManager();
+		FullTextEntityManager fullTextEntityManager =
+		    org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
+		em.getTransaction().begin();
+
+		// create native Lucene query unsing the query DSL
+		// alternatively you can write the Lucene query using the Lucene query parser
+		// or the Lucene programmatic API. The Hibernate Search DSL is recommended though
+		QueryBuilder qb = fullTextEntityManager.getSearchFactory()
+		    .buildQueryBuilder().forEntity(Student.class).get();
+		org.apache.lucene.search.Query luceneQuery = qb
+		  .keyword()
+		  .onFields("studentName", "auditNo")
+		  .matching("Java rocks!")
+		  .createQuery();
+
+		// wrap Lucene query in a javax.persistence.Query
+		javax.persistence.Query jpaQuery =
+		    fullTextEntityManager.createFullTextQuery(luceneQuery, Student.class);
+
+		// execute search
+		List result =jpaQuery.getResultList();
+
+		em.getTransaction().commit();
+		em.close();
+		return result;
+	}
 	private <T> void cleanEmpty(List<T> list) throws IllegalArgumentException, IllegalAccessException
 	{
 		int valueSize=0;
@@ -70,6 +105,7 @@ public class StudentManager {
         return student;
     }
 
+ 
     @Transactional(readOnly = false)
     public void delStudent(Long id)
     {

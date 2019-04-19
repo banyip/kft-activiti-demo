@@ -16,6 +16,12 @@ $("#drop-area").dmUploader({
 });
 */
 
+    // 搜索
+    $('.search').button({
+        icons: {
+            primary: 'ui-icon-person'
+        }
+    });
 
     // 签收
     $('.claim').button({
@@ -37,6 +43,11 @@ $("#drop-area").dmUploader({
             primary: 'ui-icon-comment'
         }
     }).click(deletestudent);
+    $('.search').button({
+        icons: {
+            primary: 'ui-icon-comment'
+        }
+    }).click(search);    
     // 跟踪
     $('.trace').click(graphTrace);
      $.each($('.div_maindialog'),function(){
@@ -608,6 +619,25 @@ function deletestudent() {
         } else {
             alert('操作失败!');
         }
+    });
+}
+
+/**
+ * 搜索
+ */
+function search() {
+	// 当前节点的英文名称
+	var tkey = $(this).attr('tkey');
+	
+	// 当前节点的中文名称
+	var tname = $(this).attr('tname');
+	
+	// 请假记录ID
+	var queryString = $(this).parents('tr').attr('id');
+	
+   $.post(ctx + 'query/student?queryString='+queryString ,{}, function(resp) {
+		$.unblockUI();
+            location.reload();
     });
 }
 

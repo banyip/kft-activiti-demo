@@ -154,6 +154,27 @@ public class ZhuxueController {
         return mav;
     }
 
+    
+    /**
+     * 读取学生列表
+     *
+     * @param student
+     */
+    @RequestMapping(value = "query/student")
+    public ModelAndView studentQuery(HttpSession session, HttpServletRequest request) {
+        ModelAndView mav = new ModelAndView("/zhuxue/student/studentList");
+        String queryString = request.getParameter("queryString");
+        Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
+        int[] pageParams = PageUtil.init(page, request);
+        List<Student> results=studentManager.searchStudents(queryString);
+        List<Sponser> sponserList = sponserManager.getAllSponser();
+        String userId = UserUtil.getUserFromSession(session).getId();
+        page.setTotalCount(results.size());
+        page.setResult(results);
+        mav.addObject("page", page);
+        mav.addObject("sponserList",sponserList);
+        return mav;
+    }   
     /**
      * 读取学生列表
      *

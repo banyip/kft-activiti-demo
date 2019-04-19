@@ -487,7 +487,7 @@ function handle() {
 	
 	// 使用对应的模板
 	$('#' + tkey).dialog({
-		title: '学生信息修改',
+		title: '资助人信息修改',
 		modal: true,
 		width: handleOpts[tkey].width,
 		height: handleOpts[tkey].height,

@@ -33,6 +33,13 @@
 		<a class='handle' tkey=newstudent tname="登记新学生申请" href='#'>登记新学生申请</a>
 	</div>
 	<table width="100%" class="need-border">
+		<tr>
+			<td>
+			<form method="post" action="">
+				<input name="queryString" type="text">
+				><a class="search" tkey='submitquery' tname='搜索' href="#"></form>
+			</td>
+		</tr>
 		<th>
 			<tr>
 				<th>学生编号</th>				

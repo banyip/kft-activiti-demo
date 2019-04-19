@@ -5,6 +5,10 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Relative;
 import me.kafeitu.demo.activiti.service.zhuxue.student.SponserManager;
 import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 
+import org.hibernate.search.annotations.Analyze;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Index;
+import org.hibernate.search.annotations.Store;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
@@ -379,6 +383,7 @@ public class Student extends IdEntity implements Serializable {
 		return applyTime;
 	}
 
+	 @Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column(length = 20)
 	public String getAuditNo() {
 		return auditNo;
@@ -815,6 +820,7 @@ public class Student extends IdEntity implements Serializable {
 	 * 
 	 * public void setApplicant(Applicant applicant) { this.applicant = applicant; }
 	 */
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column(length = 20)
 	public String getStudentName() {
 		return studentName;
