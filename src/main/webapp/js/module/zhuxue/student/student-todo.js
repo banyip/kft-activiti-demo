@@ -635,7 +635,7 @@ function search() {
 	// 请假记录ID
 	var queryString = $('input[name="queryString"]').val();
 	
-   $.post(ctx + '/query/student?queryString='+queryString ,{}, function(resp) {
+   $.post(ctx + '/zhuxue/student/query/student?queryString='+queryString ,{}, function(resp) {
 		$.unblockUI();
     });
 }
