@@ -164,10 +164,14 @@ public class ZhuxueController {
     public ModelAndView studentQuery(HttpSession session, HttpServletRequest request) {
         ModelAndView mav = new ModelAndView("/zhuxue/student/studentList");
         String queryString = request.getParameter("queryString");
-        Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
+		Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
         int[] pageParams = PageUtil.init(page, request);
-        List<Student> results=studentManager.searchStudents(queryString);
-        logger.debug("query string:"+queryString);
+        List<Student> results;
+        if(queryString.length()>0)
+			results=studentManager.searchStudents(queryString);
+		else
+			results=studentManager.getAllStudent();
+		logger.debug("query string:"+queryString);
         logger.debug("query result numbers:"+results.size());
         if(results.size()>0)
         	logger.debug("query result name:"+results.get(0).getStudentName());

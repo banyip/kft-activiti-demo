@@ -64,8 +64,9 @@ public class StudentManager {
 		QueryBuilder qb = fullTextEntityManager.getSearchFactory()
 		    .buildQueryBuilder().forEntity(Student.class).get();
 		org.apache.lucene.search.Query luceneQuery = qb
-		  .keyword()
+		  .keyword()		  
 		  .onFields("studentName", "auditNo")
+		  .ignoreAnalyzer()
 		  .matching(queryString)
 		  .createQuery();
 
