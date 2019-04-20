@@ -24,6 +24,7 @@
         <jdk.version>1.7</jdk.version>
         <spring.version>4.1.5.RELEASE</spring.version>
         <hibernate.version>4.2.5.Final</hibernate.version>
+        <hibernate-search.version>4.4.6.Final</hibernate-search.version>
         <spring-data-jpa.version>1.9.1.RELEASE</spring-data-jpa.version>
         <commons-dbcp.version>1.4</commons-dbcp.version>
         <jackson.version>2.0.4</jackson.version>
@@ -63,8 +64,14 @@
 	    <dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-search-orm</artifactId>
-			<version>5.11.1.Final</version>
+			<version>${hibernate-search.version}</version>
 		</dependency>
+		<!-- If using JPA (2), add: -->
+		<dependency>
+		   <groupId>org.hibernate</groupId>
+		   <artifactId>hibernate-entitymanager</artifactId>
+		   <version>4.2.7.SP1</version>
+		</dependency>		
 	    <!-- 照片上传 -->
 		<dependency>
 			<groupId>commons-fileupload</groupId>
