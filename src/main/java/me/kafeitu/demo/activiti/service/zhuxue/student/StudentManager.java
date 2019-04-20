@@ -35,6 +35,8 @@ import javax.persistence.Persistence;
 @Transactional(readOnly = true)
 public class StudentManager {
 
+	@PersistenceContext
+	private EntityManager em;
 	public List<Student> searchStudents(String queryString)
 	{
 
@@ -47,7 +49,8 @@ public class StudentManager {
 		List result = hibQuery.list();
 		return result;
 */
-		EntityManager em = Persistence.createEntityManagerFactory("default").createEntityManager();
+		
+//		EntityManager em = Persistence.createEntityManagerFactory("default").createEntityManager();
 		FullTextEntityManager fullTextEntityManager =
 		    org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
 		em.getTransaction().begin();
