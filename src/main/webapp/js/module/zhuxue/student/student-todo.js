@@ -637,7 +637,6 @@ function search() {
 	
    $.post(ctx + '/query/student?queryString='+queryString ,{}, function(resp) {
 		$.unblockUI();
-            location.reload();
     });
 }
 
