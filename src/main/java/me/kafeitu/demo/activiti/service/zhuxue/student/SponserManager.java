@@ -64,7 +64,7 @@ public class SponserManager {
 		    .buildQueryBuilder().forEntity(Sponser.class).get();
 		org.apache.lucene.search.Query luceneQuery = qb
 		  .keyword()		  
-		  .onFields("SponserNo", "name")
+		  .onFields("sponserNo", "name")
 		  .ignoreAnalyzer()
 		  .matching(queryString)
 		  .createQuery();
