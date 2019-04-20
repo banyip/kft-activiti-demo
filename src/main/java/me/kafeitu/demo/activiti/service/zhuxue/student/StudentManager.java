@@ -66,7 +66,7 @@ public class StudentManager {
 		org.apache.lucene.search.Query luceneQuery = qb
 		  .keyword()
 		  .onFields("studentName", "auditNo")
-		  .matching("Java rocks!")
+		  .matching(queryString)
 		  .createQuery();
 
 		// wrap Lucene query in a javax.persistence.Query
