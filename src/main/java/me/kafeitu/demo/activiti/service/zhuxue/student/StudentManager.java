@@ -25,6 +25,7 @@ import java.util.Set;
 
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
+import javax.persistence.PersistenceContext;
 
 /**
  * 请假实体管理
