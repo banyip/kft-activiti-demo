@@ -89,6 +89,7 @@ public class Student extends IdEntity implements Serializable {
 	private String farmArea;
 	private String farmPlanting;
 	private String farmPlantingIncome;
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	private String firstAuditNote;
 	private String ifAgreeToMail;
 	private String ifAgreeToPublish;
@@ -206,6 +207,7 @@ public class Student extends IdEntity implements Serializable {
 
 	private String studentContactNo;
 	private String studentId;
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	private String studentName;
 
 	private String supplemetaryEvaluation;
@@ -383,7 +385,7 @@ public class Student extends IdEntity implements Serializable {
 		return applyTime;
 	}
 
-	 @Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
+	 
 	@Column(length = 20)
 	public String getAuditNo() {
 		return auditNo;
@@ -820,7 +822,6 @@ public class Student extends IdEntity implements Serializable {
 	 * 
 	 * public void setApplicant(Applicant applicant) { this.applicant = applicant; }
 	 */
-	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	@Column(length = 20)
 	public String getStudentName() {
 		return studentName;
