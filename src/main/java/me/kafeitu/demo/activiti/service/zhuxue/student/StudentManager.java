@@ -24,8 +24,10 @@ import java.util.List;
 import java.util.Set;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
+import javax.persistence.PersistenceUnit;
 
 /**
  * 请假实体管理
@@ -36,8 +38,8 @@ import javax.persistence.PersistenceContext;
 @Transactional(readOnly = true)
 public class StudentManager {
 
-	@PersistenceContext
-	private EntityManager em;
+	@PersistenceUnit(unitName="default")
+	private EntityManagerFactory entityManagerFactory;
 	public List<Student> searchStudents(String queryString)
 	{
 
@@ -51,7 +53,7 @@ public class StudentManager {
 		return result;
 */
 		
-//		EntityManager em = Persistence.createEntityManagerFactory("default").createEntityManager();
+		EntityManager em = entityManagerFactory.createEntityManager();
 		FullTextEntityManager fullTextEntityManager =
 		    org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
 		em.getTransaction().begin();
