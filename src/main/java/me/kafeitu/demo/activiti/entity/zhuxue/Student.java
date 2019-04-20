@@ -91,7 +91,6 @@ public class Student extends IdEntity implements Serializable {
 	private String farmArea;
 	private String farmPlanting;
 	private String farmPlantingIncome;
-	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	private String firstAuditNote;
 	private String ifAgreeToMail;
 	private String ifAgreeToPublish;
@@ -389,6 +388,7 @@ public class Student extends IdEntity implements Serializable {
 
 	 
 	@Column(length = 20)
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	public String getAuditNo() {
 		return auditNo;
 	}
