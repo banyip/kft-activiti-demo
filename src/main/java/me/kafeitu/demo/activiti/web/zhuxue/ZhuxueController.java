@@ -167,6 +167,7 @@ public class ZhuxueController {
         Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
         int[] pageParams = PageUtil.init(page, request);
         List<Student> results=studentManager.searchStudents(queryString);
+        logger.debug("query result numbers:+"+results.size());
         List<Sponser> sponserList = sponserManager.getAllSponser();
         String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
