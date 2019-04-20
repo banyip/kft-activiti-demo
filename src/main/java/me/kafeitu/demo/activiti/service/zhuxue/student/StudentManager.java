@@ -42,16 +42,14 @@ public class StudentManager {
 	private EntityManagerFactory entityManagerFactory;
 	public List<Student> search(String queryString)
 	{
+    	Iterable<Student> geted = studentDao.search(queryString);
+    	List<Student> studentList = Lists.newArrayList(geted);  
+        return  studentList;
+    }      
+	
+	/*	{
 
-		/*
-		FullTextSession fullTextSession = Search.getFullTextSession(currentSession());
-		Transaction tx = fullTextSession.beginTransaction();
-		QueryBuilder qb = fullTextSession.getSearchFactory() .buildQueryBuilder().forEntity(entityType).get();
-		org.apache.lucene.search.Query query = qb .keyword() .onFields("taskName", "content") .matching("扫黄") .createQuery();
-		org.hibernate.Query hibQuery =  fullTextSession.createFullTextQuery(query, entityType);
-		List result = hibQuery.list();
-		return result;
-*/
+
 		
 		EntityManager em = entityManagerFactory.createEntityManager();
 		FullTextEntityManager fullTextEntityManager =
@@ -82,8 +80,8 @@ public class StudentManager {
 		return result;
 		
 		
-		
 	}
+*/
 	private <T> void cleanEmpty(List<T> list) throws IllegalArgumentException, IllegalAccessException
 	{
 		int valueSize=0;
@@ -160,6 +158,9 @@ public class StudentManager {
    */     
         studentDao.save(entity);
     }
+
+    
+    
     
     //获取某sponser资助的所有学生
     public List<Student> getAllStudentBysponserId(String sponserNo) {

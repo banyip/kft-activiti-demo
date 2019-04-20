@@ -46,6 +46,11 @@ public class SponserManager {
 	private EntityManagerFactory entityManagerFactory;
 	public List<Sponser> search(String queryString)
 	{
+    	Iterable<Sponser> geted = sponserDao.search(queryString);
+    	List<Sponser> SponserList = Lists.newArrayList(geted);  
+        return  SponserList;
+    }       
+/*	{
 
 		
 		EntityManager em = entityManagerFactory.createEntityManager();
@@ -59,7 +64,7 @@ public class SponserManager {
 		QueryBuilder qb = fullTextEntityManager.getSearchFactory()
 		    .buildQueryBuilder().forEntity(Sponser.class).get();
 		org.apache.lucene.search.Query luceneQuery = qb
-		  .keyword()		  
+		  .keyword()
 		  .onFields("sponserNo", "name")
 		  .matching(queryString)
 		  .createQuery();
@@ -78,7 +83,7 @@ public class SponserManager {
 		
 		
 	}
-
+*/
     
     public Sponser getSponser(Long id) {
     	Sponser sponser = sponserDao.findOne(id); 
