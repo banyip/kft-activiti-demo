@@ -48,15 +48,15 @@ public class SponserManager {
 		EntityManager em = entityManagerFactory.createEntityManager();
 		FullTextEntityManager fullTextEntityManager =
 		    org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
-			try{fullTextEntityManager.createIndexer().startAndWait();
-			
-			}
-			catch(Exception e)
-			{
-				e.printStackTrace();
-			}
-		em.getTransaction().begin();
 
+		em.getTransaction().begin();
+		try{fullTextEntityManager.createIndexer().startAndWait();
+		
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
 		// create native Lucene query unsing the query DSL
 		// alternatively you can write the Lucene query using the Lucene query parser
 		// or the Lucene programmatic API. The Hibernate Search DSL is recommended though
