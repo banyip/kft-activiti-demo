@@ -37,6 +37,16 @@ public class StudentManager {
 
 	public List<Student> searchStudents(String queryString)
 	{
+
+		/*
+		FullTextSession fullTextSession = Search.getFullTextSession(currentSession());
+		Transaction tx = fullTextSession.beginTransaction();
+		QueryBuilder qb = fullTextSession.getSearchFactory() .buildQueryBuilder().forEntity(entityType).get();
+		org.apache.lucene.search.Query query = qb .keyword() .onFields("taskName", "content") .matching("扫黄") .createQuery();
+		org.hibernate.Query hibQuery =  fullTextSession.createFullTextQuery(query, entityType);
+		List result = hibQuery.list();
+		return result;
+*/
 		EntityManager em = Persistence.createEntityManagerFactory("Student").createEntityManager();
 		FullTextEntityManager fullTextEntityManager =
 		    org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
@@ -63,6 +73,9 @@ public class StudentManager {
 		em.getTransaction().commit();
 		em.close();
 		return result;
+		
+		
+		
 	}
 	private <T> void cleanEmpty(List<T> list) throws IllegalArgumentException, IllegalAccessException
 	{
