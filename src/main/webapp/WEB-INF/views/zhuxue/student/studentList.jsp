@@ -34,8 +34,8 @@
 	</div>
 	<table width="100%" class="need-border">
 		<tr>
-			<td>
-			<form method="post" action="">
+			<td colspan=4>
+			<form id="search" method="post" action="">
 				<input name="queryString" type="text">
 				><a class="search" tkey='submitquery' tname='搜索' href="#"></form>
 			</td>

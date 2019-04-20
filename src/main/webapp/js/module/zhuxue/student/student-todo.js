@@ -611,7 +611,7 @@ function deletestudent() {
 	// 请假记录ID
 	var rowId = $(this).parents('tr').attr('id');
 	
-   $.post(ctx + '/zhuxue/student/deletestudent/'+rowId ,{}, function(resp) {
+	$.post(ctx + '/zhuxue/student/deletestudent/'+rowId ,{}, function(resp) {
 		$.unblockUI();
         if (resp == 'success') {
             alert('任务完成');
@@ -620,6 +620,8 @@ function deletestudent() {
             alert('操作失败!');
         }
     });
+    
+	
 }
 
 /**
@@ -635,9 +637,11 @@ function search() {
 	// 请假记录ID
 	var queryString = $('input[name="queryString"]').val();
 	
-   $.post(ctx + '/zhuxue/student/query/student?queryString='+queryString ,{}, function(resp) {
+   /*$.post(ctx + '/zhuxue/student/query/student?queryString='+queryString ,{}, function(resp) {
 		$.unblockUI();
-    });
+    });*/
+   $('#search').action=ctx + '/zhuxue/student/query/student?queryString='+queryString;
+   $('#search').submit();
 }
 
 
