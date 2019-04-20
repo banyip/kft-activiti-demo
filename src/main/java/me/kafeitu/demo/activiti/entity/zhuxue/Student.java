@@ -8,6 +8,7 @@ import me.kafeitu.demo.activiti.entity.zhuxue.Audit;
 import org.hibernate.search.annotations.Analyze;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Index;
+import org.hibernate.search.annotations.Indexed;
 import org.hibernate.search.annotations.Store;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -40,6 +41,7 @@ import java.util.List;
  * @author HenryYan
  */
 @Entity
+@Indexed
 @Table(name = "ZHUXUE_STUDENT")
 public class Student extends IdEntity implements Serializable {
 
