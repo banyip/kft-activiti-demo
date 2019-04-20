@@ -169,8 +169,9 @@ public class ZhuxueController {
         List<Student> results=studentManager.searchStudents(queryString);
         logger.debug("query string:"+queryString);
         logger.debug("query result numbers:"+results.size());
-        logger.debug("query result name:"+results.get(0).getStudentName());
-        List<Sponser> sponserList = sponserManager.getAllSponser();
+        if(results.size()>0)
+        	logger.debug("query result name:"+results.get(0).getStudentName());
+       	List<Sponser> sponserList = sponserManager.getAllSponser();
         String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
         page.setResult(results);

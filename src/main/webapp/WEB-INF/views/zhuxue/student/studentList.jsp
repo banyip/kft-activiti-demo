@@ -36,8 +36,7 @@
 		<tr>
 			<td colspan=2>
 			<form id="search" method="post" action="">
-				<input name="queryString" type="text">
-				><a class="search" tkey='submitquery' tname='搜索' href="#"></form>
+				<input name="queryString" type="text"><a class="search" tkey='submitquery' tname='搜索' href="#"></form>
 			</td>
 		</tr>
 		<th>
