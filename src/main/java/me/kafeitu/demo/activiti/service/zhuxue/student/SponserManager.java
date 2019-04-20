@@ -71,7 +71,7 @@ public class SponserManager {
 
 		// wrap Lucene query in a javax.persistence.Query
 		javax.persistence.Query jpaQuery =
-		    fullTextEntityManager.createFullTextQuery(luceneQuery, Student.class);
+		    fullTextEntityManager.createFullTextQuery(luceneQuery, Sponser.class);
 
 		// execute search
 		List result =jpaQuery.getResultList();
