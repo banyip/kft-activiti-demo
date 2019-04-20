@@ -11,6 +11,8 @@ import com.google.common.collect.Lists;
 
 import org.hibernate.search.jpa.FullTextEntityManager;
 import org.hibernate.search.query.dsl.QueryBuilder;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -39,6 +41,7 @@ public class SponserManager {
     private SponserDao sponserDao;
     @Autowired
     private StudentManager studentManager;
+    private Logger logger = LoggerFactory.getLogger(getClass());
 	@PersistenceUnit(unitName="default")
 	private EntityManagerFactory entityManagerFactory;
 	public List<Sponser> search(String queryString)
@@ -50,13 +53,6 @@ public class SponserManager {
 		    org.hibernate.search.jpa.Search.getFullTextEntityManager(em);
 
 		em.getTransaction().begin();
-		try{fullTextEntityManager.createIndexer().startAndWait();
-		
-		}
-		catch(Exception e)
-		{
-			e.printStackTrace();
-		}
 		// create native Lucene query unsing the query DSL
 		// alternatively you can write the Lucene query using the Lucene query parser
 		// or the Lucene programmatic API. The Hibernate Search DSL is recommended though
@@ -65,14 +61,13 @@ public class SponserManager {
 		org.apache.lucene.search.Query luceneQuery = qb
 		  .keyword()		  
 		  .onFields("sponserNo", "name")
-		  .ignoreAnalyzer()
 		  .matching(queryString)
 		  .createQuery();
-
+		logger.debug("luceneQuery:"+ luceneQuery);
 		// wrap Lucene query in a javax.persistence.Query
 		javax.persistence.Query jpaQuery =
 		    fullTextEntityManager.createFullTextQuery(luceneQuery, Sponser.class);
-
+		logger.debug("jpaQuery:"+ jpaQuery);
 		// execute search
 		List result =jpaQuery.getResultList();
 

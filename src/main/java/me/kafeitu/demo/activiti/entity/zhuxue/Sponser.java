@@ -98,12 +98,12 @@ public class Sponser extends IdEntity implements Serializable {
 	}	
 	
 	@Column(length=50)
-	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.YES)
 	public String getSponserNo() {
 		return sponserNo;
 	}
 	@Column(length=50)
-	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.YES)
 	public String getName() {
 		return name;
 	}

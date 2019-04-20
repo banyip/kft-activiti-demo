@@ -208,7 +208,7 @@ public class Student extends IdEntity implements Serializable {
 
 	private String studentContactNo;
 	private String studentId;
-	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.YES)
 	private String studentName;
 
 	private String supplemetaryEvaluation;
@@ -388,7 +388,7 @@ public class Student extends IdEntity implements Serializable {
 
 	 
 	@Column(length = 20)
-	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.YES)
 	public String getAuditNo() {
 		return auditNo;
 	}
