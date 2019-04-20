@@ -7,6 +7,11 @@ import org.activiti.engine.history.HistoricProcessInstance;
 import org.activiti.engine.repository.ProcessDefinition;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.activiti.engine.task.Task;
+import org.hibernate.search.annotations.Analyze;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Index;
+import org.hibernate.search.annotations.Indexed;
+import org.hibernate.search.annotations.Store;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -34,6 +39,7 @@ import java.util.List;
  * @author HenryYan
  */
 @Entity
+@Indexed
 @Table(name = "ZHUXUE_SPONSER")
 public class Sponser extends IdEntity implements Serializable {
 
@@ -92,10 +98,12 @@ public class Sponser extends IdEntity implements Serializable {
 	}	
 	
 	@Column(length=50)
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	public String getSponserNo() {
 		return sponserNo;
 	}
 	@Column(length=50)
+	@Field(index=Index.YES, analyze=Analyze.YES, store=Store.NO)
 	public String getName() {
 		return name;
 	}

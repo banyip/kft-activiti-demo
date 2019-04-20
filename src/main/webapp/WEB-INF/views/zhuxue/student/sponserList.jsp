@@ -39,6 +39,12 @@
 		<a class='handle' tkey=newsponser tname="登记新资助人"  href='#'>登记新资助人</a>
 	</div>
 	<table width="100%" class="need-border">
+			<tr>
+			<td colspan=2>
+			<form id="search" method="post" action="">
+				<input name="queryString" type="text"><a class="search" tkey='submitquery' tname='搜索' href="#"></form>
+			</td>
+		</tr>
 		<th>
 			<tr>
 				<th>支助人编号</th>				

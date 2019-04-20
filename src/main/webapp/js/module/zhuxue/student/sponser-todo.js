@@ -37,6 +37,11 @@ $("#drop-area").dmUploader({
             primary: 'ui-icon-comment'
         }
     }).click(deleteitem);
+    $('.search').button({
+        icons: {
+            primary: 'ui-icon-comment'
+        }
+    }).click(search);  
     // 跟踪
     $('.trace').click(graphTrace);
      $.each($('.div_maindialog'),function(){
@@ -468,6 +473,26 @@ function deleteitem() {
 }
 
 
+
+/**
+ * 搜索
+ */
+function search() {
+	// 当前节点的英文名称
+	var tkey = $(this).attr('tkey');
+	
+	// 当前节点的中文名称
+	var tname = $(this).attr('tname');
+	
+	// 请假记录ID
+	var queryString = $('input[name="queryString"]').val();
+	
+   /*$.post(ctx + '/zhuxue/student/query/student?queryString='+queryString ,{}, function(resp) {
+		$.unblockUI();
+    });*/
+   $('#search')[0].action=ctx + '/zhuxue/student/query/sponser';
+   $('#search').submit();
+}
 
 
 /**

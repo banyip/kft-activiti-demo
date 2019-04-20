@@ -40,7 +40,7 @@ public class StudentManager {
 
 	@PersistenceUnit(unitName="default")
 	private EntityManagerFactory entityManagerFactory;
-	public List<Student> searchStudents(String queryString)
+	public List<Student> search(String queryString)
 	{
 
 		/*

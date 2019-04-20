@@ -134,6 +134,8 @@ public class ZhuxueController {
     }
 
     
+
+
     /**
      * 读取学生列表
      *
@@ -155,8 +157,10 @@ public class ZhuxueController {
     }
 
     
+    
+    
     /**
-     * 读取学生列表
+     * 搜索学生
      *
      * @param student
      */
@@ -168,21 +172,50 @@ public class ZhuxueController {
         int[] pageParams = PageUtil.init(page, request);
         List<Student> results;
         if(queryString.length()>0)
-			results=studentManager.searchStudents(queryString);
+			results=studentManager.search(queryString);
 		else
 			results=studentManager.getAllStudent();
 		logger.debug("query string:"+queryString);
         logger.debug("query result numbers:"+results.size());
         if(results.size()>0)
         	logger.debug("query result name:"+results.get(0).getStudentName());
-       	List<Sponser> sponserList = sponserManager.getAllSponser();
+  //     	List<Sponser> sponserList = sponserManager.getAllSponser();
         String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
         page.setResult(results);
         mav.addObject("page", page);
-        mav.addObject("sponserList",sponserList);
+//        mav.addObject("sponserList",sponserList);
         return mav;
     }   
+    
+    /**
+     * 搜索资助人
+     *
+     * @param student
+     */
+    @RequestMapping(value = "query/sponser")
+    public ModelAndView sponserQuery(HttpSession session, HttpServletRequest request) {
+        ModelAndView mav = new ModelAndView("/zhuxue/student/sponserList");
+        String queryString = request.getParameter("queryString");
+		Page<Sponser> page = new Page<Sponser>(PageUtil.PAGE_SIZE);
+        int[] pageParams = PageUtil.init(page, request);
+        List<Sponser> results;
+        if(queryString.length()>0)
+			results=sponserManager.search(queryString);
+		else
+			results=sponserManager.getAllSponser();
+		logger.debug("query string:"+queryString);
+        logger.debug("query result numbers:"+results.size());
+ //      	List<Student> studentList = studentManager.getAllStudent();
+        String userId = UserUtil.getUserFromSession(session).getId();
+        page.setTotalCount(results.size());
+        page.setResult(results);
+        mav.addObject("page", page);
+ //       mav.addObject("studentList",studentList);
+        return mav;
+    }   
+   
+    
     /**
      * 读取学生列表
      *
