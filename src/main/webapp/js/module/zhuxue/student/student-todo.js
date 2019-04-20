@@ -633,7 +633,7 @@ function search() {
 	var tname = $(this).attr('tname');
 	
 	// 请假记录ID
-	var queryString = $(this).parents('tr').attr('id');
+	var queryString = $('input[name="queryString"]').val();
 	
    $.post(ctx + '/query/student?queryString='+queryString ,{}, function(resp) {
 		$.unblockUI();
