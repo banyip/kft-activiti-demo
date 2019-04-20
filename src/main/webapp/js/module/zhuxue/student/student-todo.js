@@ -640,7 +640,7 @@ function search() {
    /*$.post(ctx + '/zhuxue/student/query/student?queryString='+queryString ,{}, function(resp) {
 		$.unblockUI();
     });*/
-   $('#search').action=ctx + '/zhuxue/student/query/student?queryString='+queryString;
+   $('#search')[0].action=ctx + '/zhuxue/student/query/student';
    $('#search').submit();
 }
 
