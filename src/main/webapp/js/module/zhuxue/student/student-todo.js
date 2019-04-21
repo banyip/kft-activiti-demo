@@ -74,7 +74,8 @@ function queryChange (queryString) {//捕获文档对象的按键弹起事件
             },
                 error:function(e){
                     alert("错误！！");
-                    location.reload();                    
+                    location.reload();
+                }
         });
 }
 
