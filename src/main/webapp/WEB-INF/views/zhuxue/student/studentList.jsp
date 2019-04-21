@@ -37,7 +37,7 @@
 			<td colspan=1>
 			<form id="search" method="post" action="">
 				<input type="hidden" id="keyup" name="keyup"/>
-				<input name="queryString" type="text" onchange="queryChange(this.value)"/><a class="search" tkey='submitquery' tname='搜索' href="#">搜索</a></form>
+				<input name="queryString" type="text" onkeydown="queryChange(this.value)"/><a class="search" tkey='submitquery' tname='搜索' href="#">搜索</a></form>
 			</td>
 		</tr>
 		<th>

@@ -65,7 +65,7 @@ function queryChange (queryString) {//捕获文档对象的按键弹起事件
             type: "post",
             dataType: "json",
             contentType: "application/json;charset=utf-8",
-            url: "ctx + '/zhuxue/student/query/student",
+            url: ctx + "/zhuxue/student/query/student",
             data: "{\"queryString\":\"" +  queryString
             + "\",\"keyup\":\"1\"}",
             success: function (data) {
