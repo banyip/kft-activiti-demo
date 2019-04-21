@@ -21,7 +21,7 @@ public interface SponserDao extends CrudRepository<Sponser, Long> {
 	@Query(value = "delete from zhuxue_student_transfers where transfers in (select id from zhuxue_transfer where sponser_id = ?1)",nativeQuery=true)
 	public void deleteTransferForeignKey(Long sponser_id);
 	
-	@Query(value = "select a from Sponser a where sponserNo like '%:queryString%' or name like '%:queryString%'")
+	@Query(value = "select a from Sponser a where sponserNo like %:queryString% or name like %:queryString%")
 	public Iterable<Sponser> search(@Param("queryString")String queryString);
 	Iterable<Sponser> findBySponserNoOrderByIdAsc(String ponserNo);
 }
