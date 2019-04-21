@@ -59,11 +59,11 @@ public class SponserManager {
     	String result="";
     	for(int i=0;i<queryResults.size();i++)
     	{
-    		Map m = (Map)queryResults.get(i);
-    		String name = (String)m.get("name");
+    		Object[] m = (Object[])queryResults.get(i);
+    		String name = (String)m[0];
     		if(name!=null&&name.length()>0)
     			result = result + "," + name;
-    		name = (String)m.get("SponserNo");
+    		name = (String)m[1];
     		if(name!=null&&name.length()>0)
     			result = result + "," + name;   		
     	}
