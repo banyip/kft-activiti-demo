@@ -65,12 +65,13 @@ function queryChange (queryString) {//捕获文档对象的按键弹起事件
     
      $.ajax({
             type: "post",
-            dataType: "json",
-            contentType: "application/json;charset=utf-8",
+            processData:false,
+            contentType:false,
+            cache: false,
             url: ctx + "/zhuxue/student/query/student",
             data: form,
-            success: function (data) {
-            		$('studentlisttbody').html(data);
+            success: function (returndata) {
+            		$('studentlisttbody').html(dreturnata);
             },
                 error:function(e){
                     alert("错误！！");
