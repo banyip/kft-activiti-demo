@@ -119,13 +119,13 @@ public class ZhuxueController {
      */
     @RequestMapping(value = "list/sponser")
     public ModelAndView sponserList(HttpSession session, HttpServletRequest request) {
-        ModelAndView mav = new ModelAndView("/zhuxue/student/sponserList");
+    	String userId = UserUtil.getUserFromSession(session).getId();
+    	ModelAndView mav = new ModelAndView("/zhuxue/student/sponserList");
         Page<Sponser> page = new Page<Sponser>(PageUtil.PAGE_SIZE);
         int[] pageParams = PageUtil.init(page, request);
         
 		List<Sponser> results=sponserManager.getAllSponser();
 		List<Student> studentList = studentManager.getAllStudent();
-        String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
         page.setResult(results);
         mav.addObject("page", page);
@@ -143,12 +143,12 @@ public class ZhuxueController {
      */
     @RequestMapping(value = "list/student")
     public ModelAndView taskList(HttpSession session, HttpServletRequest request) {
-        ModelAndView mav = new ModelAndView("/zhuxue/student/studentList");
+    	String userId = UserUtil.getUserFromSession(session).getId();
+    	ModelAndView mav = new ModelAndView("/zhuxue/student/studentList");
         Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
         int[] pageParams = PageUtil.init(page, request);
         List<Student> results=studentManager.getAllStudent();
         List<Sponser> sponserList = sponserManager.getAllSponser();
-        String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
         page.setResult(results);
         mav.addObject("page", page);
@@ -202,7 +202,8 @@ public class ZhuxueController {
      */
     @RequestMapping(value = "query/student")
     public ModelAndView studentQuery(HttpSession session, HttpServletRequest request) {
-        ModelAndView mav ;
+    	String userId = UserUtil.getUserFromSession(session).getId();
+    	ModelAndView mav ;
         String queryString = request.getParameter("queryString");
         String keyup = request.getParameter("keyup");
         if(keyup != null && keyup.equals("1"))
@@ -221,7 +222,6 @@ public class ZhuxueController {
         if(results.size()>0)
         	logger.debug("query result name:"+results.get(0).getStudentName());
   //     	List<Sponser> sponserList = sponserManager.getAllSponser();
-        String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
         page.setResult(results);
         mav.addObject("page", page);
@@ -236,7 +236,8 @@ public class ZhuxueController {
      */
     @RequestMapping(value = "query/sponser")
     public ModelAndView sponserQuery(HttpSession session, HttpServletRequest request) {
-        ModelAndView mav = new ModelAndView("/zhuxue/student/sponserList");
+    	String userId = UserUtil.getUserFromSession(session).getId();
+    	ModelAndView mav = new ModelAndView("/zhuxue/student/sponserList");
         String queryString = request.getParameter("queryString");
 		Page<Sponser> page = new Page<Sponser>(PageUtil.PAGE_SIZE);
         int[] pageParams = PageUtil.init(page, request);
@@ -248,7 +249,6 @@ public class ZhuxueController {
 		logger.debug("query string:"+queryString);
         logger.debug("query result numbers:"+results.size());
  //      	List<Student> studentList = studentManager.getAllStudent();
-        String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
         page.setResult(results);
         mav.addObject("page", page);
@@ -264,11 +264,11 @@ public class ZhuxueController {
      */
     @RequestMapping(value = "list/studentsimple")
     public ModelAndView studentsimpleList(HttpSession session, HttpServletRequest request) {
-        ModelAndView mav = new ModelAndView("/zhuxue/student/studentList");
+    	String userId = UserUtil.getUserFromSession(session).getId();
+    	ModelAndView mav = new ModelAndView("/zhuxue/student/studentList");
         Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
         int[] pageParams = PageUtil.init(page, request);
         List<Student> results=studentManager.getAllStudent();
-        String userId = UserUtil.getUserFromSession(session).getId();
         page.setTotalCount(results.size());
         page.setResult(results);
         mav.addObject("page", page);
@@ -873,8 +873,9 @@ public class ZhuxueController {
    
   //导出学生到EXCEL
     @RequestMapping(value = "exportstudent")
-    public void exportStudentExcel(HttpServletResponse response) throws Exception {
+    public void exportStudentExcel(HttpSession session, HttpServletResponse response) throws Exception {
 
+    	String userId = UserUtil.getUserFromSession(session).getId();
         // 响应到客户端
         try {        		
         		String fileName = dataview.setStudentRows();
@@ -888,8 +889,9 @@ public class ZhuxueController {
 
     //导出资助人到EXCEL
     @RequestMapping(value = "exportsponser")
-    public void exportSponserExcel(HttpServletResponse response) throws Exception {
+    public void exportSponserExcel(HttpSession session,HttpServletResponse response) throws Exception {
 
+    	String userId = UserUtil.getUserFromSession(session).getId();
         // 响应到客户端
         try {        		
         		String fileName = dataview.setSponserRows();
@@ -903,8 +905,9 @@ public class ZhuxueController {
  
     //导出资助登记到EXCEL
     @RequestMapping(value = "exportsponseregistry")
-    public void exportSponseRegistryExcel(HttpServletResponse response) throws Exception {
+    public void exportSponseRegistryExcel(HttpSession session,HttpServletResponse response) throws Exception {
 
+    	String userId = UserUtil.getUserFromSession(session).getId();
         // 响应到客户端
         try {        		
         		String fileName = dataview.setSponseRegistryRows();
