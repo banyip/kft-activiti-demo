@@ -16,22 +16,6 @@ $("#drop-area").dmUploader({
 });
 */
 	
-	function queryChange (queryString) {//捕获文档对象的按键弹起事件
-	        //此处编写用户敲回车后的代码
-		    event.returnValue=false;
-		    event.cancel = true;
-		     $.ajax({
-		            type: "post",
-		            dataType: "json",
-		            contentType: "application/json;charset=utf-8",
-		            url: "ctx + '/zhuxue/student/query/student",
-		            data: "{\"queryString\":\"" +  queryString
-		            + "\",\"keyup\":\"1\"}",
-		            success: function (data) {
-		            		$('studentlisttbody').html(data);
-		                }		            
-		        });
-	});
 
     // 搜索
     $('.search').button({
@@ -72,6 +56,23 @@ $("#drop-area").dmUploader({
         });
 });
 
+
+function queryChange (queryString) {//捕获文档对象的按键弹起事件
+    //此处编写用户敲回车后的代码
+    event.returnValue=false;
+    event.cancel = true;
+     $.ajax({
+            type: "post",
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+            url: "ctx + '/zhuxue/student/query/student",
+            data: "{\"queryString\":\"" +  queryString
+            + "\",\"keyup\":\"1\"}",
+            success: function (data) {
+            		$('studentlisttbody').html(data);
+                }		            
+        });
+}
 
 // 用于保存加载的详细信息
 var detail = {};
