@@ -15,6 +15,16 @@ $("#drop-area").dmUploader({
   }
 });
 */
+	
+	function keydowo()
+	{
+		  if (event.keyCode == 13)
+		  {
+		    event.returnValue=false;
+		    event.cancel = true;
+		    $('a[tkey="submitquery"').click();
+		  }
+	}
 
     // 搜索
     $('.search').button({
