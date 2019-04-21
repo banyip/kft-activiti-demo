@@ -59,8 +59,6 @@ $("#drop-area").dmUploader({
 
 function queryChange (queryString) {//捕获文档对象的按键弹起事件
     //此处编写用户敲回车后的代码
-    event.returnValue=false;
-    event.cancel = true;
      $.ajax({
             type: "post",
             dataType: "json",
