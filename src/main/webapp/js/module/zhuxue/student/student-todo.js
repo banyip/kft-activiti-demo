@@ -30,11 +30,7 @@ $("#drop-area").dmUploader({
 		            + "\",\"keyup\":\"1\"}",
 		            success: function (data) {
 		            		$('studentlisttbody').html(data);
-		                }
-		            },
-		            error: function () {
-		                alert("查询失败")
-		            }
+		                }		            
 		        });
 		  }
 	});
