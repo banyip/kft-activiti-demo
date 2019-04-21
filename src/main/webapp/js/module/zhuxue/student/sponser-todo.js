@@ -19,6 +19,7 @@ function Write(div){
 	//让下拉提示框消失
 	
 	div.parentNode.style.display="none";
+	search();
 }
 
 
@@ -550,13 +551,13 @@ function deleteitem() {
  */
 function search() {
 	// 当前节点的英文名称
-	var tkey = $(this).attr('tkey');
+//	var tkey = $(this).attr('tkey');
 	
 	// 当前节点的中文名称
-	var tname = $(this).attr('tname');
+//	var tname = $(this).attr('tname');
 	
 	// 请假记录ID
-	var queryString = $('input[name="queryString"]').val();
+//	var queryString = $('input[name="queryString"]').val();
 	
    /*$.post(ctx + '/zhuxue/student/query/student?queryString='+queryString ,{}, function(resp) {
 		$.unblockUI();
