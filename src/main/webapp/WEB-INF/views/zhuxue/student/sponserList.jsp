@@ -42,7 +42,7 @@
 			<tr>
 			<td colspan=1>
 			<form id="search" method="post" action="">
-				<input name="queryString" type="text"><a class="search" tkey='submitquery' tname='搜索' href="#">搜索</a></form>
+				<input id="queryString" name="queryString" type="text"><a class="search" tkey='submitquery' tname='搜索' href="#">搜索</a></form>
     	<!--
         	提示下拉框
         -->
