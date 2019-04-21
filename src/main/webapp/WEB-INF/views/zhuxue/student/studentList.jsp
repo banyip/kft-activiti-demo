@@ -36,8 +36,11 @@
 		<tr>
 			<td colspan=1>
 			<form id="search" method="post" action="">
+			<table><tr><td  style="width:65%">
 				<input type="hidden" id="keyup" name="keyup"/>
-				<input id="queryString" name="queryString" type="text" style="width:65%"/><a class="search" tkey='submitquery' tname='搜索' href="#" style="width:35%">搜索</a></form>
+				<input id="queryString" name="queryString" type="text"/><td style="width:35%"><a class="search" tkey='submitquery' tname='搜索' href="#" >搜索</a>
+				</td></tr></table></form>
+				
 			</td>
 		</tr>
 		<th>
