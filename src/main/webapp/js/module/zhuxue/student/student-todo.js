@@ -16,7 +16,7 @@ $("#drop-area").dmUploader({
 });
 */
 	
-	$(document).keyup(function (e) {//捕获文档对象的按键弹起事件
+	function queryChange (queryString) {//捕获文档对象的按键弹起事件
 	        //此处编写用户敲回车后的代码
 		    event.returnValue=false;
 		    event.cancel = true;
@@ -25,7 +25,7 @@ $("#drop-area").dmUploader({
 		            dataType: "json",
 		            contentType: "application/json;charset=utf-8",
 		            url: "ctx + '/zhuxue/student/query/student",
-		            data: "{\"queryString\":\"" +  $('input[name=queryString]').val()
+		            data: "{\"queryString\":\"" +  queryString
 		            + "\",\"keyup\":\"1\"}",
 		            success: function (data) {
 		            		$('studentlisttbody').html(data);
