@@ -166,8 +166,13 @@ public class ZhuxueController {
      */
     @RequestMapping(value = "query/student")
     public ModelAndView studentQuery(HttpSession session, HttpServletRequest request) {
-        ModelAndView mav = new ModelAndView("/zhuxue/student/studentList");
+        ModelAndView mav ;
         String queryString = request.getParameter("queryString");
+        String keyup = request.getParameter("keyup");
+        if(keyup != null && keyup.equals("1"))
+        	mav = new ModelAndView("/zhuxue/student/studentListTbody");
+        else
+        	mav = new ModelAndView("/zhuxue/student/studentList");
 		Page<Student> page = new Page<Student>(PageUtil.PAGE_SIZE);
         int[] pageParams = PageUtil.init(page, request);
         List<Student> results;

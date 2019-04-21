@@ -36,7 +36,7 @@
 		<tr>
 			<td colspan=1>
 			<form id="search" method="post" action="">
-				<input name="queryString" type="text"/><a class="search" tkey='submitquery' tname='搜索' href="#">搜索</a></form>
+				<input type="hidden" id="keyup" name="keyup"/><input name="queryString" type="text"/><a class="search" tkey='submitquery' tname='搜索' href="#">搜索</a></form>
 			</td>
 		</tr>
 		<th>
@@ -48,7 +48,7 @@
 				<th>操作</th>
 			</tr>
 		</th>
-		<tbody>
+		<tbody id="studentlisttbody">
 			<c:forEach items="${page.result }" var="student"> 
 				<tr id="${student.id }">
 				    <td>${student.auditNo }</td>

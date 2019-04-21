@@ -21,7 +21,21 @@ $("#drop-area").dmUploader({
 	        //此处编写用户敲回车后的代码
 		    event.returnValue=false;
 		    event.cancel = true;
-		    $('a[tkey="submitquery"').click();
+		     $.ajax({
+		            type: "post",
+		            dataType: "json",
+		            contentType: "application/json;charset=utf-8",
+		            url: "ctx + '/zhuxue/student/query/student",
+		            data: "{\"queryString\":\"" +  $('input[name=queryString]').val();
+		            + "\",\"keyup\":\"1\"}",
+		            success: function (data) {
+		            		$('studentlisttbody').html(data);
+		                }
+		            },
+		            error: function () {
+		                alert("查询失败")
+		            }
+		        });
 		  }
 	});
 
