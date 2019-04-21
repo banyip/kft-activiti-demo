@@ -79,7 +79,7 @@ $("#drop-area").dmUploader({
 				}
 			
 				//创建与服务器的连接
-				xhr.open("GET","ctx + "/zhuxue/student/query/sponsertips?queryString="+text);
+				xhr.open("GET",ctx + "/zhuxue/student/query/sponsertips?queryString="+text);
 			
 
 				//发送
