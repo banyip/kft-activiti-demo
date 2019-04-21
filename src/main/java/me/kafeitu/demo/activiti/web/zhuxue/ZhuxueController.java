@@ -157,6 +157,24 @@ public class ZhuxueController {
     }
 
     
+
+    
+    
+    /**
+     * 获取提示
+     *
+     * @param student
+     */
+    @RequestMapping(value = "query/sponsertips")
+    public String sponserTips(HttpSession session, HttpServletRequest request) {
+        String userId = UserUtil.getUserFromSession(session).getId();
+    	String result="";
+    	String queryString = request.getParameter("queryString");
+        if(queryString.length()>0)
+			result=sponserManager.getNamesAndSponserNo(queryString);
+       	logger.debug("tips:"+result);
+        return result;
+    }   
     
     
     /**

@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import javax.persistence.EntityManager;
@@ -50,6 +51,26 @@ public class SponserManager {
     	List<Sponser> SponserList = Lists.newArrayList(geted);  
         return  SponserList;
     }       
+	
+	public String getNamesAndSponserNo(String queryString)
+	{
+    	Iterable<Object> geted = sponserDao.getNameandSponserNo(queryString);
+    	List queryResults = Lists.newArrayList(geted);
+    	String result="";
+    	for(int i=0;i<queryResults.size();i++)
+    	{
+    		Map m = (Map)queryResults.get(i);
+    		String name = (String)m.get("name");
+    		if(name!=null&&name.length()>0)
+    			result = result + "," + name;
+    		name = (String)m.get("SponserNo");
+    		if(name!=null&&name.length()>0)
+    			result = result + "," + name;   		
+    	}
+    	result = result.substring(1);
+        return  result;
+    }   	
+	
 /*	{
 
 		

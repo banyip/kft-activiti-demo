@@ -3,6 +3,8 @@ package me.kafeitu.demo.activiti.dao;
 import me.kafeitu.demo.activiti.entity.zhuxue.Sponser;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -23,5 +25,8 @@ public interface SponserDao extends CrudRepository<Sponser, Long> {
 	
 	@Query(value = "select a from Sponser a where sponserNo like %:queryString% or name like %:queryString%")
 	public Iterable<Sponser> search(@Param("queryString")String queryString);
+	
+	@Query(value = "select a.sponserNo,a.name from Sponser a where sponserNo like %:queryString% or name like %:queryString%")
+	public List  getNameandSponserNo(@Param("queryString")String queryString);
 	Iterable<Sponser> findBySponserNoOrderByIdAsc(String ponserNo);
 }
