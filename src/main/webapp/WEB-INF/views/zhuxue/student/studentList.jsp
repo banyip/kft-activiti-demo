@@ -40,7 +40,12 @@
 				<input type="hidden" id="keyup" name="keyup"/>
 				<input id="queryString" name="queryString" type="text"/><td style="width:35%"><a class="search" tkey='submitquery' tname='搜索' href="#" >搜索</a>
 				</td></tr></table></form>
-				
+				    	<!--
+        	提示下拉框
+        -->
+        <div id="tips" style="display: none; 
+        	width: 171px;  border: 1px solid pink";>
+        </div>
 			</td>
 		</tr>
 		<th>
