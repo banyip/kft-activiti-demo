@@ -59,16 +59,22 @@ $("#drop-area").dmUploader({
 
 function queryChange (queryString) {//捕获文档对象的按键弹起事件
     //此处编写用户敲回车后的代码
+    var form=new FormData();
+    form.append("queryString",queryString);
+    form.append("keyup","1");
+    
      $.ajax({
             type: "post",
             dataType: "json",
             contentType: "application/json;charset=utf-8",
             url: ctx + "/zhuxue/student/query/student",
-            data: "{\"queryString\":\"" +  queryString
-            + "\",\"keyup\":\"1\"}",
+            data: form,
             success: function (data) {
             		$('studentlisttbody').html(data);
-                }		            
+            },
+                error:function(e){
+                    alert("错误！！");
+                    location.reload();                    
         });
 }
 
