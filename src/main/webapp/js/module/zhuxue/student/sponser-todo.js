@@ -85,9 +85,6 @@ $("#drop-area").dmUploader({
 				//发送
 				xhr.send();
 			}
-			}
-
-
 	
 	
 	
