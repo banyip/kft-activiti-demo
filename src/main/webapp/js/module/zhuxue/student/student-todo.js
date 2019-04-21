@@ -26,7 +26,7 @@ $("#drop-area").dmUploader({
 		            dataType: "json",
 		            contentType: "application/json;charset=utf-8",
 		            url: "ctx + '/zhuxue/student/query/student",
-		            data: "{\"queryString\":\"" +  $('input[name=queryString]').val();
+		            data: "{\"queryString\":\"" +  $('input[name=queryString]').val()
 		            + "\",\"keyup\":\"1\"}",
 		            success: function (data) {
 		            		$('studentlisttbody').html(data);
