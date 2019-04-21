@@ -40,9 +40,9 @@
 	</div>
 	<table width="100%" class="need-border">
 			<tr>
-			<td colspan=2>
+			<td colspan=1>
 			<form id="search" method="post" action="">
-				<input name="queryString" type="text"><a class="search" tkey='submitquery' tname='搜索' href="#"></form>
+				<input name="queryString" type="text"><a class="search" tkey='submitquery' tname='搜索' href="#">搜索</a></form>
 			</td>
 		</tr>
 		<th>
