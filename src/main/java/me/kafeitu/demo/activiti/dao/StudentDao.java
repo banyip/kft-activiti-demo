@@ -24,7 +24,7 @@ public interface StudentDao extends CrudRepository<Student, Long> {
             value = "select a from Student a where a.auditNo not in (select distinct studentId from Transfer where semester=:semester)"
     )
 	Iterable<Student> findAllStudentsWithoutTransfer(@Param("semester")String semester);
-	@Query(value = "select a from Student a where studentName like '%?1%' or auditNo like '%?1%')")
-	public Iterable<Student> search(String queryString);
+	@Query(value = "select a from Student a where studentName like '%:queryString%' or auditNo like '%:queryString%')")
+	public Iterable<Student> search(@Param("queryString")String queryString);
 
 }
