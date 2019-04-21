@@ -14,7 +14,7 @@ function recoverColorwhenMouseout(div){
 //当鼠标带点击div时，将div的值赋给输入文本框
 function Write(div){
 	//将div中的值赋给文本框
-	document.getElementById("text").value=div.innerHTML;
+	document.getElementById("queryString").value=div.innerHTML;
 	
 	//让下拉提示框消失
 	

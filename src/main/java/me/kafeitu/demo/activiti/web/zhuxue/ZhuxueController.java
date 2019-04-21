@@ -177,6 +177,23 @@ public class ZhuxueController {
         response.getWriter().write(result);
     }   
     
+    /**
+     * 获取提示
+     *
+     * @param student
+     * @throws IOException 
+     */
+    @RequestMapping(value = "query/studenttips")
+    public void studentTips(HttpSession session, HttpServletRequest request,HttpServletResponse response) throws IOException {
+        String userId = UserUtil.getUserFromSession(session).getId();
+    	String result="";
+    	String queryString = request.getParameter("queryString");
+        if(queryString.length()>0)
+			result=studentManager.getAuditNoandStudentName(queryString);
+       	logger.debug("tips:"+result);
+        response.getWriter().write(result);
+    }      
+    
     
     /**
      * 搜索学生

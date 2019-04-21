@@ -3,8 +3,7 @@ package me.kafeitu.demo.activiti.dao;
 import me.kafeitu.demo.activiti.entity.zhuxue.Sponser;
 import me.kafeitu.demo.activiti.entity.zhuxue.Student;
 
-
-
+import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
@@ -24,7 +23,9 @@ public interface StudentDao extends CrudRepository<Student, Long> {
             value = "select a from Student a where a.auditNo not in (select distinct studentId from Transfer where semester=:semester)"
     )
 	Iterable<Student> findAllStudentsWithoutTransfer(@Param("semester")String semester);
-	@Query(value = "select a from Student a where studentName like %:queryString% or auditNo like %:queryString%)")
+	@Query(value = "select a from Student a where studentName like %:queryString% or auditNo like %:queryString%")
 	public Iterable<Student> search(@Param("queryString")String queryString);
 
+	@Query(value = "select a.auditNo,a.studentName from Student a where studentName like %:queryString% or auditNo like %:queryString%")
+	public List  getAuditNoandStudentName(@Param("queryString")String queryString);
 }

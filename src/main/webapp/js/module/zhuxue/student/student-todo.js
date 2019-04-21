@@ -1,6 +1,26 @@
 var innerhtmls=new Map();
 
 
+//动态提示选择相关函数
+//鼠标悬停时改变div的颜色
+function changeColorwhenMouseover(div){
+	div.style.backgroundColor="pink";
+}
+//鼠标移出时回复div颜色
+function recoverColorwhenMouseout(div){
+	div.style.backgroundColor="";
+}
+//当鼠标带点击div时，将div的值赋给输入文本框
+function Write(div){
+	//将div中的值赋给文本框
+	document.getElementById("queryString").value=div.innerHTML;
+	
+	//让下拉提示框消失
+	
+	div.parentNode.style.display="none";
+}
+
+
 /**
  * 请假流程任务办理
  */
@@ -15,6 +35,55 @@ $("#drop-area").dmUploader({
   }
 });
 */
+
+	//动态提示选择
+			var textElment = document.getElementById("queryString");
+				//获取下提示框
+				var div = document.getElementById("tips");
+				textElment.onkeyup=function(){
+					//获取用户输入的值
+					var text = textElment.value;
+					//如果文本框中没有值，则下拉框被隐藏，不显示
+					if(text==""){
+						div.style.display="none";
+						return;
+					}
+					//获取XMLHttpRequest对象
+					var xhr = new XMLHttpRequest();
+					//编写回调函数
+					xhr.onreadystatechange=function(){
+						//判断回调的条件是否准备齐全
+						if(xhr.readyState==4){
+							if(xhr.status==200){
+								//取的服务器端传回的数据
+								var str = xhr.responseText;
+								
+								//判断传回的数据是否为空,若是则直接返回，不显示
+								if(str==""){
+									return;
+								}
+								//我们将会在服务器端把数据用 , 隔开，当然这里也可以使用json
+								var result = str.split(",");
+								var childs = "";
+								//遍历结果集，将结果集中的每一条数据用一个div显示，把所有的div放入到childs中
+								for(var i=0; i<result.length;i++){
+									childs += "<div onclick='Write(this)' onmouseout='recoverColorwhenMouseout(this)' onmouseover='changeColorwhenMouseover(this)'>"+result[i]+"</div>";
+								}
+								//把childs 这div集合放入到下拉提示框的父div中，上面我们以获取了
+								div.innerHTML=childs;
+								div.style.display="block";
+							
+							}
+						}
+					}
+				
+					//创建与服务器的连接
+					xhr.open("GET",ctx + "/zhuxue/student/query/studenttips?queryString="+text);
+				
+
+					//发送
+					xhr.send();
+				}
 	
 
     // 搜索

@@ -46,6 +46,26 @@ public class StudentManager {
     	List<Student> studentList = Lists.newArrayList(geted);  
         return  studentList;
     }      
+
+	//获取搜索关键字对应得学生姓名和编号
+	public String getAuditNoandStudentName(String queryString)
+	{
+    	Iterable<Object> geted = studentDao.getAuditNoandStudentName(queryString);
+    	List queryResults = Lists.newArrayList(geted);
+    	String result="";
+    	for(int i=0;i<queryResults.size();i++)
+    	{
+    		Object[] m = (Object[])queryResults.get(i);
+    		String name = (String)m[0];
+    		if(name!=null&&name.length()>0)
+    			result = result + "," + name;
+    		name = (String)m[1];
+    		if(name!=null&&name.length()>0)
+    			result = result + "," + name;   		
+    	}
+    	result = result.substring(1);
+        return  result;
+    }   		
 	
 	/*	{
 
