@@ -3,7 +3,8 @@ $(function() {
 		sortable: true,
 		columns: [{
 			width: 400,
-			portlets: [{
+			portlets: [
+				/*{
 				title: '待办任务',
 				content: {
 					style: {
@@ -100,7 +101,7 @@ $(function() {
                         return $('.rest').html();
                     }
                 }
-            }]
+            }*/]
 		}]
 	});
 });
