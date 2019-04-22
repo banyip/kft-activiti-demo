@@ -36,9 +36,9 @@
 		<tr>
 			<td colspan=1>
 			<form id="search" method="post" action="">
-			<table><tr><td  style="width:65%">
+			<table><tr><td  style="width:65%;border:none">
 				<input type="hidden" id="keyup" name="keyup"/>
-				<input id="queryString" name="queryString" type="text"/><td style="width:35%"><a class="search" tkey='submitquery' tname='搜索' href="#" >搜索</a>
+				<input id="queryString" name="queryString" type="text"/><td style="width:35%;border:none"><a class="search" tkey='submitquery' tname='搜索' href="#" >搜索</a>
 				</td></tr></table></form>
 				    	<!--
         	提示下拉框
