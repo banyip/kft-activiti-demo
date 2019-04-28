@@ -158,7 +158,7 @@ public class StudentManager {
     }
 
     public List<Student> getAllStudentByOrderByAuditNo() {
-    	Iterable<Student> geted = studentDao.findAllByOrderByAuditNoAtAsc();
+    	Iterable<Student> geted = studentDao.findAllByOrderByAuditNoAsc();
 
     	List<Student> studentList = Lists.newArrayList(geted);  
         return  studentList;
