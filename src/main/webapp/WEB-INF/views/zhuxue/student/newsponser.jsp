@@ -152,7 +152,7 @@ input:not([type="checkbox"]) {
 		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_transferMan" name="transfers[0]_transferMan" type="text" /></td>
 		<td class="style11" style="width: 8%; height: 18pt;">
-			<input class="sponserApply" id="transfers[0]_method" name="transfers[0]_method" type="text" /></td>
+			<input class="sponserApply" id="transfers[0]_method" name="transfers[0]_accountCheck" type="text" /></td>
 		<td class="style11" style="width: 8%; height: 18pt;">
 			<input class="sponserApply" id="transfers[0]_studentId" name="transfers[0]_studentId" / ></td>
 		<td class="style11" style="width: 8%; height: 18pt;">

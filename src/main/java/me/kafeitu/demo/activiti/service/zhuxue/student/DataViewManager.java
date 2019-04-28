@@ -49,10 +49,10 @@ public class DataViewManager  {
 	private String[][] datas;
 	public String setStudentRows() {
 		fileName = "学生名录" + System.currentTimeMillis() + ".xls";
-		String[] studentTitles = {"编号","姓名","资助状态","性别","民族","出生年月","学校","年级","班级","毕业时间","学校联系人","电话","住址","家长姓名","家庭电话","学生电话","QQ","备注","开始资助时间","身份证","学生账号"};
+		String[] studentTitles = {"编号","姓名","资助状态","性别","民族","出生年月","学校","年级","班级","毕业时间","学校联系人","电话","住址","家长姓名","家庭电话","学生电话","QQ","备注","开始资助时间","身份证","学生账号","开户银行"};
 		titles = studentTitles;
 		int cols = titles.length;
-		List<Student> results=studentManager.getAllStudent();
+		List<Student> results=studentManager.getAllStudentByOrderByAuditNo();
 		int rows = results.size();
 		datas = new String[rows][cols];		
 		for(int i=0;i<rows ;i++)
@@ -93,6 +93,7 @@ public class DataViewManager  {
 			datas[i][k++] = result.getSponseStartTime();
 			datas[i][k++] = result.getStudentId();
 			datas[i][k++] = result.getBankCard();	
+			datas[i][k++] = result.getBank();
 		}
 		datasheets=new HashMap<String,String[][]>();
 		datasheets.put("学生名录",datas);
@@ -205,7 +206,7 @@ public class DataViewManager  {
 			datas[i][k++] = transfer.getOperatingFee();		//运营费
 			datas[i][k++] = transfer.getTransferTime();    //到账
 			datas[i][k++] = transfer.getTransferBank();   //汇款来源
-			datas[i][k++] = transfer.getMethod();		//财务对帐
+			datas[i][k++] = transfer.getAccountCheck();		//财务对帐
 			datas[i][k++] = transfer.getSendEmail();   //确认到账邮件		
 			datas[i][k++] = transfer.getGrantTime();   //发款日期
 			datas[i][k++] = result.getFeedbackDate(semester);  	//反馈

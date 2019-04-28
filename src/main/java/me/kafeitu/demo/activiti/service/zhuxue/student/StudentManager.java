@@ -157,6 +157,12 @@ public class StudentManager {
         return  studentList;
     }
 
+    public List<Student> getAllStudentByOrderByAuditNo() {
+    	Iterable<Student> geted = studentDao.findAllByOrderByauditNo();
+
+    	List<Student> studentList = Lists.newArrayList(geted);  
+        return  studentList;
+    }    
     
     @Transactional(readOnly = false)
     public void saveStudent(Student entity) throws IllegalArgumentException, IllegalAccessException {

@@ -19,6 +19,7 @@ import org.springframework.stereotype.Component;
 public interface StudentDao extends CrudRepository<Student, Long> {
 	Iterable<Student> findBySponserIdOrderByIdAsc(String sponserId);
 	Iterable<Student> findByAuditNoOrderByIdAsc(String AuditNo);
+	Iterable<Student> findAllByOrderByauditNo();
 	@Query(
             value = "select a from Student a where a.auditNo not in (select distinct studentId from Transfer where semester=:semester)"
     )
