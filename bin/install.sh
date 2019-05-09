@@ -1,3 +1,5 @@
+sudo apt-get install -y mysql-serve
+
 INSTALL_DIR=`pwd`
 sudo mkdir -p /mnt/dav
 sudo apt install -y davfs2
