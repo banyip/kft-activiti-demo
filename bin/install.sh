@@ -1,4 +1,4 @@
-sudo apt-get install -y mysql-server
+sudo apt-get install -y mysql-server maven
 sudo mysql -uroot < initial.sql 
 INSTALL_DIR=`pwd`
 sudo mkdir -p /mnt/dav
