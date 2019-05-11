@@ -38,6 +38,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -77,7 +78,97 @@ public class ZhuxueController {
 			
 			invoke(methodname,value,(Object)items.get(index),invokeClassName,"java.lang.String");   					
 		}*/
-
+	/**
+     * 
+     * @Title: impExcel 
+     * @Description: 批量导入客户信息
+     * @param @param request
+     * @param @param response
+     * @param @return
+     * @return String
+     * @throws
+     */
+    @RequestMapping("impExcel")
+    @ResponseBody
+    public String impExcel(MultipartHttpServletRequest request,HttpServletResponse response){
+        
+  //      ReturnStandardDataFormat standardData = new ReturnStandardDataFormat(CustomConstants.CUSTOM_SELECT_EXCEPTION,"导入客户信息失败",null);
+        
+        MultipartFile file = request.getFile("file");
+        ExcelUtil er = new ExcelUtil();
+        int count =0;
+        int error =0;
+        int success = 0;
+        
+//        List<Custom> list_ = new ArrayList<Custom>();
+ //       User u = getUser(request.getSession());//SessionUtils.getUser(request.getSession());
+//        Long corpId = Long.valueOf(u.getCorpId());
+        Date date = new Date();
+        String returnMsg = "";
+        int index = 1;
+        
+        try {
+            
+            List<Map<Integer,String>> list = er.readExcelContentByList(file.getInputStream()); //读取Excel数据内容
+            count = list.size();
+            
+            for(Map<Integer,String> map : list){
+                
+                if(map.get(0)==null || "".equals(map.get(0))){
+                    returnMsg += "第"+index+"行：【客户简称(必填)】列不能为空;";
+                } else if(map.get(1)==null || "".equals(map.get(1))){
+                    returnMsg += "第"+index+"行：【客户全称(必填)】列不能为空;";
+                } else {
+                    int num = 0;
+ //                   QueryCustomParam params = new QueryCustomParam();
+//                    params.setShortName(map.get(0));
+//                    params.setCorpId(Long.valueOf(u.getCorpId()));
+                    num = 0;//customService.checkCustom(params); //查询相同客户
+                    
+                    if(num==0){
+                    	/*
+                        Custom custom = new Custom();
+                        custom.setId(UUIDUtil.getLongUUID());
+                        custom.setShortName(map.get(0)==null? null : map.get(0));
+                        custom.setName(map.get(1)==null? null : map.get(1));
+                        custom.setNumber(map.get(2)==null? null : map.get(2));
+                        custom.setAddress(map.get(3)==null? null : map.get(3));
+                        custom.setUrl(map.get(4)==null? null : map.get(4));
+                        custom.setDescription(map.get(5)==null? null : map.get(5));
+                        custom.setCustomStatusId(map.get(6)==null? null : basedataService.getLabelId("custom_status", map.get(6), corpId) ); 
+                        custom.setCustomLevelId(map.get(7)==null? null : basedataService.getLabelId("custom_level", map.get(7), corpId) );         
+                        custom.setCreaterId(Long.valueOf(u.getUserId()));
+                        custom.setCreateDate(date);
+                        custom.setUpdaterId(Long.valueOf(u.getUserId()));
+                        custom.setUpdateDate(date);
+                        custom.setCorpId(Long.valueOf(u.getCorpId()));
+ */                       
+//                        list_.add(custom);
+                        
+                    } else {
+                        returnMsg += "第"+index+"行：【客户简称(必填)】列："+ map.get(0)+"已存在;";
+                    }
+                    index++;
+                }
+            }
+            
+//            int cuccess = customService.batchInsert(list_); //批量导入客户信息
+            
+//            standardData.setReturnCode(0);
+//            standardData.setReturnData(null);
+            
+            error = count - success;
+//            standardData.setReturnMessage(returnMsg);
+            
+        } catch (Exception e) {
+            logger.error("批量导入客户信息异常：" + e.getMessage());
+//            standardData.setReturnMessage(e.getMessage());
+        }
+        
+        return "";//JsonHelper.encodeObject2Json(standardData, "yyyy-MM-dd HH:mm:ss");
+    }
+	
+	
 	private void invoke(String methodname,Object value,Object invoker,String invokerClass, String param)
 	{
 			try {
