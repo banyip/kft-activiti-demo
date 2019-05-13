@@ -641,7 +641,7 @@ var handleOpts = {
 			}]
 		},
 
-		importtudent: {
+		importstudent: {
 			width: 800,
 			height: 500,
 			open: function(id) {
