@@ -43,7 +43,7 @@
    </head>
   <body>  
  
-    <form method="POST"  enctype="multipart/form-data" id="form1" action="uploadExcel/form">  
+    <form method="post"  enctype="multipart/form-data" id="form1" action="uploadExcel/form">  
        
              <label>上传文件: </label>
              <input id="upfile" type="file" name="upfile"><br> <br> 
