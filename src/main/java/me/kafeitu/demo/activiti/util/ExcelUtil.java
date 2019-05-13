@@ -397,7 +397,7 @@ public class ExcelUtil <T>{
      * @param InputStream
      * @return List<Map<String, String>>  Map的key是列Id(0代表第一列)，值是具体内容
      */
-    public List<Map<Integer, String>> readExcelContentByList(InputStream is) {
+    public static List<Map<Integer, String>> readExcelContentByList(InputStream is) {
         
         List<Map<Integer, String>> list = new ArrayList<Map<Integer,String>>();
         HSSFWorkbook wb = null;

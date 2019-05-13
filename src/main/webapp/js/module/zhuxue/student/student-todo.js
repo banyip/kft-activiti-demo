@@ -10,6 +10,22 @@ function changeColorwhenMouseover(div){
 function recoverColorwhenMouseout(div){
 	div.style.backgroundColor="";
 }
+
+function checkData(){  
+    var fileDir = $("#upfile").val();  
+    var suffix = fileDir.substr(fileDir.lastIndexOf("."));  
+    if("" == fileDir){  
+        alert("选择需要导入的Excel文件！");  
+        return false;  
+    }  
+    if(".xls" != suffix && ".xlsx" != suffix ){  
+        alert("选择Excel格式的文件导入！");  
+        return false;  
+    }  
+    return true;  
+ }   
+
+
 //当鼠标带点击div时，将div的值赋给输入文本框
 function Write(div){
 	//将div中的值赋给文本框
@@ -625,7 +641,52 @@ var handleOpts = {
 			}]
 		},
 
-editstudent: {
+		importtudent: {
+			width: 800,
+			height: 500,
+			open: function(id) {
+				var dialog = this;
+			/*	
+            $('[id$="Time"],[id$="Date"]').datetimepicker({
+                    stepMinute: 5
+            });
+            $('[id$="Time"],[id$="Date"]').datetimepicker('setDate', new Date());
+            */
+				// 打开对话框的时候读取请假内容
+				
+
+			},
+			btns: [{
+				text: '提交',
+				click: function() {					
+					if(checkData()){  
+                        $('#form1').ajaxSubmit({    
+                            url:'uploadExcel/ajax',  
+                            dataType: 'text',  
+                            success: resutlMsg,  
+                            error: errorMsg  
+                        });   
+                        function resutlMsg(msg){  
+                            alert(msg);     
+                            $("#upfile").val("");  
+                        }  
+                        function errorMsg(){   
+                            alert("导入excel出错！");      
+                        }  
+                    }
+					
+					
+				}
+			},{
+				text: '取消',
+				click: function() {
+					$(this).dialog('close');
+				}
+			}]
+		},
+
+		
+		editstudent: {
 			width: 1300,
 			height: 570,
 			open: function(id) {
