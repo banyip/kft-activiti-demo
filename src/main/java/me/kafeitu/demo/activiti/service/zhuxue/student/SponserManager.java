@@ -125,7 +125,7 @@ public class SponserManager {
     }       
 
 
-    @Transactional(readOnly = false)
+    @Transactional(readOnly = false,noRollbackFor = SQLException.class)
     private void deleteTransferForeignKey(Long id) throws SQLException
     {
     	try {
