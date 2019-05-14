@@ -98,7 +98,7 @@
  		 	<%@include file="newsponser.jsp" %>
     </div>
     <!-- 从excel导入资助人信息 -->
-	<div id="importstudent" style="display: none" class="div_maindialog">
+	<div id="importsponser" style="display: none" class="div_maindialog">
 		<!-- table用来显示信息，方便办理任务 -->
             <%@include file="importexcel.jsp" %>
 
