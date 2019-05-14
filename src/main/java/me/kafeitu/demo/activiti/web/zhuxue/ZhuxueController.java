@@ -154,13 +154,26 @@ public class ZhuxueController {
         		sponser.setPoliticFace(lo.get(new Integer(j++)));
         		sponser.setCompany(lo.get(new Integer(j++)));
         		sponser.setBirthdate(lo.get(new Integer(j++)));
-        		sponser.setStudentNosToSponse(lo.get(new Integer(j++)));/////
+        		String studentNosToSponse = lo.get(new Integer(j++));
+        		sponser.setStudentNosToSponse(studentNosToSponse);/////
+        		String[] studentNoList = studentNosToSponse.split("\\",-1);
+        		for(int k=0;k<studentNoList.length;k++)
+        		{
+        			List<Student> students = studentManager.getAllStudentByAuditNo(studentNoList[k]);
+        			students.get(0).setSponserId(sponser.getSponserNo());;
+        		}
         		sponser.setSponseStartTime(lo.get(new Integer(j++)));
         		sponser.setSponseEndTime(lo.get(new Integer(j++)));
         		sponser.setSponseEndReason(lo.get(new Integer(j++)));
         		sponser.setWechat(lo.get(new Integer(j++)));
         		sponser.setProfectional(lo.get(new Integer(j++)));
         		sponserManager.saveSponser(sponser);
+        		
+        	}else if(wti.equals("sponseregistry"))
+        	{
+        		
+        		
+        		
         		
         	}
         	
