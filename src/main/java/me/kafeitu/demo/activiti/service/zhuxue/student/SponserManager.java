@@ -132,6 +132,7 @@ public class SponserManager {
     	catch(Exception e)
     	{
     		logger.debug(e.toString());
+    		throw e;
     	}
     	sponserDao.delete(id);
     }
