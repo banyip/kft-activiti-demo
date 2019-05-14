@@ -661,7 +661,7 @@ var handleOpts = {
 				click: function() {					
 					if(checkData()){  
                         $('#form1').ajaxSubmit({    
-                            url:ctx+'/zhuxue/student/importstudent',  
+                            url:ctx+'/zhuxue/student/importexcel',  
                             data:{wti:"student"},
                             dataType: 'text',  
                             success: resutlMsg,  

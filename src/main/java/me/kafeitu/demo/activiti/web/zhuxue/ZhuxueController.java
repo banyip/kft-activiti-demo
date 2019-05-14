@@ -88,7 +88,7 @@ public class ZhuxueController {
      * @return String
      * @throws
      */
-    @RequestMapping("importstudent")
+    @RequestMapping("importexcel")
     @ResponseBody
     public String impExcel(MultipartHttpServletRequest request,HttpServletResponse response){
         
