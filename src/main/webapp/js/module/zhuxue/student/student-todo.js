@@ -661,7 +661,7 @@ var handleOpts = {
 				click: function() {					
 					if(checkData()){  
                         $('#form1').ajaxSubmit({    
-                            url:'uploadExcel/ajax',  
+                            url:'/zhuxue/student/importstudent',  
                             dataType: 'text',  
                             success: resutlMsg,  
                             error: errorMsg  
