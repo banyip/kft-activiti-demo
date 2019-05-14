@@ -123,7 +123,8 @@ public class SponserManager {
         return  SponserList;
     }       
 
-    @Transactional(readOnly = false)
+    
+  //  @Transactional(readOnly = false)
     public void delSponser(Long id)
     {
     	try {
@@ -132,7 +133,6 @@ public class SponserManager {
     	catch(Exception e)
     	{
     		logger.debug(e.toString());
-    		throw e;
     	}
     	sponserDao.delete(id);
     }
