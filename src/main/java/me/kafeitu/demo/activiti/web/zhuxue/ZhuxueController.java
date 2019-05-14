@@ -910,7 +910,13 @@ public class ZhuxueController {
     @ResponseBody
     public String delsponser(HttpSession session,@PathVariable("id") Long id) {
         String userId = UserUtil.getUserFromSession(session).getId();
+        try {
         sponserManager.delSponser(id);
+        }
+        catch(Exception e)
+        {
+        	logger.error(e.toString());
+        }
         logger.debug("资助人删除成功：id="+id);
        // Map<String, Object> variables = taskService.getVariables(taskId);
         return "success";
