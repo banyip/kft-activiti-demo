@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.lang.reflect.Field;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
@@ -125,7 +126,7 @@ public class SponserManager {
 
 
     @Transactional(readOnly = false)
-    private void deleteTransferForeignKey(Long id)
+    private void deleteTransferForeignKey(Long id) throws SQLException
     {
     	try {
     	sponserDao.deleteTransferForeignKey(id);
@@ -133,15 +134,23 @@ public class SponserManager {
     	catch(Exception e)
     	{
     		logger.debug(e.toString());
+    		throw new SQLException("error");
     	}
     	
     }
     
-    @Transactional(readOnly = false)
+    @Transactional(readOnly = false,noRollbackFor = SQLException.class)
     public void delSponser(Long id)
     {
+    	try {
     	this.deleteTransferForeignKey(id);
+    	}
+    	catch(Exception e)
+    	{
+    		logger.error(e.toString());
+    	}
     	sponserDao.delete(id);
+
     }
     
     public List<Sponser> getAllSponser() {
