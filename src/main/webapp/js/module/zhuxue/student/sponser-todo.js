@@ -433,7 +433,52 @@ function complete(variables,url,filenames,files) {
 
 
 var handleOpts = {
-			newsponser: {
+		importsponser: {
+			width: 800,
+			height: 500,
+			open: function(id) {
+				var dialog = this;
+			/*	
+            $('[id$="Time"],[id$="Date"]').datetimepicker({
+                    stepMinute: 5
+            });
+            $('[id$="Time"],[id$="Date"]').datetimepicker('setDate', new Date());
+            */
+				// 打开对话框的时候读取请假内容
+				
+
+			},
+			btns: [{
+				text: '提交',
+				click: function() {					
+					if(checkData()){  
+                        $('#form1').ajaxSubmit({    
+                            url:ctx+'/zhuxue/student/importsponser', 
+                            data:{wti:"sponser"},
+                            dataType: 'text',  
+                            success: resutlMsg,  
+                            error: errorMsg  
+                        });   
+                        function resutlMsg(msg){  
+                            alert(msg);     
+                            $("#upfile").val("");  
+                        }  
+                        function errorMsg(){   
+                            alert("导入excel出错！");      
+                        }  
+                    }
+					
+					
+				}
+			},{
+				text: '取消',
+				click: function() {
+					$(this).dialog('close');
+				}
+			}]
+		},
+
+		newsponser: {
 			width: 1000,
 			height: 700,
 			open: function(id) {

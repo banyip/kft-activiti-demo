@@ -662,6 +662,7 @@ var handleOpts = {
 					if(checkData()){  
                         $('#form1').ajaxSubmit({    
                             url:ctx+'/zhuxue/student/importstudent',  
+                            data:{wti:"student"},
                             dataType: 'text',  
                             success: resutlMsg,  
                             error: errorMsg  

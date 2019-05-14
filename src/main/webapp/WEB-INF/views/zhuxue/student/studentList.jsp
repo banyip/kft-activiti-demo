@@ -31,11 +31,9 @@
 		<div id="message" class="alert alert-success">${message}</div>
     </c:if>
     	<div style="text-align: right;padding: 2px 1em 2px">
-		<a class='handle' tkey=newstudent tname="登记新学生申请" href='#'>登记新学生申请</a>
+		<a class='handle' tkey=newstudent tname="登记新学生申请" href='#'>登记新学生申请</a>  <a class='handle' tkey=importstudent tname="从Excel导入学生" href='#'>从Excel导入学生</a>
 	</div>
-    	<div style="text-align: right;padding: 2px 1em 2px">
-		<a class='handle' tkey=importstudent tname="从Excel导入学生" href='#'>从Excel导入学生</a>
-	</div>
+
 	
 	<table width="100%" class="need-border">
 		<tr>
@@ -98,7 +96,7 @@
     <!-- 从excel导入学生信息 -->
 	<div id="importstudent" style="display: none" class="div_maindialog">
 		<!-- table用来显示信息，方便办理任务 -->
-            <%@include file="importstudent.jsp" %>
+            <%@include file="importexcel.jsp" %>
 
 
     </div>

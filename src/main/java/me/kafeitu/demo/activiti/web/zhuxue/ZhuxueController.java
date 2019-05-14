@@ -102,39 +102,68 @@ public class ZhuxueController {
         in = file.getInputStream();  
         listob = ExcelUtil.readExcelContentByList(in);  
           
+        String wti = request.getParameter("wti");
+        
       //该处可调用service相应方法进行数据保存到数据库中，现只对数据输出  
         for (int i = 0; i < listob.size(); i++) {  
-        	Map<Integer, String> lo = listob.get(i);  
-        	Student student = new Student();
-        	int j=0;
-        	student.setAuditNo(lo.get(new Integer(j++)));
-        	student.setStudentName(lo.get(new Integer(j++)));
-        	student.setSponseState(lo.get(new Integer(j++)));
-        	student.setSex(lo.get(new Integer(j++)));
-        	student.setNationality(lo.get(new Integer(j++)));
-        	student.setAge(lo.get(new Integer(j++)));
-        	School school = new School();
-        	school.setSchool(lo.get(new Integer(j++)));
-        	school.setGrade(lo.get(new Integer(j++)));
-        	school.setClassName(lo.get(new Integer(j++)));
-        	school.setGraduateTime(lo.get(new Integer(j++)));
-        	school.setHeadTeacher(lo.get(new Integer(j++)));
-        	school.setSchoolContactNo(lo.get(new Integer(j++)));
-        	List<School> schools= new ArrayList<School>();
-        	schools.add(school);
-        	student.setSchools(schools);
-        	student.setAddress(lo.get(new Integer(j++)));
-        	student.setParentName(lo.get(new Integer(j++)));
-        	student.setParentContactNo(lo.get(new Integer(j++)));
-        	student.setStudentContactNo(lo.get(new Integer(j++)));
-        	student.setQq(lo.get(new Integer(j++)));
-        	student.setMemo((lo.get(new Integer(j++))));
-        	student.setSponseStartTime(lo.get(new Integer(j++)));
-        	student.setStudentId(lo.get(new Integer(j++)));
-        	student.setBankCard(lo.get(new Integer(j++)));
-        	student.setBank(lo.get(new Integer(j++)));
         	
-        	studentManager.saveStudent(student);  
+        	Map<Integer, String> lo = listob.get(i);
+        	if(wti.equals("student"))
+        	{
+	        	Student student = new Student();
+	        	int j=0;
+	        	student.setAuditNo(lo.get(new Integer(j++)));
+	        	student.setStudentName(lo.get(new Integer(j++)));
+	        	student.setSponseState(lo.get(new Integer(j++)));
+	        	student.setSex(lo.get(new Integer(j++)));
+	        	student.setNationality(lo.get(new Integer(j++)));
+	        	student.setAge(lo.get(new Integer(j++)));
+	        	School school = new School();
+	        	school.setSchool(lo.get(new Integer(j++)));
+	        	school.setGrade(lo.get(new Integer(j++)));
+	        	school.setClassName(lo.get(new Integer(j++)));
+	        	school.setGraduateTime(lo.get(new Integer(j++)));
+	        	school.setHeadTeacher(lo.get(new Integer(j++)));
+	        	school.setSchoolContactNo(lo.get(new Integer(j++)));
+	        	List<School> schools= new ArrayList<School>();
+	        	schools.add(school);
+	        	student.setSchools(schools);
+	        	student.setAddress(lo.get(new Integer(j++)));
+	        	student.setParentName(lo.get(new Integer(j++)));
+	        	student.setParentContactNo(lo.get(new Integer(j++)));
+	        	student.setStudentContactNo(lo.get(new Integer(j++)));
+	        	student.setQq(lo.get(new Integer(j++)));
+	        	student.setMemo((lo.get(new Integer(j++))));
+	        	student.setSponseStartTime(lo.get(new Integer(j++)));
+	        	student.setStudentId(lo.get(new Integer(j++)));
+	        	student.setBankCard(lo.get(new Integer(j++)));
+	        	student.setBank(lo.get(new Integer(j++)));
+	        	
+	        	studentManager.saveStudent(student);  
+        	}else if(wti.equals("sponser"))
+        	{
+        		Sponser sponser = new Sponser();
+        		int j=0;
+        		sponser.setSponserNo(lo.get(new Integer(j++)));
+        		sponser.setName(lo.get(new Integer(j++)));
+        		sponser.setEmail(lo.get(new Integer(j++)));
+        		sponser.setContactNo(lo.get(new Integer(j++)));
+        		sponser.setQq(lo.get(new Integer(j++)));
+        		sponser.setAddress(lo.get(new Integer(j++)));
+        		sponser.setNeedReciept(lo.get(new Integer(j++)));
+        		sponser.setPoliticFace(lo.get(new Integer(j++)));
+        		sponser.setCompany(lo.get(new Integer(j++)));
+        		sponser.setBirthdate(lo.get(new Integer(j++)));
+        		sponser.setStudentNosToSponse(lo.get(new Integer(j++)));/////
+        		sponser.setSponseStartTime(lo.get(new Integer(j++)));
+        		sponser.setSponseEndTime(lo.get(new Integer(j++)));
+        		sponser.setSponseEndReason(lo.get(new Integer(j++)));
+        		sponser.setWechat(lo.get(new Integer(j++)));
+        		sponser.setProfectional(lo.get(new Integer(j++)));
+        		sponserManager.saveSponser(sponser);
+        		
+        	}
+        	
         }  
         }
         catch(Exception e)

@@ -47,10 +47,6 @@
        
              <label>上传文件: </label>
              <input id="upfile" type="file" name="upfile"><br> <br> 
-       
-            <input type="submit" value="表单提交" onclick="return checkData()">
-            <input type="button" value="ajax提交" id="btn" name="btn" >  
-
     </form>       
   </body>  
 </html>
