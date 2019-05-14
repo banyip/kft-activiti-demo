@@ -125,7 +125,7 @@ public class SponserManager {
     }       
 
 
-    @Transactional(readOnly = false,noRollbackFor = SQLException.class)
+    @Transactional(readOnly = false,noRollbackFor = {SQLException.class})
     public void deleteTransferForeignKey(Long id) throws SQLException
     {
     	try {
@@ -139,8 +139,8 @@ public class SponserManager {
     	
     }
     
-    @Transactional(readOnly = false,noRollbackFor = SQLException.class)
-    public void delSponser(Long id)
+    @Transactional(readOnly = false,noRollbackFor = {SQLException.class})
+    public void delSponser(Long id) throws SQLException
     {
     	try {
     	this.deleteTransferForeignKey(id);
@@ -148,6 +148,7 @@ public class SponserManager {
     	catch(Exception e)
     	{
     		logger.error(e.toString());
+    		throw new SQLException("error1");
     	}
     	sponserDao.delete(id);
 
