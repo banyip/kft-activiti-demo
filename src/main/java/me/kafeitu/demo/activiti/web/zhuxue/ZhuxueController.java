@@ -140,7 +140,7 @@ public class ZhuxueController {
         	student.setBankCard(lo.get(new Integer(j++)));
         	student.setBank(lo.get(new Integer(j++)));
         }  
-          
+        studentManager.saveStudent(student);  
         return "success";
     }
 	
