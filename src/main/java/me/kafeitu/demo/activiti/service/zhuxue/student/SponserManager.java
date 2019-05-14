@@ -143,7 +143,7 @@ public class SponserManager {
     public void delSponser(Long id) throws SQLException
     {
     	try {
-    	this.deleteTransferForeignKey(id);
+    	sponserDao.deleteTransferForeignKey(id);
     	}
     	catch(Exception e)
     	{
