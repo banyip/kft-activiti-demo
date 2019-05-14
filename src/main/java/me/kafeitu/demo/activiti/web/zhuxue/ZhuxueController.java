@@ -100,12 +100,6 @@ public class ZhuxueController {
         MultipartFile file = multipartRequest.getFile("upfile");  
         try {
         in = file.getInputStream();  
-        }
-        catch(Exception e)
-        {
-        	logger.error(e.toString());
-        	return "error";
-        }
         listob = ExcelUtil.readExcelContentByList(in);  
           
       //该处可调用service相应方法进行数据保存到数据库中，现只对数据输出  
@@ -139,8 +133,17 @@ public class ZhuxueController {
         	student.setStudentId(lo.get(new Integer(j++)));
         	student.setBankCard(lo.get(new Integer(j++)));
         	student.setBank(lo.get(new Integer(j++)));
+        	
+        	studentManager.saveStudent(student);  
         }  
-        studentManager.saveStudent(student);  
+        }
+        catch(Exception e)
+        {
+        	logger.error(e.toString());
+        	return "error";
+        }
+
+        
         return "success";
     }
 	
