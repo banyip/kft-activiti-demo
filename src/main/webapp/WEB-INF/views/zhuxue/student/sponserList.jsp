@@ -36,7 +36,7 @@
 		<div id="message" class="alert alert-success">${message}</div>
     </c:if>
     	<div style="text-align: right;padding: 2px 1em 2px">
-		<a class='handle' tkey=newsponser tname="登记新资助人"  href='#'>登记新资助人</a>   <a class='handle' tkey=importstudent tname="从Excel导入学生" href='#'>从Excel导入资助人</a>
+		<a class='handle' tkey=newsponser tname="登记新资助人"  href='#'>登记新资助人</a>   <a class='handle' tkey=importsponser tname="从Excel导入资助人信息" href='#'>从Excel导入资助人</a>
 	</div>
 	<table width="100%" class="need-border">
 			<tr>
