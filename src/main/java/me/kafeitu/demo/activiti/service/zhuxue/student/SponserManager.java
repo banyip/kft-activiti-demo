@@ -126,7 +126,13 @@ public class SponserManager {
     @Transactional(readOnly = false)
     public void delSponser(Long id)
     {
+    	try {
     	sponserDao.deleteTransferForeignKey(id);
+    	}
+    	catch(Exception e)
+    	{
+    		logger.debug(e.toString());
+    	}
     	sponserDao.delete(id);
     }
     
