@@ -156,7 +156,7 @@ public class ZhuxueController {
         		sponser.setBirthdate(lo.get(new Integer(j++)));
         		String studentNosToSponse = lo.get(new Integer(j++));
         		sponser.setStudentNosToSponse(studentNosToSponse);/////
-        		String[] studentNoList = studentNosToSponse.split("\\",-1);
+        		String[] studentNoList = studentNosToSponse.split("\\\\",-1);
         		for(int k=0;k<studentNoList.length;k++)
         		{
         			List<Student> students = studentManager.getAllStudentByAuditNo(studentNoList[k]);
