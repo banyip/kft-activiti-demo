@@ -181,7 +181,7 @@ public class ZhuxueController {
         }
         catch(Exception e)
         {
-        	logger.error(e.getMessage());
+        	logger.error(e.getStackTrace().toString());
         	return "error";
         }
 
