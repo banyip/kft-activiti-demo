@@ -51,6 +51,7 @@
     <!-- Jpa 事务配置 -->
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
         <property name="entityManagerFactory" ref="entityManagerFactory"/>
+		<property name="globalRollbackOnParticipationFailure" value="false" />
     </bean>
 
     <!-- 使用annotation定义事务 -->
