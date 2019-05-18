@@ -180,6 +180,7 @@ public class SponserManager {
            
       }  
    */     
+    	logger.error("allstudentbysponserid:"+studentManager.getAllStudentBysponserId(entity.getSponserNo()));
     	entity.setStudentsToSponse(studentManager.getAllStudentBysponserId(entity.getSponserNo()));
         sponserDao.save(entity);
     }
