@@ -590,7 +590,7 @@
 		<td class="style11" style="width: 10%">
 				<input class="studentApply" type="text" id="transfers[0]_grantTime" name="grantTime" style="width: 86px" /></td>
 		<td class="style11" style="width: 20%">
-				<input class="studentApply" type="text" id="transfers[0]_memo" name="memo" /></td>
+				<input class="studentApply" type="text" id="transfers[0]_memo"  /></td>
 
 	</tr>
 	</table>
