@@ -1,5 +1,7 @@
 package me.kafeitu.demo.activiti.web.zhuxue;
 import org.apache.poi.hssf.usermodel.*;
+import org.apache.poi.ss.usermodel.Workbook;
+
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.lang.reflect.Method;
@@ -42,15 +44,27 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+ 
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.io.FileInputStream;
+import java.util.Iterator;
+import java.util.Vector;
+
 import me.kafeitu.demo.activiti.util.ExcelUtil;
 /**
  * 请假控制器，包含保存、启动流程
@@ -99,10 +113,42 @@ public class ZhuxueController {
         List<Map<Integer, String>> listob = null;  
         MultipartFile file = multipartRequest.getFile("upfile");  
         try {
+        String wti = request.getParameter("wti");
         in = file.getInputStream();  
+      	if(wti.equals("sponseregistry"))
+      	{
+      		String[] sheetNames = ExcelUtil.readExcelSheetNames(in);
+      		for(int i=0;i<sheetNames.length;i++)
+      		{
+      			listob=ExcelUtil.readSheetContentByList(in, i);
+      			for (int j = 0; j < listob.size(); j++) {  
+      				Map<Integer, String> lo = listob.get(j);
+      				int k=0;
+      				Student student=studentManager.getAllStudentByAuditNo(lo.get(new Integer(k++))).get(0);
+      				k=k+3;
+      				Sponser sponser=sponserManager.getSponserBysponserNo(lo.get(new Integer(k++))).get(0);
+      				List<Transfer> transfers = sponser.getTransfers();
+      				if(transfers==null)
+      					transfers = new ArrayList<Transfer>();
+      				k+=4;
+      				Transfer transfer= new Transfer();
+      				transfer.setAmount(lo.get(new Integer(k++)));
+      				transfer.setNotify(lo.get(new Integer(k++)));
+      				transfer.setOperatingFee(lo.get(new Integer(k++)));
+      				transfer.setTransferTime(lo.get(new Integer(k++)));
+      				transfer.setTransferBank(lo.get(new Integer(k++)));
+      				transfer.setAccountCheck(lo.get(new Integer(k++)));
+      				transfer.setSendEmail(lo.get(new Integer(k++)));
+      				transfer.setGrantTime(lo.get(new Integer(k++)));
+      				transfer.setSemester(sheetNames[i]);
+      				transfers.add(transfer);
+      				sponser.setTransfers(transfers);
+      				sponserManager.saveSponser(sponser);
+      			}
+      		}
+      	}else {
         listob = ExcelUtil.readExcelContentByList(in);  
           
-        String wti = request.getParameter("wti");
         
       //该处可调用service相应方法进行数据保存到数据库中，现只对数据输出  
         for (int i = 0; i < listob.size(); i++) {  
@@ -176,25 +222,19 @@ public class ZhuxueController {
         		sponser.setProfectional(lo.get(new Integer(j++)));
         		sponserManager.saveSponser(sponser);
         		
-        	}else if(wti.equals("sponseregistry"))
-        	{
-        		
-        		
-        		
-        		
         	}
-        	
-        }  
         }
-        catch(Exception e)
-        {
-        	e.printStackTrace();
-        	//logger.error(e.getStackTrace().toString());
-        	return "error";
-        }
+      }
+     }
+    catch(Exception e)
+    {
+    	e.printStackTrace();
+    	//logger.error(e.getStackTrace().toString());
+    	return "error";
+    }
 
-        
-        return "success";
+    
+    return "success";
     }
 	
 	

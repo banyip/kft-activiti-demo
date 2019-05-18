@@ -436,5 +436,73 @@ public class ExcelUtil <T>{
         }
         return list;
     }
-       
+    /**
+     * 读取Excel数sheet名称
+     * @param InputStream
+     * @return String[]  
+     */
+  
+    public static String[] readExcelSheetNames(InputStream is) {
+        
+    	String[] results ;
+    	HSSFWorkbook wb = null;
+        try {
+            //fs = new POIFSFileSystem(is);
+            wb = new HSSFWorkbook(is);
+            //wb = new XSSFWorkbook(is);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        results=new String[wb.getNumberOfSheets()];
+        for (int i = 0; i < wb.getNumberOfSheets(); i++) {
+            HSSFSheet mySheet = wb.getSheetAt(i);
+            results[i]=mySheet.getSheetName();
+            //.... code to print the sheet's values here
+      }
+     return results;
+    }
+    /**
+     * 读取Excel中第n个sheet的内容
+     * @param InputStream
+     * @return List<Map<String, String>>  Map的key是列Id(0代表第一列)，值是具体内容
+     */
+    public static List<Map<Integer, String>> readSheetContentByList(InputStream is,int sheetIndex) {
+        
+        List<Map<Integer, String>> list = new ArrayList<Map<Integer,String>>();
+        HSSFWorkbook wb = null;
+        try {
+            //fs = new POIFSFileSystem(is);
+            wb = new HSSFWorkbook(is);
+            //wb = new XSSFWorkbook(is);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        
+        HSSFSheet  sheet = wb.getSheetAt(sheetIndex);
+        
+        // 得到总行数
+        int rowNum = sheet.getLastRowNum();
+        HSSFRow row = sheet.getRow(0);
+        int colNum = row.getPhysicalNumberOfCells();
+        
+        // 正文内容应该从第二行开始,第一行为表头的标题
+        for (int i = 1; i <= rowNum; i++) {
+            row = sheet.getRow(i);
+            int j = 0;
+            Map<Integer,String> map = new HashMap<Integer, String>();
+            
+            while (j < colNum) {
+                // 每个单元格的数据内容用"-"分割开，以后需要时用String类的replace()方法还原数据
+                // 也可以将每个单元格的数据设置到一个javabean的属性中，此时需要新建一个javabean
+                // str += getStringCellValue(row.getCell((short) j)).trim() +
+                // "-";
+                
+                map.put(j, getCellFormatValue(row.getCell((short) j)).trim().replaceAll("\t\r", ""));
+                //str += getCellFormatValue(row.getCell((short) j)).trim() + "    ";
+                j++;
+            }
+            list.add(map);
+        }
+        return list;
+    }
 }
