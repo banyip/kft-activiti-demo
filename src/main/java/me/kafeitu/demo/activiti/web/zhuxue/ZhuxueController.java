@@ -157,14 +157,18 @@ public class ZhuxueController {
         		String studentNosToSponse = lo.get(new Integer(j++));
         		sponser.setStudentNosToSponse(studentNosToSponse);/////
         		String[] studentNoList = studentNosToSponse.split("\\\\",-1);
-        		/*for(int k=0;k<studentNoList.length;k++)
+        		for(int k=0;k<studentNoList.length;k++)
         		{
   //      			logger.error("studentno:"+studentNoList[k]);
         			List<Student> students = studentManager.getAllStudentByAuditNo(studentNoList[k]);
         			
         			if(students.size()>0)
-        				students.get(0).setSponserId(sponser.getSponserNo());
-        		}*/
+        			{
+        				Student student=students.get(0);
+        				student.setSponserId(sponser.getSponserNo());
+        				studentManager.saveStudent(student);
+        			}
+        		}
         		sponser.setSponseStartTime(lo.get(new Integer(j++)));
         		sponser.setSponseEndTime(lo.get(new Integer(j++)));
         		sponser.setSponseEndReason(lo.get(new Integer(j++)));
