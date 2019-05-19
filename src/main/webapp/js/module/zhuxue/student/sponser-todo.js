@@ -447,12 +447,13 @@ var handleOpts = {
 				// 打开对话框的时候读取请假内容
 				
 
-			},
+			},			
 			btns: [{
 				text: '提交',
-				click: function() {					
-					if(checkData()){  
-                        $('#form1').ajaxSubmit({    
+				click: function() {			
+					var myparent=$('#importsponser');
+					if(checkData(myparent)){						
+                        $(myparent.find('#form1')).ajaxSubmit({    
                             url:ctx+'/zhuxue/student/importexcel', 
                             data:{wti:"sponser"},
                             dataType: 'text',  
@@ -496,8 +497,9 @@ var handleOpts = {
 			btns: [{
 				text: '提交',
 				click: function() {					
-					if(checkData()){  
-                        $('#form1').ajaxSubmit({    
+					var myparent=$('#importsponseregistry');
+					if(checkData(myparent)){						
+                        $(myparent.find('#form1')).ajaxSubmit({    
                             url:ctx+'/zhuxue/student/importexcel', 
                             data:{wti:"sponseregistry"},
                             dataType: 'text',  
