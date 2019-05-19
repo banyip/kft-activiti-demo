@@ -125,7 +125,8 @@ public class ZhuxueController {
       			for (int j = 0; j < listob.size(); j++) {  
       				Map<Integer, String> lo = listob.get(j);
       				int k=0;
-      				Student student=studentManager.getAllStudentByAuditNo(lo.get(new Integer(k++))).get(0);
+      				String studentId=lo.get(new Integer(k++));
+      				Student student=studentManager.getAllStudentByAuditNo(studentId).get(0);
       				k=k+3;
       				List<Sponser> sponsers = sponserManager.getSponserBysponserNo(lo.get(new Integer(k++)));
       				if(sponsers.size()>0)
@@ -139,6 +140,7 @@ public class ZhuxueController {
 	      				String amount = lo.get(new Integer(k++));
 	      				if(amount.length()>0)
 	      					transfer.setAmount(amount);
+	      				transfer.setStudentId(studentId);
 	      				transfer.setNotify(lo.get(new Integer(k++)));
 	      				transfer.setOperatingFee(lo.get(new Integer(k++)));
 	      				transfer.setTransferTime(lo.get(new Integer(k++)));
@@ -147,6 +149,7 @@ public class ZhuxueController {
 	      				transfer.setSendEmail(lo.get(new Integer(k++)));
 	      				transfer.setGrantTime(lo.get(new Integer(k++)));
 	      				transfer.setSemester(sheetNames[i]);
+	      				transfer.setSponser(sponser);
 	      				transfers.add(transfer);
 	      				sponser.setTransfers(transfers);
 	      				sponserManager.saveSponser(sponser);
