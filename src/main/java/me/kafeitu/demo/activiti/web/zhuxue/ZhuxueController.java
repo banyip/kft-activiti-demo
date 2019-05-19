@@ -133,7 +133,9 @@ public class ZhuxueController {
       					transfers = new ArrayList<Transfer>();
       				k+=4;
       				Transfer transfer= new Transfer();
-      				transfer.setAmount(lo.get(new Integer(k++)));
+      				String amount = lo.get(new Integer(k++));
+      				if(amount.length()>0)
+      					transfer.setAmount(amount);
       				transfer.setNotify(lo.get(new Integer(k++)));
       				transfer.setOperatingFee(lo.get(new Integer(k++)));
       				transfer.setTransferTime(lo.get(new Integer(k++)));
