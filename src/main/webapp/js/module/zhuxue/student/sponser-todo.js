@@ -23,7 +23,7 @@ function Write(div){
 }
 
 
-function checkData(myparent){  
+function checkData1(myparent){  
     var fileDir = $(myparent.find("#upfile")).val();  
     var suffix = fileDir.substr(fileDir.lastIndexOf("."));  
     if("" == fileDir){  
@@ -466,7 +466,7 @@ var handleOpts = {
 				text: '提交',
 				click: function() {			
 					var myparent=$('#importsponser');
-					if(checkData(myparent)){						
+					if(checkData1(myparent)){						
                         $(myparent.find('#form1')).ajaxSubmit({    
                             url:ctx+'/zhuxue/student/importexcel', 
                             data:{wti:"sponser"},
@@ -512,7 +512,7 @@ var handleOpts = {
 				text: '提交',
 				click: function() {					
 					var myparent=$('#importsponseregistry');
-					if(checkData(myparent)){						
+					if(checkData1(myparent)){						
                         $(myparent.find('#form1')).ajaxSubmit({    
                             url:ctx+'/zhuxue/student/importexcel', 
                             data:{wti:"sponseregistry"},
