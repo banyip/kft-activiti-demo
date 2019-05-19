@@ -151,7 +151,10 @@ public class ZhuxueController {
 	      				String sendDate=lo.get(new Integer(k++));
 	      				if(sendDate.length()>0)
 	      				{
-		      				List<Communicate> communicates = new ArrayList<Communicate>();
+		      				List<Communicate> communicates;
+		      				communicates=student.getCommunicates();
+		      				if(communicates==null)
+		      					communicates= new ArrayList<Communicate>();
 		      				Communicate communicate = new Communicate();
 		      				communicate.setSendDate(sendDate);
 		      				communicate.setSemester(sheetNames[i]);
