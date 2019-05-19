@@ -127,26 +127,30 @@ public class ZhuxueController {
       				int k=0;
       				Student student=studentManager.getAllStudentByAuditNo(lo.get(new Integer(k++))).get(0);
       				k=k+3;
-      				Sponser sponser=sponserManager.getSponserBysponserNo(lo.get(new Integer(k++))).get(0);
-      				List<Transfer> transfers = sponser.getTransfers();
-      				if(transfers==null)
-      					transfers = new ArrayList<Transfer>();
-      				k+=4;
-      				Transfer transfer= new Transfer();
-      				String amount = lo.get(new Integer(k++));
-      				if(amount.length()>0)
-      					transfer.setAmount(amount);
-      				transfer.setNotify(lo.get(new Integer(k++)));
-      				transfer.setOperatingFee(lo.get(new Integer(k++)));
-      				transfer.setTransferTime(lo.get(new Integer(k++)));
-      				transfer.setTransferBank(lo.get(new Integer(k++)));
-      				transfer.setAccountCheck(lo.get(new Integer(k++)));
-      				transfer.setSendEmail(lo.get(new Integer(k++)));
-      				transfer.setGrantTime(lo.get(new Integer(k++)));
-      				transfer.setSemester(sheetNames[i]);
-      				transfers.add(transfer);
-      				sponser.setTransfers(transfers);
-      				sponserManager.saveSponser(sponser);
+      				List<Sponser> sponsers = sponserManager.getSponserBysponserNo(lo.get(new Integer(k++)));
+      				if(sponsers.size()>0)
+      				{
+	      				Sponser sponser=sponsers.get(0);
+	      				List<Transfer> transfers = sponser.getTransfers();
+	      				if(transfers==null)
+	      					transfers = new ArrayList<Transfer>();
+	      				k+=4;
+	      				Transfer transfer= new Transfer();
+	      				String amount = lo.get(new Integer(k++));
+	      				if(amount.length()>0)
+	      					transfer.setAmount(amount);
+	      				transfer.setNotify(lo.get(new Integer(k++)));
+	      				transfer.setOperatingFee(lo.get(new Integer(k++)));
+	      				transfer.setTransferTime(lo.get(new Integer(k++)));
+	      				transfer.setTransferBank(lo.get(new Integer(k++)));
+	      				transfer.setAccountCheck(lo.get(new Integer(k++)));
+	      				transfer.setSendEmail(lo.get(new Integer(k++)));
+	      				transfer.setGrantTime(lo.get(new Integer(k++)));
+	      				transfer.setSemester(sheetNames[i]);
+	      				transfers.add(transfer);
+	      				sponser.setTransfers(transfers);
+	      				sponserManager.saveSponser(sponser);
+      				}
       			}
       		}
       	}else {
