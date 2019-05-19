@@ -148,13 +148,17 @@ public class ZhuxueController {
 	      				transfer.setAccountCheck(lo.get(new Integer(k++)));
 	      				transfer.setSendEmail(lo.get(new Integer(k++)));
 	      				transfer.setGrantTime(lo.get(new Integer(k++)));
-	      				List<Communicate> communicates = new ArrayList<Communicate>();
-	      				Communicate communicate = new Communicate();
-	      				communicate.setSendDate(lo.get(new Integer(k++)));
-	      				communicate.setSemester(sheetNames[i]);
-	      				communicates.add(communicate);
-	      				student.setCommunicates(communicates);
-	      				studentManager.saveStudent(student);
+	      				String sendDate=lo.get(new Integer(k++));
+	      				if(sendDate.length()>0)
+	      				{
+		      				List<Communicate> communicates = new ArrayList<Communicate>();
+		      				Communicate communicate = new Communicate();
+		      				communicate.setSendDate(sendDate);
+		      				communicate.setSemester(sheetNames[i]);
+		      				communicates.add(communicate);
+		      				student.setCommunicates(communicates);
+		      				studentManager.saveStudent(student);
+	      				}
 	      				transfer.setSemester(sheetNames[i]);
 	      				transfer.setSponser(sponser);
 	      				transfers.add(transfer);
