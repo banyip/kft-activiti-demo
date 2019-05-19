@@ -120,6 +120,7 @@ public class ZhuxueController {
       		String[] sheetNames = ExcelUtil.readExcelSheetNames(in);
       		for(int i=0;i<sheetNames.length;i++)
       		{
+      			in = file.getInputStream();  
       			listob=ExcelUtil.readSheetContentByList(in, i);
       			for (int j = 0; j < listob.size(); j++) {  
       				Map<Integer, String> lo = listob.get(j);
