@@ -23,7 +23,7 @@ function Write(div){
 }
 
 
-function checkData(var myparent){  
+function checkData(myparent){  
     var fileDir = $(myparent.find("#upfile")).val();  
     var suffix = fileDir.substr(fileDir.lastIndexOf("."));  
     if("" == fileDir){  
