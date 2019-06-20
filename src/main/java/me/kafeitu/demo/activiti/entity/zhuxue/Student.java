@@ -404,7 +404,7 @@ public class Student extends IdEntity implements Serializable {
 		return bank;
 	}
 
-	@Column(length = 20)
+	@Column(length = 50)
 	public String getBankCard() {
 		return bankCard;
 	}
