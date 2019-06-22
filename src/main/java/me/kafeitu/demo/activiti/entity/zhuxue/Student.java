@@ -355,7 +355,7 @@ public class Student extends IdEntity implements Serializable {
 		return address;
 	}
 
-	@Column(length = 10)
+	@Column(length = 30)
 	public String getAge() {
 		return age;
 	}
